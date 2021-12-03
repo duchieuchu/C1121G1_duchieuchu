@@ -20,20 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="351cbde0-9d2c-4653-ad36-fcd61b8db991" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ss_5HTML Form &amp; Table/baitap/LaySurveyKhanhHang.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss_5HTML Form &amp; Table/baitap/TaoformDonGian1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss_5HTML Form &amp; Table/baitap/TaoformDonGian2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss_5HTML Form &amp; Table/thuchanh/TaoformTimKiemGG.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss_5HTML Form &amp; Table/thuchanh/simpleTable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/C1121G1_duchieuchu.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss4_git&amp;amp;HTML/bai_tap/TaoDanhSach.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss4_git&amp;amp;HTML/bai_tap/TaoDanhSach.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss4_git&amp;amp;HTML/bai_tap/TaoTrangCV.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss4_git&amp;amp;HTML/bai_tap/TaoTrangCVCaNhan.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss4_git&amp;amp;HTML/bai_tap/TaoTrangCVCaNhan.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss4_git&amp;amp;HTML/thuc_hanh/SuDungThehtmlCoBan.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss4_git&amp;amp;HTML/thuc_hanh/SuDungThehtmlCoBan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss_6JavaScript/thuc_hanh/HienThiDauRaBai1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss_6JavaScript/thuc_hanh/HienThiDauRaBai2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss_6JavaScript/thuc_hanh/HienThiDauRaBai3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss_6JavaScript/thuc_hanh/HienThiDauRaBai4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss_6JavaScript/thuc_hanh/NhungJavaScript.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss_6JavaScript/thuc_hanh/NhungMa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss_5HTML Form &amp; Table/baitap/LaySurveyKhanhHang.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss_5HTML Form &amp; Table/baitap/LaySurveyKhanhHang.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +38,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -97,7 +92,8 @@
       <workItem from="1638426076587" duration="9868000" />
       <workItem from="1638447427598" duration="9157000" />
       <workItem from="1638487250945" duration="12000" />
-      <workItem from="1638487280603" duration="3514000" />
+      <workItem from="1638487280603" duration="4592000" />
+      <workItem from="1638503564764" duration="2183000" />
     </task>
     <servers />
   </component>
