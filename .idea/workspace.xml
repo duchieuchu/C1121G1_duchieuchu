@@ -20,11 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="351cbde0-9d2c-4653-ad36-fcd61b8db991" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ss_5HTML Form &amp; Table/baitap/TaoGiaoDienFromDangKiNguoiDung.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss_5HTML Form &amp; Table/thuchanh/TaoBangCoBan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss_5HTML Form &amp; Table/baitap/BanCoVua.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss_5HTML Form &amp; Table/baitap/LichCua1Thang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss_5HTML Form &amp; Table/baitap/TaoBangNangCao.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss_5HTML Form &amp; Table/baitap/LaySurveyKhanhHang.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss_5HTML Form &amp; Table/baitap/LaySurveyKhanhHang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss_5HTML Form &amp; Table/baitap/rác.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss_5HTML Form &amp; Table/baitap/rác.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +93,10 @@
       <workItem from="1638511494440" duration="5873000" />
       <workItem from="1638517844737" duration="1566000" />
       <workItem from="1638519446636" duration="860000" />
+      <workItem from="1638520349674" duration="131000" />
+      <workItem from="1638520497226" duration="2100000" />
+      <workItem from="1638535553115" duration="1579000" />
+      <workItem from="1638537153622" duration="2171000" />
     </task>
     <servers />
   </component>
