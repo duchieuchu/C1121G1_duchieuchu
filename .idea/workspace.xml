@@ -20,14 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="351cbde0-9d2c-4653-ad36-fcd61b8db991" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ss_6JavaScript/thuc_hanh/HienThiDauRaBai1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss_6JavaScript/thuc_hanh/HienThiDauRaBai2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss_6JavaScript/thuc_hanh/HienThiDauRaBai3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss_6JavaScript/thuc_hanh/HienThiDauRaBai4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss_6JavaScript/thuc_hanh/NhungJavaScript.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss_6JavaScript/thuc_hanh/NhungMa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss_5HTML Form &amp; Table/baitap/TaoGiaoDienFromDangKiNguoiDung.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss_5HTML Form &amp; Table/thuchanh/TaoBangCoBan.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ss_5HTML Form &amp; Table/baitap/LaySurveyKhanhHang.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss_5HTML Form &amp; Table/baitap/LaySurveyKhanhHang.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss_5HTML Form &amp; Table/baitap/rác.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss_5HTML Form &amp; Table/baitap/rác.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +34,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -93,7 +90,10 @@
       <workItem from="1638447427598" duration="9157000" />
       <workItem from="1638487250945" duration="12000" />
       <workItem from="1638487280603" duration="4592000" />
-      <workItem from="1638503564764" duration="2183000" />
+      <workItem from="1638503564764" duration="3616000" />
+      <workItem from="1638511494440" duration="5873000" />
+      <workItem from="1638517844737" duration="1566000" />
+      <workItem from="1638519446636" duration="860000" />
     </task>
     <servers />
   </component>
@@ -138,6 +138,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="389" y="196" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.680@0.0.1280.680" timestamp="1638344348420" />
+    <state x="463" y="43" key="RollbackChangesDialog" timestamp="1638516073764">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="463" y="43" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1638516073764" />
     <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1638366583843">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
