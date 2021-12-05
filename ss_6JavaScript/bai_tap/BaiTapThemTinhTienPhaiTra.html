@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+<h1>Tính tiền</h1>
+<input type="text" id="n1">(Nhập số tiền)
+<br><br>
+<input type="text" id="n2">(Nhập số người)
+<br><br>
+Kết quả <input type="text" id="result">
+<br><br>
+<button onclick="myFunction()">submit</button>
+<script type="text/javascript">
+function myFunction() {
+        var n1 = document.getElementById('n1').value;
+        var n2 = document.getElementById('n2').value;
+        var result = parseInt(n1) / parseInt(n2)
+        document.getElementById('result').value =result;
+    }
+</script>
+</body>
+</html>

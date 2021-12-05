@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+<h1>Tính điểm trung bình 3 môn</h1>
+<p>Điểm toán<input id="math" type="text"></p>
+<p>Điểm lý<input id="physic" type="text"></p>
+<p>Điểm hoá<input id="chemical" type="text"></p>
+<button type="button" onclick="tb3mon() ">Hiện kết quả </button>
+</body>
+<script>
+    function tb3mon(){
+        let M = document.getElementById("math").value;
+        M = parseInt(M);
+        let P = document.getElementById("physic").value;
+        P = parseInt(P);
+        let C = document.getElementById("chemical").value;
+        C = parseInt(C);
+        let result = (M+P+C)/3;
+        document.write(result);
+    }
+</script>
+</html>
