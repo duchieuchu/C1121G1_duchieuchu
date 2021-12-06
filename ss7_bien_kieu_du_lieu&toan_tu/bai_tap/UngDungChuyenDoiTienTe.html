@@ -5,19 +5,73 @@
     <title>hello</title>
 </head>
 <body>
-<h3>Amount<input type="text"></h3>
-<h3>From currency</h3>
-<select>
-    <option>VietNam</option>
-    <option>USD</option>
-</select>
-<br><br>
-<h3>To currency</h3>
-<select>
-    <option>USD</option>
-    <option>VietNam</option>
-</select>
-<br><br>
-<button type="button" onclick="doitien()">convert</button>
+<form>
+
+    <b>Amount</b> <br>
+    <input id="amount" type="text"><br>
+
+    From Curency
+
+    <select id="nn1">
+        <option>VND</option>
+        <option>USD</option>
+        <option>JYP</option>
+        <br>
+    </select>
+
+    To Curency
+    <select id="nn2">
+        <option>VND</option>
+        <option>USD</option>
+        <option>JYP</option>
+    </select>
+    <p></p>
+    <button type="button" onclick="submitkq()">Convert</button>
+    <div>Total<input id="display" type="text"></div>
+
+
+</form>
+</body>
+
+<script>
+    function submitkq() {
+        let a = document.getElementById('amount').value;
+        a = parseInt(a);
+        let n1 = document.getElementById('nn1').value;
+        let n2 = document.getElementById('nn2').value;
+
+        let kq = 0;
+
+        if (n1 == "VND") {
+            if (n2 == "VND") {
+                kq = a;
+            } else if (n2 == "USD") {
+                kq = a / 23.025;
+            } else if (n2 == "JYP") {
+                kq = a / 203;
+            }
+        } else if (n1 == "USD") {
+            if (n2 == "VND") {
+                kq = a * 23.025;
+            } else if (n2 == "USD") {
+                kq = a;
+            } else if (n2 == "JYP") {
+                kq = a * 113;
+            }
+
+        } else if (n1 == "JYP") {
+            if (n2 == "VND") {
+                kq = a * 203;
+            } else if (n2 == "USD") {
+                kq = a / 113;
+            } else if (n2 == "JYP") {
+                kq = a;
+            }
+
+        }
+        document.getElementById("display").value=kq;
+    }
+
+</script>
 </body>
 </html>
