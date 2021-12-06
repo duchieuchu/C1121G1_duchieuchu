@@ -20,15 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="351cbde0-9d2c-4653-ad36-fcd61b8db991" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu&amp;toan_tu/thuc_hanh/DienTichHinhTron.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu&amp;toan_tu/thuc_hanh/KhaiBaoBien&amp;SuDungBien.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu&amp;toan_tu/thuc_hanh/NhungSHinhTron.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu&amp;toan_tu/thuc_hanh/NhungToanTu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu&amp;toan_tu/thuc_hanh/SuDungToanTu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss_6JavaScript/bai_tap/BaiTapThemTinhDiemTrungBinh3monTLH.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss_6JavaScript/bai_tap/BaiTapThemTinhTienPhaiTra.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss_6JavaScript/bai_tap/rac.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu&amp;toan_tu/bai_tap/ChuViHinhTron..html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu&amp;toan_tu/bai_tap/ChuyenDoiDoCquaF..html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu&amp;toan_tu/bai_tap/DienTichHinhTron..html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu&amp;toan_tu/thuc_hanh/DienTichHinhTron.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu&amp;toan_tu/bai_tap/ChuongTrinhNhapDiemCacMon.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu&amp;toan_tu/thuc_hanh/NhungSHinhTron.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss_6JavaScript/bai_tap/BaiTapThemTinhDiemTrungBinh3monTLH.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss_6JavaScript/bai_tap/BaiTapThemTinhDiemTrungBinh3monTLH.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,11 +60,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ss7_bien_kieu_du_lieu&amp;toan_tu/bai_tap" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\codegym\C1121G1_duchieuchu\ss7_bien_kieu_du_lieu&amp;toan_tu\bai_tap" />
       <recent name="D:\codegym\C1121G1_duchieuchu\ss_5HTML Form &amp; Table\baitap" />
       <recent name="D:\codegym\C1121G1_duchieuchu\ss_5HTML Form &amp; Table\thuchanh" />
       <recent name="D:\codegym\C1121G1_duchieuchu\ss4_git&amp;amp;HTML\bai_tap" />
@@ -110,7 +109,9 @@
       <workItem from="1638609171563" duration="2816000" />
       <workItem from="1638622936305" duration="442000" />
       <workItem from="1638626852169" duration="2150000" />
-      <workItem from="1638678386213" duration="9348000" />
+      <workItem from="1638678386213" duration="9822000" />
+      <workItem from="1638749177067" duration="5636000" />
+      <workItem from="1638772410770" duration="4259000" />
     </task>
     <servers />
   </component>
@@ -155,6 +156,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="387" y="143" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1638435949530" />
+    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1638751729853">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1638751729853" />
     <state x="389" y="196" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1638344348420">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

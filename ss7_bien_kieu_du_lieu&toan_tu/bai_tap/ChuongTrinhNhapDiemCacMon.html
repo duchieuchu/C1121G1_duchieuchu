@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+<p> điểm lý<input id="physic" type="text"></p>
+<p> điểm Hoá<input id="chemistry" type="text"></p>
+<p> điểm Sinh<input id="biological" type="text"></p>
+<button type="button" onclick="tb2mon()">Hiện kết quả</button>
+
+</body>
+</html>
+<script>
+    function tb2mon() {
+        let p=document.getElementById("physic").value;
+        p = parseInt(p);
+        let c=document.getElementById("chemistry").value;
+        c = parseInt(c);
+        let b=document.getElementById("biological").value;
+        b = parseInt(b);
+        let sum= (p+c+b)
+        let result =(p+c+b)/3;
+        document.write("điểm trung binh= "+result);
+        document.write("<br>")
+        document.write("tổng các môn= "+sum);
+
+    }
+</script>
