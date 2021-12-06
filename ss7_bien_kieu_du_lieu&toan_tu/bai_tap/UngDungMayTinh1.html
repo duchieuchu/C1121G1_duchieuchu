@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+<h2>Caculator</h2>
+<input type="text" placeholder="number1" id="num1">
+<input type="text" placeholder="number1" id="num2">
+<br><br>
+<input type="button" value="Cộng" onclick="tinh('+')">
+<input type="button" value="Trừ" onclick="tinh('-')">
+<input type="button" value="nhân" onclick="tinh('*')">
+<input type="button" value="chia" onclick="tinh('/')">
+<script>
+    function tinh(toanTu) {
+        let num1 = parseInt(document.getElementById("num1").value);
+        let num2 = parseInt(document.getElementById("num2").value);
+        if (toanTu == "+") {
+            let result = num1 + num2
+            alert("tổng là: " + result)
+        } else if (toanTu == "-") {
+            let result = num1 - num2
+            alert("hiều là: " + result)
+        } else if (toanTu == "*") {
+            let result = num1*num2
+            alert("tích là: " + result)
+        } else{
+            let result = num1/num2
+            alert("thương là: " + result)
+        }
+    }
+</script>
+
+</body>
+</html>

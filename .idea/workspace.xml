@@ -19,7 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="351cbde0-9d2c-4653-ad36-fcd61b8db991" name="Default Changelist" comment="" />
+    <list default="true" id="351cbde0-9d2c-4653-ad36-fcd61b8db991" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu&amp;toan_tu/bai_tap/UngDungMayTinh1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu&amp;toan_tu/bai_tap/UngDungMayTinh2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu&amp;toan_tu/bai_tap/rac.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu&amp;toan_tu/bai_tap/UngDungChuyenDoiTienTe.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu&amp;toan_tu/bai_tap/UngDungChuyenDoiTienTe.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,7 +109,7 @@
       <workItem from="1638626852169" duration="2150000" />
       <workItem from="1638678386213" duration="9822000" />
       <workItem from="1638749177067" duration="5636000" />
-      <workItem from="1638772410770" duration="4624000" />
+      <workItem from="1638772410770" duration="12393000" />
     </task>
     <servers />
   </component>
