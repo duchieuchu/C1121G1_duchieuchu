@@ -20,7 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="351cbde0-9d2c-4653-ad36-fcd61b8db991" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu&amp;toan_tu/bai_tap/UngDungChuyenDoiTienTe.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu&amp;toan_tu/bai_tap/UngDungChuyenDoiTienTe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss_8.Cau_truc_dieu_kien1/thuc_hanh/KiemTraNamNhuan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu&amp;toan_tu/bai_tap/rac.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu&amp;toan_tu/bai_tap/rac.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +110,8 @@
       <workItem from="1638772410770" duration="12800000" />
       <workItem from="1638790184036" duration="2762000" />
       <workItem from="1638792981136" duration="1541000" />
-      <workItem from="1638834263531" duration="336000" />
+      <workItem from="1638834263531" duration="1984000" />
+      <workItem from="1638838031665" duration="365000" />
     </task>
     <servers />
   </component>
@@ -173,6 +176,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1638366583843" />
+    <state x="0" y="0" width="587" height="680" key="find.popup" timestamp="1638837292128">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="0" y="0" width="587" height="680" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1638837292128" />
     <state x="297" y="151" key="run.anything.popup" timestamp="1638366725841">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
