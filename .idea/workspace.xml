@@ -20,9 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="351cbde0-9d2c-4653-ad36-fcd61b8db991" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ss_8.Cau_truc_dieu_kien1/thuc_hanh/KiemTraNamNhuan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss_8.Cau_truc_dieu_kien1/thuc_hanh/LuyenTapVoiCauTricIfElse1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss_8.Cau_truc_dieu_kien1/thuc_hanh/LuyenTapVoiCauTrucIfElse2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss_8.Cau_truc_dieu_kien1/thuc_hanh/r.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss_8.Cau_truc_dieu_kien1/thuc_hanh/ra.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss_8.Cau_truc_dieu_kien1/thuc_hanh/rac.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu&amp;toan_tu/bai_tap/rac.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu&amp;toan_tu/bai_tap/rac.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +114,7 @@
       <workItem from="1638790184036" duration="2762000" />
       <workItem from="1638792981136" duration="1541000" />
       <workItem from="1638834263531" duration="1984000" />
-      <workItem from="1638838031665" duration="365000" />
+      <workItem from="1638838031665" duration="7641000" />
     </task>
     <servers />
   </component>
