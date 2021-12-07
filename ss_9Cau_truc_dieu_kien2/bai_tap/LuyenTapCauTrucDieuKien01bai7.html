@@ -5,6 +5,17 @@
     <title>hello</title>
 </head>
 <body>
-
+<h1>Cước điện thoại của bạn là</h1>
+<h1 id="display" ></h1>
+<h1>(VND)</h1>
 </body>
 </html>
+<script type="text/javascript">
+var m1,m2,t
+    m1 = parseInt(prompt("nhập số phút gọi nội mạng"));
+m2 = parseInt(prompt("nhập số phút gọi ngoại mạng"));
+
+    t = m1*1.190+m2*1.390
+    document.getElementById('display').innerHTML=t
+
+</script>

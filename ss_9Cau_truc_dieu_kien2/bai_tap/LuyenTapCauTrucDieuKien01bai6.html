@@ -5,9 +5,17 @@
     <title>hello</title>
 </head>
 <body>
-<script>
-    let a = parseInt(prompt("Nhập số tiền"))
+<h1>Tiền hoa hồng của bạn là</h1>
+<h1 id="display"></h1>
+<h1>(VND)</h1>
 
-</script>
 </body>
 </html>
+<script type="text/javascript">
+    var a, e
+    a = parseInt(prompt("Nhập số tiền"))
+    e = a*5/100
+    document.getElementById('display').innerHTML=e
+
+
+</script>
