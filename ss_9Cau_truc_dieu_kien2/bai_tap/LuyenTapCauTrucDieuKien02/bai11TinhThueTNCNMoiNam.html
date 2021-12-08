@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+<script>
+    let money = parseInt(prompt("thu nhập của bạn bao nhiêu triệu VND mỗi năm"))
+    let tienthue
+    if (money > 960) {
+        tienthue = money * 35 / 100
+        alert("Tiền thuế mỗi năm của bạn là " + tienthue+"triệu VND")
+    } else if (money > 624) {
+        tienthue = money * 30 / 100
+        alert("Tiền thuế mỗi năm của bạn là " + tienthue+"triệu VND")
+    } else if (money > 384) {
+        tienthue = money * 25 / 100
+        alert("Tiền thuế mỗi năm của bạn là " + tienthue+"triệu VND")
+    } else if (money > 216) {
+        tienthue = money * 20 / 100
+        alert("Tiền thuế mỗi năm của bạn là " + tienthue+"triệu VND")
+    } else if (money > 120) {
+        tienthue = money * 15 / 100
+        alert("Tiền thuế mỗi năm của bạn là " + tienthue+"triệu VND")
+    } else if (money > 60) {
+        tienthue = money * 10 / 100
+        alert("Tiền thuế mỗi năm của bạn là " + tienthue+"triệu VND")
+    } else {
+        tienthue = money * 5 / 100
+        alert("Tiền thuế mỗi năm của bạn là " + tienthue+"triệu VND")
+    }
+
+</script>
+</body>
+</html>

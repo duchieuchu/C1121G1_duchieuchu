@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+<script>
+    let khw = parseInt(prompt("Nhập số Kwh đã tiêu thụ"))
+    let money
+    if (khw > 400) {
+        money = 2927 * khw
+        alert("Số tiền điện là" + money + "VND")
+    } else if (khw > 300) {
+        money = 2834 * khw
+        alert("Số tiền điện là" + money + "VND")
+    } else if (khw > 200) {
+        money = 2536 * khw
+        alert("Số tiền điện là" + money + "VND")
+    } else if (khw > 100) {
+        money = 2014 * khw
+        alert("Số tiền điện là" + money + "VND")
+    } else if (khw > 50) {
+        money = 1.734 * khw
+        alert("Số tiền điện là" + money + "VND")
+    } else {
+        money = 1.678 * khw
+        alert("Số tiền điện là" + money + "VND")
+    }
+</script>
+</body>
+</html>

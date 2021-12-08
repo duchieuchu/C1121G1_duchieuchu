@@ -20,9 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="351cbde0-9d2c-4653-ad36-fcd61b8db991" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ss_9Cau_truc_dieu_kien2/bai_tap/LuyenTapCauTrucDieuKien02/Bai8PhuongTrinhBac2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss_9Cau_truc_dieu_kien2/bai_tap/LuyenTapCauTrucDieuKien02/bai7 GiaiPhuongTrinhBac1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss_9Cau_truc_dieu_kien2/bai_tap/LuyenTapCauTrucDieuKien02/r.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss_9Cau_truc_dieu_kien2/bai_tap/LuyenTapCauTrucDieuKien02/bai10TinhTienDien.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss_9Cau_truc_dieu_kien2/bai_tap/LuyenTapCauTrucDieuKien02/bai11TinhThueTNCNMoiNam.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss_9Cau_truc_dieu_kien2/bai_tap/LuyenTapCauTrucDieuKien02/bai12TinhTienLaiNganHang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss_9Cau_truc_dieu_kien2/bai_tap/LuyenTapCauTrucDieuKien02/bai8KiemTraTuoiNguoi.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss_9Cau_truc_dieu_kien2/bai_tap/LuyenTapCauTrucDieuKien02/bai9KiemTraCoPhaiHinhTamGiac.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss_9Cau_truc_dieu_kien2/thuc_hanh/DoYouLoveMe.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,7 +120,8 @@
       <workItem from="1638864598723" duration="7344000" />
       <workItem from="1638880447185" duration="4166000" />
       <workItem from="1638925753476" duration="9735000" />
-      <workItem from="1638941640798" duration="8938000" />
+      <workItem from="1638941640798" duration="12192000" />
+      <workItem from="1638961236599" duration="2563000" />
     </task>
     <servers />
   </component>
@@ -150,10 +154,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="267" y="19" key="#Inspections" timestamp="1638929049123">
+    <state x="267" y="19" key="#Inspections" timestamp="1638959705582">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="267" y="19" key="#Inspections/0.0.1280.680@0.0.1280.680" timestamp="1638929049123" />
+    <state x="267" y="19" key="#Inspections/0.0.1280.680@0.0.1280.680" timestamp="1638959705582" />
     <state x="526" y="204" key="#Notifications" timestamp="1638609757727">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
