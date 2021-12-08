@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+<script>
+    let a = prompt('Nhap vao gia tri cua a', '');
+    let b = prompt('Nhap vao gia tri cua b', '');
+    let c = prompt('Nhap vao gia tri cua c', '');
+    let x1 = 0;
+    let x2 = 0;
+
+    if (a == 0) {
+        if (b == 0) {
+            alert('phuong trinh vo nghiem');
+        } else {
+            x1 = -c / b;
+            alert('nghiem cua phuong trinh la ' + x1);
+        }
+    } else {
+        let detal = b ** 2 - 4 * a * c;
+        if (detal < 0) {
+            alert('Phuong trinh bac 2 vo nghiem');
+        } else if (detal == 0) {
+            x1 = x2 = -b / 2 * a;
+            alert('Nghiem cua phuong trinh la: ' + x1);
+        } else if (detal > 0) {
+            x1 = (-b - Math.sqrt(detal)) / 2 * a;
+            x2 = (-b + Math.sqrt(detal)) / 2 * a;
+            alert('Nghiem thu nhat cua phuong trinh la ' + x1);
+            alert('Nghiem thu 2 cua phuong trinh la ' + x2);
+        }
+
+    }
+</script>
+</body>
+</html>
