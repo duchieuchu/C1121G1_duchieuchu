@@ -5,17 +5,17 @@
     <title>hello</title>
 </head>
 <body>
-<h1>Tiền hoa hồng của bạn là</h1>
-<h1 id="display"></h1>
-<h1>(VND)</h1>
-
+<script>
+    let sotien = parseInt(prompt("nhập số tiền"));
+    let hoahong
+    if (sotien <2000) {
+        hoahong =sotien*0.1;
+    }else if(sotien<5000){
+        hoahong = sotien*0.2;
+    }else {
+        hoahong = sotien*0.25;
+    }
+    alert("Tổng số tiền là:"+sotien+" và ban có được hoa hồng:"+hoahong)
+</script>
 </body>
 </html>
-<script type="text/javascript">
-    var a, e
-    a = parseInt(prompt("Nhập số tiền"))
-    e = a*5/100
-    document.getElementById('display').innerHTML=e
-
-
-</script>
