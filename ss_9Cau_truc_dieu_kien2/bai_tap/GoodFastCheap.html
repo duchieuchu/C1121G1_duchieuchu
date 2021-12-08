@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+Good<input id="good" type="range" min="0" max="1" value="1" onclick="thaydoi('good')"><br>
+Fast<input id="fast" type="range" min="0" max="1" value="1" onclick="thaydoi('fast')"><br>
+Cheap<input id="cheap" type="range" min="0" max="1" value="1" onclick="thaydoi('cheap')">
+</body>
+</html>
+<script>
+    let goodObj = document.getElementById("good");
+    let fastObj = document.getElementById("fast");
+    let cheapObj = document.getElementById("cheap");
+
+    function thaydoi(choose) {
+        switch (choose) {
+            case "good":
+                if (fastObj.value = 1) {
+                    cheapObj.value = 0;
+                }
+                break;
+            case "fast":
+                if (cheapObj.value = 1) {
+                    goodObj.value = 0;
+                }
+                break;
+            case "cheap":
+                if (goodObj.value = 1) {
+                    fastObj.value = 0;
+                }
+                break;
+        }
+
+    }
+</script>
