@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Starsinthesky.jpg/1280px-Starsinthesky.jpg')"
+        onload="docReady()">
+<img style="position:absolute;left:0; top:0;" height="200" id= "sup" src="https://i.ibb.co/7jTf81q/superman.png">
+<script>
+    function downArrowPressed()
+    {
+        var element=document.getElementById("sup");
+        element.style.top = parseInt(element.style.top) +20 +'px';
+    }
+    function upArrowPressed() {
+        var element=document.getElementById("sup");
+        element.style.top = parseInt(element.style.top)  -20 +'px';
+    }
+    function leftArrowPressed() {
+        var element=document.getElementById("sup");
+        element.style.left = parseInt(element.style.left)  -20 +'px';
+    }
+    function rightArrowPressed() {
+        var element=document.getElementById("sup");
+        element.style.left = parseInt(element.style.left)  +20 +'px';
+    }
+    function moveSelection(evt){
+        switch (evt.keyCode) {
+            case 37:
+                leftArrowPressed();
+                break;
+            case 39:
+                rightArrowPressed();
+                break;
+            case 38:
+                upArrowPressed();
+                break;
+            case 40:
+                downArrowPressed();
+                break;
+        }
+    }
+    function docReady() {
+        window.addEventListener('keydown',moveSelection);
+
+    }
+</script>
+</body>
+</html>

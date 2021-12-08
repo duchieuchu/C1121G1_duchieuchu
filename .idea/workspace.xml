@@ -20,10 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="351cbde0-9d2c-4653-ad36-fcd61b8db991" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ss_9Cau_truc_dieu_kien2/bai_tap/LuyenTapCauTrucDieuKien02bai1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss_9Cau_truc_dieu_kien2/thuc_hanh/sukienchuot.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss_9Cau_truc_dieu_kien2/thuc_hanh/SuKienChuot.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu&amp;toan_tu/bai_tap/ChuyenDoiDoCquaF..html" beforeDir="false" afterPath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu&amp;toan_tu/bai_tap/ChuyenDoiDoCquaF..html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss_9Cau_truc_dieu_kien2/bai_tap/LuyenTapCauTrucDieuKien01bai1.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss_9Cau_truc_dieu_kien2/bai_tap/LuyenTapCauTrucDieuKien01/bai1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss_9Cau_truc_dieu_kien2/bai_tap/LuyenTapCauTrucDieuKien01bai2.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss_9Cau_truc_dieu_kien2/bai_tap/LuyenTapCauTrucDieuKien01/bai2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss_9Cau_truc_dieu_kien2/bai_tap/LuyenTapCauTrucDieuKien01bai3.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss_9Cau_truc_dieu_kien2/bai_tap/LuyenTapCauTrucDieuKien01/bai3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss_9Cau_truc_dieu_kien2/bai_tap/LuyenTapCauTrucDieuKien01bai4.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss_9Cau_truc_dieu_kien2/bai_tap/LuyenTapCauTrucDieuKien01/bai4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss_9Cau_truc_dieu_kien2/bai_tap/LuyenTapCauTrucDieuKien01bai6.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss_9Cau_truc_dieu_kien2/bai_tap/LuyenTapCauTrucDieuKien01/bai6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss_9Cau_truc_dieu_kien2/bai_tap/LuyenTapCauTrucDieuKien01bai7.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss_9Cau_truc_dieu_kien2/bai_tap/LuyenTapCauTrucDieuKien01/bai7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss_9Cau_truc_dieu_kien2/bai_tap/LuyenTapCauTrucDieuKien02bai1.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss_9Cau_truc_dieu_kien2/bai_tap/LuyenTapCauTrucDieuKien02/bai1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss_9Cau_truc_dieu_kien2/bai_tap/LuyenTapCauTrucDieuKienj01bai5.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss_9Cau_truc_dieu_kien2/bai_tap/LuyenTapCauTrucDieuKien01/bai5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss_9Cau_truc_dieu_kien2/thuc_hanh/sukienchuot.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss_9Cau_truc_dieu_kien2/thuc_hanh/SuKienBanPhim.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,16 +64,16 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ss_9Cau_truc_dieu_kien2/bai_tap" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ss_9Cau_truc_dieu_kien2/bai_tap/LuyenTapCauTrucDieuKien02" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\codegym\C1121G1_duchieuchu\ss_9Cau_truc_dieu_kien2\bai_tap\LuyenTapCauTrucDieuKien02" />
+      <recent name="D:\codegym\C1121G1_duchieuchu\ss_9Cau_truc_dieu_kien2\bai_tap\LuyenTapCauTrucDieuKien01" />
       <recent name="D:\codegym\C1121G1_duchieuchu\ss_9Cau_truc_dieu_kien2\bai_tap" />
       <recent name="D:\codegym\C1121G1_duchieuchu\ss7_bien_kieu_du_lieu&amp;toan_tu\bai_tap" />
       <recent name="D:\codegym\C1121G1_duchieuchu\ss_5HTML Form &amp; Table\baitap" />
-      <recent name="D:\codegym\C1121G1_duchieuchu\ss_5HTML Form &amp; Table\thuchanh" />
-      <recent name="D:\codegym\C1121G1_duchieuchu\ss4_git&amp;amp;HTML\bai_tap" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -116,6 +123,8 @@
       <workItem from="1638838031665" duration="13396000" />
       <workItem from="1638864598723" duration="7344000" />
       <workItem from="1638880447185" duration="4166000" />
+      <workItem from="1638925753476" duration="9735000" />
+      <workItem from="1638941640798" duration="348000" />
     </task>
     <servers />
   </component>
@@ -148,6 +157,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="267" y="19" key="#Inspections" timestamp="1638929049123">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="267" y="19" key="#Inspections/0.0.1280.680@0.0.1280.680" timestamp="1638929049123" />
     <state x="526" y="204" key="#Notifications" timestamp="1638609757727">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
