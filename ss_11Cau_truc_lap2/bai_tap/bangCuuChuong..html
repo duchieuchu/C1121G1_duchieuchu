@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+<p id="display"></p>
+</body>
+</html>
+<script>
+    let tablestring ='<table border="1" style ="border-collapse: collapse">';
+    for (let i =1;i <10;i++){
+        tablestring+='<tr>';
+        for (let y =2;y<10;y++){
+            tablestring+="<td style='font-size:27px;'>"+y+" X "+ i + " = " + i*y + "</td>"
+        }
+        tablestring+='</tr>';
+    }
+    tablestring+="</table>"
+    document.getElementById('display').innerHTML=tablestring
+</script>
