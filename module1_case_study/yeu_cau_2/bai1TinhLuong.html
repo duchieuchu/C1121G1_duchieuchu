@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+<script>
+let money=parseInt(prompt("Nhập số triệu nvd"))
+    let tienthue=0
+    let net =0
+    if (money>=15){
+        tienthue=money*20/100
+        ret =money-tienthue
+        alert("Tiền thuế là "+tienthue+"triệu VND và số tiền bạn nhận được khi đã trừ thuế là "+ret+"triệu VND")
+    }
+    else if(money>=7){
+        tienthue=money*10/100
+        ret =money-tienthue
+        alert("Tiền thuế là "+tienthue+"triệu VND và số tiền bạn nhận được khi đã trừ thuế là "+ret+"triệu VND")
+    }
+    else if(money<7){
+        tienthue=money*5/100
+        ret =money-tienthue
+        alert("Tiền thuế là "+tienthue+"triệu VND và số tiền bạn nhận được khi đã trừ thuế là "+ret+"triệu VND")
+    }
+
+
+</script>
+</body>
+</html>

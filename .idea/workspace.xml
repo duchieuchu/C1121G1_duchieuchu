@@ -20,12 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="351cbde0-9d2c-4653-ad36-fcd61b8db991" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1_case_study/yeu_cau_1/bai1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1_case_study/yeu_cau_2/bai1TinhLuong.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1_case_study/yeu_cau_2/bai2PhuAmNguyenAm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai6.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/hienThiCacSoNguyenToDauTien.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/hienThiCacSoNguyenToDauTien.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/r.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/r.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/rac.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,6 +128,9 @@
       <workItem from="1639010622376" duration="7082000" />
       <workItem from="1639032622035" duration="9355000" />
       <workItem from="1639063901431" duration="1813000" />
+      <workItem from="1639099106777" duration="4376000" />
+      <workItem from="1639109077802" duration="3158000" />
+      <workItem from="1639118342729" duration="7082000" />
     </task>
     <servers />
   </component>
@@ -169,6 +175,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="413" y="14" key="#TaoformlaysurveyKhanhHang.html/0.0.1280.680@0.0.1280.680" timestamp="1638490862808" />
+    <state x="444" y="130" key="#Web_Browsers" timestamp="1639121648588">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="444" y="130" key="#Web_Browsers/0.0.1280.680@0.0.1280.680" timestamp="1639121648588" />
     <state x="387" y="143" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1638435949530">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

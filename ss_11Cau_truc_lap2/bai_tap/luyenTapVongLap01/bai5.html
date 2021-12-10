@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+<script>
+    let S = 0, S0 = 0, S1 = 0, Sum = 0;
+    let fibonacci = "";
+    for (let i = 0; i < 20; i++) {
+        if (i === 0) {
+            S = 1;
+            S1 = 1;
+            fibonacci += S + " ";
+        } else {
+            S = S0 + S1;
+            S0 = S1;
+            S1 = S;
+            fibonacci += S + " "
+            Sum += S;
+        }
+    }
+    document.write(fibonacci + "<br>");
+    document.write("Tổng 20 số đầu tiên của dãy Fibonacci là: " + Sum);
+</script>
+</body>
+</html>
