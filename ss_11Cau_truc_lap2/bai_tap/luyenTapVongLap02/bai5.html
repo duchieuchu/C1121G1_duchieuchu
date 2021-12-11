@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+<script>
+    let tongTien = parseInt(prompt("nhập tiền gửi"));
+    let laiSuat = parseInt(prompt("nhập lãi suất tháng"));
+    let soThangGui = parseInt(prompt("nhập số tháng gửi"));
+    let tienLai=0;
+    for (let i=1;i<=soThangGui;i++){
+        tienLai+=tongTien*laiSuat/100;
+        tongTien +=tongTien*laiSuat/100;
+    }
+    alert("tổng tiền sau khi rút" + tongTien)
+    alert("tien lãi" + tienLai)
+</script>
+</body>
+</html>
