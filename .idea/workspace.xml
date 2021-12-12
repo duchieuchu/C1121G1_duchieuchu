@@ -20,15 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="351cbde0-9d2c-4653-ad36-fcd61b8db991" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap02/bai1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap02/bai2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap02/bai3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap02/bai5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap02/bai4.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai3.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai6.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap02/bai3.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap02/bai3.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,6 +126,7 @@
       <workItem from="1639109077802" duration="3158000" />
       <workItem from="1639118342729" duration="7082000" />
       <workItem from="1639233806027" duration="6226000" />
+      <workItem from="1639289350263" duration="2330000" />
     </task>
     <servers />
   </component>
