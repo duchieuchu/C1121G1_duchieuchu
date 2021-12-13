@@ -5,19 +5,11 @@
     <title>hello</title>
 </head>
 <body>
-<p id="display"></p>
-<table border="1" style="border-collapse: collapse"></table>
 </body>
 </html>
 <script>
-    let tablestring='<table border="1" style="border-collapse: collapse">'
-    for (let i =1;i<10;i++){
-        tablestring+='<tr>'
-        for (let y=1;y<10;y++){
-            tablestring+="<td style='font-size:27px'>"+y+"X"+ i + " = " + i*y + "</td>"
-        }
-        tablestring+='</tr>'
-    }
-    tablestring+='</table>'
-document.getElementById('display').innerHTML=tablestring
+    let x = [1,3,5,7];
+    let y = [2,4,6];
+    x[2] = y[x.length-3] + x [ x[0] + y[0] ];
+    console.log(x);
 </script>

@@ -20,21 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="351cbde0-9d2c-4653-ad36-fcd61b8db991" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap02/bai3TamGiac3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap02/bai3TamGiac4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap02/bai4HinhChuNhathtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss12_Mang1/thuc_hanh/DaoNguocCacPhanTuTrongMang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss12_Mang1/thuc_hanh/TaoVaThaoTacVoiMang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss12_Mang1/thuc_hanh/TimGiaTriLonNhatTrongMang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss12_Mang1/thuc_hanh/TimGiaTriTrongMang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss_5HTML Form &amp; Table/ss1_kanban/thuc_hanh/eyJuYW1lIjoiZHVjaGlldWNodSIsImNvdXJzZSI6Iktow7NhIGjhu41jIDEifQ==.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss_5HTML Form &amp; Table/ss1_kanban/thuc_hanh/eyJuYW1lIjoiZHVjaGlldWNodSIsImNvdXJzZSI6Iktow7NhIGjhu41jIDIifQ== (1).jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai3.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai3HienThi20SoDauTienFibonaci.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai4.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai4SoDauTienFibonaciChiaHetCho5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai5.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai5Tong20SoDauTienFibonaci.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai6.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai6Tong30SochiaHetCho7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai7.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai7FizzBuzz.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai8.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai8GameDoanSo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap02/bai1.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap02/bai1Finonaci.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap02/bai2.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap02/bai2GiaiThuaCua1SoNguyenDuong.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap02/bai3.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap02/bai3TamGiac1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap02/bai4.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap02/bai3TamGiac2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap02/bai5.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/luyenTapVongLap02/bai5TinhTien.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss1_kanban/thuc_hanh/eyJuYW1lIjoiZHVjaGlldWNodSIsImNvdXJzZSI6Iktow7NhIGjhu41jIDEifQ==.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss1_kanban/thuc_hanh/eyJuYW1lIjoiZHVjaGlldWNodSIsImNvdXJzZSI6Iktow7NhIGjhu41jIDIifQ== (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/r.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/r.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,6 +136,9 @@
       <workItem from="1639289350263" duration="2330000" />
       <workItem from="1639291829017" duration="16000" />
       <workItem from="1639296494469" duration="1138000" />
+      <workItem from="1639297740328" duration="1302000" />
+      <workItem from="1639317187573" duration="227000" />
+      <workItem from="1639370107134" duration="2588000" />
     </task>
     <servers />
   </component>
@@ -189,10 +187,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="444" y="130" key="#Web_Browsers/0.0.1280.680@0.0.1280.680" timestamp="1639121648588" />
-    <state x="387" y="143" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1638435949530">
+    <state x="387" y="143" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1639317311906">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="387" y="143" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1638435949530" />
+    <state x="387" y="143" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1639317311906" />
     <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1638751729853">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
