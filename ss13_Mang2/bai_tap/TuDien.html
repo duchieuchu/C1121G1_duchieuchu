@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+<script>
+    let english = ["apple", "orange", "pear", "carrots", "beans", "peas"];
+    let vietnamese = ["Táo", "Cam", "Lê", "Cà rốt", "Đậu", "Đậu Hà Lan"];
+    let enterWord = prompt("nhâp từ tiếng anh");
+    let result = "";
+    for (let i = 0;i<english.length;i++){
+        if ( enterWord===english[i]){
+            result=vietnamese[i];
+            document.write(result)
+        }
+    }
+</script>
+</body>
+</html>
