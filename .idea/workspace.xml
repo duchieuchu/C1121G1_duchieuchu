@@ -20,16 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="351cbde0-9d2c-4653-ad36-fcd61b8db991" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ss12_Mang1/thuc_hanh/DaoNguocCacPhanTuTrongMang.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss12_Mang1/thuc_hanh/TaoVaThaoTacVoiMang.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss12_Mang1/thuc_hanh/TimGiaTriLonNhatTrongMang.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss12_Mang1/thuc_hanh/TimGiaTriTrongMang.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss_5HTML Form &amp; Table/ss1_kanban/thuc_hanh/eyJuYW1lIjoiZHVjaGlldWNodSIsImNvdXJzZSI6Iktow7NhIGjhu41jIDEifQ==.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss_5HTML Form &amp; Table/ss1_kanban/thuc_hanh/eyJuYW1lIjoiZHVjaGlldWNodSIsImNvdXJzZSI6Iktow7NhIGjhu41jIDIifQ== (1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss12_Mang2/bai_tap/Su_dung_cac_ham_co_san_trong_mang/Bai1NoiCacPhanTuTrong1Mang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss12_Mang2/bai_tap/Su_dung_cac_ham_co_san_trong_mang/Bai2Chen-Giua2SoChan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss12_Mang2/bai_tap/Su_dung_cac_ham_co_san_trong_mang/Bai3ChuyenChuThuongSangChuHoa.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss12_Mang2/bai_tap/TuDien.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss12_Mang2/bai_tap/r.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss1_kanban/thuc_hanh/eyJuYW1lIjoiZHVjaGlldWNodSIsImNvdXJzZSI6Iktow7NhIGjhu41jIDEifQ==.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss1_kanban/thuc_hanh/eyJuYW1lIjoiZHVjaGlldWNodSIsImNvdXJzZSI6Iktow7NhIGjhu41jIDIifQ== (1).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/r.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss_11Cau_truc_lap2/bai_tap/r.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss12_Mang1/thuc_hanh/TaoBanCaroDonGian.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss12_Mang1/thuc_hanh/TaoBanCaroDonGian.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +135,8 @@
       <workItem from="1639296494469" duration="1138000" />
       <workItem from="1639297740328" duration="1302000" />
       <workItem from="1639317187573" duration="227000" />
-      <workItem from="1639370107134" duration="2588000" />
+      <workItem from="1639370107134" duration="3060000" />
+      <workItem from="1639377402742" duration="12395000" />
     </task>
     <servers />
   </component>
@@ -171,10 +169,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="267" y="19" key="#Inspections" timestamp="1638959705582">
+    <state x="267" y="19" key="#Inspections" timestamp="1639383188921">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="267" y="19" key="#Inspections/0.0.1280.680@0.0.1280.680" timestamp="1638959705582" />
+    <state x="267" y="19" key="#Inspections/0.0.1280.680@0.0.1280.680" timestamp="1639383188921" />
     <state x="526" y="204" key="#Notifications" timestamp="1638609757727">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
