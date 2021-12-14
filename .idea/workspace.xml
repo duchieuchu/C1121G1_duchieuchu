@@ -19,7 +19,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="351cbde0-9d2c-4653-ad36-fcd61b8db991" name="Default Changelist" comment="" />
+    <list default="true" id="351cbde0-9d2c-4653-ad36-fcd61b8db991" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ss13_Mang2/bai_tap/LuyenTapMang1/Bai2HienThiGiaTriLonNhatVaViTriCuaPhanTu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss13_Mang2/bai_tap/LuyenTapMang1/Bai3HienThiSoLonNhatVaGiaTriTrungBinh.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss13_Mang2/bai_tap/LuyenTapMang1/Bai4KhoiTaoNhapVaDaoNguocCacPhanTu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss13_Mang2/bai_tap/LuyenTapMang1/Bai5DemSoNguyenAmTrongMotChuoi.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss13_Mang2/bai_tap/LuyenTapMang1/Bai6XemVCoNamTrongMangSoNguyenKhong.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss13_Mang2/bai_tap/LuyenTapMang1/Bai7XoaVVaGan0ChoPhanTuCuoiCungCuaMang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss13_Mang2/bai_tap/LuyenTapMang1/Bai8SapXepGiamDan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss13_Mang2/bai_tap/LuyenTapMang1/Bai9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss13_Mang2/bai_tap/LuyenTapMang1/HienThiSoNguyenLonHonHoacBang10.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss13_Mang2/bai_tap/LuyenTapMang1/Bai1HienThiSoNguyenLonHonHoacBang10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss13_Mang2/bai_tap/TuDien.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss13_Mang2/bai_tap/TuDien.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -131,6 +143,7 @@
       <workItem from="1639377402742" duration="12395000" />
       <workItem from="1639391715753" duration="8000" />
       <workItem from="1639408091597" duration="3505000" />
+      <workItem from="1639441642693" duration="15361000" />
     </task>
     <servers />
   </component>

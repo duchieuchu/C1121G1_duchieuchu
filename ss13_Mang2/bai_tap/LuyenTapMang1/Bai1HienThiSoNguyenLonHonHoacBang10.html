@@ -6,9 +6,9 @@
 </head>
 <body>
 <script>
-    let numbers = []
+    let numbers = [];
     for (let i = 0; i < 10; i++)
-        numbers[i] = prompt("nhập giá trị số nguyên thứ " + i);
+        numbers[i] = parseInt(prompt("nhập giá trị số nguyên thứ " + i));
     let i = 0;
     let count = 0;
     for (let i = 0; i < numbers.length; i++) {
@@ -16,7 +16,7 @@
             count = count + 1;
         }
     }
-    alert("Có " + count + " số lớn hơn hoặc = 10")
+    alert("Có " + count + " số lớn hơn hoặc = 10");
 </script>
 </body>
 </html>

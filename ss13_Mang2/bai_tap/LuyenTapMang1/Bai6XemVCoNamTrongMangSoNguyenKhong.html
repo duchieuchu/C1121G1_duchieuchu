@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+<script>
+    let numbers = [];
+    for (let i = 0; i < 10; i++) {
+        numbers[i] = parseInt(prompt("nhập số nguyên thứ " + i));
+    }
+    alert(numbers);
+    let V =111;
+    let check = false;
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] === V) {
+            alert("V is in the array");
+            check = true;
+        }
+
+    }
+    if (!check) {
+        alert("V is not in the array");
+    }
+</script>
+</body>
+</html>

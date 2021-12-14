@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+<script>
+    let numbersArray = [];
+    for (let i = 0; i < 10; i++) {
+        numbersArray[i] = parseInt(prompt("nhập số nguyên thứ " + i));
+    }
+    numbersArray.sort((a, b) => {
+        if (a > b) return -1;
+        if (a < b) return 1;
+        return 0
+    });
+    document.write("sắp xếp giảm dần : "+numbersArray);
+
+</script>
+</body>
+</html>

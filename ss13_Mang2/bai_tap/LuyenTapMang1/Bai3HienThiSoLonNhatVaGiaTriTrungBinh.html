@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+<script>
+    let numbers = [];
+    for (let i = 0; i < 10; i++) {
+        numbers[i] = parseInt(prompt("nhập số nguyên thứ " + i));
+    }
+    alert(numbers);
+    let max = numbers[0];
+    let total =0 ;
+    let avg
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] > max) {
+            max = numbers[i];
+        }
+        total=total+numbers[i];
+    }
+    avg = total/numbers.length;
+    alert("Max: " + max + " giá trị trung bình là: " +avg )
+</script>
+</body>
+</html>
