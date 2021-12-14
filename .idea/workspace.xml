@@ -20,17 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="351cbde0-9d2c-4653-ad36-fcd61b8db991" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ss13_Mang2/bai_tap/LuyenTapMang1/Bai2HienThiGiaTriLonNhatVaViTriCuaPhanTu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss13_Mang2/bai_tap/LuyenTapMang1/Bai3HienThiSoLonNhatVaGiaTriTrungBinh.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss13_Mang2/bai_tap/LuyenTapMang1/Bai4KhoiTaoNhapVaDaoNguocCacPhanTu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss13_Mang2/bai_tap/LuyenTapMang1/Bai5DemSoNguyenAmTrongMotChuoi.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss13_Mang2/bai_tap/LuyenTapMang1/Bai6XemVCoNamTrongMangSoNguyenKhong.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss13_Mang2/bai_tap/LuyenTapMang1/Bai7XoaVVaGan0ChoPhanTuCuoiCungCuaMang.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss13_Mang2/bai_tap/LuyenTapMang1/Bai8SapXepGiamDan.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss13_Mang2/bai_tap/LuyenTapMang1/Bai9.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss13_Mang2/bai_tap/LuyenTapMang2/Bai1InCacPhanTuTrongMang2Chieu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss13_Mang2/bai_tap/LuyenTapMang2/Bai2DaoNguocCacKiTuTrongMang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss13_Mang2/bai_tap/LuyenTapMang2/Bai3KhaiBaoKiTuKichThuocCuaMangVaDemKiTu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss13_Mang2/bai_tap/LuyenTapMang2/Bai4DemSoTrongMotChuoi.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss13_Mang2/bai_tap/LuyenTapMang2/Bai5KiemTra2ChuoiCoGiongNhauKhong.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss13_Mang2/bai_tap/LuyenTapMang2/Bai6ThayTheKhiTu-Bang_.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss13_Mang2/bai_tap/LuyenTapMang1/HienThiSoNguyenLonHonHoacBang10.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss13_Mang2/bai_tap/LuyenTapMang1/Bai1HienThiSoNguyenLonHonHoacBang10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss13_Mang2/bai_tap/TuDien.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss13_Mang2/bai_tap/TuDien.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss13_Mang2/bai_tap/rac.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss13_Mang2/bai_tap/rac.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +140,8 @@
       <workItem from="1639377402742" duration="12395000" />
       <workItem from="1639391715753" duration="8000" />
       <workItem from="1639408091597" duration="3505000" />
-      <workItem from="1639441642693" duration="15361000" />
+      <workItem from="1639441642693" duration="16030000" />
+      <workItem from="1639464355488" duration="8649000" />
     </task>
     <servers />
   </component>
@@ -212,10 +210,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="463" y="43" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1638790541716" />
-    <state x="362" y="82" width="540" height="524" key="StructurePopup" timestamp="1638951757390">
+    <state x="362" y="82" width="540" height="524" key="StructurePopup" timestamp="1639468063579">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="362" y="82" width="540" height="524" key="StructurePopup/0.0.1280.680@0.0.1280.680" timestamp="1638951757390" />
+    <state x="362" y="82" width="540" height="524" key="StructurePopup/0.0.1280.680@0.0.1280.680" timestamp="1639468063579" />
     <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1638366583843">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -228,9 +226,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1638366725841" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1638587429492">
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1639457813891">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1638587429492" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1639457813891" />
   </component>
 </project>

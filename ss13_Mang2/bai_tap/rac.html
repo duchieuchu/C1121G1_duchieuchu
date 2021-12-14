@@ -5,6 +5,40 @@
     <title>hello</title>
 </head>
 <body>
+<script>
+
+    let size;
+    let x = new Array(size);
+
+    do {
+        size = prompt('Nhap vao so luong phan tu cua mang', '');
+        check = parseInt(size) == size && 0 < size <= 20;
+    } while (!check)
+
+
+    for (let i = 0; i < size; i++) {
+        x[i] = prompt('Nhap vao gia tri thu ' + i);
+    }
+
+    document.write(x);
+
+
+    for (let i = 0;i <size; i++) {
+        if(x[i]=='-'){
+            x[i]='_';
+
+        }
+    }  document.write('<br>' + x.join(''));
+
+
+
+
+
+
+</script>
+
+
+
 
 </body>
 </html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+<script>
+    let arr = prompt("Nhập vào");
+
+    let arr1 = arr.split("");
+    document.write('ban đầu: '+ arr1 + '<br>');
+    for(let i=0; i<arr1.length; i++) {
+        if (arr1[i] === "-" ) {
+            arr1[i] = ("_");
+        }
+    }
+    document.write('kết quả: '+ arr1 + '<br>');
+</script>
+</body>
+</html>
