@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<script>
+    function isPrime(n)
+    {
+        if (n <= 1)
+            return false;
+        for (let i = 2; i < n; i++)
+            if (n % i === 0)
+                return false;
+
+        return true;
+    }
+    isPrime(2) ? document.write(" true" + "<br>") : document.write(" false" + "<br>");
+
+</script>
+
+</body>
+</html>
