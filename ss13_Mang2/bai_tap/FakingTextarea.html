@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body onload="on()">
+<script>
+    var a = new Array(), n = "";
+    a[1] = 'A';
+    a[2] = 'R';
+    a[3] = 'E';
+    a[4] = ' ';
+    a[5] = 'Y';
+    a[6] = 'O';
+    a[7] = 'U';
+    a[8] = ' ';
+    a[9] = 'O';
+    a[10] = 'K';
+    a[11]=' ';
+
+    function one() {
+        t = document.f.txt.value
+        j = t.length
+        if (j > 0) {
+            for (var i = 1; i <= j; i++) {
+                n = n + a[i]
+                if (i === 11) {
+                    document.f.txt.value = ""
+                    n = ""
+                }
+            }
+        }
+        document.f.txt.value = n
+        n = ""
+        setTimeout("one()", 1)
+    }
+
+    function on() {
+        one()
+    }
+</script>
+</head>
+<center>
+    <h2>Type anthing slowly</h2>
+    <form name="f">
+<textarea name="txt" cols="20" rows="5">
+</textarea>
+</center>
+</body>
+</html>
