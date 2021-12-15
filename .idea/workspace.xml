@@ -20,14 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="351cbde0-9d2c-4653-ad36-fcd61b8db991" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ss13_Mang2/bai_tap/FakingTextarea.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/ChuyenDoiGiuaFeetVaMeters.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/luyen_tap_tao_su_dung_ham01/Bai1TaoHamAlertMessageChuaChuoiXinChao.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/luyen_tap_tao_su_dung_ham01/Bai2TangGiaTriDoiSoLen1VaTraGiaTri.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/luyen_tap_tao_su_dung_ham01/Bai3TaoHamNhan2ThamSo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/luyen_tap_tao_su_dung_ham01/Bai4ThemAlert VaoNhungViTriThichHop.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/luyen_tap_tao_su_dung_ham01/Bai5NgoiSaoVaChomSao.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/luyen_tap_tao_su_dung_ham02/Bai1HamTinhBinhPhuong.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/rac.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/luyen_tap_tao_su_dung_ham01/Bai5NgoiSaoVaChomSao.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/luyen_tap_tao_su_dung_ham01/Bai5NgoiSaoVaChomSao.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,6 +142,7 @@
       <workItem from="1639523831890" duration="5659000" />
       <workItem from="1639551484250" duration="6261000" />
       <workItem from="1639570561941" duration="5668000" />
+      <workItem from="1639578583713" duration="3708000" />
     </task>
     <servers />
   </component>
@@ -234,9 +231,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1638366725841" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1639457813891">
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1639581218021">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1639457813891" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1639581218021" />
   </component>
 </project>

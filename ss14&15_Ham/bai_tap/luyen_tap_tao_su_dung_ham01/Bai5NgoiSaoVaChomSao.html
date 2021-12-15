@@ -5,6 +5,22 @@
     <title>hello</title>
 </head>
 <body>
+<script>
+    let starNameArray = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let constellation = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
 
+    function getConstellation(name) {
+        for (let i = 0; i < starNameArray.length; i++) {
+            if (starNameArray[i] === name) {
+                return alert(name + "(" + constellation[i] + ")");
+            }
+        }
+        return alert("không có trong dữ liệu")
+    }
+
+    let name = prompt("nhập tên ngôi sao");
+    getConstellation(name);
+
+</script>
 </body>
 </html>
