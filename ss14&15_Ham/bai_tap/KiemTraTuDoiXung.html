@@ -5,6 +5,22 @@
     <title>hello</title>
 </head>
 <body>
+<script>
+    function checkPalindrome(word) {
+        let l = word.length;
+        for (let i = 0; i < l / 2; i++) {
+            if (word.charAt(i) !== word.charAt(l - 1 - i)) {
+                return false;
+            }
+        }
+        return true;
+    }
 
+    if (checkPalindrome("222")) {
+        document.write(" is a palindrome");
+    } else {
+        document.write(" is NOT a palindrome");
+    }
+</script>
 </body>
 </html>
