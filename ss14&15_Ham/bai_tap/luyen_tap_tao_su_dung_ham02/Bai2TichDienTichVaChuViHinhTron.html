@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+<script>
+    function calculateTheAreaOfCircle(r) {
+        return s = r * r * 3.1415;
+    }
+
+    function calculateTheCircumferenceOfTheCircle(r) {
+        return c = r * 2 * 3.1415;
+    }
+
+    let radius = parseInt(prompt("nhập bán kính hoặc 1/2 đường kính để tính diện tích hình tròn"));
+    document.write("diện tích hình tròn là ");
+    document.write(calculateTheAreaOfCircle(radius));
+    let perimeter = parseInt(prompt("nhập bán kính  để tính chu vi hình tròn"));
+    document.write("<br>");
+    document.write("chu vi hình tròn là ");
+    document.write(calculateTheCircumferenceOfTheCircle(perimeter));
+</script>
+</body>
+</html>

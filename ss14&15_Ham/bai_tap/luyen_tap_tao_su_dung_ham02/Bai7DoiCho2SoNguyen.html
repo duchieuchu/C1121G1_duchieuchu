@@ -6,11 +6,13 @@
 </head>
 <body>
 <script>
-    function hello() {
-        alert("Xin Chào")
+    function swap(a,b) {
+        let c = a;
+        a=b;
+        b=c;
+        return document.write(a+""+b);
     }
-
-    hello()
+    swap(2,3);
 </script>
 </body>
 </html>

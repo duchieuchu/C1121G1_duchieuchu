@@ -20,10 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="351cbde0-9d2c-4653-ad36-fcd61b8db991" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/luyen_tap_tao_su_dung_ham02/Bai1HamTinhBinhPhuong.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/rac.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/KiemTraTuDoiXung.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/luyen_tap_tao_su_dung_ham02/Bai2TichDienTichVaChuViHinhTron.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/luyen_tap_tao_su_dung_ham02/Bai3TinhGiaiThua.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/luyen_tap_tao_su_dung_ham02/Bai4KiemTraCoPhaiKiTuSoKhong.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/luyen_tap_tao_su_dung_ham02/Bai5GiaTriNhoNHatCua3So.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/luyen_tap_tao_su_dung_ham02/Bai6KiemTraSoNguyenDuong.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/luyen_tap_tao_su_dung_ham02/Bai7DoiCho2SoNguyen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/luyen_tap_tao_su_dung_ham02/Bai8DaoNguocMangSoNguyen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/luyen_tap_tao_su_dung_ham02/Bai9KiemTraKhiTu.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/luyen_tap_tao_su_dung_ham01/Bai5NgoiSaoVaChomSao.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/luyen_tap_tao_su_dung_ham01/Bai5NgoiSaoVaChomSao.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss11_Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai1.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai1So.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss11_Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai2.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai2NhietDo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/luyen_tap_tao_su_dung_ham01/Bai1TaoHamAlertMessageChuaChuoiXinChao.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/luyen_tap_tao_su_dung_ham01/Bai1TaoHamAlertMessageChuaChuoiXinChao.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/luyen_tap_tao_su_dung_ham01/Bai3TaoHamNhan2ThamSo.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/luyen_tap_tao_su_dung_ham01/Bai3TaoHamNhan2ThamSo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/luyen_tap_tao_su_dung_ham01/Bai4ThemAlert VaoNhungViTriThichHop.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/luyen_tap_tao_su_dung_ham01/Bai4ThemAlert VaoNhungViTriThichHop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/luyen_tap_tao_su_dung_ham02/Bai1HamTinhBinhPhuong.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/luyen_tap_tao_su_dung_ham02/Bai1HamTinhBinhPhuong.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/rac.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/rac.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,6 +156,7 @@
       <workItem from="1639551484250" duration="6261000" />
       <workItem from="1639570561941" duration="5668000" />
       <workItem from="1639578583713" duration="3708000" />
+      <workItem from="1639607730813" duration="9038000" />
     </task>
     <servers />
   </component>
