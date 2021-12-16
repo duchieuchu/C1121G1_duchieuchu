@@ -20,9 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="351cbde0-9d2c-4653-ad36-fcd61b8db991" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ss11_Cau_truc_lap2/bai_tap/luyenTapVongLap02/bai4HinhChuNHat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/QuanLySanPham.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss15&amp;16_lap_trinh_huong_doi_tuong/rac.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss15&amp;16_lap_trinh_huong_doi_tuong/thuc_hanh/FunnyCircles.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss15&amp;16_lap_trinh_huong_doi_tuong/thuc_hanh/XayDungLopDate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss15&amp;16_lap_trinh_huong_doi_tuong/thuc_hanh/XayDungLopHinhTron.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/KiemTraSoNguyenTo.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/KiemTraSoNguyenTo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/KiemTraTuDoiXung.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/KiemTraTuDoiXung.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss11_Cau_truc_lap2/bai_tap/luyenTapVongLap02/bai4HinhChuNhathtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/luyen_tap_tao_su_dung_ham02/Bai4KiemTraCoPhaiKiTuSoKhong.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/luyen_tap_tao_su_dung_ham02/Bai4KiemTraCoPhaiKiTuSoKhong.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/rac.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss14&amp;15_Ham/bai_tap/rac.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +149,9 @@
       <workItem from="1639551484250" duration="6261000" />
       <workItem from="1639570561941" duration="5668000" />
       <workItem from="1639578583713" duration="3708000" />
-      <workItem from="1639607730813" duration="11916000" />
+      <workItem from="1639607730813" duration="14665000" />
+      <workItem from="1639639128219" duration="6208000" />
+      <workItem from="1639693017806" duration="3241000" />
     </task>
     <servers />
   </component>
