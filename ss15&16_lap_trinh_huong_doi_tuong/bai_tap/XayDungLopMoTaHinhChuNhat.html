@@ -2,9 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>hello</title>
 </head>
 <body>
+<canvas id="myCanvas" width="1368px" height="768px" style="border:1px solid #d3d3d3;"></canvas>
+<script>
+    class Rectangle {
+        constructor(length, width) {
+            this.length = length;
+            this.width = width;
+        }
 
+        area() {
+            return this.length * this.width;
+        }
+
+        perimeter() {
+            return (this.length + this.width) * 2;
+        }
+
+        createRectangle() {
+            let ctx = document.getElementById('myCanvas').getContext('2d');
+            rectangle = new Rectangle(this.length, this.width);
+            ctx.beginPath();
+            ctx.fillStyle = 'green';
+            ctx.fillRect(100, 200, this.length, this.width);
+        }
+    }
+
+    let a = parseInt(prompt("nhap chieu dai"));
+    let b = parseInt(prompt("nhap chieu rong"));
+    let rectangle = new Rectangle(a, b);
+    alert("S = " + rectangle.area());
+    alert("C = " + rectangle.perimeter());
+    rectangle.createRectangle();
+</script>
 </body>
 </html>
