@@ -6,23 +6,26 @@
 </head>
 <body>
 <script>
-    let S = 0, S0 = 0, S1 = 0, Sum = 0;
+    let s = 0;
+    let s0 = 0;
+    let s1 = 0;
+    let sum = 0;
     let fibonacci = "";
     for (let i = 0; i < 20; i++) {
         if (i === 0) {
-            S = 1;
-            S1 = 1;
-            fibonacci += S + " ";
+            s= 1;
+            s1 = 1;
+            fibonacci += s + " ";
         } else {
-            S = S0 + S1;
-            S0 = S1;
-            S1 = S;
-            fibonacci += S + " "
-            Sum += S;
+            s = s0 + s1;
+            s0 = s1;
+            s1 = s;
+            fibonacci += s + " "
+            sum += s;
         }
     }
     document.write(fibonacci + "<br>");
-    document.write("Tổng 20 số đầu tiên của dãy Fibonacci là: " + Sum);
+    document.write("Tổng 20 số đầu tiên của dãy Fibonacci là: " + sum);
 </script>
 </body>
 </html>

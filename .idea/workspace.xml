@@ -20,11 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="351cbde0-9d2c-4653-ad36-fcd61b8db991" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ss15&amp;16_lap_trinh_huong_doi_tuong/bai_tap/XayDungLopMoTaTemperature.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss15&amp;16_lap_trinh_huong_doi_tuong/bai_tap/XayDungLopMoTaHinhChuNhat.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss15&amp;16_lap_trinh_huong_doi_tuong/bai_tap/XayDungLopMoTaHinhChuNhat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss15&amp;16_lap_trinh_huong_doi_tuong/rac.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss15&amp;16_lap_trinh_huong_doi_tuong/rac.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss15&amp;16_lap_trinh_huong_doi_tuong/thuc_hanh/FunnyCircles.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss15&amp;16_lap_trinh_huong_doi_tuong/thuc_hanh/FunnyCircles.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss11_Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai3HienThi20SoDauTienFibonaci.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai3HienThi20SoDauTienFibonaci.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss11_Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai4SoDauTienFibonaciChiaHetCho5.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai4SoDauTienFibonaciChiaHetCho5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss11_Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai5Tong20SoDauTienFibonaci.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai5Tong20SoDauTienFibonaci.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss11_Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai6Tong30SochiaHetCho7.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai6Tong30SochiaHetCho7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss11_Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai7FizzBuzz.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai7FizzBuzz.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss13_Mang2/bai_tap/luyen_tap_mang1/Bai7XoaVVaGan0ChoPhanTuCuoiCungCuaMang.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss13_Mang2/bai_tap/luyen_tap_mang1/Bai7XoaVVaGan0ChoPhanTuCuoiCungCuaMang.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss15&amp;16_lap_trinh_huong_doi_tuong/bai_tap/XayDungLopMoTaDienThoai.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss15&amp;16_lap_trinh_huong_doi_tuong/bai_tap/XayDungLopMoTaHinhChuNhat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss15&amp;16_lap_trinh_huong_doi_tuong/bai_tap/XayDungLopMoTaTemperature.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss15&amp;16_lap_trinh_huong_doi_tuong/rac.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss15&amp;16_lap_trinh_huong_doi_tuong/thuc_hanh/FunnyCircles.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss15&amp;16_lap_trinh_huong_doi_tuong/thuc_hanh/XayDungLopDate.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss15&amp;16_lap_trinh_huong_doi_tuong/thuc_hanh/XayDungLopHinhTron.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss16_lap_trinh_huong_doi_tuong1/rac.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss16_lap_trinh_huong_doi_tuong1/rac.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss17_lap_trinh_huong_doi_tuong2/bai_tap/CaRo.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss17_lap_trinh_huong_doi_tuong2/bai_tap/CaRo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss17_lap_trinh_huong_doi_tuong2/thuc_hanh/XayDungLopMoPhongHoatDongDenPin.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss17_lap_trinh_huong_doi_tuong2/thuc_hanh/XayDungLopMoPhongHoatDongDenPin.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +160,11 @@
       <workItem from="1639639128219" duration="6208000" />
       <workItem from="1639693017806" duration="3688000" />
       <workItem from="1639703332086" duration="1908000" />
-      <workItem from="1639723207637" duration="7650000" />
+      <workItem from="1639723207637" duration="8482000" />
+      <workItem from="1639747593328" duration="620000" />
+      <workItem from="1639801576525" duration="5148000" />
+      <workItem from="1639820273608" duration="613000" />
+      <workItem from="1639835905615" duration="3839000" />
     </task>
     <servers />
   </component>
@@ -209,14 +225,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="389" y="196" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.680@0.0.1280.680" timestamp="1638344348420" />
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1639840169522">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1639840169522" />
     <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1638609075757">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1638609075757" />
-    <state x="463" y="43" key="RollbackChangesDialog" timestamp="1638790541716">
+    <state x="463" y="43" key="RollbackChangesDialog" timestamp="1639839848445">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="463" y="43" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1638790541716" />
+    <state x="463" y="43" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1639839848445" />
     <state x="362" y="82" width="540" height="524" key="StructurePopup" timestamp="1639468063579">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
