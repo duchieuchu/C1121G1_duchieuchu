@@ -7,21 +7,13 @@
 <body>
 <script>
     function min(a,b,c) {
-        if (a<b<c){
-            return a
-        }
-        else if (b<a<c){
-            return b
-        }
-        else if (c<a<b){
-            return c
-        }
+        return Math.min(a,b,c);
     }
-    let a =parseInt(prompt("nhập a"))
-    let b =parseInt(prompt("nhập b"))
-    let c  =parseInt(prompt("nhập c"))
-    document.write("giá trị nhỏ nhất là ")
-    document.write(min(a,b,c))
+    let a = prompt("nhap a")
+    let b = prompt("nhap b")
+    let c = prompt("nhap c")
+    document.write("gia tri nho nhat la "+min(a,b,c))
+
 </script>
 </body>
 </html>
