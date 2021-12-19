@@ -21,11 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="351cbde0-9d2c-4653-ad36-fcd61b8db991" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss13_Mang2/bai_tap/CaRo.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss13_Mang2/bai_tap/CaRo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss16_lap_trinh_huong_doi_tuong1/bai_tap/XayDungLopMoTaDienThoai.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss16_lap_trinh_huong_doi_tuong1/bai_tap/XayDungLopMoTaDienThoai.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss16_lap_trinh_huong_doi_tuong1/bai_tap/XayDungLopMoTaTemperature.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss16_lap_trinh_huong_doi_tuong1/bai_tap/XayDungLopMoTaTemperature.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss16_lap_trinh_huong_doi_tuong1/rac.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss17_lap_trinh_huong_doi_tuong2/bai_tap/rac.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss17_lap_trinh_huong_doi_tuong2/bai_tap/CaRo.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss17_lap_trinh_huong_doi_tuong2/bai_tap/CaRo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss16_lap_trinh_huong_doi_tuong1/bai_tap/XayDungLopMoTaHinhChuNhat.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss16_lap_trinh_huong_doi_tuong1/bai_tap/XayDungLopMoTaHinhChuNhat.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +167,7 @@
       <workItem from="1639835905615" duration="4015000" />
       <workItem from="1639876745649" duration="4854000" />
       <workItem from="1639910398808" duration="777000" />
-      <workItem from="1639922562602" duration="8896000" />
+      <workItem from="1639922562602" duration="10194000" />
     </task>
     <servers />
   </component>

@@ -7,10 +7,10 @@
 <p id="display"></p>
 <body>
 <script>
-    let data = new Array(10);
-    for (let i = 0; i < 10; i++) {
-        data[i] = new Array(10);
-        for (let j = 0; j < 10; j++) {
+    let data = new Array(20);
+    for (let i = 0; i < 20; i++) {
+        data[i] = new Array(20);
+        for (let j = 0; j < 20; j++) {
             data[i][j] = "";
         }
 
@@ -20,9 +20,9 @@
 
     function display() {
         let tableString = '<table border="1">';
-        for (let i = 0; i < 10; i++) {
+        for (let i = 0; i < 20; i++) {
             tableString += '<tr>';
-            for (let j = 0; j < 10; j++) {
+            for (let j = 0; j < 20; j++) {
                 tableString += '<td width="25" height="25" onclick="play(' + i + ',' + j + ')">' + data[i][j] + '</td>';
             }
             tableString += '</tr>'
@@ -56,8 +56,8 @@
         }
     }
     function checkWin() {
-        for (let i = 0; i < 10; i++) {
-            for (let j = 0; j < 10; j++) {
+        for (let i = 0; i < 20; i++) {
+            for (let j = 0; j < 20; j++) {
                 if (data[i][j] == "X") {
                     if (data[i][j + 1] == "X" && data[i][j + 2] == "X") {
                         return true;

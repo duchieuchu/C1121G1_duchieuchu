@@ -23,7 +23,6 @@
 
         createRectangle() {
             let ctx = document.getElementById('myCanvas').getContext('2d');
-            rectangle = new Rectangle(this.length, this.width);
             ctx.beginPath();
             ctx.fillStyle = 'green';
             ctx.fillRect(100, 200, this.length, this.width);
