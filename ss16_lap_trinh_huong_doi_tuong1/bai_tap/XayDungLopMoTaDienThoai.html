@@ -5,8 +5,153 @@
     <title>hello</title>
 </head>
 <body>
-<script>
-    
-</script>
+<h1>NOKIA</h1>Tắt<input type="range" min="0" max="1" onclick="nokia.batTat(nokia)">Bật</input><br><br>
+<button onclick="nokia.kiemTraBatTat(nokia)">kiemTraBatTat</button>
+<button onclick="nokia.sacPin(nokia)">sacPin</button>
+<br><br>
+<button onclick="nokia.soanTinNhan(nokia)">soanTinNhan</button>
+<button onclick="nokia.guiTinNhan (nokia)">guiTinNhan</button>
+<br><br>
+<button onclick="nokia.nhanTinNhan(nokia,iPhone)">nhanTinNhan</button>
+<button onclick="nokia.hopThuDen(nokia)">hopThuDen</button>
+<button onclick="nokia.tinDaGui(nokia)">tinDaGui</button>
+<h1>IPHONE</h1>Tắt<input type="range" min="0" max="1" onclick="iPhone.batTat(iPhone)">Bật</input><br><br>
+<button onclick="iPhone.kiemTraBatTat(iPhone)">kiemTraBatTat</button>
+<button onclick="iPhone.sacPin(iPhone)">sacPin</button>
+<br><br>
+<button onclick="iPhone.soanTinNhan(iPhone)">soanTinNhan</button>
+<button onclick="iPhone.guiTinNhan (iPhone)">guiTinNhan</button>
+<br><br>
+<button onclick="iPhone.nhanTinNhan(iPhone,nokia)">nhanTinNhan</button>
+<button onclick="iPhone.hopThuDen(iPhone)">hopThuDen</button>
+<button onclick="iPhone.tinDaGui(iPhone)">tinDaGui</button>
 </body>
 </html>
+<script>
+    class Mobile {
+        constructor(phanTramPin, boNhoTinNhanNhap, boNhoTinNhanDen, boNhoTinNhanDaGui, flag) {
+            this.phanTramPin = phanTramPin;
+            this.boNhoTinNhanNhap = boNhoTinNhanNhap;
+            this.boNhoTinNhanDen = boNhoTinNhanDen;
+            this.boNhoTinNhanDaGui = boNhoTinNhanDaGui;
+            this.flag = flag;
+        }
+
+        kiemTraBatTat(mobile) {
+            if (mobile.flag) {
+                alert("Điện thoại đang bật");
+            } else {
+                alert("Điện thoại đang tắt");
+            }
+            if (mobile.phanTramPin < 10) {
+                alert("Bạn cần sạc pin điện thoại");
+            }
+            mobile.phanTramPin--;
+        }
+
+        batTat(mobile) {
+            mobile.flag = !mobile.flag;
+            console.log(mobile.flag);
+            if (mobile.phanTramPin < 10) {
+                alert("Bạn cần sạc pin điện thoại");
+            }
+            mobile.phanTramPin--;
+        }
+
+        sacPin(mobile) {
+            if (mobile.flag) {
+                while (10 < mobile.phanTramPin && mobile.phanTramPin < 100) {
+                    alert("Bắt đầu sạc pin")
+                    mobile.phanTramPin++;
+                }
+                if (mobile.phanTramPin == 100) {
+                    alert("Điện thoại bạn full pin")
+                }
+            } else {
+                alert("Điện thoại đang tắt");
+            }
+        }
+
+        soanTinNhan(mobile) {
+            if (mobile.flag) {
+                let tinNhan = prompt("Soạn tin nhắn");
+                mobile.boNhoTinNhanNhap.push(tinNhan);
+            } else {
+                alert("Điện thoại đang tắt");
+            }
+            if (mobile.phanTramPin < 10) {
+                alert("Bạn cần sạc pin điện thoại");
+            }
+            mobile.phanTramPin--;
+        }
+
+        guiTinNhan(mobile) {
+            if (mobile.flag) {
+                if (mobile.boNhoTinNhanNhap.length != 0) {
+                    let tinNhan = mobile.boNhoTinNhanNhap[0];
+                    mobile.boNhoTinNhanDaGui.push(mobile.boNhoTinNhanNhap[0]);
+                    alert("Bạn đã gửi tin nhắn:" + tinNhan);
+                    console.log(mobile.boNhoTinNhanDaGui);
+                } else {
+                    alert("Bạn chưa soạn tin nhắn!");
+                }
+            } else {
+                alert("Điện thoại đang tắt");
+            }
+            if (mobile.phanTramPin < 10) {
+                alert("Bạn cần sạc pin điện thoại");
+            }
+            mobile.phanTramPin--;
+        }
+
+        nhanTinNhan(mobile1, mobile2) {
+            if (mobile1.flag) {
+                let tinNhan = mobile2.boNhoTinNhanNhap.shift();
+                mobile1.boNhoTinNhanDen.push(tinNhan);
+                alert("Tin nhắn nhận được là: " + mobile1.boNhoTinNhanDen[0]);
+            } else {
+                alert("Điện thoại đang tắt")
+            }
+            if (mobile1.phanTramPin < 10) {
+                alert("Bạn cần sạc pin điện thoại");
+            } else {
+                mobile1.phanTramPin--;
+            }
+        }
+
+        hopThuDen(mobile) {
+            if (mobile.flag) {
+                alert(mobile.boNhoTinNhanDen.join(","));
+            } else {
+                alert("Điện thoại đang tắt")
+            }
+            if (mobile.phanTramPin < 10) {
+                alert("Bạn cần sạc pin điện thoại");
+            } else {
+                mobile.phanTramPin--;
+            }
+        }
+
+        tinDaGui(mobile) {
+            if (mobile.flag) {
+                alert(mobile.boNhoTinNhanDaGui.join(","));
+            } else {
+                alert("Điện thoại đang tắt")
+            }
+            if (mobile.phanTramPin < 10) {
+                alert("Bạn cần sạc pin điện thoại");
+            } else {
+                mobile.phanTramPin--;
+            }
+        }
+    }
+
+    let tinNhanNhapArrnokia = [];
+    let tinNhanDenArrnokia = [];
+    let tinNhanDaGuiArrnokia = [];
+    let tinNhanNhapArriPhone = [];
+    let tinNhanDenArriPhone = [];
+    let tinNhanDaGuiArriPhone = [];
+    let nokia = new Mobile(100, tinNhanNhapArrnokia, tinNhanDenArrnokia, tinNhanDaGuiArrnokia, true);
+    let iPhone = new Mobile(100, tinNhanNhapArriPhone, tinNhanDenArriPhone, tinNhanDaGuiArriPhone, true);
+</script>

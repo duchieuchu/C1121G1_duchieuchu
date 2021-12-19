@@ -21,22 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="351cbde0-9d2c-4653-ad36-fcd61b8db991" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai3HienThi20SoDauTienFibonaci.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai3HienThi20SoDauTienFibonaci.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai4SoDauTienFibonaciChiaHetCho5.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai4SoDauTienFibonaciChiaHetCho5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai5Tong20SoDauTienFibonaci.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai5Tong20SoDauTienFibonaci.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai6Tong30SochiaHetCho7.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai6Tong30SochiaHetCho7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai7FizzBuzz.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_Cau_truc_lap2/bai_tap/luyenTapVongLap01/bai7FizzBuzz.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss13_Mang2/bai_tap/luyen_tap_mang1/Bai7XoaVVaGan0ChoPhanTuCuoiCungCuaMang.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss13_Mang2/bai_tap/luyen_tap_mang1/Bai7XoaVVaGan0ChoPhanTuCuoiCungCuaMang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss15&amp;16_lap_trinh_huong_doi_tuong/bai_tap/XayDungLopMoTaDienThoai.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss15&amp;16_lap_trinh_huong_doi_tuong/bai_tap/XayDungLopMoTaHinhChuNhat.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss15&amp;16_lap_trinh_huong_doi_tuong/bai_tap/XayDungLopMoTaTemperature.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss15&amp;16_lap_trinh_huong_doi_tuong/rac.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss15&amp;16_lap_trinh_huong_doi_tuong/thuc_hanh/FunnyCircles.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss15&amp;16_lap_trinh_huong_doi_tuong/thuc_hanh/XayDungLopDate.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss15&amp;16_lap_trinh_huong_doi_tuong/thuc_hanh/XayDungLopHinhTron.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss16_lap_trinh_huong_doi_tuong1/rac.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss16_lap_trinh_huong_doi_tuong1/rac.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss13_Mang2/bai_tap/CaRo.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss13_Mang2/bai_tap/CaRo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss16_lap_trinh_huong_doi_tuong1/bai_tap/XayDungLopMoTaDienThoai.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss16_lap_trinh_huong_doi_tuong1/bai_tap/XayDungLopMoTaDienThoai.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss16_lap_trinh_huong_doi_tuong1/bai_tap/XayDungLopMoTaTemperature.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss16_lap_trinh_huong_doi_tuong1/bai_tap/XayDungLopMoTaTemperature.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss16_lap_trinh_huong_doi_tuong1/rac.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss17_lap_trinh_huong_doi_tuong2/bai_tap/rac.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ss17_lap_trinh_huong_doi_tuong2/bai_tap/CaRo.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss17_lap_trinh_huong_doi_tuong2/bai_tap/CaRo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss17_lap_trinh_huong_doi_tuong2/thuc_hanh/XayDungLopMoPhongHoatDongDenPin.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss17_lap_trinh_huong_doi_tuong2/thuc_hanh/XayDungLopMoPhongHoatDongDenPin.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +60,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/ss_9Cau_truc_dieu_kien2/bai_tap/LuyenTapCauTrucDieuKien02" />
+    <property name="nodejs_interpreter_path" value="node" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
@@ -81,6 +71,20 @@
       <recent name="D:\codegym\C1121G1_duchieuchu\ss7_bien_kieu_du_lieu&amp;toan_tu\bai_tap" />
       <recent name="D:\codegym\C1121G1_duchieuchu\ss_5HTML Form &amp; Table\baitap" />
     </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.XayDungGuiTinDienThoai.html">
+    <configuration name="XayDungGuiTinDienThoai.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/C1121G1_duchieuchu/ss16_lap_trinh_huong_doi_tuong1/bai_tap/XayDungGuiTinDienThoai.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="đ.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/ss16_lap_trinh_huong_doi_tuong1/bai_tap/đ.js" working-dir="$PROJECT_DIR$/ss16_lap_trinh_huong_doi_tuong1/bai_tap">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.XayDungGuiTinDienThoai.html" />
+        <item itemvalue="Node.js.đ.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -164,7 +168,10 @@
       <workItem from="1639747593328" duration="620000" />
       <workItem from="1639801576525" duration="5148000" />
       <workItem from="1639820273608" duration="613000" />
-      <workItem from="1639835905615" duration="3839000" />
+      <workItem from="1639835905615" duration="4015000" />
+      <workItem from="1639876745649" duration="4854000" />
+      <workItem from="1639910398808" duration="777000" />
+      <workItem from="1639922562602" duration="8896000" />
     </task>
     <servers />
   </component>
@@ -213,6 +220,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="444" y="130" key="#Web_Browsers/0.0.1280.680@0.0.1280.680" timestamp="1639121648588" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1639925905912">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1639925905912" />
     <state x="387" y="143" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1639317311906">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -221,6 +232,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1638751729853" />
+    <state x="351" y="0" key="#đ.js" timestamp="1639924792386">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="351" y="0" key="#đ.js/0.0.1280.680@0.0.1280.680" timestamp="1639924792386" />
     <state x="389" y="196" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1638344348420">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -233,10 +248,74 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1638609075757" />
-    <state x="463" y="43" key="RollbackChangesDialog" timestamp="1639839848445">
+    <state width="1281" height="213" key="GridCell.Tab.0.bottom" timestamp="1639928456389">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="463" y="43" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1639839848445" />
+    <state width="1281" height="213" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1639928456389" />
+    <state width="1281" height="213" key="GridCell.Tab.0.center" timestamp="1639928456389">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1281" height="213" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1639928456389" />
+    <state width="1281" height="213" key="GridCell.Tab.0.left" timestamp="1639928456389">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1281" height="213" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1639928456389" />
+    <state width="1281" height="213" key="GridCell.Tab.0.right" timestamp="1639928456389">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1281" height="213" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1639928456389" />
+    <state width="1281" height="213" key="GridCell.Tab.1.bottom" timestamp="1639928456390">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1281" height="213" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1639928456390" />
+    <state width="1281" height="213" key="GridCell.Tab.1.center" timestamp="1639928456390">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1281" height="213" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1639928456390" />
+    <state width="1281" height="213" key="GridCell.Tab.1.left" timestamp="1639928456389">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1281" height="213" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1639928456389" />
+    <state width="1281" height="213" key="GridCell.Tab.1.right" timestamp="1639928456390">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1281" height="213" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1639928456390" />
+    <state width="1281" height="213" key="GridCell.Tab.2.bottom" timestamp="1639928456391">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1281" height="213" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1639928456391" />
+    <state width="1281" height="213" key="GridCell.Tab.2.center" timestamp="1639928456390">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1281" height="213" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1639928456390" />
+    <state width="1281" height="213" key="GridCell.Tab.2.left" timestamp="1639928456390">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1281" height="213" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1639928456390" />
+    <state width="1281" height="213" key="GridCell.Tab.2.right" timestamp="1639928456391">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1281" height="213" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1639928456391" />
+    <state width="1281" height="213" key="GridCell.Tab.3.bottom" timestamp="1639928456391">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1281" height="213" key="GridCell.Tab.3.bottom/0.0.1280.680@0.0.1280.680" timestamp="1639928456391" />
+    <state width="1281" height="213" key="GridCell.Tab.3.center" timestamp="1639928456391">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1281" height="213" key="GridCell.Tab.3.center/0.0.1280.680@0.0.1280.680" timestamp="1639928456391" />
+    <state width="1281" height="213" key="GridCell.Tab.3.left" timestamp="1639928456391">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1281" height="213" key="GridCell.Tab.3.left/0.0.1280.680@0.0.1280.680" timestamp="1639928456391" />
+    <state width="1281" height="213" key="GridCell.Tab.3.right" timestamp="1639928456391">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1281" height="213" key="GridCell.Tab.3.right/0.0.1280.680@0.0.1280.680" timestamp="1639928456391" />
+    <state x="463" y="43" key="RollbackChangesDialog" timestamp="1639928250104">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="463" y="43" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1639928250104" />
     <state x="362" y="82" width="540" height="524" key="StructurePopup" timestamp="1639468063579">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -249,17 +328,25 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1638366583843" />
+    <state x="450" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1639928244774">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="450" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1639928244774" />
     <state x="0" y="0" width="587" height="680" key="find.popup" timestamp="1638837292128">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="0" y="0" width="587" height="680" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1638837292128" />
-    <state x="297" y="151" key="run.anything.popup" timestamp="1638366725841">
+    <state x="358" y="149" key="jetbrains.nodejs.interpreters-dialog" timestamp="1639925904650">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1638366725841" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1639581218021">
+    <state x="358" y="149" key="jetbrains.nodejs.interpreters-dialog/0.0.1280.680@0.0.1280.680" timestamp="1639925904650" />
+    <state x="297" y="151" key="run.anything.popup" timestamp="1639878249844">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1639581218021" />
+    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1639878249844" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1639927133008">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1639927133008" />
   </component>
 </project>

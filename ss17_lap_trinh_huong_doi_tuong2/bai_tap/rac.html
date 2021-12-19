@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>hello</title>
 </head>
-<body>
 <p id="display"></p>
+<body>
 <script>
     let data = new Array(10);
     for (let i = 0; i < 10; i++) {
@@ -15,7 +15,7 @@
         }
 
     }
-    let checkPlayer1 = true;//nguoi choi 1 danh
+    let checkPlayer1 = true;// người chời 1 đánh
     display();
 
     function display() {
@@ -23,14 +23,13 @@
         for (let i = 0; i < 10; i++) {
             tableString += '<tr>';
             for (let j = 0; j < 10; j++) {
-                tableString += '<td width ="25" height="25"onclick="play(' + i + ',' + j + ')">' + data[i][j] + '</td>';
+                tableString += '<td width="25" height="25" onclick="play(' + i + ',' + j + ')">' + data[i][j] + '</td>';
             }
-            tableString += '</tr>';
+            tableString += '</tr>'
         }
         tableString += '</table>';
         document.getElementById("display").innerHTML = tableString;
     }
-
     function play(x, y) {
         if (checkPlayer1 && checkNotData(x, y)) {
             data[x][y] = "X";
@@ -52,7 +51,7 @@
         if (data[x][y] == "") {
             return true;
         } else {
-            alert("o nay da co nguoi choi")
+            alert("ô này đã có người chơi!!!")
             return false;
         }
     }
