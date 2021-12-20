@@ -20,11 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="351cbde0-9d2c-4653-ad36-fcd61b8db991" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ss17_lap_trinh_huong_doi_tuong2/bai_tap/CauChuyenAdamVaEva.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss17_lap_trinh_huong_doi_tuong2/bai_tap/XayDDungLopMoPhongHoatDongCuaDenPin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss17_lap_trinh_huong_doi_tuong2/bai_tap/adam.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss16_lap_trinh_huong_doi_tuong1/bai_tap/XayDungLopMoTaHinhChuNhat.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss16_lap_trinh_huong_doi_tuong1/bai_tap/XayDungLopMoTaHinhChuNhat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss17_lap_trinh_huong_doi_tuong2/bai_tap/XayDDungLopMoPhongHoatDongCuaDenPin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss17_lap_trinh_huong_doi_tuong2/bai_tap/adam.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss17_lap_trinh_huong_doi_tuong2/bai_tap/PhatTrienUngDungMoPhongMeoBatChuot.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ss17_lap_trinh_huong_doi_tuong2/bai_tap/rac.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss17_lap_trinh_huong_doi_tuong2/bai_tap/rac.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -177,7 +175,7 @@
       <workItem from="1639956825644" duration="396000" />
       <workItem from="1639957480173" duration="290000" />
       <workItem from="1639963234520" duration="5048000" />
-      <workItem from="1639981742615" duration="8306000" />
+      <workItem from="1639981742615" duration="12614000" />
     </task>
     <servers />
   </component>
