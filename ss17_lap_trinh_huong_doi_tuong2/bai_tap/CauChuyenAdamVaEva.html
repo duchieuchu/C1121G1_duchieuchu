@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+<script>
+    class Apple {
+        constructor(weightA) {
+            this.weightA = weightA
+        }
+        decrease() {
+            this.weightA = weightA--
+        }
+        isEmpty() {
+            if (this.weightA = 0) {
+                alert("Out of apple")
+            } else {
+                alert(weightA)
+            }
+        }
+        getWeightA() {
+            return this.weightA
+        }
+    }
+
+    class Human {
+        constructor(name, gender, weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+        }
+
+        isMale() {
+            if (this.gender === "male") {
+                return true
+            }
+            return false
+        }
+
+        setGender(boolean) {
+            this.gender = gender
+        }
+
+        checkWeightA(apple) {
+            return apple.weightA
+        }
+
+        eatApple(apple) {
+            if (apple.weightA > 0) {
+                apple.weightA--;
+                adam.weight++
+            } else {
+                alert('Táo đã hết')
+            }
+        }
+
+        sayString(string) {
+            document.write("adam đã nói: "+string)
+        }
+
+        getName() {
+            return this.name
+        }
+
+        setName(name) {
+            this.name = name
+
+        }
+
+        getWeight() {
+            return this.weight
+        }
+
+        setWeight(weight) {
+            this.weight = weight
+        }
+    }
+
+    let apple = new Apple(10)
+    document.write("trong luong apple ban dau: "+apple.getWeightA() + "<br>")
+    let adam = new Human("Adam", "male", 50)
+    document.write("ten: "+adam.getName()+"<br>")
+    document.write(adam.isMale() + "<br>")
+    adam.eatApple(apple)
+    adam.checkWeightA(apple)
+    document.write("trong luong apple con lai: "+adam.checkWeightA(apple) + "<br>")
+    document.write("trong luong cua adam sau khi an: "+adam.getWeight() + "<br>")
+    console.log(adam.sayString("xin chao"))
+</script>
+</body>
+</html>
