@@ -5,6 +5,101 @@
     <title>hello</title>
 </head>
 <body>
+<script>
+    class Apple{
+        constructor() {
+            this.weight =10;
+        }
+        getWeight(){
+            return this.weight;
+        }
+        decrease(){
+            this.weight--;
+        }
+        isEmpty(){
+            if (this.weight==0){
+                return true;
+            }else {
+                return false;
+            }
+        }
+    }
+    class Human{
+        constructor(name, gender, weight) {
+            this.name= name;
+            this.gender=gender;
+            this.weight= weight;
+        }
+        isMale(){
+            if (this.gender=="male"){
+                return true;
+            }else {
+                return false;
+            }
+        }
+        setName(name){
+            this.name=name;
+        }
+        getName(){
+            return this.name;
+        }
+        setGender(gender){
+            this.gender=gender;
+        }
+        getGender(){
+            return this.gender;
+        }
+        setWeight(weight){
+            this.weight=weight;
+        }
+        getWeight(){
+            return this.weight;
+        }
+        say(text){
+            console.log(this.name +" nói: "+ text)
+        }
+        checkApple(apple){
+            if (apple.isEmpty()){
+                return false;
+            }else {
+                return true;
+            }
+        }
+        eatApple(apple){
+            if (this.checkApple(apple)){
+                apple.decrease();
+                this.weight++;
+            }else {
+                console.log(this.name + "nói: táo đã hết");
+            }
+        }
 
+    }
+
+    let tao = new Apple();
+    let tao2 = new Apple();
+    let adam = new Human("Adam","male",50);
+    let eva = new Human("Eva","female",40);
+    let ngocHoang = new Human("Ngoc Hoàng", "male",100);
+    adam.say("em ăn trước đi");
+    eva.say("cảm ơn anh");
+    eva.eatApple(tao);
+    eva.eatApple(tao);
+    eva.eatApple(tao);
+    eva.eatApple(tao);
+    eva.eatApple(tao);
+    eva.eatApple(tao);
+    eva.eatApple(tao);
+    eva.eatApple(tao);
+    eva.eatApple(tao);
+    eva.eatApple(tao);
+    eva.say("em ăn hết rồi rồi , anh ăn quả khác đi");
+    adam.say("vậy để anh ăn");
+    adam.eatApple(tao2);
+    console.log("trọng lượng Adam: "+ adam.getWeight())
+    console.log("trọng lượng eva: "+ eva.getWeight())
+    console.log("trọng lượng táo1: "+ tao.getWeight())
+    console.log("trọng lượng táo2: "+ tao2.getWeight())
+</script>
 </body>
 </html>

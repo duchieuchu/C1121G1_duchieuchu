@@ -8,20 +8,23 @@
 <script>
     class Apple {
         constructor(weightA) {
-            this.weightA = weightA
+            this.weightA = weightA;
         }
+
         decrease() {
-            this.weightA = weightA--
+            this.weightA--;
         }
+
         isEmpty() {
             if (this.weightA = 0) {
-                alert("Out of apple")
+                alert("Out of apple");
             } else {
-                alert(weightA)
+                alert(this.weight);
             }
         }
+
         getWeightA() {
-            return this.weightA
+            return this.weightA;
         }
     }
 
@@ -34,59 +37,64 @@
 
         isMale() {
             if (this.gender === "male") {
-                return true
+                return true;
             }
-            return false
+            return false;
         }
 
-        setGender(boolean) {
-            this.gender = gender
+        setGender(gender) {
+            this.gender = gender;
+        }
+
+        getGender() {
+            return this.gender;
         }
 
         checkWeightA(apple) {
-            return apple.weightA
+            return apple.weightA;
         }
 
         eatApple(apple) {
             if (apple.weightA > 0) {
                 apple.weightA--;
-                adam.weight++
+                adam.weight++;
             } else {
-                alert('Táo đã hết')
+                alert('Táo đã hết');
             }
         }
 
         sayString(string) {
-            document.write("adam đã nói: "+string)
-        }
-
-        getName() {
-            return this.name
+            document.write("adam đã nói: " + string);
         }
 
         setName(name) {
-            this.name = name
+            this.name = name;
 
         }
 
+        getName() {
+            return this.name;
+        }
+
+
         getWeight() {
-            return this.weight
+            return this.weight;
         }
 
         setWeight(weight) {
-            this.weight = weight
+            this.weight = weight;
         }
     }
 
     let apple = new Apple(10)
-    document.write("trong luong apple ban dau: "+apple.getWeightA() + "<br>")
+    document.write("trong luong apple ban dau: " + apple.getWeightA() + "<br>")
     let adam = new Human("Adam", "male", 50)
-    document.write("ten: "+adam.getName()+"<br>")
+    document.write("ten: " + adam.getName() + "<br>")
     document.write(adam.isMale() + "<br>")
     adam.eatApple(apple)
     adam.checkWeightA(apple)
-    document.write("trong luong apple con lai: "+adam.checkWeightA(apple) + "<br>")
-    document.write("trong luong cua adam sau khi an: "+adam.getWeight() + "<br>")
+    document.write("trong luong apple con lai: " + adam.checkWeightA(apple) + "<br>")
+    document.write("trong luong cua adam sau khi an: " + adam.getWeight() + "<br>")
     console.log(adam.sayString("xin chao"))
 </script>
 </body>
