@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+<script>
+    class Animal {
+        constructor(name, weight, speed) {
+            this.name = name;
+            this.weight = weight;
+            this.speed = speed;
+        }
+
+        say(text) {
+            console.log("Không biết kêu như thế nào" + text);
+        }
+    }
+
+    class Rat extends Animal {
+        constructor(name, weight, speed, status) {
+            super(name, weight, speed);// gọi constructor của cha (animal)
+            this.status = status;
+        }
+
+        say(text) {    // ghi đè phương thức (module 2 sẽ học)
+            console.log("chít chit: " + text);
+        }
+
+    }
+
+    class Cat extends Animal {
+        constructor(name, weight, speed) {
+            super(name, weight, speed);// gọi constructor của cha (animal)
+        }
+
+        say(text) {
+            console.log("meo meo: " + text);
+        }
+
+        eatMouse(mouse) {
+            if (mouse.status == "song") {
+                this.weight += mouse.weight;// += : cộng dồn, ++ tăng 1 đơn vị// ăn còn chuột 2kg thì con mèo tăng 2kg
+                this.say("ngon quá, ăn thôi")
+            } else {
+                this.say("chết rồi không ăn")
+            }
+        }
+        catchMouse(mouse){
+            if (this.speed>mouse.speed){
+                this.say("Bắt được rồi.");
+                this.eatMouse(mouse);
+            }else {
+                mouse.say("Đố bắt được đó.")
+            }
+        }
+    }
+
+    // viết chương chương trình
+    let chuot1 = new Rat("Jerry1",2,5,"song");
+    let chuot2 = new Rat("Jerry2",2,12,"song");
+    let chuot3 = new Rat("Jerry3",2,7,"song");
+    let chuot4 = new Rat("Jerry4",2,5,"chet");
+    let chuots = [chuot1,chuot2,chuot3,chuot4]
+    let meo = new Cat("Tom",10,10);
+    for (let chuot of chuots){
+        meo.catchMouse(chuot);
+    }
+    console.log("trong lượng mèo"+ meo.weight);
+</script>
+</body>
+</html>
