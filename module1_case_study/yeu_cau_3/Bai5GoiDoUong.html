@@ -6,28 +6,28 @@
 </head>
 <body>
 <script>
-    let arrayMenu = ["Cafe", "Cam vắt", "Nước ép cà rốt", "Nước ép cà chua", "Nước lọc", "Nước dừa", "thoát gọi món"];
+    let arrayMenu =[" ","Cafe", "Cam vắt", "Nước ép cà rốt", "Nước ép cà chua", "Nước lọc", "Nước dừa", "thoát gọi món"];
     let arrayNumbers = [1, 2, 3, 4, 5, 6, 7];
-    let arrayPrice = [15000, 25000, 20000, 20000, 10000, 20000];
+    let arrayPrice = ["",15000, 25000, 20000, 20000, 10000, 20000];
     let arrayOrder = [];
     let num;
     let flag = true;
     do {
         let oder = prompt("nhập số thứ tự tên đồ uống mà bạn muốn oder bấm số 7 để thoát order");
-        if (oder <= 5) {
+        if (oder <= 6) {
             num= parseInt(prompt("nhập số lượng"));
             alert("đồ uống của bạn là: " + num + arrayMenu[oder] + "và tổng số tiển là: " + arrayPrice[oder] * num);
             arrayOrder.push(num + arrayMenu[oder] + arrayPrice[oder] * num)
 
             if (confirm("nếu bạn muốn thanh toán bấm ok,nếu tiếp tục muốn oder bấm cancel")) {
-                alert("đây là oder của bạn " + arrayOrder);
+                alert("tổng số tiền cần trả: " + arrayOrder);
                 flag = false;
                 break
             } else {
                 flag = true
             }
         }
-        if (oder > 5) {
+        if (oder > 6) {
             flag = false
         }
     }
