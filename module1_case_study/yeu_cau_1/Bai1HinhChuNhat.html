@@ -6,13 +6,13 @@
 </head>
 <body>
 <script>
-    function Drawrectagle(m,n) {
+    function DrawRectangle(m, n) {
         for (let i = 0; i < m; i++) {
-            for (let j = 0; j < 16; j++) {
-                if (i == 0 || i == m-1) {
+            for (let j = 0; j < 5; j++) {
+                if (i == 0 || i == m - 1) {
                     document.write("*")
                 } else {
-                    if (j == 0 || j == n-1) {
+                    if (j == 0 || j == n - 1) {
                         document.write("*")
                     } else {
                         document.write('&nbsp&nbsp')
@@ -22,7 +22,8 @@
             document.write('<br>')
         }
     }
-    Drawrectagle(4,16)
+
+    DrawRectangle(4, 5)
 </script>
 </body>
 </html>

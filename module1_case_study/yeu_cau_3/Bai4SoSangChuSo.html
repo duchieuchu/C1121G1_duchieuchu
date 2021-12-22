@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+<script>
+    let arrayNumber = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+    let arrayChuSo = ["không", "một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "chín"];
+    let a = prompt("nhập số");
+    let arrayA1 =[];
+    for (let i = 0; i < a.length; i++) {
+        for (let j = 0; j < arrayNumber.length; j++) {
+            if (a[i] == arrayNumber[j]) {
+                arrayA1.push(arrayChuSo[j]);
+            }
+        }
+    }
+    document.write(arrayA1);
+</script>
+</body>
+</html>
