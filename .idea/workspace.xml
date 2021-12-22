@@ -20,19 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="351cbde0-9d2c-4653-ad36-fcd61b8db991" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/module1_case_study/yeu_cau_3/Bai1PrefixSums.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1_case_study/yeu_cau_3/Bai2TimPhanTuXuatHienBenBNhungKoBenA.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1_case_study/yeu_cau_3/Bai3TimChiSoPhanSoLonNhat.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1_case_study/yeu_cau_3/Bai4SoSangChuSo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1_case_study/yeu_cau_3/Bai5GoiDoUong.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1_case_study/yeu_cau_3/r.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1_case_study/yeu_cau_4/Bai1HamChuanHoaXauKiTu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1_case_study/yeu_cau_4/r.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1_case_study/yeu_cau_1/Bai1HinhChuNhat.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1_case_study/yeu_cau_1/Bai1HinhChuNhat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1_case_study/yeu_cau_1/Bai2TamGiacVuong.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1_case_study/yeu_cau_1/Bai2TamGiacVuong.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1_case_study/yeu_cau_1/Bai3TamGiacCanDac.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1_case_study/yeu_cau_1/Bai3TamGiacCanDac.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1_case_study/yeu_cau_1/Bai4TamGiacCanRong.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1_case_study/yeu_cau_1/Bai4TamGiacCanRong.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1_case_study/yeu_cau_2/bai2PhuAmNguyenAm.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1_case_study/yeu_cau_2/bai2PhuAmNguyenAm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss17_lap_trinh_huong_doi_tuong2/bai_tap/r.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss17_lap_trinh_huong_doi_tuong2/bai_tap/r.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module1_case_study/yeu_cau_3/Bai5GoiDoUong.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1_case_study/yeu_cau_3/Bai5GoiDoUong.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module1_case_study/yeu_cau_3/r.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,6 +185,7 @@
       <workItem from="1640041747979" duration="7985000" />
       <workItem from="1640069232793" duration="8228000" />
       <workItem from="1640131196506" duration="7747000" />
+      <workItem from="1640156364916" duration="6604000" />
     </task>
     <servers />
   </component>
@@ -337,10 +330,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="463" y="43" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1639928250104" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1640136097875">
+    <state x="142" y="0" key="SettingsEditor" timestamp="1640157446689">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1640136097875" />
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1640157446689" />
     <state x="362" y="82" width="540" height="524" key="StructurePopup" timestamp="1639468063579">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
