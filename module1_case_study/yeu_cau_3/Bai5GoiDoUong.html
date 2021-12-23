@@ -6,32 +6,32 @@
 </head>
 <body>
 <script>
-    let arrayMenu =[" ","Cafe", "Cam vắt", "Nước ép cà rốt", "Nước ép cà chua", "Nước lọc", "Nước dừa", "thoát gọi món"];
-    let arrayPrice = ["",15000, 25000, 20000, 20000, 10000, 20000];
+    let arrayMenu = [" ", "Cafe", "Cam vắt", "Nước ép cà rốt", "Nước ép cà chua", "Nước lọc", "Nước dừa", "thoát gọi món"];
+    let arrayPrice = ["", 15000, 25000, 20000, 20000, 10000, 20000];
     let arrayOrder = [];
     let num;
     let flag = true;
     do {
-        let oder = prompt("nhập số thứ tự tên đồ uống mà bạn muốn oder bấm số 7 để thoát order");
-        if (oder <= 6) {
-            num= parseInt(prompt("nhập số lượng"));
-            alert("đồ uống của bạn là: " + num + arrayMenu[oder] + "và tổng số tiển là: " + arrayPrice[oder] * num);
-            arrayOrder.push(num + arrayMenu[oder] + arrayPrice[oder] * num)
+        let oderADrink = prompt("nhập số thứ tự tên đồ uống mà bạn muốn, 1 (cafe), 2 (cam vắt), 3(nước ép cà rốt), 4(nước ép cà chua), 5(nước lọc), 6(nước dừa), 7(thoát gọi món)");
+        if (oderADrink <= 6) {
+            num = parseInt(prompt("nhập số lượng "));
+            alert("đồ uống của bạn là: " + num + arrayMenu[oderADrink] + " và tổng số tiển là: " + arrayPrice[oderADrink] * num);
+            arrayOrder.push(num + arrayMenu[oderADrink] + arrayPrice[oderADrink] * num);
 
             if (confirm("nếu bạn muốn thanh toán bấm ok,nếu tiếp tục muốn oder bấm cancel")) {
                 alert("tổng số tiền cần trả: " + arrayOrder);
                 flag = false;
-                break
+                break;
             } else {
-                flag = true
+                flag = true;
             }
         }
-        if (oder > 6) {
-            flag = false
+        if (oderADrink > 6) {
+            flag = false;
         }
     }
     while (flag);
-    alert(" quá trình đặt thức uống kết thúc")
+    alert(" quá trình đặt thức uống kết thúc");
 
 </script>
 </body>
