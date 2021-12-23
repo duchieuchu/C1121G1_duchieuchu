@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+<p id="displayticket"></p>
+<p id="displayresult"></p>
+<button onclick="buyTicket()">Mua ve</button>
+<button onclick="getResult()">Kết quả</button>
+<script>
+    class VietLot {
+        constructor(num1, num2, num3, num4, num5, num6) {
+            this.num1 = num1;
+            this.num2 = num2;
+            this.num3 = num3;
+            this.num4 = num4;
+            this.num5 = num5;
+            this.num6 = num6;
+        }
+    }
+
+    function randomNumber() {
+        let newTicket1 = new VietLot();
+        newTicket1.num1 = Math.floor(Math.random() * 99);
+        newTicket1.num2 = Math.floor(Math.random() * 99);
+        newTicket1.num3 = Math.floor(Math.random() * 99);
+        newTicket1.num4 = Math.floor(Math.random() * 99);
+        newTicket1.num5 = Math.floor(Math.random() * 99);
+        newTicket1.num6 = Math.floor(Math.random() * 99);
+        console.log(newTicket1);
+        return newTicket1
+    }
+
+    function displayTicket(ticket) {
+        let data = "<table>"
+        data += "<tr>"
+        data += "<td>" + ticket.num1 + "</td>"
+        data += "<td>" + ticket.num2 + "</td>"
+        data += "<td>" + ticket.num3 + "</td>"
+        data += "<td>" + ticket.num4 + "</td>"
+        data += "<td>" + ticket.num5 + "</td>"
+        data += "<td>" + ticket.num6 + "</td>"
+        data += "</tr>"
+        data += "</table>"
+        return data
+    }
+
+    function getNumber() {
+        let newticket = new VietLot()
+        newticket.num1 = parseInt(prompt("nhập số thứ 1"))
+        newticket.num2 = parseInt(prompt("nhập số thứ 2"))
+        newticket.num3 = parseInt(prompt("nhập số thứ 3"))
+        newticket.num4 = parseInt(prompt("nhập số thứ 4"))
+        newticket.num5 = parseInt(prompt("nhập số thứ 5"))
+        newticket.num6 = parseInt(prompt("nhập số thứ 6"))
+        return newticket
+    }
+
+    let choosse;
+    let arrTicket = []
+
+    function buyTicket() {
+        choosse = parseInt(prompt("Chọn hình thức mua vé. nhập số 1 nếu muốn muốn tự chọn số, " +
+            "phím 2 nếu lấy ramdom "));
+        if (choosse == 1) {
+            arrTicket = [];
+            let n;
+            do {
+                n = parseInt(prompt("Bạn muốn mua bao nhiêu vé"));
+            } while (isNaN(n) || n < 0 || n > 4)
+            for (let i = 1; i <= n; i++) {
+                arrTicket.push(getNumber());
+                console.log(arrTicket)
+            }
+            for (let i = 0; i < arrTicket.length; i++) {
+                arrTicket.push(randomNumber())
+                document.getElementById("displayticket").innerHTML += displayTicket(arrTicket[i])
+            }
+        }
+
+        if (choosse == 2) {
+            let n;
+            do {
+                n = parseInt(prompt("Bạn muốn mua bao nhiêu vé"));
+            } while (isNaN(n) || n < 0 || n > 4)
+            document.getElementById("displayticket").innerHTML = "Vé của bạn"
+            for (let i = 0; i < n; i++) {
+                arrTicket.push(randomNumber());
+                console.log(arrTicket);
+                document.getElementById("displayticket").innerHTML +=  displayTicket(arrTicket[i])
+            }
+        }
+    }
+
+    function resultNumber() {
+        let rusultTicket = new VietLot()
+        rusultTicket.num1 = 26
+        rusultTicket.num2 = 49
+        rusultTicket.num3 = 92
+        rusultTicket.num4 = 3
+        rusultTicket.num5 = 15
+        rusultTicket.num6 = 17
+        return rusultTicket
+    }
+
+    function checkVietLot(checkticket, resultTicket) {
+        let count = 0;
+        if (checkticket.num6 == 17 && checkticket.num5 == 15 && checkticket.num4 == 3) {
+            ++count;
+            if (checkticket.num3 == 92 && checkticket.num2 == 49) {
+                ++count;
+                if (checkticket.num1 == 26) {
+                    ++count
+                } else {
+                    return count
+                }
+
+            } else {
+                return count
+            }
+        } else {
+            return count
+        }
+        return count
+    }
+
+    function getResult() {
+        let resultVietLot = resultNumber();
+        let count = 0;
+        console.log(resultVietLot)
+        document.getElementById("displayresult").innerHTML = "Kết quả" + displayTicket(resultVietLot)
+        for (let i = 0; i < arrTicket.length; i++) {
+            count = checkVietLot(arrTicket[i], resultVietLot);
+            console.log(count)
+            if (count == 1) {
+                alert("vé thứ" + i + "của bạn đã trúng giải ba trị giá 10 triệu đồng")
+            }
+            if (count == 2) {
+                alert("vé thứ" + i + "của bạn đã trúng giải nhì trị giá 100 triệu đồng")
+            }
+            if (count == 3) {
+                alert("vé thứ" + i + "của bạn đã trúng giải nhất trị giá 1 tỷ đồng")
+            }
+            if (count == 0) {
+                alert("Chúc bạn may mắn lần sau")
+            }
+        }
+    }
+
+
+</script>
+</body>
+</html>

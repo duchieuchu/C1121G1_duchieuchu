@@ -55,18 +55,49 @@
         }
     }
 
-    function dapAnSoXo() {
+    function giaiNhat() {
         let dapAnSoXo = new VietLot()
         dapAnSoXo.number1 = 22;
-        dapAnSoXo.number1 = 33;
-        dapAnSoXo.number1 = 44;
-        dapAnSoXo.number1 = 55;
-        dapAnSoXo.number1 = 66;
-        dapAnSoXo.number1 = 77;
+        dapAnSoXo.number2 = 33;
+        dapAnSoXo.number3 = 44;
+        dapAnSoXo.number4 = 55;
+        dapAnSoXo.number5 = 66;
+        dapAnSoXo.number6 = 77;
         return dapAnSoXo
     }
 
-    function KiemTraKetQua() {
+    function giaiNhi() {
+        let dapAnSoXo = new VietLot()
+        dapAnSoXo.number2 = 33;
+        dapAnSoXo.number3 = 44;
+        dapAnSoXo.number4 = 55;
+        dapAnSoXo.number5 = 66;
+        dapAnSoXo.number6 = 77;
+        return dapAnSoXo
+    }
+
+    function giaiBa() {
+        let dapAnSoXo = new VietLot()
+        dapAnSoXo.number4 = 55;
+        dapAnSoXo.number5 = 66;
+        dapAnSoXo.number6 = 77;
+        return dapAnSoXo()
+
+    }
+
+    function kiemTraKetQua() {
+        if (arrayTicket === giaiNhat()) {
+            alert("chúc mừng bạn Giải nhất: 6 số trên vé của KH trùng khớp hoàn toàn ")
+            alert("nhận 5 tỷ")
+        } else if (arrayTicket === giaiNhi()) {
+            alert("chúc mừng bạn Giải nhì: 5 số cuối của vé KH trùng khớp với 5 số cuối của hệ thống")
+            alert("nhận 3 tỷ")
+        } else if (arrayTicket === giaiBa()) {
+            alert("chúc mừng bạn Giải khuyến khích: 3 số cuối của vé KH trùng khớp với 3 số cuối của hệ thống")
+            alert("nhận 1 tỷ")
+        } else {
+            alert("ko trúng")
+        }
 
     }
 
