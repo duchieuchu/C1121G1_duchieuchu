@@ -5,7 +5,6 @@
     <title>hello</title>
 </head>
 <body>
-<button onclick="">Xem Kết Quả</button>
 <script>
     class VietLot {
         constructor(number1, number2, number3, number4, number5, number6) {
@@ -81,15 +80,15 @@
         dapAnSoXo.number4 = 55;
         dapAnSoXo.number5 = 66;
         dapAnSoXo.number6 = 77;
-        return dapAnSoXo()
+        return dapAnSoXo
 
     }
 
     function kiemTraKetQua() {
         if (arrayTicket === giaiNhat()) {
             alert("chúc mừng bạn Giải nhất: 6 số trên vé của KH trùng khớp hoàn toàn ")
-            alert("nhận 5 tỷ")
-        } else if (arrayTicket === giaiNhi()) {
+            alert("nhận 10 tỷ")
+        }else if (arrayTicket === giaiNhi()) {
             alert("chúc mừng bạn Giải nhì: 5 số cuối của vé KH trùng khớp với 5 số cuối của hệ thống")
             alert("nhận 3 tỷ")
         } else if (arrayTicket === giaiBa()) {
@@ -98,9 +97,9 @@
         } else {
             alert("ko trúng")
         }
-
     }
-
+buyTicket();
+    kiemTraKetQua()
 
 </script>
 </body>
