@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+<button onclick="">Xem Kết Quả</button>
+<script>
+    class VietLot {
+        constructor(number1, number2, number3, number4, number5, number6) {
+            this.number1 = number1;
+            this.number2 = number2;
+            this.number3 = number3;
+            this.number4 = number4;
+            this.number5 = number5;
+            this.number6 = number6;
+        }
+    }
+
+    function randomNumber(ticket) {
+        ticket = new VietLot()
+        ticket.number1 = Math.floor(Math.random() * 100);
+        ticket.number2 = Math.floor(Math.random() * 100);
+        ticket.number3 = Math.floor(Math.random() * 100);
+        ticket.number4 = Math.floor(Math.random() * 100);
+        ticket.number5 = Math.floor(Math.random() * 100);
+        ticket.number6 = Math.floor(Math.random() * 100);
+        console.log(ticket);
+        return ticket;
+    }
+
+    function getNumber(ticket) {
+        ticket = new VietLot();
+        ticket.number1 = parseInt(prompt("nhập só thứ 1"));
+        ticket.number2 = parseInt(prompt("nhập só thứ 2"));
+        ticket.number3 = parseInt(prompt("nhập só thứ 3"));
+        ticket.number4 = parseInt(prompt("nhập só thứ 4"));
+        ticket.number5 = parseInt(prompt("nhập só thứ 5"));
+        ticket.number6 = parseInt(prompt("nhập só thứ 6"));
+        return ticket;
+    }
+
+    let choose;
+    let arrayTicket = [];
+
+    function buyTicket() {
+        choose = parseInt(prompt("tự chọn số bấm 1 ,ra số ngẫu nhiên bấm 2"));
+        if (choose === 1) {
+            arrayTicket.push(getNumber());
+            console.log(arrayTicket);
+        } else if (choose === 2) {
+            arrayTicket.push(randomNumber());
+            console.log(arrayTicket);
+        }
+    }
+
+    function dapAnSoXo() {
+        let dapAnSoXo = new VietLot()
+        dapAnSoXo.number1 = 22;
+        dapAnSoXo.number1 = 33;
+        dapAnSoXo.number1 = 44;
+        dapAnSoXo.number1 = 55;
+        dapAnSoXo.number1 = 66;
+        dapAnSoXo.number1 = 77;
+        return dapAnSoXo
+    }
+
+    function KiemTraKetQua() {
+
+    }
+
+
+</script>
+</body>
+</html>
