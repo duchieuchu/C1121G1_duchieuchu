@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+<script>
+
+    class XeMay {
+        constructor(bienSo, chuSoHuu, dungTichXiLanh) {
+            this.bienSo = bienSo;
+            this.chuSoHuu = chuSoHuu;
+            this.dungTichXiLanh = dungTichXiLanh;
+        }
+
+        // tạo getter và setter
+        setBienSo(bienSo) {
+            this.bienSo = bienSo;
+        }
+
+        getBienSo() {
+            return this.bienSo;
+        }
+
+        setChuSoHuu(chuSoHuu) {
+            this.chuSoHuu = chuSoHuu;
+        }
+
+        getChuSoHuu() {
+            return this.chuSoHuu;
+        }
+
+        setDungTichXiLanh(dungTichXiLanh) {
+            this.dungTichXiLanh = dungTichXiLanh;
+        }
+
+        getDungTichXiLanh() {
+            return this.dungTichXiLanh;
+        }
+    }
+
+    let xe1 = new XeMay("43-H1-12345", "Hiếu", 97)
+    let xe2 = new XeMay("43-H2-12345", "Hiếu2", 97)
+    let xe3 = new XeMay("43-H3-12345", "Hiếu3", 150)
+    let danhSachXe = [xe1, xe2, xe3];
+    hienThi(danhSachXe);
+    function hienThi(danhSach) {
+        let bang = '<table border="1" style="border-collapse: collapse">\n' +
+            '    <tr>\n' +
+            '        <th>STT</th>\n' +
+            '        <th>Biển KS</th>\n' +
+            '        <th>Chủ Sở Hữu</th>\n' +
+            '        <th>Dung tích xi lanh</th>\n' +
+            '        <th>Chỉnh sửa </th>\n' +
+            '        <th>Xóa</th>\n' +
+            '    </tr>';
+    }
+
+</script>
+</body>
+</html>

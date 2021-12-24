@@ -20,15 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="351cbde0-9d2c-4653-ad36-fcd61b8db991" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/module1_case_study/yeu_cau_1/r.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1_case_study/yeu_cau_5/Bai1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1_case_study/yeu_cau_5/Bai2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1_case_study/yeu_cau_5/Bai3HamGiaTrLonNhatNhoNhat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss17_lap_trinh_huong_doi_tuong2/bai_tap/Demo QLSP.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss17_lap_trinh_huong_doi_tuong2/bai_tap/VeHinhTron.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss17_lap_trinh_huong_doi_tuong2/bai_tap/rac.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1_case_study/yeu_cau_1/Bai1HinhChuNhat.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1_case_study/yeu_cau_1/Bai1HinhChuNhat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1_case_study/yeu_cau_1/Bai2TamGiacVuong.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1_case_study/yeu_cau_1/Bai2TamGiacVuong.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1_case_study/yeu_cau_6/QuayXoSo.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1_case_study/yeu_cau_6/QuayXoSo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1_case_study/yeu_cau_6/r.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1_case_study/yeu_cau_6/r.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss17_lap_trinh_huong_doi_tuong2/bai_tap/r.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +191,8 @@
       <workItem from="1640241262149" duration="9290000" />
       <workItem from="1640260796571" duration="165000" />
       <workItem from="1640277006772" duration="18000" />
-      <workItem from="1640315446576" duration="2672000" />
+      <workItem from="1640315446576" duration="2973000" />
+      <workItem from="1640328417423" duration="7265000" />
     </task>
     <servers />
   </component>
@@ -340,10 +337,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="463" y="43" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1639928250104" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1640251724048">
+    <state x="142" y="0" key="SettingsEditor" timestamp="1640330572404">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1640251724048" />
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1640330572404" />
     <state x="362" y="82" width="540" height="524" key="StructurePopup" timestamp="1639468063579">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
