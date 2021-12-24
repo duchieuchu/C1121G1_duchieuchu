@@ -40,54 +40,36 @@
         return ticket;
     }
 
+    function soVeMua() {
+        let number = parseInt(prompt("bạn muốn mua bao nhiêu vé(tối đa 4 lượt mua)"));
+        if (number < 5) {
+            alert("bạn đã mua " + number + " vé")
+        } else {
+            alert("nhập không đúng")
+        }
+        return number;
+    }
+
     function buyTicket() {
         let choose;
         let ticket;
         choose = parseInt(prompt("tự chọn số bấm 1 ,ra số ngẫu nhiên bấm 2"));
         if (choose === 1) {
-           ticket= buyTicketByInput()
+            ticket = buyTicketByInput("")
             console.log(ticket);
         } else if (choose === 2) {
-            ticket=buyTicketRandomNumber()
+            ticket = buyTicketRandomNumber()
             console.log(ticket);
         }
         return ticket;
     }
-
-    function giaiNhat() {
-        let dapAnSoXo = new VietLot()
-        dapAnSoXo.number1 = 22;
-        dapAnSoXo.number2 = 33;
-        dapAnSoXo.number3 = 44;
-        dapAnSoXo.number4 = 55;
-        dapAnSoXo.number5 = 66;
-        dapAnSoXo.number6 = 77;
-        return dapAnSoXo
-    }
-
-    // function giaiNhi() {
-    //     let dapAnSoXo = new VietLot()
-    //     dapAnSoXo.number2 = 33;
-    //     dapAnSoXo.number3 = 44;
-    //     dapAnSoXo.number4 = 55;
-    //     dapAnSoXo.number5 = 66;
-    //     dapAnSoXo.number6 = 77;
-    //     return dapAnSoXo
-    // }
-    //
-    // function giaiBa() {
-    //     let dapAnSoXo = new VietLot()
-    //     dapAnSoXo.number4 = 55;
-    //     dapAnSoXo.number5 = 66;
-    //     dapAnSoXo.number6 = 77;
-    //     return dapAnSoXo
-    //
-    // }
-    function soSanh(ticket,ketQua) {
-        let count=0;
-        for (let number of ticket){
-            for(let n of ketQua){
-                if(number==n){
+    function soSanh(ticket, ketQua) {
+        let count = 0;
+        let arrTicket = Object.values(ticket);
+        let arrKetQua = Object.values(ketQua);
+        for (let number of arrTicket) {
+            for (let n of arrKetQua) {
+                if (number == n) {
                     count++;
                     break;
                 }
@@ -95,28 +77,25 @@
         }
         return count;
     }
-
-    function kiemTraKetQua(ticket,ketQua) {
-        if (soSanh(ticket,ketQua)==6) {
+    function kiemTraKetQua(ticket, ketQua) {
+        if (soSanh(ticket, ketQua) == 6) {
             alert("chúc mừng bạn Giải nhất: 6 số trên vé của KH trùng khớp hoàn toàn ")
             alert("nhận 10 tỷ")
-        }else if (soSanh(ticket,ketQua)==5) {
+        } else if (soSanh(ticket, ketQua) == 5) {
             alert("chúc mừng bạn Giải nhì: 5 số cuối của vé KH trùng khớp với 5 số cuối của hệ thống")
             alert("nhận 3 tỷ")
-        } else if (soSanh(ticket,ketQua)==4) {
+        } else if (soSanh(ticket, ketQua) == 4) {
             alert("chúc mừng bạn Giải khuyến khích: 3 số cuối của vé KH trùng khớp với 3 số cuối của hệ thống")
             alert("nhận 1 tỷ")
         } else {
             alert("ko trúng")
         }
     }
-// buyTicket();
-//     kiemTraKetQua()
-//
-    let ticket=buyTicket();
-    let ketqua = new VietLot(22,33,44,55,66,77);
+    soVeMua()
+    let ticket = buyTicket();
+    let ketqua = new VietLot(22, 33, 44, 55, 66, 77);
 
-kiemTraKetQua(ticket,ketqua)
+    kiemTraKetQua(ticket, ketqua)
 
 
 </script>

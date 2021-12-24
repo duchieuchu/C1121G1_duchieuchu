@@ -6,13 +6,14 @@
 </head>
 <body>
 <script>
+
     function DrawRectangle(m, n) {
         for (let i = 0; i < m; i++) {
-            for (let j = 0; j < 5; j++) {
-                if (i == 0 || i == m - 1) {
+            for (let j = 0; j < n; j++) {
+                if (i === 0 || i === m - 1) {
                     document.write("*")
                 } else {
-                    if (j == 0 || j == n - 1) {
+                    if (j === 0 || j === n - 1) {
                         document.write("*")
                     } else {
                         document.write('&nbsp&nbsp')
