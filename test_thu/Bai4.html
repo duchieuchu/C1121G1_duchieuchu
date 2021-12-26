@@ -8,7 +8,7 @@
 <input type="text" placeholder="maTaiKhoan" id="maTaiKhoan">
 <input type="text" placeholder="tenChuTaiKhoan" id="tenChuTaiKhoan">
 <input type="text" placeholder="tenNganHang" id="tenNganHang">
-<input type="text" placeholder="tongTienTaiKhoan" id="tongTienTaiKhoan">
+<input type="number" placeholder="tongTienTaiKhoan" id="tongTienTaiKhoan">
 <input type="button" id="them" onclick="themMoi()" value="thêm Mơi">
 <p id="hienThi"></p>
 <script>
@@ -53,13 +53,14 @@
         }
     }
 
-    let tk1 = new TaiKhoanNganHang("a12", "lan", "MB", "100");
-    let tk2 = new TaiKhoanNganHang("a1212", "dao", "MB", "200");
-    let tk3 = new TaiKhoanNganHang("a121212", "phung", "MB", "200");
+    let tk1 = new TaiKhoanNganHang("12", "lan", "MB", "100");
+    let tk2 = new TaiKhoanNganHang("1212", "dao", "MB", "200");
+    let tk3 = new TaiKhoanNganHang("12121", "phung", "MB", "200");
     let danhSachTK = [tk1, tk2, tk3]
     hienthi(danhSachTK)
 
     function themMoi() {
+
         let maTaiKhoan = document.getElementById("maTaiKhoan").value;
         let tenChuTaiKhoan = document.getElementById("tenChuTaiKhoan").value;
         let tenNganHang = document.getElementById("tenNganHang").value;

@@ -20,17 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="351cbde0-9d2c-4653-ad36-fcd61b8db991" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ss4_git&amp;amp_HTML/bai_tap/TaoTranCVCaNhan.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_thu/Bai4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_thu/bai3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_thu/bai1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_thu/bai2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_thu/r.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1_case_study/yeu_cau_1/Bai1HinhChuNhat.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1_case_study/yeu_cau_1/Bai1HinhChuNhat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1_case_study/yeu_cau_1/r.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1_case_study/yeu_cau_1/r.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss17_lap_trinh_huong_doi_tuong2/bai_tap/Demo QLSP.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss17_lap_trinh_huong_doi_tuong2/bai_tap/Demo QLSP.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss4_git&amp;amp_HTML/bai_tap/TaoTrangCVCaNhan.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss5_HTML_ Form &amp; Table/baitap/TaoBangNangCao.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss5_HTML_ Form &amp; Table/baitap/TaoBangNangCao.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss5_HTML_ Form &amp; Table/baitap/TaoformDonGian2.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss5_HTML_ Form &amp; Table/baitap/TaoformDonGian2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss5_HTML_ Form &amp; Table/thuchanh/TaoBangCoBan.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss5_HTML_ Form &amp; Table/thuchanh/TaoBangCoBan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_thu/Bai4.html" beforeDir="false" afterPath="$PROJECT_DIR$/test_thu/Bai4.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +198,7 @@
       <workItem from="1640408350921" duration="15172000" />
       <workItem from="1640440753948" duration="9651000" />
       <workItem from="1640484240949" duration="6131000" />
-      <workItem from="1640510425330" duration="3411000" />
+      <workItem from="1640510425330" duration="14857000" />
     </task>
     <servers />
   </component>
@@ -349,10 +343,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="463" y="43" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1639928250104" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1640347102714">
+    <state x="142" y="0" key="SettingsEditor" timestamp="1640561455184">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1640347102714" />
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1640561455184" />
     <state x="362" y="82" width="540" height="524" key="StructurePopup" timestamp="1640419279684">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
