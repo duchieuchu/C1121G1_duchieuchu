@@ -5,6 +5,36 @@
     <title>hello</title>
 </head>
 <body>
+<script>
+    let j
+    let fib = [];
 
+    fib[0] = 0;
+    fib[1] = 1;
+    for (j = 2; j < 1000; j++) {
+        fib [j] = fib[j - 2] + fib[j - 1];
+        console.log(fib[j])
+    }
+    let arrayNumbers = [9, 8, 7, 6, 5, 4, 3, 2, 1, 34, 55, 89]
+    let ketQuaTimKiem = [];
+
+    function timKiemFib() {
+        for (let i = 0; i < arrayNumbers.length; i++) {
+            for (let j = 0; j < fib.length; j++) {
+                if (arrayNumbers[i] == fib[j]) {
+                    ketQuaTimKiem.push(arrayNumbers[i]);
+                    arrayNumbers.splice(i,1);
+                }
+                if (arrayNumbers[i]==0) {
+                    ketQuaTimKiem.push(arrayNumbers[i]);
+                    arrayNumbers.splice(i,1);
+                }
+
+            }
+        }document.write("ket qua"+ketQuaTimKiem.sort((a,b)=>(a-b)))
+    }
+
+    timKiemFib()
+</script>
 </body>
 </html>

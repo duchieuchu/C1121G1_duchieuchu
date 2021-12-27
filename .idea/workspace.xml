@@ -19,7 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="351cbde0-9d2c-4653-ad36-fcd61b8db991" name="Default Changelist" comment="" />
+    <list default="true" id="351cbde0-9d2c-4653-ad36-fcd61b8db991" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test_thu/r1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_thu/bai3.html" beforeDir="false" afterPath="$PROJECT_DIR$/test_thu/bai3.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -192,7 +196,7 @@
       <workItem from="1640408350921" duration="15172000" />
       <workItem from="1640440753948" duration="9651000" />
       <workItem from="1640484240949" duration="6131000" />
-      <workItem from="1640510425330" duration="15209000" />
+      <workItem from="1640510425330" duration="20381000" />
     </task>
     <servers />
   </component>
@@ -337,10 +341,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="463" y="43" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1639928250104" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1640561455184">
+    <state x="142" y="0" key="SettingsEditor" timestamp="1640563149888">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1640561455184" />
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1640563149888" />
     <state x="362" y="82" width="540" height="524" key="StructurePopup" timestamp="1640419279684">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -369,10 +373,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="358" y="149" key="jetbrains.nodejs.interpreters-dialog/0.0.1280.680@0.0.1280.680" timestamp="1639925904650" />
-    <state x="297" y="151" key="run.anything.popup" timestamp="1640448043090">
+    <state x="297" y="151" key="run.anything.popup" timestamp="1640573784959">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1640448043090" />
+    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1640573784959" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1640512510977">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
