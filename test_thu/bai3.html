@@ -14,7 +14,7 @@
         fib [j] = fib[j - 2] + fib[j - 1];
         console.log(fib[j]);
     }
-    let arrayNumbers = [0,1,9, 8, 7, 6, 5, 4, 3, 2, 1, 34, 55, 89]
+    let arrayNumbers = [1, 5, 6, 13, 9, 12, 8, 0, 5, 1]
     let ketQuaTimKiem = [];
 
     function timKiemFib() {
@@ -22,13 +22,8 @@
             for (let j = 0; j < fib.length; j++) {
                 if (arrayNumbers[i] == fib[j]) {
                     ketQuaTimKiem.push(arrayNumbers[i]);
-                    arrayNumbers.splice(i, 1);
+                    break;
                 }
-                else if (arrayNumbers[i] == 0) {
-                    ketQuaTimKiem.push(arrayNumbers[i]);
-                    arrayNumbers.splice(i, 1);
-                }
-
             }
         }
         document.write("ket qua: " + ketQuaTimKiem.sort((a, b) => (a - b)));
