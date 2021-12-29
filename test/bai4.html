@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+
+<p id="hienThi"></p>
+<script>
+    class QuanLyCongNhan {
+        constructor(hoVaTen, ngaySinh, diaChi, luong, chucVu) {
+            this.hoVaTen = hoVaTen;
+            this.ngaySinh = ngaySinh;
+            this.diaChi = diaChi;
+            this.luong = luong;
+            this.chucVu = chucVu;
+        }
+
+        setHoVaTen(hoVaTen) {
+            this.hoVaTen = hoVaTen;
+        }
+
+        getHoVaTen() {
+            return this.hoVaTen;
+        }
+
+        setNgaySinh(ngaySinh) {
+            this.ngaySinh = ngaySinh;
+        }
+
+        getNgaySinh() {
+            return this.ngaySinh;
+        }
+
+        setDiaChi(diaChi) {
+            this.diaChi = diaChi;
+        }
+
+        getDiaChi() {
+            return this.diaChi;
+        }
+
+        setLuong(luong) {
+            this.luong = luong;
+        }
+
+        getLuong() {
+            return this.luong;
+        }
+
+        setChucVu(chucVu) {
+            this.chucVu = chucVu;
+        }
+
+        getChucVu() {
+            return this.chucVu;
+        }
+    }
+
+    let cN1 = new QuanLyCongNhan("Nguyen Van A", 1998, "Quang Nam", "2000", "abc");
+    let cN2 = new QuanLyCongNhan("Nguyen Van B", 1997, "Huế", "1000", "a");
+    let cN3 = new QuanLyCongNhan("Nguyen Van C", 1996, "Đà Nẵng", "3000", "ab");
+    let danhSachCN = [cN1, cN2, cN3];
+    hienThi(danhSachCN);
+
+    function hienThi(quanLyCongNhan) {
+        let bang = "<table border=\"1\" style=\"border-collapse: collapse\">\n" +
+            "    <tr>\n" +
+            "        <th>STT</th>\n" +
+            "        <th>Họ và tên</th>\n" +
+            "        <th>Ngày sinh</th>\n" +
+            "        <th>Địa chỉ</th>\n" +
+            "        <th>Lương</th>\n" +
+            "        <th>Chức vụ</th>\n" +
+            "    </tr>\n"
+        for (let i = 0; i < quanLyCongNhan.length; i++) {
+            bang += " <tr>\n" +
+                "<td>" + (i + 1) + "</td>\n" +
+                "        <td>" + quanLyCongNhan[i].getHoVaTen() + "</td>\n" +
+                "        <td>" + quanLyCongNhan[i].getNgaySinh() + "</td>\n" +
+                "        <td>" + quanLyCongNhan[i].getDiaChi() + "</td>\n" +
+                "        <td>" + quanLyCongNhan[i].getLuong() + "</td>\n" +
+                "        <td>" + quanLyCongNhan[i].getChucVu() + "</td>\n" +
+                "    </tr>";
+        }
+        bang += "</table>"
+        document.getElementById("hienThi").innerHTML = bang;
+    }
+
+</script>
+</body>
+</html>

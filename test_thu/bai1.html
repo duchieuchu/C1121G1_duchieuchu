@@ -6,7 +6,35 @@
 </head>
 <body>
 <script>
-    let arrayNumbers = [15, 2, 3, 5, 10, 15, 7, 8, 9, 10];
+    function checkInteger(number) {
+        if (Math.floor(number) == number) {
+            return true
+        } else {
+            return false
+        }
+
+    }
+    do {
+        n = prompt("Nhập số lượng phần tử (n <= 50, n là số nguyên):");
+        check = checkInteger(n);
+    } while (n > 50 || !check || n < 0)
+    do {
+        number = prompt("Nhập vào số nguyên bất kỳ:");
+        check = checkInteger(number);
+
+        while (!check) {
+            number = prompt("Bạn nhập sai, vui lòng nhập lại số nguyên:")
+            check = checkInteger(number);
+        }
+
+        numArr.push(number);
+    } while (numArr.length < n)
+
+    console.log(numArr);
+
+    document.write(numArr.join(",") + "<br>");
+
+    let arrayNumbers = [15, 2, 3, 5, 10, 15, 7, 8, 9,10];
     let count = 0;
     let sum = 0;
 

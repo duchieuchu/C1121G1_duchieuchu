@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+<input type="text" placeholder="Ma Dien Thoai" id="maDT">
+<input type="text" placeholder="Ten" id="ten">
+<input type="text" placeholder="Hang San Xuat" id="hangSX">
+<input type="text" placeholder="Gia" id="gia">
+<input type="button" onclick="themMoi()" value="Them Moi">
+<p id="hienThi"></p>
+<script>
+    class DienThoai {
+        constructor(maDT, ten, hangSX, gia) {
+            this.maDT = maDT;
+            this.ten = ten;
+            this.hangSX = hangSX;
+            this.gia = gia;
+        }
+
+        setMaDT(maDT) {
+            this.maDT = maDT;
+        }
+
+        getMaDT() {
+            return this.maDT;
+        }
+
+        setTen(ten) {
+            this.ten = ten;
+        }
+
+        getTen() {
+            return this.ten;
+        }
+
+        setHangSX(hangSX) {
+            this.hangSX = hangSX;
+        }
+
+        getHangSX() {
+            return this.hangSX;
+        }
+
+        setGia(gia) {
+            this.gia = gia;
+        }
+
+        getGia() {
+            return this.gia.toString();
+        }
+    }
+    let dT1 = new DienThoai("a23", "Iphone", "My", "15trieu");
+    let dT2 = new DienThoai("b23", "Iphone", "Canada", "20trieu");
+    let dT3 = new DienThoai("c23", "Iphone", "China", "22trieu");
+    let danhSachDT = [dT1, dT2, dT3];
+    hienThi(danhSachDT);
+
+    function hienThi(dT) {
+        let bang = "<table border=\"1\" style=\"border-collapse: collapse\">\n" +
+            "    <tr>\n" +
+            "        <th>Ma Dien Thoai</th>\n" +
+            "        <th>Ten</th>\n" +
+            "        <th>Hang San Xuat</th>\n" +
+            "        <th>Gia</th>\n" +
+            "    </tr>\n"
+        for (let i = 0; i < dT.length; i++) {
+            bang += "    <tr>\n" +
+                "        <td>" + dT[i].getMaDT() + "</td>\n" +
+                "        <td>" + dT[i].getTen() + "</td>\n" +
+                "        <td>" + dT[i].getHangSX() + "</td>\n" +
+                "        <td>" + dT[i].getGia() + "</td>\n" +
+                "    </tr>\n"
+        }
+        bang += "</table>"
+        document.getElementById("hienThi").innerHTML = bang;
+    }
+
+    function themMoi() {
+        let maDT = document.getElementById("maDT").value;
+        let ten = document.getElementById("ten").value;
+        let hangSX = document.getElementById("hangSX").value;
+        let gia = document.getElementById("gia").value;
+        let dtMoi = new DienThoai(maDT, ten, hangSX, gia);
+        danhSachDT.push(dtMoi);
+        document.getElementById("maDT").value = "";
+        document.getElementById("ten").value = "";
+        document.getElementById("hangSX").value = "";
+        document.getElementById("gia").value = "";
+        hienThi(danhSachDT)
+    }
+</script>
+</body>
+</html>

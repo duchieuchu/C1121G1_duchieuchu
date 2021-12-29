@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+<script>
+    function isPossibleToMakeDivisible(arr, n) {
+        let remainder = 0;
+        for (i = 0; i < n; i++) {
+            remainder = (remainder + arr[i]) % 3;
+            return (remainder == 0);
+        }
+    }
+
+    if (isPossibleToMakeDivisible(arr, n)) {
+        document.write("yes");
+    } else {
+        document.write("No");
+    }
+
+    var arr = [9,6,1];
+    var n = 3;
+
+</script>
+
+</body>
+</html>
