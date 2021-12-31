@@ -7,8 +7,8 @@ public class NumberToLetter {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter number");
         int number = input.nextInt();
-        int tens ;
-        int ones ;
+        int tens;
+        int ones;
         int hundreds;
         if (number < 10 && number >= 0) {
             switch (number) {
@@ -132,93 +132,125 @@ public class NumberToLetter {
                     System.out.println("nine");
                     break;
             }
-        }else if (number<1000){
-            hundreds=(int) number/100;
-            tens = (int) number - (number / 10);
-            ones = (int) (number-hundreds*100-tens*10);
-            switch (hundreds){
-                case 1:
-                    System.out.print("one hundred and");
-                    break;
-                case 2:
-                    System.out.println("two hundred and");
-                    break;
-                case 3:
-                    System.out.println("three hundred and");
-                    break;
-                case 4:
-                    System.out.println("four hundred and");
-                    break;
-                case 5:
-                    System.out.println("five hundred and");
-                    break;
-                case 6:
-                    System.out.println("six hundred and");
-                    break;
-                case 7:
-                    System.out.println("seven hundred and");
-                    break;
-                case 8:
-                    System.out.println("eight hundred and");
-                    break;
-                case 9:
-                    System.out.println("nine hundred and");
-                    break;
-            }
-            switch (tens) {
-                case 2:
-                    System.out.print("twenty");
-                    break;
-                case 3:
-                    System.out.println("thirty");
-                    break;
-                case 4:
-                    System.out.println("forty");
-                    break;
-                case 5:
-                    System.out.println("fifty");
-                    break;
-                case 6:
-                    System.out.println("sixty");
-                    break;
-                case 7:
-                    System.out.println("seventy");
-                    break;
-                case 8:
-                    System.out.println("eighty");
-                    break;
-                case 9:
-                    System.out.println("ninety");
-                    break;
-            }
-            switch (ones) {
-                case 1:
-                    System.out.print("one");
-                    break;
-                case 2:
-                    System.out.println("two");
-                    break;
-                case 3:
-                    System.out.println("three");
-                    break;
-                case 4:
-                    System.out.println("four");
-                    break;
-                case 5:
-                    System.out.println("five");
-                    break;
-                case 6:
-                    System.out.println("six");
-                    break;
-                case 7:
-                    System.out.println("seven");
-                    break;
-                case 8:
-                    System.out.println("eight");
-                    break;
-                case 9:
-                    System.out.println("nine");
-                    break;
+        } else if (number < 1000) {
+            hundreds = (int) number / 100;
+            tens = (int) (number % 100) / 10;
+            ones = (int) number - (number / 10 * 10);
+            if (number % 100 == 0) {
+                switch (hundreds) {
+                    case 1:
+                        System.out.print("one hundred ");
+                        break;
+                    case 2:
+                        System.out.println("two hundred ");
+                        break;
+                    case 3:
+                        System.out.println("three hundred ");
+                        break;
+                    case 4:
+                        System.out.println("four hundred ");
+                        break;
+                    case 5:
+                        System.out.println("five hundred ");
+                        break;
+                    case 6:
+                        System.out.println("six hundred ");
+                        break;
+                    case 7:
+                        System.out.println("seven hundred ");
+                        break;
+                    case 8:
+                        System.out.println("eight hundred ");
+                        break;
+                    case 9:
+                        System.out.println("nine hundred ");
+                        break;
+                }
+            } else {
+                switch (hundreds) {
+                    case 1:
+                        System.out.print("one hundred and ");
+                        break;
+                    case 2:
+                        System.out.print("two hundred and ");
+                        break;
+                    case 3:
+                        System.out.print("three hundred and ");
+                        break;
+                    case 4:
+                        System.out.print("four hundred and ");
+                        break;
+                    case 5:
+                        System.out.print("five hundred and ");
+                        break;
+                    case 6:
+                        System.out.print("six hundred and ");
+                        break;
+                    case 7:
+                        System.out.print("seven hundred and ");
+                        break;
+                    case 8:
+                        System.out.print("eight hundred and ");
+                        break;
+                    case 9:
+                        System.out.print("nine hundred and ");
+                        break;
+                }
+                switch (tens) {
+                    case 2:
+                        System.out.print("twenty ");
+                        break;
+                    case 3:
+                        System.out.print("thirty ");
+                        break;
+                    case 4:
+                        System.out.print("forty ");
+                        break;
+                    case 5:
+                        System.out.print("fifty ");
+                        break;
+                    case 6:
+                        System.out.print("sixty ");
+                        break;
+                    case 7:
+                        System.out.print("seventy ");
+                        break;
+                    case 8:
+                        System.out.print("eighty");
+                        break;
+                    case 9:
+                        System.out.print("ninety ");
+                        break;
+                }
+                switch (ones) {
+                    case 1:
+                        System.out.print("one");
+                        break;
+                    case 2:
+                        System.out.println("two");
+                        break;
+                    case 3:
+                        System.out.println("three");
+                        break;
+                    case 4:
+                        System.out.println("four");
+                        break;
+                    case 5:
+                        System.out.println("five");
+                        break;
+                    case 6:
+                        System.out.println("six");
+                        break;
+                    case 7:
+                        System.out.println("seven");
+                        break;
+                    case 8:
+                        System.out.println("eight");
+                        break;
+                    case 9:
+                        System.out.println("nine");
+                        break;
+                }
             }
         }
     }
