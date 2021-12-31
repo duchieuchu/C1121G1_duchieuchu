@@ -9,12 +9,12 @@ public class CurrencyConversion {
         double vnd;
         System.out.println("Enter USD");
         usd = scanner.nextDouble();
-        double quidoi = usd * 23000;
-        System.out.println("VND: " + quidoi);
+        double quiDoi = usd * 23000;
+        System.out.println("VND: " + quiDoi);
 
         System.out.println("Enter VND");
         vnd = scanner.nextDouble();
-        double quidoi1 = vnd / 23000;
-        System.out.println("USD: " + quidoi1);
+        double quiDoi1 = vnd / 23000;
+        System.out.println("USD: " + quiDoi1);
     }
 }
