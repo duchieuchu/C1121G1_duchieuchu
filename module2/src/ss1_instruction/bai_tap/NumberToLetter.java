@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class NumberToLetter {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number");
-        int number = input.nextInt();
+        int number = scanner.nextInt();
         int tens;
         int ones;
         int hundreds;
