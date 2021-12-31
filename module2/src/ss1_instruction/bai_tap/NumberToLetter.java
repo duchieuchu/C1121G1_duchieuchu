@@ -78,28 +78,28 @@ public class NumberToLetter {
             ones = (int) number - (tens * 10);
             switch (tens) {
                 case 2:
-                    System.out.println("twenty");
+                    System.out.print("twenty ");
                     break;
                 case 3:
-                    System.out.println("thirty");
+                    System.out.print("thirty ");
                     break;
                 case 4:
-                    System.out.println("forty");
+                    System.out.print("forty ");
                     break;
                 case 5:
-                    System.out.println("fifty");
+                    System.out.print("fifty ");
                     break;
                 case 6:
-                    System.out.println("sixty");
+                    System.out.print("sixty ");
                     break;
                 case 7:
-                    System.out.println("seventy");
+                    System.out.print("seventy ");
                     break;
                 case 8:
-                    System.out.println("eighty");
+                    System.out.print("eighty ");
                     break;
                 case 9:
-                    System.out.println("ninety");
+                    System.out.print("ninety ");
                     break;
                 default:
             }
@@ -136,10 +136,9 @@ public class NumberToLetter {
             hundreds=(int) number/100;
             tens = (int) number - (number / 10);
             ones = (int) (number-hundreds*100-tens*10);
-            number = hundreds+tens+ones;
             switch (hundreds){
                 case 1:
-                    System.out.println("one hundred and");
+                    System.out.print("one hundred and");
                     break;
                 case 2:
                     System.out.println("two hundred and");
@@ -168,7 +167,7 @@ public class NumberToLetter {
             }
             switch (tens) {
                 case 2:
-                    System.out.println("twenty");
+                    System.out.print("twenty");
                     break;
                 case 3:
                     System.out.println("thirty");
@@ -194,7 +193,7 @@ public class NumberToLetter {
             }
             switch (ones) {
                 case 1:
-                    System.out.println("one");
+                    System.out.print("one");
                     break;
                 case 2:
                     System.out.println("two");
