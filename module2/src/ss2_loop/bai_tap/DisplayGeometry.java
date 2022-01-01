@@ -31,7 +31,7 @@ public class DisplayGeometry {
                     break;
                 case 3:
                     for (int i = 7; i > 0; i--) {
-                        for (int j = 0; j < i-1; j++) {
+                        for (int j = 0; j < i - 1; j++) {
                             System.out.print("* ");
                         }
                         System.out.println("*");
