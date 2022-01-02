@@ -9,7 +9,7 @@ public class ReverseTheElementsOfAnArray {
         Scanner scanner = new Scanner(System.in);
         do {
             System.out.print("Enter a size:");
-            size = scanner.nextInt();
+            size = scanner.nextInt();//nhap size
             if (size > 20)
                 System.out.println("Size does not exceed 20");
         } while (size > 20);
@@ -17,7 +17,7 @@ public class ReverseTheElementsOfAnArray {
         int i = 0;
         while (i < array.length) {
             System.out.print("Enter element " + (i + 1) + ": ");
-            array[i] = scanner.nextInt();
+            array[i] = scanner.nextInt();//nhap pt
             i++;
         }
         System.out.println("Elements in array: ");//hien thi pt
