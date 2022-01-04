@@ -8,7 +8,7 @@ public class ConvertTemperature {
         double fahrenheit;
         int choice = -1;
         Scanner scanner = new Scanner(System.in);
-        if (choice != 0) {
+        do {
             System.out.println("Menu:");
             System.out.println("1.Fahrenheit to Celsius");
             System.out.println("2.Celsius to Fahrenheit");
@@ -32,7 +32,7 @@ public class ConvertTemperature {
                     System.out.println("No choice");
                 }
             }
-        }
+        } while (choice != 0);
     }
 
     public static double fahrenheitToCelsius(double fahrenheit) {
@@ -45,3 +45,5 @@ public class ConvertTemperature {
         return fahrenheit;
     }
 }
+
+
