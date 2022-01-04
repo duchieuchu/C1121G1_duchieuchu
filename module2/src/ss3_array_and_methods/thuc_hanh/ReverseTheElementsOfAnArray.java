@@ -30,7 +30,7 @@ public class ReverseTheElementsOfAnArray {
             array[j] = array[size - 1 - j];
             array[size - 1 - j] = temp;
         }
-        System.out.printf( "Reverse array: ");
+        System.out.printf("Reverse array: ");
         for (int j = 0; j < array.length; j++) {
             System.out.print(array[j] + "\t");
         }
