@@ -4,11 +4,8 @@
     <list default="true" id="15c94c36-9451-4cad-8de4-84ab2fcdd75d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss4_class_and_object/bai_tap/QuadraticEquation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss4_class_and_object/bai_tap/QuadraticEquation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss4_class_and_object/thuc_hanh/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss4_class_and_object/thuc_hanh/Rectangle.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ss4_class_and_object/bai_tap/Fan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss4_class_and_object/bai_tap/Fan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss4_class_and_object/bai_tap/QuadraticEquation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss4_class_and_object/bai_tap/QuadraticEquation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss4_class_and_object/thuc_hanh/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss4_class_and_object/thuc_hanh/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss4_class_and_object/bai_tap/StopWatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss4_class_and_object/bai_tap/StopWatch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,13 +36,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.QuadraticEquation">
-    <configuration name="Fisrt20Prime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss2_loop.bai_tap.Fisrt20Prime" />
+  <component name="RunManager" selected="Application.Fan">
+    <configuration name="Fan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss4_class_and_object.bai_tap.Fan" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss2_loop.bai_tap.*" />
+          <option name="PATTERN" value="ss4_class_and_object.bai_tap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -53,12 +50,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IsPrime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss2_loop.thuc_hanh.IsPrime" />
+    <configuration name="Fisrt20Prime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss2_loop.bai_tap.Fisrt20Prime" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss2_loop.thuc_hanh.*" />
+          <option name="PATTERN" value="ss2_loop.bai_tap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,11 +104,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Fan" />
         <item itemvalue="Application.QuadraticEquation" />
         <item itemvalue="Application.Rectangle" />
         <item itemvalue="Application.PrimesLessThan100" />
         <item itemvalue="Application.Fisrt20Prime" />
-        <item itemvalue="Application.IsPrime" />
       </list>
     </recent_temporary>
   </component>
@@ -126,7 +123,7 @@
       <workItem from="1641310579558" duration="1590000" />
       <workItem from="1641346655607" duration="23000" />
       <workItem from="1641347327210" duration="8219000" />
-      <workItem from="1641364347516" duration="67000" />
+      <workItem from="1641364347516" duration="4015000" />
     </task>
     <servers />
   </component>
