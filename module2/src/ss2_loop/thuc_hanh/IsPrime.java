@@ -12,7 +12,7 @@ public class IsPrime {
         } else {
             int i = 2;
             boolean check = true;
-            while (i < number) {
+            while (i <=Math.sqrt(number)) {
                 if (number % i == 0) {
                     check = false;
                     break;

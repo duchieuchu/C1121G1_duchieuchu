@@ -4,7 +4,6 @@ public class PrimesLessThan100  {
     public static void main(String[] args){
         int n=3;
         System.out.println("Primes less than 100: ");
-        System.out.println(2);
         while (n<100){
             boolean check = true;
             for(int i = 2;i<n;i++){
