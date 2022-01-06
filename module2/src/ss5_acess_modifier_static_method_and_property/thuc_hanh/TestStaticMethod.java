@@ -8,8 +8,8 @@ public class TestStaticMethod {
         Student s2 = new Student(22, "linh");
         Student s3 = new Student(33, "dao");
 //goi phuong thuc hien thi
-    s1.display();
-    s2.display();
-    s3.display();
+        s1.display();
+        s2.display();
+        s3.display();
     }
 }

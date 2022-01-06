@@ -1,13 +1,13 @@
 package ss5_acess_modifier_static_method_and_property.thuc_hanh;
 
 public class Student {
-    private int rollno;
+    private int rollNumber;
     private String name;
     private static String college = "kk";
 
     //ham khoi tao bien
     Student(int r, String n) {
-        this.rollno = r;
+        this.rollNumber = r;
         this.name = n;
     }
 
@@ -17,7 +17,7 @@ public class Student {
     }
 
     void display() {
-        System.out.println(rollno + " " + name + " " + college);
+        System.out.println(rollNumber + " " + name + " " + college);
     }
 
 
