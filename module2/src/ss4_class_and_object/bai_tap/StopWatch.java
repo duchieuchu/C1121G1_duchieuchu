@@ -35,45 +35,21 @@ public class StopWatch {
     }
 
     public static void main(String[] args) {
-        StopWatch stopWatch= new StopWatch();
-//        long[] array = new long[100000];
-//
-//        for (int i = 0; i < array.length; i++) {
-//            array[i] = (long) Math.floor(Math.random() * 100000);
-//        }
-        int choice = -1;
-        Scanner input = new Scanner(System.in);
-        while (choice != 0) {
-            System.out.println("Menu");
-            System.out.println("1.bat dau");
-            System.out.println("2.ket thuc");
-            System.out.println("3.ket qua");
-            System.out.println("0.exit");
-            System.out.println("Enter your choice");
-            choice = input.nextInt();
-            switch (choice) {
-                case 1:
-                    Date now1 = new Date();//lay ra thoi gian hien tai
-                    System.out.println("Now is"+now1);
-                break;
-                case 2:
-                    Date now2 = new Date();//lay ra thoi gian hien tai
-                    System.out.println("Now is"+now2);
-                    break;
-                case 3:
+        StopWatch stopWatch = new StopWatch();
+        stopWatch.start();
 
-            }
+        long[] array = new long[10000000];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = (long) Math.floor(Math.random() * 10000000);
         }
-        Date now = new Date();//lay ra thoi gian hien tai
-        System.out.println("Now is"+now);
 
-//        System.out.println("startTime: "+stopWatch.startTime);
-//        System.out.println("endTime: "+stopWatch.endTime);
-//        System.out.println("elapsedTime: "+stopWatch.elapsedTime);
+        stopWatch.end();
+        System.out.println("elapsedTime: " + stopWatch.elapsedTime);
 
     }
-
-
 }
+
+
+
 
 
