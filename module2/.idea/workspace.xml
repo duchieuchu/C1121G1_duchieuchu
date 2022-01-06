@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15c94c36-9451-4cad-8de4-84ab2fcdd75d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ss5_acess_modifier_static_method_and_property/bai_tap/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss5_acess_modifier_static_method_and_property/bai_tap/TestCircle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss5_acess_modifier_static_method_and_property/bai_tap/TestStudent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss5_acess_modifier_static_method_and_property/bai_tap/AcessModifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss5_acess_modifier_static_method_and_property/bai_tap/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss5_acess_modifier_static_method_and_property/bai_tap/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss5_acess_modifier_static_method_and_property/bai_tap/TestCircle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss5_acess_modifier_static_method_and_property/bai_tap/TestCircle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,26 +46,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.TestCircle">
+  <component name="RunManager" selected="Application.TestStudent">
     <configuration name="StopWatch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss4_class_and_object.bai_tap.StopWatch" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ss4_class_and_object.bai_tap.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SystemTime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss1_instruction.thuc_hanh.SystemTime" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ss1_instruction.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,13 +99,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestStudent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss5_acess_modifier_static_method_and_property.bai_tap.TestStudent" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss5_acess_modifier_static_method_and_property.bai_tap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestStudent" />
         <item itemvalue="Application.TestCircle" />
         <item itemvalue="Application.TestStaticProperty" />
         <item itemvalue="Application.StopWatch" />
         <item itemvalue="Application.TestStaticMethod" />
-        <item itemvalue="Application.SystemTime" />
       </list>
     </recent_temporary>
   </component>
@@ -136,7 +136,7 @@
       <workItem from="1641364347516" duration="8881000" />
       <workItem from="1641387045713" duration="3092000" />
       <workItem from="1641435079606" duration="7596000" />
-      <workItem from="1641450761443" duration="962000" />
+      <workItem from="1641450761443" duration="2273000" />
     </task>
     <servers />
   </component>
