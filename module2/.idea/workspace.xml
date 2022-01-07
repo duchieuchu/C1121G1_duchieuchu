@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15c94c36-9451-4cad-8de4-84ab2fcdd75d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ss5_inheritance/bai_tap/TestCylinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss5_inheritance/bai_tap/Point3D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss5_inheritance/bai_tap/TestPoint2D.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss5_inheritance/bai_tap/TestCircle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss5_inheritance/bai_tap/TestCircle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss5_inheritance/bai_tap/Cylinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss5_inheritance/bai_tap/Cylinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss5_inheritance/bai_tap/Point2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss5_inheritance/bai_tap/Point2D.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +46,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.TestCylinder">
+  <component name="RunManager" selected="Application.TestPoint3D">
     <configuration name="ShapeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss5_inheritance.thuc_hanh.ShapeTest" />
       <module name="module2" />
@@ -86,12 +86,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRectangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss5_inheritance.thuc_hanh.TestRectangle" />
+    <configuration name="TestPoint2D" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss5_inheritance.bai_tap.TestPoint2D" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss5_inheritance.thuc_hanh.*" />
+          <option name="PATTERN" value="ss5_inheritance.bai_tap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,12 +99,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSquare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss5_inheritance.thuc_hanh.TestSquare" />
+    <configuration name="TestPoint3D" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss5_inheritance.bai_tap.TestPoint3D" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss5_inheritance.thuc_hanh.*" />
+          <option name="PATTERN" value="ss5_inheritance.bai_tap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,11 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestPoint3D" />
+        <item itemvalue="Application.TestPoint2D" />
         <item itemvalue="Application.TestCylinder" />
         <item itemvalue="Application.TestCircle" />
         <item itemvalue="Application.ShapeTest" />
-        <item itemvalue="Application.TestRectangle" />
-        <item itemvalue="Application.TestSquare" />
       </list>
     </recent_temporary>
   </component>
@@ -139,7 +139,7 @@
       <workItem from="1641450761443" duration="10806000" />
       <workItem from="1641465507989" duration="2000" />
       <workItem from="1641476158261" duration="6406000" />
-      <workItem from="1641537660193" duration="10624000" />
+      <workItem from="1641537660193" duration="13715000" />
     </task>
     <servers />
   </component>
