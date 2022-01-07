@@ -1,9 +1,9 @@
 package ss5_inheritance.bai_tap;
 
 public class Circle {
-    double radius;
-    String color;
-
+    double radius=1;
+    String color="green";
+public  Circle(){}
     public Circle(double radius, String color) {
         this.radius = radius;
         this.color = color;
@@ -29,5 +29,14 @@ public class Circle {
     }
     public double getPerimeter(){
         return radius*2*Math.PI;
+    }
+
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "radius=" + radius +
+                ", color='" + color + '\'' +
+                '}'
+                +"\nArea: "+getArea()+" Perimeter: "+getPerimeter();
     }
 }
