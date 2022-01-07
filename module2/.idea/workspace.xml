@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15c94c36-9451-4cad-8de4-84ab2fcdd75d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ss5_inheritance/r.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss5_inheritance/thuc_hanh/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss5_inheritance/thuc_hanh/CircleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss5_inheritance/thuc_hanh/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss5_inheritance/thuc_hanh/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss5_inheritance/thuc_hanh/ShapeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss5_inheritance/thuc_hanh/Square.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss5_inheritance/thuc_hanh/TestRectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss5_inheritance/thuc_hanh/TestSquare.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss5_inheritance/bai_tap/Circle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss3_array_and_methods/bai_tap/MergeArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss3_array_and_methods/bai_tap/MergeArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss4_class_and_object/bai_tap/StopWatch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss4_class_and_object/bai_tap/StopWatch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss3_array_and_methods/bai_tap/MergeArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss3_array_and_methods/bai_tap/MergeArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss4_class_and_object/bai_tap/StopWatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss4_class_and_object/bai_tap/StopWatch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +136,7 @@
       <workItem from="1641450761443" duration="10806000" />
       <workItem from="1641465507989" duration="2000" />
       <workItem from="1641476158261" duration="6406000" />
-      <workItem from="1641537660193" duration="5631000" />
+      <workItem from="1641537660193" duration="5937000" />
     </task>
     <servers />
   </component>
