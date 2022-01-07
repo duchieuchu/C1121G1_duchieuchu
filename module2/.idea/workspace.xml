@@ -2,11 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15c94c36-9451-4cad-8de4-84ab2fcdd75d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ss5_acess_modifier_static_method_and_property/bai_tap/TestStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss5_inheritance/r.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss5_inheritance/thuc_hanh/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss5_inheritance/thuc_hanh/CircleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss5_inheritance/thuc_hanh/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss5_inheritance/thuc_hanh/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss5_inheritance/thuc_hanh/ShapeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss5_inheritance/thuc_hanh/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss5_inheritance/thuc_hanh/TestRectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss5_inheritance/thuc_hanh/TestSquare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss5_acess_modifier_static_method_and_property/bai_tap/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss5_acess_modifier_static_method_and_property/bai_tap/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss5_acess_modifier_static_method_and_property/bai_tap/TestCircle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss5_acess_modifier_static_method_and_property/bai_tap/TestCircle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss3_array_and_methods/bai_tap/MergeArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss3_array_and_methods/bai_tap/MergeArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss4_class_and_object/bai_tap/StopWatch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss4_class_and_object/bai_tap/StopWatch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss3_array_and_methods/bai_tap/MergeArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss3_array_and_methods/bai_tap/MergeArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss4_class_and_object/bai_tap/StopWatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss4_class_and_object/bai_tap/StopWatch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,13 +56,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.TestStudent">
-    <configuration name="StopWatch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss4_class_and_object.bai_tap.StopWatch" />
+  <component name="RunManager" selected="Application.TestRectangle">
+    <configuration name="CircleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss5_inheritance.thuc_hanh.CircleTest" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss4_class_and_object.bai_tap.*" />
+          <option name="PATTERN" value="ss5_inheritance.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -60,12 +70,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCircle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss5_acess_modifier_static_method_and_property.bai_tap.TestCircle" />
+    <configuration name="ShapeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss5_inheritance.thuc_hanh.ShapeTest" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss5_acess_modifier_static_method_and_property.bai_tap.*" />
+          <option name="PATTERN" value="ss5_inheritance.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -73,12 +83,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestStaticMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss5_acess_modifier_static_method_and_property.thuc_hanh.TestStaticMethod" />
+    <configuration name="TestRectangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss5_inheritance.thuc_hanh.TestRectangle" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss5_acess_modifier_static_method_and_property.thuc_hanh.*" />
+          <option name="PATTERN" value="ss5_inheritance.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -86,12 +96,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestStaticProperty" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss5_acess_modifier_static_method_and_property.thuc_hanh.TestStaticProperty" />
+    <configuration name="TestSquare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss5_inheritance.thuc_hanh.TestSquare" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss5_acess_modifier_static_method_and_property.thuc_hanh.*" />
+          <option name="PATTERN" value="ss5_inheritance.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,12 +109,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestStudent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss5_acess_modifier_static_method_and_property.bai_tap.TestStudent" />
+    <configuration name="r1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss5_inheritance.r1" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss5_acess_modifier_static_method_and_property.bai_tap.*" />
+          <option name="PATTERN" value="ss5_inheritance.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestStudent" />
-        <item itemvalue="Application.TestCircle" />
-        <item itemvalue="Application.TestStaticProperty" />
-        <item itemvalue="Application.StopWatch" />
-        <item itemvalue="Application.TestStaticMethod" />
+        <item itemvalue="Application.TestRectangle" />
+        <item itemvalue="Application.TestSquare" />
+        <item itemvalue="Application.CircleTest" />
+        <item itemvalue="Application.ShapeTest" />
+        <item itemvalue="Application.r1" />
       </list>
     </recent_temporary>
   </component>
@@ -136,7 +146,10 @@
       <workItem from="1641364347516" duration="8881000" />
       <workItem from="1641387045713" duration="3092000" />
       <workItem from="1641435079606" duration="7596000" />
-      <workItem from="1641450761443" duration="2273000" />
+      <workItem from="1641450761443" duration="10806000" />
+      <workItem from="1641465507989" duration="2000" />
+      <workItem from="1641476158261" duration="6406000" />
+      <workItem from="1641537660193" duration="5631000" />
     </task>
     <servers />
   </component>
@@ -154,5 +167,15 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

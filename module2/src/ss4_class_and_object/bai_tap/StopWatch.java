@@ -44,7 +44,8 @@ public class StopWatch {
         }
 
         stopWatch.end();
-        System.out.println("elapsedTime: " + stopWatch.elapsedTime);
+
+        System.out.println("elapsedTime: " + stopWatch.elapsedTime());
 
     }
 }
