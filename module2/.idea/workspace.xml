@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15c94c36-9451-4cad-8de4-84ab2fcdd75d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ss5_inheritance/bai_tap/Point3D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss5_inheritance/bai_tap/TestPoint2D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss2_loop/bai_tap/Fisrt20Primes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss5_inheritance/bai_tap/Point.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss5_inheritance/bai_tap/Point2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss5_inheritance/bai_tap/Point2D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss2_loop/bai_tap/Fisrt20Prime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss2_loop/bai_tap/PrimesLessThan100.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss2_loop/bai_tap/PrimesLessThan100.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss2_loop/bai_tap/Fisrt20Prime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss2_loop/bai_tap/PrimesLessThan100.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss2_loop/bai_tap/PrimesLessThan100.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,13 +49,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.TestPoint3D">
-    <configuration name="ShapeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss5_inheritance.thuc_hanh.ShapeTest" />
+  <component name="RunManager" selected="Application.PrimesLessThan100">
+    <configuration name="Fisrt20Prime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss2_loop.bai_tap.Fisrt20Prime" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss5_inheritance.thuc_hanh.*" />
+          <option name="PATTERN" value="ss2_loop.bai_tap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -60,12 +63,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCircle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss5_inheritance.bai_tap.TestCircle" />
+    <configuration name="Fisrt20Primes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss2_loop.bai_tap.Fisrt20Primes" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss5_inheritance.bai_tap.*" />
+          <option name="PATTERN" value="ss2_loop.bai_tap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -73,12 +76,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCylinder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss5_inheritance.bai_tap.TestCylinder" />
+    <configuration name="IsPrime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss2_loop.thuc_hanh.IsPrime" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss5_inheritance.bai_tap.*" />
+          <option name="PATTERN" value="ss2_loop.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -86,12 +89,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestPoint2D" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss5_inheritance.bai_tap.TestPoint2D" />
+    <configuration name="PrimesLessThan100" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss2_loop.bai_tap.PrimesLessThan100" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss5_inheritance.bai_tap.*" />
+          <option name="PATTERN" value="ss2_loop.bai_tap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,12 +102,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestPoint3D" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss5_inheritance.bai_tap.TestPoint3D" />
+    <configuration name="TestCircle (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss5_acess_modifier_static_method_and_property.bai_tap.TestCircle" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss5_inheritance.bai_tap.*" />
+          <option name="PATTERN" value="ss5_acess_modifier_static_method_and_property.bai_tap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,11 +117,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestPoint3D" />
-        <item itemvalue="Application.TestPoint2D" />
-        <item itemvalue="Application.TestCylinder" />
-        <item itemvalue="Application.TestCircle" />
-        <item itemvalue="Application.ShapeTest" />
+        <item itemvalue="Application.PrimesLessThan100" />
+        <item itemvalue="Application.Fisrt20Primes" />
+        <item itemvalue="Application.Fisrt20Prime" />
+        <item itemvalue="Application.IsPrime" />
+        <item itemvalue="Application.TestCircle (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -139,7 +142,7 @@
       <workItem from="1641450761443" duration="10806000" />
       <workItem from="1641465507989" duration="2000" />
       <workItem from="1641476158261" duration="6406000" />
-      <workItem from="1641537660193" duration="13715000" />
+      <workItem from="1641537660193" duration="18212000" />
     </task>
     <servers />
   </component>
