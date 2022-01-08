@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15c94c36-9451-4cad-8de4-84ab2fcdd75d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ss2_loop/bai_tap/Fisrt20Primes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss5_inheritance/bai_tap/Point.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss2_loop/bai_tap/Fisrt20Prime.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/module2/ss2_loop/bai_tap/PrimesLessThan100.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss2_loop/bai_tap/PrimesLessThan100.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss2_loop/bai_tap/Fisrt20Prime.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ss2_loop/bai_tap/PrimesLessThan100.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss2_loop/bai_tap/PrimesLessThan100.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,7 +138,7 @@
       <workItem from="1641450761443" duration="10806000" />
       <workItem from="1641465507989" duration="2000" />
       <workItem from="1641476158261" duration="6406000" />
-      <workItem from="1641537660193" duration="18212000" />
+      <workItem from="1641537660193" duration="19232000" />
     </task>
     <servers />
   </component>

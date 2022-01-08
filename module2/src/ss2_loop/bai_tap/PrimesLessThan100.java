@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class PrimesLessThan100 {
     public static void main(String[] args) {
+        System.out.println("prime <100 is:");
         int count = 0;
         int i = 2;
         while (count < 25) {
@@ -25,4 +26,3 @@ public class PrimesLessThan100 {
         return true;
     }
 }
-
