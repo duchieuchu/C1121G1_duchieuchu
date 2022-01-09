@@ -1,4 +1,4 @@
-package ss5_inheritance.bai_tap;
+package ss6_inheritance.bai_tap;
 
 public class Cylinder extends Circle {
     double length;

@@ -1,4 +1,4 @@
-package ss5_inheritance.thuc_hanh;
+package ss6_inheritance.thuc_hanh;
 
 public class CircleTest {
     public static void main(String[] args) {

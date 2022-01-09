@@ -1,4 +1,4 @@
-package ss5_inheritance.bai_tap;
+package ss6_inheritance.bai_tap;
 
 public class TestPoint {
     public static void main(String[] args) {

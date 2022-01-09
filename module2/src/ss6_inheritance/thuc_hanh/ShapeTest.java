@@ -1,4 +1,4 @@
-package ss5_inheritance.thuc_hanh;
+package ss6_inheritance.thuc_hanh;
 
 public class ShapeTest {
     public static void main(String[] args) {
