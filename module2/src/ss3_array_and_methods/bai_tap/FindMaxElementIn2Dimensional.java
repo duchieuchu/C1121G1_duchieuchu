@@ -20,7 +20,6 @@ public class FindMaxElementIn2Dimensional {
                 array[i][j] = scanner.nextInt();
             }
         }
-        System.out.println("Display array: ");
         int max = array[0][0];
         int indexRow = 0;
         int indexCol = 0;
