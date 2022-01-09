@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15c94c36-9451-4cad-8de4-84ab2fcdd75d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ss5_inheritance/bai_tap/TestTriangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss5_inheritance/bai_tap/Triangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss2_loop/bai_tap/PrimesLessThan100.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss2_loop/bai_tap/PrimesLessThan100.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss2_loop/bai_tap/PrimesLessThan100.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss2_loop/bai_tap/PrimesLessThan100.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss5_inheritance/bai_tap/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss5_inheritance/bai_tap/Point.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss5_inheritance/bai_tap/TestMovablePoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss5_inheritance/bai_tap/TestMovablePoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss5_inheritance/r.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,13 +48,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.PrimesLessThan100">
-    <configuration name="Fisrt20Prime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss2_loop.bai_tap.Fisrt20Prime" />
+  <component name="RunManager" selected="Application.TestTriangle">
+    <configuration name="ShapeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss5_inheritance.thuc_hanh.ShapeTest" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss2_loop.bai_tap.*" />
+          <option name="PATTERN" value="ss5_inheritance.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -59,12 +62,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Fisrt20Primes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss2_loop.bai_tap.Fisrt20Primes" />
+    <configuration name="TestMovablePoint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss5_inheritance.bai_tap.TestMovablePoint" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss2_loop.bai_tap.*" />
+          <option name="PATTERN" value="ss5_inheritance.bai_tap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -72,12 +75,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IsPrime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss2_loop.thuc_hanh.IsPrime" />
+    <configuration name="TestPoint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss5_inheritance.bai_tap.TestPoint" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss2_loop.thuc_hanh.*" />
+          <option name="PATTERN" value="ss5_inheritance.bai_tap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -85,12 +88,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrimesLessThan100" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss2_loop.bai_tap.PrimesLessThan100" />
+    <configuration name="TestRectangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss5_inheritance.thuc_hanh.TestRectangle" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss2_loop.bai_tap.*" />
+          <option name="PATTERN" value="ss5_inheritance.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,12 +101,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCircle (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss5_acess_modifier_static_method_and_property.bai_tap.TestCircle" />
+    <configuration name="TestTriangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss5_inheritance.bai_tap.TestTriangle" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss5_acess_modifier_static_method_and_property.bai_tap.*" />
+          <option name="PATTERN" value="ss5_inheritance.bai_tap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PrimesLessThan100" />
-        <item itemvalue="Application.Fisrt20Primes" />
-        <item itemvalue="Application.Fisrt20Prime" />
-        <item itemvalue="Application.IsPrime" />
-        <item itemvalue="Application.TestCircle (1)" />
+        <item itemvalue="Application.TestTriangle" />
+        <item itemvalue="Application.ShapeTest" />
+        <item itemvalue="Application.TestRectangle" />
+        <item itemvalue="Application.TestMovablePoint" />
+        <item itemvalue="Application.TestPoint" />
       </list>
     </recent_temporary>
   </component>
@@ -139,6 +142,14 @@
       <workItem from="1641465507989" duration="2000" />
       <workItem from="1641476158261" duration="6406000" />
       <workItem from="1641537660193" duration="19232000" />
+      <workItem from="1641633361061" duration="10000" />
+      <workItem from="1641633395951" duration="4532000" />
+      <workItem from="1641702242906" duration="459000" />
+      <workItem from="1641702718142" duration="18000" />
+      <workItem from="1641702756170" duration="115000" />
+      <workItem from="1641702890724" duration="182000" />
+      <workItem from="1641703101521" duration="117000" />
+      <workItem from="1641703276065" duration="3210000" />
     </task>
     <servers />
   </component>
