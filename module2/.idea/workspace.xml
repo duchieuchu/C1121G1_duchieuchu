@@ -2,13 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15c94c36-9451-4cad-8de4-84ab2fcdd75d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ss5_inheritance/bai_tap/TestTriangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss5_inheritance/bai_tap/Triangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss5_inheritance/bai_tap/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss5_inheritance/bai_tap/Point.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss5_inheritance/bai_tap/TestMovablePoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss5_inheritance/bai_tap/TestMovablePoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss5_inheritance/r.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss3_array_and_methods/bai_tap/AddElementToArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss3_array_and_methods/bai_tap/AddElementToArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss3_array_and_methods/bai_tap/RemoveElementFromArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/Circle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/Cylinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/Cylinder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/MovablePoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/MovablePoint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/Point.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/Point2D.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/Point2D.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/Point3D.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/Point3D.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/TestCircle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/TestCircle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/TestCylinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/TestCylinder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/TestMovablePoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/TestMovablePoint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/TestPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/TestPoint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/TestPoint2D.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/TestPoint2D.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/TestPoint3D.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/TestPoint3D.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/TestTriangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/TestTriangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/Triangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/Triangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/Circle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/CircleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/CircleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/Rectangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/Shape.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/Shape.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/ShapeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/ShapeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/Square.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/Square.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/TestRectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/TestRectangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/TestSquare.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/TestSquare.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss3_array_and_methods/bai_tap/AddElementToArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss3_array_and_methods/bai_tap/AddElementToArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss3_array_and_methods/bai_tap/FindMinElementArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss3_array_and_methods/bai_tap/FindMinElementArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss3_array_and_methods/bai_tap/RemoveElementFromArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss3_array_and_methods/bai_tap/DeleteElementOfArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss3_array_and_methods/thuc_hanh/FindMaxElementInArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss3_array_and_methods/thuc_hanh/FindMaxElementInArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss3_array_and_methods/thuc_hanh/FindMinElementInArray.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,15 +70,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.TestTriangle">
-    <configuration name="ShapeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss5_inheritance.thuc_hanh.ShapeTest" />
+  <component name="RunManager" selected="Application.FindMinElementInArray">
+    <configuration name="AddElementToArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss3_array_and_methods.bai_tap.AddElementToArray" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss5_inheritance.thuc_hanh.*" />
+          <option name="PATTERN" value="ss3_array_and_methods.bai_tap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -62,12 +87,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMovablePoint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss5_inheritance.bai_tap.TestMovablePoint" />
+    <configuration name="DeleteElementOfArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss3_array_and_methods.bai_tap.DeleteElementOfArray" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss5_inheritance.bai_tap.*" />
+          <option name="PATTERN" value="ss3_array_and_methods.bai_tap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -75,12 +100,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestPoint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss5_inheritance.bai_tap.TestPoint" />
+    <configuration name="FindMaxElementInArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss3_array_and_methods.thuc_hanh.FindMaxElementInArray" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss5_inheritance.bai_tap.*" />
+          <option name="PATTERN" value="ss3_array_and_methods.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,12 +113,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRectangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss5_inheritance.thuc_hanh.TestRectangle" />
+    <configuration name="FindMinElementInArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss3_array_and_methods.thuc_hanh.FindMinElementInArray" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss5_inheritance.thuc_hanh.*" />
+          <option name="PATTERN" value="ss3_array_and_methods.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,12 +126,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestTriangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss5_inheritance.bai_tap.TestTriangle" />
+    <configuration name="TestCircle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss6_inheritance.bai_tap.TestCircle" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss5_inheritance.bai_tap.*" />
+          <option name="PATTERN" value="ss6_inheritance.bai_tap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestTriangle" />
-        <item itemvalue="Application.ShapeTest" />
-        <item itemvalue="Application.TestRectangle" />
-        <item itemvalue="Application.TestMovablePoint" />
-        <item itemvalue="Application.TestPoint" />
+        <item itemvalue="Application.FindMinElementInArray" />
+        <item itemvalue="Application.FindMaxElementInArray" />
+        <item itemvalue="Application.AddElementToArray" />
+        <item itemvalue="Application.DeleteElementOfArray" />
+        <item itemvalue="Application.TestCircle" />
       </list>
     </recent_temporary>
   </component>
@@ -149,7 +174,13 @@
       <workItem from="1641702756170" duration="115000" />
       <workItem from="1641702890724" duration="182000" />
       <workItem from="1641703101521" duration="117000" />
-      <workItem from="1641703276065" duration="3210000" />
+      <workItem from="1641703276065" duration="3809000" />
+      <workItem from="1641712314245" duration="206000" />
+      <workItem from="1641712543630" duration="5000" />
+      <workItem from="1641712585906" duration="204000" />
+      <workItem from="1641712810121" duration="465000" />
+      <workItem from="1641713386322" duration="13000" />
+      <workItem from="1641721491629" duration="5208000" />
     </task>
     <servers />
   </component>

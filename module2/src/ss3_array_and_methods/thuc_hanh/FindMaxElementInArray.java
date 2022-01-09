@@ -3,7 +3,7 @@ package ss3_array_and_methods.thuc_hanh;
 import java.util.Scanner;
 
 public interface FindMaxElementInArray {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         int size;//so lan nhap
         int[] array;
         Scanner scanner = new Scanner(System.in);
