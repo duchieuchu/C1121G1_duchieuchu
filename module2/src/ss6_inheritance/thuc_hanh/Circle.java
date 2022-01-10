@@ -4,6 +4,9 @@ public class Circle extends Shape {
     double radius = 1.0;
 
     public Circle() {
+    }
+
+    public Circle(double radius) {
         this.radius = radius;
     }
 
@@ -21,15 +24,16 @@ public class Circle extends Shape {
     }
 
     public double getArea() {
-        return radius*radius*Math.PI;
+        return radius * radius * Math.PI;
     }
 
     public double getPerimeter() {
-        return radius*2*Math.PI;
+        return radius * 2 * Math.PI;
     }
-    public String toString(){
-        return "A circle with radius "+getRadius()
-                +", which is a subclass of "+super.toString();
+
+    public String toString() {
+        return "A circle with radius " + getRadius()
+                + ", which is a subclass of " + super.toString();
 //                +" Area: "+getArea()
 //                +" Perimeter: "+getPerimeter();
     }
