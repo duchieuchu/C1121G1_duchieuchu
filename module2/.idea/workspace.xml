@@ -2,19 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15c94c36-9451-4cad-8de4-84ab2fcdd75d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ss7_abtract_class_interface/thuc_hanh/Animal/Apple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss7_abtract_class_interface/thuc_hanh/Animal/Edible.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss7_abtract_class_interface/thuc_hanh/Animal/Fruit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss7_abtract_class_interface/thuc_hanh/Animal/Orange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss7_abtract_class_interface/thuc_hanh/Animal/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss7_abtract_class_interface/thuc_hanh/comparator/CircleComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss7_abtract_class_interface/thuc_hanh/comparator/CircleComparatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss3_array_and_methods/bai_tap/FindMaxElementIn2Dimensional.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss3_array_and_methods/bai_tap/FindMaxElementIn2Dimensional.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss3_array_and_methods/bai_tap/FindMinElementArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss3_array_and_methods/bai_tap/FindMinElementArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss3_array_and_methods/thuc_hanh/FindMinElementInArray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss7_abtract_class_interface/thuc_hanh/r.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss7_abtract_class_interface/thuc_hanh/Animal/Chicken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss7_abtract_class_interface/thuc_hanh/Animal/Chicken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss7_abtract_class_interface/thuc_hanh/Animal/TestAnimal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/Circle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss7_abtract_class_interface/thuc_hanh/animal/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss7_abtract_class_interface/thuc_hanh/animal/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss7_abtract_class_interface/thuc_hanh/animal/Tiger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss7_abtract_class_interface/thuc_hanh/animal/Tiger.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +56,7 @@
       <recent name="ss7_abtract_class_interface.thuc_hanh.animal" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test">
+  <component name="RunManager" selected="Application.CircleComparatorTest">
     <configuration name="AbstractAndInterfaceTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss7_abtract_class_interface.thuc_hanh.AbstractAndInterfaceTests" />
       <module name="module2" />
@@ -76,12 +70,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddElementToArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss3_array_and_methods.bai_tap.AddElementToArray" />
+    <configuration name="CircleComparatorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss7_abtract_class_interface.thuc_hanh.comparator.CircleComparatorTest" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss3_array_and_methods.bai_tap.*" />
+          <option name="PATTERN" value="ss7_abtract_class_interface.thuc_hanh.comparator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,12 +83,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindMaxElementIn2Dimensional" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss3_array_and_methods.bai_tap.FindMaxElementIn2Dimensional" />
+    <configuration name="ComparableCircleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss7_abtract_class_interface.thuc_hanh.comparable.ComparableCircleTest" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss3_array_and_methods.bai_tap.*" />
+          <option name="PATTERN" value="ss7_abtract_class_interface.thuc_hanh.comparable.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CircleComparatorTest" />
+        <item itemvalue="Application.ComparableCircleTest" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.TestAnimal" />
         <item itemvalue="Application.AbstractAndInterfaceTests" />
-        <item itemvalue="Application.AddElementToArray" />
-        <item itemvalue="Application.FindMaxElementIn2Dimensional" />
       </list>
     </recent_temporary>
   </component>
@@ -172,7 +166,7 @@
       <workItem from="1641721491629" duration="8021000" />
       <workItem from="1641789197241" duration="2174000" />
       <workItem from="1641791397368" duration="406000" />
-      <workItem from="1641796197929" duration="2630000" />
+      <workItem from="1641796197929" duration="9263000" />
     </task>
     <servers />
   </component>
