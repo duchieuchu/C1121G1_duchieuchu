@@ -2,37 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15c94c36-9451-4cad-8de4-84ab2fcdd75d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ss7_abtract_class_interface/thuc_hanh/Animal/Apple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss7_abtract_class_interface/thuc_hanh/Animal/Edible.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss7_abtract_class_interface/thuc_hanh/Animal/Fruit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss7_abtract_class_interface/thuc_hanh/Animal/Orange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss7_abtract_class_interface/thuc_hanh/Animal/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss3_array_and_methods/bai_tap/AddElementToArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss3_array_and_methods/bai_tap/AddElementToArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss3_array_and_methods/bai_tap/RemoveElementFromArray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/Circle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/Cylinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/Cylinder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/MovablePoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/MovablePoint.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/Point.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/Point2D.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/Point2D.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/Point3D.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/Point3D.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/TestCircle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/TestCircle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/TestCylinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/TestCylinder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/TestMovablePoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/TestMovablePoint.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/TestPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/TestPoint.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/TestPoint2D.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/TestPoint2D.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/TestPoint3D.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/TestPoint3D.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/TestTriangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/TestTriangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/Triangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/bai_tap/Triangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/Circle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/CircleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/CircleTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/Rectangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/Shape.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/Shape.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/ShapeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/ShapeTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/Square.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/Square.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/TestRectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/TestRectangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/TestSquare.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/TestSquare.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss3_array_and_methods/bai_tap/AddElementToArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss3_array_and_methods/bai_tap/AddElementToArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss3_array_and_methods/bai_tap/FindMinElementArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss3_array_and_methods/bai_tap/FindMinElementArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss3_array_and_methods/bai_tap/RemoveElementFromArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss3_array_and_methods/bai_tap/DeleteElementOfArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss3_array_and_methods/thuc_hanh/FindMaxElementInArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss3_array_and_methods/thuc_hanh/FindMaxElementInArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss3_array_and_methods/thuc_hanh/FindMinElementInArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss3_array_and_methods/bai_tap/FindMaxElementIn2Dimensional.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss3_array_and_methods/bai_tap/FindMaxElementIn2Dimensional.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss3_array_and_methods/bai_tap/FindMinElementArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss3_array_and_methods/bai_tap/FindMinElementArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss3_array_and_methods/thuc_hanh/FindMinElementInArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss7_abtract_class_interface/thuc_hanh/r.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss7_abtract_class_interface/thuc_hanh/Animal/Chicken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss7_abtract_class_interface/thuc_hanh/Animal/Chicken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss7_abtract_class_interface/thuc_hanh/Animal/TestAnimal.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +25,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaFXApplication" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -73,7 +56,26 @@
     <property name="create.test.in.the.same.root" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.FindMinElementInArray">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ss7_abtract_class_interface.thuc_hanh.edible" />
+      <recent name="ss7_abtract_class_interface.thuc_hanh.animal" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="AbstractAndInterfaceTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss7_abtract_class_interface.thuc_hanh.AbstractAndInterfaceTests" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss7_abtract_class_interface.thuc_hanh.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AddElementToArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss3_array_and_methods.bai_tap.AddElementToArray" />
       <module name="module2" />
@@ -87,8 +89,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DeleteElementOfArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss3_array_and_methods.bai_tap.DeleteElementOfArray" />
+    <configuration name="FindMaxElementIn2Dimensional" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss3_array_and_methods.bai_tap.FindMaxElementIn2Dimensional" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
@@ -100,12 +102,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindMaxElementInArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss3_array_and_methods.thuc_hanh.FindMaxElementInArray" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss7_abtract_class_interface.thuc_hanh.animal.Test" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss3_array_and_methods.thuc_hanh.*" />
+          <option name="PATTERN" value="ss7_abtract_class_interface.thuc_hanh.animal.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,25 +115,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindMinElementInArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss3_array_and_methods.thuc_hanh.FindMinElementInArray" />
+    <configuration name="TestAnimal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss7_abtract_class_interface.thuc_hanh.animal.TestAnimal" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss3_array_and_methods.thuc_hanh.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestCircle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss6_inheritance.bai_tap.TestCircle" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ss6_inheritance.bai_tap.*" />
+          <option name="PATTERN" value="ss7_abtract_class_interface.thuc_hanh.animal.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -141,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FindMinElementInArray" />
-        <item itemvalue="Application.FindMaxElementInArray" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.TestAnimal" />
+        <item itemvalue="Application.AbstractAndInterfaceTests" />
         <item itemvalue="Application.AddElementToArray" />
-        <item itemvalue="Application.DeleteElementOfArray" />
-        <item itemvalue="Application.TestCircle" />
+        <item itemvalue="Application.FindMaxElementIn2Dimensional" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +169,10 @@
       <workItem from="1641712585906" duration="204000" />
       <workItem from="1641712810121" duration="465000" />
       <workItem from="1641713386322" duration="13000" />
-      <workItem from="1641721491629" duration="5208000" />
+      <workItem from="1641721491629" duration="8021000" />
+      <workItem from="1641789197241" duration="2174000" />
+      <workItem from="1641791397368" duration="406000" />
+      <workItem from="1641796197929" duration="2630000" />
     </task>
     <servers />
   </component>
