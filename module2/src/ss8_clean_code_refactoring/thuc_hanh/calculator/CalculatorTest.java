@@ -75,7 +75,7 @@ class CalculatorTest {
     @Test
     @DisplayName("Testing wrong operator")
     void testCalculateWrongOperator() {
-        int firstOperand= 2;
+        int firstOperand = 2;
         int secondOperand = 0;
         char operator = '=';
 
