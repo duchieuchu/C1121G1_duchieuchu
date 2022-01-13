@@ -1,8 +1,8 @@
-package ss11_dsa_stack_queue.thuc_hanh;
+package ss11_dsa_stack_queue.thuc_hanh.trien_khai_queue_use_danh_sanh_lien_ket;
 
 public class MyLinkedListQueue {
-    private Node head;//dau
-    private Node tail;//cuoi
+    private Node head;
+    private Node tail;
 
     public MyLinkedListQueue() {
         this.head = null;
@@ -17,7 +17,6 @@ public class MyLinkedListQueue {
         this.tail.next = temp;
         this.tail = temp;
     }
-
     public Node dequeue() {
         if (this.head == null)
             return null;

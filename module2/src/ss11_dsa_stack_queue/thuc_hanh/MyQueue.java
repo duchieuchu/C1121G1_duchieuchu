@@ -7,16 +7,15 @@ import java.util.Queue;
 public class MyQueue {
     public static void main(String[] args) {
         Queue<String> myQueue = new LinkedList<>();
-        myQueue.add("a,b");
-        myQueue.offer("b,d");
+        myQueue.add("a,b");//them pt
+        myQueue.offer("b,d");//them pt
         myQueue.offer("e,f");
         myQueue.offer("g,h");
 
-
-//        System.out.println(myQueue.peek());//show pt dau
+        System.out.println(myQueue.peek());//show 1 pt dau tien
 //        System.out.println(myQueue.element());
 
-//        System.out.println(myQueue.poll());//xoa pt dau
+//        System.out.println(myQueue.poll());//xoa 1 pt dau tien
 //        System.out.println(myQueue.remove());
 //        myQueue.clear();//xoa all pt
 
@@ -26,19 +25,19 @@ public class MyQueue {
         System.out.println(myQueue.size());//kich thuoc cua queue
 
         //duyet cac pt ben trong hang doi
-        for (String element : myQueue) {
-            System.out.println(element);
-        }
+//        for (String element : myQueue) {
+//            System.out.println(element);
+//        }
 //        for (Object element : myQueue) {
 //            System.out.println(element + "\t");
 //        }
 
         //duyet = iterator
-        Iterator<String> iterator = myQueue.iterator();
-        while (iterator.hasNext()) {
-            String element = iterator.next();
-            System.out.println(element);
-        }
+//        Iterator<String> iterator = myQueue.iterator();
+//        while (iterator.hasNext()) {
+//            String element = iterator.next();
+//            System.out.println(element);
+//        }
 
 
     }

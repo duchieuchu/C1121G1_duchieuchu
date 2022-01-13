@@ -1,4 +1,4 @@
-package ss11_dsa_stack_queue.thuc_hanh;
+package ss11_dsa_stack_queue.thuc_hanh.trien_khai_queue_use_danh_sanh_lien_ket;
 
 public class Node {
     public int key;
