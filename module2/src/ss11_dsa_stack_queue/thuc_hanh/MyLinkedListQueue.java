@@ -1,21 +1,12 @@
 package ss11_dsa_stack_queue.thuc_hanh;
 
 public class MyLinkedListQueue {
-    private Node head;
-    private Node tail;
+    private Node head;//dau
+    private Node tail;//cuoi
 
     public MyLinkedListQueue() {
         this.head = null;
         this.tail = null;
-    }
-    public class Node {
-        public int key;
-        public Node next;
-
-        public Node(int key) {
-            this.key = key;
-            this.next = null;
-        }
     }
     public void enqueue(int key) {
         Node temp = new Node(key);
