@@ -15,7 +15,8 @@ public class ProductManagement {
         productArrayList.add(products2);
         productArrayList.add(products3);
     }
-//them sp
+
+    //them sp
     public static void add() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter id: ");
@@ -23,21 +24,36 @@ public class ProductManagement {
         System.out.print("Enter name: ");
         String name = scanner.nextLine();
         System.out.print("Enter price: ");
-        int price =scanner.nextInt();
+        int price = scanner.nextInt();
         System.out.print("Enter information: ");
-        String information= scanner.nextLine();
-
+        String information = scanner.nextLine();
+        Product product = new Product(id, name, price, information);
+        productArrayList.add(product);
     }
+
     //hien thi ds san pham
-    public static void showList(){
-        for (Product list:productArrayList
-             ) {
+    public static void showList() {
+        for (Product list : productArrayList
+        ) {
             System.out.println(list);
         }
     }
-    public static void delete(){
+
+    //xoa
+    public static void delete() {
         showList();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter id of product you want to delete");
+        int id = scanner.nextInt();
+        for (Product product : productArrayList
+        ) {
+            if (product.getId() == id) {
+                productArrayList.remove(product);
+            }
+        }
+    }
+    //sua
+    public static void edit(){
+        
     }
 }
