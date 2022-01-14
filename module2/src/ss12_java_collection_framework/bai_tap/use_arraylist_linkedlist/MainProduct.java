@@ -25,14 +25,17 @@ public class MainProduct {
                     management.delete();
                     break;
                 case 4:
+                    management.showList();
                     break;
                 case 5:
-
+                    management.search();
+                    break;
                 case 6:
 
                 case 7:
 
                 case 8:
+                    
 
             }
         }

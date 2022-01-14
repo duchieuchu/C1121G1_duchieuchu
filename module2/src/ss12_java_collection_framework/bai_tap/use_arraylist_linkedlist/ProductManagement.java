@@ -20,11 +20,11 @@ public class ProductManagement {
     public static void add() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter id: ");
-        int id = scanner.nextInt();
+        int id = Integer.parseInt(scanner.nextLine());
         System.out.print("Enter name: ");
         String name = scanner.nextLine();
         System.out.print("Enter price: ");
-        int price = scanner.nextInt();
+        int price = Integer.parseInt(scanner.nextLine());
         System.out.print("Enter information: ");
         String information = scanner.nextLine();
         Product product = new Product(id, name, price, information);
@@ -44,23 +44,40 @@ public class ProductManagement {
         showList();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter id of product you want to delete");
-        int id = scanner.nextInt();
-        for (Product product : productArrayList
-        ) {
+        int id = Integer.parseInt(scanner.nextLine());
+        for (Product product : productArrayList) {
             if (product.getId() == id) {
                 productArrayList.remove(product);
             }
         }
     }
+
     //Sửa thông tin sản phẩm theo id
-    public static void edit(){
+    public static void edit() {
         showList();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter id of product you want to edit");
-        int idEdit = scanner.nextInt();
-
-
-
+        int idEdit = Integer.parseInt(scanner.nextLine());
+        System.out.println("Enter new id: ");
+        int id = Integer.parseInt(scanner.nextLine());
+        System.out.println("Enter new name: ");
+        String name = scanner.nextLine();
+        System.out.println("Enter new price: ");
+        int price = Integer.parseInt(scanner.nextLine());
+        System.out.println("Enter new information: ");
+        String information = scanner.nextLine();
+        for (Product product : productArrayList) {
+            if (product.getId() == idEdit) {
+                product.setId(id);
+                product.setName(name);
+                product.setPrice(price);
+                product.setInformation(information);
+            }
+        }
+    }
+    //tim kiem san pham
+    public static void search(){
 
     }
+
 }
