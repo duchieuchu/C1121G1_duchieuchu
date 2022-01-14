@@ -39,7 +39,7 @@ public class ProductManagement {
         }
     }
 
-    //xoa
+    //Xoá sản phẩm theo id
     public static void delete() {
         showList();
         Scanner scanner = new Scanner(System.in);
@@ -52,8 +52,15 @@ public class ProductManagement {
             }
         }
     }
-    //sua
+    //Sửa thông tin sản phẩm theo id
     public static void edit(){
-        
+        showList();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter id of product you want to edit");
+        int idEdit = scanner.nextInt();
+
+
+
+
     }
 }
