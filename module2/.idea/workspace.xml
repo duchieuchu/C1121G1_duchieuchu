@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15c94c36-9451-4cad-8de4-84ab2fcdd75d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ss7_abtract_class_interface/thuc_hanh/comparator/CircleComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss7_abtract_class_interface/thuc_hanh/comparator/CircleComparatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/use_arraylist_linkedlist/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/use_arraylist_linkedlist/ProductManagement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/module2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/Circle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss7_abtract_class_interface/thuc_hanh/animal/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss7_abtract_class_interface/thuc_hanh/animal/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss7_abtract_class_interface/thuc_hanh/animal/Tiger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss7_abtract_class_interface/thuc_hanh/animal/Tiger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/Rectangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/Square.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/Square.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss7_abtract_class_interface/thuc_hanh/comparator/CircleComparatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss7_abtract_class_interface/thuc_hanh/comparator/CircleComparatorTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +37,9 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/use_arraylist_linkedlist/ProductManagement.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="23EsRvLGNJAPL97PwtViCbNhvsr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -44,6 +49,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -56,13 +65,13 @@
       <recent name="ss7_abtract_class_interface.thuc_hanh.animal" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CircleComparatorTest">
-    <configuration name="AbstractAndInterfaceTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss7_abtract_class_interface.thuc_hanh.AbstractAndInterfaceTests" />
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss12_java_collection_framework.thuc_hanh.comparator_comparable.Main" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss7_abtract_class_interface.thuc_hanh.*" />
+          <option name="PATTERN" value="ss12_java_collection_framework.thuc_hanh.comparator_comparable.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -70,12 +79,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CircleComparatorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss7_abtract_class_interface.thuc_hanh.comparator.CircleComparatorTest" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss12_java_collection_framework.thuc_hanh.difference_hashmap_hachset.Main" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss7_abtract_class_interface.thuc_hanh.comparator.*" />
+          <option name="PATTERN" value="ss12_java_collection_framework.thuc_hanh.difference_hashmap_hachset.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,12 +92,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ComparableCircleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss7_abtract_class_interface.thuc_hanh.comparable.ComparableCircleTest" />
+    <configuration name="MainOfReserve" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss11_dsa_stack_queue.bai_tap.reserve_elements_array_use_stack.MainOfReserve" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss7_abtract_class_interface.thuc_hanh.comparable.*" />
+          <option name="PATTERN" value="ss11_dsa_stack_queue.bai_tap.reserve_elements_array_use_stack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,12 +105,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss7_abtract_class_interface.thuc_hanh.animal.Test" />
+    <configuration name="MyQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss11_dsa_stack_queue.thuc_hanh.MyQueue" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss7_abtract_class_interface.thuc_hanh.animal.*" />
+          <option name="PATTERN" value="ss11_dsa_stack_queue.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,12 +118,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestAnimal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss7_abtract_class_interface.thuc_hanh.animal.TestAnimal" />
+    <configuration name="TestMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss12_java_collection_framework.thuc_hanh.test_map.TestMap" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss7_abtract_class_interface.thuc_hanh.animal.*" />
+          <option name="PATTERN" value="ss12_java_collection_framework.thuc_hanh.test_map.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,11 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CircleComparatorTest" />
-        <item itemvalue="Application.ComparableCircleTest" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.TestAnimal" />
-        <item itemvalue="Application.AbstractAndInterfaceTests" />
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.TestMap" />
+        <item itemvalue="Application.MainOfReserve" />
+        <item itemvalue="Application.MyQueue" />
       </list>
     </recent_temporary>
   </component>
@@ -166,7 +175,17 @@
       <workItem from="1641721491629" duration="8021000" />
       <workItem from="1641789197241" duration="2174000" />
       <workItem from="1641791397368" duration="406000" />
-      <workItem from="1641796197929" duration="9263000" />
+      <workItem from="1641796197929" duration="13891000" />
+      <workItem from="1641829047188" duration="2726000" />
+      <workItem from="1641872770859" duration="12454000" />
+      <workItem from="1641913664549" duration="3415000" />
+      <workItem from="1641950484524" duration="13722000" />
+      <workItem from="1642006496434" duration="3934000" />
+      <workItem from="1642036554316" duration="15969000" />
+      <workItem from="1642079271396" duration="2064000" />
+      <workItem from="1642082190883" duration="383000" />
+      <workItem from="1642126609865" duration="7294000" />
+      <workItem from="1642142729761" duration="2190000" />
     </task>
     <servers />
   </component>
