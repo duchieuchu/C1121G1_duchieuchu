@@ -1,6 +1,6 @@
-package ss12_java_collection_framework.bai_tap.use_arraylist_linkedlist;
+package ss12_java_collection_framework.bai_tap.use_arraylist_linkedlist.models;
 
-public class Product implements Comparable<Product> {
+public class Product {
     private int id;
     private String name;
     private int price;
@@ -58,8 +58,4 @@ public class Product implements Comparable<Product> {
                 '}';
     }
 
-    @Override
-    public int compareTo(Product o) {
-        return this.getPrice()-o.price;
-    }
 }

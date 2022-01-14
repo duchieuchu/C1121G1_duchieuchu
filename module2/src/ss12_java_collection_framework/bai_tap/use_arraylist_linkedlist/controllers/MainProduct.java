@@ -1,4 +1,6 @@
-package ss12_java_collection_framework.bai_tap.use_arraylist_linkedlist;
+package ss12_java_collection_framework.bai_tap.use_arraylist_linkedlist.controllers;
+
+import ss12_java_collection_framework.bai_tap.use_arraylist_linkedlist.services.ProductManagement;
 
 import java.util.Scanner;
 
@@ -31,12 +33,14 @@ public class MainProduct {
                     management.search();
                     break;
                 case 6:
-
+                    management.sortUp();
+                    break;
                 case 7:
-
+                    management.sortDown();
+                    break;
                 case 8:
-                    
-
+                    check=false;
+                    break;
             }
         }
     }
