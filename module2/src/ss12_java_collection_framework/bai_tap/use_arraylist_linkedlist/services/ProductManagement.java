@@ -23,7 +23,6 @@ public class ProductManagement implements IProductService {
 
     }
 
-    //them sp
     public void add() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter id: ");
@@ -38,7 +37,6 @@ public class ProductManagement implements IProductService {
         productArrayList.add(product);
     }
 
-    //hien thi ds san pham
     public void showList() {
 
         for (Product list : productArrayList
@@ -47,8 +45,7 @@ public class ProductManagement implements IProductService {
         }
     }
 
-    //Xoá sản phẩm theo id
-    public  void delete() {
+    public void delete() {
         showList();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter id of product you want to delete");
@@ -60,8 +57,7 @@ public class ProductManagement implements IProductService {
         }
     }
 
-    //Sửa thông tin sản phẩm theo id
-    public  void edit() {
+    public void edit() {
         showList();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter id of product you want to edit");
@@ -83,22 +79,24 @@ public class ProductManagement implements IProductService {
             }
         }
     }
-    //tim kiem san pham
-    public void search(){
+
+    public void search() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter product name you want to search: ");
-        String name= scanner.nextLine();
-        for (Product product:productArrayList){
-            if (product.getName().contains(name)){
+        String name = scanner.nextLine();
+        for (Product product : productArrayList) {
+            if (product.getName().contains(name)) {
                 System.out.println(product);
             }
         }
     }
-    public void sortUp(){
-        Collections.sort(productArrayList,new SortAscending());
+
+    public void sortUp() {
+        Collections.sort(productArrayList, new SortAscending());
     }
-    public void sortDown(){
-        Collections.sort(productArrayList,new SortDescending());
+
+    public void sortDown() {
+        Collections.sort(productArrayList, new SortDescending());
     }
 
 }
