@@ -6,10 +6,6 @@ public class OTo extends PhuongTienGiaoThong{
 
     public OTo(){}
 
-    public OTo(int soChoNgoi, String kieuXe) {
-        this.soChoNgoi = soChoNgoi;
-        this.kieuXe = kieuXe;
-    }
 
     public OTo(String bienKiemSoat, String tenHangSanXuat, int namSanXuat, String chuSoHuu, int soChoNgoi, String kieuXe) {
         super(bienKiemSoat, tenHangSanXuat, namSanXuat, chuSoHuu);
@@ -35,11 +31,11 @@ public class OTo extends PhuongTienGiaoThong{
 
     @Override
     public String toString() {
-        return "OTo{" + "bienKiemSoat: " +getBienKiemSoat() +
+        return "OTo{" + " bienKiemSoat: " +getBienKiemSoat() +
                 ", tenHangSanXuat: " + getTenHangSanXuat() +
                 ", namSanXuat: " + getNamSanXuat() +
                 ", chuSoHuu: " + getChuSoHuu() +
-                "soChoNgoi: " + soChoNgoi +
+                " soChoNgoi: " + soChoNgoi +
                 ", kieuXe: " + kieuXe +
                 '}';
     }

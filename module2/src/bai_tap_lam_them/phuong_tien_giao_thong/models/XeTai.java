@@ -5,10 +5,6 @@ public class XeTai extends PhuongTienGiaoThong{
 
     public XeTai(){}
 
-    public XeTai(String trongTai) {
-        this.trongTai = trongTai;
-    }
-
     public XeTai(String bienKiemSoat, String tenHangSanXuat, int namSanXuat, String chuSoHuu, String trongTai) {
         super(bienKiemSoat, tenHangSanXuat, namSanXuat, chuSoHuu);
         this.trongTai = trongTai;
@@ -24,11 +20,11 @@ public class XeTai extends PhuongTienGiaoThong{
 
     @Override
     public String toString() {
-        return "XeTai{" +"bienKiemSoat: "+getBienKiemSoat()+
-                "tenHangSanXuat: "+getTenHangSanXuat()+
-                "namSanXuat= "+getNamSanXuat()+
-                "chuSoHuu: "+getChuSoHuu()+
-                "trongTai: " + trongTai +
+        return "XeTai{" +" bienKiemSoat: "+getBienKiemSoat()+
+                " tenHangSanXuat: "+getTenHangSanXuat()+
+                " namSanXuat= "+getNamSanXuat()+
+                " chuSoHuu: "+getChuSoHuu()+
+                " trongTai='" + trongTai + '\'' +
                 '}';
     }
 }

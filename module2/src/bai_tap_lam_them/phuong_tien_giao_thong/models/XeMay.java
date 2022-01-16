@@ -20,11 +20,11 @@ public class XeMay extends PhuongTienGiaoThong{
 
     @Override
     public String toString() {
-        return "XeMay{" +"bienKiemSoat: "+getBienKiemSoat()+
-                "tenHangSanXuat: "+getTenHangSanXuat()+
-                "namSanXuat= "+getNamSanXuat()+
-                "chuSoHuu: "+getChuSoHuu()+
-                "congSuat: " + congSuat +
+        return "XeMay{" +" bienKiemSoat: "+getBienKiemSoat()+
+                " tenHangSanXuat: "+getTenHangSanXuat()+
+                " namSanXuat= "+getNamSanXuat()+
+                " chuSoHuu: "+getChuSoHuu()+
+                " congSuat: " + congSuat +
                 '}';
     }
 }
