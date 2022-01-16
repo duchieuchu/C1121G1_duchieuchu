@@ -71,8 +71,6 @@ public class TennisGame {
                 case FORTY:
                     scoreResult += "Forty";
                     break;
-                default:
-                    scoreResult += "Deuce";
             }
         }
     }
