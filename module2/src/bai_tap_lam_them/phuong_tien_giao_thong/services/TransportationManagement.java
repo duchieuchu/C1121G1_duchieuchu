@@ -41,8 +41,8 @@ public class TransportationManagement implements ITransportationService {
                 String chuSoHuu = inputXeTai.nextLine();
                 System.out.print("nhap trong tai: ");
                 String trongTai = inputXeTai.nextLine();
-                XeTai xeTai1 = new XeTai(bienKiemSoat, hangSanXuat, namSanXuat, chuSoHuu, trongTai);
-                xeTaiArrayList.add(xeTai1);
+                XeTai xeTai = new XeTai(bienKiemSoat, hangSanXuat, namSanXuat, chuSoHuu, trongTai);
+                xeTaiArrayList.add(xeTai);
                 break;
             case 2:
                 Scanner inputOTo = new Scanner(System.in);
