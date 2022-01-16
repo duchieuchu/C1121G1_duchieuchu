@@ -35,10 +35,10 @@ public class OTo extends PhuongTienGiaoThong{
 
     @Override
     public String toString() {
-        return "OTo{" + "bienKiemSoat: " + super.getBienKiemSoat() +
-                ", tenHangSanXuat: " +super. getTenHangSanXuat() +
-                ", namSanXuat: " + super.getNamSanXuat() +
-                ", chuSoHuu: " + super.getChuSoHuu() +
+        return "OTo{" + "bienKiemSoat: " +getBienKiemSoat() +
+                ", tenHangSanXuat: " + getTenHangSanXuat() +
+                ", namSanXuat: " + getNamSanXuat() +
+                ", chuSoHuu: " + getChuSoHuu() +
                 "soChoNgoi: " + soChoNgoi +
                 ", kieuXe: " + kieuXe +
                 '}';

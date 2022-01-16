@@ -20,10 +20,10 @@ public class XeMay extends PhuongTienGiaoThong{
 
     @Override
     public String toString() {
-        return "XeMay{" +"bienKiemSoat: "+super.getBienKiemSoat()+
-                "tenHangSanXuat: "+super.getTenHangSanXuat()+
-                "namSanXuat= "+super.getNamSanXuat()+
-                "chuSoHuu: "+super.getChuSoHuu()+
+        return "XeMay{" +"bienKiemSoat: "+getBienKiemSoat()+
+                "tenHangSanXuat: "+getTenHangSanXuat()+
+                "namSanXuat= "+getNamSanXuat()+
+                "chuSoHuu: "+getChuSoHuu()+
                 "congSuat: " + congSuat +
                 '}';
     }

@@ -24,10 +24,10 @@ public class XeTai extends PhuongTienGiaoThong{
 
     @Override
     public String toString() {
-        return "XeTai{" +"bienKiemSoat: "+super.getBienKiemSoat()+
-                "tenHangSanXuat: "+super.getTenHangSanXuat()+
-                "namSanXuat= "+super.getNamSanXuat()+
-                "chuSoHuu: "+super.getChuSoHuu()+
+        return "XeTai{" +"bienKiemSoat: "+getBienKiemSoat()+
+                "tenHangSanXuat: "+getTenHangSanXuat()+
+                "namSanXuat= "+getNamSanXuat()+
+                "chuSoHuu: "+getChuSoHuu()+
                 "trongTai: " + trongTai +
                 '}';
     }
