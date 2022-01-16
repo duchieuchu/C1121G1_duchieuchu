@@ -108,8 +108,76 @@ public class TransportationManagement implements ITransportationService {
     }
 
     public void delete() {
-
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("1.Xoa xe tai\n" +
+                "2.Xoa O to\n" +
+                "3.Xoa xe may");
+        System.out.println("xoa xe j ");
+        int choice = scanner.nextInt();
+        switch (choice) {
+            case 1:
+                xoaXetai();
+                break;
+            case 2:
+                xoaOto();
+                break;
+            case 3:
+                xoaXeMay();
+                break;
+        }
     }
 
+    public void xoaXetai() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("nhập biển kiểm soát");
+        String bienKiemXoaCanXoa = scanner.nextLine();
+        boolean check = false;
+        for (int i = 0; i < xeTaiArrayList.size(); i++) {
+            if (xeTaiArrayList.get(i).getBienKiemSoat().equals(bienKiemXoaCanXoa)) {
+                check = true;
+                System.out.println("Bạn đã xoá phương tiện có biển kiếm soát " + xeTaiArrayList.get(i).getBienKiemSoat() + " thành công");
+                xeTaiArrayList.remove(i);
+                break;
+            }
+        }
+        if (!check) {
+            System.out.println("không tìm thấy!");
+        }
+    }
+
+    public void xoaOto() {
+        Scanner scanner = new Scanner(System.in);
+        String bienKiemSoatCanXoa = scanner.nextLine();
+        boolean check = false;
+        for (int i = 0; i < oToArrayList.size(); i++) {
+            if (oToArrayList.get(i).getBienKiemSoat().equals(bienKiemSoatCanXoa)) {
+                check = true;
+                System.out.println("Bạn đã xoá phương tiện có biển kiếm soát " + oToArrayList.get(i).getBienKiemSoat() + " thành công");
+                oToArrayList.remove(i);
+                break;
+            }
+        }
+        if (!check) {
+            System.out.println("không tìm thấy!");
+        }
+    }
+
+    public void xoaXeMay() {
+        Scanner scanner = new Scanner(System.in);
+        String bienKiemSoatCanXoa = scanner.nextLine();
+        boolean check = false;
+        for (int i = 0; i < xeMayArrayList.size(); i++) {
+            if (xeMayArrayList.get(i).getBienKiemSoat().equals(bienKiemSoatCanXoa)) {
+                check = true;
+                System.out.println("Bạn đã xoá phương tiện có biển kiếm soát " + xeMayArrayList.get(i).getBienKiemSoat() + " thành công");
+                xeMayArrayList.remove(i);
+                break;
+            }
+
+        }
+        if (!check) {
+            System.out.println("không tìm thấy!");
+        }
+    }
 
 }
