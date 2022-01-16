@@ -35,7 +35,7 @@ public class OTo extends PhuongTienGiaoThong{
                 ", tenHangSanXuat: " + getTenHangSanXuat() +
                 ", namSanXuat: " + getNamSanXuat() +
                 ", chuSoHuu: " + getChuSoHuu() +
-                " soChoNgoi: " + soChoNgoi +
+                ", soChoNgoi: " + soChoNgoi +
                 ", kieuXe: " + kieuXe +
                 '}';
     }
