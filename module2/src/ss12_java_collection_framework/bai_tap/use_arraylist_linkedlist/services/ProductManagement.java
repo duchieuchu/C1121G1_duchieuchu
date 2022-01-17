@@ -53,6 +53,7 @@ public class ProductManagement implements IProductService {
         for (Product product : productArrayList) {
             if (product.getId() == id) {
                 productArrayList.remove(product);
+                break;
             }
         }
     }
