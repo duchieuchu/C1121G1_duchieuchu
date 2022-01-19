@@ -13,6 +13,7 @@ public class BinarySearch {
 //    }
 
     static int binarySearch(int[] list, int value) {
+        //su dung while(arr[i] != num) tim cac pt trung nhau
         int low = 0;
         int high = list.length - 1;
         while (high >= low) {
