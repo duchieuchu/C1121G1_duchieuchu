@@ -1,7 +1,7 @@
 package ss14_sort_algorithms.thuc_hanh;
 
 public class BubbleSort {
-    static  int []list={9,11,7,5,4,2,1,6,};
+    static  int []list={9,-11,-7,11,7,5,4,2,1,6,};
     public static void bubbleSort(int[] list){
         boolean needNeedPass= true;
         for (int k = 1;k< list.length&&needNeedPass;k++){
