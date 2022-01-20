@@ -25,6 +25,7 @@ public class BubbleSortByStep {
         for (int k= 1;k< list.length&&needNextPass;k++){
             needNextPass= false;
             for (int i = 0;i< list.length-k;i++){
+                System.out.println(i);
                 if (list[i]>list[i+1]){
                     System.out.println("swap "+list[i]+" with "+list[i+1]);
                     int temp = list[i];
@@ -33,7 +34,7 @@ public class BubbleSortByStep {
                     needNextPass= true;
                 }
             }
-            if (needNextPass == false){
+            if (needNextPass==false){
                 System.out.println("array may be sorted and next pass not needed");
                 break;
             }

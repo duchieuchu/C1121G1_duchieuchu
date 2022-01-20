@@ -3,9 +3,9 @@ package ss14_sort_algorithms.thuc_hanh;
 public class BubbleSort {
     static  int []list={9,-11,-7,11,7,5,4,2,1,6,};
     public static void bubbleSort(int[] list){
-        boolean needNeedPass= true;
+        boolean needNeedPass= true;//cần sắp xếp
         for (int k = 1;k< list.length&&needNeedPass;k++){
-            needNeedPass= false;
+            needNeedPass= false;//ko cần sắp xếp
             for (int i = 0;i< list.length-k;i++){
                 if (list[i]>list[i+1]){
                     int temp =list[i];
