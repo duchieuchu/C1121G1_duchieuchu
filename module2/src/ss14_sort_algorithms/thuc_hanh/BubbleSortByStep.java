@@ -34,7 +34,7 @@ public class BubbleSortByStep {
                     needNextPass= true;
                 }
             }
-            if (needNextPass==false){
+            if (!needNextPass){
                 System.out.println("array may be sorted and next pass not needed");
                 break;
             }
