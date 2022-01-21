@@ -25,23 +25,24 @@ public class ReadFileExample {
                 System.out.println(line);
                 sum += Integer.parseInt(line);
             }
+            System.out.println("Tổng = " + sum);
             br.close();
 
             // Hiển thị ra màn hình tổng các số nguyên trong file
-            System.out.println("Tổng = " + sum);
-        } catch (Exception e) {
+//            System.out.println("Tổng = " + sum);
+        } catch (Exception e) {//e la tham so dai dien cho exception
             // TH file không tồn tại hoặc nội dung file có lỗi thì sẽ hiển thị thông báo lỗi.
             System.err.println("Fie không tồn tại or nội dung có lỗi!");
         }
     }
 
     public static void main(String[] args) {
-        System.out.println("Nhập đường dẫn file: ");
-        Scanner scanner = new Scanner(System.in);
-        String path = scanner.nextLine();
+//        System.out.println("src/ss16_io_text_file/data/file numbersToSum.txt");
+//        Scanner scanner = new Scanner(System.in);
+//        String path = scanner.nextLine();
 
         ReadFileExample readFileEx = new ReadFileExample();
-        readFileEx.readFileText(path);
+        readFileEx.readFileText("src/ss16_io_text_file/data/file numbersToSum.txt");
     }
 }
 
