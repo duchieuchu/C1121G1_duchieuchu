@@ -1,4 +1,6 @@
-package ss10_dsa_list.bai_tap;
+package ss10_dsa_list.bai_tap.trien_khai_phuong_thuc_array_list;
+
+import ss10_dsa_list.bai_tap.trien_khai_phuong_thuc_array_list.MyList;
 
 public class MyListTest {
     public static void main(String[] args) {
