@@ -2,7 +2,7 @@ package ss14_sort_algorithms.bai_tap;
 
 import java.util.Arrays;
 import java.util.Scanner;
-
+//sx chen
 public class InsertionSortByStep {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
