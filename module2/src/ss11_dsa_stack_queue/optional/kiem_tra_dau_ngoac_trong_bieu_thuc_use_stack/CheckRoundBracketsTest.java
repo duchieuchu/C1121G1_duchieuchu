@@ -11,5 +11,7 @@ public class CheckRoundBracketsTest {
         System.out.println(check.checkRoundBrackets("(a+b))"));
         System.out.println(check.checkRoundBrackets("(a+b)"));
         System.out.println(check.checkRoundBrackets("(a+b"));
+
+        System.out.println(check.checkRoundBrackets("chu.duc/hieu"));
     }
 }

@@ -6,7 +6,8 @@ import java.util.Stack;
 public class CheckRoundBrackets {
     public boolean checkRoundBrackets(String string) {
 //        string = "s * (s – a) * (s – b) * (s – c)";
-        String[] array = string.split("");
+        String[] array = string.split("a");//split :tach tung ki tu = dau ,neu ""
+        // hoac  "ki tu can tach" no="ki tu can tach" se bien mat
         System.out.println(Arrays.toString(array));
         Stack< String > bStack = new Stack<>();
         boolean check = true;
