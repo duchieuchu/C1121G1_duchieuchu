@@ -1,10 +1,8 @@
 package bai_tap_lam_them.WriteAndReadFile;
 
-import bai_tap_lam_them.WriteAndReadFile.common.File;
+import bai_tap_lam_them.WriteAndReadFile.common.FileUtils;
 import bai_tap_lam_them.WriteAndReadFile.model.Student;
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class MainClass {
@@ -29,7 +27,7 @@ public class MainClass {
 //
 //        }
 ////doc file
-        List<String> listLine = File.readFile(FILE_NAME);
+        List<String> listLine = FileUtils.readFile(FILE_NAME);
         System.out.println(listLine);
 
         String[] lineSplit = listLine.get(0).split(COMMA);
