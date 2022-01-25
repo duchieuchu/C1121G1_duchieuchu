@@ -1,0 +1,31 @@
+package ss17_io_binary_file_serialization.bai_tap.product_management;
+
+import java.util.Scanner;
+
+public class Main {
+    //thêm, hiển thị, tìm kiếm thông tin sản phẩm vào file.
+    public static void main(String[] args) {
+        boolean check = true;
+        Scanner scanner = new Scanner(System.in);
+        while (check){
+            System.out.println("List of choice: ");
+            System.out.println("1. Add product\n"+
+                    "2. Display product\n"+
+                    "3. Edit product\n"+
+                    "4. Search product\n"+
+                    "5. Delete product\n"+
+                    "6. Exit");
+            System.out.println("Enter your choice");
+            int choice= scanner.nextInt();
+            switch (choice){
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                    check= false;
+            }
+        }
+    }
+}
