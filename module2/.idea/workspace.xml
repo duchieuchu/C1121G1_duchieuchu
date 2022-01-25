@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15c94c36-9451-4cad-8de4-84ab2fcdd75d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/use_arraylist_linkedlist/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/use_arraylist_linkedlist/ProductManagement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_tap_lam_them/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/furama/models/Facility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/furama/models/House.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/furama/models/Villa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/module2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/Circle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/Rectangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/Square.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_inheritance/thuc_hanh/Square.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss7_abtract_class_interface/thuc_hanh/comparator/CircleComparatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss7_abtract_class_interface/thuc_hanh/comparator/CircleComparatorTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss10_dsa_list/bai_tap/MyList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss10_dsa_list/bai_tap/MyListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss12_java_collection_framework/bai_tap/use_arraylist_linkedlist/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss12_java_collection_framework/thuc_hanh/comparator_comparable/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss12_java_collection_framework/thuc_hanh/comparator_comparable/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss8_clean_code_refactoring/bai_tap/TennisGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss8_clean_code_refactoring/bai_tap/TennisGame.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +40,8 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/use_arraylist_linkedlist/ProductManagement.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://C:/Program Files/Java/jdk1.8.0_251/src.zip!/java/lang/Exception.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/use_arraylist_linkedlist/services/ProductManagement.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="23EsRvLGNJAPL97PwtViCbNhvsr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -61,17 +64,25 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="ss16_io_text_file.thuc_hanh.sum_of_numbers" />
       <recent name="ss7_abtract_class_interface.thuc_hanh.edible" />
       <recent name="ss7_abtract_class_interface.thuc_hanh.animal" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\codegym\C1121G1_duchieuchu\module2\src\ss16_io_text_file\bai_tap" />
+      <recent name="D:\codegym\C1121G1_duchieuchu\module2\src\ss16_io_text_file\thuc_hanh\sum_of_numbers" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ss12_java_collection_framework.bai_tap.use_arraylist_linkedlist.controller" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss12_java_collection_framework.thuc_hanh.comparator_comparable.Main" />
+  <component name="RunManager" selected="Application.Demo">
+    <configuration name="CopyFileText" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss16_io_text_file.bai_tap.copy_file_text.CopyFileText" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss12_java_collection_framework.thuc_hanh.comparator_comparable.*" />
+          <option name="PATTERN" value="ss16_io_text_file.bai_tap.copy_file_text.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -79,12 +90,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss12_java_collection_framework.thuc_hanh.difference_hashmap_hachset.Main" />
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_tap_lam_them.Demo" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss12_java_collection_framework.thuc_hanh.difference_hashmap_hachset.*" />
+          <option name="PATTERN" value="bai_tap_lam_them.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,12 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainOfReserve" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss11_dsa_stack_queue.bai_tap.reserve_elements_array_use_stack.MainOfReserve" />
+    <configuration name="MainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_tap_lam_them.WriteAndReadFile.MainClass" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss11_dsa_stack_queue.bai_tap.reserve_elements_array_use_stack.*" />
+          <option name="PATTERN" value="bai_tap_lam_them.WriteAndReadFile.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,12 +116,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss11_dsa_stack_queue.thuc_hanh.MyQueue" />
+    <configuration name="ReadAndWrite" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss16_io_text_file.bai_tap.copy_file_text.ReadAndWrite" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss11_dsa_stack_queue.thuc_hanh.*" />
+          <option name="PATTERN" value="ss16_io_text_file.bai_tap.copy_file_text.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,12 +129,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss12_java_collection_framework.thuc_hanh.test_map.TestMap" />
+    <configuration name="ReadFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss16_io_text_file.bai_tap.read_file_csv.ReadFile" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss12_java_collection_framework.thuc_hanh.test_map.*" />
+          <option name="PATTERN" value="ss16_io_text_file.bai_tap.read_file_csv.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -133,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.TestMap" />
-        <item itemvalue="Application.MainOfReserve" />
-        <item itemvalue="Application.MyQueue" />
+        <item itemvalue="Application.Demo" />
+        <item itemvalue="Application.ReadFile" />
+        <item itemvalue="Application.CopyFileText" />
+        <item itemvalue="Application.MainClass" />
+        <item itemvalue="Application.ReadAndWrite" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +196,30 @@
       <workItem from="1642079271396" duration="2064000" />
       <workItem from="1642082190883" duration="383000" />
       <workItem from="1642126609865" duration="7294000" />
-      <workItem from="1642142729761" duration="2190000" />
+      <workItem from="1642142729761" duration="12867000" />
+      <workItem from="1642167495324" duration="8180000" />
+      <workItem from="1642239999909" duration="10402000" />
+      <workItem from="1642254446855" duration="19161000" />
+      <workItem from="1642332238809" duration="44000" />
+      <workItem from="1642391050888" duration="13019000" />
+      <workItem from="1642471094359" duration="10399000" />
+      <workItem from="1642575721123" duration="18263000" />
+      <workItem from="1642666552716" duration="1758000" />
+      <workItem from="1642670602854" duration="2013000" />
+      <workItem from="1642730508409" duration="3549000" />
+      <workItem from="1642740089190" duration="10479000" />
+      <workItem from="1642828392188" duration="5855000" />
+      <workItem from="1642859556480" duration="4222000" />
+      <workItem from="1642863831787" duration="943000" />
+      <workItem from="1642905216500" duration="8374000" />
+      <workItem from="1642943930495" duration="2350000" />
+      <workItem from="1642992072598" duration="822000" />
+      <workItem from="1643006980950" duration="852000" />
+      <workItem from="1643010641719" duration="9647000" />
+      <workItem from="1643074271962" duration="1118000" />
+      <workItem from="1643076606330" duration="1000" />
+      <workItem from="1643076627629" duration="2624000" />
+      <workItem from="1643079698366" duration="3659000" />
     </task>
     <servers />
   </component>
@@ -210,6 +244,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
           <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="2" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
