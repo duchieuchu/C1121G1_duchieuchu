@@ -1,4 +1,4 @@
-package furama.models.facility;
+package FuramaResort.models.facility;
 
 public class House extends Facility {
     //Tiêu chuẩn phòng, Số tầng

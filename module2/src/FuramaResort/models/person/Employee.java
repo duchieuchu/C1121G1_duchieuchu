@@ -1,4 +1,4 @@
-package furama.models.person;
+package FuramaResort.models.person;
 
 public class Employee extends Person {
     //Trình độ, Vị trí, lương
@@ -9,8 +9,8 @@ public class Employee extends Person {
     public Employee() {
     }
 
-    public Employee(int id, String name, String dayOfBirth, String gender, int identityCard,
-                    int numberPhone, String email, String educationLevel, String position, int salary) {
+    public Employee(int id, String name, String dayOfBirth, String gender, String identityCard,
+                    String numberPhone, String email, String educationLevel, String position, int salary) {
         super(id, name, dayOfBirth, gender, identityCard, numberPhone, email);
         this.educationLevel = educationLevel;
         this.position = position;
@@ -33,7 +33,7 @@ public class Employee extends Person {
         this.position = position;
     }
 
-    public int getSalary() {
+    public double getSalary() {
         return salary;
     }
 
@@ -55,5 +55,9 @@ public class Employee extends Person {
                 ", position='" + position + '\'' +
                 ", salary=" + salary +
                 '}';
+    }
+    public String getInformationEmployee(){
+      return getId()+","+getName()+","+getDayOfBirth()+","+getGender()+","+getIdentityCard()+","+getNumberPhone()
+              +","+getEmail()+","+educationLevel+","+position+","+salary;
     }
 }

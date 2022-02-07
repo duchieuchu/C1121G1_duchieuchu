@@ -1,4 +1,4 @@
-package furama.models.person;
+package FuramaResort.models.person;
 
 public class Customer extends Person {
     //Loại khách, Địa chỉ
@@ -9,7 +9,7 @@ public class Customer extends Person {
     }
 
     public Customer(int id, String name, String dayOfBirth, String gender,
-                    int identityCard, int numberPhone, String email, String typeCustomer, String address) {
+                    String identityCard, String numberPhone, String email, String typeCustomer, String address) {
         super(id, name, dayOfBirth, gender, identityCard, numberPhone, email);
         this.typeCustomer = typeCustomer;
         this.address = address;

@@ -1,6 +1,6 @@
-package furama.models.facility;
+package FuramaResort.models.facility;
 
-public class Facility {
+public abstract class Facility {
     //Tên dịch vụ, Diện tích sử dụng, Chi phí thuê,
     // Số lượng người tối đa, Kiểu thuê (bao gồm thuê theo năm, tháng, ngày, giờ.
 private String serviceName;

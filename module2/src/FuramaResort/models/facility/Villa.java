@@ -1,4 +1,4 @@
-package furama.models.facility;
+package FuramaResort.models.facility;
 
 public class Villa extends Facility{
     //Tiêu chuẩn phòng, Diện tích hồ bơi, Số tầng.

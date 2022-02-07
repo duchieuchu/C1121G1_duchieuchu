@@ -1,6 +1,6 @@
-package furama.models.person;
+package FuramaResort.models.person;
 
-public class Person {
+public abstract class Person {
     //1/: Mã nhân viên, Họ tên, Ngày sinh, Giới tính, Số CMND,
     // Số Điện Thoại, Email,
     // Trình độ, Vị trí, lương
@@ -12,15 +12,15 @@ public class Person {
     private String name;
     private String dayOfBirth;
     private String gender;
-    private int identityCard;
-    private int numberPhone;
+    private String identityCard;
+    private String numberPhone;
     private String email;
 
     public Person() {
     }
 
     public Person(int id, String name, String dayOfBirth, String gender,
-                  int identityCard, int numberPhone, String email) {
+                  String identityCard, String numberPhone, String email) {
         this.id = id;
         this.name = name;
         this.dayOfBirth = dayOfBirth;
@@ -62,19 +62,19 @@ public class Person {
         this.gender = gender;
     }
 
-    public int getIdentityCard() {
+    public String getIdentityCard() {
         return identityCard;
     }
 
-    public void setIdentityCard(int identityCard) {
+    public void setIdentityCard(String identityCard) {
         this.identityCard = identityCard;
     }
 
-    public int getNumberPhone() {
+    public String getNumberPhone() {
         return numberPhone;
     }
 
-    public void setNumberPhone(int numberPhone) {
+    public void setNumberPhone(String numberPhone) {
         this.numberPhone = numberPhone;
     }
 

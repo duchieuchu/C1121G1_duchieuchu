@@ -1,9 +1,12 @@
-package furama.controllers;
+package FuramaResort.controllers;
+
+import FuramaResort.services.EmployeeServiceImpl;
 
 import java.util.Scanner;
 
 public class FuramaController {
     public static void main(String[] args) {
+        EmployeeServiceImpl employeeService= new EmployeeServiceImpl();
         boolean check = true;
         Scanner scanner = new Scanner(System.in);
         while (check) {
@@ -21,6 +24,16 @@ public class FuramaController {
                             "2\tAdd new employee\n" +
                             "3\tEdit employee\n" +
                             "4\tReturn main menu\n");
+                    System.out.println("enter your choose: ");
+                    int choose = scanner.nextInt();
+                    switch (choose){
+                        case 1:
+                            employeeService.display();
+                            break;
+                        case 2:
+                            employeeService.add();
+                            break;
+                    }
                     break;
                 case 2:
                     System.out.println("1.\tDisplay list customers\n" +

@@ -1,4 +1,4 @@
-package furama.models.facility;
+package FuramaResort.models.facility;
 
 public class Room extends Facility {
     //Dịch vụ miễn phí đi kèm
