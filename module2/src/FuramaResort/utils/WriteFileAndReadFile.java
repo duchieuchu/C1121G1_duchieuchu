@@ -7,25 +7,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class WriteFileAndReadFile {
-    public static void writeListStringIntoCSVFile(String pathFile, List<String> stringList, boolean append) {
-        FileWriter fileWriter;
-        BufferedWriter bufferedWriter = null;
+    public static void writeFile(String pathFile,Employee employee) {
        try{
-           fileWriter = new FileWriter(pathFile,append);
-           for (String string :stringList
-                ) {bufferedWriter.write(string);
-               bufferedWriter.newLine();//de xuong hang
-           }
+          FileWriter fileWriter = new FileWriter(pathFile,true);
+           BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+           bufferedWriter.write(employee.writeToSCVFile());
+           bufferedWriter.newLine();
+           bufferedWriter.close();
        }catch (IOException e){
            e.printStackTrace();
-       }finally {
-           if (bufferedWriter != null){
-               try{
-                   bufferedWriter.close();
-               }catch (IOException e){
-                   e.printStackTrace();
-               }
-           }
        }
     }
 

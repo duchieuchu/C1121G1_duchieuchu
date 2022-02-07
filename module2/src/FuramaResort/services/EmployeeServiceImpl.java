@@ -40,9 +40,7 @@ public class EmployeeServiceImpl implements IEmployeeService {
         Employee newEmployee = new Employee(id, name, dayOfBirth, gender, identityCard, numberPhone, email, educationLevel, position, salary);
 //        employeeList.add(newEmployee.getInformationEmployee());
 
-        List<String> newEmployeeList = new ArrayList<>();
-
-        WriteFileAndReadFile.writeListStringIntoCSVFile(EMPLOY_PATH, newEmployeeList, true);
+        WriteFileAndReadFile.writeFile(EMPLOY_PATH,newEmployee);
         System.out.println("Successfully added new employee!");
     }
 
@@ -69,7 +67,7 @@ public class EmployeeServiceImpl implements IEmployeeService {
         List<String> stringList = new ArrayList<>();
         for (Employee employee : employeeList
         ) {
-            stringList.add(employee.getInformationEmployee());
+            stringList.add(employee.writeToSCVFile());
         }
 
     }
