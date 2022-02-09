@@ -43,7 +43,7 @@ public class EmployeeServiceImpl implements IEmployeeService {
 
     @Override
     public void display() {//lay du lieu file csv in ra / can readFile/chuyen stringList qua emloyeeList
-//        employeeList = readCSVFileToEmployeeList(EMPLOY_PATH);
+        employeeList = readCSVFileToEmployeeList(EMPLOY_PATH);//phai co moi dc
         for (int i = 0; i < employeeList.size(); i++) {
             System.out.println(employeeList.get(i));
         }
