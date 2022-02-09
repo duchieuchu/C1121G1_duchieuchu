@@ -43,8 +43,7 @@ public class EmployeeServiceImpl implements IEmployeeService {
 
     @Override
     public void display() {//lay du lieu file csv in ra / can readFile/chuyen stringList qua emloyeeList
-//        List<Employee> employeeList = new ArrayList<>();thay ko co van chay dc ma
-        employeeList = readCSVFileToEmployeeList("src/FuramaResort/data/employee.csv");
+//        employeeList = readCSVFileToEmployeeList(EMPLOY_PATH);
         for (int i = 0; i < employeeList.size(); i++) {
             System.out.println(employeeList.get(i));
         }
@@ -103,7 +102,7 @@ public class EmployeeServiceImpl implements IEmployeeService {
     public static List<Employee> readCSVFileToEmployeeList(String pathFile) {
         List<Employee> employeeListFromReadCSV = new ArrayList<>();
         List<String> lineList = WriteFileAndReadFile.readFile(pathFile);
-        String[] lineSplitList;
+        String[] lineSplitList;//muc dich nay de , trong mang
 
         for (String line : lineList) {
             lineSplitList = line.split(",");
