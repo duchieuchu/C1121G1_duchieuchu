@@ -32,4 +32,9 @@ public class Room extends Facility {
                 ", freeService='" + freeService + '\'' +
                 '}';
     }
+
+    public String writeCSVFile() {
+        return getServiceName() + "," + getUsingArea() + "," + getCostRent()
+                + "," + getPersonNumber() + "," + getRentalType() + "," + freeService;
+    }
 }

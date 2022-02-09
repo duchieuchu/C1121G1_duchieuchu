@@ -1,6 +1,6 @@
 package FuramaResort.models.facility;
 
-public class Villa extends Facility{
+public class Villa extends Facility {
     //Tiêu chuẩn phòng, Diện tích hồ bơi, Số tầng.
     private String roomStandard;
     private double poolArea;
@@ -53,5 +53,10 @@ public class Villa extends Facility{
                 ", poolArea=" + poolArea +
                 ", numberOfFloors=" + numberOfFloors +
                 '}';
+    }
+
+    public String writeCSVFile() {
+        return getServiceName() + "," + getUsingArea() + "," + getPersonNumber()
+                + "," + getRentalType() + "," + roomStandard + poolArea + numberOfFloors;
     }
 }

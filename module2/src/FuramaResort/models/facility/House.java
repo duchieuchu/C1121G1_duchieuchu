@@ -43,4 +43,9 @@ public class House extends Facility {
                 ", numberOfFloors=" + numberOfFloors +
                 '}';
     }
+
+    public String writeToCSVFile() {
+        return getServiceName() + "," + getUsingArea() + "," + getCostRent() + "," + getPersonNumber()
+                + "," + getRentalType() + "," + standardRoom + "," + numberOfFloors;
+    }
 }

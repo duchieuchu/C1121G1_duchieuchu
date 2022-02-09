@@ -1,5 +1,8 @@
 package FuramaResort.utils;
 
+import FuramaResort.models.facility.House;
+import FuramaResort.models.facility.Room;
+import FuramaResort.models.facility.Villa;
 import FuramaResort.models.person.Customer;
 import FuramaResort.models.person.Employee;
 
@@ -8,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class WriteFileAndReadFile {
-    public static void writeEmployeeCSVFile(String pathFile,Employee employee) {
+    public static void writeEmployeeCSVFile(String pathFile,Employee employee) {//dung de add employee
        try{
           FileWriter fileWriter = new FileWriter(pathFile,true);
            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
@@ -19,7 +22,7 @@ public class WriteFileAndReadFile {
            e.printStackTrace();
        }
     }
-    public static void writeCustomerSCVFile(String pathFile, Customer customer) {
+    public static void writeCustomerSCVFile(String pathFile, Customer customer) {//dung de add customer
         try{
             FileWriter fileWriter = new FileWriter(pathFile,true);
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
@@ -30,9 +33,44 @@ public class WriteFileAndReadFile {
             e.printStackTrace();
         }
     }
+    public static void writeHouseCSVFile(String pathFile, House house){//dung de add house
+        try{
+            FileWriter fileWriter = new FileWriter(pathFile,true);
+            BufferedWriter bufferedWriter= new BufferedWriter(fileWriter);
+            bufferedWriter.write(house.writeToCSVFile());
+            bufferedWriter.newLine();
+            bufferedWriter.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+    public static void writeRoomCSVFile(String pathLine, Room room){//dung de add room
+        try{
+            FileWriter fileWriter =new FileWriter(pathLine,true);
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            bufferedWriter.write(room.writeCSVFile());
+            bufferedWriter.newLine();
+            bufferedWriter.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+    public static void writeVillaCSVFile(String pathLine, Villa villa){//dung de add villa
+        try {
+            FileWriter fileWriter = new FileWriter(pathLine,true);
+            BufferedWriter bufferedWriter =new BufferedWriter(fileWriter);
+            bufferedWriter.write(villa.writeCSVFile());
+            bufferedWriter.newLine();
+            bufferedWriter.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
 
-    public static void writeFileListEmployee(String pathFile,List<Employee> employeeList) {
+    public static void writeFileListEmployee(String pathFile,List<Employee> employeeList) {//dung edit
         try{
             FileWriter fileWriter = new FileWriter(pathFile,false);
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
@@ -46,7 +84,7 @@ public class WriteFileAndReadFile {
             e.printStackTrace();
         }
     }
-    public static void writeFileListCustomer(String pathFile,List<Customer> customerList) {
+    public static void writeFileListCustomer(String pathFile,List<Customer> customerList) {//dung de edit
         try{
             FileWriter fileWriter = new FileWriter(pathFile,false);
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
@@ -61,7 +99,7 @@ public class WriteFileAndReadFile {
         }
     }
 
-    public static List<String> readFile(String pathline) {
+    public static List<String> readFile(String pathline) {//dung de ghi file display
         List<String> listLine = new ArrayList<>();
         BufferedReader bufferedReader = null;
         FileReader fileReader;
