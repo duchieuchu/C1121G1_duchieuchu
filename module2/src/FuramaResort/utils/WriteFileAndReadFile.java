@@ -1,5 +1,6 @@
 package FuramaResort.utils;
 
+import FuramaResort.models.person.Customer;
 import FuramaResort.models.person.Employee;
 
 import java.io.*;
@@ -7,16 +8,57 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class WriteFileAndReadFile {
-    public static void writeFile(String pathFile,Employee employee) {
+    public static void writeEmployeeCSVFile(String pathFile,Employee employee) {
        try{
           FileWriter fileWriter = new FileWriter(pathFile,true);
            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-           bufferedWriter.write(employee.writeToSCVFile());
+           bufferedWriter.write(employee.writeToCSVFile());
            bufferedWriter.newLine();
            bufferedWriter.close();
        }catch (IOException e){
            e.printStackTrace();
        }
+    }
+    public static void writeCustomerSCVFile(String pathFile, Customer customer) {
+        try{
+            FileWriter fileWriter = new FileWriter(pathFile,true);
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            bufferedWriter.write(customer.writeToCSVFile());
+            bufferedWriter.newLine();
+            bufferedWriter.close();
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+
+
+    public static void writeFileListEmployee(String pathFile,List<Employee> employeeList) {
+        try{
+            FileWriter fileWriter = new FileWriter(pathFile,false);
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            for (Employee employee:employeeList
+                 ) {
+                bufferedWriter.write(employee.writeToCSVFile());
+                bufferedWriter.newLine();
+            }
+            bufferedWriter.close();
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+    public static void writeFileListCustomer(String pathFile,List<Customer> customerList) {
+        try{
+            FileWriter fileWriter = new FileWriter(pathFile,false);
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            for (Customer customer:customerList
+            ) {
+                bufferedWriter.write(customer.writeToCSVFile());
+                bufferedWriter.newLine();
+            }
+            bufferedWriter.close();
+        }catch (IOException e){
+            e.printStackTrace();
+        }
     }
 
     public static List<String> readFile(String pathline) {

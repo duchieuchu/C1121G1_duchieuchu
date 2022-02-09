@@ -2,16 +2,14 @@ package FuramaResort.services;
 
 import FuramaResort.models.person.Employee;
 import FuramaResort.utils.WriteFileAndReadFile;
-import ss16_io_text_file.thuc_hanh.find_max_value.ReadAndWriteFile;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class EmployeeServiceImpl implements IEmployeeService {
     static final String EMPLOY_PATH = "src/FuramaResort/data/employee.csv";
-     List<Employee> employeeList = readCSVFileToEmployeeList(EMPLOY_PATH);//tinh bao dong
+    List<Employee> employeeList = readCSVFileToEmployeeList(EMPLOY_PATH);//tinh bao dong
 
     @Override
     public void add() {//dua du lieu tu employeeList vao file SCV/can dung writeFile/chuyen employeeList sang stringList,ủa ko phải mặc định stringlist hả a
@@ -35,18 +33,17 @@ public class EmployeeServiceImpl implements IEmployeeService {
         System.out.println("Enter position: ");
         String position = scanner.nextLine();
         System.out.println("Enter salary: ");
-        int salary= Integer.parseInt(scanner.nextLine());
+        int salary = Integer.parseInt(scanner.nextLine());
 
         Employee newEmployee = new Employee(id, name, dayOfBirth, gender, identityCard, numberPhone, email, educationLevel, position, salary);
-//        employeeList.add(newEmployee.getInformationEmployee());
 
-        WriteFileAndReadFile.writeFile(EMPLOY_PATH,newEmployee);
+        WriteFileAndReadFile.writeEmployeeCSVFile(EMPLOY_PATH, newEmployee);
         System.out.println("Successfully added new employee!");
     }
 
     @Override
     public void display() {//lay du lieu file csv in ra / can readFile/chuyen stringList qua emloyeeList
-        List<Employee> employeeList = new ArrayList<>();
+//        List<Employee> employeeList = new ArrayList<>();thay ko co van chay dc ma
         employeeList = readCSVFileToEmployeeList("src/FuramaResort/data/employee.csv");
         for (int i = 0; i < employeeList.size(); i++) {
             System.out.println(employeeList.get(i));
@@ -55,22 +52,53 @@ public class EmployeeServiceImpl implements IEmployeeService {
 
     @Override
     public void returnMainMenu() {
-
+        System.out.println("returned main menu");
     }
 
     @Override
     public void edit() {
-
-    }
-
-    public static void writeEmployeeListToCSVFile(String path, List<Employee> employeeList, boolean append) {
-        List<String> stringList = new ArrayList<>();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("enter id of employee you want to edit: ");
+        int idNeedEdit = Integer.parseInt(scanner.nextLine());
         for (Employee employee : employeeList
         ) {
-            stringList.add(employee.writeToSCVFile());
+            if (employee.getId() == idNeedEdit) {
+                System.out.println("Enter new id: ");
+                int id = Integer.parseInt(scanner.nextLine());
+                System.out.println("Enter new name: ");
+                String name = scanner.nextLine();
+                System.out.println("Enter new dayOfBirth: ");
+                String dayOfBirth = scanner.nextLine();
+                System.out.println("Enter new gender: ");
+                String gender = scanner.nextLine();
+                System.out.println("Enter new identityCard: ");
+                String identityCard = scanner.nextLine();
+                System.out.println("Enter new numberPhone: ");
+                String numberPhone = scanner.nextLine();
+                System.out.println("Enter new email: ");
+                String email = scanner.nextLine();
+                System.out.println("Enter new educationLevel: ");
+                String educationLevel = scanner.nextLine();
+                System.out.println("Enter new position: ");
+                String position = scanner.nextLine();
+                System.out.println("Enter new salary: ");
+                int salary = Integer.parseInt(scanner.nextLine());
+                employee.setId(id);
+                employee.setName(name);
+                employee.setDayOfBirth(dayOfBirth);
+                employee.setGender(gender);
+                employee.setIdentityCard(identityCard);
+                employee.setNumberPhone(numberPhone);
+                employee.setEmail(email);
+                employee.setEducationLevel(educationLevel);
+                employee.setPosition(position);
+                employee.setSalary(salary);
+                WriteFileAndReadFile.writeFileListEmployee(EMPLOY_PATH,employeeList);
+                break;
+            }
         }
-
     }
+
 
     public static List<Employee> readCSVFileToEmployeeList(String pathFile) {
         List<Employee> employeeListFromReadCSV = new ArrayList<>();

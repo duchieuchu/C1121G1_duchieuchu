@@ -56,7 +56,7 @@ public class Employee extends Person {
                 ", salary=" + salary +
                 '}';
     }
-    public String writeToSCVFile(){
+    public String writeToCSVFile(){
       return getId()+","+getName()+","+getDayOfBirth()+","+getGender()+","+getIdentityCard()+","+getNumberPhone()
               +","+getEmail()+","+educationLevel+","+position+","+salary;
     }

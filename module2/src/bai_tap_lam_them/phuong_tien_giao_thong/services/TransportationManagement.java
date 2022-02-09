@@ -131,12 +131,12 @@ public class TransportationManagement implements ITransportationService {
         Scanner scanner = new Scanner(System.in);
         System.out.println("nhập biển kiểm soát");
         String bienKiemXoaCanXoa = scanner.nextLine();
-        boolean check = false;
-        for (int i = 0; i < xeTaiArrayList.size(); i++) {
-            if (xeTaiArrayList.get(i).getBienKiemSoat().equals(bienKiemXoaCanXoa)) {
+        boolean check = false;//tao check
+        for (int i = 0; i < xeTaiArrayList.size(); i++) {//duyet mang
+            if (xeTaiArrayList.get(i).getBienKiemSoat().equals(bienKiemXoaCanXoa)) {//neu bien kiem soat trong list == bks can xoa//danh cho kieu string
                 check = true;
                 System.out.println("Bạn đã xoá phương tiện có biển kiếm soát " + xeTaiArrayList.get(i).getBienKiemSoat() + " thành công");
-                xeTaiArrayList.remove(i);
+                xeTaiArrayList.remove(i);//thi xoa
                 break;
             }
         }

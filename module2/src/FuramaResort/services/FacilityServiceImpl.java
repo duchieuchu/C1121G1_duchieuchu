@@ -1,6 +1,9 @@
 package FuramaResort.services;
 
 public class FacilityServiceImpl implements IFacilityService{
+    static final String HOUSE_PATH="";
+    static final String ROOM_PATH="";
+    static final String VILLA_PATH="";
     @Override
     public void displayListFacilityMaintenance() {
 
@@ -18,7 +21,7 @@ public class FacilityServiceImpl implements IFacilityService{
 
     @Override
     public void returnMainMenu() {
-
+        System.out.println("returned main menu");
     }
 
     @Override

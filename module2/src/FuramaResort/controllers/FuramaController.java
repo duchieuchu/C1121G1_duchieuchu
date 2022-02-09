@@ -1,12 +1,17 @@
 package FuramaResort.controllers;
 
+import FuramaResort.models.person.Customer;
+import FuramaResort.services.CustomerServiceImpl;
 import FuramaResort.services.EmployeeServiceImpl;
+import FuramaResort.services.FacilityServiceImpl;
 
 import java.util.Scanner;
 
 public class FuramaController {
     public static void main(String[] args) {
-        EmployeeServiceImpl employeeService= new EmployeeServiceImpl();
+        EmployeeServiceImpl employeeService = new EmployeeServiceImpl();
+        CustomerServiceImpl customerService = new CustomerServiceImpl();
+        FacilityServiceImpl facilityService = new FacilityServiceImpl();
         boolean check = true;
         Scanner scanner = new Scanner(System.in);
         while (check) {
@@ -24,14 +29,20 @@ public class FuramaController {
                             "2\tAdd new employee\n" +
                             "3\tEdit employee\n" +
                             "4\tReturn main menu\n");
-                    System.out.println("enter your choose: ");
-                    int choose = scanner.nextInt();
-                    switch (choose){
+                    System.out.println("enter your choice: ");
+                    int chooseEmployeeManagement = scanner.nextInt();
+                    switch (chooseEmployeeManagement) {
                         case 1:
                             employeeService.display();
                             break;
                         case 2:
                             employeeService.add();
+                            break;
+                        case 3:
+                            employeeService.edit();
+                            break;
+                        case 4:
+                            employeeService.returnMainMenu();
                             break;
                     }
                     break;
@@ -40,12 +51,44 @@ public class FuramaController {
                             "2.\tAdd new customer\n" +
                             "3.\tEdit customer\n" +
                             "4.\tReturn main menu\n");
+                    System.out.println("enter your choice: ");
+                    int chooseCustomerManagement = scanner.nextInt();
+                    switch (chooseCustomerManagement) {
+                        case 1:
+                            customerService.display();
+                            break;
+                        case 2:
+                            customerService.add();
+                            break;
+                        case 3:
+                            customerService.edit();
+                            break;
+                        case 4:
+                            customerService.returnMainMenu();
+                            break;
+                    }
                     break;
                 case 3:
                     System.out.println("1\tDisplay list facility\n" +
                             "2\tAdd new facility\n" +
                             "3\tDisplay list facility maintenance\n" +
                             "4\tReturn main menu\n");
+                    System.out.println("enter your choice: ");
+                    int chooseFacilityManagement = scanner.nextInt();
+                    switch (chooseFacilityManagement) {
+                        case 1:
+                            facilityService.display();
+                            break;
+                        case 2:
+                            facilityService.add();
+                            break;
+                        case 3:
+                            facilityService.displayListFacilityMaintenance();
+                            break;
+                        case 4:
+                            facilityService.returnMainMenu();
+                            break;
+                    }
                     break;
                 case 4:
                     System.out.println("1.\tAdd new booking\n" +
@@ -62,7 +105,6 @@ public class FuramaController {
                     break;
                 case 6:
                     check = false;
-
             }
         }
     }
