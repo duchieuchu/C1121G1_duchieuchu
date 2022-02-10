@@ -33,17 +33,16 @@ public class WriteFileAndReadFile {
             e.printStackTrace();
         }
     }
-    public static void writeHouseCSVFile(String pathFile, House house){//dung de add house
+    public static void writeHouseSCVFile(String pathFile, House house) {//dung de add customer
         try{
             FileWriter fileWriter = new FileWriter(pathFile,true);
-            BufferedWriter bufferedWriter= new BufferedWriter(fileWriter);
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
             bufferedWriter.write(house.writeToCSVFile());
             bufferedWriter.newLine();
             bufferedWriter.close();
-        } catch (IOException e) {
+        }catch (IOException e){
             e.printStackTrace();
         }
-
     }
     public static void writeRoomCSVFile(String pathLine, Room room){//dung de add room
         try{
@@ -55,12 +54,11 @@ public class WriteFileAndReadFile {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
     public static void writeVillaCSVFile(String pathLine, Villa villa){//dung de add villa
-        try {
-            FileWriter fileWriter = new FileWriter(pathLine,true);
-            BufferedWriter bufferedWriter =new BufferedWriter(fileWriter);
+        try{
+            FileWriter fileWriter =new FileWriter(pathLine,true);
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
             bufferedWriter.write(villa.writeCSVFile());
             bufferedWriter.newLine();
             bufferedWriter.close();
@@ -68,6 +66,7 @@ public class WriteFileAndReadFile {
             e.printStackTrace();
         }
     }
+
 
 
     public static void writeFileListEmployee(String pathFile,List<Employee> employeeList) {//dung edit

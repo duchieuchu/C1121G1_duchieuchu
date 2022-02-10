@@ -56,7 +56,8 @@ public class Villa extends Facility {
     }
 
     public String writeCSVFile() {
-        return getServiceName() + "," + getUsingArea() + "," + getPersonNumber()
-                + "," + getRentalType() + "," + roomStandard + poolArea + numberOfFloors;
+        return  getServiceName()+","+getUsingArea()+","+getCostRent()+","+getPersonNumber()+","+
+                getRentalType()+","+getRoomStandard()+","+getPoolArea()+","+getNumberOfFloors();
+
     }
 }
