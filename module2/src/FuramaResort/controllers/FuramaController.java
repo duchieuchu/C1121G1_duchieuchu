@@ -83,7 +83,7 @@ public class FuramaController {
                             facilityService.add();
                             break;
                         case 3:
-                            facilityService.displayListFacilityMaintenance();
+                            facilityService.displayListFacilityMaintenance();//ko hieu cai nay that
                             break;
                         case 4:
                             facilityService.returnMainMenu();
