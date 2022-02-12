@@ -8,7 +8,6 @@ private double usingArea;
 private double costRent;
 private int personNumber;
 private String rentalType;
-
     public Facility() {
     }
 
@@ -63,11 +62,11 @@ private String rentalType;
     @Override
     public String toString() {
         return "Facility{" +
-                "serviceName='" + serviceName + '\'' +
+                "serviceName=" + serviceName + '\'' +
                 ", usingArea=" + usingArea +
                 ", costRent=" + costRent +
                 ", personNumber=" + personNumber +
-                ", rentalType='" + rentalType + '\'' +
+                ", rentalType=" + rentalType + '\'' +
                 '}';
     }
 }

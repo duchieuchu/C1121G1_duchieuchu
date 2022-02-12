@@ -1,9 +1,6 @@
 package FuramaResort.controllers;
 
-import FuramaResort.models.person.Customer;
-import FuramaResort.services.CustomerServiceImpl;
-import FuramaResort.services.EmployeeServiceImpl;
-import FuramaResort.services.FacilityServiceImpl;
+import FuramaResort.services.*;
 
 import java.util.Scanner;
 
@@ -12,6 +9,9 @@ public class FuramaController {
         EmployeeServiceImpl employeeService = new EmployeeServiceImpl();
         CustomerServiceImpl customerService = new CustomerServiceImpl();
         FacilityServiceImpl facilityService = new FacilityServiceImpl();
+        BookingServiceImpl bookingService = new BookingServiceImpl();
+        ContractServiceImpl contractService = new ContractServiceImpl();
+        PromotionServiceImpl promotionService = new PromotionServiceImpl();
         boolean check = true;
         Scanner scanner = new Scanner(System.in);
         while (check) {
@@ -31,7 +31,7 @@ public class FuramaController {
                             "4\tReturn main menu\n");
                     System.out.println("enter your choice: ");
                     int chooseEmployeeManagement = scanner.nextInt();
-                    switch (chooseEmployeeManagement) {
+                    switch (chooseEmployeeManagement){
                         case 1:
                             employeeService.display();
                             break;
@@ -83,7 +83,7 @@ public class FuramaController {
                             facilityService.add();
                             break;
                         case 3:
-                            facilityService.displayListFacilityMaintenance();//ko hieu cai nay that
+                            facilityService.displayListFacilityMaintenance();
                             break;
                         case 4:
                             facilityService.returnMainMenu();
@@ -93,15 +93,50 @@ public class FuramaController {
                 case 4:
                     System.out.println("1.\tAdd new booking\n" +
                             "2.\tDisplay list booking\n" +
-                            "3.\tCreate new constracts\n" +
+                            "3.\tCreate new contracts\n" +
                             "4.\tDisplay list contracts\n" +
                             "5.\tEdit contracts\n" +
                             "6.\tReturn main menu\n");
+                    System.out.println("enter your choice ");
+                    int chooseBookingManagement = scanner.nextInt();
+                    switch (chooseBookingManagement) {
+                        case 1:
+                            bookingService.add();
+                            break;
+                        case 2:
+                            bookingService.display();
+                            break;
+                        case 3:
+                            contractService.add();
+                            break;
+                        case 4:
+                            contractService.display();
+                            break;
+                        case 5:
+                            contractService.edit();
+                            break;
+                        case 6:
+                            contractService.returnMainMenu();
+                            break;
+                    }
                     break;
                 case 5:
                     System.out.println("1.\tDisplay list customers use service\n" +
                             "2.\tDisplay list customers get voucher\n" +
                             "3.\tReturn main menu\n");
+                    System.out.println("enter your choice ");
+                    int choosePromotionManagement = scanner.nextInt();
+                    switch (choosePromotionManagement) {
+                        case 1:
+                            promotionService.displayListCustomersUseService();
+                            break;
+                        case 2:
+                            promotionService.displayListCustomersGetVoucher();
+                            break;
+                        case 3:
+                            promotionService.returnMainMenu();
+                            break;
+                    }
                     break;
                 case 6:
                     check = false;

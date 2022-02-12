@@ -1,24 +1,68 @@
 package FuramaResort.services;
 
+import FuramaResort.models.facility.Facility;
 import FuramaResort.models.facility.House;
 import FuramaResort.models.facility.Room;
 import FuramaResort.models.facility.Villa;
 import FuramaResort.utils.WriteFileAndReadFile;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+
+import java.util.*;
 
 public class FacilityServiceImpl implements IFacilityService {
     static final String HOUSE_PATH = "src/FuramaResort/data/house.csv";
     static final String ROOM_PATH = "src/FuramaResort/data/room.csv";
     static final String VILLA_PATH = "src/FuramaResort/data/villa.csv";
+    static final String FACILITY_PATH = "src/FuramaResort/data/facility.csv";
     List<House> houseList = readCSVFileToHouseList(HOUSE_PATH);
     List<Room> roomList = readCSVFileToRoomList(ROOM_PATH);
     List<Villa> villaList = readCSVFileToVillaList(VILLA_PATH);
 
     @Override
     public void displayListFacilityMaintenance() {
+        Map<Facility, Integer> facilityMaintenanceList = new LinkedHashMap<>();
+        Villa villa;
+        House house;
+        Room room;
+        List<String> lineList = WriteFileAndReadFile.readFile(FACILITY_PATH);
+        String[] lineSplitList;
+        for (String line : lineList) {
+            lineSplitList = line.split(",");
+            if (Integer.parseInt(lineSplitList[lineSplitList.length - 1]) >= 5) {
+                if (lineSplitList[0].contains("id villa")) {
+                    villa = new Villa(lineSplitList[0],
+                            Double.parseDouble(lineSplitList[1]),
+                            Double.parseDouble(lineSplitList[2]),
+                            Integer.parseInt(lineSplitList[3]),
+                            lineSplitList[4],
+                            lineSplitList[5],
+                            Double.parseDouble(lineSplitList[6]),
+                            Integer.parseInt(lineSplitList[7]));
+                    facilityMaintenanceList.put(villa, Integer.parseInt(lineSplitList[8]));
+                } else if (line.contains("id house")) {
+                    house = new House(lineSplitList[0],
+                            Double.parseDouble(lineSplitList[1]),
+                            Double.parseDouble(lineSplitList[2]),
+                            Integer.parseInt(lineSplitList[3]),
+                            lineSplitList[4],
+                            lineSplitList[5],
+                            Integer.parseInt(lineSplitList[6]));
+                    facilityMaintenanceList.put(house, Integer.parseInt(lineSplitList[7]));
+                } else if (line.contains("id room")) {
+                    room = new Room(lineSplitList[0],
+                            Double.parseDouble(lineSplitList[1]),
+                            Double.parseDouble(lineSplitList[2]),
+                            Integer.parseInt(lineSplitList[3]),
+                            lineSplitList[4], lineSplitList[5]);
+                    facilityMaintenanceList.put(room, Integer.parseInt(lineSplitList[6]));
+                }
+            }
+        }
+        for (Map.Entry<Facility, Integer> entry : facilityMaintenanceList.entrySet()) {
+            if (entry.getValue() >= 5) {
+                System.out.println(entry.getKey() + ", bookedTimes = " + entry.getValue());
+            }
+        }
 
     }
 
@@ -61,15 +105,15 @@ public class FacilityServiceImpl implements IFacilityService {
         String rentalType = scanner.nextLine();
 
         System.out.println("enter roomStandard");
-        String roomStandard= scanner.nextLine();
+        String roomStandard = scanner.nextLine();
         System.out.println("enter poolArea");
-        double poolArea=Double.parseDouble(scanner.nextLine());
+        double poolArea = Double.parseDouble(scanner.nextLine());
         System.out.println("enter numberOfFloors");
-        int numberOfFloors=Integer.parseInt(scanner.nextLine());
-        Villa newVilla=new Villa(serviceNameVilla,usingAreaVilla,costRentVilla,
-                personNumber,rentalType, roomStandard,poolArea,numberOfFloors);
+        int numberOfFloors = Integer.parseInt(scanner.nextLine());
+        Villa newVilla = new Villa(serviceNameVilla, usingAreaVilla, costRentVilla,
+                personNumber, rentalType, roomStandard, poolArea, numberOfFloors);
 
-        WriteFileAndReadFile.writeVillaCSVFile(VILLA_PATH,newVilla);
+        WriteFileAndReadFile.writeVillaCSVFile(VILLA_PATH, newVilla);
         System.out.println("completed");
     }
 
@@ -129,7 +173,7 @@ public class FacilityServiceImpl implements IFacilityService {
         for (int i = 0; i < roomList.size(); i++) {
             System.out.println(roomList.get(i));
         }
-        villaList=readCSVFileToVillaList(VILLA_PATH);
+        villaList = readCSVFileToVillaList(VILLA_PATH);
         for (int i = 0; i < villaList.size(); i++) {
             System.out.println(villaList.get(i));
         }
@@ -156,7 +200,8 @@ public class FacilityServiceImpl implements IFacilityService {
                     Double.parseDouble(lineSpitList[1]),
                     Double.parseDouble(lineSpitList[2]),
                     Integer.parseInt(lineSpitList[3]),
-                    lineSpitList[4], lineSpitList[5],
+                    lineSpitList[4],
+                    lineSpitList[5],
                     Integer.parseInt(lineSpitList[6])));
         }
         return houseListFromReadCSV;

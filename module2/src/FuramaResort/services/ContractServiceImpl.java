@@ -1,15 +1,7 @@
 package FuramaResort.services;
 
 public class ContractServiceImpl implements IContractService {
-    @Override
-    public void displayListCustomersUseService() {
-
-    }
-
-    @Override
-    public void displayListCustomersGetVoucher() {
-
-    }
+    public final String CONTRACT_PATH = "src/FuramaResort/data/contract.csv";
 
     @Override
     public void add() {
@@ -30,4 +22,5 @@ public class ContractServiceImpl implements IContractService {
     public void edit() {
 
     }
+
 }
