@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c88f7920-9dbb-43d3-abab-1105c0761342" name="Changes" comment="" />
+    <list default="true" id="c88f7920-9dbb-43d3-abab-1105c0761342" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/module2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/module2/module2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/out/production/module2/ss6_inheritance/thuc_hanh/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/module2/out/production/module2/ss6_inheritance/thuc_hanh/Circle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/out/production/module2/ss6_inheritance/thuc_hanh/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/module2/out/production/module2/ss6_inheritance/thuc_hanh/Rectangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/out/production/module2/ss6_inheritance/thuc_hanh/Square.class" beforeDir="false" afterPath="$PROJECT_DIR$/module2/out/production/module2/ss6_inheritance/thuc_hanh/Square.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/out/production/module2/ss7_abtract_class_interface/thuc_hanh/comparator/CircleComparatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/module2/out/production/module2/ss7_abtract_class_interface/thuc_hanh/comparator/CircleComparatorTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/src/ss11_dsa_stack_queue/bai_tap/reserve_elements_array_use_stack/Reserve.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2/src/ss11_dsa_stack_queue/bai_tap/reserve_elements_array_use_stack/Reserve.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/src/ss11_dsa_stack_queue/thuc_hanh/MyQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2/src/ss11_dsa_stack_queue/thuc_hanh/MyQueue.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +30,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -33,6 +43,14 @@
       <updated>1640769478670</updated>
       <workItem from="1640769480029" duration="286000" />
       <workItem from="1640770986350" duration="24000" />
+      <workItem from="1641210592766" duration="184000" />
+      <workItem from="1641346638632" duration="14000" />
+      <workItem from="1641435028732" duration="29000" />
+      <workItem from="1641450744599" duration="600000" />
+      <workItem from="1641630283726" duration="177000" />
+      <workItem from="1641630472233" duration="758000" />
+      <workItem from="1641702222872" duration="5000" />
+      <workItem from="1642079255333" duration="7000" />
     </task>
     <servers />
   </component>
