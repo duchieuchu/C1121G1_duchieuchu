@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 public class Management {
     private static final String DATA_PATH = "src/ss17_io_binary_file_serialization/bai_tap/product_management/data.dat";
+
     public void add() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("enter id: ");
@@ -21,7 +22,7 @@ public class Management {
         String description = scanner.nextLine();
         Product newProduct = new Product(id, name, brand, price, description);
 
-        List<Product> list = new ArrayList<>();
+        List<Product> list = readDataFromFile(DATA_PATH);
         list.add(newProduct);
         writeFile(DATA_PATH, list);
     }
@@ -40,7 +41,17 @@ public class Management {
     }
 
     public void search() {
-
+        List<Product> list = readDataFromFile(DATA_PATH);
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("enter name of product: ");
+        String nameNeedSearch = scanner.nextLine();
+        for (Product product : list
+        ) {
+            if (product.getName().contains(nameNeedSearch)) {//contains ghi 1 trong nhung ki tu trung
+                //equal thi phai trung het thi no moi in
+                System.out.println(product);
+            }
+        }
     }
 
     public void delete() {
@@ -49,21 +60,23 @@ public class Management {
         ) {
             System.out.println(product);
         }
-        Scanner scanner =new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("enter id you want to delete: ");
-        int idNeedDelete=Integer.parseInt(scanner.nextLine());
+        int idNeedDelete = Integer.parseInt(scanner.nextLine());
 
-        boolean check= false;
-       for (int i = 0;i< list.size();i++){
-           if (idNeedDelete==list.get(i).getId()){
-               check = true;
-               list.remove(i);
-               System.out.println("deleted");
-           }
-       }if (!check){
+        boolean check = false;
+        for (int i = 0; i < list.size(); i++) {
+            if (idNeedDelete == list.get(i).getId()) {
+                check = true;
+                list.remove(i);
+                System.out.println("deleted");
+            }
+        }
+        if (!check) {
             System.out.println("no found");
         }
 
+        writeFile(DATA_PATH, list);//phai ghi lai file
     }
 
     public static void writeFile(String pathLine, List<Product> list) {
