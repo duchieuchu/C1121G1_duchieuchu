@@ -37,7 +37,31 @@ public class Management {
     }
 
     public void edit() {
-
+        List<Product> list = readDataFromFile(DATA_PATH);
+        for (Product product : list
+        ) {
+            System.out.println(product);
+        }
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("enter id you want to edit: ");
+        int idNeedEdit=Integer.parseInt(scanner.nextLine());
+        System.out.println("enter new name: ");
+        String name = scanner.nextLine();
+        System.out.println("enter new brand: ");
+        String brand= scanner.nextLine();
+        System.out.println("enter new price: ");
+        double price= Double.parseDouble(scanner.nextLine());
+        System.out.println("enter new description: ");
+        String description= scanner.nextLine();
+        for (Product product:list){
+            if (idNeedEdit==product.getId()){
+                product.setName(name);
+                product.setBrand(brand);
+                product.setPrice(price);
+                product.setDescription(description);
+            }
+        }
+        writeFile(DATA_PATH,list);
     }
 
     public void search() {
