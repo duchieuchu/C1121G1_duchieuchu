@@ -16,23 +16,23 @@ public class CustomerServiceImpl implements ICustomerService {
     @Override
     public void add() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter id: ");
+        System.out.print("Enter id: ");
         int id = Integer.parseInt(scanner.nextLine());
-        System.out.println("Enter name: ");
+        System.out.print("Enter name: ");
         String name = scanner.nextLine();
-        System.out.println("Enter dayOfBirth: ");
+        System.out.print("Enter dayOfBirth: ");
         String dayOfBirth = scanner.nextLine();
-        System.out.println("Enter gender: ");
+        System.out.print("Enter gender: ");
         String gender = scanner.nextLine();
-        System.out.println("Enter identityCard: ");
+        System.out.print("Enter identityCard: ");
         String identityCard = scanner.nextLine();
-        System.out.println("Enter numberPhone: ");
+        System.out.print("Enter numberPhone: ");
         String numberPhone = scanner.nextLine();
-        System.out.println("Enter email: ");
+        System.out.print("Enter email: ");
         String email = scanner.nextLine();
-        System.out.println("Enter typeCustomer: ");
+        System.out.print("Enter typeCustomer: ");
         String typeCustomer = scanner.nextLine();
-        System.out.println("Enter address: ");
+        System.out.print("Enter address: ");
         String address = scanner.nextLine();
 
         Customer newCustomer = new Customer(id, name, dayOfBirth, gender, identityCard, numberPhone, email, typeCustomer, address);
@@ -62,23 +62,23 @@ public class CustomerServiceImpl implements ICustomerService {
         for (Customer customer : customerList
         ) {
             if (customer.getId() == idNeedEdit) {
-                System.out.println("Enter new id: ");
+                System.out.print("Enter new id: ");
                 int id = Integer.parseInt(scanner.nextLine());
-                System.out.println("Enter new name: ");
+                System.out.print("Enter new name: ");
                 String name = scanner.nextLine();
-                System.out.println("Enter new dayOfBirth: ");
+                System.out.print("Enter new dayOfBirth: ");
                 String dayOfBirth = scanner.nextLine();
-                System.out.println("Enter new gender: ");
+                System.out.print("Enter new gender: ");
                 String gender = scanner.nextLine();
-                System.out.println("Enter new identityCard: ");
+                System.out.print("Enter new identityCard: ");
                 String identityCard = scanner.nextLine();
-                System.out.println("Enter new numberPhone: ");
+                System.out.print("Enter new numberPhone: ");
                 String numberPhone = scanner.nextLine();
-                System.out.println("Enter new email: ");
+                System.out.print("Enter new email: ");
                 String email = scanner.nextLine();
-                System.out.println("Enter typeCustomer: ");
+                System.out.print("Enter typeCustomer: ");
                 String typeCustomer = scanner.nextLine();
-                System.out.println("Enter address: ");
+                System.out.print("Enter address: ");
                 String address = scanner.nextLine();
                 customer.setId(id);
                 customer.setName(name);

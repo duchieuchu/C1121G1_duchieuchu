@@ -7,9 +7,9 @@ public class Room extends Facility {
     public Room() {
     }
 
-    public Room(String serviceName, double usingArea,
+    public Room(String idFacility, String serviceName, double usingArea,
                 double costRent, int personNumber, String rentalType, String freeService) {
-        super(serviceName, usingArea, costRent, personNumber, rentalType);
+        super(idFacility, serviceName, usingArea, costRent, personNumber, rentalType);
         this.freeService = freeService;
     }
 
@@ -24,17 +24,18 @@ public class Room extends Facility {
     @Override
     public String toString() {
         return "Room{" +
-                "serviceName='" + getServiceName() + '\'' +
+                "idFacility=" + getIdFacility() +
+                ", serviceName=" + getServiceName() +
                 ", usingArea=" + getUsingArea() +
                 ", costRent=" + getCostRent() +
                 ", personNumber=" + getPersonNumber() +
-                ", rentalType='" + getRentalType() + '\'' +
-                ", freeService='" + freeService + '\'' +
+                ", rentalType=" + getRentalType() +
+                ", freeService='" + freeService +
                 '}';
     }
 
     public String writeCSVFile() {
-        return getServiceName() + "," + getUsingArea() + "," + getCostRent()
+        return getIdFacility() + "," + getServiceName() + "," + getUsingArea() + "," + getCostRent()
                 + "," + getPersonNumber() + "," + getRentalType() + "," + freeService;
     }
 }

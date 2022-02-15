@@ -14,25 +14,25 @@ public class EmployeeServiceImpl implements IEmployeeService {
     @Override
     public void add() {//dua du lieu tu employeeList vao file SCV/can dung writeFile/chuyen employeeList sang stringList,ủa ko phải mặc định stringlist hả a
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter id: ");
+        System.out.print("Enter id: ");
         int id = Integer.parseInt(scanner.nextLine());
-        System.out.println("Enter name: ");
+        System.out.print("Enter name: ");
         String name = scanner.nextLine();
-        System.out.println("Enter dayOfBirth: ");
+        System.out.print("Enter dayOfBirth: ");
         String dayOfBirth = scanner.nextLine();
-        System.out.println("Enter gender: ");
+        System.out.print("Enter gender: ");
         String gender = scanner.nextLine();
-        System.out.println("Enter identityCard: ");
+        System.out.print("Enter identityCard: ");
         String identityCard = scanner.nextLine();
-        System.out.println("Enter numberPhone: ");
+        System.out.print("Enter numberPhone: ");
         String numberPhone = scanner.nextLine();
-        System.out.println("Enter email: ");
+        System.out.print("Enter email: ");
         String email = scanner.nextLine();
-        System.out.println("Enter educationLevel: ");
+        System.out.print("Enter educationLevel: ");
         String educationLevel = scanner.nextLine();
-        System.out.println("Enter position: ");
+        System.out.print("Enter position: ");
         String position = scanner.nextLine();
-        System.out.println("Enter salary: ");
+        System.out.print("Enter salary: ");
         int salary = Integer.parseInt(scanner.nextLine());
 
         Employee newEmployee = new Employee(id, name, dayOfBirth, gender, identityCard, numberPhone, email, educationLevel, position, salary);
@@ -62,25 +62,25 @@ public class EmployeeServiceImpl implements IEmployeeService {
         for (Employee employee : employeeList
         ) {
             if (employee.getId() == idNeedEdit) {
-                System.out.println("Enter new id: ");
+                System.out.print("Enter new id: ");
                 int id = Integer.parseInt(scanner.nextLine());
-                System.out.println("Enter new name: ");
+                System.out.print("Enter new name: ");
                 String name = scanner.nextLine();
-                System.out.println("Enter new dayOfBirth: ");
+                System.out.print("Enter new dayOfBirth: ");
                 String dayOfBirth = scanner.nextLine();
-                System.out.println("Enter new gender: ");
+                System.out.print("Enter new gender: ");
                 String gender = scanner.nextLine();
-                System.out.println("Enter new identityCard: ");
+                System.out.print("Enter new identityCard: ");
                 String identityCard = scanner.nextLine();
-                System.out.println("Enter new numberPhone: ");
+                System.out.print("Enter new numberPhone: ");
                 String numberPhone = scanner.nextLine();
-                System.out.println("Enter new email: ");
+                System.out.print("Enter new email: ");
                 String email = scanner.nextLine();
-                System.out.println("Enter new educationLevel: ");
+                System.out.print("Enter new educationLevel: ");
                 String educationLevel = scanner.nextLine();
-                System.out.println("Enter new position: ");
+                System.out.print("Enter new position: ");
                 String position = scanner.nextLine();
-                System.out.println("Enter new salary: ");
+                System.out.print("Enter new salary: ");
                 int salary = Integer.parseInt(scanner.nextLine());
                 employee.setId(id);
                 employee.setName(name);

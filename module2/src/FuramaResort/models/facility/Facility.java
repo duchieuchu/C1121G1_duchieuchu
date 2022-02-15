@@ -3,20 +3,31 @@ package FuramaResort.models.facility;
 public abstract class Facility {
     //Tên dịch vụ, Diện tích sử dụng, Chi phí thuê,
     // Số lượng người tối đa, Kiểu thuê (bao gồm thuê theo năm, tháng, ngày, giờ.
-private String serviceName;
-private double usingArea;
-private double costRent;
-private int personNumber;
-private String rentalType;
+    private String idFacility;
+    private String serviceName;
+    private double usingArea;
+    private double costRent;
+    private int personNumber;
+    private String rentalType;
+
     public Facility() {
     }
 
-    public Facility(String serviceName, double usingArea, double costRent, int personNumber, String rentalType) {
+    public Facility(String idFacility, String serviceName, double usingArea, double costRent, int personNumber, String rentalType) {
+        this.idFacility = idFacility;
         this.serviceName = serviceName;
         this.usingArea = usingArea;
         this.costRent = costRent;
         this.personNumber = personNumber;
         this.rentalType = rentalType;
+    }
+
+    public String getIdFacility() {
+        return idFacility;
+    }
+
+    public void setIdFacility(String idFacility) {
+        this.idFacility = idFacility;
     }
 
     public String getServiceName() {
@@ -62,11 +73,16 @@ private String rentalType;
     @Override
     public String toString() {
         return "Facility{" +
-                "serviceName=" + serviceName + '\'' +
+                "idFacility=" + idFacility +
+                ", serviceName=" + serviceName +
                 ", usingArea=" + usingArea +
                 ", costRent=" + costRent +
                 ", personNumber=" + personNumber +
-                ", rentalType=" + rentalType + '\'' +
+                ", rentalType=" + rentalType +
                 '}';
+    }
+    public String writeCSVFile(){
+        return getIdFacility()+","+getServiceName()+","+getUsingArea()+","+getCostRent()+","+getPersonNumber()+","+
+                getRentalType();
     }
 }

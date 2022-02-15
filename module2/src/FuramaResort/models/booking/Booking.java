@@ -11,9 +11,6 @@ private Customer customer;
 private Facility facility;
 private String typeOfServices;
 
-    public Booking() {
-    }
-
     public Booking(int idBooking, String startDay, String endDay, Customer customer, Facility facility, String typeOfServices) {
         this.idBooking = idBooking;
         this.startDay = startDay;
@@ -77,12 +74,12 @@ private String typeOfServices;
                 "idBooking=" + idBooking +
                 ", startDay='" + startDay + '\'' +
                 ", endDay='" + endDay + '\'' +
-                ", customer=" + customer +
-                ", servicesName=" + facility +
+                ", customerID=" + customer.getId() +
+                ", servicesName=" + facility.getServiceName() +
                 ", typeOfServices='" + typeOfServices + '\'' +
                 '}';
     }
-    public String getInformationBooking(){
-        return idBooking+","+startDay+","+endDay+customer.getId()+","+facility.getServiceName()+typeOfServices;
+    public String writeCSVFile(){
+        return idBooking+","+startDay+","+endDay+customer.getId()+","+facility.getServiceName()+","+typeOfServices;
     }
 }
