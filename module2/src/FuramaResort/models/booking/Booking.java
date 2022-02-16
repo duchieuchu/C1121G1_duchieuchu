@@ -80,6 +80,6 @@ private String typeOfServices;
                 '}';
     }
     public String writeCSVFile(){
-        return idBooking+","+startDay+","+endDay+customer.getId()+","+facility.getServiceName()+","+typeOfServices;
+        return idBooking+","+startDay+","+endDay+","+customer.getId()+","+facility.getServiceName()+","+typeOfServices;
     }
 }

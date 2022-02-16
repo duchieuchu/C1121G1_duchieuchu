@@ -41,7 +41,7 @@ public class BookingServiceImpl implements IBookingService {
         System.out.print("enter id facility: ");
         String idFacility = scanner.nextLine();
         Facility facility = null;
-        List<Facility>facilityList= facilityService.facilityList;
+
         for (Facility facility1 : facilityService.facilityList
         ) {
             if (idFacility.equals(facility1.getIdFacility())) {

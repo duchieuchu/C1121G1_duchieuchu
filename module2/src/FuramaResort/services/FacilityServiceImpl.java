@@ -171,22 +171,22 @@ public class FacilityServiceImpl implements IFacilityService {
 
     @Override
     public void display() {
-//        facilityList=readCSVFileToFacilityList(FACILITY_PATH);
-//        for (int i= 0;i<facilityList.size();i++){
-//            System.out.println(facilityList.get(i));
+        facilityList=readCSVFileToFacilityList(FACILITY_PATH);
+        for (int i= 0;i<facilityList.size();i++){
+            System.out.println(facilityList.get(i));
+        }
+//        villaList = readCSVFileToVillaList(VILLA_PATH);
+//        for (int i = 0; i < villaList.size(); i++) {
+//            System.out.println(villaList.get(i));
 //        }
-        villaList = readCSVFileToVillaList(VILLA_PATH);
-        for (int i = 0; i < villaList.size(); i++) {
-            System.out.println(villaList.get(i));
-        }
-        houseList = readCSVFileToHouseList(HOUSE_PATH);
-        for (int i = 0; i < houseList.size(); i++) {
-            System.out.println(houseList.get(i));
-        }
-        roomList = readCSVFileToRoomList(ROOM_PATH);
-        for (int i = 0; i < roomList.size(); i++) {
-            System.out.println(roomList.get(i));
-        }
+//        houseList = readCSVFileToHouseList(HOUSE_PATH);
+//        for (int i = 0; i < houseList.size(); i++) {
+//            System.out.println(houseList.get(i));
+//        }
+//        roomList = readCSVFileToRoomList(ROOM_PATH);
+//        for (int i = 0; i < roomList.size(); i++) {
+//            System.out.println(roomList.get(i));
+//        }
     }
 
     @Override
@@ -259,7 +259,7 @@ public class FacilityServiceImpl implements IFacilityService {
 
         for (String line : lineList) {
             lineSplitList = line.split(",");
-            if (lineSplitList[0].contains("SVVl")) {
+            if (lineSplitList[0].contains("SVVL")) {
                 facilityListFromReadCSV.add(new Villa(lineSplitList[0], lineSplitList[1],
                         Double.parseDouble(lineSplitList[2]),
                         Double.parseDouble(lineSplitList[3]),
