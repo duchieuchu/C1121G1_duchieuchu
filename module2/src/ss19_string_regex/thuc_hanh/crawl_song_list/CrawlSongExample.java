@@ -11,27 +11,27 @@ import java.util.regex.Pattern;
 
 public class CrawlSongExample {
     public static void main(String[] args) {
-        try {
-            URL url = new URL("https://www.nhaccuatui.com/bai-hat/nhac-tre-moi.html");
-            // open the stream and put it into BufferedReader
-            Scanner scanner = new Scanner(new InputStreamReader(url.openStream()));
+        try{
+            URL url=new URL("https://www.nhaccuatui.com/bai-hat/nhac-tre-moi.html");
+            //mở luồng và đưa nó vào BufferedReader
+            Scanner scanner= new Scanner(new InputStreamReader(url.openStream()));
             scanner.useDelimiter("\\Z");
             String content = scanner.next();
-            // close scanner
+            //dong scanner
             scanner.close();
-            // remove all new line
-            content = content.replaceAll("\\n+", "");
-            // regex
-            Pattern p = Pattern.compile("name_song\">(.*?)</a>");
-            Matcher m = p.matcher(content);
-            while (m.find()) {
-                System.out.println(m.group(1));
+            //loại bỏ tất cả dòng mới
+            content= content.replaceAll("\\n+","");
+
+            Pattern pattern=Pattern.compile("name_song\">(.*?)</a>");
+            Matcher matcher= pattern.matcher(content);
+            while (matcher.find()){
+                System.out.println(matcher.group(1));
             }
-        } catch (MalformedURLException e) {
+        }catch (MalformedURLException e){
             e.printStackTrace();
-        } catch (UnsupportedEncodingException e) {
+        }catch (UnsupportedEncodingException e){
             e.printStackTrace();
-        } catch (IOException e) {
+        }catch (IOException e){
             e.printStackTrace();
         }
     }
