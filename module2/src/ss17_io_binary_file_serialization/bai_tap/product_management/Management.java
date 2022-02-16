@@ -61,6 +61,7 @@ public class Management {
                 product.setDescription(description);
             }
         }
+        System.out.println("edited");
         writeFile(DATA_PATH,list);
     }
 
