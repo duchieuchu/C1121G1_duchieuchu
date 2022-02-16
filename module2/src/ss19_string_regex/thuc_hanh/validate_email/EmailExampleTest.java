@@ -24,6 +24,7 @@ public class EmailExampleTest {
         Scanner scanner= new Scanner(System.in);
         System.out.print("nhap Email: ");
         String email = scanner.nextLine();
+
         boolean isValid= emailExample.validate(email);
         System.out.println("Email: "+email+" vua nhap la "+isValid);
     }
