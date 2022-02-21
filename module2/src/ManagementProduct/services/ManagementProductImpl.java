@@ -49,11 +49,6 @@ public class ManagementProductImpl implements IManagementProduct {
 
         exportProductList.add(new ExportProduct(codeProduct, productName, price, numberOfProducts, production,
                 exportPrice, importCountry));
-//        if (productList.isEmpty()) {
-//            ;
-//        } else {
-//            sanPhamXuatKhau.setIdSanPham(sanPhamList.get(sanPhamList.size() - 1).getIdSanPham() + 1);
-//        }
 
         stringExportProductList = WriteFileAndReadFile.convertProductListToStringList(exportProductList);
 
