@@ -11,6 +11,9 @@ private Customer customer;
 private Facility facility;
 private String typeOfServices;
 
+    public Booking() {
+    }
+
     public Booking(int idBooking, String startDay, String endDay, Customer customer, Facility facility, String typeOfServices) {
         this.idBooking = idBooking;
         this.startDay = startDay;

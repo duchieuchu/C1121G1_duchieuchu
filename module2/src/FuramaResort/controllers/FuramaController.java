@@ -104,7 +104,7 @@ public class FuramaController {
                             bookingService.add();
                             break;
                         case 2:
-                            bookingService.display();
+                            bookingService. display();
                             break;
                         case 3:
                             contractService.add();

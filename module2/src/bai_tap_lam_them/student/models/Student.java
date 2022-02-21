@@ -1,6 +1,7 @@
 package bai_tap_lam_them.student.models;
 
 public class Student {
+
     private String name;
     private String gender;
     private String dayOfBirth;

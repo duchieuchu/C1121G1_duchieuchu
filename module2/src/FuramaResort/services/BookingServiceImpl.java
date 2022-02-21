@@ -5,12 +5,14 @@ import FuramaResort.models.facility.Facility;
 import FuramaResort.models.person.Customer;
 import FuramaResort.utils.WriteFileAndReadFile;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class BookingServiceImpl implements IBookingService {
+
     public final String BOOKING_PATH = "src/FuramaResort/data/booking.csv";
-    List<Booking> bookingList;
+    List<Booking> bookingList= new ArrayList<>();
 
     @Override
     public void add() {
@@ -51,9 +53,9 @@ public class BookingServiceImpl implements IBookingService {
         }
         System.out.print("enter typeOfServices: ");
         String typeOfServices = scanner.nextLine();
-        Booking newBooking = new Booking(idBooking,startDay,endDay,customer,facility,typeOfServices);
+        Booking newBooking = new Booking(idBooking, startDay, endDay, customer, facility, typeOfServices);
 
-        WriteFileAndReadFile.writeBookingCSVFile(BOOKING_PATH,newBooking);
+        WriteFileAndReadFile.writeBookingCSVFile(BOOKING_PATH, newBooking);
     }
 
     @Override
@@ -69,5 +71,33 @@ public class BookingServiceImpl implements IBookingService {
     @Override
     public void edit() {
 
+    }
+
+    public void readCSVFileToBookingList(String pathLine) {
+        CustomerServiceImpl customerService = new CustomerServiceImpl();
+        FacilityServiceImpl facilityService = new FacilityServiceImpl();
+        bookingList=new ArrayList<>();
+        List<String> lineList = WriteFileAndReadFile.readFile(pathLine);
+        String[] lineSplitList;
+        Booking booking= new Booking();
+
+        for (String line : lineList) {
+            lineSplitList = line.split(",");
+            for (Customer customer : customerService.customerList) {
+                if (Integer.parseInt(lineSplitList[3]) == customer.getId()) {
+                    booking.setCustomer(customer);
+                }
+            }
+            for (Facility facility:facilityService.facilityList){
+                if (lineSplitList[4].equals(facility.getIdFacility())){
+                    booking.setFacility(facility);
+                }
+            }
+            booking.setIdBooking(Integer.parseInt(lineSplitList[0]));
+            booking.setStartDay(lineSplitList[1]);
+            booking.setEndDay(lineSplitList[2]);
+            booking.setTypeOfServices(lineSplitList[5]);
+            bookingList.add(booking);
+        }
     }
 }

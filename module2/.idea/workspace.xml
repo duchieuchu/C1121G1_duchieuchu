@@ -2,28 +2,90 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15c94c36-9451-4cad-8de4-84ab2fcdd75d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ss15_exception_handling_debugging/bai_tap/TestIllegalTriangleException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BaiThi/controllers/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BaiThi/data/benhAnCuaBenhNhan.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BaiThi/models/BenhNhan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BaiThi/models/BenhNhanThuong.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BaiThi/models/BenhNhanVip.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BaiThi/services/BenhAnService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BaiThi/services/BenhAnServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BaiThi/utils/WriteFileAndReadFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FuramaResortFake/controllers/FuramaResortFakeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FuramaResortFake/data/booking.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FuramaResortFake/data/contract.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FuramaResortFake/data/customer.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FuramaResortFake/data/employee.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FuramaResortFake/data/facility.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FuramaResortFake/data/house.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FuramaResortFake/data/room.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FuramaResortFake/data/villa.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FuramaResortFake/models/booking/Booking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FuramaResortFake/models/contract/Contract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FuramaResortFake/models/facility/Facility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FuramaResortFake/models/facility/House.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FuramaResortFake/models/facility/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FuramaResortFake/models/facility/Villa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FuramaResortFake/models/person/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FuramaResortFake/models/person/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FuramaResortFake/models/person/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FuramaResortFake/services/IBookingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FuramaResortFake/services/IContractService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FuramaResortFake/services/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FuramaResortFake/services/IEmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FuramaResortFake/services/IFacilityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FuramaResortFake/services/IService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FuramaResortFake/services/Promotion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FuramaResortFake/services/impl/BookingServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FuramaResortFake/services/impl/ContractServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FuramaResortFake/services/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FuramaResortFake/services/impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FuramaResortFake/services/impl/FacilityServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FuramaResortFake/services/impl/PromotionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FuramaResortFake/utils/BookingComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ManagementProduct/controllers/ManagementProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ManagementProduct/data/product.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ManagementProduct/models/ExportProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ManagementProduct/models/ImportProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ManagementProduct/models/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ManagementProduct/services/IManagementProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ManagementProduct/services/ManagementProductImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ManagementProduct/utils/NotFoundProductException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ManagementProduct/utils/ValidationC10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ManagementProduct/utils/WriteFileAndReadFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_tap_lam_them/BaiThi1/controllers/BenhAnCuaBenhNhan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_tap_lam_them/BaiThi1/data/BenhAnCuaBenhNhan.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_tap_lam_them/BaiThi1/models/BenhAnCuaBenhNhan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_tap_lam_them/BaiThi1/models/BenhAnCuaBenhNhanVip.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_tap_lam_them/BaiThi1/models/BenhAnCuaBenhThuong.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_tap_lam_them/BaiThi1/services/BenhAnService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_tap_lam_them/BaiThi1/services/BenhAnServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/FuramaResort/controllers/FuramaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/FuramaResort/controllers/FuramaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/FuramaResort/data/booking.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/FuramaResort/data/booking.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/module2/FuramaResort/data/facility.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/FuramaResort/data/facility.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/FuramaResort/data/house.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/FuramaResort/data/house.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/module2/FuramaResort/data/room.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/FuramaResort/data/room.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/FuramaResort/data/villa.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/FuramaResort/data/villa.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/module2/FuramaResort/models/booking/Booking.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/FuramaResort/models/booking/Booking.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/FuramaResort/models/facility/Facility.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/FuramaResort/models/facility/Facility.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/FuramaResort/models/facility/House.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/FuramaResort/models/facility/House.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/FuramaResort/models/facility/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/FuramaResort/models/facility/Room.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/FuramaResort/models/facility/Villa.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/FuramaResort/models/facility/Villa.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/module2/FuramaResort/services/BookingServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/FuramaResort/services/BookingServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/module2/FuramaResort/services/ContractServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/FuramaResort/services/ContractServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/FuramaResort/services/CustomerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/FuramaResort/services/CustomerServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/FuramaResort/services/EmployeeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/FuramaResort/services/EmployeeServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/module2/FuramaResort/services/FacilityServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/FuramaResort/services/FacilityServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/FuramaResort/services/Promotion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/FuramaResort/services/Promotion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/FuramaResort/services/PromotionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/FuramaResort/services/PromotionServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/FuramaResort/utils/WriteFileAndReadFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/FuramaResort/utils/WriteFileAndReadFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss15_exception_handling_debugging/bai_tap/IllegalTriangleException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss15_exception_handling_debugging/bai_tap/IllegalTriangleException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/bai_tap_lam_them/student/models/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/bai_tap_lam_them/student/models/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss15_exception_handling_debugging/bai_tap/IllegalTriangleException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss15_exception_handling_debugging/bai_tap/IllegalTriangleException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss15_exception_handling_debugging/bai_tap/TestIllegalTriangleException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss15_exception_handling_debugging/bai_tap/TestIllegalTriangleException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss17_io_binary_file_serialization/bai_tap/product_management/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss17_io_binary_file_serialization/bai_tap/product_management/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss17_io_binary_file_serialization/bai_tap/product_management/Management.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss17_io_binary_file_serialization/bai_tap/product_management/Management.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss17_io_binary_file_serialization/bai_tap/product_management/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss17_io_binary_file_serialization/bai_tap/product_management/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss19_string_regex/thuc_hanh/crawl_song_list/CrawlSongExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss19_string_regex/thuc_hanh/crawl_song_list/CrawlSongExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss19_string_regex/thuc_hanh/validate_account/AccountExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss19_string_regex/thuc_hanh/validate_account/AccountExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss19_string_regex/thuc_hanh/validate_account/AccountExampleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss19_string_regex/thuc_hanh/validate_account/AccountExampleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss19_string_regex/thuc_hanh/validate_email/EmailExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss19_string_regex/thuc_hanh/validate_email/EmailExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss19_string_regex/thuc_hanh/validate_email/EmailExampleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss19_string_regex/thuc_hanh/validate_email/EmailExampleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FuramaResort/controllers/FuramaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FuramaResort/controllers/FuramaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FuramaResort/data/facility.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/FuramaResort/data/facility.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FuramaResort/data/house.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/FuramaResort/data/house.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FuramaResort/data/villa.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/FuramaResort/data/villa.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FuramaResort/models/booking/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FuramaResort/models/booking/Booking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FuramaResort/services/BookingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FuramaResort/services/BookingServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FuramaResort/services/ContractServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FuramaResort/services/ContractServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bai_tap_lam_them/student/models/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bai_tap_lam_them/student/models/Student.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,13 +163,13 @@
       <recent name="ss12_java_collection_framework.bai_tap.use_arraylist_linkedlist.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestIllegalTriangleException">
-    <configuration name="AlgorithmComplexityTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss13_seacrhing_algorithms.optional.thuc_hanh.AlgorithmComplexityTest" />
+  <component name="RunManager" selected="Application.BenhAnCuaBenhNhan">
+    <configuration name="BenhAnCuaBenhNhan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_tap_lam_them.BaiThi1.controllers.BenhAnCuaBenhNhan" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss13_seacrhing_algorithms.optional.thuc_hanh.*" />
+          <option name="PATTERN" value="bai_tap_lam_them.BaiThi1.controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,12 +177,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FuramaController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FuramaResort.controllers.FuramaController" />
+    <configuration name="Controller" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BaiThi.controllers.Controller" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="FuramaResort.controllers.*" />
+          <option name="PATTERN" value="BaiThi.controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,12 +190,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss22_structural_design_pattern.thuc_hanh.proxy_pattern.Main" />
+    <configuration name="ManagementProductController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ManagementProduct.controllers.ManagementProductController" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss22_structural_design_pattern.thuc_hanh.proxy_pattern.*" />
+          <option name="PATTERN" value="ManagementProduct.controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -141,12 +203,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bai_tap_lam_them.student.controllers.StudentController" />
+    <configuration name="ReverseTheElementsOfAnArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss3_array_and_methods.thuc_hanh.ReverseTheElementsOfAnArray" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bai_tap_lam_them.student.controllers.*" />
+          <option name="PATTERN" value="ss3_array_and_methods.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -154,12 +216,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestIllegalTriangleException" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss15_exception_handling_debugging.bai_tap.TestIllegalTriangleException" />
+    <configuration name="a" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_tap_lam_them.a" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss15_exception_handling_debugging.bai_tap.*" />
+          <option name="PATTERN" value="bai_tap_lam_them.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -169,11 +231,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestIllegalTriangleException" />
-        <item itemvalue="Application.AlgorithmComplexityTest" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.FuramaController" />
-        <item itemvalue="Application.StudentController" />
+        <item itemvalue="Application.BenhAnCuaBenhNhan" />
+        <item itemvalue="Application.Controller" />
+        <item itemvalue="Application.ManagementProductController" />
+        <item itemvalue="Application.a" />
+        <item itemvalue="Application.ReverseTheElementsOfAnArray" />
       </list>
     </recent_temporary>
   </component>
@@ -272,7 +334,19 @@
       <workItem from="1644569300068" duration="8264000" />
       <workItem from="1644667690768" duration="25717000" />
       <workItem from="1644846221738" duration="3625000" />
-      <workItem from="1644896313253" duration="2757000" />
+      <workItem from="1644896313253" duration="6487000" />
+      <workItem from="1644908917569" duration="29111000" />
+      <workItem from="1645001012765" duration="5000000" />
+      <workItem from="1645061051277" duration="15885000" />
+      <workItem from="1645084126981" duration="28838000" />
+      <workItem from="1645241774623" duration="989000" />
+      <workItem from="1645242794438" duration="10426000" />
+      <workItem from="1645266840566" duration="2248000" />
+      <workItem from="1645283661669" duration="2210000" />
+      <workItem from="1645333968740" duration="1812000" />
+      <workItem from="1645399962313" duration="6591000" />
+      <workItem from="1645410738106" duration="7380000" />
+      <workItem from="1645453767233" duration="817000" />
     </task>
     <servers />
   </component>
@@ -297,6 +371,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="3" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
