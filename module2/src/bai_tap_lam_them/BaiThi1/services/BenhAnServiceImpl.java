@@ -68,14 +68,26 @@ public class BenhAnServiceImpl implements BenhAnService {
     @Override
     public void xoa() {
         List<BenhAnCuaBenhNhan> benhAnCuaBenhNhanList = WriteFileAndReadFile.readBenhAnFromCSVFile(BENH_AN_PATH);
+        for (BenhAnCuaBenhNhan benhAnCuaBenhNhan : benhAnCuaBenhNhanList) {
+            System.out.println(benhAnCuaBenhNhan);
+        }
         System.out.println("nhap ma benh an de xoa: ");
-        String maBenhAnCanXoa= scanner.nextLine();
-        for (BenhAnCuaBenhNhan benhAnCuaBenhNhan:benhAnCuaBenhNhanList) {
-            if (benhAnCuaBenhNhan.getMaBenhAn().equals(maBenhAnCanXoa)){
-                benhAnCuaBenhNhanList.remove(benhAnCuaBenhNhan);
-                System.out.println("da xoa");
+        String maBenhAnCanXoa = scanner.nextLine();
+//        int index = 0;
+        boolean check = false;
+        for (int i = 0; i < benhAnCuaBenhNhanList.size(); i++) {
+            if (benhAnCuaBenhNhanList.get(i).getMaBenhAn().equals(maBenhAnCanXoa)) {
+//                index = i;
+                check = true;
+                benhAnCuaBenhNhanList.remove(i);
+                System.out.println("xoa thanh cong");
             }
         }
+        if (!check) {
+            System.out.println("ko tim thay");
+        }
+        WriteFileAndReadFile.writeListToCSVFile(benhAnCuaBenhNhanList, BENH_AN_PATH, false);
+
     }
 
     @Override
