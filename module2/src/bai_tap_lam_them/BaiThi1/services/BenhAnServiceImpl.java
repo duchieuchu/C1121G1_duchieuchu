@@ -17,8 +17,14 @@ public class BenhAnServiceImpl implements BenhAnService {
 
     @Override
     public void themMoiBenhAnCuaBenhNhanThuong() {
-        System.out.println("nhap soThuTuBenhAn");
-        int soThuTuBenhAn = Integer.parseInt(scanner.nextLine());
+        List<BenhAnCuaBenhNhan>benhAnCuaBenhNhanList=WriteFileAndReadFile.readBenhAnFromCSVFile(BENH_AN_PATH);
+
+        int soThuTuBenhAn;
+        if (benhAnCuaBenhNhanList.isEmpty()){
+            soThuTuBenhAn=1;
+        }else {
+            soThuTuBenhAn=benhAnCuaBenhNhanList.get(benhAnCuaBenhNhanList.size()-1).getSoThuTuBenhAn()+1;
+        }
         System.out.println("nhap maBenhAn");
         String maBenhAn = scanner.nextLine();
         System.out.println("nhap maBenhNhan");
@@ -41,8 +47,14 @@ public class BenhAnServiceImpl implements BenhAnService {
 
     @Override
     public void themMoiBenhAnCuaBenhNhanVip() {
-        System.out.println("nhap soThuTuBenhAn");
-        int soThuTuBenhAn = Integer.parseInt(scanner.nextLine());
+        List<BenhAnCuaBenhNhan>benhAnCuaBenhNhanList=WriteFileAndReadFile.readBenhAnFromCSVFile(BENH_AN_PATH);
+
+        int soThuTuBenhAn;
+        if (benhAnCuaBenhNhanList.isEmpty()) {
+            soThuTuBenhAn= 1;
+        } else {
+            soThuTuBenhAn= benhAnCuaBenhNhanList.get(benhAnCuaBenhNhanList.size() - 1).getSoThuTuBenhAn() + 1;
+        }
         System.out.println("nhap maBenhAn");
         String maBenhAn = scanner.nextLine();
         System.out.println("nhap maBenhNhan");
@@ -77,7 +89,8 @@ public class BenhAnServiceImpl implements BenhAnService {
         for (int i = 0; i < benhAnCuaBenhNhanList.size(); i++) {
             if (benhAnCuaBenhNhanList.get(i).getMaBenhAn().equals(maBenhAnCanXoa)) {
                 check = true;
-                while (check) {
+                boolean choose=true;
+                while (choose) {
                     System.out.println("ban co chac chan muon xoa\n" +
                             "1.YES\n" +
                             "2.NO");
@@ -85,13 +98,15 @@ public class BenhAnServiceImpl implements BenhAnService {
                         case 1:
                             benhAnCuaBenhNhanList.remove(i);
                             System.out.println("xoa thanh cong");
+                            choose=false;
                             break;
                         case 2:
                             System.out.println("da chap nhan khong xoa va quay lai menu");
-                            check = false;
+                            choose = false;
                             break;
                         default:
                             System.out.println("hay chon lai YES hoac NO");
+                            break;
                     }
                 }
             }
@@ -100,7 +115,6 @@ public class BenhAnServiceImpl implements BenhAnService {
             System.out.println("ko tim thay");
         }
         WriteFileAndReadFile.writeListToCSVFile(benhAnCuaBenhNhanList, BENH_AN_PATH, false);
-
     }
 
     @Override
