@@ -1,6 +1,7 @@
 package bai_tap_lam_them.BaiThi1.controllers;
 
 import bai_tap_lam_them.BaiThi1.services.BenhAnServiceImpl;
+import bai_tap_lam_them.BaiThi1.utils.NotFoundMedicalRecordException;
 
 import java.util.Scanner;
 
@@ -25,7 +26,11 @@ public class BenhAnCuaBenhNhan {
                     chonThemMoi();
                     break;
                 case 2:
-                    benhAnService.xoa();
+                    try {
+                        benhAnService.xoa();
+                    }catch (NotFoundMedicalRecordException e){
+                        System.out.println("benh an khong tim thay");
+                    }
                     break;
                 case 3:
                     benhAnService.xemDanhSachCacBenhAn();
