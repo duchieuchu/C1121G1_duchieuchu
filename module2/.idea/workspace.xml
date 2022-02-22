@@ -3,21 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="15c94c36-9451-4cad-8de4-84ab2fcdd75d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ManagementProduct/data/product.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ManagementProduct/data/product.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ManagementProduct/services/ManagementProductImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ManagementProduct/services/ManagementProductImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/module2/bai_tap_lam_them/BaiThi1/data/BenhAnCuaBenhNhan.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/bai_tap_lam_them/BaiThi1/data/BenhAnCuaBenhNhan.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/bai_tap_lam_them/BaiThi1/models/BenhAnCuaBenhNhan.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/bai_tap_lam_them/BaiThi1/models/BenhAnCuaBenhNhan.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/bai_tap_lam_them/BaiThi1/models/BenhAnCuaBenhNhanVip.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/bai_tap_lam_them/BaiThi1/models/BenhAnCuaBenhNhanVip.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/bai_tap_lam_them/BaiThi1/models/BenhAnCuaBenhThuong.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/bai_tap_lam_them/BaiThi1/models/BenhAnCuaBenhThuong.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/module2/bai_tap_lam_them/BaiThi1/services/BenhAnServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/bai_tap_lam_them/BaiThi1/services/BenhAnServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ManagementProduct/data/product.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/ManagementProduct/data/product.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ManagementProduct/services/ManagementProductImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ManagementProduct/services/ManagementProductImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bai_tap_lam_them/BaiThi1/data/BenhAnCuaBenhNhan.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/bai_tap_lam_them/BaiThi1/data/BenhAnCuaBenhNhan.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bai_tap_lam_them/BaiThi1/models/BenhAnCuaBenhNhan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bai_tap_lam_them/BaiThi1/models/BenhAnCuaBenhNhan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bai_tap_lam_them/BaiThi1/models/BenhAnCuaBenhNhanVip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bai_tap_lam_them/BaiThi1/models/BenhAnCuaBenhNhanVip.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bai_tap_lam_them/BaiThi1/models/BenhAnCuaBenhThuong.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bai_tap_lam_them/BaiThi1/models/BenhAnCuaBenhThuong.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bai_tap_lam_them/BaiThi1/services/BenhAnServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bai_tap_lam_them/BaiThi1/services/BenhAnServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bai_tap_lam_them/BaiThi1/utils/WriteFileAndReadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bai_tap_lam_them/BaiThi1/utils/WriteFileAndReadFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -279,6 +268,7 @@
       <workItem from="1645399962313" duration="6591000" />
       <workItem from="1645410738106" duration="7380000" />
       <workItem from="1645453767233" duration="7141000" />
+      <workItem from="1645494557662" duration="2635000" />
     </task>
     <servers />
   </component>

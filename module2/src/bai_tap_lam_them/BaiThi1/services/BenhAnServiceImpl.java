@@ -73,14 +73,27 @@ public class BenhAnServiceImpl implements BenhAnService {
         }
         System.out.println("nhap ma benh an de xoa: ");
         String maBenhAnCanXoa = scanner.nextLine();
-//        int index = 0;
         boolean check = false;
         for (int i = 0; i < benhAnCuaBenhNhanList.size(); i++) {
             if (benhAnCuaBenhNhanList.get(i).getMaBenhAn().equals(maBenhAnCanXoa)) {
-//                index = i;
                 check = true;
-                benhAnCuaBenhNhanList.remove(i);
-                System.out.println("xoa thanh cong");
+                while (check) {
+                    System.out.println("ban co chac chan muon xoa\n" +
+                            "1.YES\n" +
+                            "2.NO");
+                    switch (scanner.nextInt()) {
+                        case 1:
+                            benhAnCuaBenhNhanList.remove(i);
+                            System.out.println("xoa thanh cong");
+                            break;
+                        case 2:
+                            System.out.println("da chap nhan khong xoa va quay lai menu");
+                            check = false;
+                            break;
+                        default:
+                            System.out.println("hay chon lai YES hoac NO");
+                    }
+                }
             }
         }
         if (!check) {
