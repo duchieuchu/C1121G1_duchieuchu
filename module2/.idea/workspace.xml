@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15c94c36-9451-4cad-8de4-84ab2fcdd75d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/bai_tap_lam_them/BaiThi1/utils/NotFoundMedicalRecordException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_tap_lam_them/BaiThi1/utils/RegexData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/bai_tap_lam_them/BaiThi1/controllers/BenhAnCuaBenhNhan.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/bai_tap_lam_them/BaiThi1/controllers/BenhAnCuaBenhNhan.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/bai_tap_lam_them/BaiThi1/data/BenhAnCuaBenhNhan.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/bai_tap_lam_them/BaiThi1/data/BenhAnCuaBenhNhan.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/bai_tap_lam_them/BaiThi1/services/BenhAnService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/bai_tap_lam_them/BaiThi1/services/BenhAnService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/bai_tap_lam_them/BaiThi1/services/BenhAnServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/bai_tap_lam_them/BaiThi1/services/BenhAnServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bai_tap_lam_them/BaiThi1/controllers/BenhAnCuaBenhNhan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bai_tap_lam_them/BaiThi1/controllers/BenhAnCuaBenhNhan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bai_tap_lam_them/BaiThi1/services/BenhAnService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bai_tap_lam_them/BaiThi1/services/BenhAnService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bai_tap_lam_them/BaiThi1/services/BenhAnServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bai_tap_lam_them/BaiThi1/services/BenhAnServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -276,6 +267,8 @@
       <workItem from="1645494557662" duration="4828000" />
       <workItem from="1645500510632" duration="1779000" />
       <workItem from="1645514336965" duration="5979000" />
+      <workItem from="1645542591741" duration="596000" />
+      <workItem from="1645579494965" duration="3000" />
     </task>
     <servers />
   </component>
