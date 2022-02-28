@@ -2,33 +2,36 @@ drop database if exists sales_management ;
 create database sales_management;
 use sales_management;
 
-create table customer (
-cID int auto_increment primary key,
-cName varchar(50) not null,
-cAge int not null
+CREATE TABLE customer (
+    cID INT AUTO_INCREMENT PRIMARY KEY,
+    cName VARCHAR(50) NOT NULL,
+    cAge INT NOT NULL
 );
 
-create table `order` (
-oId int not null auto_increment primary key,
-cId int not null,
-oDate date not null,
-oTotalPrice double null,
-foreign key (cId) references customer(cId)
+CREATE TABLE `order` (
+    oId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    cId INT NOT NULL,
+    oDate DATE NOT NULL,
+    oTotalPrice DOUBLE NULL,
+    FOREIGN KEY (cId)
+        REFERENCES customer (cId)
 );
 
-create table product(
-pID int auto_increment primary key,
-pName varchar(50) not null,
-pPrice double null
+CREATE TABLE product (
+    pID INT AUTO_INCREMENT PRIMARY KEY,
+    pName VARCHAR(50) NOT NULL,
+    pPrice DOUBLE NULL
 );
 
-create table order_detail(
-oID int not null,
-pID int not null,
-od_QTY varchar(50) not null,
-primary key (oID,pID),
-foreign key (oID)references `order`(oID),
-foreign key (pID)references product(pID)
+CREATE TABLE order_detail (
+    oID INT NOT NULL,
+    pID INT NOT NULL,
+    od_QTY VARCHAR(50) NOT NULL,
+    PRIMARY KEY (oID , pID),
+    FOREIGN KEY (oID)
+        REFERENCES `order` (oID),
+    FOREIGN KEY (pID)
+        REFERENCES product (pID)
 );
 
 insert into customer values
@@ -60,9 +63,10 @@ insert into order_detail values
 
 -- Hiển thị các thông tin  gồm oID, oDate, oPrice của tất cả các hóa đơn trong bảng Order
 -- SELECT * FROM `order`; hien thi het du lieu cua order
-select oID,oDate,oTotalPrice from `order`;
-
--- Hiển thị danh sách các khách hàng đã mua hàng, và danh sách sản phẩm được mua bởi các khách
+SELECT 
+    oID, oDate, oTotalPrice
+FROM
+    `order`sách các khách hàng đã mua hàng, và danh sách sản phẩm được mua bởi các khách
 select customer.cId, customer.cName,product.pName 
 from customer
 join `order` on customer.cID = `order`.cID
