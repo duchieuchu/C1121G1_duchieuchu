@@ -180,4 +180,22 @@ values (1,5,2,4),
 (5,11,3,2),
 (6,1,1,3),
 (7,2,1,2),
-(8,2,12,2)
+(8,2,12,2);
+
+-- task2 H,T,K 15max
+select* from staff where ((staff_name like 'H%' 
+or staff_name like 'T%' 
+or staff_name like 'K%')and char_length((staff_name)<=15));
+
+-- task3 customer age 18-50 and adrress 'dn' 'qt'
+select * from customer where (datediff(curdate(),customer.day_of_birth)/365<50 and datediff(curdate(),customer.day_of_birth)/365>18)
+and (customer.address like '%Đà Nẵng' or customer.address like '%Quảng Trị');
+
+-- task4 count customer (diamond)so lan da dat phong
+select customer.customer_id,customer.customer_name, count(customer.customer_id) as `time`
+from contract
+join customer on customer.customer_id = contract.customer_id
+join type_of_customer on type_of_customer.type_id =customer.type_id
+where type_of_customer.type_name = 'Diamond'
+group by contract.customer_id
+order by count(customer.customer_id);
