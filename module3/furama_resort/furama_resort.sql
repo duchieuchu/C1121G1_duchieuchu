@@ -183,19 +183,91 @@ values (1,5,2,4),
 (8,2,12,2);
 
 -- task2 H,T,K 15max
-select* from staff where ((staff_name like 'H%' 
-or staff_name like 'T%' 
-or staff_name like 'K%')and char_length((staff_name)<=15));
+-- select* from staff where ((staff_name like 'H%' 
+-- or staff_name like 'T%' 
+-- or staff_name like 'K%')and char_length((staff_name)<=15));
 
 -- task3 customer age 18-50 and adrress 'dn' 'qt'
-select * from customer where (datediff(curdate(),customer.day_of_birth)/365<50 and datediff(curdate(),customer.day_of_birth)/365>18)
-and (customer.address like '%Đà Nẵng' or customer.address like '%Quảng Trị');
+-- select * from customer where (datediff(curdate(),customer.day_of_birth)/365<50 and datediff(curdate(),customer.day_of_birth)/365>18)
+-- and (customer.address like '%Đà Nẵng' or customer.address like '%Quảng Trị');
 
--- task4 count customer (diamond)so lan da dat phong
-select customer.customer_id,customer.customer_name, count(customer.customer_id) as `time`
-from contract
-join customer on customer.customer_id = contract.customer_id
-join type_of_customer on type_of_customer.type_id =customer.type_id
-where type_of_customer.type_name = 'Diamond'
-group by contract.customer_id
-order by count(customer.customer_id);
+-- task4 count 	customer (diamond)so lan da dat phong
+-- select customer.customer_id,customer.customer_name, count(customer.customer_id) as `time`
+-- from contract
+-- join customer on customer.customer_id = contract.customer_id
+-- join type_of_customer on type_of_customer.type_id =customer.type_id
+-- where type_of_customer.type_name = 'Diamond'
+-- group by contract.customer_id
+-- order by count(customer.customer_id);
+
+-- task5
+-- select c.customer_id, c.customer_name, t.type_name, ctr.contract_id, s.service_name,
+-- ctr.check_in, ctr.check_out,
+-- (s.rental_costs + dc.quantity*acs.a_price) as totalPrice
+-- from contract ctr
+-- left join customer c on c.customer_id = ctr.customer_id
+-- left join type_of_customer t on t.type_id = c.type_id
+-- left join service s on s.service_id = ctr.service_id
+-- left join detail_contract dc on dc.contract_id = ctr.contract_id
+-- left join accompanied_service acs on acs.a_id = dc.a_id
+-- group by contract_id;
+
+-- task6
+-- select service.service_id, service.service_name, service.area, service.rental_costs, contract.check_in, type_of_service.type_service_name
+-- from type_of_service
+-- inner join service on type_of_service.type_service_id = service.service_id
+-- left join contract on contract.service_id = service.service_id
+-- where contract.check_in not between '2021-1-1 00:00:00' and '2021-3-31 23:59:59'
+-- group by service.service_id;
+
+-- task7
+-- select service.service_id, service.service_name, service.area,
+-- service.number_of_person , service.rental_costs, 
+-- type_of_service.type_service_name
+-- from type_of_service
+-- inner join service on type_of_service.type_service_id = service.type_service_id
+-- left join contract on contract. service_id= service.service_id
+-- where (contract.check_in between '2020-1-1 00:00:00' and '2020-12-31 23:59:59')
+-- and (contract.check_in not between '2021-1-1 00:00:00' and '2021-12-31 23:59:59')
+-- group by service.service_id;
+
+-- task8
+-- c1
+-- select * from customer
+-- group by customer_name;
+
+-- c2
+-- select distinct customer_name from customer;
+
+-- c3
+-- select * , count(*) as times from customer
+-- group by customer_name
+-- having times>=1;
+
+-- task9
+-- select month(contract.check_in) as thang_lam_hop_dong, count(contract.contract_id) as so_luong_hop_dong
+-- from contract
+-- inner join customer on contract.customer_id = customer.customer_id
+-- group by thang_lam_hop_dong
+-- order by thang_lam_hop_dong;
+
+-- task10
+-- select contract.contract_id, contract.check_in, contract.check_out, contract.deposit, 
+-- accompanied_service.a_name, sum(ifnull(detail_contract.quantity,0)) as quantity, detail_contract.a_id
+-- from contract
+-- left join detail_contract on detail_contract.contract_id = contract.contract_id
+-- left join accompanied_service on accompanied_service.a_id = detail_contract.a_id
+-- group by contract.contract_id;
+
+-- task11
+select* from accompanied_service;
+
+select accompanied_service.a_id, accompanied_service.a_name
+from type_of_customer
+inner join customer on type_of_customer.type_id = customer.type_id
+inner join contract on contract.customer_id =  customer.customer_id
+inner join detail_contract on detail_contract.contract_id = contract.contract_id
+inner join accompanied_service on accompanied_service.a_id = detail_contract.a_id
+where type_of_customer.type_name = 'Diamond' and (customer.address like '%Vinh' or customer.address like '%Quảng Ngãi');
+
+-- task12
