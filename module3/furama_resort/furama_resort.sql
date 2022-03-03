@@ -34,9 +34,9 @@ address varchar(45),--
 position_id int,
 level_id int,
 part_id int,
-foreign key (position_id) references position  (position_id),
-foreign key (level_id) references education_level (level_id),
-foreign key (part_id) references part (part_id)
+foreign key (position_id) references position  (position_id) on update cascade on delete cascade,
+foreign key (level_id) references education_level (level_id) on update cascade on delete cascade,
+foreign key (part_id) references part (part_id)on update cascade on delete cascade
 );
 insert into staff 
 values(1,'Nguyễn Văn An','1970-11-07','456231786',10000000,'0901234121','annguyen@gmail.com','295 Nguyễn Tất Thành, Đà Nẵng',1,3,1),
@@ -67,7 +67,7 @@ number_phone varchar(45),
 email varchar(45),
 address varchar(45),--
 type_id int,
-foreign key (type_id) references type_of_customer (type_id)
+foreign key (type_id) references type_of_customer (type_id)on update cascade on delete cascade
 );
 insert into customer
 values (1,'Nguyễn Thị Hào','1970-11-07','0','643431213','0945423362','thihao07@gmail.com','23 Nguyễn Hoàng, Đà Nẵng',5),
@@ -127,8 +127,8 @@ pool_area double,
 number_of_floor int,
 type_rental_id int,
 type_service_id int,
-foreign key (type_rental_id) references type_of_rental (type_rental_id),
-foreign key (type_service_id) references type_of_service (type_service_id)
+foreign key (type_rental_id) references type_of_rental (type_rental_id)on update cascade on delete cascade,
+foreign key (type_service_id) references type_of_service (type_service_id)on update cascade on delete cascade
 );
 insert into service
 values (1,'Villa Beach Front',25000,10000000,10,'vip','Có hồ bơi',500,4,3,1),
@@ -146,9 +146,9 @@ deposit double,
 staff_id int,
 customer_id int,
 service_id int,
-foreign key (staff_id)references staff(staff_id),
-foreign key (customer_id)references customer(customer_id),
-foreign key (service_id)references service(service_id)
+foreign key (staff_id)references staff(staff_id)on update cascade on delete cascade,
+foreign key (customer_id)references customer(customer_id)on update cascade on delete cascade,
+foreign key (service_id)references service(service_id)on update cascade on delete cascade
 );
 insert into contract
 values(1,'2020-12-08','2020-12-08',0,3,1,3),
@@ -169,8 +169,8 @@ detail_contract_id int primary key,
 quantity int,
 contract_id int,
 a_id int ,
-foreign key (contract_id) references contract (contract_id),
-foreign key (a_id) references accompanied_service  (a_id)
+foreign key (contract_id) references contract (contract_id)on update cascade on delete cascade,
+foreign key (a_id) references accompanied_service  (a_id)on update cascade on delete cascade
 );
 insert into detail_contract
 values (1,5,2,4),
@@ -260,14 +260,112 @@ values (1,5,2,4),
 -- group by contract.contract_id;
 
 -- task11
-select* from accompanied_service;
 
-select accompanied_service.a_id, accompanied_service.a_name
-from type_of_customer
-inner join customer on type_of_customer.type_id = customer.type_id
-inner join contract on contract.customer_id =  customer.customer_id
-inner join detail_contract on detail_contract.contract_id = contract.contract_id
-inner join accompanied_service on accompanied_service.a_id = detail_contract.a_id
-where type_of_customer.type_name = 'Diamond' and (customer.address like '%Vinh' or customer.address like '%Quảng Ngãi');
+-- select accompanied_service.a_id, accompanied_service.a_name
+-- from type_of_customer
+-- inner join customer on type_of_customer.type_id = customer.type_id
+-- inner join contract on contract.customer_id =  customer.customer_id
+-- inner join detail_contract on detail_contract.contract_id = contract.contract_id
+-- inner join accompanied_service on accompanied_service.a_id = detail_contract.a_id
+-- where type_of_customer.type_name = 'Diamond' and (customer.address like '%Vinh' or customer.address like '%Quảng Ngãi');
 
 -- task12
+
+-- select contract.contract_id, staff.staff_name,customer.customer_name,customer.number_phone,
+-- service.service_name,sum(detail_contract.quantity) as so_luong_dich_vu_di_kem,contract.deposit
+-- from customer
+-- inner join contract on contract.customer_id = customer.customer_id
+-- inner join staff on staff.staff_id = contract.staff_id
+-- inner join service on contract.service_id = service.service_id
+-- left join detail_contract on detail_contract.contract_id = contract.contract_id
+-- left join accompanied_service  on accompanied_service.a_id = detail_contract.a_id
+-- where ((contract.check_in between '2020-10-1 00:00:00' and '2020-12-31 23:59:59') 
+-- or (contract.check_out between '2020-10-1 00:00:00' and '2020-12-31 23:59:59'))
+-- and ((contract.check_in not between '2021-1-1 00:00:00' and '2021-6-30 23:59:59')
+-- or (contract.check_out between '2020-10-1 00:00:00' and '2020-12-31 23:59:59'))
+-- group by contract.contract_id;
+
+-- task13
+-- select accompanied_service.a_id, accompanied_service.a_name, sum(detail_contract.quantity) as 'so_luong_dich_vu_di_kem'
+-- from accompanied_service
+-- inner join detail_contract on accompanied_service.a_id = detail_contract.a_id
+-- inner join contract on detail_contract.contract_id = contract.contract_id
+-- group by accompanied_service.a_id
+-- having so_luong_dich_vu_di_kem >= all(select quantity from detail_contract);
+
+-- task14
+-- select contract.contract_id,type_of_service.type_service_name,accompanied_service.a_name,
+-- count(accompanied_service.a_id) as so_lan_su_dung
+-- from contract
+-- inner join service on contract.service_id = service.service_id
+-- inner join type_of_service on service.type_service_id= type_of_service.type_service_id
+-- inner join detail_contract on contract.contract_id = detail_contract.contract_id
+-- inner join accompanied_service on detail_contract.a_id = accompanied_service.a_id
+-- group by accompanied_service.a_id
+-- having count(accompanied_service.a_id) = 1
+-- order by contract.contract_id;
+
+-- task15
+-- select staff.staff_id, staff.staff_name, education_level.level_name, part.part_name, staff.number_phone, staff.address
+-- from staff
+-- inner join education_level on staff.level_id= education_level.level_id
+-- inner join part on staff.part_id= part.part_id
+-- inner join contract on staff.staff_id= contract.staff_id
+-- group by staff.staff_id
+-- having count(contract.contract_id) <=3;
+
+-- task16
+-- select * from staff;
+-- set sql_safe_updates = 0;
+-- delete from staff
+-- where staff_id not in(
+-- select contract.staff_id 
+-- from contract
+-- where year(contract.check_in) between 2019 and 2021
+-- );
+-- set sql_safe_updates = 1;
+-- select * from staff;
+
+-- task17
+-- select * from customer;
+-- update customer
+-- set customer.type_id = 1
+-- where customer.type_id= 2
+-- and customer.type_id in (select contract.customer_id from contract
+-- inner join service on contract.service_id = service.service_id
+-- inner join detail_contract on contract.contract_id = detail_contract.contract_id
+-- inner join accompanied_service on detail_contract.a_id = accompanied_service.a_id
+-- group by contract.customer_id
+-- having sum(service.rental_costs + detail_contract.quantity * accompanied_service.a_price) > 10000000);
+-- select * from customer;
+
+-- task18
+-- select * from customer;
+-- set sql_safe_updates =0;
+-- delete from customer
+-- where customer.customer_id in (
+-- select contract.customer_id 
+-- from contract
+-- where year(contract.check_in) < 2021
+-- );
+-- select * from customer;
+-- set sql_safe_updates =1;
+
+-- task19
+-- set sql_safe_updates =0;
+-- update accompanied_service
+-- set accompanied_service.a_price = accompanied_service.a_price*2
+-- where accompanied_service.a_id in (
+-- select detail_contract.a_id 
+-- from detail_contract 
+-- where detail_contract.quantity > 10
+-- );
+-- set sql_safe_updates =1;
+
+-- task20
+select * from staff;
+select * from customer;
+
+
+
+
