@@ -20,12 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c88f7920-9dbb-43d3-abab-1105c0761342" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/module3/ss6_css/exercise/color.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module3/ss6_css/exercise/embedding_css_in_an_HTML_page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module3/ss6_css/exercise/text_formatting_with_css.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module3/ss6_css/practice/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module3/ss6_css/exercise/text_formatting_with_css.html" beforeDir="false" afterPath="$PROJECT_DIR$/module3/ss6_css/exercise/text_formatting_with_css.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +75,7 @@
       <workItem from="1642079255333" duration="7000" />
       <workItem from="1646353585508" duration="109000" />
       <workItem from="1646354079143" duration="412000" />
-      <workItem from="1646367903240" duration="7415000" />
+      <workItem from="1646367903240" duration="12755000" />
     </task>
     <servers />
   </component>
@@ -111,9 +107,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1646369412973" />
-    <state x="297" y="151" key="run.anything.popup" timestamp="1646369394981">
+    <state x="297" y="151" key="run.anything.popup" timestamp="1646480477546">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1646369394981" />
+    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1646480477546" />
   </component>
 </project>
