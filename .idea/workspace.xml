@@ -20,7 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c88f7920-9dbb-43d3-abab-1105c0761342" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/module3/ss6_css/exercise/create_a_page_to_read_stories.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module3/ss6_css/exercise/embedding_css_in_an_HTML_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/module3/ss6_css/exercise/embedding_css_in_an_HTML_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module3/ss6_css/exercise/text_formatting_with_css.html" beforeDir="false" afterPath="$PROJECT_DIR$/module3/ss6_css/exercise/text_formatting_with_css.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +53,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
@@ -75,7 +78,8 @@
       <workItem from="1642079255333" duration="7000" />
       <workItem from="1646353585508" duration="109000" />
       <workItem from="1646354079143" duration="412000" />
-      <workItem from="1646367903240" duration="12755000" />
+      <workItem from="1646367903240" duration="13230000" />
+      <workItem from="1646623766102" duration="13097000" />
     </task>
     <servers />
   </component>
@@ -103,13 +107,13 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="424" y="143" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1646353651373" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1646369412973">
+    <state x="142" y="0" key="SettingsEditor" timestamp="1646640201127">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1646369412973" />
-    <state x="297" y="151" key="run.anything.popup" timestamp="1646480477546">
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1646640201127" />
+    <state x="297" y="151" key="run.anything.popup" timestamp="1646646564970">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1646480477546" />
+    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1646646564970" />
   </component>
 </project>
