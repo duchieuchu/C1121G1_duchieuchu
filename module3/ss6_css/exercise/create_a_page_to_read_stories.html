@@ -21,9 +21,40 @@
         p{
             font-family:Arial;
         }
+        .load-more-container ul li:nth-child(1n + 4) {
+            max-height: 0;
+            opacity: 0;
+            transition: 0.1s ease-in;
+        }
+        .load-more-container .load-more-btn:hover {
+            background: deeppink;
+        }
+        .load-more-container .load-more-btn .loaded {
+            display: none;
+        }
+        .load-more-container #load-more {
+            display: none;
+        }
+        .load-more-container #load-more:checked ~ ul li:nth-child(1n + 4) {
+            max-height: 10px;
+            opacity: 1;
+            transition: 0.2s ease-in;
+        }
+        .load-more-container #load-more:checked ~ .load-more-btn .loaded {
+            display: block;
+        }
+        .load-more-container #load-more:checked ~ .load-more-btn .unloaded {
+            display: none;
+        }
+        li{
+            list-style-type: none;
+        }
     </style>
 </head>
 <body>
+<a href="http://www.nettruyengo.com/">Trang chủ</a> >>
+<a href="http://www.nettruyengo.com/tim-truyen">Thể loại</a> >>
+<a href="http://www.nettruyengo.com/truyen-tranh/cuu-vi-ho-ly-mau-23583">Cửu Vĩ Hồ Ly Màu</a>
 <h1>CỬU VĨ HỒ LY MÀU</h1>
 <p style="text-align: center">[Cập nhật lúc: 19:17 04/03/2022]</p>
 <p> Tác giả: <a href="http://www.nettruyengo.com/tim-truyen?tac-gia=Kishimoto+Mashashi">Kishimoto Mashashi</a></p>
@@ -40,7 +71,19 @@
 <p><a href="http://www.nettruyengo.com/truyen-tranh/cuu-vi-ho-ly-mau-23583">Cửu Vĩ Hồ Ly Màu </a> Xếp hạng: 4.1/5 - 4584 Lượt đánh giá.</p>
 <img src="http://st.nettruyengo.com/data/comics/31/cuu-vi-ho-ly-mau.jpg">
 <h4> NỘI DUNG<hr color="slateblue"></h4>
-<p>Naruto là một cậu bé có mơ ước trở thành hokage của làng Konoha,được Hokage phong ấn trong người một trong 9 quái vật của thể giới : Cửu vĩ Hồ ly. Vì cho cậu là một con quái vật, ko ai dám chơi với cậu!& Vì muốn được thừa nhận nên rất phá phách.Khi tốt nghiệp trướng ninja, lần đầu tiên cậu đã được thừa nhận và có một người bạn thân là Sasuke</p>
+<div class="load-more-container">
+    <input type="checkbox" id="load-more"/>
+    <ul>
+        <li >Naruto là một cậu bé có mơ ước trở thành hokage của làng Konoha,được Hokage phong ấn trong người một trong</li>
+        <li>quái vật của thể giới : Cửu vĩ Hồ ly. Vì cho cậu là một con quái vật, ko ai dám chơi với cậu Vì muốn được thừa</li>
+        <li>nhận nên rất phá phách.Khi tốt nghiệp trướng ninja, lần đầu tiên cậu đã được thừa nhận và có một người bạn thân</li>
+        <li>là Sasuke</li>
+    </ul>
+    <label class="load-more-btn" for="load-more">
+        <span class="unloaded">Xem thêm  ></span>
+        <span class="loaded">< Thu gọn</span>
+    </label>
+</div>
 <h4> DANH SÁCH CHƯƠNG<hr color="slateblue"></h4>
 <a href="http://www.nettruyengo.com/truyen-tranh/cuu-vi-ho-ly-mau/chap-1/485422"><h5>Chapter 1: - Uzumaki Naruto</h5></a>
 <a href="http://www.nettruyengo.com/truyen-tranh/cuu-vi-ho-ly-mau/chap-2/482063"><h5>Chapter 2: - Konohamaru</h5></a>

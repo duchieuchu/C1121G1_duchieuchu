@@ -20,11 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c88f7920-9dbb-43d3-abab-1105c0761342" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/module3/ss6_css/exercise/create_a_page_to_read_stories.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module3/ss7_website_layout_design/practice/create_horizontal_menu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module3/ss7_website_layout_design/practice/create_vertical_menu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module3/ss7_website_layout_design/practice/use_box_model.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module3/ss6_css/exercise/embedding_css_in_an_HTML_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/module3/ss6_css/exercise/embedding_css_in_an_HTML_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module3/ss6_css/exercise/text_formatting_with_css.html" beforeDir="false" afterPath="$PROJECT_DIR$/module3/ss6_css/exercise/text_formatting_with_css.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module3/ss6_css/exercise/create_a_page_to_read_stories.html" beforeDir="false" afterPath="$PROJECT_DIR$/module3/ss6_css/exercise/create_a_page_to_read_stories.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +79,7 @@
       <workItem from="1646353585508" duration="109000" />
       <workItem from="1646354079143" duration="412000" />
       <workItem from="1646367903240" duration="13230000" />
-      <workItem from="1646623766102" duration="13097000" />
+      <workItem from="1646623766102" duration="22006000" />
     </task>
     <servers />
   </component>
@@ -107,6 +107,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="424" y="143" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1646353651373" />
+    <state x="371" y="90" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1646664970921">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="90" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1646664970921" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1646640201127">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
