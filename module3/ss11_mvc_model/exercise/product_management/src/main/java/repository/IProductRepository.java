@@ -1,18 +1,19 @@
-package service;
+package repository;
 
 import model.Product;
 
 import java.util.List;
 
-public interface ProductService {
-    List<Product> findAll();
-
+public interface IProductRepository {
     void save(Product product);
 
-    void update(Integer id, Product product);
+    void update(int id, Product product);
 
+    void remove(int id);
     Product findById(int id);
-    void remove(Integer id);
+    List<Product> findAll();
 
     List<Product> findByName(String name);
+
+
 }
