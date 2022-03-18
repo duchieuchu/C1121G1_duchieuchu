@@ -2,13 +2,13 @@
   Created by IntelliJ IDEA.
   User: Admin
   Date: 3/16/2022
-  Time: 10:55 AM
+  Time: 9:44 AM
   To change this template use File | Settings | File Templates.
 --%>
+<html>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<html>
 <head>
     <title>User Management Application</title>
 </head>

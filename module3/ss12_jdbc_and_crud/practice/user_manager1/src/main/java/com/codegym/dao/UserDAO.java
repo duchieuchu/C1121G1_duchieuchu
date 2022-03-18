@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserDAO implements IUserDAO {
-    private String jdbcURL = "jdbc:mysql://localhost:3306/demo1?allowPublicKeyRetrieval=true&useSSL=FALSE";
+    private String jdbcURL = "jdbc:mysql://localhost:3306/user_management?allowPublicKeyRetrieval=true&useSSL=FALSE";
     private String jdbcUserName = "root";
     private String jdbcPassword = "codegym19";
 
