@@ -113,17 +113,16 @@ public class UserDAO implements IUserDAO {
         return rowDeleted;
     }
 
-    public boolean updateUser(User user) throws SQLException {
-        boolean rowUpdated;
+    public void updateUser(User user) throws SQLException {
+
         try (Connection connection = getConnection(); PreparedStatement statement = connection.prepareStatement(UPDATE_USERS_SQL);) {
             statement.setString(1, user.getName());
             statement.setString(2, user.getEmail());
             statement.setString(3, user.getCountry());
             statement.setInt(4, user.getId());
-
-            rowUpdated = statement.executeUpdate() > 0;
+       statement.executeUpdate();
         }
-        return rowUpdated;
+
     }
 
     @Override
@@ -320,6 +319,7 @@ public class UserDAO implements IUserDAO {
         }
 
     }
+
     private static final String SQL_INSERT = "INSERT INTO EMPLOYEE (NAME, SALARY, CREATED_DATE) VALUES (?,?,?)";
 
     private static final String SQL_UPDATE = "UPDATE EMPLOYEE SET SALARY=? WHERE NAME=?";
@@ -341,6 +341,7 @@ public class UserDAO implements IUserDAO {
             + ")";
 
     private static final String SQL_TABLE_DROP = "DROP TABLE IF EXISTS EMPLOYEE";
+
     @Override
     public void insertUpdateWithoutTransaction() {
         try (Connection conn = getConnection();
@@ -352,11 +353,9 @@ public class UserDAO implements IUserDAO {
              PreparedStatement psUpdate = conn.prepareStatement(SQL_UPDATE)) {
 
 
-
             statement.execute(SQL_TABLE_DROP);
 
             statement.execute(SQL_TABLE_CREATE);
-
 
 
             // Run list of insert commands
@@ -370,7 +369,6 @@ public class UserDAO implements IUserDAO {
             psInsert.execute();
 
 
-
             psInsert.setString(1, "Ngan");
 
             psInsert.setBigDecimal(2, new BigDecimal(20));
@@ -380,9 +378,7 @@ public class UserDAO implements IUserDAO {
             psInsert.execute();
 
 
-
             // Run list of update commands
-
 
 
             // below line caused error, test transaction
@@ -392,13 +388,11 @@ public class UserDAO implements IUserDAO {
             psUpdate.setBigDecimal(2, new BigDecimal(999.99));
 
 
-
             //psUpdate.setBigDecimal(1, new BigDecimal(999.99));
 
             psUpdate.setString(2, "Quynh");
 
             psUpdate.execute();
-
 
 
         } catch (Exception e) {
@@ -438,7 +432,6 @@ public class UserDAO implements IUserDAO {
             psInsert.execute();
 
 
-
             psInsert.setString(1, "Ngan");
 
             psInsert.setBigDecimal(2, new BigDecimal(20));
@@ -448,9 +441,7 @@ public class UserDAO implements IUserDAO {
             psInsert.execute();
 
 
-
             // Run list of update commands
-
 
 
             // below line caused error, test transaction
@@ -460,13 +451,11 @@ public class UserDAO implements IUserDAO {
 //            psUpdate.setBigDecimal(2, new BigDecimal(999.99));
 
 
-
             psUpdate.setBigDecimal(1, new BigDecimal(999.99));
 
             psUpdate.setString(2, "Quynh");
 
             psUpdate.execute();
-
 
 
             // end transaction block, commit changes
@@ -478,7 +467,6 @@ public class UserDAO implements IUserDAO {
             conn.setAutoCommit(true);
 
 
-
         } catch (Exception e) {
 
             System.out.println(e.getMessage());
@@ -486,6 +474,60 @@ public class UserDAO implements IUserDAO {
             e.printStackTrace();
 
         }
+    }
+
+    @Override
+    public User deleteUserById(int id) {
+        User user = null;
+        String query = "{CALL delete_user_by_id(?)}";
+        try (Connection connection = getConnection(); CallableStatement callableStatement = connection.prepareCall(query)) {
+            callableStatement.setInt(1, id);
+            ResultSet resultSet = callableStatement.executeQuery();
+        } catch (SQLException e) {
+            printSQLException(e);
+        }
+        return user;
+    }
+
+    @Override
+    public void updateUserById(User user) {
+        String query = "{CALL update_user_by_id(?,?,?,?)}";
+        try (Connection connection = getConnection(); CallableStatement callableStatement = connection.prepareCall(query)) {
+            callableStatement.setInt(1, user.getId());
+            callableStatement.setString(2, user.getName());
+            callableStatement.setString(3, user.getEmail());
+            callableStatement.setString(4, user.getCountry());
+          callableStatement.executeUpdate();
+
+        } catch (SQLException e) {
+            printSQLException(e);
+        }
+    }
+
+    @Override
+    public List<User> selectUsers() {
+        User user = null;
+        List<User> userList= new ArrayList<>();
+        String query = "{CALL select_user}";
+        try (Connection connection = getConnection(); CallableStatement callableStatement = connection.prepareCall(query)) {
+            ResultSet resultSet = callableStatement.executeQuery();
+
+            while (resultSet.next()) {
+                Integer id = Integer.valueOf(resultSet.getString("id"));
+                String name = resultSet.getString("name");
+
+                String email = resultSet.getString("email");
+
+                String country = resultSet.getString("country");
+
+                user = new User(id, name, email, country);
+                userList.add(user);
+            }
+        } catch (SQLException e) {
+            printSQLException(e);
+        }
+        return userList;
+
     }
 
     private void printSQLException(SQLException ex) {
