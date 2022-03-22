@@ -20,8 +20,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c88f7920-9dbb-43d3-abab-1105c0761342" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/module3/case_study/furama_resort/src/main/java/controller/ContractServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module3/case_study/furama_resort/src/main/java/controller/CustomerServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module3/case_study/furama_resort/src/main/java/controller/EmployeeServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module3/case_study/furama_resort/src/main/java/controller/HomeServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module3/case_study/furama_resort/src/main/java/controller/ServiceServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module3/case_study/furama_resort/src/main/java/dao/ConnectionData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module3/case_study/furama_resort/src/main/java/repository/ContractRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module3/case_study/furama_resort/src/main/java/repository/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module3/case_study/furama_resort/src/main/java/repository/EmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module3/case_study/furama_resort/src/main/java/repository/IContractRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module3/case_study/furama_resort/src/main/java/repository/ICustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module3/case_study/furama_resort/src/main/java/repository/IEmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module3/case_study/furama_resort/src/main/java/repository/IServiceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module3/case_study/furama_resort/src/main/java/repository/ServiceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module3/case_study/furama_resort/src/main/webapp/home.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module3/ss7_website_layout_design/exercise/create_simplified_interface_of_the _facebook_homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/module3/ss7_website_layout_design/exercise/create_simplified_interface_of_the _facebook_homepage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-8.5.57/apache-tomcat-8.5.57/webapps/ROOT/WEB-INF/classes/com/codegym/controller/UserServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-8.5.57/apache-tomcat-8.5.57/webapps/ROOT/WEB-INF/classes/com/codegym/dao/IUserDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-8.5.57/apache-tomcat-8.5.57/webapps/ROOT/WEB-INF/classes/com/codegym/dao/UserDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-8.5.57/apache-tomcat-8.5.57/webapps/ROOT/WEB-INF/classes/com/codegym/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-8.5.57/apache-tomcat-8.5.57/webapps/ROOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/apache-tomcat-8.5.57/apache-tomcat-8.5.57/webapps/ROOT/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-8.5.57/apache-tomcat-8.5.57/webapps/ROOT/user/create.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-8.5.57/apache-tomcat-8.5.57/webapps/ROOT/user/edit.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-8.5.57/apache-tomcat-8.5.57/webapps/ROOT/user/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module3/ss12_jdbc_and_crud/exercise/user_management/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/module3/ss12_jdbc_and_crud/exercise/user_management/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module3/ss12_jdbc_and_crud/exercise/user_management/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/module3/ss12_jdbc_and_crud/exercise/user_management/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module3/ss12_jdbc_and_crud/exercise/user_management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/module3/ss12_jdbc_and_crud/exercise/user_management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +118,10 @@
       <workItem from="1647080925632" duration="68000" />
       <workItem from="1647423226910" duration="5000" />
       <workItem from="1647663764707" duration="17626000" />
-      <workItem from="1647739183028" duration="10634000" />
+      <workItem from="1647739183028" duration="16761000" />
+      <workItem from="1647779646058" duration="754000" />
+      <workItem from="1647825294114" duration="106000" />
+      <workItem from="1647835730637" duration="3889000" />
     </task>
     <servers />
   </component>
