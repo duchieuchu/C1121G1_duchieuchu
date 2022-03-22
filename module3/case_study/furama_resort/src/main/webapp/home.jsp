@@ -92,15 +92,15 @@
         <img src="https://gohola.vn/uploads/2015/02/furama.gif"
              width=30 height="50" class="logo">
         <nav>
-            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/25/25694.png"
+            <a href="/home?action=list"><img src="https://cdn-icons-png.flaticon.com/512/25/25694.png"
                              width="30" height="30">Home</a>
-            <a href="#"><img src="https://i.pinimg.com/originals/a9/e7/78/a9e778d7f751401a5d4a51ca2f4aa9ee.png"
+            <a href="/employee?action=list"><img src="https://i.pinimg.com/originals/a9/e7/78/a9e778d7f751401a5d4a51ca2f4aa9ee.png"
                              width="30" height="30">Employee</a>
-            <a href="#"><img src="http://cdn.onlinewebfonts.com/svg/img_149065.png"
+            <a href="/customer?action=list"><img src="http://cdn.onlinewebfonts.com/svg/img_149065.png"
                              width="30" height="30">Customer</a>
-            <a href="#"><img src="https://icon-library.com/images/notebook-icon-png/notebook-icon-png-26.jpg"
+            <a href="/service?action=list"><img src="https://icon-library.com/images/notebook-icon-png/notebook-icon-png-26.jpg"
                              width="30" height="30">Service</a>
-            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/126/126249.png"
+            <a href="/contract?action=list"><img src="https://cdn-icons-png.flaticon.com/512/126/126249.png"
                              width="30" height="30">Contract</a>
         </nav>
     </div>
