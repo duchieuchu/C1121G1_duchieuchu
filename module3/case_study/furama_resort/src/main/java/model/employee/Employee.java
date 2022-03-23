@@ -9,12 +9,12 @@ public class Employee {
     private String phone;
     private String email;
     private String address;
-    private String position;
+    private Position position;
     private EducationDegree educationDegree;
     private Division division;
     private String userName;
 
-    public Employee(int id, String name, String birthday, String idCard, String salary, String phone, String email, String address, String position, EducationDegree educationDegree, Division division, String userName) {
+    public Employee(int id, String name, String birthday, String idCard, String salary, String phone, String email, String address, Position position, EducationDegree educationDegree, Division division, String userName) {
         this.id = id;
         this.name = name;
         this.birthday = birthday;
@@ -93,11 +93,11 @@ public class Employee {
         this.address = address;
     }
 
-    public String getPosition() {
+    public Position getPosition() {
         return position;
     }
 
-    public void setPosition(String position) {
+    public void setPosition(Position position) {
         this.position = position;
     }
 

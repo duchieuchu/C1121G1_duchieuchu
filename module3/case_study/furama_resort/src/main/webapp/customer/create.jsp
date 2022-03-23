@@ -24,11 +24,15 @@
 <div align="center">
     <form method="post" >
         <h1>Customer Information</h1>
-        <table border="1" cellpadding="9">
+        <table border="1" cellpadding="9" >
         <tr>
             <th>customerType</th>
             <td>
-                <input type="text" name="customerType" id="customerType" size="45">
+                <select name="customerType">
+                    <c:forEach var="customerType" items="${customerTypes}">
+                        <option value="${customerType.customerTypeId}"><c:out value="${customerType.customerTypeName}"></c:out></option>
+                    </c:forEach>
+                </select>
             </td>
         </tr>
         <tr>
@@ -46,7 +50,11 @@
         <tr>
             <th>gender</th>
             <td>
-                <input type="text" name="gender" id="gender" size="45">
+                <select name="gender">
+                    <option value="0">Nam</option>
+                    <option value="1">Nứ</option>
+
+                </select>
             </td>
         </tr>
         <tr>

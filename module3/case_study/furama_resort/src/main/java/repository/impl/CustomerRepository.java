@@ -2,8 +2,8 @@ package repository.impl;
 
 import model.customer.Customer;
 import model.customer.CustomerType;
-import repository.ICustomerRepository;
-import repository.ICustomerTypeRepository;
+import repository.customer.ICustomerRepository;
+import repository.customer.ICustomerTypeRepository;
 
 import java.sql.*;
 import java.util.ArrayList;

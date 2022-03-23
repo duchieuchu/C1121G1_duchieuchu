@@ -1,27 +1,27 @@
 package model.employee;
 
 public class Position {
-    private int id;
-    private String name;
+    private int positionId;
+    private String positionName;
 
-    public Position(int id, String name) {
-        this.id = id;
-        this.name = name;
+    public Position(int positionId, String positionName) {
+        this.positionId = positionId;
+        this.positionName = positionName;
     }
 
-    public int getId() {
-        return id;
+    public int getPositionId() {
+        return positionId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setPositionId(int positionId) {
+        this.positionId = positionId;
     }
 
-    public String getName() {
-        return name;
+    public String getPositionName() {
+        return positionName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setPositionName(String positionName) {
+        this.positionName = positionName;
     }
 }

@@ -1,7 +1,7 @@
 package repository.impl;
 
 import model.customer.CustomerType;
-import repository.ICustomerTypeRepository;
+import repository.customer.ICustomerTypeRepository;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -9,7 +9,7 @@ import java.util.List;
 
 public class CustomerTypeRepository implements ICustomerTypeRepository {
     private static final String SELECT_CUSTOMER_TYPE = "select * from customer_type";
-private static final String SELECT_CUSTOMER_TYPE_BY_ID="select customer_type_id,customer_type_name from customer_type where customer_type_id=?;";
+    private static final String SELECT_CUSTOMER_TYPE_BY_ID = "select customer_type_id,customer_type_name from customer_type where customer_type_id=?;";
 
     private String jdbcURL = "jdbc:mysql://localhost:3306/furama_resort1?allowPublicKeyRetrieval=true&useSSL=FALSE";
     private String jdbcUserName = "root";
@@ -43,22 +43,21 @@ private static final String SELECT_CUSTOMER_TYPE_BY_ID="select customer_type_id,
             e.printStackTrace();
         }
         return customerTypes;
-
     }
 
     @Override
     public CustomerType selectCustomerType(int customerTypeId) {
         CustomerType customerType = null;
-        try(Connection connection= getConnection(); PreparedStatement preparedStatement = connection.prepareStatement(SELECT_CUSTOMER_TYPE_BY_ID)){
-            preparedStatement.setInt(1,customerTypeId);
+        try (Connection connection = getConnection(); PreparedStatement preparedStatement = connection.prepareStatement(SELECT_CUSTOMER_TYPE_BY_ID)) {
+            preparedStatement.setInt(1, customerTypeId);
             System.out.println(preparedStatement);
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
-                String customerTypeName =resultSet.getString("customer_type_name");
-                customerType = new CustomerType(customerTypeId,customerTypeName);
+                String customerTypeName = resultSet.getString("customer_type_name");
+                customerType = new CustomerType(customerTypeId, customerTypeName);
             }
-        }catch (SQLException e){
-         e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
         return customerType;
     }

@@ -9,7 +9,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
-    <title>Employee Management Application</title>
+    <title>Customer Management Application</title>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -24,9 +24,9 @@
 </head>
 <body>
 <center>
-    <h2>List of Employees</h2>
+    <h2>List of Customers</h2>
     <h4>
-        <a class="add-button" href="/employee?action=create">Add New Employee</a>
+        <a class="add-button" href="/customer?action=create">Add New Customer</a>
     </h4>
     <%--    <form action="/customers?action=search" method="get">--%>
     <%--        <input type="hidden" name="action" value="search">--%>
@@ -58,7 +58,7 @@
                 <td><c:out value="${customers.customerType.customerTypeName}"/></td>
                 <td><c:out value="${customers.name}"/></td>
                 <td><c:out value="${customers.birthday}"/></td>
-                <td><c:out value="${customers.gender}"/></td>
+                <td><c:out value="${customers.gender==0?'Nam':'Nứ'}"/></td>
                 <td><c:out value="${customers.idCard}"/></td>
                 <td><c:out value="${customers.phone}"/></td>
                 <td><c:out value="${customers.email}"/></td>

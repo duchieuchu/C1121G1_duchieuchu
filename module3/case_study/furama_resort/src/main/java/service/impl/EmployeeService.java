@@ -1,7 +1,7 @@
 package service.impl;
 
 import model.employee.Employee;
-import repository.IEmployeeRepository;
+import repository.employee.IEmployeeRepository;
 import repository.impl.EmployeeRepository;
 import service.IEmployeeService;
 

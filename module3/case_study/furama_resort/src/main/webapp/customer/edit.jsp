@@ -31,9 +31,21 @@
             <tr>
                 <th>CustomerType:</th>
                 <td>
-                    <input type="text" name="customerType" size="45"
-                           value="<c:out value='${customer.customerType.customerTypeId}' />"/>
+                    <select name="customerType">
+                        <c:forEach var="customerType" items="${customerTypes}">
+                            <c:choose>
+                                <c:when test="${customerType.customerTypeId==customer.customerType.customerTypeId}">
+                                    <option value="${customerType.customerTypeId}" selected><c:out value="${customerType.customerTypeName}"></c:out></option>
+
+                                </c:when>
+                                <c:otherwise>
+                                    <option value="${customerType.customerTypeId}" ><c:out value="${customerType.customerTypeName}"></c:out></option>
+                                </c:otherwise>
+                            </c:choose>
+                        </c:forEach>
+                    </select>
                 </td>
+
             </tr>
             <tr>
                 <th>Name:</th>

@@ -1,7 +1,7 @@
 package controller;
 
 import model.customer.CustomerType;
-import repository.ICustomerTypeRepository;
+import repository.customer.ICustomerTypeRepository;
 import repository.impl.CustomerTypeRepository;
 import service.impl.CustomerService;
 import service.ICustomerService;
@@ -17,10 +17,10 @@ import java.util.List;
 @WebServlet(name = "CustomerServlet", value = "/customer")
 public class CustomerServlet extends HttpServlet {
     private final ICustomerTypeRepository customerTypeRepository=new CustomerTypeRepository();
-    private ICustomerService customerDAO;
+    private ICustomerService customerService;
 
     public void init() {
-        customerDAO = new CustomerService();
+        customerService = new CustomerService();
     }
 
     @Override
@@ -53,9 +53,9 @@ public class CustomerServlet extends HttpServlet {
 
     private void deleteCustomer(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException, ServletException {
         int id = Integer.parseInt(request.getParameter("id"));
-        customerDAO.deleteCustomer(id);
+        customerService.deleteCustomer(id);
 
-        List<Customer> listCustomer = customerDAO.selectAllCustomers();
+        List<Customer> listCustomer = customerService.selectAllCustomers();
         request.setAttribute("listCustomer", listCustomer);
         RequestDispatcher dispatcher = request.getRequestDispatcher("customer/list.jsp");
         dispatcher.forward(request, response);
@@ -63,15 +63,18 @@ public class CustomerServlet extends HttpServlet {
     }
 
     private void showEditCustomer(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+        List<CustomerType>customerTypes=customerTypeRepository.selectAllCustomerType();
+        request.setAttribute("customerTypes",customerTypes);
         int id = Integer.parseInt(request.getParameter("id"));
-        Customer customer = customerDAO.selectCustomer(id);
+        Customer customer = customerService.selectCustomer(id);
         RequestDispatcher dispatcher = request.getRequestDispatcher("customer/edit.jsp");
         request.setAttribute("customer", customer);
         dispatcher.forward(request, response);
-
     }
 
     private void showAddCustomer(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+       List<CustomerType>customerTypes=customerTypeRepository.selectAllCustomerType();
+       request.setAttribute("customerTypes",customerTypes);
         RequestDispatcher dispatcher = request.getRequestDispatcher("customer/create.jsp");
         dispatcher.forward(request, response);
     }
@@ -107,7 +110,7 @@ public class CustomerServlet extends HttpServlet {
         String email = request.getParameter("email");
         String address = request.getParameter("address");
         Customer customer = new Customer(id, customerType, name, birthday, gender, idCard, phone, email, address);
-        customerDAO.updateCustomer(customer);
+        customerService.updateCustomer(customer);
         RequestDispatcher dispatcher = request.getRequestDispatcher("customer/edit.jsp");
         dispatcher.forward(request, response);
 
@@ -124,7 +127,7 @@ public class CustomerServlet extends HttpServlet {
         String email = request.getParameter("email");
         String address = request.getParameter("address");
         Customer customer = new Customer(id, customerType, name, birthday, gender, idCard, phone, email, address);
-        customerDAO.insertCustomer(customer);
+        customerService.insertCustomer(customer);
         RequestDispatcher dispatcher = request.getRequestDispatcher("customer/create.jsp");
         dispatcher.forward(request, response);
 
@@ -132,7 +135,7 @@ public class CustomerServlet extends HttpServlet {
     }
 
     private void listCustomer(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException, ServletException {
-        List<Customer> listCustomer = customerDAO.selectAllCustomers();
+        List<Customer> listCustomer = customerService.selectAllCustomers();
         System.out.println(listCustomer);
         request.setAttribute("listCustomer", listCustomer);//ben list.jsp
         RequestDispatcher dispatcher = request.getRequestDispatcher("customer/list.jsp");
