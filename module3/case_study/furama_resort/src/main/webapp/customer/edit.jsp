@@ -32,7 +32,7 @@
                 <th>CustomerType:</th>
                 <td>
                     <input type="text" name="customerType" size="45"
-                           value="<c:out value='${customer.customerType}' />"/>
+                           value="<c:out value='${customer.customerType.customerTypeId}' />"/>
                 </td>
             </tr>
             <tr>

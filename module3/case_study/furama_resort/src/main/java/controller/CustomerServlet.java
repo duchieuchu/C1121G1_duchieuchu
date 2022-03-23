@@ -3,7 +3,7 @@ package controller;
 import model.customer.CustomerType;
 import repository.ICustomerTypeRepository;
 import repository.impl.CustomerTypeRepository;
-import service.CustomerService;
+import service.impl.CustomerService;
 import service.ICustomerService;
 import model.customer.Customer;
 
@@ -133,6 +133,7 @@ public class CustomerServlet extends HttpServlet {
 
     private void listCustomer(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException, ServletException {
         List<Customer> listCustomer = customerDAO.selectAllCustomers();
+        System.out.println(listCustomer);
         request.setAttribute("listCustomer", listCustomer);//ben list.jsp
         RequestDispatcher dispatcher = request.getRequestDispatcher("customer/list.jsp");
         dispatcher.forward(request, response);
