@@ -26,17 +26,6 @@
         <h1>Employee Information</h1>
         <table border="1" cellpadding="9" >
             <tr>
-                <th>customerType</th>
-                <td>
-                    <select name="customerType">
-                        <c:forEach var="customerType" items="${customerTypes}">
-                            <option value="${customerType.customerTypeId}"><c:out value="${customerType.customerTypeName}"></c:out></option>
-                        </c:forEach>
-
-                    </select>
-                </td>
-            </tr>
-            <tr>
                 <th>name</th>
                 <td>
                     <input type="text" name="name" id="name" size="45">
@@ -83,7 +72,7 @@
                 <td>
                     <select name="position">
                         <c:forEach var="position" items="${positions}">
-                            <option value="${position.positionId}"><c:out value="${position.positionId}"></c:out></option>
+                            <option value="${position.positionId}"><c:out value="${position.positionName}"></c:out></option>
                         </c:forEach>
                     </select>
                 </td>
@@ -93,7 +82,7 @@
                 <td>
                     <select name="educationDegree">
                         <c:forEach var="educationDegree" items="${educationDegrees}">
-                            <option value="${educationDegree.educationDegreeId}"><c:out value="${educationDegree.educationDegreeId}"></c:out></option>
+                            <option value="${educationDegree.educationDegreeId}"><c:out value="${educationDegree.educationDegreeName}"></c:out></option>
                         </c:forEach>
                     </select>
                 </td>
@@ -103,7 +92,7 @@
                 <td>
                     <select name="division">
                         <c:forEach var="division" items="${divisions}">
-                            <option value="${division.divisionId}"><c:out value="${division.divisionId}"></c:out></option>
+                            <option value="${division.divisionId}"><c:out value="${division.divisionName}"></c:out></option>
                         </c:forEach>
                     </select>
                 </td>

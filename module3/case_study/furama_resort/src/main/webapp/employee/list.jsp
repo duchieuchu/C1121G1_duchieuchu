@@ -14,11 +14,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style>
-        body{
+        body {
             background-image: url("https://www.color-hex.com/palettes/8887.png");
         }
-        .add-button{
+
+        .add-button {
             padding-left: 1000px;
+        }
+        .back-home{
+            padding-left: 50px;
         }
     </style>
 </head>
@@ -26,6 +30,7 @@
 <center>
     <h2>List of Employees</h2>
     <h4>
+        <a class="back-home" href ="home">Back Home</a>
         <a class="add-button" href="/employee?action=create">Add New Employee</a>
     </h4>
     <%--    <form action="/customers?action=search" method="get">--%>
@@ -51,7 +56,6 @@
             <th>EducationDegree</th>
             <th>Division</th>
             <th>UserName</th>
-
         </tr>
         </thead>
         <tbody>
@@ -69,7 +73,6 @@
                 <td><c:out value="${employees.educationDegree.educationDegreeName}"/></td>
                 <td><c:out value="${employees.division.divisionName}"/></td>
                 <td><c:out value="${employees.userName}"/></td>
-
                 <td>
                     <a href="/employee?action=edit&id=${employees.id}">Edit</a>
                     <a href="/employee?action=delete&id=${employees.id}">Delete</a>

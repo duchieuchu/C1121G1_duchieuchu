@@ -20,12 +20,16 @@
         .add-button{
             padding-left: 1000px;
         }
+        .back-home{
+            padding-left: 50px;
+        }
     </style>
 </head>
 <body>
 <center>
     <h2>List of Customers</h2>
     <h4>
+        <a class="back-home" href ="home">Back Home</a>
         <a class="add-button" href="/customer?action=create">Add New Customer</a>
     </h4>
     <%--    <form action="/customers?action=search" method="get">--%>

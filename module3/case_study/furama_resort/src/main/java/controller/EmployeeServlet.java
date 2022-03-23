@@ -100,6 +100,20 @@ public class EmployeeServlet extends HttpServlet {
 
     private void insertEmployee(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException, ServletException {
         int id = (int) (Math.random() * 1000);
-        EducationDegree e
+        String name = request.getParameter("name");
+        String birthday = request.getParameter("birthday");
+        String idCard = request.getParameter("idCard");
+        String salary = request.getParameter("salary");
+        String phone = request.getParameter("phone");
+        String email = request.getParameter("email");
+        String address = request.getParameter("address");
+        Position position = positionRepository.selectPosition(Integer.parseInt(request.getParameter("position")));
+        EducationDegree educationDegree = educationDegreeRepository.selectEducationDegree(Integer.parseInt(request.getParameter("educationDegree")));
+        Division division = divisionRepository.selectDivision(Integer.parseInt(request.getParameter("division")));
+        String userName = request.getParameter("userName");
+        Employee employee = new Employee(id,name,birthday,idCard,salary,phone,email,address,position,educationDegree,division,userName);
+        employeeService.insertEmployee(employee);
+        RequestDispatcher dispatcher = request.getRequestDispatcher("employee/create.jsp");
+        dispatcher.forward(request,response);
     }
 }
