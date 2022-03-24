@@ -5,6 +5,7 @@ import repository.employee.IEmployeeRepository;
 import repository.impl.EmployeeRepository;
 import service.IEmployeeService;
 
+import java.sql.SQLException;
 import java.util.List;
 
 public class EmployeeService implements IEmployeeService {
@@ -16,23 +17,23 @@ public class EmployeeService implements IEmployeeService {
     }
 
     @Override
-    public Employee selectEmployee(String id) {
+    public Employee selectEmployee(int id) {
         return this.employeeRepository.selectEmployee(id);
     }
 
     @Override
-    public void insertEmployee(Employee employee) {
+    public void insertEmployee(Employee employee)  throws SQLException{
         employeeRepository.insertEmployee(employee);
     }
 
     @Override
-    public void updateEmployee(Employee employee) {
+    public void updateEmployee(Employee employee) throws SQLException{
         employeeRepository.updateEmployee(employee);
     }
 
     @Override
-    public void deleteEmployee(String id) {
-        employeeRepository.deleteEmployee(id);
+    public boolean deleteEmployee(int id) throws SQLException {
+        return this.employeeRepository.deleteEmployee(id);
     }
 
     @Override

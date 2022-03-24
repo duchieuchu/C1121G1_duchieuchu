@@ -32,7 +32,13 @@ public class EmployeeRepository implements IEmployeeRepository {
         return connection;
     }
 
+    private static final String DELETE_EMPLOYEE_SQL = "delete from employee where employee_id=?;";
+    private static final String UPDATE_EMPLOYEE_SQL = "update employee set employee_name =?,employee_birthday=?,employee_id_card=?," +
+            "employee_salary=?,employee_phone=?,employee_email=?,employee_address=?,position_id=?,education_degree_id=?,division_id=? where employee_id=?;";
     private static final String SELECT_ALL_EMPLOYEES = "select * from employee";
+    private static final String INSERT_EMPLOYEES_SQL = "insert into employee" + " (employee_id,employee_name," +
+            "employee_birthday,employee_id_card,employee_salary,employee_phone,employee_email,employee_address,position_id,education_degree_id,division_id) values " + " ( ?, ?,?, ?, ?,?, ?, ?,?,?,?);";
+
 
     private void printSQLException(SQLException ex) {
         for (Throwable e : ex) {
@@ -77,24 +83,63 @@ public class EmployeeRepository implements IEmployeeRepository {
     }
 
     @Override
-    public Employee selectEmployee(String id) {
-        return null;
+    public Employee selectEmployee(int id) {
+        List<Employee> employeeList = selectAllEmployee();
+        Employee employee = null;
+        for (Employee employee1 : employeeList) {
+            if (employee1.getId() == (id)) {
+                employee = employee1;
+            }
+        }
+        return employee;
     }
 
     @Override
-    public void insertEmployee(Employee employee) {
-
+    public void insertEmployee(Employee employee) throws SQLException{
+        try (Connection connection = getConnection(); PreparedStatement preparedStatement = connection.prepareStatement(INSERT_EMPLOYEES_SQL)) {
+            preparedStatement.setInt(1, employee.getId());
+            preparedStatement.setString(2, employee.getName());
+            preparedStatement.setString(3, employee.getBirthday());
+            preparedStatement.setString(4, employee.getIdCard());
+            preparedStatement.setString(5, employee.getSalary());
+            preparedStatement.setString(6, employee.getPhone());
+            preparedStatement.setString(7, employee.getEmail());
+            preparedStatement.setString(8, employee.getAddress());
+            preparedStatement.setInt(9, employee.getPosition().getPositionId());
+            preparedStatement.setInt(10, employee.getEducationDegree().getEducationDegreeId());
+            preparedStatement.setInt(11, employee.getDivision().getDivisionId());
+            preparedStatement.executeUpdate();
+        }
     }
 
     @Override
-    public void updateEmployee(Employee employee) {
-
+    public void updateEmployee(Employee employee) throws SQLException{
+        try (Connection connection = getConnection(); PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_EMPLOYEE_SQL)) {
+            preparedStatement.setString(1, employee.getName());
+            preparedStatement.setString(2, employee.getBirthday());
+            preparedStatement.setString(3, employee.getIdCard());
+            preparedStatement.setString(4, employee.getSalary());
+            preparedStatement.setString(5, employee.getPhone());
+            preparedStatement.setString(6, employee.getEmail());
+            preparedStatement.setString(7, employee.getAddress());
+            preparedStatement.setInt(8, employee.getPosition().getPositionId());
+            preparedStatement.setInt(9, employee.getEducationDegree().getEducationDegreeId());
+            preparedStatement.setInt(10, employee.getDivision().getDivisionId());
+            preparedStatement.setInt(11, employee.getId());
+            preparedStatement.executeUpdate();
+        }
     }
 
     @Override
-    public void deleteEmployee(String id) {
-
+    public boolean deleteEmployee(int id) throws SQLException {
+        boolean rowDeleted;
+        try (Connection connection = getConnection(); PreparedStatement statement = connection.prepareStatement(DELETE_EMPLOYEE_SQL)) {
+            statement.setInt(1, id);
+            rowDeleted = statement.executeUpdate() > 0;
+        }
+        return rowDeleted;
     }
+
 
     @Override
     public List<Employee> searchEmployee(String employeeName) {

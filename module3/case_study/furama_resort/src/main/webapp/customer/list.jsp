@@ -14,13 +14,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style>
-        body{
+        body {
             background-image: url("https://www.color-hex.com/palettes/8887.png");
         }
-        .add-button{
+
+        .add-button {
             padding-left: 1000px;
         }
-        .back-home{
+
+        .back-home {
             padding-left: 50px;
         }
     </style>
@@ -29,7 +31,7 @@
 <center>
     <h2>List of Customers</h2>
     <h4>
-        <a class="back-home" href ="home">Back Home</a>
+        <a class="back-home" href="home">Back Home</a>
         <a class="add-button" href="/customer?action=create">Add New Customer</a>
     </h4>
     <%--    <form action="/customers?action=search" method="get">--%>
@@ -68,14 +70,41 @@
                 <td><c:out value="${customers.email}"/></td>
                 <td><c:out value="${customers.address}"/></td>
                 <td>
-                    <a href="/customer?action=edit&id=${customers.id}">Edit</a>
-                    <a href="/customer?action=delete&id=${customers.id}">Delete</a>
+                    <a class="btn btn-warning" href="/customer?action=edit&id=${customers.id}">Edit</a>
+                    <button onclick="setIdDelete('${customers.getId()}')" type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal">
+                        Delete
+                    </button>
                 </td>
             </tr>
         </c:forEach>
         </tbody>
     </table>
 </div>
+
+<!-- Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">DELETE</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form method="post" action="/customer?action=delete">
+                <div class="modal-body">
+                    <input type="hidden" name="id" id="id">
+                    Are you sure ?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
 </body>
 
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
@@ -91,5 +120,10 @@
     $(document).ready(function () {
         $('#example').DataTable();
     });
+</script>
+<script>
+    function setIdDelete(id) {
+document.getElementById("id").value=id;
+    }
 </script>
 </html>

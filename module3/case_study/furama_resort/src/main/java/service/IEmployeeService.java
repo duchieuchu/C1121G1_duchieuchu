@@ -2,18 +2,19 @@ package service;
 
 import model.employee.Employee;
 
+import java.sql.SQLException;
 import java.util.List;
 
 public interface IEmployeeService {
     List<Employee> selectAllEmployee();
 
-    Employee selectEmployee(String id);
+    Employee selectEmployee(int id);
 
-    void insertEmployee(Employee employee);
+    void insertEmployee(Employee employee) throws SQLException;
 
-    void updateEmployee(Employee employee);
+    void updateEmployee(Employee employee) throws SQLException;
 
-    void deleteEmployee(String id);
+    boolean deleteEmployee(int id) throws SQLException;
 
     List<Employee> searchEmployee(String employeeName);
 }

@@ -37,9 +37,6 @@ public class CustomerServlet extends HttpServlet {
                 case "edit":
                     showEditCustomer(request, response);
                     break;
-                case "delete":
-                    deleteCustomer(request, response);
-                    break;
                 case "search":
                     break;
                 default:
@@ -65,6 +62,7 @@ public class CustomerServlet extends HttpServlet {
     private void showEditCustomer(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         List<CustomerType>customerTypes=customerTypeRepository.selectAllCustomerType();
         request.setAttribute("customerTypes",customerTypes);
+
         int id = Integer.parseInt(request.getParameter("id"));
         Customer customer = customerService.selectCustomer(id);
         RequestDispatcher dispatcher = request.getRequestDispatcher("customer/edit.jsp");
@@ -92,6 +90,9 @@ public class CustomerServlet extends HttpServlet {
                     break;
                 case "edit":
                     editCustomer(request, response);
+                    break;
+                case "delete":
+                    deleteCustomer(request, response);
                     break;
             }
         } catch (SQLException ex) {

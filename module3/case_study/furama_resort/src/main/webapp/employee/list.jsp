@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: Admin
-  Date: 3/21/2022
-  Time: 2:37 PM
+  Date: 3/22/2022
+  Time: 9:12 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
@@ -21,7 +21,8 @@
         .add-button {
             padding-left: 1000px;
         }
-        .back-home{
+
+        .back-home {
             padding-left: 50px;
         }
     </style>
@@ -30,7 +31,7 @@
 <center>
     <h2>List of Employees</h2>
     <h4>
-        <a class="back-home" href ="home">Back Home</a>
+        <a class="back-home" href="home">Back Home</a>
         <a class="add-button" href="/employee?action=create">Add New Employee</a>
     </h4>
     <%--    <form action="/customers?action=search" method="get">--%>
@@ -56,6 +57,7 @@
             <th>EducationDegree</th>
             <th>Division</th>
             <th>UserName</th>
+            <th>Action</th>
         </tr>
         </thead>
         <tbody>
@@ -74,14 +76,63 @@
                 <td><c:out value="${employees.division.divisionName}"/></td>
                 <td><c:out value="${employees.userName}"/></td>
                 <td>
-                    <a href="/employee?action=edit&id=${employees.id}">Edit</a>
-                    <a href="/employee?action=delete&id=${employees.id}">Delete</a>
+                    <a class="btn btn-warning" href="/employee?action=edit&id=${employees.id}">Edit</a>
+                    <button onclick="setIdDelete('${employees.getId()}')" type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal">
+                        Delete
+                    </button>
                 </td>
             </tr>
         </c:forEach>
         </tbody>
     </table>
 </div>
+
+<!-- Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">DELETE</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form method="post" action="/employee?action=delete">
+                <div class="modal-body">
+                    <input type="hidden" name="id" id="id">
+                    Are you sure ?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<%--<!-- Modal -->--%>
+<%--<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">--%>
+<%--    <div class="modal-dialog">--%>
+<%--        <div class="modal-content">--%>
+<%--            <div class="modal-header">--%>
+<%--                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>--%>
+<%--                <button type="button" class="close" data-dismiss="modal" aria-label="Close">--%>
+<%--                    <span aria-hidden="true">&times;</span>--%>
+<%--                </button>--%>
+<%--            </div>--%>
+<%--            <form method="post" action="/employee?action=delete">--%>
+<%--                <div class="modal-body">--%>
+<%--                    <input type="hidden" name="id" id="id">--%>
+<%--                    Are you sure ?--%>
+<%--                </div>--%>
+<%--                <div class="modal-footer">--%>
+<%--                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>--%>
+<%--                    <button type="button" class="btn btn-primary">Delete</button>--%>
+<%--                </div>--%>
+<%--            </form>--%>
+<%--        </div>--%>
+<%--    </div>--%>
+<%--</div>--%>
 </body>
 
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
@@ -97,5 +148,10 @@
     $(document).ready(function () {
         $('#example').DataTable();
     });
+</script>
+<script>
+    function setIdDelete(id) {
+document.getElementById("id").value=id;
+    }
 </script>
 </html>

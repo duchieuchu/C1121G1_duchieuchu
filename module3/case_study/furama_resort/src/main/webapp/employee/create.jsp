@@ -28,43 +28,43 @@
             <tr>
                 <th>name</th>
                 <td>
-                    <input type="text" name="name" id="name" size="45">
+                    <input type="text" name="name" id="name" size="45" required >
                 </td>
             </tr>
             <tr>
                 <th>birthday</th>
                 <td>
-                    <input type="text" name="birthday" id="birthday" size="45">
+                    <input type="date" name="birthday" id="birthday" size="45" required>
                 </td>
             </tr>
             <tr>
                 <th>idCard</th>
                 <td>
-                    <input type="text" name="idCard" id="idCard" size="45">
+                    <input type="text" name="idCard" id="idCard" size="45" required>
                 </td>
             </tr>
             <tr>
                 <th>salary</th>
                 <td>
-                    <input type="text" name="salary" id="salary" size="45">
+                    <input type="text" name="salary" id="salary" size="45" required>
                 </td>
             </tr>
             <tr>
                 <th>phone</th>
                 <td>
-                    <input type="text" name="phone" id="phone" size="45">
+                    <input type="text" name="phone" id="phone" size="45" required>
                 </td>
             </tr>
             <tr>
                 <th>email</th>
                 <td>
-                    <input type="text" name="email" id="email" size="45">
+                    <input type="text" name="email" id="email" size="45" required>
                 </td>
             </tr>
             <tr>
                 <th>address</th>
                 <td>
-                    <input type="text" name="address" id="address" size="45">
+                    <input type="text" name="address" id="address" size="45" required>
                 </td>
             </tr>
             <tr>
@@ -95,12 +95,6 @@
                             <option value="${division.divisionId}"><c:out value="${division.divisionName}"></c:out></option>
                         </c:forEach>
                     </select>
-                </td>
-            </tr>
-            <tr>
-                <th>userName</th>
-                <td>
-                    <input type="text" name="userName" id="userName" size="45">
                 </td>
             </tr>
             <tr>
