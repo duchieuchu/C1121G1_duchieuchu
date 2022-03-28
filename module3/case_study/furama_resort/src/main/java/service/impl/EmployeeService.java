@@ -32,8 +32,8 @@ public class EmployeeService implements IEmployeeService {
     }
 
     @Override
-    public boolean deleteEmployee(int id) throws SQLException {
-        return this.employeeRepository.deleteEmployee(id);
+    public void deleteEmployee(int id) throws SQLException {
+        this.employeeRepository.deleteEmployee(id);
     }
 
     @Override

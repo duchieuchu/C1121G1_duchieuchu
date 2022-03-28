@@ -40,32 +40,39 @@
         <thead>
         <tr>
             <th>Id</th>
-            <th>CustomerType</th>
             <th>Name</th>
             <th>Birthday</th>
-            <th>Gender</th>
             <th>IdCard</th>
+            <th>Salary</th>
             <th>Phone</th>
             <th>Email</th>
             <th>Address</th>
-            <th>Action</th>
+            <th>Position</th>
+            <th>EducationDegree</th>
+            <th>Division</th>
+            <th>UserName</th>
+
         </tr>
         </thead>
         <tbody>
-        <c:forEach var="customers" items="${listCustomer}">
+        <c:forEach var="employees" items="${listEmployee}">
             <tr>
-                <td><c:out value="${customers.id}"/></td>
-                <td><c:out value="${customers.customerType.customerTypeName}"/></td>
-                <td><c:out value="${customers.name}"/></td>
-                <td><c:out value="${customers.birthday}"/></td>
-                <td><c:out value="${customers.gender}"/></td>
-                <td><c:out value="${customers.idCard}"/></td>
-                <td><c:out value="${customers.phone}"/></td>
-                <td><c:out value="${customers.email}"/></td>
-                <td><c:out value="${customers.address}"/></td>
+                <td><c:out value="${employees.id}"/></td>
+                <td><c:out value="${employees.name}"/></td>
+                <td><c:out value="${employees.birthday}"/></td>
+                <td><c:out value="${employees.gender}"/></td>
+                <td><c:out value="${employees.idCard}"/></td>
+                <td><c:out value="${employees.salary}"/></td>
+                <td><c:out value="${employees.phone}"/></td>
+                <td><c:out value="${employees.email}"/></td>
+                <td><c:out value="${employees.address}"/></td>
+                <td><c:out value="${employees.position.name}"/></td>
+                <td><c:out value="${employees.educationDegree.name}"/></td>
+                <td><c:out value="${employees.division.name}"/></td>
+
                 <td>
-                    <a href="/customer?action=edit&id=${customers.id}">Edit</a>
-                    <a href="/customer?action=delete&id=${customers.id}">Delete</a>
+                    <a href="/employee?action=edit&id=${employees.id}">Edit</a>
+                    <a href="/employee?action=delete&id=${employees.id}">Delete</a>
                 </td>
             </tr>
         </c:forEach>

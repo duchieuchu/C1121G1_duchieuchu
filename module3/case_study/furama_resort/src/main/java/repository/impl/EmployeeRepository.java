@@ -131,13 +131,11 @@ public class EmployeeRepository implements IEmployeeRepository {
     }
 
     @Override
-    public boolean deleteEmployee(int id) throws SQLException {
-        boolean rowDeleted;
+    public void deleteEmployee(int id) throws SQLException {
         try (Connection connection = getConnection(); PreparedStatement statement = connection.prepareStatement(DELETE_EMPLOYEE_SQL)) {
             statement.setInt(1, id);
-            rowDeleted = statement.executeUpdate() > 0;
+         statement.executeUpdate();
         }
-        return rowDeleted;
     }
 
 

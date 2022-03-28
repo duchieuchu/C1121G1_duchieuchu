@@ -14,7 +14,7 @@ public interface IEmployeeRepository {
 
     void updateEmployee(Employee employee) throws SQLException;
 
-    boolean deleteEmployee(int id) throws SQLException;
+    void deleteEmployee(int id) throws SQLException;
 
     List<Employee> searchEmployee(String employeeName);
 }
