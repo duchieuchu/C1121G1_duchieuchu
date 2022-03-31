@@ -51,7 +51,7 @@
         <tbody>
         <c:forEach var="sachs" items="${sachList}">
             <tr>
-                <td><c:out value="${sachs.maSach}"/></td>moTa
+                <td><c:out value="${sachs.maSach}"/></td>
                 <td><c:out value="${sachs.tenSach}"/></td>
                 <td><c:out value="${sachs.tacGia}"/></td>
                 <td><c:out value="${sachs.soLuong}"/></td>
