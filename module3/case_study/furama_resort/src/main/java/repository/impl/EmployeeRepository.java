@@ -87,7 +87,7 @@ public class EmployeeRepository implements IEmployeeRepository {
         List<Employee> employeeList = selectAllEmployee();
         Employee employee = null;
         for (Employee employee1 : employeeList) {
-            if (employee1.getId() == (id)) {
+            if (employee1.getId() == id) {
                 employee = employee1;
             }
         }
