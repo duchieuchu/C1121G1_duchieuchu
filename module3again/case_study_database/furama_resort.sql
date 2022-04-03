@@ -45,9 +45,9 @@ address varchar(45),
 position_id int not null,
 education_level_id int not null,
 part_id int not null,
-foreign key (position_id) references position (position_id),
-foreign key (education_level_id) references education_level (education_level_id),
-foreign key (part_id) references part (part_id)
+foreign key (position_id) references position (position_id) on update cascade on delete cascade,
+foreign key (education_level_id) references education_level (education_level_id) on update cascade on delete cascade,
+foreign key (part_id) references part (part_id) on update cascade on delete cascade
 );
 
 insert into employee
@@ -76,7 +76,7 @@ values (1,'Diamond'),
 create table customer (
 customer_id int primary key,
 type_of_customer_id int not null,
-foreign key (type_of_customer_id) references type_of_customer(type_of_customer_id),
+foreign key (type_of_customer_id) references type_of_customer(type_of_customer_id) on update cascade on delete cascade,
 customer_name varchar(45) not null,
 day_of_birth date not null,
 gender bit not null,
@@ -128,8 +128,8 @@ rental_cost double not null,
 max_people int,
 type_of_rental_id int not null,
 type_of_service_id int not null,
-foreign key (type_of_rental_id) references type_of_rental(type_of_rental_id),
-foreign key (type_of_service_id) references type_of_service(type_of_service_id),
+foreign key (type_of_rental_id) references type_of_rental(type_of_rental_id) on update cascade on delete cascade,
+foreign key (type_of_service_id) references type_of_service(type_of_service_id) on update cascade on delete cascade,
 room_standard varchar(45),
 other_infomation varchar(45),
 pool_area double,
@@ -168,9 +168,9 @@ deposit double not null,
 employee_id int not null,
 customer_id int not null,
 service_id int not null,
-foreign key (employee_id) references employee(employee_id),
-foreign key (customer_id) references customer(customer_id),
-foreign key (service_id) references service(service_id)
+foreign key (employee_id) references employee(employee_id) on update cascade on delete cascade,
+foreign key (customer_id) references customer(customer_id) on update cascade on delete cascade,
+foreign key (service_id) references service(service_id) on update cascade on delete cascade
 );
 
 insert into contract
@@ -192,8 +192,8 @@ detail_contract_id int primary key,
 contract_id int not null,
 accompanied_service_id int not null,
 -- unique(contract_id,accompanied_service_id),
-foreign key (contract_id) references contract(contract_id),
-foreign key (accompanied_service_id) references accompanied_service(accompanied_service_id),
+foreign key (contract_id) references contract(contract_id) on update cascade on delete cascade,
+foreign key (accompanied_service_id) references accompanied_service(accompanied_service_id) on update cascade on delete cascade,
 quantity int not null
 );
 
@@ -327,5 +327,65 @@ values (1,2,4,5),
 -- order by contract.contract_id;
 
 -- task 15
+-- select employee.employee_id, employee.employee_name, education_level.education_level_name, part.part_name, employee.number_phone, employee.address
+-- from employee
+-- inner join education_level on employee.education_level_id= education_level.education_level_id
+-- inner join part on employee.part_id= part.part_id
+-- inner join contract on employee.employee_id= contract.employee_id
+-- group by employee.employee_id
+-- having count(contract.contract_id) <=3;
+
+-- task 16
+-- select * from employee;
+-- set sql_safe_updates = 0;
+-- delete from employee
+-- where employee_id not in(
+-- select contract.employee_id 
+-- from contract
+-- where year(contract.check_in) between 2019 and 2021
+-- );
+-- set sql_safe_updates = 1;
+-- select * from employee;
+
+-- task 17
+-- select * from customer;
+-- update customer
+-- set customer.type_of_customer_id = 1
+-- where customer.type_of_customer_id= 2
+-- and customer.type_of_customer_id in (select contract.customer_id from contract
+-- inner join service on contract.service_id = service.service_id
+-- inner join detail_contract on contract.contract_id = detail_contract.contract_id
+-- inner join accompanied_service on detail_contract.accompanied_service_id = accompanied_service.accompanied_service_id
+-- group by contract.customer_id
+-- having sum(service.rental_cost + detail_contract.quantity * accompanied_service.accompanied_service_price) > 10000000);
 
 
+-- task 18
+--  select * from customer;
+--  set sql_safe_updates =0;
+--  delete from customer
+--  where customer.customer_id in (
+--  select contract.customer_id 
+--  from contract
+--  where year(contract.check_in) < 2021
+--  );
+--  select * from customer;
+--  set sql_safe_updates =1;
+
+-- task 19
+-- select * from accompanied_service;
+-- set sql_safe_updates =0;
+-- update accompanied_service
+-- set accompanied_service.accompanied_service_price = accompanied_service.accompanied_service_price*2
+-- where accompanied_service.accompanied_service_id in (
+-- select detail_contract.accompanied_service_id 
+-- from detail_contract 
+-- where detail_contract.quantity > 10
+-- );
+-- set sql_safe_updates =1;
+-- select * from accompanied_service;
+
+-- task 20
+
+ 
+ 
