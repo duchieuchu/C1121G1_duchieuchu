@@ -207,5 +207,74 @@ values (1,2,4,5),
 (7,1,2,2),
 (8,12,2,2);
 
+-- task2
+-- select * from employee where employee_name like 'H%' 
+-- or employee_name like 'T%'
+--  or employee_name  like 'K%'and char_length(employee_name)<=15; 
 
+-- task 3
+-- select* from customer where (datediff(curdate(),day_of_birth)/365<50 and datediff(curdate(),day_of_birth)/365>18)
+-- and (address like '%Đà Nẵng' or address like  '%%Quảng Trị');
+
+-- task 4
+-- select customer.customer_id,customer.customer_name, count(customer.customer_id) as 'times'
+-- from contract 
+-- join customer on contract.customer_id = customer.customer_id
+-- join type_of_customer on customer.type_of_customer_id =type_of_customer.type_of_customer_id
+-- where type_of_customer.type_of_customer_name ='Diamond'
+-- group by customer.customer_id
+-- order by  count(customer.customer_id);
+
+-- task 5
+-- select customer.customer_id,customer.customer_name,type_of_customer.type_of_customer_name,
+-- contract.contract_id,service.service_name,contract.check_in,contract.check_out,
+-- (service.rental_cost+detail_contract.quantity*accompanied_service.accompanied_service_price) as total_money
+-- from contract 
+-- left join customer on contract.customer_id = customer.customer_id
+-- left join type_of_customer on customer.type_of_customer_id = type_of_customer.type_of_customer_id
+-- left join service on contract.service_id =service.service_id
+-- left join detail_contract on contract.contract_id = detail_contract.contract_id
+-- left join accompanied_service on accompanied_service.accompanied_service_id= detail_contract.accompanied_service_id
+-- group by contract_id; 
+
+-- task 6 
+-- select service.service_id , service.service_name,area,service.rental_cost,type_of_service.type_of_service_name
+-- from type_of_service
+-- join service on type_of_service.type_of_service_id = service.type_of_service_id
+-- join contract on contract.service_id= service.service_id
+-- where contract.check_in not between '2021-1-1 00:00:00' and '2021-3-31 23:59:59'
+-- group by service.service_id;
+
+-- task 7
+-- select service.service_id, service.service_name, service.area,
+-- service.max_people , service.rental_cost, 
+-- type_of_service.type_of_service_name
+-- from type_of_service
+-- inner join service on type_of_service.type_of_service_id = service.type_of_service_id
+-- left join contract on contract.service_id= service.service_id
+-- where (contract.check_in between '2020-1-1 00:00:00' and '2020-12-31 23:59:59')
+-- and (contract.check_in not between '2021-1-1 00:00:00' and '2021-12-31 23:59:59')
+-- group by service.service_id;
+
+-- task 8
+-- c1
+-- select customer_name from customer
+-- group by customer_name;
+
+-- c2
+-- select distinct customer_name from customer;
+
+-- c3
+-- select customer_name from customer
+-- union
+-- select customer_name from customer
+
+-- task 9
+-- select month(contract.check_in) as thang_lam_hop_dong, count(contract.contract_id) as so_luong_hop_dong
+-- from contract
+-- join customer on contract.customer_id = customer.customer_id
+-- group by thang_lam_hop_dong
+-- order by thang_lam_hop_dong;
+
+-- task 10
 
