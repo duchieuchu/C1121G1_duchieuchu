@@ -277,4 +277,55 @@ values (1,2,4,5),
 -- order by thang_lam_hop_dong;
 
 -- task 10
+-- select contract.contract_id, contract.check_in, contract.check_out, contract.deposit, 
+-- accompanied_service.accompanied_service_name, sum(ifnull(detail_contract.quantity,0)) as quantity, detail_contract.detail_contract_id
+-- from contract
+-- left join detail_contract on detail_contract.contract_id = contract.contract_id
+-- left join accompanied_service on accompanied_service.accompanied_service_id = detail_contract.accompanied_service_id
+-- group by contract.contract_id;
+
+-- task 11
+-- select accompanied_service.accompanied_service_id, accompanied_service.accompanied_service_name
+-- from type_of_customer
+-- inner join customer on type_of_customer.type_of_customer_id = customer.type_of_customer_id
+-- inner join contract on contract.customer_id =  customer.customer_id
+-- inner join detail_contract on detail_contract.contract_id = contract.contract_id
+-- inner join accompanied_service on accompanied_service.accompanied_service_id = detail_contract.accompanied_service_id
+-- where type_of_customer.type_of_customer_name = 'Diamond' and (customer.address like '%Vinh' or customer.address like '%Quảng Ngãi');
+
+-- task 12
+-- select contract.contract_id, employee.employee_name,customer.customer_name,customer.number_phone,
+-- service.service_name,sum(detail_contract.quantity) as so_luong_dich_vu_di_kem,contract.deposit
+-- from customer
+-- inner join contract on contract.customer_id = customer.customer_id
+-- inner join employee on employee.employee_id = contract.employee_id
+-- inner join service on contract.service_id = service.service_id
+-- left join detail_contract on detail_contract.contract_id = contract.contract_id
+-- left join accompanied_service  on accompanied_service.accompanied_service_id = detail_contract.accompanied_service_id
+-- where (contract.check_in between '2020-10-1 00:00:00' and '2020-12-31 23:59:59')
+-- and (contract.check_in not between '2021-1-1 00:00:00' and '2021-6-30 23:59:59')
+-- group by contract.contract_id;
+
+-- task 13
+-- select accompanied_service.accompanied_service_id, accompanied_service.accompanied_service_name, sum(detail_contract.quantity) as 'so_luong_dich_vu_di_kem'
+-- from accompanied_service
+-- join detail_contract on accompanied_service.accompanied_service_id = detail_contract.accompanied_service_id
+-- join contract on detail_contract.contract_id = contract.contract_id
+-- group by accompanied_service.accompanied_service_id
+-- having so_luong_dich_vu_di_kem >= all(select quantity from detail_contract);
+
+-- task 14
+-- select contract.contract_id,type_of_service.type_of_service_name,accompanied_service.accompanied_service_name,
+-- count(accompanied_service.accompanied_service_id) as so_lan_su_dung
+-- from contract
+-- join service on contract.service_id = service.service_id
+-- join type_of_service on service.type_of_service_id= type_of_service.type_of_service_id
+-- join detail_contract on contract.contract_id = detail_contract.contract_id
+-- join accompanied_service on detail_contract.accompanied_service_id = accompanied_service.accompanied_service_id
+-- group by accompanied_service.accompanied_service_id
+-- having count(accompanied_service.accompanied_service_id) = 1
+-- order by contract.contract_id;
+
+-- task 15
+
 
