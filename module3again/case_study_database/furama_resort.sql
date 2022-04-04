@@ -213,8 +213,8 @@ values (1,2,4,5),
 --  or employee_name  like 'K%'and char_length(employee_name)<=15; 
 
 -- task 3
--- select* from customer where (datediff(curdate(),day_of_birth)/365<50 and datediff(curdate(),day_of_birth)/365>18)
--- and (address like '%Đà Nẵng' or address like  '%%Quảng Trị');
+select* from customer where (datediff(curdate(),day_of_birth)/365<50 and datediff(curdate(),day_of_birth)/365>18)
+and (address like '%Đà Nẵng' or address like  '%Quảng Trị');
 
 -- task 4
 -- select customer.customer_id,customer.customer_name, count(customer.customer_id) as 'times'
@@ -270,9 +270,10 @@ values (1,2,4,5),
 -- select customer_name from customer
 
 -- task 9
--- select month(contract.check_in) as thang_lam_hop_dong, count(contract.contract_id) as so_luong_hop_dong
+-- select month(contract.check_in) as thang_lam_hop_dong,count(contract.contract_id) as so_luong_hop_dong
 -- from contract
 -- join customer on contract.customer_id = customer.customer_id
+-- where year(contract.check_in)= 2021
 -- group by thang_lam_hop_dong
 -- order by thang_lam_hop_dong;
 
@@ -386,6 +387,13 @@ values (1,2,4,5),
 -- select * from accompanied_service;
 
 -- task 20
+-- select employee.employee_id,employee.employee_name,employee.email,employee.number_phone,
+-- employee.day_of_birth,employee.address, "employee" as `role` from employee
+-- union
+-- select customer.customer_id,customer.customer_name,customer.email,customer.number_phone,
+-- customer.day_of_birth,customer.address,"customer" as `role` from customer
+
+
 
  
  
