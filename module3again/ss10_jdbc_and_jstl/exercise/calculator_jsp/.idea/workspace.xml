@@ -20,39 +20,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb30dce3-ec92-4e81-bb38-a6074a80b836" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/CalculatorServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../display_customer_list/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../display_customer_list/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../display_customer_list/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../display_customer_list/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../display_customer_list/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../display_customer_list/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../display_customer_list/src/main/java/controller/CustomerServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../display_customer_list/src/main/java/model/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../display_customer_list/src/main/webapp/customer_list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../practice/currency_converter_jsp/src/main/webapp/converter.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../practice/simple_dictionary_jsp/src/main/webapp/translate.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.60/webapps/ROOT/WEB-INF/classes/DiscountServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.60/webapps/ROOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.60/webapps/ROOT/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../module3/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module3/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss9_web_application_overview/exercise/product_discount_calculator/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss9_web_application_overview/exercise/product_discount_calculator/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss9_web_application_overview/exercise/product_discount_calculator/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss9_web_application_overview/exercise/product_discount_calculator/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss9_web_application_overview/exercise/product_discount_calculator/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss9_web_application_overview/exercise/product_discount_calculator/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss9_web_application_overview/exercise/product_discount_calculator/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss9_web_application_overview/exercise/product_discount_calculator/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss9_web_application_overview/exercise/product_discount_calculator/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss9_web_application_overview/exercise/product_discount_calculator/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss9_web_application_overview/exercise/product_discount_calculator/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss9_web_application_overview/exercise/product_discount_calculator/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss9_web_application_overview/exercise/product_discount_calculator/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss9_web_application_overview/exercise/product_discount_calculator/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss9_web_application_overview/exercise/product_discount_calculator/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss9_web_application_overview/exercise/product_discount_calculator/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss9_web_application_overview/exercise/product_discount_calculator/build/classes/java/main/DiscountServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss9_web_application_overview/exercise/product_discount_calculator/build/classes/java/main/DiscountServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss9_web_application_overview/exercise/product_discount_calculator/build/libs/product_discount_calculator-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss9_web_application_overview/exercise/product_discount_calculator/build/libs/product_discount_calculator-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss9_web_application_overview/exercise/product_discount_calculator/src/main/java/DiscountServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss9_web_application_overview/exercise/product_discount_calculator/src/main/java/DiscountServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/answer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/product_management/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/product_management/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/product_management/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/product_management/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/product_management/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/product_management/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/product_management/src/main/java/controller/ProductServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/product_management/src/main/java/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/product_management/src/main/java/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/product_management/src/main/java/service/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/product_management/src/main/webapp/product/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/product_management/src/main/webapp/product/delete.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/product_management/src/main/webapp/product/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/product_management/src/main/webapp/product/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_mvc_model/exercise/product_management/src/main/webapp/product/view.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_mvc_model/practice/customer_management/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_mvc_model/practice/customer_management/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_mvc_model/practice/customer_management/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_mvc_model/practice/customer_management/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_mvc_model/practice/customer_management/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_mvc_model/practice/customer_management/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_mvc_model/practice/customer_management/src/main/java/controller/CustomerServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_mvc_model/practice/customer_management/src/main/java/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_mvc_model/practice/customer_management/src/main/java/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_mvc_model/practice/customer_management/src/main/java/service/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_mvc_model/practice/customer_management/src/main/webapp/customer/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_mvc_model/practice/customer_management/src/main/webapp/customer/delete.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_mvc_model/practice/customer_management/src/main/webapp/customer/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_mvc_model/practice/customer_management/src/main/webapp/customer/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_mvc_model/practice/customer_management/src/main/webapp/customer/view.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_mvc_model/practice/customer_management/src/main/webapp/error-404.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.60/webapps/ROOT/WEB-INF/classes/servlet/CalculatorServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.60/webapps/ROOT/WEB-INF/classes/servlet/CalculatorServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/servlet/CalculatorServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/servlet/CalculatorServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/calculator_jsp-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/calculator_jsp-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/CalculatorServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/CalculatorServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../display_customer_list/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../display_customer_list/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../display_customer_list/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../display_customer_list/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../display_customer_list/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../display_customer_list/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../display_customer_list/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../display_customer_list/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../display_customer_list/src/main/java/controller/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../display_customer_list/src/main/java/controller/CustomerServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +84,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -90,6 +107,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.60" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.60" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
@@ -175,7 +193,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1649822683048</updated>
-      <workItem from="1649822689346" duration="2191000" />
+      <workItem from="1649822689346" duration="3883000" />
+      <workItem from="1649902076379" duration="2974000" />
     </task>
     <servers />
   </component>
@@ -192,59 +211,68 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1649822979148">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1649822979148" />
-    <state width="845" height="163" key="GridCell.Tab.0.bottom" timestamp="1649824855416">
+    <state x="421" y="98" key="FileChooserDialogImpl" timestamp="1649836964613">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="845" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1649824855416" />
-    <state width="845" height="163" key="GridCell.Tab.0.center" timestamp="1649824855416">
+    <state x="421" y="98" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1649836964613" />
+    <state width="845" height="163" key="GridCell.Tab.0.bottom" timestamp="1649905052264">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="845" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1649824855416" />
-    <state width="845" height="163" key="GridCell.Tab.0.left" timestamp="1649824855416">
+    <state width="845" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1649905052264" />
+    <state width="845" height="163" key="GridCell.Tab.0.center" timestamp="1649905052264">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="845" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1649824855416" />
-    <state width="845" height="163" key="GridCell.Tab.0.right" timestamp="1649824855416">
+    <state width="845" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1649905052264" />
+    <state width="845" height="163" key="GridCell.Tab.0.left" timestamp="1649905052264">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="845" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1649824855416" />
-    <state width="845" height="163" key="GridCell.Tab.1.bottom" timestamp="1649824855416">
+    <state width="845" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1649905052264" />
+    <state width="845" height="163" key="GridCell.Tab.0.right" timestamp="1649905052264">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="845" height="163" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1649824855416" />
-    <state width="845" height="163" key="GridCell.Tab.1.center" timestamp="1649824855416">
+    <state width="845" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1649905052264" />
+    <state width="845" height="163" key="GridCell.Tab.1.bottom" timestamp="1649905052265">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="845" height="163" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1649824855416" />
-    <state width="845" height="163" key="GridCell.Tab.1.left" timestamp="1649824855416">
+    <state width="845" height="163" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1649905052265" />
+    <state width="845" height="163" key="GridCell.Tab.1.center" timestamp="1649905052265">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="845" height="163" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1649824855416" />
-    <state width="845" height="163" key="GridCell.Tab.1.right" timestamp="1649824855416">
+    <state width="845" height="163" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1649905052265" />
+    <state width="845" height="163" key="GridCell.Tab.1.left" timestamp="1649905052265">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="845" height="163" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1649824855416" />
-    <state width="845" height="163" key="GridCell.Tab.2.bottom" timestamp="1649824855417">
+    <state width="845" height="163" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1649905052265" />
+    <state width="845" height="163" key="GridCell.Tab.1.right" timestamp="1649905052265">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="845" height="163" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1649824855417" />
-    <state width="845" height="163" key="GridCell.Tab.2.center" timestamp="1649824855417">
+    <state width="845" height="163" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1649905052265" />
+    <state width="845" height="163" key="GridCell.Tab.2.bottom" timestamp="1649905052265">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="845" height="163" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1649824855417" />
-    <state width="845" height="163" key="GridCell.Tab.2.left" timestamp="1649824855417">
+    <state width="845" height="163" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1649905052265" />
+    <state width="845" height="163" key="GridCell.Tab.2.center" timestamp="1649905052265">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="845" height="163" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1649824855417" />
-    <state width="845" height="163" key="GridCell.Tab.2.right" timestamp="1649824855417">
+    <state width="845" height="163" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1649905052265" />
+    <state width="845" height="163" key="GridCell.Tab.2.left" timestamp="1649905052265">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="845" height="163" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1649824855417" />
+    <state width="845" height="163" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1649905052265" />
+    <state width="845" height="163" key="GridCell.Tab.2.right" timestamp="1649905052265">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="845" height="163" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1649905052265" />
+    <state x="91" y="0" key="new project wizard" timestamp="1649837021572">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="91" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1649837021572" />
   </component>
 </project>
