@@ -1,13 +1,13 @@
 package model;
 
 public class Product {
-    private String id;
+    private Integer id;
     private String name;
     private Double price;
     private String description;
     private String brand;
 
-    public Product(String id, String name, Double price, String description, String brand) {
+    public Product(Integer id, String name, Double price, String description, String brand) {
         this.id = id;
         this.name = name;
         this.price = price;
@@ -15,11 +15,11 @@ public class Product {
         this.brand = brand;
     }
 
-    public String getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

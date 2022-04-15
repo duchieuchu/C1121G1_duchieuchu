@@ -15,7 +15,7 @@ import java.util.List;
 
 @WebServlet(name = "CustomerServlet",value = "/customers")
 public class CustomerServlet extends HttpServlet {
-    private CustomerService customerService =new CustomerServiceImpl();
+    private final CustomerService customerService =new CustomerServiceImpl();
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String action = request.getParameter("action");
         if(action == null){

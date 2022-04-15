@@ -19,12 +19,12 @@
 </p>
 <table class="table table-hover table-dark">
     <tr>
-        <td>#</td>
-        <td>Name</td>
-        <td>Email</td>
-        <td>Address</td>
-        <td>Edit</td>
-        <td>Delete</td>
+        <th>#</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Edit</th>
+        <th>Delete</th>
     </tr>
     <c:forEach items='${requestScope["customers"]}' var="customer" varStatus="hieu">
         <tr>
