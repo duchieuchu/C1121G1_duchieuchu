@@ -27,7 +27,7 @@
 
 <table class="table table-hover table-dark">
     <tr>
-        <td>#</td>
+        <th>#</th>
         <th>Id</th>
         <th>Name</th>
         <th>Price</th>
