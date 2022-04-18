@@ -19,6 +19,12 @@
 <p>
     <a href="/products?action=create">Create new product</a>
 </p>
+<form action="/products" method="get">
+    <input type="hidden" name="action" value="search">
+    <input type="text" name="search" placeholder="enter Product's name">
+    <input type="submit" value="Search">
+</form>
+
 <table class="table table-hover table-dark">
     <tr>
         <td>#</td>

@@ -110,15 +110,54 @@ public class ProductServlet extends HttpServlet {
             case "delete":
                 deleteProduct(request, response);
                 break;
-//            case "view":
-//                viewProduct(request, response);
-//                break;
-//            case "search":
-//                searchProduct(request, response);
-//                break;
+            case "view":
+                viewProduct(request, response);
+                break;
+            case "search":
+                searchProduct(request, response);
+                break;
             default:
                 listProducts(request, response);
                 break;
+        }
+    }
+
+    private void searchProduct(HttpServletRequest request, HttpServletResponse response) {
+        String name = request.getParameter("search");
+        List<Product>productList=productService.findByName(name);
+        RequestDispatcher dispatcher;
+        if (productList.isEmpty()){
+            dispatcher=request.getRequestDispatcher("error-404.jsp");
+        }else {
+            request.setAttribute("productList",productList);
+            dispatcher=request.getRequestDispatcher("product/search.jsp");
+        }
+        try {
+            dispatcher.forward(request, response);
+        } catch (ServletException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    private void viewProduct(HttpServletRequest request, HttpServletResponse response) {
+        Integer id = Integer.parseInt(request.getParameter("id"));
+        Product product = productService.findById(id);
+        RequestDispatcher dispatcher;
+        if (product == null) {
+            dispatcher = request.getRequestDispatcher("error-404.jsp");
+        } else {
+            request.setAttribute("product", product);
+            dispatcher = request.getRequestDispatcher("product/view.jsp");
+        }
+        try {
+            dispatcher.forward(request, response);
+        } catch (ServletException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 

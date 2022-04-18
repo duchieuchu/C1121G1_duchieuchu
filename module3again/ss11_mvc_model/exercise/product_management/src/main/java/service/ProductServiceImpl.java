@@ -32,4 +32,9 @@ public class ProductServiceImpl implements ProductService{
     public void delete(Integer id) {
         productRepository.delete(id);
     }
+
+    @Override
+    public List<Product> findByName(String name) {
+        return productRepository.findByName(name);
+    }
 }

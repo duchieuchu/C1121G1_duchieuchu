@@ -2,8 +2,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: Admin
-  Date: 4/15/2022
-  Time: 8:43 AM
+  Date: 4/18/2022
+  Time: 8:53 AM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -15,15 +15,10 @@
 
 </head>
 <body>
-<h1>Product</h1>
 <p>
-    <a href="/products?action=create">Create new product</a>
+    <a href="/products?action=productList">Back List Product</a>
 </p>
-<form action="/products" method="get">
-    <input type="hidden" name="action" value="search">
-    <input type="text" name="search" placeholder="enter Product's name">
-    <input type="submit" value="Search">
-</form>
+<h1>Product Result</h1>
 
 <table class="table table-hover table-dark">
     <tr>
@@ -36,7 +31,8 @@
         <th>Edit</th>
         <th>Delete</th>
     </tr>
-    <c:forEach items='${requestScope["products"]}' var="product" varStatus="count">
+
+    <c:forEach items="${productList}" var="product" varStatus="count">
         <tr>
             <td>${count.count}</td>
             <td>${product.getId()}</td>
