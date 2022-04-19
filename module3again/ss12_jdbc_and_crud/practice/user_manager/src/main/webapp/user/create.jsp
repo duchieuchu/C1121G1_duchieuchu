@@ -18,7 +18,7 @@
     <a href="/users?action=userList">Back to user list</a>
 </p>
 <h1>Create user</h1>
-<form method="post" action="/users?action=create">
+<form method="post" >
     <table class="table table-hover table-dark">
         <tr>
             <th>Name</th>

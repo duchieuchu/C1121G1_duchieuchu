@@ -15,7 +15,9 @@ public class UserRepositoryImpl implements UserRepository {
     private static final String SELECT_USER_BY_ID = "select id,name,email,country from users where id =?";
     private static final String SELECT_ALL_USERS = "select * from users";
     private static final String DELETE_USERS_SQL = "delete from users where id = ?;";
-    private static final String UPDATE_USERS_SQL = "update users set name = ?,email= ?, country =? where id = ?;";
+    private static final String UPDATE_USERS_SQL = "update users set `name` = ?,email= ?, country =? where id = ?;";
+    private static final String SELECT_USER_BY_COUNTRY = "select id,name,email,country from users where country like?;";
+    private static final String ORDER_BY_NAME = "select id,name,email,country from users order by name;";
 
     @Override
     public void insertUser(User user) throws SQLException {
@@ -31,7 +33,30 @@ public class UserRepositoryImpl implements UserRepository {
 
     @Override
     public User selectUser(Integer id) {
-        return null;
+        User user = null;
+        try (Connection connection = this.baseRepository.getConnection(); PreparedStatement preparedStatement = connection.prepareStatement(SELECT_USER_BY_ID)) {
+            preparedStatement.setInt(1, id);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                String name = resultSet.getString("name");
+                String email = resultSet.getString("email");
+                String country = resultSet.getString("country");
+                user = new User(id, name, email, country);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            baseRepository.close();
+        }
+        return user;
+//        List<User> userList = selectAllUser();
+//        User user = null;
+//        for (User user1 : userList) {
+//            if (user1.getId() == id) {
+//                user = user1;
+//            }
+//        }
+//        return user;
     }
 
     @Override
@@ -56,7 +81,10 @@ public class UserRepositoryImpl implements UserRepository {
 
     @Override
     public void deleteUser(Integer id) throws SQLException {
-
+        try (Connection connection = this.baseRepository.getConnection(); PreparedStatement preparedStatement = connection.prepareStatement(DELETE_USERS_SQL)) {
+            preparedStatement.setInt(1, id);
+            preparedStatement.executeUpdate();
+        }
     }
 
     @Override
@@ -65,19 +93,64 @@ public class UserRepositoryImpl implements UserRepository {
             preparedStatement.setString(1, user.getName());
             preparedStatement.setString(2, user.getEmail());
             preparedStatement.setString(3, user.getCountry());
+            preparedStatement.setInt(4, user.getId());
             preparedStatement.executeUpdate();
-        }finally {
+        } finally {
             baseRepository.close();
         }
     }
 
     @Override
     public List<User> findByCountry(String country) {
-        return null;
+        List<User> users = new ArrayList<>();
+        Connection connection = this.baseRepository.getConnection();
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(SELECT_USER_BY_COUNTRY);
+            preparedStatement.setString(1, "%" + country + "%");
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                Integer id = resultSet.getInt("id");
+                String name = resultSet.getString("name");
+                String email = resultSet.getString("email");
+                String country1 = resultSet.getString("country");
+                users.add(new User(id, name, email, country1));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                connection.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return users;
     }
 
     @Override
     public List<User> sortByName() {
-        return null;
+        List<User> users = new ArrayList<>();
+        Connection connection = this.baseRepository.getConnection();
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(ORDER_BY_NAME);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                Integer id = resultSet.getInt("id");
+                String name = resultSet.getString("name");
+                String email = resultSet.getString("email");
+                String country1 = resultSet.getString("country");
+                users.add(new User(id, name, email, country1));
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            try {
+                connection.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return users;
     }
 }

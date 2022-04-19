@@ -9,24 +9,41 @@
 <html>
 <head>
     <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
 </head>
 <body>
+
 <p>
     <a href="/users?action=userList">Back to user list</a>
 </p>
-<form method="post" action="/users?action=edit">
-    <table>
+<h1>Edit user</h1>
+<form method="post" >
+    <table class="table table-hover table-dark">
+        <c:if test="${user != null}">
+            <input type="hidden" name="id" value="<c:out value='${user.id}' />"/>
+        </c:if>
         <tr>
-            <th>Name</th>
-            <td><input type="text" name="name" id="name" required></td>
+            <th>Name:</th>
+            <td>
+                <input type="text" name="name"
+                       value="${user.name}"/>
+            </td>
         </tr>
         <tr>
-            <th>Email</th>
-            <td><input type="text" name="email" id="email" required></td>
+            <th>Email:</th>
+            <td>
+                <input type="text" name="email"
+                       value="${user.email}"/>
+            </td>
         </tr>
         <tr>
-            <th>Country</th>
-            <td><input type="text" name="country" id="country" required></td>
+            <th>Country:</th>
+            <td>
+                <input type="text" name="country"
+                       value="${user.country}"/>
+            </td>
         </tr>
         <tr>
             <th></th>

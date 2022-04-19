@@ -20,29 +20,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2f5f6d9-4c30-4982-9711-0d630e3fab9d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/src/main/java/controller/UserServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/src/main/java/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/src/main/java/repository/BaseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/src/main/java/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/src/main/java/repository/UserRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/src/main/java/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/src/main/java/service/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/src/main/webapp/user/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.60/webapps/ROOT/WEB-INF/classes/controller/ProductServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.60/webapps/ROOT/WEB-INF/classes/model/Product.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.60/webapps/ROOT/WEB-INF/classes/repository/ProductRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.60/webapps/ROOT/WEB-INF/classes/repository/ProductRepositoryImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.60/webapps/ROOT/WEB-INF/classes/service/ProductService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.60/webapps/ROOT/WEB-INF/classes/service/ProductServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.60/webapps/ROOT/error-404.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.60/webapps/ROOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.60/webapps/ROOT/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.60/webapps/ROOT/product/create.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.60/webapps/ROOT/product/edit.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.60/webapps/ROOT/product/list.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.60/webapps/ROOT/product/search.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.60/webapps/ROOT/product/view.jsp" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/src/main/webapp/user/search.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/src/main/webapp/user/view.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.60/webapps/ROOT/WEB-INF/classes/controller/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.60/webapps/ROOT/WEB-INF/classes/controller/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.60/webapps/ROOT/WEB-INF/classes/repository/UserRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.60/webapps/ROOT/WEB-INF/classes/repository/UserRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.60/webapps/ROOT/user/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.60/webapps/ROOT/user/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.60/webapps/ROOT/user/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.60/webapps/ROOT/user/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.60/webapps/ROOT/user/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.60/webapps/ROOT/user/list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/product/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/product/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/build/classes/java/main/controller/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/build/classes/java/main/controller/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/build/classes/java/main/repository/UserRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/build/classes/java/main/repository/UserRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/build/libs/user_manager-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/build/libs/user_manager-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/src/main/java/controller/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/src/main/java/controller/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/src/main/java/repository/UserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/src/main/java/repository/UserRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/src/main/webapp/user/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/src/main/webapp/user/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/src/main/webapp/user/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/src/main/webapp/user/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/src/main/webapp/user/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss12_jdbc_and_crud/practice/user_manager/src/main/webapp/user/list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,6 +176,7 @@
       <workItem from="1650251277186" duration="175000" />
       <workItem from="1650256565121" duration="1177000" />
       <workItem from="1650272694076" duration="11000" />
+      <workItem from="1650338792805" duration="816000" />
     </task>
     <servers />
   </component>

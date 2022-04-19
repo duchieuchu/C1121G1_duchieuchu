@@ -19,6 +19,11 @@
 <p>
     <a href="/users?action=create">Create new user</a>
 </p>
+<form method="get" action="/users">
+    <input type="hidden" name="action" value="search">
+    <input type="text" name="country" placeholder="enter country">
+    <input type="submit" value="search">
+</form>
 <table class="table table-hover table-dark">
     <tr>
         <th class="col-1">#</th>
@@ -34,11 +39,11 @@
         <tr>
             <td>${count.count}</td>
             <td>${user.id}</td>
-            <td>${user.name}</td>
+            <td><a href="/users?action=view&id=${user.id}">${user.name}</a></td>
             <td>${user.email}</td>
             <td>${user.country}</td>
-            <td><a href="/users?action=edit">edit</a></td>
-            <td><a href="#">delete</a></td>
+            <td><a href="/users?action=edit&id=${user.id}">edit</a></td>
+            <td><a href="/users?action=delete&id=${user.id}">delete</a></td>
         </tr>
     </c:forEach>
 </table>
