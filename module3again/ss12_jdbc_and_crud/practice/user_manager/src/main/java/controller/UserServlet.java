@@ -47,7 +47,7 @@ public class UserServlet extends HttpServlet {
         User user = new User(id, name, email, country);
         this.userService.update(user);
 
-        List<User> listUser = userService.selectAllUser();
+        List<User> listUser = userService.sortByName();
         request.setAttribute("listUser", listUser);
         RequestDispatcher dispatcher = request.getRequestDispatcher("user/list.jsp");
         dispatcher.forward(request, response);
@@ -117,7 +117,7 @@ public class UserServlet extends HttpServlet {
         Integer id = Integer.parseInt(request.getParameter("id"));
         this.userService.deleteUser(id);
 
-        List<User> listUser = userService.selectAllUser();
+        List<User> listUser = userService.sortByName();
         request.setAttribute("listUser", listUser);
         RequestDispatcher dispatcher = request.getRequestDispatcher("user/list.jsp");
         dispatcher.forward(request, response);
