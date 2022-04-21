@@ -23,6 +23,9 @@ public class CustomerController extends HttpServlet {
     private final CustomerTypeRepository customerTypeRepository = new CustomerTypeRepositoryImpl();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
+        response.setContentType("text/html;charset=UTF-8");
+        request.setCharacterEncoding("UTF-8");
         String action = request.getParameter("action");
         if (action == null) {
             action = "";
@@ -33,9 +36,12 @@ public class CustomerController extends HttpServlet {
                     case "create":
                         createUser(request, response);
                         break;
-//                    case "edit":
-//                        editUser(request, response);
-//                        break;
+                    case "edit":
+                        editUser(request, response);
+                        break;
+                    case "delete":
+                        deleteCustomer(request, response);
+                        break;
                 }
             }
         } catch (Exception e) {
@@ -43,19 +49,39 @@ public class CustomerController extends HttpServlet {
         }
     }
 
+    private void editUser(HttpServletRequest request, HttpServletResponse response) throws SQLException, ServletException, IOException {
+        Integer id = Integer.parseInt(request.getParameter("id"));
+        CustomerType customerType = customerTypeRepository.selectCustomerType(Integer.parseInt(request.getParameter("customerType")));
+        //select name by id
+        String name = request.getParameter("name");
+        String birthday = request.getParameter("birthday");
+        Integer gender = Integer.parseInt(request.getParameter("gender"));
+        String idCard = request.getParameter("idCard");
+        String phone = request.getParameter("phone");
+        String email = request.getParameter("email");
+        String address = request.getParameter("address");
+        Customer customer = new Customer(id, customerType, name, birthday, gender, idCard, phone, email, address);
+        customerService.update(customer);
+        List<Customer> customerList = customerService.selectAllCustomer();
+        request.setAttribute("customerList", customerList);
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("view/customer/list.jsp");
+        requestDispatcher.forward(request, response);
+
+    }
+
     private void createUser(HttpServletRequest request, HttpServletResponse response) throws SQLException, ServletException, IOException {
-         Integer id =null;
-         CustomerType customerType=customerTypeRepository.selectCustomerType(Integer.parseInt(request.getParameter("customerType")));
+        Integer id = null;
+        CustomerType customerType = customerTypeRepository.selectCustomerType(Integer.parseInt(request.getParameter("customerType")));
         //select name by id nek
-         String name =request.getParameter("name");
-         String birthday=request.getParameter("birthday");
-         Integer gender=Integer.parseInt(request.getParameter("gender"));
-         String idCard=request.getParameter("idCard");
-         String phone =request.getParameter("phone");
-         String email =request.getParameter("email");
-         String address =request.getParameter("address");
-         Customer customer = new Customer(id,customerType,name,birthday,gender,idCard,phone,email,address);
-         this.customerService.insertCustomer(customer);
+        String name = request.getParameter("name");
+        String birthday = request.getParameter("birthday");
+        Integer gender = Integer.parseInt(request.getParameter("gender"));
+        String idCard = request.getParameter("idCard");
+        String phone = request.getParameter("phone");
+        String email = request.getParameter("email");
+        String address = request.getParameter("address");
+        Customer customer = new Customer(id, customerType, name, birthday, gender, idCard, phone, email, address);
+        this.customerService.insertCustomer(customer);
 
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("view/customer/create.jsp");
         requestDispatcher.forward(request, response);
@@ -66,36 +92,70 @@ public class CustomerController extends HttpServlet {
         if (action == null) {
             action = "";
         }
-
-        switch (action) {
-            case "create":
-                showNewForm(request, response);
-                break;
-            case "edit":
-                showEditForm(request, response);
-                break;
-//                case "delete":
-//                    deleteCustomer(request, response);
-//                    break;
-//                case "view":
-//                    viewCustomer(request, response);
-//                case "search":
-//                    search(request, response);
-//                    break;
-            default:
-                listCustomer(request, response);
-                break;
+        try {
+            switch (action) {
+                case "create":
+                    showNewForm(request, response);
+                    break;
+                case "edit":
+                    showEditForm(request, response);
+                    break;
+                case "view":
+                    viewCustomer(request, response);
+                case "search":
+                    search(request, response);
+                    break;
+                default:
+                    listCustomer(request, response);
+                    break;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
 
-    private void showEditForm(HttpServletRequest request, HttpServletResponse response) {
+    private void search(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String name = request.getParameter("name");
+        List<Customer> customerList = customerService.finByName(name);
+        request.setAttribute("customerList", customerList);
 
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("view/customer/list.jsp");
+        requestDispatcher.forward(request, response);
+    }
+
+    private void viewCustomer(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        Integer id = Integer.parseInt(request.getParameter("id"));
+        Customer customer = customerService.selectCustomer(id);
+        request.setAttribute("customer", customer);
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("view/customer/view.jsp");
+        requestDispatcher.forward(request, response);
+    }
+
+    private void deleteCustomer(HttpServletRequest request, HttpServletResponse response) throws SQLException, ServletException, IOException {
+        Integer id = Integer.parseInt(request.getParameter("id"));
+        customerService.deleteCustomer(id);
+
+        List<Customer> customerList = customerService.selectAllCustomer();
+        request.setAttribute("customerList", customerList);
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("view/customer/list.jsp");
+        requestDispatcher.forward(request, response);
+    }
+
+    private void showEditForm(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException {
+        List<CustomerType> customerTypes = customerTypeRepository.selectAllCustomerType();
+        request.setAttribute("customerTypes", customerTypes);
+        //select all type
+        Integer id = Integer.parseInt(request.getParameter("id"));
+        Customer customer = customerService.selectCustomer(id);
+        request.setAttribute("customer", customer);
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("view/customer/edit.jsp");
+        requestDispatcher.forward(request, response);
     }
 
     private void showNewForm(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<CustomerType> customerTypes = customerTypeRepository.selectAllCustomerType();
         //select all type nek
-        request.setAttribute("customerTypes",customerTypes);
+        request.setAttribute("customerTypes", customerTypes);
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("view/customer/create.jsp");
         requestDispatcher.forward(request, response);
     }

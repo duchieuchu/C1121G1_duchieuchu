@@ -66,6 +66,11 @@
                 <td>
                     <input type="text" name="gender" size="45"
                            value="<c:out value='${customer.gender}' />"/>
+                    <select name="gender">
+                        <option value="0">Nam</option>
+                        <option value="1">Nứ</option>
+
+                    </select>
                 </td>
             </tr>
             <tr>

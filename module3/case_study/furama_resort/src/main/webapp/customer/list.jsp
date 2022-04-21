@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <style>
         body {
             background-image: url("https://www.color-hex.com/palettes/8887.png");
@@ -71,7 +72,8 @@
                 <td><c:out value="${customers.address}"/></td>
                 <td>
                     <a class="btn btn-warning" href="/customer?action=edit&id=${customers.id}">Edit</a>
-                    <button onclick="setIdDelete('${customers.getId()}')" type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal">
+                    <button onclick="setIdDelete('${customers.getId()}')" type="button" class="btn btn-danger"
+                            data-toggle="modal" data-target="#deleteModal">
                         Delete
                     </button>
                 </td>
@@ -123,7 +125,7 @@
 </script>
 <script>
     function setIdDelete(id) {
-document.getElementById("id").value=id;
+        document.getElementById("id").value = id;
     }
 </script>
 </html>

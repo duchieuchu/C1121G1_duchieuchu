@@ -67,7 +67,7 @@
         </tr>
         <tr>
             <th></th>
-            <td><input type="submit" value="create"></td>
+            <td><input class="btn btn-primary" type="submit" value="create"></td>
         </tr>
 
     </table>
