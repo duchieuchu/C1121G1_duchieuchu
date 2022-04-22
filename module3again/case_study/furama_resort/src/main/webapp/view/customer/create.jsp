@@ -34,11 +34,11 @@
         </tr>
         <tr>
             <th>Name</th>
-            <td><input type="text" name="name" id="name" required></td>
+            <td><input type="text" name="name" id="name" placeholder="Enter Name" required></td>
         </tr>
         <tr>
             <th>Birthday</th>
-            <td><input type="date" name="birthday" id="birthday" required></td>
+            <td><input type="date" name="birthday" id="birthday"  placeholder="Enter Birthday" required></td>
         </tr>
         <tr>
             <th>Gender</th>
@@ -51,19 +51,19 @@
         </tr>
         <tr>
             <th>IdCard</th>
-            <td><input type="number" name="idCard" id="idCard" required></td>
+            <td><input type="number" name="idCard" id="idCard" placeholder="Enter IdCard" required></td>
         </tr>
         <tr>
             <th>Phone</th>
-            <td><input type="number" name="phone" id="phone" required></td>
+            <td><input type="number" name="phone" id="phone" placeholder="Enter Phone" required></td>
         </tr>
         <tr>
             <th>Email</th>
-            <td><input type="text" name="email" id="email" required></td>
+            <td><input type="text" name="email" id="email" placeholder="Enter Email" required></td>
         </tr>
         <tr>
             <th>Address</th>
-            <td><input type="text" name="address" id="address" required></td>
+            <td><input type="text" name="address" id="address" placeholder="Enter Address" required></td>
         </tr>
         <tr>
             <th></th>

@@ -34,7 +34,7 @@ public class CustomerController extends HttpServlet {
             {
                 switch (action) {
                     case "create":
-                        createUser(request, response);
+                        createCustomer(request, response);
                         break;
                     case "edit":
                         editUser(request, response);
@@ -69,7 +69,7 @@ public class CustomerController extends HttpServlet {
 
     }
 
-    private void createUser(HttpServletRequest request, HttpServletResponse response) throws SQLException, ServletException, IOException {
+    private void createCustomer(HttpServletRequest request, HttpServletResponse response) throws SQLException, ServletException, IOException {
         Integer id = null;
         CustomerType customerType = customerTypeRepository.selectCustomerType(Integer.parseInt(request.getParameter("customerType")));
         //select name by id nek
@@ -83,6 +83,9 @@ public class CustomerController extends HttpServlet {
         Customer customer = new Customer(id, customerType, name, birthday, gender, idCard, phone, email, address);
         this.customerService.insertCustomer(customer);
 
+        List<CustomerType> customerTypes = customerTypeRepository.selectAllCustomerType();
+        //select all type nek
+        request.setAttribute("customerTypes", customerTypes);
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("view/customer/create.jsp");
         requestDispatcher.forward(request, response);
     }

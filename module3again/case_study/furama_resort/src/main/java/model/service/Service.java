@@ -1,11 +1,11 @@
 package model.service;
 
 public class Service {
-    private Integer serviceId;
-    private String serviceName;
-    private Integer serviceArea;
-    private Double serviceCost;
-    private Integer serviceMaxPeople;
+    private Integer id;
+    private String name;
+    private Integer area;
+    private Double cost;
+    private Integer maxPeople;
     private RentalType rentalType;
     private ServiceType serviceType;
     private String standardRoom;
@@ -13,12 +13,12 @@ public class Service {
     private Double poolArea;
     private Integer numberOfFloors;
 
-    public Service(Integer serviceId, String serviceName, Integer serviceArea, Double serviceCost, Integer serviceMaxPeople, RentalType rentalType, ServiceType serviceType, String standardRoom, String descriptionOtherConvenience, Double poolArea, Integer numberOfFloors) {
-        this.serviceId = serviceId;
-        this.serviceName = serviceName;
-        this.serviceArea = serviceArea;
-        this.serviceCost = serviceCost;
-        this.serviceMaxPeople = serviceMaxPeople;
+    public Service(Integer id, String name, Integer area, Double cost, Integer maxPeople, RentalType rentalType, ServiceType serviceType, String standardRoom, String descriptionOtherConvenience, Double poolArea, Integer numberOfFloors) {
+        this.id = id;
+        this.name = name;
+        this.area = area;
+        this.cost = cost;
+        this.maxPeople = maxPeople;
         this.rentalType = rentalType;
         this.serviceType = serviceType;
         this.standardRoom = standardRoom;
@@ -27,44 +27,44 @@ public class Service {
         this.numberOfFloors = numberOfFloors;
     }
 
-    public Integer getServiceId() {
-        return serviceId;
+    public Integer getId() {
+        return id;
     }
 
-    public void setServiceId(Integer serviceId) {
-        this.serviceId = serviceId;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
-    public String getServiceName() {
-        return serviceName;
+    public String getName() {
+        return name;
     }
 
-    public void setServiceName(String serviceName) {
-        this.serviceName = serviceName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public Integer getServiceArea() {
-        return serviceArea;
+    public Integer getArea() {
+        return area;
     }
 
-    public void setServiceArea(Integer serviceArea) {
-        this.serviceArea = serviceArea;
+    public void setArea(Integer area) {
+        this.area = area;
     }
 
-    public Double getServiceCost() {
-        return serviceCost;
+    public Double getCost() {
+        return cost;
     }
 
-    public void setServiceCost(Double serviceCost) {
-        this.serviceCost = serviceCost;
+    public void setCost(Double cost) {
+        this.cost = cost;
     }
 
-    public Integer getServiceMaxPeople() {
-        return serviceMaxPeople;
+    public Integer getMaxPeople() {
+        return maxPeople;
     }
 
-    public void setServiceMaxPeople(Integer serviceMaxPeople) {
-        this.serviceMaxPeople = serviceMaxPeople;
+    public void setMaxPeople(Integer maxPeople) {
+        this.maxPeople = maxPeople;
     }
 
     public RentalType getRentalType() {
