@@ -49,6 +49,8 @@ public class RentalTypeRepositoryImpl implements RentalTypeRepository {
             }
         } catch (SQLException e) {
             e.printStackTrace();
+        }finally {
+            baseRepository.close();
         }
         return rentalType;
     }

@@ -1,11 +1,11 @@
-package repository.employee;
+package service.employee;
 
 import model.employee.Employee;
 
 import java.sql.SQLException;
 import java.util.List;
 
-public interface EmployeeRepository {
+public interface EmployeeService {
     void insertEmployee(Employee employee) throws SQLException;
 
     Employee selectEmployee(Integer id);

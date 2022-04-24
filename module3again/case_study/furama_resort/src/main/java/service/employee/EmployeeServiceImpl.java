@@ -1,46 +1,46 @@
-package repository.employee.impl;
+package service.employee;
 
 import model.employee.Employee;
-import repository.BaseRepository;
 import repository.employee.EmployeeRepository;
+import repository.employee.impl.EmployeeRepositoryImpl;
 
 import java.sql.SQLException;
 import java.util.List;
 
-public class EmployeeRepositoryImpl implements EmployeeRepository {
-    private final BaseRepository baseRepository = new BaseRepository();
+public class EmployeeServiceImpl implements EmployeeService {
+    private final EmployeeRepository employeeRepository = new EmployeeRepositoryImpl();
     @Override
     public void insertEmployee(Employee employee) throws SQLException {
-
+        this.employeeRepository.insertEmployee(employee);
     }
 
     @Override
     public Employee selectEmployee(Integer id) {
-        return null;
+        return this.employeeRepository.selectEmployee(id);
     }
 
     @Override
     public List<Employee> selectAllEmployee() {
-        return null;
+        return this.employeeRepository.selectAllEmployee();
     }
 
     @Override
     public void deleteEmployee(Integer id) throws SQLException {
-
+        this.employeeRepository.deleteEmployee(id);
     }
 
     @Override
     public void update(Employee employee) throws SQLException {
-
+        this.employeeRepository.update(employee);
     }
 
     @Override
     public List<Employee> finByName(String name) {
-        return null;
+        return this.employeeRepository.finByName(name);
     }
 
     @Override
     public List<Employee> sortByName() {
-        return null;
+        return this.employeeRepository.sortByName();
     }
 }
