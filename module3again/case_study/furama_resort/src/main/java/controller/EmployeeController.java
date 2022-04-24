@@ -1,5 +1,6 @@
 package controller;
 
+import model.customer.CustomerType;
 import model.employee.Division;
 import model.employee.EducationDegree;
 import model.employee.Employee;
@@ -44,9 +45,9 @@ public class EmployeeController extends HttpServlet {
                     case "create":
                         createEmployee(request, response);
                         break;
-//                    case "edit":
+                    case "edit":
 //                        editEmployee(request, response);
-//                        break;
+                        break;
 //                    case "delete":
 //                        deleteEmployee(request, response);
 //                        break;
@@ -67,17 +68,16 @@ public class EmployeeController extends HttpServlet {
         String email = request.getParameter("email");
         String address = request.getParameter("address");
         Position position = positionRepository.selectPosition(Integer.parseInt(request.getParameter("position")));
-        EducationDegree educationDegree = educationDegreeRepository.selectEducationDegree(Integer.parseInt(getInitParameter("educationDegree")));
+        EducationDegree educationDegree = educationDegreeRepository.selectEducationDegree(Integer.parseInt(request.getParameter("educationDegree")));
         Division division = divisionRepository.selectDivision(Integer.parseInt(request.getParameter("division")));
         Employee employee = new Employee(id, name, birthday, idCard, salary, phone, email, address, position, educationDegree, division);
         employeeService.insertEmployee(employee);
-
         List<Position> positions = positionRepository.selectAllPosition();
         List<EducationDegree> educationDegrees = educationDegreeRepository.selectAllEducationDegree();
         List<Division> divisions = divisionRepository.selectAllDivision();
-        request.setAttribute("positions",positions);
-        request.setAttribute("educationDegrees",educationDegrees);
-        request.setAttribute("divisions",divisions);
+        request.setAttribute("positions", positions);
+        request.setAttribute("educationDegrees", educationDegrees);
+        request.setAttribute("divisions", divisions);
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("view/employee/create.jsp");
         requestDispatcher.forward(request, response);
     }
@@ -114,9 +114,9 @@ public class EmployeeController extends HttpServlet {
         List<Position> positions = positionRepository.selectAllPosition();
         List<EducationDegree> educationDegrees = educationDegreeRepository.selectAllEducationDegree();
         List<Division> divisions = divisionRepository.selectAllDivision();
-        request.setAttribute("positions",positions);
-        request.setAttribute("educationDegrees",educationDegrees);
-        request.setAttribute("divisions",divisions);
+        request.setAttribute("positions", positions);
+        request.setAttribute("educationDegrees", educationDegrees);
+        request.setAttribute("divisions", divisions);
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("view/employee/create.jsp");
         requestDispatcher.forward(request, response);
     }

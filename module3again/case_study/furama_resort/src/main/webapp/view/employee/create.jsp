@@ -52,7 +52,7 @@
         <tr>
             <th>Position</th>
             <td>
-                <select name="positions">
+                <select name="position">
                     <c:forEach items="${positions}" var="position">
                         <option value="${position.positionId}"><c:out value="${position.positionName}"></c:out></option>
                     </c:forEach>
@@ -62,7 +62,7 @@
         <tr>
             <th>EducationDegree</th>
             <td>
-                <select name="educationDegrees">
+                <select name="educationDegree">
                     <c:forEach items="${educationDegrees}" var="educationDegree">
                         <option value="${educationDegree.educationDegreeId}"><c:out value="${educationDegree.educationDegreeName}"></c:out></option>
                     </c:forEach>
@@ -72,7 +72,7 @@
         <tr>
             <th>Division</th>
             <td>
-                <select name="divisions">
+                <select name="division">
                     <c:forEach items="${divisions}" var="division">
                         <option value="${division.divisionId}"><c:out value="${division.divisionName}"></c:out></option>
                     </c:forEach>
