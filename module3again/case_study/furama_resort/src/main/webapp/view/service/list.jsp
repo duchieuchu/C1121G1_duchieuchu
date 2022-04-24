@@ -56,19 +56,19 @@
 </p>
 <table class="table table-hover table-dark">
     <tr>
-        <th>Id</th>
-        <th>Name</th>
-        <th>Area</th>
-        <th>Cost</th>
-        <th>MaxPeople</th>
-        <th>RentalType</th>
-        <th>ServiceType</th>
-        <th>StandardRoom</th>
-        <th>DescriptionOtherConvenience</th>
-        <th>PoolArea</th>
-        <th>NumberOfFloors</th>
-<%--        <th>Delete</th>--%>
-<%--        <th>Edit</th>--%>
+        <th class="col-1">Id</th>
+        <th class="col-2">Name</th>
+        <th class="col-1">Area</th>
+        <th class="col-1">Cost</th>
+<%--        <th>MaxPeople</th>--%>
+<%--        <th>RentalType</th>--%>
+        <th class="col-1">ServiceType</th>
+        <th class="col-1">StandardRoom</th>
+<%--        <th>DescriptionOtherConvenience</th>--%>
+        <th class="col-1">PoolArea</th>
+        <th class="col-2">NumberOfFloors</th>
+        <th class="col-1">Delete</th>
+        <th class="col-1">Edit</th>
     </tr>
     <c:forEach items="${serviceList}" var="service">
         <tr>
@@ -76,15 +76,15 @@
             <td><a href="/services?action=view&id=${service.id}">${service.name}</a></td>
             <td>${service.area}</td>
             <td>${service.cost}</td>
-            <td>${service.maxPeople}</td>
-            <td>${service.rentalType.rentalTypeName}</td>
+<%--            <td>${service.maxPeople}</td>--%>
+<%--            <td>${service.rentalType.rentalTypeName}</td>--%>
             <td>${service.serviceType.serviceTypeName}</td>
             <td>${service.standardRoom}</td>
-            <td>${service.descriptionOtherConvenience}</td>
+<%--            <td>${service.descriptionOtherConvenience}</td>--%>
             <td>${service.poolArea}</td>
             <td>${service.numberOfFloors}</td>
-<%--            <td><a href="#">delete</a></td>--%>
-<%--            <td><a href="#">edit</a></td>--%>
+            <td><a href="#">delete</a></td>
+            <td><a href="#">edit</a></td>
         </tr>
     </c:forEach>
 </table>

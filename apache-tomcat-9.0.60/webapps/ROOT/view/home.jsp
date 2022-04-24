@@ -44,6 +44,7 @@
         .tm-bg-gray {
             background-color: #EEEEEE;
         }
+
         /* Videos */
         #tm-video-container {
             max-height: 400px;
@@ -59,15 +60,13 @@
             height: auto;
         }
 
-        #tm-video-control-button {
-            position: absolute;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
-            color: #e1e1e1;
+        .p1 {
+            font-size:27px;
+            text-align: center;
+            font-weight: bold;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            font-style: italic;
         }
-
-
     </style>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
@@ -114,6 +113,7 @@
         <source src="video/hero.mp4" type="video/mp4">
     </video>
 </div>
+<p class="p1">KHU NGHỈ DƯỠNG ĐẲNG CẤP THẾ GIỚI, FURAMA ĐÀ NẴNG, NỔI TIẾNG LÀ KHU NGHỈ DƯỠNG ẨM THỰC TẠI VIỆT NAM.</p>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="keyboard">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -153,6 +153,8 @@
     </button>
 </div>
 <img class="img2" src="https://i.pinimg.com/originals/0a/f3/bc/0af3bca9a346a90010887620a8d9a153.jpg">
+<p class="p1">CHỌN ĐỊA ĐIỂM CHƠI</p>
+
 <div class="row" style="width: 100%">
     <div class="col-md-3 col-sm-6 col-12">
         <div class="card">
@@ -191,6 +193,9 @@
         </div>
     </div>
 </div>
+<img class="img2" src="https://i.pinimg.com/originals/0a/f3/bc/0af3bca9a346a90010887620a8d9a153.jpg">
+<p class="p1">SÂN CHƠI TRÊN BIỂN ĐỘC ĐÁO, SANG CHẢNH</p>
+<img class="img1" src="https://data2.1freewallpapers.com/download/yacht-concept-luxury.jpg">
 <img class="img1" src="https://wallpaperaccess.com/full/220637.jpg">
 <footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
     <div class="container-fluid tm-container-small">
