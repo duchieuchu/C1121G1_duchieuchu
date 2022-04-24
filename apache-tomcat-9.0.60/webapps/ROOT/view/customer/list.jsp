@@ -32,10 +32,10 @@
                 <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/customers?action=customerList">Employee</a>
+                <a class="nav-link" href="/employees">Employee</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Customer</a>
+                <a class="nav-link" href="/customers">Customer</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/services">Service</a>

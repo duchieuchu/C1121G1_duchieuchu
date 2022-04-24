@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Admin
@@ -53,7 +54,39 @@
 <p>
     <a href="/employees?action=create">Create new employee</a>
 </p>
+<table class="table table-hover table-dark">
+    <tr>
+        <th class="col-1">Id</th>
+        <th class="col-1">Name</th>
+        <th class="col-1">Birthday</th>
+        <th class="col-1">IdCard</th>
+        <th class="col-1">Salary</th>
+        <th class="col-1">Phone</th>
+        <th class="col-1">Email</th>
+        <th class="col-2">Address</th>
+        <th class="col-1">Position</th>
+        <th class="col-1">EducationDegree</th>
+        <th class="col-1">Division</th>
+<%--        <th>Delete</th>--%>
+<%--        <th>Edit</th>--%>
+    </tr>
+    <c:forEach items="${employeeList}" var="employee">
+        <tr>
+            <td>${employee.id}</td>
+            <td>${employee.name}</td>
+            <td>${employee.birthday}</td>
+            <td>${employee.idCard}</td>
+            <td>${employee.salary}</td>
+            <td>${employee.phone}</td>
+            <td>${employee.email}</td>
+            <td>${employee.address}</td>
+            <td>${employee.position.positionName}</td>
+            <td>${employee.educationDegree.educationDegreeName}</td>
+            <td>${employee.division.divisionName}</td>
+        </tr>
+    </c:forEach>
 
+</table>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
