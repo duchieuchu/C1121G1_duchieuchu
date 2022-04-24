@@ -28,7 +28,21 @@ public class EmployeeRepositoryImpl implements EmployeeRepository {
 
     @Override
     public void insertEmployee(Employee employee) throws SQLException {
-
+        try (Connection connection = this.baseRepository.getConnection(); PreparedStatement preparedStatement = connection.prepareStatement(INSERT_EMPLOYEE_SQL)) {
+            preparedStatement.setString(1, employee.getName());
+            preparedStatement.setString(2, employee.getBirthday());
+            preparedStatement.setString(3, employee.getIdCard());
+            preparedStatement.setDouble(4, employee.getSalary());
+            preparedStatement.setString(5, employee.getPhone());
+            preparedStatement.setString(6, employee.getEmail());
+            preparedStatement.setString(7, employee.getAddress());
+            preparedStatement.setInt(8, employee.getPosition().getPositionId());
+            preparedStatement.setInt(9, employee.getEducationDegree().getEducationDegreeId());
+            preparedStatement.setInt(10, employee.getDivision().getDivisionId());
+            preparedStatement.executeUpdate();
+        }finally {
+            baseRepository.close();
+        }
     }
 
     @Override
@@ -53,11 +67,11 @@ public class EmployeeRepositoryImpl implements EmployeeRepository {
                 Position position = positionRepository.selectPosition(resultSet.getInt("position_id"));
                 EducationDegree educationDegree = educationDegreeRepository.selectEducationDegree(resultSet.getInt("education_degree_id"));
                 Division division = divisionRepository.selectDivision(resultSet.getInt("division_id"));
-                employees.add(new Employee(id,name, birthday,idCard,salary,phone,email,address,position,educationDegree,division));
+                employees.add(new Employee(id, name, birthday, idCard, salary, phone, email, address, position, educationDegree, division));
             }
         } catch (SQLException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             baseRepository.close();
         }
         return employees;
