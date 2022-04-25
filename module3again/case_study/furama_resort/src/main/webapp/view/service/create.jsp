@@ -22,12 +22,18 @@
 <form method="post">
     <table class="table table-hover table-dark">
         <tr>
+            <th>ServiceCode</th>
+            <td><input type="text" name="serviceCode" id="serviceCode"  placeholder="Enter ServiceCode"></td>
+            <p style="color:red;">${error.get("serviceCode")}</p>
+        </tr>
+        <tr>
             <th>Name</th>
             <td><input type="text" name="name" id="name"  placeholder="Enter Name"></td>
         </tr>
         <tr>
             <th>Area</th>
             <td><input type="number" name="area" id="area"  placeholder="Enter Area"></td>
+            <p style="color:red;">${error.get("area")}</p>
         </tr>
         <tr>
             <th>Cost</th>
@@ -36,6 +42,7 @@
         <tr>
             <th>MaxPeople</th>
             <td><input type="number" name="maxPeople" id="maxPeople"  placeholder="Enter MaxPeople"></td>
+            <p style="color:red;">${error.get("maxPeople")}</p>
         </tr>
         <tr>
             <th>RentalType</th>
@@ -70,10 +77,12 @@
         <tr>
             <th>PoolArea</th>
             <td><input type="number" name="poolArea" id="poolArea" placeholder="Enter PoolArea"></td>
+            <p style="color:red;">${error.get("poolArea")}</p>
         </tr>
         <tr>
             <th>NumberOfFloors</th>
             <td><input type="number" name="numberOfFloors" id="numberOfFloors" placeholder="Enter NumberOfFloors"></td>
+            <p style="color:red;">${error.get("numberOfFloors")}</p>
         </tr>
         <tr>
             <th></th>

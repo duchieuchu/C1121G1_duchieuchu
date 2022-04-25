@@ -57,7 +57,8 @@
 <table class="table table-hover table-dark">
     <tr>
         <th class="col-1">Id</th>
-        <th class="col-2">Name</th>
+        <th class="col-1">ServiceCode</th>
+        <th class="col-1">Name</th>
         <th class="col-1">Area</th>
         <th class="col-1">Cost</th>
 <%--        <th>MaxPeople</th>--%>
@@ -73,6 +74,7 @@
     <c:forEach items="${serviceList}" var="service">
         <tr>
             <td>${service.id}</td>
+            <td>${service.serviceCode}</td>
             <td><a href="/services?action=view&id=${service.id}">${service.name}</a></td>
             <td>${service.area}</td>
             <td>${service.cost}</td>

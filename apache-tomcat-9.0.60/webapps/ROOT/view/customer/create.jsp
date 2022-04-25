@@ -22,6 +22,11 @@
 <form method="post">
     <table class="table table-hover table-dark">
         <tr>
+            <th>CustomerCode</th>
+            <td><input type="text" name="customerCode" id="customerCode" placeholder="Enter CustomerCode" required ></td>
+            <p style="color:red;">${error.get("customerCode")}</p>
+        </tr>
+        <tr>
             <th>CustomerType</th>
             <td>
                 <select name="customerType">
@@ -52,14 +57,17 @@
         <tr>
             <th>IdCard</th>
             <td><input type="number" name="idCard" id="idCard" placeholder="Enter IdCard" required></td>
+            <p style="color:red;">${error.get("idCard")}</p>
         </tr>
         <tr>
             <th>Phone</th>
             <td><input type="number" name="phone" id="phone" placeholder="Enter Phone" required></td>
+            <p style="color:red;">${error.get("phone")}</p>
         </tr>
         <tr>
             <th>Email</th>
             <td><input type="text" name="email" id="email" placeholder="Enter Email" required></td>
+            <p style="color:red;">${error.get("email")}</p>
         </tr>
         <tr>
             <th>Address</th>

@@ -5,9 +5,12 @@ import model.service.Service;
 
 import java.sql.SQLException;
 import java.util.List;
+import java.util.Map;
 
 public interface ServiceService {
-    void insertService(Service service) throws SQLException;
+    Map<String, String> insertService(Service service) throws SQLException;
+
+//    void insertService(Service service) throws SQLException;
 
     Service selectService(Integer id);
 
@@ -15,7 +18,8 @@ public interface ServiceService {
 
     void deleteService(Integer id) throws SQLException;
 
-    void update(Service service) throws SQLException;
+    Map<String, String> update(Service service) throws SQLException;
+//    void update(Service service) throws SQLException;
 
     List<Service> finByName(String name);
 

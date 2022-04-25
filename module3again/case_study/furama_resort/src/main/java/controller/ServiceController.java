@@ -7,6 +7,8 @@ import repository.service.*;
 import repository.service.impl.RentalTypeRepositoryImpl;
 import repository.service.impl.ServiceRepositoryImpl;
 import repository.service.impl.ServiceTypeRepositoryImpl;
+import service.service.ServiceService;
+import service.service.ServiceServiceImpl;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -17,11 +19,12 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
+import java.util.Map;
 
 @WebServlet(name = "ServiceControllerServlet", value = "/services")
 public class ServiceController extends HttpServlet {
     private final ServiceTypeRepository serviceTypeRepository = new ServiceTypeRepositoryImpl();
-    private final ServiceRepository serviceRepository = new ServiceRepositoryImpl();
+    private final ServiceService serviceService = new ServiceServiceImpl();
     private final RentalTypeRepository rentalTypeRepository = new RentalTypeRepositoryImpl();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -53,6 +56,7 @@ public class ServiceController extends HttpServlet {
 
     private void createService(HttpServletRequest request, HttpServletResponse response) throws SQLException, ServletException, IOException {
         Integer id = null;
+        String serviceCode = request.getParameter("serviceCode");
         String name = request.getParameter("name");
         Integer area = Integer.parseInt(request.getParameter("area"));
         Double cost = Double.parseDouble(request.getParameter("cost"));
@@ -63,16 +67,34 @@ public class ServiceController extends HttpServlet {
         String descriptionOtherConvenience = request.getParameter("descriptionOtherConvenience");
         Double poolArea = Double.parseDouble(request.getParameter("poolArea"));
         Integer numberOfFloors = Integer.parseInt(request.getParameter("numberOfFloors"));
-        Service service = new Service(id, name, area, cost, maxPeople, rentalType, serviceType, standardRoom, descriptionOtherConvenience, poolArea, numberOfFloors);
-        this.serviceRepository.insertService(service);
+        Service service = new Service(id, serviceCode, name, area, cost, maxPeople, rentalType, serviceType, standardRoom, descriptionOtherConvenience, poolArea, numberOfFloors);
+//        this.serviceService.insertService(service);
+        Map<String, String> map = serviceService.insertService(service);
+        if (map.isEmpty()) {
+            List<RentalType> rentalTypes = rentalTypeRepository.selectAllRentalType();
+            List<ServiceType> serviceTypes = serviceTypeRepository.selectAllServiceType();
+            //all nek
+            request.setAttribute("rentalTypes", rentalTypes);
+            request.setAttribute("serviceTypes", serviceTypes);
+            RequestDispatcher requestDispatcher = request.getRequestDispatcher("view/service/create.jsp");
+            requestDispatcher.forward(request, response);
+        } else {
+            List<RentalType> rentalTypes = rentalTypeRepository.selectAllRentalType();
+            List<ServiceType> serviceTypes = serviceTypeRepository.selectAllServiceType();
+            //all nek
+            request.setAttribute("rentalTypes", rentalTypes);
+            request.setAttribute("serviceTypes", serviceTypes);
+            request.setAttribute("error", map);
+            request.getRequestDispatcher("view/service/create.jsp").forward(request, response);
+        }
 
-        List<RentalType> rentalTypes = rentalTypeRepository.selectAllRentalType();
-        List<ServiceType> serviceTypes = serviceTypeRepository.selectAllServiceType();
-        //all nek
-        request.setAttribute("rentalTypes", rentalTypes);
-        request.setAttribute("serviceTypes", serviceTypes);
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("view/service/create.jsp");
-        requestDispatcher.forward(request, response);
+//        List<RentalType> rentalTypes = rentalTypeRepository.selectAllRentalType();
+//        List<ServiceType> serviceTypes = serviceTypeRepository.selectAllServiceType();
+//        //all nek
+//        request.setAttribute("rentalTypes", rentalTypes);
+//        request.setAttribute("serviceTypes", serviceTypes);
+//        RequestDispatcher requestDispatcher = request.getRequestDispatcher("view/service/create.jsp");
+//        requestDispatcher.forward(request, response);
 
     }
 
@@ -116,7 +138,7 @@ public class ServiceController extends HttpServlet {
 
     private void viewService(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Integer id = Integer.parseInt(request.getParameter("id"));
-        Service service = serviceRepository.selectService(id);
+        Service service = serviceService.selectService(id);
         request.setAttribute("service", service);
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("view/service/view.jsp");
         requestDispatcher.forward(request, response);
@@ -124,7 +146,7 @@ public class ServiceController extends HttpServlet {
     }
 
     private void listService(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        List<Service> serviceList = serviceRepository.selectAllService();
+        List<Service> serviceList = serviceService.selectAllService();
         request.setAttribute("serviceList", serviceList);
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("view/service/list.jsp");
         requestDispatcher.forward(request, response);

@@ -25,6 +25,13 @@
             <input type="hidden" name="id" value="<c:out value='${customer.id}' />"/>
         </c:if>
         <tr>
+            <th>CustomerCode:</th>
+            <td>
+                <input type="text" name="customerCode"
+                       value="${customer.customerCode}"/>
+            </td>
+        </tr>
+        <tr>
             <th>CustomerType:</th>
             <td>
                 <select name="customerType">

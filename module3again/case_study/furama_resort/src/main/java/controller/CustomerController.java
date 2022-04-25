@@ -16,6 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
+import java.util.Map;
 
 @WebServlet(name = "CustomerServlet", value = "/customers")
 public class CustomerController extends HttpServlet {
@@ -51,6 +52,7 @@ public class CustomerController extends HttpServlet {
 
     private void editUser(HttpServletRequest request, HttpServletResponse response) throws SQLException, ServletException, IOException {
         Integer id = Integer.parseInt(request.getParameter("id"));
+        String customerCode = request.getParameter("customerCode");
         CustomerType customerType = customerTypeRepository.selectCustomerType(Integer.parseInt(request.getParameter("customerType")));
         //select name by id
         String name = request.getParameter("name");
@@ -60,7 +62,7 @@ public class CustomerController extends HttpServlet {
         String phone = request.getParameter("phone");
         String email = request.getParameter("email");
         String address = request.getParameter("address");
-        Customer customer = new Customer(id, customerType, name, birthday, gender, idCard, phone, email, address);
+        Customer customer = new Customer(id, customerCode, customerType, name, birthday, gender, idCard, phone, email, address);
         customerService.update(customer);
         List<Customer> customerList = customerService.selectAllCustomer();
         request.setAttribute("customerList", customerList);
@@ -71,6 +73,7 @@ public class CustomerController extends HttpServlet {
 
     private void createCustomer(HttpServletRequest request, HttpServletResponse response) throws SQLException, ServletException, IOException {
         Integer id = null;
+        String customerCode = request.getParameter("customerCode");
         CustomerType customerType = customerTypeRepository.selectCustomerType(Integer.parseInt(request.getParameter("customerType")));
         //select name by id nek
         String name = request.getParameter("name");
@@ -80,14 +83,28 @@ public class CustomerController extends HttpServlet {
         String phone = request.getParameter("phone");
         String email = request.getParameter("email");
         String address = request.getParameter("address");
-        Customer customer = new Customer(id, customerType, name, birthday, gender, idCard, phone, email, address);
-        this.customerService.insertCustomer(customer);
-
-        List<CustomerType> customerTypes = customerTypeRepository.selectAllCustomerType();
-        //select all type nek
-        request.setAttribute("customerTypes", customerTypes);
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("view/customer/create.jsp");
-        requestDispatcher.forward(request, response);
+        Customer customer = new Customer(id, customerCode, customerType, name, birthday, gender, idCard, phone, email, address);
+//        this.customerService.insertCustomer(customer);
+        Map<String, String> map = customerService.insertCustomer(customer);
+        if (map.isEmpty()) {
+            List<CustomerType> customerTypes = customerTypeRepository.selectAllCustomerType();
+            //select all type nek
+            request.setAttribute("customerTypes", customerTypes);
+            RequestDispatcher requestDispatcher = request.getRequestDispatcher("view/customer/create.jsp");
+            requestDispatcher.forward(request, response);
+        } else {
+            List<CustomerType> customerTypes = customerTypeRepository.selectAllCustomerType();
+            //select all type nek
+            request.setAttribute("customerTypes", customerTypes);
+            request.setAttribute("error", map);
+            request.getRequestDispatcher("view/customer/create.jsp").forward(request, response);
+        }
+//
+//        List<CustomerType> customerTypes = customerTypeRepository.selectAllCustomerType();
+//        //select all type nek
+//        request.setAttribute("customerTypes", customerTypes);
+//        RequestDispatcher requestDispatcher = request.getRequestDispatcher("view/customer/create.jsp");
+//        requestDispatcher.forward(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

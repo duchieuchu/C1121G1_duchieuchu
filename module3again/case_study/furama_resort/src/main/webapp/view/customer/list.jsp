@@ -63,8 +63,9 @@
     <thead>
     <tr>
         <th class="col-1">Id</th>
+        <th class="col-1">CustomerCode</th>
         <th class="col-1">CustomerType</th>
-        <th class="col-2">Name</th>
+        <th class="col-1">Name</th>
         <th class="col-1">Birthday</th>
         <th class="col-1">Gender</th>
 <%--        <th class="col-1">IdCard</th>--%>
@@ -79,6 +80,7 @@
     <c:forEach items="${customerList}" var="customer">
         <tr>
             <td>${customer.id}</td>
+            <td>${customer.customerCode}</td>
             <td>${customer.customerType.customerTypeName}</td>
             <td><a href="/customers?action=view&id=${customer.id}">${customer.name}</a></td>
             <td>${customer.birthday}</td>
