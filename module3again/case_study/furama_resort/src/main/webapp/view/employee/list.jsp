@@ -54,22 +54,26 @@
 <p>
     <a href="/employees?action=create">Create new employee</a>
 </p>
-<table class="table table-hover table-dark">
+<table id="tableEmployee" class="table table-hover table-dark">
+    <thead>
     <tr>
         <th class="col-1">Id</th>
         <th class="col-1">Name</th>
         <th class="col-1">Birthday</th>
         <th class="col-1">IdCard</th>
         <th class="col-1">Salary</th>
-        <th class="col-1">Phone</th>
-        <th class="col-1">Email</th>
-        <th class="col-2">Address</th>
+        <th class="col-2">Phone</th>
+        <%--        <th class="col-1">Email</th>--%>
+        <%--        <th class="col-2">Address</th>--%>
         <th class="col-1">Position</th>
         <th class="col-1">EducationDegree</th>
         <th class="col-1">Division</th>
-<%--        <th>Delete</th>--%>
-<%--        <th>Edit</th>--%>
+        <th class="col-1">Edit</th>
+        <th class="col-1">Delete</th>
+
     </tr>
+    </thead>
+    <tbody>
     <c:forEach items="${employeeList}" var="employee">
         <tr>
             <td>${employee.id}</td>
@@ -78,17 +82,47 @@
             <td>${employee.idCard}</td>
             <td>${employee.salary}</td>
             <td>${employee.phone}</td>
-            <td>${employee.email}</td>
-            <td>${employee.address}</td>
+                <%--            <td>${employee.email}</td>--%>
+                <%--            <td>${employee.address}</td>--%>
             <td>${employee.position.positionName}</td>
             <td>${employee.educationDegree.educationDegreeName}</td>
             <td>${employee.division.divisionName}</td>
-<%--            <td><a href="#">delete</a></td>--%>
-<%--            <td><a href="#">edit</a></td>--%>
+            <td><a class="btn btn-warning" href=/employees?action=edit&id=${employee.id}>edit</a></td>
+                <%--            <td><a href="#">delete</a></td>--%>
+            <td>
+                <!-- Button trigger modal -->
+                <button onclick="setIdDelete('${employee.id}')" type="button" class="btn btn-danger"
+                        data-toggle="modal" data-target="#deleteModal">
+                    Delete
+                </button>
+            </td>
         </tr>
     </c:forEach>
-
+    </tbody>
 </table>
+<!-- Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">DELETE</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form method="post" action="/employees?action=delete">
+                <div class="modal-body">
+                    <input type="hidden" name="id" id="id">
+                    Are you sure ?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Delete</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -108,8 +142,8 @@
         crossorigin="anonymous"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap4.min.js"></script>
 <script>
-    $(document).ready(function(){
-        $('#tableCustomer').dataTable({
+    $(document).ready(function () {
+        $('#tableEmployee').dataTable({
             "dom": 'lrtip',
             "lengthChange": false,
             "pageLength": 5

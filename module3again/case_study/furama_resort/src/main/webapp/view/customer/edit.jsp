@@ -31,10 +31,12 @@
                     <c:forEach var="customerType" items="${customerTypes}">
                         <c:choose>
                             <c:when test="${customerType.customerTypeId==customer.customerType.customerTypeId}">
-                                <option value="${customerType.customerTypeId}" selected><c:out value="${customerType.customerTypeName}"></c:out></option>
+                                <option value="${customerType.customerTypeId}" selected><c:out
+                                        value="${customerType.customerTypeName}"></c:out></option>
                             </c:when>
                             <c:otherwise>
-                                <option value="${customerType.customerTypeId}" ><c:out value="${customerType.customerTypeName}"></c:out></option>
+                                <option value="${customerType.customerTypeId}"><c:out
+                                        value="${customerType.customerTypeName}"></c:out></option>
                             </c:otherwise>
                         </c:choose>
                     </c:forEach>
@@ -58,16 +60,18 @@
         <tr>
             <th>Gender:</th>
             <td>
-            <select name="gender">
-                <option value="${customer.gender}">
-                    <c:if test = "${customer.gender==0}">
-                    <p>Nam<p>
-                    </c:if>
-                        <c:if test = "${customer.gender==1}">
-                        <p>Nữ<p>
-                        </c:if>
-                </option>
-            </select>
+                <select name="gender">
+                    <option value="${customer.gender}">
+                        <c:if test="${customer.gender==0}">
+                        <p>Nam
+                        <p>
+                            </c:if>
+                            <c:if test="${customer.gender==1}">
+                        <p>Nữ
+                        <p>
+                            </c:if>
+                    </option>
+                </select>
             </td>
         </tr>
         <tr>
@@ -100,7 +104,7 @@
         </tr>
         <tr>
             <th></th>
-            <td><input class="btn btn-warning" type="submit" value="edit"></td>
+            <td><input class="btn btn-primary" type="submit" value="edit"></td>
         </tr>
     </table>
 </form>

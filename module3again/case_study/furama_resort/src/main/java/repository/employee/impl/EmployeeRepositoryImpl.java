@@ -25,6 +25,19 @@ public class EmployeeRepositoryImpl implements EmployeeRepository {
     private static final String SELECT_ALL_EMPLOYEE = "select * from employee";
     private static final String INSERT_EMPLOYEE_SQL = "insert into employee (employee_name," +
             "employee_birthday,employee_id_card,employee_salary,employee_phone,employee_email,employee_address,position_id,education_degree_id,division_id) values (?,?,?,?,?,?,?,?,?,?);";
+    private static final String UPDATE_EMPLOYEE_SQL = "update employee set " +
+            "employee_name =?" +
+            ",employee_birthday=?" +
+            ",employee_id_card=?" +
+            ",employee_salary=?" +
+            ",employee_phone=?" +
+            ",employee_email=?" +
+            ",employee_address=?" +
+            ",position_id=?" +
+            ",education_degree_id=?" +
+            ",division_id=? " +
+            "where employee_id=?;";
+    private static final String DELETE_EMPLOYEE_SQL = "delete from employee where employee_id=?;";
 
     @Override
     public void insertEmployee(Employee employee) throws SQLException {
@@ -40,14 +53,21 @@ public class EmployeeRepositoryImpl implements EmployeeRepository {
             preparedStatement.setInt(9, employee.getEducationDegree().getEducationDegreeId());
             preparedStatement.setInt(10, employee.getDivision().getDivisionId());
             preparedStatement.executeUpdate();
-        }finally {
+        } finally {
             baseRepository.close();
         }
     }
 
     @Override
     public Employee selectEmployee(Integer id) {
-        return null;
+        List<Employee> employeeList = selectAllEmployee();
+        Employee employee = null;
+        for (Employee employee1 : employeeList) {
+            if (employee1.getId() == id) {
+                employee = employee1;
+            }
+        }
+        return employee;
     }
 
     @Override
@@ -79,12 +99,32 @@ public class EmployeeRepositoryImpl implements EmployeeRepository {
 
     @Override
     public void deleteEmployee(Integer id) throws SQLException {
-
+        try (Connection connection = this.baseRepository.getConnection(); PreparedStatement preparedStatement = connection.prepareStatement(DELETE_EMPLOYEE_SQL)) {
+            preparedStatement.setInt(1, id);
+            preparedStatement.executeUpdate();
+        }finally {
+            baseRepository.close();
+        }
     }
 
     @Override
     public void update(Employee employee) throws SQLException {
-
+        try (Connection connection = this.baseRepository.getConnection(); PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_EMPLOYEE_SQL)) {
+            preparedStatement.setString(1, employee.getName());
+            preparedStatement.setString(2, employee.getBirthday());
+            preparedStatement.setString(3, employee.getIdCard());
+            preparedStatement.setDouble(4, employee.getSalary());
+            preparedStatement.setString(5, employee.getPhone());
+            preparedStatement.setString(6, employee.getEmail());
+            preparedStatement.setString(7, employee.getAddress());
+            preparedStatement.setInt(8, employee.getPosition().getPositionId());
+            preparedStatement.setInt(9, employee.getEducationDegree().getEducationDegreeId());
+            preparedStatement.setInt(10, employee.getDivision().getDivisionId());
+            preparedStatement.setInt(11, employee.getId());
+            preparedStatement.executeUpdate();
+        } finally {
+            baseRepository.close();
+        }
     }
 
     @Override
