@@ -23,6 +23,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
+import java.util.Map;
 
 @WebServlet(name = "EmployeeControllerServlet", value = "/employees")
 public class EmployeeController extends HttpServlet {
@@ -103,15 +104,35 @@ public class EmployeeController extends HttpServlet {
         EducationDegree educationDegree = educationDegreeRepository.selectEducationDegree(Integer.parseInt(request.getParameter("educationDegree")));
         Division division = divisionRepository.selectDivision(Integer.parseInt(request.getParameter("division")));
         Employee employee = new Employee(id, name, birthday, idCard, salary, phone, email, address, position, educationDegree, division);
-        employeeService.insertEmployee(employee);
-        List<Position> positions = positionRepository.selectAllPosition();
-        List<EducationDegree> educationDegrees = educationDegreeRepository.selectAllEducationDegree();
-        List<Division> divisions = divisionRepository.selectAllDivision();
-        request.setAttribute("positions", positions);
-        request.setAttribute("educationDegrees", educationDegrees);
-        request.setAttribute("divisions", divisions);
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("view/employee/create.jsp");
-        requestDispatcher.forward(request, response);
+//        this.employeeService.insertEmployee(employee);
+        Map<String,String>map =this.employeeService.insertEmployee(employee);
+        if (map.isEmpty()){
+            List<Position> positions = positionRepository.selectAllPosition();
+            List<EducationDegree> educationDegrees = educationDegreeRepository.selectAllEducationDegree();
+            List<Division> divisions = divisionRepository.selectAllDivision();
+            request.setAttribute("positions", positions);
+            request.setAttribute("educationDegrees", educationDegrees);
+            request.setAttribute("divisions", divisions);
+            RequestDispatcher requestDispatcher = request.getRequestDispatcher("view/employee/create.jsp");
+            requestDispatcher.forward(request, response);
+        }else {
+            List<Position> positions = positionRepository.selectAllPosition();
+            List<EducationDegree> educationDegrees = educationDegreeRepository.selectAllEducationDegree();
+            List<Division> divisions = divisionRepository.selectAllDivision();
+            request.setAttribute("positions", positions);
+            request.setAttribute("educationDegrees", educationDegrees);
+            request.setAttribute("divisions", divisions);
+            request.setAttribute("error",map);
+            request.getRequestDispatcher("view/employee/create.jsp").forward(request,response);
+        }
+//        List<Position> positions = positionRepository.selectAllPosition();
+//        List<EducationDegree> educationDegrees = educationDegreeRepository.selectAllEducationDegree();
+//        List<Division> divisions = divisionRepository.selectAllDivision();
+//        request.setAttribute("positions", positions);
+//        request.setAttribute("educationDegrees", educationDegrees);
+//        request.setAttribute("divisions", divisions);
+//        RequestDispatcher requestDispatcher = request.getRequestDispatcher("view/employee/create.jsp");
+//        requestDispatcher.forward(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

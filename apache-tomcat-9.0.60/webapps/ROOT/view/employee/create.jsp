@@ -32,6 +32,8 @@
         <tr>
             <th>IdCard</th>
             <td><input type="number" name="idCard" id="idCard"  placeholder="Enter IdCard" required></td>
+            <p style="color:red;">${error.get("idCard")}</p>
+
         </tr>
         <tr>
             <th>Salary</th>
@@ -40,10 +42,13 @@
         <tr>
             <th>Phone</th>
             <td><input type="number" name="phone" id="phone"   placeholder="Enter Phone" required></td>
+            <p style="color:red;">${error.get("phone")}</p>
         </tr>
         <tr>
             <th>Email</th>
             <td><input type="text" name="email" id="email"  placeholder="Enter Email" required></td>
+            <p style="color:red;">${error.get("email")}</p>
+
         </tr>
         <tr>
             <th>Address</th>

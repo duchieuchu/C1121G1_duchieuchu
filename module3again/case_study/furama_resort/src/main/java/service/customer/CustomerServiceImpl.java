@@ -38,7 +38,7 @@ public class CustomerServiceImpl implements CustomerService {
         }
         if (customer.getEmail().equals("")) {
             map.put("email", "email không được để trống");
-        } else if (!customer.getEmail().matches("^[a-zA-Z0-9_!#$%&'*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+.[a-z]{2,6}$")) {
+        } else if (!customer.getEmail().matches("^[\\w#][\\w\\.\\'+#](.[\\w\\\\'#]+)\\@[a-zA-Z0-9]+(.[a-zA-Z0-9]+)*(.[a-zA-Z]{2,20})$")) {
             map.put("email", "email không hợp lệ");
         }
 
