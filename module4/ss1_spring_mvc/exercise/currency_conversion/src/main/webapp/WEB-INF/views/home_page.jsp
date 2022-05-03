@@ -11,7 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-<form action="/sum" method="post">
+<form action="/subtraction" method="post">
     <div>
         Rate :
         <input type="number" name="number1" value="22000">

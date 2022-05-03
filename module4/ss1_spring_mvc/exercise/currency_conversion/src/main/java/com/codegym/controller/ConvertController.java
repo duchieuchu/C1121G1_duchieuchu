@@ -13,16 +13,16 @@ public class ConvertController {
     @Autowired
     private ConvertService sumService;
     //    private final SumService sumService = new SumServiceImpl();
-    @GetMapping(value = "/goHomePage")
+    @GetMapping(value = "/convert")
     public String goHomePage(){
         return "home_page";
     }
-    @PostMapping (value = "/sum")
+    @PostMapping (value = "/subtraction")
     public String sum2Num(@RequestParam (name = "number1") Integer a,
                           @RequestParam (name = "number2") Integer b,
                           Model model){
 //        Integer sum = a+b;
-        model.addAttribute("result",this.sumService.sum(a,b));
+        model.addAttribute("result",this.sumService.subtraction(a,b));
         return "result_final";
     }
 }

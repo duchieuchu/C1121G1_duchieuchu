@@ -1,5 +1,5 @@
 package com.codegym.service;
 
 public interface ConvertService {
-    Integer sum(Integer a,Integer b);
+    Integer subtraction (Integer a,Integer b);
 }
