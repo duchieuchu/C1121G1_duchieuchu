@@ -59,7 +59,7 @@
     <input type="text" name="name" placeholder="enter name">
     <input type="submit" value="search">
 </form>
-<table id="tableCustomer" class="table table-hover table-dark">
+    <table id="tableCustomer" class="table table-hover table-dark">
     <thead>
     <tr>
         <th class="col-1">Id</th>
