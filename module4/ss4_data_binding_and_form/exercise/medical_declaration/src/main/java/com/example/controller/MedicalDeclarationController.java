@@ -18,6 +18,7 @@ public class MedicalDeclarationController {
 
     @RequestMapping(value = "/addMedicalDeclaration", method = RequestMethod.POST)
     public String submit(@ModelAttribute("medicalDeclaration") MedicalDeclaration medicalDeclaration, ModelMap modelMap) {
+//        modelMap.addAttribute("medicalDeclaration", medicalDeclaration);
         modelMap.addAttribute("name", medicalDeclaration.getName());
         modelMap.addAttribute("dateOfBirth", medicalDeclaration.getDateOfBirth());
         modelMap.addAttribute("gender", medicalDeclaration.getGender());
@@ -47,4 +48,12 @@ public class MedicalDeclarationController {
         modelMap.addAttribute("hictory2", medicalDeclaration.getHictory2());
         return "medicalDeclaration/info";
     }
+
+//    @RequestMapping(value = "/editMedicalDeclaration", method = RequestMethod.POST)
+//    public String edit(@ModelAttribute("medicalDeclaration") MedicalDeclaration medicalDeclaration, ModelMap modelMap) {
+//        modelMap.addAttribute("medicalDeclaration", medicalDeclaration);
+////        modelMap.addAttribute("medicalDeclaration", new MedicalDeclaration());
+//
+//        return "medicalDeclaration/info";
+//    }
 }
