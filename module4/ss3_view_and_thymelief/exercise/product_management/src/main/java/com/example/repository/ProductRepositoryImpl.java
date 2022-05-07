@@ -9,43 +9,43 @@ import java.util.List;
 import java.util.Map;
 @Repository
 public class ProductRepositoryImpl implements ProductRepository {
-    private static Map<Integer, Product> productMap;
+    private static final Map<Integer, Product> products;
 
     static {
-        productMap = new HashMap<>();
-        productMap.put(1, new Product(1, "giay", 20.0, "red", "adidas"));
-        productMap.put(2, new Product(2, "giay1", 20.0, "red", "safa"));
-        productMap.put(3, new Product(3, "giay2", 20.0, "red", "asd"));
-        productMap.put(4, new Product(4, "giay3", 20.0, "red", "asdasd"));
-        productMap.put(5, new Product(5, "giay4", 20.0, "red", "sadvsda"));
-
+        products = new HashMap<>();
+        products.put(1, new Product(1, "giay",20.0, "red color", "vietnam"));
+        products.put(2, new Product(2, "kiem",20.0, "red color", "China"));
+        products.put(3, new Product(3, "ao",20.0, "red color", "China"));
+        products.put(4, new Product(4, "mu",20.0, "red color", "China"));
+        products.put(5, new Product(5, "quan",20.0, "red color", "China"));
+        products.put(6, new Product(6, "balo",20.0, "red color", "China"));
     }
 
 
     @Override
     public List<Product> findAll() {
-        return new ArrayList<>(productMap.values());
+        return new ArrayList<>(products.values());
     }
 
     @Override
     public void save(Product product) {
         int id = (int) (Math.random() * 100);
         product.setId(id);
-        productMap.put(product.getId(), product);
+        products.put(product.getId(), product);
     }
 
     @Override
     public Product findById(Integer id) {
-        return productMap.get(id);
+        return products.get(id);
     }
 
     @Override
     public void update(Integer id, Product product) {
-        productMap.put(id, product);
+        products.put(id, product);
     }
 
     @Override
     public void remove(Integer id) {
-        productMap.remove(id);
+        products.remove(id);
     }
 }
