@@ -2,7 +2,10 @@ package com.example.model;
 
 public class Product {
     private Integer id;
- c
+    private String name;
+    private Double price;
+    private String description;
+    private String brand;
 
     public Product(Integer id, String name, Double price, String description, String brand) {
         this.id = id;

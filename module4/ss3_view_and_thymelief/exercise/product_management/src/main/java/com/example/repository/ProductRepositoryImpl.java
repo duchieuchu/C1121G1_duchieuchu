@@ -14,10 +14,10 @@ public class ProductRepositoryImpl implements ProductRepository {
     static {
         productMap = new HashMap<>();
         productMap.put(1, new Product(1, "giay", 20.0, "red", "adidas"));
-        productMap.put(2, new Product(2, "giay1", 20.0, "red", "adidas"));
-        productMap.put(3, new Product(3, "giay2", 20.0, "red", "adidas"));
-        productMap.put(4, new Product(4, "giay3", 20.0, "red", "adidas"));
-        productMap.put(5, new Product(5, "giay4", 20.0, "red", "adidas"));
+        productMap.put(2, new Product(2, "giay1", 20.0, "red", "safa"));
+        productMap.put(3, new Product(3, "giay2", 20.0, "red", "asd"));
+        productMap.put(4, new Product(4, "giay3", 20.0, "red", "asdasd"));
+        productMap.put(5, new Product(5, "giay4", 20.0, "red", "sadvsda"));
 
     }
 
@@ -29,7 +29,7 @@ public class ProductRepositoryImpl implements ProductRepository {
 
     @Override
     public void save(Product product) {
-        int id = (int) (Math.random() * 1000);
+        int id = (int) (Math.random() * 100);
         product.setId(id);
         productMap.put(product.getId(), product);
     }
