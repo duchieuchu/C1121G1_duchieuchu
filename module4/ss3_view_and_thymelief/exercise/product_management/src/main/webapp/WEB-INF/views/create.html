@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-<h3>Add Customer</h3>
+<h3>Add product</h3>
 <p>
     <a th:href="@{/product}">
         Back to product list
@@ -30,7 +30,7 @@
         </div>
         <div>
             <label>Brand</label>
-            <input type="number" th:field="*{brand}"/>
+            <input type="text" th:field="*{brand}"/>
         </div>
         <input type="submit" value="Save"/>
     </form>
