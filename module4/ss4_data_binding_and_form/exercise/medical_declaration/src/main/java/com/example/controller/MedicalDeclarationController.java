@@ -18,34 +18,34 @@ public class MedicalDeclarationController {
 
     @RequestMapping(value = "/addMedicalDeclaration", method = RequestMethod.POST)
     public String submit(@ModelAttribute("medicalDeclaration") MedicalDeclaration medicalDeclaration, ModelMap modelMap) {
-//        modelMap.addAttribute("medicalDeclaration", medicalDeclaration);
-        modelMap.addAttribute("name", medicalDeclaration.getName());
-        modelMap.addAttribute("dateOfBirth", medicalDeclaration.getDateOfBirth());
-        modelMap.addAttribute("gender", medicalDeclaration.getGender());
-        modelMap.addAttribute("national", medicalDeclaration.getNational());
-        modelMap.addAttribute("idCard", medicalDeclaration.getIdCard());
-        modelMap.addAttribute("travelInfo", medicalDeclaration.getTravelInfo());
-        modelMap.addAttribute("numberPlate", medicalDeclaration.getNumberPlate());
-
-        modelMap.addAttribute("seatNumber", medicalDeclaration.getSeatNumber());
-        modelMap.addAttribute("startDay", medicalDeclaration.getStartDay());
-        modelMap.addAttribute("endDay", medicalDeclaration.getEndDay());
-        modelMap.addAttribute("localArrive", medicalDeclaration.getLocalArrive());
-        modelMap.addAttribute("city", medicalDeclaration.getCity());
-        modelMap.addAttribute("district", medicalDeclaration.getDistrict());
-        modelMap.addAttribute("wards", medicalDeclaration.getWards());
-        modelMap.addAttribute("address", medicalDeclaration.getAddress());
-        modelMap.addAttribute("phone", medicalDeclaration.getPhone());
-        modelMap.addAttribute("email", medicalDeclaration.getEmail());
-
-        modelMap.addAttribute("fever", medicalDeclaration.getFever());
-        modelMap.addAttribute("cough", medicalDeclaration.getCough());
-        modelMap.addAttribute("shortOfBreath", medicalDeclaration.getShortOfBreath());
-        modelMap.addAttribute("soreThroat", medicalDeclaration.getSoreThroat());
-        modelMap.addAttribute("nausea", medicalDeclaration.getNausea());
-        modelMap.addAttribute("diarrhea", medicalDeclaration.getDiarrhea());
-        modelMap.addAttribute("hictory1", medicalDeclaration.getHictory1());
-        modelMap.addAttribute("hictory2", medicalDeclaration.getHictory2());
+        modelMap.addAttribute("medicalDeclaration", medicalDeclaration);
+//        modelMap.addAttribute("name", medicalDeclaration.getName());
+//        modelMap.addAttribute("dateOfBirth", medicalDeclaration.getDateOfBirth());
+//        modelMap.addAttribute("gender", medicalDeclaration.getGender());
+//        modelMap.addAttribute("national", medicalDeclaration.getNational());
+//        modelMap.addAttribute("idCard", medicalDeclaration.getIdCard());
+//        modelMap.addAttribute("travelInfo", medicalDeclaration.getTravelInfo());
+//        modelMap.addAttribute("numberPlate", medicalDeclaration.getNumberPlate());
+//
+//        modelMap.addAttribute("seatNumber", medicalDeclaration.getSeatNumber());
+//        modelMap.addAttribute("startDay", medicalDeclaration.getStartDay());
+//        modelMap.addAttribute("endDay", medicalDeclaration.getEndDay());
+//        modelMap.addAttribute("localArrive", medicalDeclaration.getLocalArrive());
+//        modelMap.addAttribute("city", medicalDeclaration.getCity());
+//        modelMap.addAttribute("district", medicalDeclaration.getDistrict());
+//        modelMap.addAttribute("wards", medicalDeclaration.getWards());
+//        modelMap.addAttribute("address", medicalDeclaration.getAddress());
+//        modelMap.addAttribute("phone", medicalDeclaration.getPhone());
+//        modelMap.addAttribute("email", medicalDeclaration.getEmail());
+//
+//        modelMap.addAttribute("fever", medicalDeclaration.getFever());
+//        modelMap.addAttribute("cough", medicalDeclaration.getCough());
+//        modelMap.addAttribute("shortOfBreath", medicalDeclaration.getShortOfBreath());
+//        modelMap.addAttribute("soreThroat", medicalDeclaration.getSoreThroat());
+//        modelMap.addAttribute("nausea", medicalDeclaration.getNausea());
+//        modelMap.addAttribute("diarrhea", medicalDeclaration.getDiarrhea());
+//        modelMap.addAttribute("hictory1", medicalDeclaration.getHictory1());
+//        modelMap.addAttribute("hictory2", medicalDeclaration.getHictory2());
         return "medicalDeclaration/info";
     }
 

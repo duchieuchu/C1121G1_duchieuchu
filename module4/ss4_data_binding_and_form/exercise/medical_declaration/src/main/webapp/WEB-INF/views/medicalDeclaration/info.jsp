@@ -18,113 +18,113 @@
 <table class="table table-hover table-dark">
     <tr>
         <td>Họ và tên:</td>
-        <td>${name}</td>
+        <td>${medicalDeclaration.name}</td>
     </tr>
 
     <tr>
         <td>Ngày sinh:</td>
-        <td>${dateOfBirth}</td>
+        <td>${medicalDeclaration.dateOfBirth}</td>
     </tr>
     <tr>
         <td>Giới tính:</td>
-        <td>${gender}</td>
+        <td>${medicalDeclaration.gender}</td>
     </tr>
     <tr>
         <td>Quốc tịch:</td>
-        <td>${national}</td>
+        <td>${medicalDeclaration.national}</td>
     </tr>
     <tr>
         <td>Sô hộ chiếu hoặc số CMND:</td>
-        <td>${idCard}</td>
+        <td>${medicalDeclaration.idCard}</td>
     </tr>
     <tr>
         <td>Thông tin đi lại:</td>
-        <td>${travelInfo}</td>
+        <td>${medicalDeclaration.travelInfo}</td>
     </tr>
     <tr>
         <td>số hiệu phương tiện:</td>
-        <td>${numberPlate}</td>
+        <td>${medicalDeclaration.numberPlate}</td>
     </tr>
     <tr>
         <td>Số ghế</td>
-        <td>${seatNumber}</td>
+        <td>${medicalDeclaration.seatNumber}</td>
     </tr>
     <tr>
         <td>Ngày khởi thành</td>
-        <td>${startDay}</td>
+        <td>${medicalDeclaration.startDay}</td>
     </tr>
     <tr>
         <td>Ngày kết thúc</td>
-        <td>${endDay}</td>
+        <td>${medicalDeclaration.endDay}</td>
     </tr>
     <tr>
         <td>đã đến các thành phố</td>
-        <td>${localArrive}</td>
+        <td>${medicalDeclaration.localArrive}</td>
     </tr>
     <tr>
         <td> <h2>Địa chỉ liên lạc </h2></td>
     </tr>
     <tr>
         <td>Thành phó:</td>
-        <td>${city}</td>
+        <td>${medicalDeclaration.city}</td>
     </tr>
     <tr>
         <td>Quận/huyện:</td>
-        <td>${district}</td>
+        <td>${medicalDeclaration.district}</td>
     </tr>
     <tr>
         <td>Phường/xã:</td>
-        <td>${wards}</td>
+        <td>${medicalDeclaration.wards}</td>
     </tr>
     <tr>
         <td>Địa chỉ nơi ở:</td>
-        <td>${address}</td>
+        <td>${medicalDeclaration.address}</td>
     </tr>
     <tr>
         <td>Điện thoại:</td>
-        <td>${phone}</td>
+        <td>${medicalDeclaration.phone}</td>
     </tr>
     <tr>
         <td>email</td>
-        <td>${email}</td>
+        <td>${medicalDeclaration.email}</td>
     </tr>
     <tr>
         <td> <h2> có thấy xuất hiện dấu hiệu nào sau đây không?</h2></td>
     </tr>
     <tr>
         <td>Sốt:</td>
-        <td>${fever}</td>
+        <td>${medicalDeclaration.fever}</td>
     </tr>
     <tr>
         <td>Ho:</td>
-        <td>${cough}</td>
+        <td>${medicalDeclaration.cough}</td>
     </tr>
     <tr>
         <td>Khó thở:</td>
-        <td>${shortOfBreath}</td>
+        <td>${medicalDeclaration.shortOfBreath}</td>
     </tr>
     <tr>
         <td>Đau họng:</td>
-        <td>${soreThroat}</td>
+        <td>${medicalDeclaration.soreThroat}</td>
     </tr>
     <tr>
         <td>Buồn nôn:</td>
-        <td>${nausea}</td>
+        <td>${medicalDeclaration.nausea}</td>
     </tr>
     <tr>
         <td>Tiêu chảy:</td>
-        <td>${diarrhea}</td>
+        <td>${medicalDeclaration.diarrhea}</td>
     </tr>
     <tr>
         <td> <h2>Lịch sử phới nhiễm,Trong vòng 14 ngày qua </h2></td>
     </tr>
     <tr>
         <td>đến đến trang trại chăn nuôi / chợ/ cơ sở giết mổ không?</td>
-        <td>${hictory1}</td>
+        <td>${medicalDeclaration.hictory1}</td>
     </tr>
     <tr>
         <td>tiếp xúc gần(<2m) với người nhiễm bệnh cov không?</td>
-        <td>${hictory2}</td>
+        <td>${medicalDeclaration.hictory2}</td>
     </tr>
 </table>
 </body>
