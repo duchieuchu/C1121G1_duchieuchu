@@ -5,15 +5,15 @@
     <title>Title</title>
 </head>
 <body>
-<h3>Add song</h3>
+<h3>Add product</h3>
 <p>
     <a th:href="@{/product}">
-        Back to song list
+        Back to product list
     </a>
 </p>
 </body>
 <div id="form">
-    <form th:action="@{/song/save}" th:object="${song}"
+    <form th:action="@{/product/save}" th:object="${product}"
           method="POST" novalidate="novalidate">
         <input type="hidden" th:field="*{id}"/>
         <div>
@@ -21,16 +21,16 @@
             <input type="text" th:field="*{name}"/>
         </div>
         <div>
-            <label>singer</label>
-            <input type="text" th:field="*{singer}"/>
+            <label>Price</label>
+            <input type="number" th:field="*{price}"/>
         </div>
         <div>
-            <label>kindOfMusic</label>
-            <input type="text" th:field="*{kindOfMusic}"/>
+            <label>Description</label>
+            <input type="text" th:field="*{description}"/>
         </div>
         <div>
-            <label>filePath</label>
-            <input type="text" th:field="*{filePath}"/>
+            <label>Brand</label>
+            <input type="text" th:field="*{brand}"/>
         </div>
         <input type="submit" value="Save"/>
     </form>
