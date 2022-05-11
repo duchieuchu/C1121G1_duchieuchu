@@ -7,7 +7,7 @@ import org.springframework.data.repository.query.Param;
 
 import java.util.List;
 
-public interface BlogRepository extends JpaRepository<Blog, Integer> {
+public interface IBlogRepository extends JpaRepository<Blog, Integer> {
 
     @Query(value="select * from blog where name like :name",nativeQuery=true)
     List<Blog> searchByName(@Param("name")String name);

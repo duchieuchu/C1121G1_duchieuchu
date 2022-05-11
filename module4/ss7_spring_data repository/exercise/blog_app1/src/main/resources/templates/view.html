@@ -21,14 +21,17 @@
         <label th:text="${blog.name}"></label>
     </div>
     <div class="blogDetail">
-        <label>price:</label>
+        <label>content:</label>
         <label th:text="${blog.content}"></label>
     </div>
     <div class="blogDetail">
-        <label>description:</label>
+        <label>note:</label>
         <label th:text="${blog.note}"></label>
     </div>
-
+    <div class="blogDetail">
+        <label>category:</label>
+        <label th:text="${category.name}"></label>
+    </div>
 </div>
 <footer th:replace="/layout :: footer"></footer>
 </body>
