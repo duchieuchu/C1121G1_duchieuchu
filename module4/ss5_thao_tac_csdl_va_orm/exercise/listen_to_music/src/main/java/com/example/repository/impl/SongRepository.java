@@ -2,14 +2,14 @@ package com.example.repository.impl;
 
 import com.example.model.Song;
 import com.example.repository.BaseRepository;
-import com.example.repository.SongRepository;
+import com.example.repository.ISongRepository;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityTransaction;
 import javax.persistence.TypedQuery;
 import java.util.List;
 @Repository
-public class SongRepositoryImpl implements SongRepository {
+public class SongRepository implements ISongRepository {
 
     @Override
     public List<Song> findAll() {

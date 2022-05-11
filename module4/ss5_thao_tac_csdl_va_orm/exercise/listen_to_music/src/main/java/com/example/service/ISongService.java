@@ -1,10 +1,10 @@
-package com.example.repository;
+package com.example.service;
 
 import com.example.model.Song;
 
 import java.util.List;
 
-public interface SongRepository {
+public interface ISongService {
     List<Song> findAll();
 
     void save(Song song);
@@ -14,5 +14,7 @@ public interface SongRepository {
     void update(Integer id, Song song);
 
     List<Song> findByName(String name);
+
     void remove(Song song);
+
 }
