@@ -2,7 +2,7 @@ package com.example.repository.impl;
 
 import com.example.model.Product;
 import com.example.repository.BaseRepository;
-import com.example.repository.ProductRepository;
+import com.example.repository.IProductRepository;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityTransaction;
@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-public class ProductRepositoryImpl implements ProductRepository {
+public class ProductRepository implements IProductRepository {
 
     @Override
     public List<Product> findAll() {

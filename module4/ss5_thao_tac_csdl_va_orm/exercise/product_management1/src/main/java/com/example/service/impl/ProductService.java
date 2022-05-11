@@ -1,17 +1,16 @@
 package com.example.service.impl;
 
 import com.example.model.Product;
-import com.example.repository.ProductRepository;
-import com.example.service.ProductService;
+import com.example.repository.IProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class ProductServiceImpl implements ProductService {
+public class ProductService implements ProductService {
     @Autowired
-    private ProductRepository productRepository;
+    private IProductRepository productRepository;
 
     @Override
     public List<Product> findAll() {

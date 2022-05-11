@@ -1,12 +1,11 @@
 package com.example.controller;
 
 import com.example.model.Product;
-import com.example.service.ProductService;
+import com.example.service.IProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.List;
 
@@ -14,7 +13,7 @@ import java.util.List;
 @RequestMapping("/product")
 public class ProductController {
     @Autowired
-    private ProductService productService;
+    private IProductService productService;
 
     @GetMapping("")
     public String index(Model model) {
