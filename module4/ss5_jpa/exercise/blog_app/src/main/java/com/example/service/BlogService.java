@@ -1,18 +1,44 @@
 package com.example.service;
 
 import com.example.model.Blog;
+import com.example.repository.BlogRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-public interface BlogService {
-    List<Blog> findAll();
+@Service
+public class BlogService implements IBlogService {
+    @Autowired
+    private BlogRepository blogRepository;
 
-    void save(Blog blog);
+    @Override
+    public List<Blog> findAll() {
+        return this.blogRepository.findAll();
+    }
 
-    Blog findById(Integer id);
+    @Override
+    public void save(Blog blog) {
+        this.blogRepository.save(blog);
+    }
 
-    void update( Blog blog);
+    @Override
+    public Blog findById(Integer id) {
+        return this.blogRepository.findById(id).orElse(null);
+    }
 
-    List<Blog> findByName(String name);
-    void remove(Blog blog);
+    @Override
+    public void update(Blog blog) {
+        this.blogRepository.save(blog);
+    }
+
+    @Override
+    public List<Blog> findByName(String name) {
+        return this.blogRepository.searchByName('%'+name+'%');
+    }
+
+    @Override
+    public void remove(Blog blog) {
+        this.blogRepository.delete(blog);
+    }
 }

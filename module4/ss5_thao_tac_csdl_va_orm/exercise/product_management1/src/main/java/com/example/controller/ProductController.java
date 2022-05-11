@@ -13,11 +13,11 @@ import java.util.List;
 @RequestMapping("/product")
 public class ProductController {
     @Autowired
-    private IProductService productService;
+    private IProductService IProductService;
 
     @GetMapping("")
     public String index(Model model) {
-        List<Product> productList = productService.findAll();
+        List<Product> productList = IProductService.findAll();
         model.addAttribute("productList", productList);
         return "/index";
     }
@@ -30,38 +30,38 @@ public class ProductController {
 
     @PostMapping("/save")
     public String save(Product product) {
-        productService.save(product);
+        IProductService.save(product);
         return "redirect:/product";
     }
 
     @GetMapping("/{id}/edit")
     public String edit(@PathVariable int id, Model model) {
-        model.addAttribute("product", productService.findById(id));
+        model.addAttribute("product", IProductService.findById(id));
         return "/edit";
     }
 
     @PostMapping("/update")
     public String update(Product product) {
-        productService.update(product.getId(), product);
+        IProductService.update(product.getId(), product);
         return "redirect:/product";
     }
 
     @GetMapping("/delete")
     public String delete(@RequestParam Integer id) {
-        Product product = this.productService.findById(id);
-        this.productService.remove(product);
+        Product product = this.IProductService.findById(id);
+        this.IProductService.remove(product);
         return "redirect:/product";
     }
     //search
     @GetMapping("/search")
     public String search(@RequestParam String name, Model model) {
-        List<Product> productList = productService.findByName(name);
+        List<Product> productList = IProductService.findByName(name);
         model.addAttribute("productList", productList);
         return "/index";
     }
     @GetMapping("/{id}/view")
     public String view(@PathVariable int id, Model model) {
-        model.addAttribute("product", productService.findById(id));
+        model.addAttribute("product", IProductService.findById(id));
         return "/view";
     }
 
