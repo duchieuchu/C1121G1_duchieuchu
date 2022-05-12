@@ -29,6 +29,7 @@
             <tr>
                 <th>phoneNumber</th>
                 <td><input type="number" th:field="*{phoneNumber}"></td>
+                <td th:if="${#fields.hasErrors('phoneNumber')}" th:errors="*{phoneNumber}"></td>
             </tr>
             <tr>
                 <th>age</th>
