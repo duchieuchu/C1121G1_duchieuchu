@@ -19,8 +19,11 @@ public class UserDto implements Validator {
     @Size(min = 5,max = 45,message = "độ dài phải 5-45 ký tự")
     private String lastName;
 
-
+    @NotBlank(message = "phoneNumber không được có khoảng trắng")
+    @NotNull(message = "phoneNumber không được để null")
+    @NotEmpty(message = "phoneNumber không được để trống")
     private String phoneNumber;
+
     @NotNull
     @Min(value = 18, message = "tuổi phải >=18")
     private Integer age;
