@@ -25,7 +25,7 @@ public class BlogController {
     private ICategoryService iCategoryService;
 
     @RequestMapping("")
-    public String list(Model model,@PageableDefault(value = 4,sort = {}) Pageable pageable,
+    public String list(Model model,@PageableDefault(value = 4) Pageable pageable,
                        @RequestParam Optional<String>keyword) {
         if (keyword.isPresent()){
             String keywordVal = keyword.orElse("");

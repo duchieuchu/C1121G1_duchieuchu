@@ -33,7 +33,6 @@
                 <td>
                     <select th:field="*{category}">
                         <option th:each="category : ${categoryList}" th:value="${category.id}"  th:text="${category.name}" ></option>
-
                     </select>
                 </td>
             </tr>

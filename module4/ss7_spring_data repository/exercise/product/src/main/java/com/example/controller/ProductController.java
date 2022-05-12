@@ -23,16 +23,14 @@ public class ProductController {
     @RequestMapping("")
     public String list(Model model, @PageableDefault(value = 4, sort = {}) Pageable pageable,
                        @RequestParam Optional<String> keyword) {
+        String keywordVal = keyword.orElse("");
         if (keyword.isPresent()){
-            String keywordVal = keyword.orElse("");
             Page<Product> productList = iProductService.getProductByName(keywordVal,pageable);
             model.addAttribute("productList", productList);
             model.addAttribute("keywordVal",keywordVal);
         }else {
-            String keywordVal = keyword.orElse("");
             Page<Product> productList = iProductService.findAll(pageable);
             model.addAttribute("productList", productList);
-            model.addAttribute("keywordVal",keywordVal);
         }
         return "list";
     }

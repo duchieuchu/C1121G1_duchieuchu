@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout ::head">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>User</h3>
+<p>
+    <a th:href="@{/user/create}">Add User</a>
+</p>
+<form >
+    <input type="text" name="keyword">
+    <input type="submit" value="search">
+</form>
+
+<p style="color: red" th:text="${mess}"></p>
+<table id="blogs">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>firstName</th>
+        <th>lastName</th>
+        <th>phoneNumber</th>
+        <th>age</th>
+        <th>email</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="row : ${userList}">
+        <td th:text="${row.getId()}"></td>
+        <td><a th:href="@{/user/{id}/view(id=${row.getId()})}">
+            <th:block th:text="${row.getFirstName()}"></th:block>
+        </a></td>
+        <td th:text="${row.getLastName()}"></td>
+        <td th:text="${row.getPhoneNumber()}"></td>
+        <td th:text="${row.getAge()}"></td>
+        <td th:text="${row.getEmail()}"></td>
+        <td><a th:href="@{/user/{id}/edit(id=${row.getId()})}">edit</a></td>
+        <td><a th:href="@{/user/delete(id=${row.getId()})}">delete</a></td>
+    </tr>
+    </tbody>
+</table>
+<div>
+    <a th:if="${userList.hasPrevious()}"
+       th:href="@{/user/(page=${userList.number - 1})}">
+        Previous
+    </a>
+    <span th:text="${userList.number + 1}"></span>
+    /
+    <span th:text="${userList.totalPages}"></span>
+    <a th:if="${userList.hasNext()}"
+       th:href="@{/user/(page=${userList.number + 1})}">
+        Next
+    </a>
+</div>
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>
+
