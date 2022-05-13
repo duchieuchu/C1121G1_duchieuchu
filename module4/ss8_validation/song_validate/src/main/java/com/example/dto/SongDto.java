@@ -83,13 +83,13 @@ public class SongDto implements Validator {
     public void validate(Object target, Errors errors) {
         SongDto songDto =(SongDto) target;
         if (!songDto.name.matches("^[a-zA-Z0-9\\+]*$")){
-            errors.rejectValue("name","name.inValid","loi mac dinh");
+            errors.rejectValue("name","name.inValid","name nhập không hợp lệ");
         }
         if (!songDto.singer.matches("^[a-zA-Z0-9\\+]*$")){
-            errors.rejectValue("singer","singer.inValid","loi mac dinh");
+            errors.rejectValue("singer","singer.inValid","singer nhập không hợp lệ");
         }
         if (!songDto.kindOfMusic.matches("^[a-zA-Z0-9(,)\\+]*$")){
-            errors.rejectValue("kindOfMusic","kindOfMusic.inValid","loi mac dinh");
+            errors.rejectValue("kindOfMusic","kindOfMusic.inValid","kindOfMusic nhập không hợp lệ");
         }
     }
 }

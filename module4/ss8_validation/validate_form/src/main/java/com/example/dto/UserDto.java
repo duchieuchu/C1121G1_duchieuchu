@@ -89,10 +89,10 @@ public class UserDto implements Validator {
     public void validate(Object target, Errors errors) {
         UserDto userDto =(UserDto) target;
         if (!userDto.email.matches("^[\\w#][\\w\\.\\'+#](.[\\w\\\\'#]+)\\@[a-zA-Z0-9]+(.[a-zA-Z0-9]+)*(.[a-zA-Z]{2,20})$")){
-            errors.rejectValue("email","email.inValid","loi mac dinh");
+            errors.rejectValue("email","email.inValid","email nhập không hợp lệ");
         }
         if (!userDto.phoneNumber.matches("^((090)|(091)|([(]84[)][+]90)|([(]84[)][+]91))\\d{7}$")){
-            errors.rejectValue("phoneNumber","phoneNumber.inValid","loi mac dinh");
+            errors.rejectValue("phoneNumber","phoneNumber.inValid","phoneNumber nhập không hợp lệ");
         }
     }
 }
