@@ -48,9 +48,15 @@ public class SongController {
             BeanUtils.copyProperties(songDto, song);
             iSongService.save(song);
             redirectAttributes.addFlashAttribute("mess",
-                    "create user: " + song.getName() + " completed");
+                    "create song: " + song.getName() + " completed");
         }
-        return "redirect:/user";
+        return "redirect:/song";
+    }
+    @GetMapping("/delete")
+    public String delete(Song song, RedirectAttributes redirectAttributes) {
+        this.iSongService.remove(song);
+        redirectAttributes.addFlashAttribute("mess", "Delete song Completed");
+        return "redirect:/song";
     }
 
 }

@@ -88,7 +88,7 @@ public class SongDto implements Validator {
         if (!songDto.singer.matches("^[a-zA-Z0-9\\+]*$")){
             errors.rejectValue("singer","singer.inValid","singer nhập không hợp lệ");
         }
-        if (!songDto.kindOfMusic.matches("^[a-zA-Z0-9(,)\\+]*$")){
+        if (!songDto.kindOfMusic.matches("^[a-zA-Z0-9,\\+]*$")){
             errors.rejectValue("kindOfMusic","kindOfMusic.inValid","kindOfMusic nhập không hợp lệ");
         }
     }

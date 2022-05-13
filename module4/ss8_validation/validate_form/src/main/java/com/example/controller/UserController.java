@@ -51,7 +51,7 @@ public class UserController {
             redirectAttributes.addFlashAttribute("mess",
                     "create user: " + user.getFirstName() + " completed");
         }
-        return "redirect:/user";
+        return "redirect:/create";
     }
 
 
