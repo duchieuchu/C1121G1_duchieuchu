@@ -15,16 +15,20 @@
 </form>
 
 <p style="color: red" th:text="${mess}"></p>
+<table class="table">
+    <thead class="table-dark"></thead>
+    <tbody></tbody>
+</table>
 <table id="blogs">
     <thead>
     <tr>
-        <th>Id</th>
-        <th>name</th>
-        <th>singer</th>
-        <th>kindOfMusic</th>
-        <th>filePath</th>
-        <th>Edit</th>
-        <th>Delete</th>
+        <th class="col-1">Id</th>
+        <th class="col-1">name</th>
+        <th class="col-1">singer</th>
+        <th class="col-2">kindOfMusic</th>
+        <th class="col-5">filePath</th>
+        <th class="col-1">Edit</th>
+        <th class="col-1">Delete</th>
     </tr>
     </thead>
     <tbody>
