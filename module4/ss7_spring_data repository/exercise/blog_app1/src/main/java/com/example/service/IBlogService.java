@@ -13,10 +13,13 @@ public interface IBlogService {
 
     Blog findById(Integer id);
 
-    void update( Blog blog);
+    void update(Blog blog);
 
     List<Blog> findByName(String name);
+
     void remove(Blog blog);
-    Page<Blog>findAll(Pageable pageable);
-    Page<Blog>getBlogByName(String name, Pageable pageable);
+
+    Page<Blog> findAll(Pageable pageable);
+
+    Page<Blog> getBlogByName(String name, Pageable pageable);
 }

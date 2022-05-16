@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">ID</th>
+        <th scope="col">Code Book</th>
+        <th scope="col">Name Book</th>
+        <th scope="col">Book Borrowing Code</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="borrowedBook, hong : ${cardBorrowList}">
+        <td th:text="${hong.count}"></td>
+        <td><a class="text-decoration-none" th:href="@{/detail(id=${borrowedBook.id})}">
+            <th:block th:text="${borrowedBook.id}"></th:block>
+        </a></td>
+        <td th:text="${borrowedBook.code}"></td>
+        <td><a class="text-decoration-none" th:href="@{/detail(id=${borrowedBook.id})}">
+            <th:block th:text="${borrowedBook.name}"></th:block>
+        </a></td>
+        <td th:text="${borrowedBook.bookBorrowingCode}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
