@@ -59,9 +59,9 @@ public class BookController {
     @GetMapping("/borrow/{id}")
     public String borrow(@PathVariable Integer id,RedirectAttributes redirectAttributes) {
         Book book = this.iBookService.getOne(id);
-//        if (book.getQuantity() <= 0) {
-//            return "error";
-//        }
+        if (book.getQuantity() <= 0) {
+            return "error";
+        }
         book.setQuantity(book.getQuantity() - 1);
 
 
@@ -93,4 +93,9 @@ public class BookController {
 
         return "/view";
     }
+    @ExceptionHandler(NullPointerException.class)
+    public String showErrorPage(){
+        return "error1";
+    }
+
 }
