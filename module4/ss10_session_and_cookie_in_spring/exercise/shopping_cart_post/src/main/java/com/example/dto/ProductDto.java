@@ -3,20 +3,20 @@ package com.example.dto;
 import java.util.Objects;
 
 public class ProductDto {
-    private long id;
+    private Integer id;
     private String name;
     private String description;
     private String image;
-    private long price;
+    private Double price;
 
     public ProductDto() {
     }
 
-    public long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -44,13 +44,14 @@ public class ProductDto {
         this.image = image;
     }
 
-    public long getPrice() {
+    public Double getPrice() {
         return price;
     }
 
-    public void setPrice(long price) {
+    public void setPrice(Double price) {
         this.price = price;
     }
+
     @Override
     public boolean equals(Object o){
         if (this == o) return true;
