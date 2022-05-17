@@ -6,15 +6,13 @@ import java.util.List;
 @Entity
 public class Book {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue( strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
     private String author;
-    private int quantityTotal;
-    private int borrowedTotal;
-    private int remainTotal;
+    private Integer quantity;
 
-    @OneToMany(mappedBy = "book")
+    @OneToMany( mappedBy = "book")
     List<CardBorrow> cardBorrowList;
 
     public List<CardBorrow> getCardBorrowList() {
@@ -25,23 +23,19 @@ public class Book {
         this.cardBorrowList = cardBorrowList;
     }
 
-    public Book(Integer id, String name, String author, int quantityTotal, int borrowedTotal, int remainTotal, List<CardBorrow> cardBorrowList) {
+    public Book(Integer id, String name, String author, Integer quantity, List<CardBorrow> cardBorrowList) {
         this.id = id;
         this.name = name;
         this.author = author;
-        this.quantityTotal = quantityTotal;
-        this.borrowedTotal = borrowedTotal;
-        this.remainTotal = remainTotal;
+        this.quantity = quantity;
         this.cardBorrowList = cardBorrowList;
     }
 
-    public Book(Integer id, String name, String author, int quantityTotal, int borrowedTotal, int remainTotal) {
+    public Book(Integer id, String name, String author, Integer quantity) {
         this.id = id;
         this.name = name;
         this.author = author;
-        this.quantityTotal = quantityTotal;
-        this.borrowedTotal = borrowedTotal;
-        this.remainTotal = remainTotal;
+        this.quantity = quantity;
     }
 
     public Book() {
@@ -71,27 +65,11 @@ public class Book {
         this.author = author;
     }
 
-    public int getQuantityTotal() {
-        return quantityTotal;
+    public Integer getQuantity() {
+        return quantity;
     }
 
-    public void setQuantityTotal(int quantityTotal) {
-        this.quantityTotal = quantityTotal;
-    }
-
-    public int getBorrowedTotal() {
-        return borrowedTotal;
-    }
-
-    public void setBorrowedTotal(int borrowedTotal) {
-        this.borrowedTotal = borrowedTotal;
-    }
-
-    public int getRemainTotal() {
-        return remainTotal;
-    }
-
-    public void setRemainTotal(int remainTotal) {
-        this.remainTotal = remainTotal;
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
     }
 }

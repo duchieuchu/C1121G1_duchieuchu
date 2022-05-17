@@ -7,11 +7,20 @@ public class CardBorrow {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private Integer code;
+    private String code;
+    @Column(columnDefinition = "DATE")
+    private  String borrowStartDate;
+
 
     @ManyToOne
     @JoinColumn(name = "book_id", referencedColumnName = "id")
     private Book book;
+
+    public CardBorrow(String code, String borrowStartDate, Book book) {
+        this.code = code;
+        this.borrowStartDate = borrowStartDate;
+        this.book = book;
+    }
 
     public CardBorrow() {
     }
@@ -24,12 +33,20 @@ public class CardBorrow {
         this.id = id;
     }
 
-    public Integer getCode() {
+    public String getCode() {
         return code;
     }
 
-    public void setCode(Integer code) {
+    public void setCode(String code) {
         this.code = code;
+    }
+
+    public String getBorrowStartDate() {
+        return borrowStartDate;
+    }
+
+    public void setBorrowStartDate(String borrowStartDate) {
+        this.borrowStartDate = borrowStartDate;
     }
 
     public Book getBook() {

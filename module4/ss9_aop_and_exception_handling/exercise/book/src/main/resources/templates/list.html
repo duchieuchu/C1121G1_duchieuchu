@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout ::head">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Book</h3>
+<form action="/book/return-book">
+    <input type="text" name="code">
+    <input type="submit" value="return book">
+</form>
+
+<p style="color: red" th:text="${mess}"></p>
+<table class="table">
+    <thead class="table-dark"></thead>
+    <tbody></tbody>
+</table>
+<p>
+    <a th:href="@{/book/create}"> add book</a>
+</p>
+<table id="blogs">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>name</th>
+        <th>author</th>
+        <th>quantity</th>
+        <th>Borrow</th>
+        <th>Delete</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="row : ${books}">
+        <td th:text="${row.getId()}"></td>
+        <td><a th:href="@{/song/{id}/view(id=${row.getId()})}">
+            <th:block th:text="${row.getName()}"></th:block>
+        </a></td>
+        <td th:text="${row.getAuthor()}"></td>
+        <td th:text="${row.getQuantity()}"></td>
+        <td><a th:href="@{/book/borrow/{id}(id=${row.getId()})}">borrow</a></td>
+        <td><a th:href="@{/book/delete(id=${row.getId()})}">delete</a></td>
+    </tr>
+    </tbody>
+</table>
+<div>
+    <a th:if="${books.hasPrevious()}"
+       th:href="@{/book/(page=${books.number - 1})}">
+        Previous
+    </a>
+    <span th:text="${books.number + 1}"></span>
+    /
+    <span th:text="${books.totalPages}"></span>
+    <a th:if="${books.hasNext()}"
+       th:href="@{/book/(page=${books.number + 1})}">
+        Next
+    </a>
+</div>
+</body>
+</html>
