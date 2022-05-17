@@ -29,6 +29,7 @@ public class BookController {
         model.addAttribute("books", books);
         return "list";
     }
+
     @GetMapping(value = "/listCard")
     public String listCard(@PageableDefault(value = 4) Pageable pageable, Model model) {
         Page<CardBorrow> cardBorrows = this.iCardBorrowService.getAll(pageable);
@@ -56,11 +57,11 @@ public class BookController {
         return "redirect:/book";
     }
 
-    @GetMapping("/borrow/{id}")
-    public String borrow(@PathVariable Integer id,RedirectAttributes redirectAttributes) {
+    @GetMapping("/borrow-book/{id}")
+    public String borrow(@PathVariable Integer id, RedirectAttributes redirectAttributes) throws Exception {
         Book book = this.iBookService.getOne(id);
         if (book.getQuantity() <= 0) {
-            return "error";
+            throw new Exception("het sach");
         }
         book.setQuantity(book.getQuantity() - 1);
 
@@ -72,7 +73,7 @@ public class BookController {
         cardBorrow.setBook(book);
         cardBorrow.setBorrowStartDate(LocalDate.now().toString());
         this.iCardBorrowService.save(cardBorrow);
-        redirectAttributes.addFlashAttribute("mess", "borrow book Completed"+"your code to return book is "+code);
+        redirectAttributes.addFlashAttribute("mess", "borrow book Completed" + "your code to return book is " + code);
         return "redirect:/book";
     }
 
@@ -86,6 +87,7 @@ public class BookController {
         this.iCardBorrowService.remove(cardBorrow);
         return "redirect:/book";
     }
+
     //hien thi
     @GetMapping("/{id}/view")
     public String view(@PathVariable int id, Model model) {
@@ -93,9 +95,14 @@ public class BookController {
 
         return "/view";
     }
+
     @ExceptionHandler(NullPointerException.class)
-    public String showErrorPage(){
+    public String showNullErrorPage() {
         return "error1";
     }
 
+    @ExceptionHandler(Exception.class)
+    public String showSmallThanZeroException() {
+        return "error";
+    }
 }

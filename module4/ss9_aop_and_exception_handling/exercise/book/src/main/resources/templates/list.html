@@ -41,7 +41,7 @@
         </a></td>
         <td th:text="${row.getAuthor()}"></td>
         <td th:text="${row.getQuantity()}"></td>
-        <td><a th:href="@{/book/borrow/{id}(id=${row.getId()})}">borrow</a></td>
+        <td><a th:href="@{/book/borrow-book/{id}(id=${row.getId()})}">borrow</a></td>
         <td><a th:href="@{/book/delete(id=${row.getId()})}">delete</a></td>
     </tr>
     </tbody>

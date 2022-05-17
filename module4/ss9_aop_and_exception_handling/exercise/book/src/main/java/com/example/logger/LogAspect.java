@@ -12,7 +12,7 @@ import java.time.LocalDate;
 @Component
 @Aspect
 public class LogAspect {
-    @Pointcut("execution(* com.example.controller.BookController.*(..))")
+    @Pointcut("execution(* com.example.controller.BookController.*book(..))")
     public void allMethodPointCut() {
     }
 
