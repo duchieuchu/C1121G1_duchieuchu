@@ -4,6 +4,8 @@ import com.example.model.Book;
 import com.example.model.CardBorrow;
 import com.example.repository.ICardBorrowRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -13,6 +15,11 @@ import java.time.LocalDate;
 public class CardBorrowService implements ICardBorrowService {
     @Autowired
     private ICardBorrowRepository iCardBorrowRepository;
+
+    @Override
+    public Page<CardBorrow> getAll(Pageable pageable) {
+        return this.iCardBorrowRepository.findAll(pageable);
+    }
 
     @Override
     public void save(CardBorrow cardBorrow) {

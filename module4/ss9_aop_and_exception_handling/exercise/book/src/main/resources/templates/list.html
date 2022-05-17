@@ -19,6 +19,9 @@
 <p>
     <a th:href="@{/book/create}"> add book</a>
 </p>
+<p>
+    <a th:href="@{/book/listCard}">list card</a>
+</p>
 <table id="blogs">
     <thead>
     <tr>
@@ -33,7 +36,7 @@
     <tbody>
     <tr th:each="row : ${books}">
         <td th:text="${row.getId()}"></td>
-        <td><a th:href="@{/song/{id}/view(id=${row.getId()})}">
+        <td><a th:href="@{/book/{id}/view(id=${row.getId()})}">
             <th:block th:text="${row.getName()}"></th:block>
         </a></td>
         <td th:text="${row.getAuthor()}"></td>

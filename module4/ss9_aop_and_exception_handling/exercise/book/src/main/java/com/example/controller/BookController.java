@@ -29,6 +29,12 @@ public class BookController {
         model.addAttribute("books", books);
         return "list";
     }
+    @GetMapping(value = "/listCard")
+    public String listCard(@PageableDefault(value = 4) Pageable pageable, Model model) {
+        Page<CardBorrow> cardBorrows = this.iCardBorrowService.getAll(pageable);
+        model.addAttribute("cardBorrows", cardBorrows);
+        return "listCard";
+    }
 
     @GetMapping("/create")
     public String create(Model model) {
@@ -53,9 +59,9 @@ public class BookController {
     @GetMapping("/borrow/{id}")
     public String borrow(@PathVariable Integer id,RedirectAttributes redirectAttributes) {
         Book book = this.iBookService.getOne(id);
-        if (book.getQuantity() <= 0) {
-            return "error";
-        }
+//        if (book.getQuantity() <= 0) {
+//            return "error";
+//        }
         book.setQuantity(book.getQuantity() - 1);
 
 
@@ -79,5 +85,12 @@ public class BookController {
         this.iBookService.save(cardBorrow.getBook());
         this.iCardBorrowService.remove(cardBorrow);
         return "redirect:/book";
+    }
+    //hien thi
+    @GetMapping("/{id}/view")
+    public String view(@PathVariable int id, Model model) {
+        model.addAttribute("book", iBookService.getOne(id));
+
+        return "/view";
     }
 }
