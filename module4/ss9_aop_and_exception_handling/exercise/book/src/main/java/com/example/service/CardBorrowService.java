@@ -34,10 +34,6 @@ public class CardBorrowService implements ICardBorrowService {
         this.iCardBorrowRepository.save(cardBorrow);
     }
 
-    @Override
-    public boolean checkCode(String code) {
-        return this.iCardBorrowRepository.existsByCode(code);
-    }
 
     @Override
     public CardBorrow checkGiveBack(String code) {
