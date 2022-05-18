@@ -1,9 +1,6 @@
 package com.example.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Product {
@@ -13,9 +10,11 @@ public class Product {
     private String name;
     private String description;
     private String image;
-    private Double price;
+    @Column(columnDefinition = "bigint")
+    private int price;
 
-    public Product(Integer id, String name, String description, String image, Double price) {
+
+    public Product(Integer id, String name, String description, String image, int price) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -58,11 +57,11 @@ public class Product {
         this.image = image;
     }
 
-    public Double getPrice() {
+    public int getPrice() {
         return price;
     }
 
-    public void setPrice(Double price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 }

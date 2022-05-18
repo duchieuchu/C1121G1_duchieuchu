@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<body>
+<div class="jumbotron jumbotron-fluid" style="background-color: darkorange">
+    <div class="container">
+        <h1 class="display-4">Cửa Hàng Điện Thoại</h1>
+        <p class="lead">TechCare - Công Ty TNHH MTV Quốc Tế Phúc Thành Đạt · Cửa hàng bán đồ điện tử
+            133 Hàm Nghi · 0236 3663 333
+            Đang mở cửa ⋅ Đóng cửa lúc 20:00
+            Mua sắm tại cửa hàng·
+            Nhận tại cửa hàng·
+            Giao hàng</p>
+    </div>
+</div>
+
+<div class="container">
+    <!--    card-->
+    <div class="row">
+        <div class="col-md-6 col-lg-3" th:each="row : ${products}" >
+            <img th:src="${row.image}" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title" th:text="${row.name}"></h5>
+                <p class="card-text" th:text="${row.description}"></p>
+                <p class="card-text" th:text="${row.price}"></p>
+                <a th:href="@{/shop/add/{id}(id=${row.getId()})}" class="btn btn-primary">Add to cart</a>
+<!--                <a th:href="@{/shop/add/__${row.getId()}__}" class="btn btn-primary">Add to cart</a>-->
+            </div>
+        </div>
+<!--        <div class="col-md-6 col-lg-3">-->
+<!--            <img src="https://cdn.tgdd.vn/Products/Images/42/228738/iphone-12-pro-xam-new-600x600-600x600.jpg" class="card-img-top" alt="...">-->
+<!--            <div class="card-body">-->
+<!--                <h5 class="card-title">iPhone 12 Pro Max</h5>-->
+<!--                <p class="card-text">iPhone 12 Pro Max 128 GB một siêu phẩm smartphone đến từ Apple và mang trong mình-->
+<!--                    một thiết kế đầy vuông-->
+<!--                    vức, sang trọng.</p>-->
+<!--                <a href="#" class="btn btn-primary">Add to cart</a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col-md-6 col-lg-3">-->
+<!--            <img src="https://cdn.tgdd.vn/Products/Images/42/272668/xiaomi-redmi-note-11s-5g-%20thumb-600x600.jpg" class="card-img-top" alt="...">-->
+<!--            <div class="card-body">-->
+<!--                <h5 class="card-title"> Xiaomi Redmi Note 11S</h5>-->
+<!--                <p class="card-text">iPhone 12 Pro Max 128 GB một siêu phẩm smartphone đến từ Apple và mang trong mình-->
+<!--                    một thiết kế đầy vuông-->
+<!--                    vức, sang trọng.</p>-->
+<!--                <a href="#" class="btn btn-primary">Add to cart</a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col-md-6 col-lg-3">-->
+<!--            <img src="https://cdn.tgdd.vn/Products/Images/42/153856/iphone-xi-xanhla-600x600.jpg" class="card-img-top" alt="...">-->
+<!--            <div class="card-body">-->
+<!--                <h5 class="card-title">iPhone 11 </h5>-->
+<!--                <p class="card-text">iPhone 12 Pro Max 128 GB một siêu phẩm smartphone đến từ Apple và mang trong mình-->
+<!--                    một thiết kế đầy vuông-->
+<!--                    vức, sang trọng.</p>-->
+<!--                <a href="#" class="btn btn-primary">Add to cart</a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col-md-6 col-lg-3">-->
+<!--            <img src="https://cdn.tgdd.vn/Products/Images/42/226935/samsung-galaxy-z-fold-3-silver-1-600x600.jpg" class="card-img-top" alt="...">-->
+<!--            <div class="card-body">-->
+<!--                <h5 class="card-title">Samsung Galaxy Z Fold</h5>-->
+<!--                <p class="card-text">iPhone 12 Pro Max 128 GB một siêu phẩm smartphone đến từ Apple và mang trong mình-->
+<!--                    một thiết kế đầy vuông-->
+<!--                    vức, sang trọng.</p>-->
+<!--                <a href="#" class="btn btn-primary">Add to cart</a>-->
+<!--            </div>-->
+<!--        </div>-->
+    </div>
+</div>
+</body>
+</html>

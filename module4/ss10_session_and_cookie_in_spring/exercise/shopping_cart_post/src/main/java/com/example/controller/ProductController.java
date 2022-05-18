@@ -30,7 +30,7 @@ public class ProductController {
 
     @Autowired
     private IProductService iProductService;
-    @GetMapping("/")
+    @GetMapping("")
     public String listProduct(@PageableDefault(value = 10) Pageable pageable, Model model){
         Page<Product> products = this.iProductService.findAll(pageable);
         model.addAttribute("products",products);
@@ -46,7 +46,7 @@ public class ProductController {
         return  new ModelAndView("product/detail","product",
                 iProductService.findById(id));
     }
-    @GetMapping("add/{id}")
+    @GetMapping("/add/{id}")
     public String addToCart(@PathVariable Integer id,
                             @SessionAttribute("cart") CartDto cartDto){
         Optional<Product> productOptional = Optional.ofNullable(iProductService.findById(id));
@@ -54,9 +54,25 @@ public class ProductController {
             ProductDto productDto = new ProductDto();
             BeanUtils.copyProperties(productOptional.get(),productDto);
 
-            //them product vao session cart
+            //them product vao session car ben cardDto
             cartDto.addProduct(productDto);
         }
+        return "redirect:/cart";
+    }
+    @GetMapping("/sub/{id}")
+    public String subToCart(@PathVariable Integer id,
+                            @SessionAttribute("cart") CartDto cartDto) {
+        Optional<Product> productOptional = Optional.ofNullable(iProductService.findById(id));
+        if (productOptional.isPresent()){
+            ProductDto productDto = new ProductDto();
+            BeanUtils.copyProperties(productOptional.get(),productDto);
+            cartDto.subProduct(productDto);
+        }
+        return "redirect:/cart";
+    }
+    @GetMapping("/pay")
+    public String pay(@SessionAttribute("cart") CartDto cartDto){
+        cartDto.deleteAll();
         return "redirect:/cart";
     }
 }
