@@ -54,4 +54,9 @@ public class BlogService implements IBlogService {
     public Page<Blog> getBlogByName(String name, Pageable pageable) {
         return this.iBlogRepository.findAllByNameContaining(name,pageable);
     }
+
+    @Override
+    public Page<Blog> findAllByCategoryName(String name, Pageable pageable) {
+        return this.iBlogRepository.findAllByCategory_Name(name,pageable);
+    }
 }
