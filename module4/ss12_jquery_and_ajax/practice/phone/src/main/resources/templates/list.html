@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form id="add-smartphone">
+    <table>
+        <tr>
+            <td>Producer:</td>
+            <td><input type="text" id="producer" placeholder="producer"></td>
+        </tr>
+        <tr>
+            <td>Model:</td>
+            <td><input type="text" id="model" placeholder="model"></td>
+        </tr>
+        <tr>
+            <td>Price:</td>
+            <td><input type="text" id="price" placeholder="price"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Add" onclick="addNewSmartphone()"></td>
+        </tr>
+    </table>
+</form>
+<h1>Smartphone List</h1>
+<table>
+    <tr>
+        <th class="col-1">Id</th>
+        <th class="col-1">Producer</th>
+        <th class="col-1">Model</th>
+        <th class="col-1">Price</th>
+        <th class="col-1">Delete</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="row : ${smartphonePage}">
+        <td th:text="${row.getId()}"></td>
+        <td><a th:href="@{/smartphone/{id}/view(id=${row.getId()})}">
+            <th:block th:text="${row.getName()}"></th:block>
+        </a></td>
+        <td th:text="${row.()}"></td>
+        <td th:text="${row.getKindOfMusic()}"></td>
+        <td th:text="${row.getFilePath()}"></td>
+        <td><a th:href="@{/song/{id}/edit(id=${row.getId()})}">edit</a></td>
+        <td><a th:href="@{/song/delete(id=${row.getId()})}">delete</a></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+<script th:src="@{/jquery-3.6.0.min.js}"></script>
+<script src="../static/jquery-3.6.0.min.js"></script>
+<script>
+    function addNewSmartphone() {
+        //ay du ieu
+        let producer= $('#producer').val();
+        let model = $('#model').val();
+        let price = $('#price').val();
+        let newSmartphone={
+            producer: producer,
+            model: model,
+            price: price
+        };
+
+        //goi ajax
+        $.ajax({
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            type: "POST",
+            data: JSON.stringify(newSmartphone),
+            //tên API
+            url: "/smartphones",
+            //xử lý khi thành công
+            success: console.log('success')
+
+        });
+        //chặn sự kiện mặc định của thẻ
+        event.preventDefault();
+
+    }
+</script>
+</html>
