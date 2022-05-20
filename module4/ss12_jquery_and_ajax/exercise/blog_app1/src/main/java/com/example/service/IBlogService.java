@@ -24,4 +24,6 @@ public interface IBlogService {
     Page<Blog> getBlogByName(String name, Pageable pageable);
 
     Page<Blog> findAllByCategoryName(String name, Pageable pageable);
+
+    Page<Blog> findAllByName(Pageable pageable, String name);
 }

@@ -11,13 +11,11 @@ import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Repository;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/blogRest")
 public class BlogRestController {
@@ -26,7 +24,13 @@ public class BlogRestController {
     @Autowired
     private ICategoryService iCategoryService;
 
-    @GetMapping("")
+    @RequestMapping("")
+    public String list(Model model, @PageableDefault(value = 10) Pageable pageable) {
+        Page<Blog> smartphonePage = iBlogService.findAll(pageable);
+        model.addAttribute("smartphonePage", smartphonePage);
+        return "list1";
+    }
+    @GetMapping("/listBlog")
     public ResponseEntity<Page<Blog>> getPageBlog(@PageableDefault(value = 4) Pageable pageable) {
         Page<Blog> blogPage = this.iBlogService.findAll(pageable);
 
