@@ -7,11 +7,9 @@ import javax.persistence.Id;
 
 @Entity
 public class Smartphone {
-
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String name;
     private String producer;
     private String model;
     private double price;
@@ -19,8 +17,7 @@ public class Smartphone {
     public Smartphone() {
     }
 
-    public Smartphone(String name, String producer, String model, double price) {
-        this.name = name;
+    public Smartphone(String producer, String model, double price) {
         this.producer = producer;
         this.model = model;
         this.price = price;
@@ -58,21 +55,8 @@ public class Smartphone {
         this.price = price;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     @Override
     public String toString() {
-        return "Smartphone{" +
-                "name='" + name + '\'' +
-                ", producer='" + producer + '\'' +
-                ", model='" + model + '\'' +
-                ", price=" + price +
-                '}';
+        return producer+": "+model+" with price "+price;
     }
 }

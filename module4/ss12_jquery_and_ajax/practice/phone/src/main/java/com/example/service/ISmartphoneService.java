@@ -5,11 +5,11 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
 public interface ISmartphoneService {
-    Iterable<Smartphone> findAll();
+    Page<Smartphone> findAll(Pageable pageable);
 
-    Optional<Smartphone> findById(Long id);
+    Smartphone findById(Long id);
 
-    Smartphone save(Smartphone smartPhone);
+    Smartphone save(Smartphone smartphone);
 
-    void remove(Long id);
+    void remove(Smartphone smartphone);
 }

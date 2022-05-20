@@ -5,8 +5,11 @@
     <title>Title</title>
 </head>
 <body>
-<form id="add-smartphone">
+<form >
     <table>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" id="name" placeholder="name"></td>
         <tr>
             <td>Producer:</td>
             <td><input type="text" id="producer" placeholder="producer"></td>
@@ -26,44 +29,53 @@
     </table>
 </form>
 <h1>Smartphone List</h1>
-<table>
+<table id="tb">
+    <thead>
     <tr>
-        <th class="col-1">Id</th>
-        <th class="col-1">Producer</th>
-        <th class="col-1">Model</th>
-        <th class="col-1">Price</th>
-        <th class="col-1">Delete</th>
+        <th class="col-2">Id</th>
+        <th class="col-2">Name</th>
+        <th class="col-2">Producer</th>
+        <th class="col-2">Model</th>
+        <th class="col-2">Price</th>
+        <th class="col-2">Delete</th>
     </tr>
     </thead>
     <tbody>
-    <tr th:each="row : ${smartphonePage}">
-        <td th:text="${row.getId()}"></td>
-        <td><a th:href="@{/smartphone/{id}/view(id=${row.getId()})}">
-            <th:block th:text="${row.getName()}"></th:block>
-        </a></td>
-        <td th:text="${row.()}"></td>
-        <td th:text="${row.getKindOfMusic()}"></td>
-        <td th:text="${row.getFilePath()}"></td>
-        <td><a th:href="@{/song/{id}/edit(id=${row.getId()})}">edit</a></td>
-        <td><a th:href="@{/song/delete(id=${row.getId()})}">delete</a></td>
-    </tr>
+
     </tbody>
 </table>
+<button onclick="before()">before</button>
+<button onclick="more()">Next</button>
 </body>
 <script th:src="@{/jquery-3.6.0.min.js}"></script>
 <script src="../static/jquery-3.6.0.min.js"></script>
 <script>
+    let pageCru = 0;
+
+    function more() {
+        pageCru++;
+        getAll();
+    }
+    function before() {
+        pageCru--;
+        getAll();
+    }
+
+
     function addNewSmartphone() {
         //ay du ieu
-        let producer= $('#producer').val();
+        let name = $('#name').val();
+        let producer = $('#producer').val();
         let model = $('#model').val();
         let price = $('#price').val();
-        let newSmartphone={
+        alert('da them moi ' + name + ' thanh cong')
+        let newSmartphone = {
+            name: name,
             producer: producer,
             model: model,
             price: price
         };
-
+        console.log(newSmartphone)
         //goi ajax
         $.ajax({
             headers: {
@@ -72,15 +84,89 @@
             },
             type: "POST",
             data: JSON.stringify(newSmartphone),
+            //dung requestbody de hung, con stringify de gui
             //tên API
-            url: "/smartphones",
+            url: "http://localhost:8080/smartphone/create",
             //xử lý khi thành công
-            success: console.log('success')
+            success: function (a) {
+                getAll();
+            },
+
 
         });
         //chặn sự kiện mặc định của thẻ
         event.preventDefault();
 
     }
+
+    function getAll() {
+
+        $.ajax({
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            type: "GET",
+            //tên API
+            url: "http://localhost:8080/smartphone/list?page=" + pageCru,
+            //xử lý khi thành công
+            success: function (data) {
+                console.log(data);
+                let list = data.content;
+                console.log(list);
+                let listStr = `<tr><th>Id</th>
+                               <th>Name</th>
+                               <th>Producer</th>
+                               <th>Model</th>
+                               <th>Price</th>
+                               <th>Edit</th>
+                               <th>Delete</th>
+                               </tr>`;
+                for (let i = 0; i < list.length; i++) {
+                    listStr += '<tr>\n' +
+                        '        <td>' + list[i].id + '</td>\n' +
+                        '        <td>' + list[i].name + '</td>\n' +
+                        '        <td>' + list[i].producer + '</td>\n' +
+                        '        <td>' + list[i].model + '</td>\n' +
+                        '        <td>' + list[i].price + '</td>\n' +
+                        '        <td><a class="editPhone" href="' + list[i].id + '">Edit</a></td>\n' +
+                        '        <td><a class="deletePhone" href="' + list[i].id + '">Delete</a></td>\n' +
+                        '    </tr>'
+                }
+                // $("#tb").append(listStr);
+                $("#tb").html(listStr);
+                $(".editPhone").click(function (event) {
+                    console.log($(this));
+                    let a = $(this).attr("href")
+                    console.log(a)
+                    event.preventDefault();
+                });
+                $(".deletePhone").click(function (event) {
+                    let id = $(this).attr("href");
+                    $.ajax({
+                        headers: {
+                            'Accept': 'application/json',
+                            'Content-Type': 'application/json'
+                        },
+                        type: "DELETE",
+                        //tên API
+                        url: "http://localhost:8080/smartphone/delete/" + id,
+                        //xử lý khi thành công
+                        success: function (a) {
+                            getAll();
+                        },
+                        error: function (b) {
+                        }
+                    });
+                    event.preventDefault();
+                })
+            }
+        });
+        //chặn sự kiện mặc định của thẻ
+
+
+    }
+
+    getAll();
 </script>
 </html>
