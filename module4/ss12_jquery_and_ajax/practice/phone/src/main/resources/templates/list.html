@@ -7,6 +7,7 @@
 <body>
 <form >
     <table>
+        <input type="hidden" id="id">
         <tr>
             <td>Name:</td>
             <td><input type="text" id="name" placeholder="name"></td>
@@ -64,36 +65,73 @@
 
     function addNewSmartphone() {
         //ay du ieu
-        let name = $('#name').val();
-        let producer = $('#producer').val();
-        let model = $('#model').val();
-        let price = $('#price').val();
-        alert('da them moi ' + name + ' thanh cong')
-        let newSmartphone = {
-            name: name,
-            producer: producer,
-            model: model,
-            price: price
-        };
-        console.log(newSmartphone)
-        //goi ajax
-        $.ajax({
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            type: "POST",
-            data: JSON.stringify(newSmartphone),
-            //dung requestbody de hung, con stringify de gui
-            //tên API
-            url: "http://localhost:8080/smartphone/create",
-            //xử lý khi thành công
-            success: function (a) {
-                getAll();
-            },
+        let id = $('#id').val();
+        if(id===""){
+            let name = $('#name').val();
+            let producer = $('#producer').val();
+            let model = $('#model').val();
+            let price = $('#price').val();
+            alert('da them moi ' + name + ' thanh cong')
+            let newSmartphone = {
+                name: name,
+                producer: producer,
+                model: model,
+                price: price
+            };
+            console.log(newSmartphone)
+            //goi ajax
+            $.ajax({
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                type: "POST",
+                data: JSON.stringify(newSmartphone),
+                //dung requestbody de hung, con stringify de gui
+                //tên API
+                url: "http://localhost:8080/smartphone/create",
+                //xử lý khi thành công
+                success: function (a) {
+                    getAll();
+                },
 
 
-        });
+            });
+        }else{
+
+            let name = $('#name').val();
+            let producer = $('#producer').val();
+            let model = $('#model').val();
+            let price = $('#price').val();
+            alert('da edit ' + name + ' thanh cong')
+            let editPhone = {
+                id:id,
+                name: name,
+                producer: producer,
+                model: model,
+                price: price
+            };
+            console.log(editPhone)
+            //goi ajax
+            $.ajax({
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                type: "PATCH",
+                data: JSON.stringify(editPhone),
+                //dung requestbody de hung, con stringify de gui
+                //tên API
+                url: "http://localhost:8080/smartphone/edit",
+                //xử lý khi thành công
+                success: function (a) {
+                    getAll();
+                },
+
+
+            });
+        }
+
         //chặn sự kiện mặc định của thẻ
         event.preventDefault();
 
@@ -137,8 +175,26 @@
                 $("#tb").html(listStr);
                 $(".editPhone").click(function (event) {
                     console.log($(this));
-                    let a = $(this).attr("href")
-                    console.log(a)
+                    let editId = $(this).attr("href")
+                    $.ajax({
+                        headers: {
+                            'Accept': 'application/json',
+                            'Content-Type': 'application/json'
+                        },
+                        type: "GET",
+                        //tên API
+                        url: "http://localhost:8080/smartphone/edit/" + editId,
+                        //xử lý khi thành công
+                        success: function (a) {
+                            $('#id').val(a.id);
+                            $('#name').val(a.name);
+                            $('#producer').val(a.producer);
+                            $('#model').val(a.model);
+                            $('#price').val(a.price);
+                        },
+                        error: function (b) {
+                        }
+                    });
                     event.preventDefault();
                 });
                 $(".deletePhone").click(function (event) {
