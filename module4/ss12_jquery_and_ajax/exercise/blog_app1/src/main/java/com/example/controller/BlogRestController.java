@@ -40,15 +40,6 @@ public class BlogRestController {
         return new ResponseEntity<>(blogPage, HttpStatus.OK);
     }
 
-    @GetMapping("/listCategory")
-    public ResponseEntity<List<Category>> getCategory() {
-        List<Category> categoryList = this.iCategoryService.findAll();
-        if (categoryList.isEmpty()) {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }
-        return new ResponseEntity<>(categoryList, HttpStatus.OK);
-    }
-
     @GetMapping("/viewOneBlog")
     public ResponseEntity<Blog> getBlog(@RequestParam Integer id) {
         Blog blog = this.iBlogService.findById(id);
