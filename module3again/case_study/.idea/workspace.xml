@@ -1,22 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="0398b7a2-21b4-4f28-809a-1b664dd3218f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/model/customer/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/model/customer/CustomerType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/repository/customer/ICustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/repository/customer/ICustomerTypeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/service/customer/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/service/customer/ICustomerTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/service/customer/impl/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/service/customer/impl/CustomerTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/static/img/furama1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/static/img/h.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/static/img/w.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/static/img/x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/static/img/y.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/static/img/z1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/static/img/z2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/static/img/z3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/static/video/hero.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/customer/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/customer/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../module4/ss1_spring_mvc/practice/ABC/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/ss1_spring_mvc/practice/ABC/customer-management" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4/ss3_view_and_thymelief/exercise/product_management/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/ss3_view_and_thymelief/exercise/product_management/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4/ss3_view_and_thymelief/exercise/product_management/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/ss3_view_and_thymelief/exercise/product_management/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4/ss3_view_and_thymelief/exercise/product_management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/ss3_view_and_thymelief/exercise/product_management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4/ss4_data_binding_and_form/exercise/medical_declaration/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/ss4_data_binding_and_form/exercise/medical_declaration/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4/ss4_data_binding_and_form/exercise/medical_declaration/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/ss4_data_binding_and_form/exercise/medical_declaration/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4/ss4_data_binding_and_form/exercise/medical_declaration/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/ss4_data_binding_and_form/exercise/medical_declaration/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4/ss4_data_binding_and_form/exercise/medical_declaration/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/ss4_data_binding_and_form/exercise/medical_declaration/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4/ss4_data_binding_and_form/exercise/medical_declaration/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/ss4_data_binding_and_form/exercise/medical_declaration/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4/ss4_data_binding_and_form/exercise/medical_declaration/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/ss4_data_binding_and_form/exercise/medical_declaration/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4/ss4_data_binding_and_form/exercise/medical_declaration/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/ss4_data_binding_and_form/exercise/medical_declaration/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4/ss4_data_binding_and_form/exercise/medical_declaration/build/classes/java/main/com/example/controller/MedicalDeclarationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/ss4_data_binding_and_form/exercise/medical_declaration/build/classes/java/main/com/example/controller/MedicalDeclarationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4/ss4_data_binding_and_form/exercise/medical_declaration/build/libs/medical_declaration-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/ss4_data_binding_and_form/exercise/medical_declaration/build/libs/medical_declaration-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4/ss4_data_binding_and_form/exercise/medical_declaration/src/main/java/com/example/controller/MedicalDeclarationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/ss4_data_binding_and_form/exercise/medical_declaration/src/main/java/com/example/controller/MedicalDeclarationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4/ss4_data_binding_and_form/exercise/medical_declaration/src/main/webapp/WEB-INF/views/medicalDeclaration/info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/ss4_data_binding_and_form/exercise/medical_declaration/src/main/webapp/WEB-INF/views/medicalDeclaration/info.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4/ss5_thao_tac_csdl_va_orm/practice/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/ss5_thao_tac_csdl_va_orm/practice/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4/ss7_spring_data repository/exercise/blog_app1/src/main/resources/templates/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/ss7_spring_data repository/exercise/blog_app1/src/main/resources/templates/create.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,10 +79,33 @@
       <option name="presentableId" value="Default" />
       <updated>1652066954885</updated>
       <workItem from="1652066956067" duration="49000" />
+      <workItem from="1653277772231" duration="717000" />
+      <workItem from="1653291693734" duration="2321000" />
+      <workItem from="1653294505421" duration="768000" />
+      <workItem from="1653297387258" duration="154000" />
+      <workItem from="1653300455602" duration="340000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="401" y="150" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1653293094780">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="401" y="150" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1653293094780" />
   </component>
 </project>
