@@ -20,32 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0398b7a2-21b4-4f28-809a-1b664dd3218f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/controller/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/model/customer/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/model/customer/CustomerType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/repository/customer/ICustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/repository/customer/ICustomerTypeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/service/customer/ICustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/service/customer/ICustomerTypeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/service/customer/impl/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/service/customer/impl/CustomerTypeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/static/img/furama1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/static/img/h.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/static/img/w.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/static/img/x.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/static/img/y.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/static/img/z1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/static/img/z2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/static/img/z3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/static/video/hero.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/customer/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/customer/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../module4/ss1_spring_mvc/practice/ABC/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/ss1_spring_mvc/practice/ABC/customer-management" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../module4/ss5_thao_tac_csdl_va_orm/practice/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/ss5_thao_tac_csdl_va_orm/practice/customer-management" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4/ss7_spring_data repository/exercise/blog_app1/src/main/resources/templates/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/ss7_spring_data repository/exercise/blog_app1/src/main/resources/templates/create.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +60,7 @@
       <workItem from="1653291693734" duration="2321000" />
       <workItem from="1653294505421" duration="768000" />
       <workItem from="1653297387258" duration="154000" />
-      <workItem from="1653300455602" duration="340000" />
+      <workItem from="1653300455602" duration="447000" />
     </task>
     <servers />
   </component>

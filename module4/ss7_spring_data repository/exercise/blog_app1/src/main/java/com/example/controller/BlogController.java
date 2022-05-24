@@ -41,15 +41,15 @@ public class BlogController {
 
         return "list";
     }
-//    @GetMapping("/search")
-//    public String search(@RequestParam String name,Model model,@PageableDefault(value = 2,sort = {}) Pageable pageable,
-//                         @RequestParam Optional<String>keyword) {
-//        String keywordVal = keyword.orElse("");
-//        Page<Blog> blogList = iBlogService.getBlogByName(name,pageable);
-//        model.addAttribute("blogList", blogList);
-//        model.addAttribute("keywordVal",keywordVal);
-//        return "/list";
-//    }
+    @GetMapping("/search")
+    public String search(@RequestParam String name,Model model,@PageableDefault(value = 2,sort = {}) Pageable pageable,
+                         @RequestParam Optional<String>keyword) {
+        String keywordVal = keyword.orElse("");
+        Page<Blog> blogList = iBlogService.getBlogByName(name,pageable);
+        model.addAttribute("blogList", blogList);
+        model.addAttribute("keywordVal",keywordVal);
+        return "/list";
+    }
 //    @RequestMapping("")
 //    public String list(Model model) {
 //        List<Blog> blogList = iBlogService.findAll();

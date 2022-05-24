@@ -69,11 +69,21 @@ public class CustomerController {
         return "redirect:/customer";
     }
 
-    @GetMapping("delete")
+    @GetMapping("/delete")
     public String delete(Customer customer, RedirectAttributes redirectAttributes) {
         redirectAttributes.addFlashAttribute("mess", "delete Completed");
         this.iCustomerService.delete(customer);
         return "redirect:/customer";
+    }
+
+    @GetMapping("/search")
+    public String listSearch(@RequestParam String name, Model model, @PageableDefault(value = 4) Pageable pageable,
+                             @RequestParam Optional<String> keyword) {
+        String keywordVal = keyword.orElse("");
+        model.addAttribute("keywordVal",keywordVal);
+        Page<Customer> customerPage = iCustomerService.getCustomerByName(name, pageable);
+        model.addAttribute("customerPage", customerPage);
+        return "view/customer/list";
     }
 
 }
