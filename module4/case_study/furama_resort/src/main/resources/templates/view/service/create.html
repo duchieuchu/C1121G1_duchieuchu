@@ -1,10 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
 </head>
 <body>
-
+<h3>Add Service</h3>
+<p>
+    <a th:href="@{/service}">
+        Back to customer list
+    </a>
+</p>
+<p style="color: red" th:text="${mess}"></p>
 </body>
+<div id="form">
+    <form th:action="@{/service/save}" th:object="${service}"
+          method="POST" novalidate="novalidate">
+        <table class="table table-hover table-dark">
+            <tr>
+                <th>Name</th>
+                <td><input type="text" th:field="*{name}"></td>
+            </tr>
+            <tr>
+                <th>area</th>
+                <td><input type="text" th:field="*{area}"></td>
+            </tr>
+            <tr>
+                <th>cost</th>
+                <td><input type="text" th:field="*{cost}"></td>
+            </tr>
+            <tr>
+                <th>maxPeople</th>
+                <td><input type="text" th:field="*{maxPeople}"></td>
+            </tr>
+            <tr>
+                <th>rentType</th>
+                <td>
+                    <select th:field="*{rentType}">
+                        <option th:each="rentType : ${rentTypeList}" th:value="${rentType.id}"
+                                th:text="${rentType.name}"></option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>serviceType</th>
+                <td>
+                    <select th:field="*{serviceType}">
+                        <option th:each="serviceType : ${serviceTypeList}" th:value="${serviceType.id}"
+                                th:text="${serviceType.name}"></option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>standardRoom</th>
+                <td><input type="text" th:field="*{standardRoom}"></td>
+            </tr>
+            <tr>
+                <th>infoOther</th>
+                <td><input type="text" th:field="*{infoOther}"></td>
+            </tr>
+            <tr>
+                <th>poolArea</th>
+                <td><input type="text" th:field="*{poolArea}"></td>
+            </tr>
+            <tr>
+                <th>numberOfFloors</th>
+                <td><input type="text" th:field="*{numberOfFloors}"></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><input type="submit" value="Save"/></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
 </html>

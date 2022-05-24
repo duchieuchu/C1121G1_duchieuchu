@@ -1,7 +1,5 @@
 package com.example.controller;
 
-import com.example.model.customer.Customer;
-import com.example.model.customer.CustomerType;
 import com.example.model.service.RentType;
 import com.example.model.service.Service;
 import com.example.model.service.ServiceType;
@@ -46,7 +44,7 @@ public class ServiceController {
         List<RentType> rentTypeList = iRentTypeService.findAll();
         model.addAttribute("rentTypeList", rentTypeList);
 
-        model.addAttribute("customer", new Customer());
+        model.addAttribute("service", new Service());
         return "view/service/create";
     }
 

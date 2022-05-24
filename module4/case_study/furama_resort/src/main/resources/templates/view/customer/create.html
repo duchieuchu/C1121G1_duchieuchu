@@ -21,6 +21,10 @@
           method="POST" novalidate="novalidate">
         <table class="table table-hover table-dark">
             <tr>
+                <th>Code</th>
+                <td><input type="text" th:field="*{code}"></td>
+            </tr>
+            <tr>
                 <th>Name</th>
                 <td><input type="text" th:field="*{name}"></td>
             </tr>
@@ -35,7 +39,7 @@
             </tr>
             <tr>
                 <th>dateOfBirth</th>
-                <td><input type="text" th:field="*{dateOfBirth}"></td>
+                <td><input type="date" th:field="*{dateOfBirth}"></td>
             </tr>
             <tr>
                 <th>gender</th>

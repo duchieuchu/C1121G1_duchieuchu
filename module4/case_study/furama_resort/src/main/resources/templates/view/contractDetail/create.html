@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+</head>
+<body>
+<h3>Add Contract Detail</h3>
+<p>
+    <a th:href="@{/contractDetail}">
+        Back to contract list
+    </a>
+</p>
+<p style="color: red" th:text="${mess}"></p>
+</body>
+<div id="form">
+    <form th:action="@{/contractDetail/save}" th:object="${contractDetail}"
+          method="POST" novalidate="novalidate">
+        <table class="table table-hover table-dark">
+            <tr>
+                <th>contractId</th>
+                <td>
+                    <select th:field="*{contract}">
+                        <option th:each="contract : ${contractList}" th:value="${contract.id}"
+                                th:text="${contract.id}"></option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>attachService</th>
+                <td>
+                    <select th:field="*{attachService}">
+                        <option th:each="attachService : ${attachServiceList}" th:value="${attachService.id}"
+                                th:text="${attachService.name}"></option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>quantity</th>
+                <td><input type="text" th:field="*{quantity}"></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><input type="submit" value="Save"/></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+</html>

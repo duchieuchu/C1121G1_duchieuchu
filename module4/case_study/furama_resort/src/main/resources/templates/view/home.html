@@ -93,8 +93,14 @@
             <li class="nav-item">
                 <a class="nav-link" th:href="@{/service}">Service</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/contracts?action=listContract">Contract</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Contract
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" th:href="@{/contract}">Contract</a>
+                    <a class="dropdown-item" th:href="@{/contractDetail}" >Contract Detail</a>
+                </div>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">

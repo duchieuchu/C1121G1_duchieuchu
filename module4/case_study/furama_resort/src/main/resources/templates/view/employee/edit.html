@@ -8,14 +8,14 @@
 
 </head>
 <body>
-<h3>Edit customer</h3>
+<h3>Edit employee</h3>
 <p>
-    <a th:href="@{/customer}">
+    <a th:href="@{/employee}">
         Back to customer list
     </a>
 </p>
 <div id="form">
-    <form th:action="@{/customer/update}" th:object="${customer} "
+    <form th:action="@{/employee/update}" th:object="${employee} "
           method="POST" novalidate="novalidate">
         <table class="table table-hover table-dark">
             <input type="hidden" th:field="*{id}"/>
@@ -28,28 +28,9 @@
                 <td><input type="text" th:field="*{name}"></td>
             </tr>
             <tr>
-                <th>CustomerType</th>
-                <td>
-                    <select th:field="*{customerType}">
-                        <option th:each="customerType : ${customerTypeList}" th:value="${customerType.id}"
-                                th:text="${customerType.name}"></option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
                 <th>dateOfBirth</th>
-                <td><input type="text" th:field="*{dateOfBirth}"></td>
+                <td><input type="date" th:field="*{dateOfBirth}"></td>
             </tr>
-            <tr>
-                <th>gender</th>
-                <td>
-                    <select th:field="*{gender}">
-                        <option value="0">Nam</option>
-                        <option value="1">Nữ</option>
-                    </select>
-                </td>
-            </tr>
-
             <tr>
                 <th>idCard</th>
                 <td><input type="text" th:field="*{idCard}"></td>
@@ -65,6 +46,33 @@
             <tr>
                 <th>address</th>
                 <td><input type="text" th:field="*{address}"></td>
+            </tr>
+            <tr>
+                <th>position</th>
+                <td>
+                    <select th:field="*{position}">
+                        <option th:each="position : ${positionList}" th:value="${position.id}"
+                                th:text="${position.name}"></option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>educationDegree</th>
+                <td>
+                    <select th:field="*{educationDegree}">
+                        <option th:each="educationDegree : ${educationDegreeList}" th:value="${educationDegree.id}"
+                                th:text="${educationDegree.name}"></option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>division</th>
+                <td>
+                    <select th:field="*{division}">
+                        <option th:each="division : ${divisionList}" th:value="${division.id}"
+                                th:text="${division.name}"></option>
+                    </select>
+                </td>
             </tr>
             <tr>
                 <th></th>

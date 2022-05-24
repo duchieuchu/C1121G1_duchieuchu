@@ -1,4 +1,4 @@
-package com.example.model.customer;
+package com.example.model.employee;
 
 import com.example.model.contract.Contract;
 
@@ -7,48 +7,57 @@ import java.util.List;
 
 @Entity
 @Table
-public class Customer {
+public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-
-    @ManyToOne
-    @JoinColumn(name = "customerType_id",referencedColumnName = "id")
-    private CustomerType customerType;
-
     private String name;
     private String dateOfBirth;
-
-    @Column(columnDefinition = "BIT")
-    private Integer gender;
-
     private String idCard;
     private String phone;
     private String email;
     private String address;
+
+    @ManyToOne
+    @JoinColumn(name = "position_id",referencedColumnName = "id")
+    private Position position;
+
+    @ManyToOne
+    @JoinColumn(name = "educationDegree_id",referencedColumnName = "id")
+    private EducationDegree educationDegree;
+
+    @ManyToOne
+    @JoinColumn(name = "division_id",referencedColumnName = "id")
+    private Division division;
+
     private String code;
 
-    public Customer(Integer id, CustomerType customerType, String name, String dateOfBirth, Integer gender, String idCard, String phone, String email, String address, String code) {
+    public Employee() {
+    }
+
+    public Employee(Integer id, String name, String dateOfBirth, String idCard, String phone, String email, String address, Position position, EducationDegree educationDegree, Division division, String code) {
         this.id = id;
-        this.customerType = customerType;
         this.name = name;
         this.dateOfBirth = dateOfBirth;
-        this.gender = gender;
         this.idCard = idCard;
         this.phone = phone;
         this.email = email;
         this.address = address;
+        this.position = position;
+        this.educationDegree = educationDegree;
+        this.division = division;
         this.code = code;
     }
 
-    public Customer() {
-    }
-
-    @OneToMany(mappedBy = "customer")
+    @OneToMany(mappedBy = "employee")
     private List<Contract> contractList;
 
     public List<Contract> getContractList() {
         return contractList;
+    }
+
+    public void setContractList(List<Contract> contractList) {
+        this.contractList = contractList;
     }
 
     public String getCode() {
@@ -59,24 +68,12 @@ public class Customer {
         this.code = code;
     }
 
-    public void setContractList(List<Contract> contractList) {
-        this.contractList = contractList;
-    }
-
     public Integer getId() {
         return id;
     }
 
     public void setId(Integer id) {
         this.id = id;
-    }
-
-    public CustomerType getCustomerType() {
-        return customerType;
-    }
-
-    public void setCustomerType(CustomerType customerType) {
-        this.customerType = customerType;
     }
 
     public String getName() {
@@ -93,14 +90,6 @@ public class Customer {
 
     public void setDateOfBirth(String dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
-    }
-
-    public Integer getGender() {
-        return gender;
-    }
-
-    public void setGender(Integer gender) {
-        this.gender = gender;
     }
 
     public String getIdCard() {
@@ -133,5 +122,29 @@ public class Customer {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public Position getPosition() {
+        return position;
+    }
+
+    public void setPosition(Position position) {
+        this.position = position;
+    }
+
+    public EducationDegree getEducationDegree() {
+        return educationDegree;
+    }
+
+    public void setEducationDegree(EducationDegree educationDegree) {
+        this.educationDegree = educationDegree;
+    }
+
+    public Division getDivision() {
+        return division;
+    }
+
+    public void setDivision(Division division) {
+        this.division = division;
     }
 }

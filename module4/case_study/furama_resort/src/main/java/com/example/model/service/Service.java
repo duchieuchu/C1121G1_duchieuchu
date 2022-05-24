@@ -1,6 +1,9 @@
 package com.example.model.service;
 
+import com.example.model.contract.Contract;
+
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table
@@ -41,6 +44,16 @@ public class Service {
     }
 
     public Service() {
+    }
+    @OneToMany(mappedBy = "service")
+    private List<Contract> contractList;
+
+    public List<Contract> getContractList() {
+        return contractList;
+    }
+
+    public void setContractList(List<Contract> contractList) {
+        this.contractList = contractList;
     }
 
     public Integer getId() {
