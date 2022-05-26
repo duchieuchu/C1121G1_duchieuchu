@@ -1,15 +1,19 @@
 package com.example.controller;
 
+import com.example.dto.CustomerDto;
 import com.example.model.customer.Customer;
 import com.example.model.customer.CustomerType;
 import com.example.service.customer.ICustomerService;
 import com.example.service.customer.ICustomerTypeService;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
@@ -29,7 +33,7 @@ public class CustomerController {
                        @RequestParam Optional<String> keyword) {
         String keywordVal = keyword.orElse("");
         if (keyword.isPresent()) {
-            Page<Customer> customerPage = iCustomerService.getCustomerByName(keywordVal, pageable);
+            Page<Customer> customerPage = iCustomerService.getCustomerByInformation(keywordVal, pageable);
             model.addAttribute("customerPage", customerPage);
             model.addAttribute("keywordVal", keywordVal);
         } else {
@@ -39,18 +43,42 @@ public class CustomerController {
         return "view/customer/list";
     }
 
+//    @GetMapping("/create")
+//    public String create(Model model) {
+//        List<CustomerType> customerTypeList = iCustomerTypeService.findAll();
+//        model.addAttribute("customerTypeList", customerTypeList);
+//        model.addAttribute("customer", new Customer());
+//        return "view/customer/create";
+//    }
+
+    //    @PostMapping("save")
+//    public String save(Customer customer, RedirectAttributes redirectAttributes) {
+//        iCustomerService.save(customer);
+//        redirectAttributes.addFlashAttribute("mess", "Add " + customer.getName() + " Completed");
+//        return "redirect:/customer/create";
+//    }
     @GetMapping("/create")
     public String create(Model model) {
-        List<CustomerType> customerTypeList = iCustomerTypeService.findAll();
-        model.addAttribute("customerTypeList", customerTypeList);
-        model.addAttribute("customer", new Customer());
+        model.addAttribute("customerTypeList", iCustomerTypeService.findAll());
+        model.addAttribute("customerDto", new CustomerDto());
         return "view/customer/create";
     }
 
     @PostMapping("save")
-    public String save(Customer customer, RedirectAttributes redirectAttributes) {
-        iCustomerService.save(customer);
-        redirectAttributes.addFlashAttribute("mess", "Add " + customer.getName() + " Completed");
+    public String create(@ModelAttribute @Validated CustomerDto customerDto,
+                         BindingResult bindingResult,
+                         RedirectAttributes redirectAttributes,Model model){
+        new CustomerDto().validate(customerDto,bindingResult);
+        if (bindingResult.hasFieldErrors()){
+            model.addAttribute("customerTypeList", iCustomerTypeService.findAll());
+            return "view/customer/create";
+        }else {
+            Customer customer = new Customer();
+            BeanUtils.copyProperties(customerDto,customer);
+            iCustomerService.save(customer);
+            redirectAttributes.addFlashAttribute("mess",
+                    "create product: "+customer.getName() +" completed");
+        }
         return "redirect:/customer/create";
     }
 
@@ -80,7 +108,7 @@ public class CustomerController {
     public String listSearch(@RequestParam String name, Model model, @PageableDefault(value = 4) Pageable pageable,
                              @RequestParam Optional<String> keyword) {
         String keywordVal = keyword.orElse("");
-        model.addAttribute("keywordVal",keywordVal);
+        model.addAttribute("keywordVal", keywordVal);
         Page<Customer> customerPage = iCustomerService.getCustomerByName(name, pageable);
         model.addAttribute("customerPage", customerPage);
         return "view/customer/list";

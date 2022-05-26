@@ -44,7 +44,7 @@ public class Customer {
     public Customer() {
     }
 
-    @OneToMany(mappedBy = "customer")
+    @OneToMany(mappedBy = "customer",cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Contract> contractList;
 
     public List<Contract> getContractList() {

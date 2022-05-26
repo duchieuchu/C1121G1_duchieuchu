@@ -31,6 +31,11 @@ public class CustomerService implements ICustomerService {
     }
 
     @Override
+    public Page<Customer> getCustomerByInformation(String name, Pageable pageable) {
+        return this.iCustomerRepository.searchAll("%" + name + "%",pageable);
+    }
+
+    @Override
     public void save(Customer customer) {
         this.iCustomerRepository.save(customer);
     }

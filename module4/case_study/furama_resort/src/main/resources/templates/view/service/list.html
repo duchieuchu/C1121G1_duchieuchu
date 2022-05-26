@@ -48,25 +48,24 @@
         </form>
     </div>
 </nav>
-<p>
-    <a th:href="@{/service/create}">Add Service</a>
-</p>
 <p style="color: red" th:text="${mess}"></p>
 <form>
     <input type="text" name="keyword">
-    <input type="submit" value="search">
+    <input type="submit" value="search" class="btn btn-primary">
+    <a th:href="@{/service/create}" class="btn btn-secondary">Add Service</a>
 </form>
-
+<br>
 <table class="table table-hover table-dark">
     <thead>
     <tr>
+        <th class="col-1">id</th>
         <th class="col-1">name</th>
         <th class="col-1">area</th>
         <th class="col-1">cost</th>
         <th class="col-1">maxPeople</th>
         <th class="col-1">rentType</th>
         <th class="col-1">serviceType</th>
-        <th class="col-2">standardRoom</th>
+        <th class="col-1">standardRoom</th>
         <th class="col-1">infoOther</th>
         <th class="col-1">poolArea</th>
         <th class="col-1">numberOfFloors</th>
@@ -109,4 +108,11 @@
 </div>
 </body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+<script>
 

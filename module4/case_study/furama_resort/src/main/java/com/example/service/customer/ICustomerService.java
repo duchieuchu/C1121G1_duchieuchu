@@ -13,6 +13,8 @@ public interface ICustomerService {
 
     Page<Customer> getCustomerByName(String name,Pageable pageable);
 
+    Page<Customer> getCustomerByInformation(String name,Pageable pageable);
+
     void save(Customer customer);
 
     void delete(Customer customer);

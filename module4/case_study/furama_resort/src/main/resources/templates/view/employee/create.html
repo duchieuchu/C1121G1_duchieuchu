@@ -17,36 +17,43 @@
 <p style="color: red" th:text="${mess}"></p>
 </body>
 <div id="form">
-    <form th:action="@{/employee/save}" th:object="${employee}"
+    <form th:action="@{/employee/save}" th:object="${employeeDto}"
           method="POST" novalidate="novalidate">
         <table class="table table-hover table-dark">
             <tr>
                 <th>Code</th>
-                <td><input type="text" th:field="*{code}"></td>
+                <td><input type="text" th:field="*{code}" placeholder="Enter code"></td>
+                <td th:if="${#fields.hasErrors('code')}" style="color: red" th:errors="*{code}"></td>
             </tr>
             <tr>
                 <th>Name</th>
-                <td><input type="text" th:field="*{name}"></td>
+                <td><input type="text" th:field="*{name}" placeholder="Enter name"></td>
+                <td th:if="${#fields.hasErrors('name')}" style="color: red" th:errors="*{name}"></td>
             </tr>
             <tr>
                 <th>dateOfBirth</th>
                 <td><input type="date" th:field="*{dateOfBirth}"></td>
+                <td th:if="${#fields.hasErrors('dateOfBirth')}" style="color: red" th:errors="*{dateOfBirth}"></td>
             </tr>
             <tr>
                 <th>idCard</th>
-                <td><input type="text" th:field="*{idCard}"></td>
+                <td><input type="number" th:field="*{idCard}" placeholder="Enter idCard"></td>
+                <td th:if="${#fields.hasErrors('idCard')}" style="color: red" th:errors="*{idCard}"></td>
             </tr>
             <tr>
                 <th>phone</th>
-                <td><input type="text" th:field="*{phone}"></td>
+                <td><input type="number" th:field="*{phone}" placeholder="Enter phone"></td>
+                <td th:if="${#fields.hasErrors('phone')}" style="color: red" th:errors="*{phone}"></td>
             </tr>
             <tr>
                 <th>email</th>
-                <td><input type="text" th:field="*{email}"></td>
+                <td><input type="text" th:field="*{email}" placeholder="Enter email"></td>
+                <td th:if="${#fields.hasErrors('email')}" style="color: red" th:errors="*{email}"></td>
             </tr>
             <tr>
                 <th>address</th>
-                <td><input type="text" th:field="*{address}"></td>
+                <td><input type="text" th:field="*{address}" placeholder="Enter address"></td>
+                <td th:if="${#fields.hasErrors('address')}" style="color: red" th:errors="*{address}"></td>
             </tr>
             <tr>
                 <th>position</th>

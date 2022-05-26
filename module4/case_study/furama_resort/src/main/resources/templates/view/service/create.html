@@ -17,24 +17,28 @@
 <p style="color: red" th:text="${mess}"></p>
 </body>
 <div id="form">
-    <form th:action="@{/service/save}" th:object="${service}"
+    <form th:action="@{/service/save}" th:object="${serviceDto}"
           method="POST" novalidate="novalidate">
         <table class="table table-hover table-dark">
             <tr>
                 <th>Name</th>
-                <td><input type="text" th:field="*{name}"></td>
+                <td><input type="text" th:field="*{name}" placeholder="Enter name"></td>
+                <td th:if="${#fields.hasErrors('name')}" style="color: red" th:errors="*{name}"></td>
             </tr>
             <tr>
                 <th>area</th>
-                <td><input type="text" th:field="*{area}"></td>
+                <td><input type="number" th:field="*{area}" placeholder="Enter area" ></td>
+                <td th:if="${#fields.hasErrors('area')}" style="color: red" th:errors="*{area}"></td>
             </tr>
             <tr>
                 <th>cost</th>
-                <td><input type="text" th:field="*{cost}"></td>
+                <td><input type="number" th:field="*{cost}" placeholder="Enter cost"></td>
+                <td th:if="${#fields.hasErrors('cost')}" style="color: red" th:errors="*{cost}"></td>
             </tr>
             <tr>
                 <th>maxPeople</th>
-                <td><input type="text" th:field="*{maxPeople}"></td>
+                <td><input type="number" th:field="*{maxPeople}" placeholder="Enter maxPeople"></td>
+                <td th:if="${#fields.hasErrors('maxPeople')}" style="color: red" th:errors="*{maxPeople}"></td>
             </tr>
             <tr>
                 <th>rentType</th>
@@ -56,19 +60,23 @@
             </tr>
             <tr>
                 <th>standardRoom</th>
-                <td><input type="text" th:field="*{standardRoom}"></td>
+                <td><input type="text" th:field="*{standardRoom}" placeholder="enter standardRoom"></td>
+                <td th:if="${#fields.hasErrors('standardRoom')}" style="color: red" th:errors="*{standardRoom}"></td>
             </tr>
             <tr>
                 <th>infoOther</th>
-                <td><input type="text" th:field="*{infoOther}"></td>
+                <td><input type="text" th:field="*{infoOther}" placeholder="enter infoOther"></td>
+                <td th:if="${#fields.hasErrors('infoOther')}" style="color: red" th:errors="*{infoOther}"></td>
             </tr>
             <tr>
                 <th>poolArea</th>
-                <td><input type="text" th:field="*{poolArea}"></td>
+                <td><input type="number" th:field="*{poolArea}" placeholder="enter poolArea"></td>
+                <td th:if="${#fields.hasErrors('poolArea')}" style="color: red" th:errors="*{poolArea}"></td>
             </tr>
             <tr>
                 <th>numberOfFloors</th>
-                <td><input type="text" th:field="*{numberOfFloors}"></td>
+                <td><input type="number" th:field="*{numberOfFloors}" placeholder="enter numberOfFloors"></td>
+                <td th:if="${#fields.hasErrors('numberOfFloors')}" style="color: red" th:errors="*{numberOfFloors}"></td>
             </tr>
             <tr>
                 <th></th>

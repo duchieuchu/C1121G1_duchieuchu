@@ -1,5 +1,6 @@
 package com.example.controller;
 
+import com.example.dto.EmployeeDto;
 import com.example.model.employee.Division;
 import com.example.model.employee.EducationDegree;
 import com.example.model.employee.Employee;
@@ -8,12 +9,15 @@ import com.example.service.employee.IDivisionService;
 import com.example.service.employee.IEducationDegreeService;
 import com.example.service.employee.IEmployeeService;
 import com.example.service.employee.IPositionService;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
@@ -49,23 +53,39 @@ public class EmployeeController {
 
     @GetMapping("/create")
     public String create(Model model) {
-        List<Division> divisionList = iDivisionService.findAll();
-        model.addAttribute("divisionList", divisionList);
-        List<Position> positionList = iPositionService.findAll();
-        model.addAttribute("positionList", positionList);
-        List<EducationDegree> educationDegreeList = iEducationDegreeService.findAll();
-        model.addAttribute("educationDegreeList", educationDegreeList);
-
-        model.addAttribute("employee", new Employee());
+        model.addAttribute("divisionList",iDivisionService.findAll());
+        model.addAttribute("positionList", iPositionService.findAll());
+        model.addAttribute("educationDegreeList",iEducationDegreeService.findAll());
+        model.addAttribute("employeeDto", new EmployeeDto());
         return "view/employee/create";
     }
 
     @PostMapping("save")
-    public String save(Employee employee, RedirectAttributes redirectAttributes) {
-        iEmployeeService.save(employee);
-        redirectAttributes.addFlashAttribute("mess", "Add " + employee.getName() + " Completed");
+    public String create(@ModelAttribute @Validated EmployeeDto employeeDto,
+                         BindingResult bindingResult,
+                         RedirectAttributes redirectAttributes,Model model){
+        new EmployeeDto().validate(employeeDto,bindingResult);
+        if (bindingResult.hasFieldErrors()){
+            model.addAttribute("divisionList",iDivisionService.findAll());
+            model.addAttribute("positionList", iPositionService.findAll());
+            model.addAttribute("educationDegreeList",iEducationDegreeService.findAll());
+            return "view/employee/create";
+        }else {
+            Employee employee = new Employee();
+            BeanUtils.copyProperties(employeeDto,employee);
+            iEmployeeService.save(employee);
+            redirectAttributes.addFlashAttribute("mess",
+                    "create product: "+employee.getName() +" completed");
+        }
         return "redirect:/employee/create";
     }
+
+//    @PostMapping("save")
+//    public String save(Employee employee, RedirectAttributes redirectAttributes) {
+//        iEmployeeService.save(employee);
+//        redirectAttributes.addFlashAttribute("mess", "Add " + employee.getName() + " Completed");
+//        return "redirect:/employee/create";
+//    }
 
     @GetMapping("/{id}/edit")
     public String edit(@PathVariable Integer id, Model model) {

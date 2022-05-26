@@ -15,8 +15,8 @@ public class Contract {
     private Integer id;
     private String startDate;
     private String endDate;
-    private double deposit;
-    private double totalMoney;
+    private Double deposit;
+    private Double totalMoney;
 
     @ManyToOne
     @JoinColumn(name = "employee_id",referencedColumnName = "id")
@@ -43,7 +43,7 @@ public class Contract {
         this.customer = customer;
         this.service = service;
     }
-    @OneToMany(mappedBy = "contract")
+    @OneToMany(mappedBy = "contract",orphanRemoval = true)
     private List<ContractDetail> contractDetailList;
 
     public List<ContractDetail> getContractDetailList() {

@@ -12,7 +12,7 @@ public class Division {
     private Integer id;
     private String name;
 
-    @OneToMany(mappedBy = "division")
+    @OneToMany(mappedBy = "division",orphanRemoval = true)
     private List<Employee> employeeList;
 
     public Division() {

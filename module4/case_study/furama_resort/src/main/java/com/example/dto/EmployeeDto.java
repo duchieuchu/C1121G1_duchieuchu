@@ -1,87 +1,38 @@
-package com.example.model.employee;
+package com.example.dto;
 
-import com.example.model.contract.Contract;
+import com.example.model.employee.Division;
+import com.example.model.employee.EducationDegree;
+import com.example.model.employee.Position;
+import org.springframework.validation.Errors;
+import org.springframework.validation.Validator;
 
-import javax.persistence.*;
-import java.util.List;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
 
-@Entity
-@Table
-public class Employee {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
+public class EmployeeDto implements Validator {
     private Integer id;
+
+    @NotBlank(message = "name không được có khoảng trắng")
     private String name;
+
+    @NotEmpty(message = "dateOfBirth không được được để trống!")
     private String dateOfBirth;
+
     private String idCard;
     private String phone;
     private String email;
+
+    @NotBlank(message = "address không được có khoảng trắng!")
     private String address;
 
-    @ManyToOne
-    @JoinColumn(name = "position_id",referencedColumnName = "id")
     private Position position;
 
-    @ManyToOne
-    @JoinColumn(name = "educationDegree_id",referencedColumnName = "id")
     private EducationDegree educationDegree;
 
-    @ManyToOne
-    @JoinColumn(name = "division_id",referencedColumnName = "id")
     private Division division;
 
     private String code;
-
-    /* 0: Exist
-        1: No exist
-     */
-//    @Column(columnDefinition = "int default 0")
-//    private Integer delFlg=0;
-
-    @OneToMany(mappedBy = "employee",cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Contract> contractList;
-
-
-    public Employee() {
-    }
-
-    public Employee(Integer id, String name, String dateOfBirth, String idCard, String phone, String email, String address, Position position, EducationDegree educationDegree, Division division, String code) {
-        this.id = id;
-        this.name = name;
-        this.dateOfBirth = dateOfBirth;
-        this.idCard = idCard;
-        this.phone = phone;
-        this.email = email;
-        this.address = address;
-        this.position = position;
-        this.educationDegree = educationDegree;
-        this.division = division;
-        this.code = code;
-    }
-//
-//    public Integer getDelFlg() {
-//        return delFlg;
-//    }
-//
-//    public void setDelFlg(Integer delFlg) {
-//        this.delFlg = delFlg;
-//    }
-
-    public List<Contract> getContractList() {
-        return contractList;
-    }
-
-    public void setContractList(List<Contract> contractList) {
-        this.contractList = contractList;
-    }
-
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
-    }
 
     public Integer getId() {
         return id;
@@ -161,5 +112,35 @@ public class Employee {
 
     public void setDivision(Division division) {
         this.division = division;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    @Override
+    public boolean supports(Class<?> clazz) {
+        return false;
+    }
+
+    @Override
+    public void validate(Object target, Errors errors) {
+        EmployeeDto employeeDto = (EmployeeDto) target;
+        if ((!employeeDto.code.matches("^DV-\\d{4}$"))) {
+            errors.rejectValue("code","employeeCode.inValid","employeeCode nhập không hợp lệ");
+        }
+        if (!employeeDto.phone.matches("^((090)|(091)|([(]84[)][+]90)|([(]84[)][+]91))\\d{7}$")){
+            errors.rejectValue("phone","phone.inValid","phone nhập không hợp lệ!");
+        }
+        if (!employeeDto.email.matches("^[\\w#][\\w\\.\\'+#](.[\\w\\\\'#]+)\\@[a-zA-Z0-9]+(.[a-zA-Z0-9]+)*(.[a-zA-Z]{2,20})$")){
+            errors.rejectValue("email","email.inValid","email nhập không hợp lệ!");
+        }
+        if (!employeeDto.idCard.matches("^(\\d{9})|(\\d{12})$")){
+            errors.rejectValue("idCard","idCard.inValid","idCard nhập không hợp lệ!");
+        }
     }
 }

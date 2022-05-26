@@ -17,24 +17,32 @@
 <p style="color: red" th:text="${mess}"></p>
 </body>
 <div id="form">
-    <form th:action="@{/contract/save}" th:object="${contract}"
+    <form th:action="@{/contract/save}" th:object="${contractDto}"
           method="POST" novalidate="novalidate">
         <table class="table table-hover table-dark">
             <tr>
                 <th>startDate</th>
                 <td><input type="date" th:field="*{startDate}"></td>
+                <td th:if="${#fields.hasErrors('startDate')}" style="color: red" th:errors="*{startDate}"></td>
+
             </tr>
             <tr>
                 <th>endDate</th>
                 <td><input type="date" th:field="*{endDate}"></td>
+                <td th:if="${#fields.hasErrors('endDate')}" style="color: red" th:errors="*{endDate}"></td>
+
             </tr>
             <tr>
                 <th>deposit</th>
-                <td><input type="text" th:field="*{deposit}"></td>
+                <td><input type="number" th:field="*{deposit}" placeholder="Enter deposit"></td>
+                <td th:if="${#fields.hasErrors('deposit')}" style="color: red" th:errors="*{deposit}"></td>
+
             </tr>
             <tr>
                 <th>totalMoney</th>
-                <td><input type="text" th:field="*{totalMoney}"></td>
+                <td><input type="number" th:field="*{totalMoney}"  placeholder="Enter totalMoney"></td>
+                <td th:if="${#fields.hasErrors('totalMoney')}" style="color: red" th:errors="*{totalMoney}"></td>
+
             </tr>
             <tr>
                 <th>employeeName</th>

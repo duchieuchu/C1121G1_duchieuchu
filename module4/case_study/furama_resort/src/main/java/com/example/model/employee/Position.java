@@ -11,7 +11,7 @@ public class Position {
     private Integer id;
     private String name;
 
-    @OneToMany(mappedBy = "position")
+    @OneToMany(mappedBy = "position",orphanRemoval = true)
     private List<Employee> employeeList;
 
     public Position() {
