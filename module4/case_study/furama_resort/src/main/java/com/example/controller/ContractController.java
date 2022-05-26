@@ -1,11 +1,7 @@
 package com.example.controller;
 
 import com.example.dto.ContractDto;
-import com.example.dto.CustomerDto;
 import com.example.model.contract.Contract;
-import com.example.model.customer.Customer;
-import com.example.model.employee.Employee;
-import com.example.model.service.Service;
 import com.example.service.contract.IContractService;
 import com.example.service.customer.ICustomerService;
 import com.example.service.employee.IEmployeeService;

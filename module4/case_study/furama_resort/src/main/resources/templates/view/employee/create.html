@@ -10,7 +10,7 @@
 <body>
 <h3>Add Employee</h3>
 <p>
-    <a th:href="@{/employee}">
+    <a th:href="@{/employee}" class="btn btn-dark">
         Back to customer list
     </a>
 </p>
@@ -20,11 +20,7 @@
     <form th:action="@{/employee/save}" th:object="${employeeDto}"
           method="POST" novalidate="novalidate">
         <table class="table table-hover table-dark">
-            <tr>
-                <th>Code</th>
-                <td><input type="text" th:field="*{code}" placeholder="Enter code"></td>
-                <td th:if="${#fields.hasErrors('code')}" style="color: red" th:errors="*{code}"></td>
-            </tr>
+
             <tr>
                 <th>Name</th>
                 <td><input type="text" th:field="*{name}" placeholder="Enter name"></td>
@@ -39,6 +35,11 @@
                 <th>idCard</th>
                 <td><input type="number" th:field="*{idCard}" placeholder="Enter idCard"></td>
                 <td th:if="${#fields.hasErrors('idCard')}" style="color: red" th:errors="*{idCard}"></td>
+            </tr>
+            <tr>
+                <th>salary</th>
+                <td><input type="number" th:field="*{salary}" placeholder="Enter salary"></td>
+                <td th:if="${#fields.hasErrors('salary')}" style="color: red" th:errors="*{salary}"></td>
             </tr>
             <tr>
                 <th>phone</th>
@@ -84,7 +85,7 @@
             </tr>
             <tr>
                 <th></th>
-                <td><input type="submit" value="Save"/></td>
+                <td><input type="submit" value="Save" class="btn btn-primary"/></td>
             </tr>
         </table>
     </form>

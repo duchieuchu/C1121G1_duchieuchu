@@ -20,6 +20,7 @@ public class EmployeeDto implements Validator {
     private String dateOfBirth;
 
     private String idCard;
+    private String salary;
     private String phone;
     private String email;
 
@@ -31,8 +32,6 @@ public class EmployeeDto implements Validator {
     private EducationDegree educationDegree;
 
     private Division division;
-
-    private String code;
 
     public Integer getId() {
         return id;
@@ -114,12 +113,12 @@ public class EmployeeDto implements Validator {
         this.division = division;
     }
 
-    public String getCode() {
-        return code;
+    public String getSalary() {
+        return salary;
     }
 
-    public void setCode(String code) {
-        this.code = code;
+    public void setSalary(String salary) {
+        this.salary = salary;
     }
 
     @Override
@@ -130,9 +129,6 @@ public class EmployeeDto implements Validator {
     @Override
     public void validate(Object target, Errors errors) {
         EmployeeDto employeeDto = (EmployeeDto) target;
-        if ((!employeeDto.code.matches("^DV-\\d{4}$"))) {
-            errors.rejectValue("code","employeeCode.inValid","employeeCode nhập không hợp lệ");
-        }
         if (!employeeDto.phone.matches("^((090)|(091)|([(]84[)][+]90)|([(]84[)][+]91))\\d{7}$")){
             errors.rejectValue("phone","phone.inValid","phone nhập không hợp lệ!");
         }

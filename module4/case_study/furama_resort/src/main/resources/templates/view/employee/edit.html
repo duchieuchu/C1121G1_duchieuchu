@@ -10,7 +10,7 @@
 <body>
 <h3>Edit employee</h3>
 <p>
-    <a th:href="@{/employee}">
+    <a th:href="@{/employee}" class="btn btn-dark">
         Back to customer list
     </a>
 </p>
@@ -19,10 +19,6 @@
           method="POST" novalidate="novalidate">
         <table class="table table-hover table-dark">
             <input type="hidden" th:field="*{id}"/>
-            <tr>
-                <th>Code</th>
-                <td><input type="text" th:field="*{code}"></td>
-            </tr>
             <tr>
                 <th>Name</th>
                 <td><input type="text" th:field="*{name}"></td>
@@ -34,6 +30,10 @@
             <tr>
                 <th>idCard</th>
                 <td><input type="text" th:field="*{idCard}"></td>
+            </tr>
+            <tr>
+                <th>salary</th>
+                <td><input type="text" th:field="*{salary}"></td>
             </tr>
             <tr>
                 <th>phone</th>

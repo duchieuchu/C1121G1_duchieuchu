@@ -50,8 +50,8 @@
 </nav>
 <p style="color: red" th:text="${mess}"></p>
 <form>
-    <input type="text" name="keyword" >
-    <input type="submit" value="search" class="btn btn-primary"  >
+<!--    <input type="text" name="keyword" >-->
+<!--    <input type="submit" value="search" class="btn btn-primary"  >-->
     <a th:href="@{/contract/create}" class="btn btn-secondary">Add Contract</a>
 </form>
 <br>
@@ -80,21 +80,21 @@
         <td th:text="${row.getEmployee().getName()}"></td>
         <td th:text="${row.getCustomer().getName()}"></td>
         <td th:text="${row.getService().getName()}"></td>
-        <td><a th:href="@{/contract/{id}/edit(id=${row.getId()})}">edit</a></td>
-        <td><a th:href="@{/contract/delete(id=${row.getId()})}">delete</a></td>
+        <td><a th:href="@{/contract/{id}/edit(id=${row.getId()})}" class="btn btn-warning">edit</a></td>
+        <td><a th:href="@{/contract/delete(id=${row.getId()})}" class="btn btn-danger">delete</a></td>
     </tr>
     </tbody>
 </table>
 <div>
     <a th:if="${contractPage.hasPrevious()}"
-       th:href="@{/contract/(page=${contractPage.number - 1})}">
+       th:href="@{/contract/(page=${contractPage.number - 1})}" class="btn btn-info">
         Previous
     </a>
     <span th:text="${contractPage.number + 1}"></span>
     /
     <span th:text="${contractPage.totalPages}"></span>
     <a th:if="${contractPage.hasNext()}"
-       th:href="@{/contract/(page=${contractPage.number + 1})}">
+       th:href="@{/contract/(page=${contractPage.number + 1})}" class="btn btn-success">
         Next
     </a>
 </div>

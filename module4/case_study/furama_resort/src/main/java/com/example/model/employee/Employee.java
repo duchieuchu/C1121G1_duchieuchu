@@ -14,6 +14,7 @@ public class Employee {
     private String name;
     private String dateOfBirth;
     private String idCard;
+    private double salary;
     private String phone;
     private String email;
     private String address;
@@ -30,8 +31,6 @@ public class Employee {
     @JoinColumn(name = "division_id",referencedColumnName = "id")
     private Division division;
 
-    private String code;
-
     /* 0: Exist
         1: No exist
      */
@@ -45,19 +44,20 @@ public class Employee {
     public Employee() {
     }
 
-    public Employee(Integer id, String name, String dateOfBirth, String idCard, String phone, String email, String address, Position position, EducationDegree educationDegree, Division division, String code) {
+    public Employee(Integer id, String name, String dateOfBirth, String idCard, double salary, String phone, String email, String address, Position position, EducationDegree educationDegree, Division division) {
         this.id = id;
         this.name = name;
         this.dateOfBirth = dateOfBirth;
         this.idCard = idCard;
+        this.salary = salary;
         this.phone = phone;
         this.email = email;
         this.address = address;
         this.position = position;
         this.educationDegree = educationDegree;
         this.division = division;
-        this.code = code;
     }
+
 //
 //    public Integer getDelFlg() {
 //        return delFlg;
@@ -67,20 +67,20 @@ public class Employee {
 //        this.delFlg = delFlg;
 //    }
 
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
     public List<Contract> getContractList() {
         return contractList;
     }
 
     public void setContractList(List<Contract> contractList) {
         this.contractList = contractList;
-    }
-
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
     }
 
     public Integer getId() {

@@ -10,7 +10,7 @@
 <body>
 <h3>Add Service</h3>
 <p>
-    <a th:href="@{/service}">
+    <a th:href="@{/service}" class="btn btn-dark">
         Back to customer list
     </a>
 </p>
@@ -20,6 +20,11 @@
     <form th:action="@{/service/save}" th:object="${serviceDto}"
           method="POST" novalidate="novalidate">
         <table class="table table-hover table-dark">
+            <tr>
+                <th>Code</th>
+                <td><input type="text" th:field="*{code}" placeholder="Enter code"></td>
+                <td th:if="${#fields.hasErrors('code')}" style="color: red" th:errors="*{code}"></td>
+            </tr>
             <tr>
                 <th>Name</th>
                 <td><input type="text" th:field="*{name}" placeholder="Enter name"></td>
@@ -80,7 +85,7 @@
             </tr>
             <tr>
                 <th></th>
-                <td><input type="submit" value="Save"/></td>
+                <td><input type="submit" value="Save" class="btn btn-primary"/></td>
             </tr>
         </table>
     </form>

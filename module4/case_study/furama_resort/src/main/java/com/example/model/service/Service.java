@@ -28,8 +28,9 @@ public class Service {
     private String infoOther;
     private double poolArea;
     private Integer numberOfFloors;
+    private String code;
 
-    public Service(Integer id, String name, Integer area, Double cost, Integer maxPeople, RentType rentType, ServiceType serviceType, String standardRoom, String infoOther, double poolArea, Integer numberOfFloors) {
+    public Service(Integer id, String name, Integer area, Double cost, Integer maxPeople, RentType rentType, ServiceType serviceType, String standardRoom, String infoOther, double poolArea, Integer numberOfFloors, String code) {
         this.id = id;
         this.name = name;
         this.area = area;
@@ -41,12 +42,21 @@ public class Service {
         this.infoOther = infoOther;
         this.poolArea = poolArea;
         this.numberOfFloors = numberOfFloors;
+        this.code = code;
     }
 
     public Service() {
     }
     @OneToMany(mappedBy = "service")
     private List<Contract> contractList;
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
 
     public List<Contract> getContractList() {
         return contractList;

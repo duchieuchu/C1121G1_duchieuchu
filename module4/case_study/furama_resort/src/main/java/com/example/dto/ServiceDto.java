@@ -12,6 +12,7 @@ public class ServiceDto implements Validator {
 
     @NotBlank(message = "name không được có khoảng trắng")
     private String name;
+    private String code;
 
     private String area;
 
@@ -114,6 +115,14 @@ public class ServiceDto implements Validator {
         this.poolArea = poolArea;
     }
 
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
     public String getNumberOfFloors() {
         return numberOfFloors;
     }
@@ -130,6 +139,9 @@ public class ServiceDto implements Validator {
     @Override
     public void validate(Object target, Errors errors) {
         ServiceDto serviceDto = (ServiceDto) target;
+        if ((!serviceDto.code.matches("^DV-\\d{4}$"))) {
+            errors.rejectValue("code","serviceCode.inValid","employeeCode nhập không hợp lệ");
+        }
         if ((!serviceDto.cost.matches("^[1-9]+[0-9.]*$"))) {
             errors.rejectValue("cost", "cost.inValid", "cost nhập không hợp lệ");
         }

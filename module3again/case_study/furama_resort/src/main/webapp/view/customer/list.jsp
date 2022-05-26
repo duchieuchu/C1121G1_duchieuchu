@@ -116,7 +116,7 @@
             </div>
             <form method="post" action="/customers?action=delete">
                 <div class="modal-body">
-                    <input type="hidden" name="id" id="id">
+                    <input type="hidden" 1name="id" id="id">
                     Are you sure ?
                 </div>
                 <div class="modal-footer">

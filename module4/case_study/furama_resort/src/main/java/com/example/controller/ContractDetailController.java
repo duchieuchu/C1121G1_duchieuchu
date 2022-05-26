@@ -1,5 +1,7 @@
 package com.example.controller;
 
+import com.example.dto.ContractDetailDto;
+import com.example.dto.CustomerDto;
 import com.example.model.contract.AttachService;
 import com.example.model.contract.Contract;
 import com.example.model.contract.ContractDetail;
@@ -9,13 +11,17 @@ import com.example.model.service.Service;
 import com.example.service.contract.IAttachServiceService;
 import com.example.service.contract.IContractDetailService;
 import com.example.service.contract.IContractService;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
@@ -41,22 +47,37 @@ public class ContractDetailController {
 
     @GetMapping("/create")
     public String create(Model model) {
-        List<AttachService> attachServiceList = iAttachServiceService.findAll();
-        model.addAttribute("attachServiceList", attachServiceList);
+        model.addAttribute("attachServiceList", iAttachServiceService.findAll());
+        model.addAttribute("contractList", iContractService.findAll());
 
-        List<Contract> contractList = iContractService.findAll();
-        model.addAttribute("contractList", contractList);
-
-        model.addAttribute("contractDetail", new ContractDetail());
+        model.addAttribute("contractDetailDto", new ContractDetailDto());
         return "view/contractDetail/create";
     }
 
     @PostMapping("save")
-    public String save(ContractDetail contractDetail, RedirectAttributes redirectAttributes) {
-        iContractDetailService.save(contractDetail);
-        redirectAttributes.addFlashAttribute("mess", "Add  Completed");
+    public String create(@ModelAttribute @Validated ContractDetailDto contractDetailDto,
+                         BindingResult bindingResult,
+                         RedirectAttributes redirectAttributes,Model model){
+        new ContractDetailDto().validate(contractDetailDto,bindingResult);
+        if (bindingResult.hasFieldErrors()){
+            model.addAttribute("attachServiceList", iAttachServiceService.findAll());
+            model.addAttribute("contractList", iContractService.findAll());
+            return "view/contractDetail/create";
+        }else {
+            Contract contract = new Contract();
+            BeanUtils.copyProperties(contractDetailDto,contract);
+            iContractService.save(contract);
+            redirectAttributes.addFlashAttribute("mess",
+                    "create product completed");
+        }
         return "redirect:/contractDetail/create";
     }
+//    @PostMapping("save")
+//    public String save(ContractDetail contractDetail, RedirectAttributes redirectAttributes) {
+//        iContractDetailService.save(contractDetail);
+//        redirectAttributes.addFlashAttribute("mess", "Add  Completed");
+//        return "redirect:/contractDetail/create";
+//    }
 
     @GetMapping("/delete")
     public String delete(ContractDetail contractDetail, RedirectAttributes redirectAttributes) {
