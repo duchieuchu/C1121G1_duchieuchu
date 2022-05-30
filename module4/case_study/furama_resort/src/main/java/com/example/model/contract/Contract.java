@@ -43,7 +43,7 @@ public class Contract {
         this.customer = customer;
         this.service = service;
     }
-    @OneToMany(mappedBy = "contract",orphanRemoval = true)
+    @OneToMany(mappedBy = "contract",cascade =CascadeType.ALL,orphanRemoval = true)
     private List<ContractDetail> contractDetailList;
 
     public List<ContractDetail> getContractDetailList() {

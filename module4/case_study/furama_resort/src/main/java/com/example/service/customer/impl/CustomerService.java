@@ -1,5 +1,6 @@
 package com.example.service.customer.impl;
 
+import com.example.dto.ICustomerUseService;
 import com.example.model.customer.Customer;
 import com.example.repository.customer.ICustomerRepository;
 import com.example.service.customer.ICustomerService;
@@ -55,4 +56,10 @@ public class CustomerService implements ICustomerService {
     public Customer findById(Integer id) {
         return this.iCustomerRepository.findById(id).orElse(null);
     }
+
+    @Override
+    public Page<ICustomerUseService> findAllCustomerUserService(Pageable pageable) {
+        return iCustomerRepository.findAllCustomerUserService(pageable) ;
+    }
+
 }

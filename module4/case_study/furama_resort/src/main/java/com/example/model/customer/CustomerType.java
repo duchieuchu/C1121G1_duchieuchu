@@ -12,7 +12,7 @@ public class CustomerType {
 
     private String name;
 
-    @OneToMany(mappedBy = "customerType")
+    @OneToMany(mappedBy = "customerType",cascade = CascadeType.ALL)
     List< Customer > customerList;
 
 

@@ -1,6 +1,7 @@
 package com.example.model.employee;
 
 import com.example.model.contract.Contract;
+import com.example.model.login.User;
 
 import javax.persistence.*;
 import java.util.List;
@@ -31,6 +32,9 @@ public class Employee {
     @JoinColumn(name = "division_id",referencedColumnName = "id")
     private Division division;
 
+    @ManyToOne
+    @JoinColumn(name = "user_name",referencedColumnName = "userName")
+    private User user;
     /* 0: Exist
         1: No exist
      */
@@ -66,6 +70,14 @@ public class Employee {
 //    public void setDelFlg(Integer delFlg) {
 //        this.delFlg = delFlg;
 //    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 
     public double getSalary() {
         return salary;

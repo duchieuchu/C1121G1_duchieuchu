@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+</head>
+<body>
+<p>
+    <a th:href="@{/employee}" class="btn btn-dark">
+        Back to employee list
+    </a>
+</p>
+<table class="table table-hover table-dark">
+    <tr>
+        <th>Id</th>
+        <td th:text="${employee.id}"></td>
+    </tr>
+    <tr>
+        <th>name</th>
+        <td th:text="${employee.name}"></td>
+    </tr>
+    <tr>
+        <th>dateOfBirth</th>
+        <td th:text="${employee.dateOfBirth}"></td>
+    </tr>
+    <tr>
+        <th>idCard</th>
+        <td th:text="${employee.idCard}"></td>
+    </tr>
+    <tr>
+        <th>salary</th>
+        <td th:text="${employee.salary}"></td>
+    </tr>
+    <tr>
+        <th>phone</th>
+        <td th:text="${employee.phone}"></td>
+    </tr>
+    <tr>
+        <th>email</th>
+        <td th:text="${employee.email}"></td>
+    </tr>
+    <tr>
+        <th>address</th>
+        <td th:text="${employee.address}"></td>
+    </tr>
+    <tr>
+        <th>email</th>
+        <td th:text="${employee.email}"></td>
+    </tr>
+    <tr>
+        <th>position</th>
+        <td th:text="${employee.position.name}"></td>
+    </tr>
+    <tr>
+        <th>educationDegree</th>
+        <td th:text="${employee.educationDegree.name}"></td>
+    </tr>
+    <tr>
+        <th>division</th>
+        <td th:text="${employee.division.name}"></td>
+    </tr>
+
+</table>
+</body>
+</html>

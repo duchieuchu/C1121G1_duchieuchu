@@ -1,5 +1,6 @@
 package com.example.service.customer;
 
+import com.example.dto.ICustomerUseService;
 import com.example.model.customer.Customer;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -22,4 +23,6 @@ public interface ICustomerService {
     void update(Customer customer);
 
     Customer findById(Integer id);
+
+    Page<ICustomerUseService> findAllCustomerUserService(Pageable pageable);
 }

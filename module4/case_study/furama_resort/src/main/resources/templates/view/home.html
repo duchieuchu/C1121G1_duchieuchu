@@ -61,6 +61,15 @@
             font-family: "Comic Sans MS", cursive, sans-serif;
             font-style: italic;
         }
+        #session1{
+            position: fixed;
+            right: 0;
+            bottom: 0;
+        }
+        #arrow{
+            height: 45px;
+            width: 45px;
+        }
 
     </style>
 
@@ -68,7 +77,7 @@
           integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 
     <a class="navbar-brand" href="https://furamavietnam.com/">
         <img src="https://gohola.vn/uploads/2015/02/furama.gif"
@@ -93,6 +102,9 @@
             <li class="nav-item">
                 <a class="nav-link" th:href="@{/service}">Service</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/attachService}">CustomerUsingService</a>
+            </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
                     Contract
@@ -102,6 +114,16 @@
                     <a class="dropdown-item" th:href="@{/contractDetail}" >Contract Detail</a>
                 </div>
             </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-expanded="false">
+                  Setting
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                    <a class="dropdown-item" th:href="@{/contract}">User info</a>
+                    <a class="dropdown-item" th:href="@{/contractDetail}" >Admin</a>
+                    <a  class="dropdown-item" th:if="${#request.userPrincipal != null}" th:href="@{/logout}">Logout</a>
+                </div>
+            </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -109,12 +131,17 @@
         </form>
     </div>
 </nav>
+<div id="session1">
+    <a href="#section1" >
+        <img   alt="smooth" src="https://cdn-icons-png.flaticon.com/512/992/992703.png" id="arrow">
+    </a>
+</div>
 <div class="tm-hero d-flex justify-content-center align-items-center" id="tm-video-container">
     <video autoplay muted loop id="tm-video">
         <source src="../video/hero.mp4" type="video/mp4">
     </video>
 </div>
-<p class="p1">KHU NGHỈ DƯỠNG ĐẲNG CẤP THẾ GIỚI, FURAMA ĐÀ NẴNG, NỔI TIẾNG LÀ KHU NGHỈ DƯỠNG ẨM THỰC TẠI VIỆT NAM.</p>
+<p class="p1" id="section1">KHU NGHỈ DƯỠNG ĐẲNG CẤP THẾ GIỚI, FURAMA ĐÀ NẴNG, NỔI TIẾNG LÀ KHU NGHỈ DƯỠNG ẨM THỰC TẠI VIỆT NAM.</p>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="keyboard">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -250,5 +277,32 @@
     $('.carousel').carousel({
         interval: 2000
     })
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
 </script>
 </html>

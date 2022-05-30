@@ -113,5 +113,12 @@ public class CustomerController {
         model.addAttribute("customerPage", customerPage);
         return "view/customer/list";
     }
+    //hien thi
+    @GetMapping("/{id}/view")
+    public String view(@PathVariable Integer id, Model model) {
+        model.addAttribute("customer", iCustomerService.findById(id));
+        model.addAttribute("customerTypeList", iCustomerTypeService.findById(id));
+        return "view/customer/view";
+    }
 
 }

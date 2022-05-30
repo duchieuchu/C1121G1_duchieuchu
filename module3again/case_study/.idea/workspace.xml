@@ -20,23 +20,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0398b7a2-21b4-4f28-809a-1b664dd3218f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/controller/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/model/login/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/model/login/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/model/login/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/repository/login/IUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/repository/login/IUserRoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/service/login/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/util/WebUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/403Page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/customer/view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/employee/view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/loginPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/logoutSuccessfulPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/furama_resort/src/main/webapp/view/customer/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/furama_resort/src/main/webapp/view/customer/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/controller/ContractController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/controller/ContractController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/controller/ContractDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/controller/ContractDetailController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/dto/ContractDetailDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/dto/ContractDetailDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/contract/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/contract/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4/case_study/furama_resort/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/model/employee/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/java/com/example/model/employee/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/contract/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/contract/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/contractDetail/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/contractDetail/create.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/contractDetail/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/contractDetail/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/customer/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/customer/create.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/customer/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/customer/edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/customer/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/customer/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/employee/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/employee/create.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/employee/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/employee/edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/employee/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/employee/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/inValid.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/inValid.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/service/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/service/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/service/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/case_study/furama_resort/src/main/resources/templates/view/service/list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../module4/ss1_spring_mvc/practice/ABC/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/ss1_spring_mvc/practice/ABC/customer-management" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../module4/ss5_thao_tac_csdl_va_orm/practice/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/ss5_thao_tac_csdl_va_orm/practice/customer-management" afterDir="false" />
@@ -89,6 +99,8 @@
       <workItem from="1653529853725" duration="1348000" />
       <workItem from="1653536077062" duration="566000" />
       <workItem from="1653536833040" duration="2089000" />
+      <workItem from="1653634398969" duration="28000" />
+      <workItem from="1653635078420" duration="698000" />
     </task>
     <servers />
   </component>

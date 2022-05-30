@@ -122,5 +122,14 @@ public class EmployeeController {
         model.addAttribute("employeePage", employeePage);
         return "view/employee/list";
     }
+    //hien thi
+    @GetMapping("/{id}/view")
+    public String view(@PathVariable Integer id, Model model) {
+        model.addAttribute("employee", iEmployeeService.findById(id));
+        model.addAttribute("divisionList",iDivisionService.findById(id));
+        model.addAttribute("positionList", iPositionService.findById(id));
+        model.addAttribute("educationDegreeList",iEducationDegreeService.findById(id));
+        return "view/employee/view";
+    }
 
 }
