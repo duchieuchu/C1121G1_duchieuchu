@@ -104,15 +104,15 @@ public class CustomerController {
         return "redirect:/customer";
     }
 
-    @GetMapping("/search")
-    public String listSearch(@RequestParam String name, Model model, @PageableDefault(value = 4) Pageable pageable,
-                             @RequestParam Optional<String> keyword) {
-        String keywordVal = keyword.orElse("");
-        model.addAttribute("keywordVal", keywordVal);
-        Page<Customer> customerPage = iCustomerService.getCustomerByName(name, pageable);
-        model.addAttribute("customerPage", customerPage);
-        return "view/customer/list";
-    }
+//    @GetMapping("/search")
+//    public String listSearch(@RequestParam String name, Model model, @PageableDefault(value = 4) Pageable pageable,
+//                             @RequestParam Optional<String> keyword) {
+//        String keywordVal = keyword.orElse("");
+//        model.addAttribute("keywordVal", keywordVal);
+//        Page<Customer> customerPage = iCustomerService.getCustomerByName(name, pageable);
+//        model.addAttribute("customerPage", customerPage);
+//        return "view/customer/list";
+//    }
     //hien thi
     @GetMapping("/{id}/view")
     public String view(@PathVariable Integer id, Model model) {

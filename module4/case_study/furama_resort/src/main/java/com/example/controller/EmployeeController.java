@@ -38,10 +38,15 @@ public class EmployeeController {
 
     @RequestMapping("")
     public String list(Model model, @PageableDefault(value = 4) Pageable pageable,
-                       @RequestParam Optional<String> keyword) {
+                       @RequestParam Optional<String> keyword,
+                       @RequestParam Optional<String> divisionQuery
+                       ) {
         String keywordVal = keyword.orElse("");
-        if (keyword.isPresent()) {
-            Page<Employee> employeePage = iEmployeeService.getEmployeeByName(keywordVal, pageable);
+        String division = divisionQuery.orElse("");
+        model.addAttribute("divisionList", iDivisionService.findAll());
+        if (keyword.isPresent() || divisionQuery.isPresent()) {
+            Page<Employee> employeePage = iEmployeeService.getEmployeeByInformation(keywordVal,division, pageable);
+
             model.addAttribute("employeePage", employeePage);
             model.addAttribute("keywordVal", keywordVal);
         } else {
@@ -53,9 +58,9 @@ public class EmployeeController {
 
     @GetMapping("/create")
     public String create(Model model) {
-        model.addAttribute("divisionList",iDivisionService.findAll());
+        model.addAttribute("divisionList", iDivisionService.findAll());
         model.addAttribute("positionList", iPositionService.findAll());
-        model.addAttribute("educationDegreeList",iEducationDegreeService.findAll());
+        model.addAttribute("educationDegreeList", iEducationDegreeService.findAll());
         model.addAttribute("employeeDto", new EmployeeDto());
         return "view/employee/create";
     }
@@ -63,19 +68,19 @@ public class EmployeeController {
     @PostMapping("save")
     public String create(@ModelAttribute @Validated EmployeeDto employeeDto,
                          BindingResult bindingResult,
-                         RedirectAttributes redirectAttributes,Model model){
-        new EmployeeDto().validate(employeeDto,bindingResult);
-        if (bindingResult.hasFieldErrors()){
-            model.addAttribute("divisionList",iDivisionService.findAll());
+                         RedirectAttributes redirectAttributes, Model model) {
+        new EmployeeDto().validate(employeeDto, bindingResult);
+        if (bindingResult.hasFieldErrors()) {
+            model.addAttribute("divisionList", iDivisionService.findAll());
             model.addAttribute("positionList", iPositionService.findAll());
-            model.addAttribute("educationDegreeList",iEducationDegreeService.findAll());
+            model.addAttribute("educationDegreeList", iEducationDegreeService.findAll());
             return "view/employee/create";
-        }else {
+        } else {
             Employee employee = new Employee();
-            BeanUtils.copyProperties(employeeDto,employee);
+            BeanUtils.copyProperties(employeeDto, employee);
             iEmployeeService.save(employee);
             redirectAttributes.addFlashAttribute("mess",
-                    "create product: "+employee.getName() +" completed");
+                    "create product: " + employee.getName() + " completed");
         }
         return "redirect:/employee/create";
     }
@@ -113,22 +118,22 @@ public class EmployeeController {
         return "redirect:/employee";
     }
 
-    @GetMapping("/search")
-    public String listSearch(@RequestParam String name, Model model, @PageableDefault(value = 4) Pageable pageable,
-                             @RequestParam Optional<String> keyword) {
-        String keywordVal = keyword.orElse("");
-        model.addAttribute("keywordVal",keywordVal);
-        Page<Employee> employeePage = iEmployeeService.getEmployeeByName(name, pageable);
-        model.addAttribute("employeePage", employeePage);
-        return "view/employee/list";
-    }
+    //    @GetMapping("/search")
+//    public String listSearch(@RequestParam String name, Model model, @PageableDefault(value = 4) Pageable pageable,
+//                             @RequestParam Optional<String> keyword) {
+//        String keywordVal = keyword.orElse("");
+//        model.addAttribute("keywordVal",keywordVal);
+//        Page<Employee> employeePage = iEmployeeService.getEmployeeByName(name, pageable);
+//        model.addAttribute("employeePage", employeePage);
+//        return "view/employee/list";
+//    }
     //hien thi
     @GetMapping("/{id}/view")
     public String view(@PathVariable Integer id, Model model) {
         model.addAttribute("employee", iEmployeeService.findById(id));
-        model.addAttribute("divisionList",iDivisionService.findById(id));
+        model.addAttribute("divisionList", iDivisionService.findById(id));
         model.addAttribute("positionList", iPositionService.findById(id));
-        model.addAttribute("educationDegreeList",iEducationDegreeService.findById(id));
+        model.addAttribute("educationDegreeList", iEducationDegreeService.findById(id));
         return "view/employee/view";
     }
 

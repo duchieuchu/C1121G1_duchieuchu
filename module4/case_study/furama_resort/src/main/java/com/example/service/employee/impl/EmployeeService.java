@@ -31,6 +31,14 @@ public class EmployeeService implements IEmployeeService {
     }
 
     @Override
+    public Page<Employee> getEmployeeByInformation(String name,String division, Pageable pageable) {
+        if ("".equals(division)){
+            return this.iEmployeeRepository.findAllByNameContaining(name,pageable);
+        }
+        return this.iEmployeeRepository.findAllByNameContainingAndDivision_Id(name,Integer.parseInt(division),pageable);
+    }
+
+    @Override
     public void save(Employee employee) {
         this.iEmployeeRepository.save(employee);
     }

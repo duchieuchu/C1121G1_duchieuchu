@@ -13,6 +13,8 @@ public interface IEmployeeService {
 
     Page<Employee> getEmployeeByName(String name, Pageable pageable);
 
+    Page<Employee>getEmployeeByInformation(String name,String division, Pageable pageable);
+
     void save(Employee employee);
 
     void delete(Employee employee);
