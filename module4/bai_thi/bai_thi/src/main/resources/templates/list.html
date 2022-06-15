@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+
+</head>
+<body>
+<p style="color: red" th:text="${mess}"></p>
+<form>
+    <!--    <input type="text" name="keyword" >-->
+    <!--    <input type="submit" value="search" class="btn btn-primary">-->
+    <a th:href="@{/order/create}" class="btn btn-secondary">Add Order</a>
+</form>
+<br>
+<table class="table table-hover table-dark">
+    <thead>
+    <tr>
+        <th class="col-1">Ma don hang</th>
+        <th class="col-1">Ngay mUA</th>
+        <th class="col-3">so luong</th>
+        <th class="col-2">ten</th>
+        <th class="col-1">gia</th>
+        <th class="col-1">trang thai</th>
+
+        <!--        <th class="col-1">soLuong</th>-->
+        <!--        <th class="col-1">TongTien</th>-->
+        <!--        <th class="col-1">Edit</th>-->
+        <!--        <th class="col-1">Delete</th>-->
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="row : ${orderPage}">
+        <td th:text="${row.getId()}"></td>
+        <td th:text="${row.getDateBuy()}"></td>
+        <td th:text="${row.getQuantity()}"></td>
+        <td th:text="${row.getProduct().name}"></td>
+        <td th:text="${row.getProduct().price}"></td>
+        <td th:text="${row.getProduct().status}"></td>
+
+
+        <!--        &lt;!&ndash;        <td th:text="${row.getPhone()}"></td>&ndash;&gt;-->
+        <!--        &lt;!&ndash;        <td th:text="${row.getEmail()}"></td>&ndash;&gt;-->
+        <!--        &lt;!&ndash;        <td th:text="${row.getAddress()}"></td>&ndash;&gt;-->
+        <!--        <td th:text="${row.getCustomerType().getName()}"></td>-->
+        <!--        <td><a th:href="@{/customer/{id}/edit(id=${row.getId()})}" class="btn btn-warning">edit</a></td>-->
+        <!--        &lt;!&ndash;        <td><a th:href="@{/customer/delete(id=${row.getId()})}" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal" >delete</a></td>&ndash;&gt;-->
+        <!--        <td>&lt;!&ndash; Button trigger modal &ndash;&gt;-->
+        <!--            &lt;!&ndash;                  th:attr="onclick=|upload('${gallery}')|"&ndash;&gt;-->
+        <!--            <button th:attr="onclick=|deleteModal(${row.id},'${row.name}')|" type="button" class="btn btn-danger"-->
+        <!--                    data-toggle="modal"-->
+        <!--                    data-target="#exampleModal">-->
+        <!--                Delete-->
+        <!--            </button>-->
+        <!--        </td>-->
+    </tr>
+    </tbody>
+</table>
+<div>
+    <a th:if="${orderPage.hasPrevious()}"
+       th:href="@{/order/(page=${orderPage.number - 1})}" class="btn btn-info">
+        Previous
+    </a>
+    <span th:text="${orderPage.number + 1}"></span>
+    /
+    <span th:text="${orderPage.totalPages}"></span>
+    <a th:if="${orderPage.hasNext()}"
+       th:href="@{/order/(page=${orderPage.number + 1})}" class="btn btn-success">
+        Next
+    </a>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+</body>
+</html>
+
