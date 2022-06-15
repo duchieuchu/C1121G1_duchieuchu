@@ -2,34 +2,26 @@
   Created by IntelliJ IDEA.
   User: Admin
   Date: 6/15/2022
-  Time: 10:09 AM
+  Time: 2:46 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-<h1>Welcome</h1>
-<form action="/calculate" method="post">
+<h1>Welcome To My Dictionary</h1>
+<form action="/translate" method="get">
     <table>
         <tr>
-            <th>Rate</th>
-            <td><input type="number" name="rate"></td>
-        </tr>
-        <tr>
-            <th>USD</th>
-            <td><input type="number" name="usd"></td>
+            <th>English</th>
+            <td><input type="text" name="english"></td>
         </tr>
         <tr>
             <th></th>
-            <td><input type="submit" value="calculate"></td>
+            <td><input type="submit" value="search"></td>
         </tr>
-<%--        <tr>--%>
-<%--            <th>VND</th>--%>
-<%--            <td><h1> ${vnd}</h1></td>--%>
-<%--        </tr>--%>
     </table>
 </form>
 </body>
