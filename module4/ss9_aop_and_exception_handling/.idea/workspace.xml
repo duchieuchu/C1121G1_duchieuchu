@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="046ce115-f689-4447-a166-3d874d34f82e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.60/webapps/ROOT/WEB-INF/classes/com/example/controller/DictionaryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.60/webapps/ROOT/WEB-INF/classes/com/example/controller/DictionaryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.60/webapps/ROOT/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.60/webapps/ROOT/WEB-INF/views/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss1_spring_mvc/practice/ABC/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../ss1_spring_mvc/practice/ABC/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss5_thao_tac_csdl_va_orm/practice/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../ss5_thao_tac_csdl_va_orm/practice/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/build/classes/java/main/com/example/controller/DictionaryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/build/classes/java/main/com/example/controller/DictionaryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/build/libs/dictionary-simple-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/build/libs/dictionary-simple-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/src/main/java/com/example/controller/DictionaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/src/main/java/com/example/controller/DictionaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/practice/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/practice/customer-management" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2AbhyHZpGQooJJgyJ328Egdt5db" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="046ce115-f689-4447-a166-3d874d34f82e" name="Default Changelist" comment="" />
+      <created>1655284444060</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1655284444060</updated>
+      <workItem from="1655284445246" duration="2000" />
+    </task>
+    <servers />
+  </component>
+</project>
