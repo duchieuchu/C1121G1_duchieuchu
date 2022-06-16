@@ -20,7 +20,6 @@ private ICalculatorService iCalculatorService;
     public String calculator(@RequestParam String calculate, @RequestParam Integer number1,
                              @RequestParam Integer number2,Model model) {
         Integer result = this.iCalculatorService.calculate(calculate,number1,number2);
-        System.out.println(number1);
         model.addAttribute("result","result: "+result);
         return "/home";
     }
