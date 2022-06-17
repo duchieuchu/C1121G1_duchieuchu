@@ -20,6 +20,7 @@
     <input type="submit" name="calculate" value="Subtraction(-)">
     <input type="submit" name="calculate" value="Multiplication(x)">
     <input type="submit" name="calculate" value="Division(/)">
+
 </form>
 <h1>${result}</h1>
 </body>
