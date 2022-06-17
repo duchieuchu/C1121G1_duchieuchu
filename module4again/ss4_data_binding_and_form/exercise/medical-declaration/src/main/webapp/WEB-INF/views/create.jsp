@@ -10,6 +10,8 @@
 <html>
 <head>
     <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <style>
         p {
             font-size: 27px;
@@ -107,7 +109,7 @@
         </tr>
         <tr>
             <th></th>
-            <td><input type="submit" value="save"></td>
+            <td><input type="submit" value="Gửi Tờ Khai" class="btn btn-primary"></td>
         </tr>
     </table>
 </form:form>
