@@ -38,7 +38,7 @@ public class ProductController {
     }
 
     @GetMapping("{id}/delete")
-    public String delete(@PathVariable Integer id){
+    public String delete(@PathVariable Integer id) {
         this.iProductService.delete(id);
         return "redirect:/product";
     }
@@ -52,8 +52,14 @@ public class ProductController {
 
     //edit v
     @PostMapping("/edit")
-    public String edit(Product product){
-        this.iProductService.update(product.getId(),product);
+    public String edit(Product product) {
+        this.iProductService.update(product.getId(), product);
         return "redirect:/product";
+    }
+
+    @GetMapping("{id}/view")
+    public String view(Integer id, Model model) {
+        model.addAttribute("product", this.iProductService.findById(id));
+        return "/view";
     }
 }

@@ -27,9 +27,9 @@
         <td th:text="${row.info}"></td>
         <td th:text="${row.quantity}"></td>
         <td th:text="${row.made}"></td>
-        <td><a th:href="@{#}">Edit</a></td>
+        <td><a th:href="@{/product/{id}/edit(id=${row.id})}">Edit</a></td>
         <td><a th:href="@{/product/{id}/delete(id=${row.id})}">Delete</a></td>
-        <td><a th:href="">View</a></td>
+        <td><a th:href="@{/product/{id}/view(id=${row.id})}">View</a></td>
     </tr>
     </tbody>
 </table>
