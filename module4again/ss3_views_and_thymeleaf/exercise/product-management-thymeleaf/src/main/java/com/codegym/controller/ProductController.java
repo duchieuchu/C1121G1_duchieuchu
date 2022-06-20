@@ -58,8 +58,9 @@ public class ProductController {
     }
 
     @GetMapping("{id}/view")
-    public String view(Integer id, Model model) {
+    public String view(@PathVariable Integer id, Model model) {
         model.addAttribute("product", this.iProductService.findById(id));
         return "/view";
     }
+
 }
