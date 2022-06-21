@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
+<head th:replace="/layout ::head">
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
@@ -9,7 +9,7 @@
 <p>
     <a href="/song/showCreateForm">Add song</a>
 </p>
-<table>
+<table id="product">
     <thead>
     <tr>
         <th>Name</th>
@@ -31,5 +31,6 @@
     </tr>
     </tbody>
 </table>
+<footer th:replace="/layout ::footer"></footer>
 </body>
 </html>
