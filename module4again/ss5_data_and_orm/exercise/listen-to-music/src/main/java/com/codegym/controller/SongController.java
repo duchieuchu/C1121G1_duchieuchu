@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
@@ -33,6 +34,13 @@ public class SongController {
     @PostMapping("/create")
     public String create(Song song) {
         this.iSongService.save(song);
+        return "redirect:/song";
+    }
+
+    @GetMapping("/delete")
+    public String delete(@RequestParam Integer id) {
+        Song song = this.iSongService.findById(id);
+        this.iSongService.delete(song);
         return "redirect:/song";
     }
 }

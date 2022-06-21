@@ -28,8 +28,8 @@ public class SongService implements ISongService {
     }
 
     @Override
-    public void delete(Integer id) {
-        this.iSongRepository.delete(id);
+    public void delete(Song song) {
+        this.iSongRepository.delete(song);
     }
 
     @Override

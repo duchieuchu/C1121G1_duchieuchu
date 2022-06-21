@@ -8,6 +8,6 @@ public interface ISongRepository {
     List<Song>findAll();
     void save(Song song);
     void update(Integer id,Song song);
-    void delete(Integer id);
+    void delete(Song song);
     Song findById(Integer id);
 }

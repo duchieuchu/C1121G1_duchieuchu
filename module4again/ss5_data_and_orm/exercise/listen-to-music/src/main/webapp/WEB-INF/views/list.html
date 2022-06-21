@@ -26,7 +26,7 @@
         <td th:text="${row.singer}"></td>
         <td th:text="${row.typeOfMusic}"></td>
         <td><a th:href="${row.path}" th:text="${row.path}"></a></td>
-        <td><a th:href="@{#}">Delete</a></td>
+        <td><a th:href="@{/song/delete(id=${row.id})}">Delete</a></td>
         <td><a th:href="@{#}">Update</a></td>
     </tr>
     </tbody>

@@ -28,16 +28,25 @@ public class SongRepository implements ISongRepository {
 
     @Override
     public void update(Integer id, Song song) {
-
+        EntityTransaction entityTransaction = BaseRepository.entityManager.getTransaction();
+        entityTransaction.begin();
+        BaseRepository.entityManager.merge(song);
+        entityTransaction.commit();
     }
 
     @Override
-    public void delete(Integer id) {
-
+    public void delete(Song song) {
+        EntityTransaction entityTransaction = BaseRepository.entityManager.getTransaction();
+        entityTransaction.begin();
+        BaseRepository.entityManager.remove(song);
+        entityTransaction.commit();
     }
 
     @Override
     public Song findById(Integer id) {
-        return null;
+        TypedQuery<Song> typedQuery =
+                BaseRepository.entityManager.createQuery("select s from Song s where s.id=:idSong", Song.class);
+        typedQuery.setParameter("idSong", id);
+        return typedQuery.getSingleResult();
     }
 }
