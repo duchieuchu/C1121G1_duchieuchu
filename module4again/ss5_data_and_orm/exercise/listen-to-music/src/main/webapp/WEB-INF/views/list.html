@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>List song</h1>
+<p>
+    <a href="/song/showCreateForm">Add song</a>
+</p>
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Singer</th>
+        <th>TypeOfMusic</th>
+        <th>Path</th>
+        <th>Delete</th>
+        <th>Update</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="row : ${songList}">
+        <td th:text="${row.name}"></td>
+        <td th:text="${row.singer}"></td>
+        <td th:text="${row.typeOfMusic}"></td>
+        <td><a th:href="${row.path}" th:text="${row.path}"></a></td>
+        <td><a th:href="@{#}">Delete</a></td>
+        <td><a th:href="@{#}">Update</a></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
