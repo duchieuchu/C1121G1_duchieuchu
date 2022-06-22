@@ -1,10 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head">
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-
+<h3>Edit Product</h3>
+<p>
+    <a th:href="@{/product}">
+        Back to song list
+    </a>
+</p>
+<div id="form">
+    <form th:action="@{/product/edit}" th:object="${product}"
+          method="POST" novalidate="novalidate">
+        <input type="hidden" th:field="*{id1}"/>
+        <div>
+            <label>Name</label>
+            <input type="text" th:field="*{name1}"/>
+        </div>
+        <div>
+            <label>Info</label>
+            <input type="text" th:field="*{info1}"/>
+        </div>
+        <div>
+            <label>Quantity</label>
+            <input type="text" th:field="*{quantity1}"/>
+        </div>
+        <div>
+            <label>Made</label>
+            <input type="text" th:field="*{made1}"/>
+        </div>
+        <input type="submit" value="Edit"/>
+    </form>
+</div>
+<footer th:replace="/layout :: footer"></footer>
 </body>
 </html>
