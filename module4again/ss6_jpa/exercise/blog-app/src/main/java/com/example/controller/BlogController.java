@@ -43,7 +43,7 @@ public class BlogController {
         return "/edit";
     }
 
-    @PostMapping("/update")
+    @PostMapping("/edit")
     public String update(Blog blog){
         this.iBlogService.update(blog);
         return "redirect:/blog";

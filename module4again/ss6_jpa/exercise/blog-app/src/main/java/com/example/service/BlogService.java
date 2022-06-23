@@ -14,7 +14,7 @@ public class BlogService implements IBlogService {
 
     @Override
     public List<Blog> findAll() {
-        return this.iBlogRepository.findAll();
+        return this.iBlogRepository.selectList();
     }
 
     @Override
@@ -35,6 +35,6 @@ public class BlogService implements IBlogService {
 
     @Override
     public Blog findById(Integer id) {
-        return this.iBlogRepository.findById(id).orElse(null);
+        return this.iBlogRepository.selectBlogById(id);
     }
 }
