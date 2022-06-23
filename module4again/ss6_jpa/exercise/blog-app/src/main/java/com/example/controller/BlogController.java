@@ -51,7 +51,7 @@ public class BlogController {
 
     @GetMapping("/delete")
     public String delete(Integer id){
-        this.iBlogService.delete(this.iBlogService.findById(id));
+        this.iBlogService.delete(id);
         return "redirect:/blog";
     }
 }

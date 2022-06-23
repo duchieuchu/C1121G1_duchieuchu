@@ -19,18 +19,18 @@ public class BlogService implements IBlogService {
 
     @Override
     public void save(Blog blog) {
-        this.iBlogRepository.save(blog);
+        this.iBlogRepository.createBlog(blog.getName(), blog.getContent(), blog.getNote());
     }
 
 
     @Override
-    public void delete(Blog blog) {
-        this.iBlogRepository.delete(blog);
+    public void delete(Integer id) {
+        this.iBlogRepository.deleteBlogById(id);
     }
 
     @Override
     public void update(Blog blog) {
-        this.iBlogRepository.save(blog);
+        this.iBlogRepository.updateBlog(blog.getName(), blog.getContent(), blog.getNote(),blog.getId());
     }
 
     @Override
