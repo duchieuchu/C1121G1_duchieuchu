@@ -5,6 +5,7 @@ import com.example.repository.IBlogRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.swing.*;
 import java.util.List;
 
 @Service
@@ -36,5 +37,10 @@ public class BlogService implements IBlogService {
     @Override
     public Blog findById(Integer id) {
         return this.iBlogRepository.selectBlogById(id);
+    }
+
+    @Override
+    public List<Blog> findAllByName(String name) {
+        return this.iBlogRepository.selectListByName(name);
     }
 }

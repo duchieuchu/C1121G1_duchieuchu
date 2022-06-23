@@ -5,10 +5,7 @@ import com.example.service.IBlogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -38,20 +35,27 @@ public class BlogController {
     }
 
     @GetMapping("/{id}/edit")
-    public String edit(@PathVariable Integer id,Model model) {
-        model.addAttribute("blog",this.iBlogService.findById(id));
+    public String edit(@PathVariable Integer id, Model model) {
+        model.addAttribute("blog", this.iBlogService.findById(id));
         return "/edit";
     }
 
     @PostMapping("/edit")
-    public String update(Blog blog){
+    public String update(Blog blog) {
         this.iBlogService.update(blog);
         return "redirect:/blog";
     }
 
     @GetMapping("/delete")
-    public String delete(Integer id){
+    public String delete(Integer id) {
         this.iBlogService.delete(id);
         return "redirect:/blog";
+    }
+
+    @GetMapping("/search")
+    public String listSearch(@RequestParam String name, Model model) {
+        List<Blog> blogList = this.iBlogService.findAllByName(name);
+        model.addAttribute("blogList", blogList);
+        return "/list";
     }
 }

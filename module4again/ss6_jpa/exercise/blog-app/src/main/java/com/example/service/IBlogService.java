@@ -2,6 +2,7 @@ package com.example.service;
 
 import com.example.model.Blog;
 
+import javax.swing.*;
 import java.util.List;
 
 public interface IBlogService {
@@ -10,4 +11,5 @@ public interface IBlogService {
     void delete(Integer id);
     void update(Blog blog);
     Blog findById(Integer id);
+    List<Blog>findAllByName(String name);
 }

@@ -7,6 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
+import javax.swing.*;
 import javax.transaction.Transactional;
 import java.util.List;
 
@@ -19,6 +20,9 @@ public interface IBlogRepository extends JpaRepository<Blog, Integer> {
 
     @Query(value = " select * from blog b where b.id =:idBlog", nativeQuery = true)
     Blog selectBlogById(@Param("idBlog") Integer id);
+
+    @Query(value = " select * from blog where name like :name", nativeQuery = true)
+    List<Blog> selectListByName(@Param("name")String name);
 
     @Modifying
     @Query(value = " delete from blog b where b.id =:idBlog", nativeQuery = true)

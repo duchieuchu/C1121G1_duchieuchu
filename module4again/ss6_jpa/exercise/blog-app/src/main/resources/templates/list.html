@@ -9,6 +9,10 @@
 <p>
     <a th:href="@{/blog/create}">Add blog</a>
 </p>
+<form action="/blog/search">
+    <input type="text" name="name">
+    <input type="submit" value="search">
+</form>
 <table id="blogs">
     <thead>
     <tr>
