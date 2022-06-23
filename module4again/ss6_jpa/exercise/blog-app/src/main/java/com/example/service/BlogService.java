@@ -24,17 +24,17 @@ public class BlogService implements IBlogService {
 
 
     @Override
-    public void delete(Integer id) {
-
+    public void delete(Blog blog) {
+        this.iBlogRepository.delete(blog);
     }
 
     @Override
     public void update(Blog blog) {
-
+        this.iBlogRepository.save(blog);
     }
 
     @Override
     public Blog findById(Integer id) {
-        return null;
+        return this.iBlogRepository.findById(id).orElse(null);
     }
 }

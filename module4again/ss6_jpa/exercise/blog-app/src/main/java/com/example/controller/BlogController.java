@@ -45,7 +45,13 @@ public class BlogController {
 
     @PostMapping("/update")
     public String update(Blog blog){
-        this.iBlogService.save(blog);
+        this.iBlogService.update(blog);
+        return "redirect:/blog";
+    }
+
+    @GetMapping("/delete")
+    public String delete(Integer id){
+        this.iBlogService.delete(this.iBlogService.findById(id));
         return "redirect:/blog";
     }
 }
