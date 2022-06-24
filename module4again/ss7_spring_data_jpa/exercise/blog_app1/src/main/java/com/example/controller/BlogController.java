@@ -27,7 +27,7 @@ public class BlogController {
     public String list(Model model, @PageableDefault(value = 2) Pageable pageable,
                        @RequestParam Optional<String> keyword) {
         String keywordVal=keyword.orElse("");
-        model.addAttribute("blogPage",this.iBlogService.findAllByName(keywordVal,pageable));
+        model.addAttribute("blogPage",this.iBlogService.findAllByName( keywordVal,pageable));
         model.addAttribute("keywordVal",keywordVal);
 //        Page<Blog> blogPage = this.iBlogService.findAll(pageable);
 //        model.addAttribute("blogPage", blogPage);

@@ -30,6 +30,10 @@ public interface IBlogRepository extends JpaRepository<Blog,Integer> {
     int deleteBlogById(@Param("idBlog") Integer id);
 
     @Modifying
+    @Query(value="insert into blog (name, content, note,category_id) VALUES (:name ,:content, :note,:category) ",nativeQuery = true)
+    int createBlog(@Param("name") String name, @Param("content") String content, @Param("note") String note, @Param("category") Integer category);
+
+    @Modifying
     @Query(value="update blog set name=:name,content=:content,note=:note,category_id=:category where id=:id",nativeQuery = true)
     int updateBlog(@Param("name") String name, @Param("content") String content, @Param("note") String note, @Param("category") Integer category, @Param("id") Integer id);
 
