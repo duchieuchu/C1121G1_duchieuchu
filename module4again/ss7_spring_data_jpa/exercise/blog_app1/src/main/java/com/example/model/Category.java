@@ -10,7 +10,7 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
-//phia tren mappedBy
+//mappedBy crl qua ben kia
     @OneToMany(mappedBy = "category")
     private List<Blog> blogList;
 
