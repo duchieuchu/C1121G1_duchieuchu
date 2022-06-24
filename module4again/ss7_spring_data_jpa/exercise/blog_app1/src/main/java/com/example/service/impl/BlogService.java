@@ -1,14 +1,15 @@
-package com.example.service;
+package com.example.service.impl;
 
 import com.example.model.Blog;
 import com.example.repository.IBlogRepository;
+import com.example.service.IBlogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 @Service
-public class BlogService implements IBlogService{
+public class BlogService implements IBlogService {
     @Autowired
     private IBlogRepository iBlogRepository;
 
@@ -20,21 +21,21 @@ public class BlogService implements IBlogService{
 
     @Override
     public void save(Blog blog) {
-
+        this.iBlogRepository.save(blog);
     }
 
     @Override
     public void delete(Integer id) {
-
+        this.iBlogRepository.deleteBlogById(id);
     }
 
     @Override
     public void update(Blog blog) {
-
+        this.iBlogRepository.updateBlog(blog.getName(), blog.getContent(), blog.getNote(),blog.getCategory().getId(),blog.getId());
     }
 
     @Override
     public Blog findById(Integer id) {
-        return null;
+        return this.iBlogRepository.selectBlogById(id);
     }
 }
