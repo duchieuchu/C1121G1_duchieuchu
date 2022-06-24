@@ -21,21 +21,21 @@ public class ProductService implements IProductService {
 
     @Override
     public void save(Product product) {
-
+        this.iProductRepository.createProduct(product.getName1(), product.getInfo1(), product.getQuantity1(), product.getMade1(), product.getCategory().getId1());
     }
 
     @Override
     public void delete(Integer id) {
-
+        this.iProductRepository.deleteBlogById(id);
     }
 
     @Override
     public void update(Product product) {
-
+this.iProductRepository.updateBlog(product.getName1(), product.getInfo1(), product.getQuantity1(), product.getMade1(), product.getCategory().getId1(),product.getId1());
     }
 
     @Override
     public Product findById(Integer id) {
-        return null;
+        return this.iProductRepository.selectProductById(id);
     }
 }
