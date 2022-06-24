@@ -16,7 +16,7 @@ public class BlogService implements IBlogService {
 
     @Override
     public Page<Blog> findAll(Pageable pageable) {
-        return this.iBlogRepository.findAll(pageable);
+        return this.iBlogRepository.selectList(pageable);
     }
 
     @Override
@@ -37,5 +37,10 @@ public class BlogService implements IBlogService {
     @Override
     public Blog findById(Integer id) {
         return this.iBlogRepository.selectBlogById(id);
+    }
+
+    @Override
+    public Page<Blog> findAllByName(String name,Pageable pageable) {
+        return this.iBlogRepository.selectListByName("%" + name + "%", pageable);
     }
 }
