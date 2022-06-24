@@ -61,8 +61,14 @@ public class BlogController {
     }
 
     @PostMapping("/update")
-    public String update(Blog blog){
+    public String update(Blog blog) {
         this.iBlogService.update(blog);
         return "redirect:/blog";
+    }
+
+    @GetMapping("{id}/view")
+    public String view(@PathVariable Integer id, Model model) {
+        model.addAttribute("blog", this.iBlogService.findById(id));
+        return "/view";
     }
 }

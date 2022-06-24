@@ -24,7 +24,7 @@
     <tbody>
     <tr th:each="row : ${blogPage}">
         <th th:text="${row.id}"></th>
-        <th th:text="${row.name}"></th>
+        <th><a th:href="@{/blog/{id}/view/(id=${row.id})}" th:text="${row.name}"></a></th>
         <th th:text="${row.content}"></th>
         <th th:text="${row.note}"></th>
         <th th:text="${row.category.getName()}"></th>
