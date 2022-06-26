@@ -43,8 +43,8 @@ public class UserController {
             BeanUtils.copyProperties(userDto,user);
             this.iUserService.save(user);
             model.addAttribute("msg","Đã đăng kí "+user.getFirstName()+" "+user.getLastName()+ " thành công");
-            return "/result";
         }
+        return "/result";
     }
 
 }
