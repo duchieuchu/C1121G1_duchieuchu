@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout ::head">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Form đăng ki</h3>
+<h1 style="color: red" th:text="${msgError}" ></h1>
+<div id="form">
+    <form action="/user/create" method="post" th:object="${userDto}">
+        <input type="hidden" th:field="*{id}">
+
+        <div>
+            <label>firstName: </label>
+            <input type="text" th:field="*{firstName}">
+        </div>
+
+        <div>
+            <label>lastName: </label>
+            <input type="text" th:field="*{lastName}">
+        </div>
+
+        <div>
+            <label>phoneNumber: </label>
+            <input type="text" th:field="*{phoneNumber}">
+        </div>
+
+        <div>
+            <label>age: </label>
+            <input type="text" th:field="*{age}">
+        </div>
+        <div style="color: red" th:errors="*{age}"></div>
+
+        <div>
+            <label>email: </label>
+            <input type="text" th:field="*{email}">
+        </div>
+        <div style="color: red" th:errors="*{email}"></div>
+
+        <input type="submit" value="Đăng kí">
+    </form>
+</div>
+<footer th:replace="/layout ::footer"></footer>
+</body>
+</html>
