@@ -1,10 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout ::head">
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-
+<h3>Form đăng ki</h3>
+<h1 style="color: red" th:text="${msgError}"></h1>
+<div id="form">
+    <form th:action="@{/product/add}" th:object="${productDto}"
+          method="post" novalidate="novalidate">
+        <table>
+            <tr>
+                <th>name</th>
+                <td><input type="text" th:field="*{name}"></td>
+                <td th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></td>
+            </tr>
+            <tr>
+                <th>info</th>
+                <td><input type="text" th:field="*{info}"></td>
+                <td th:if="${#fields.hasErrors('info')}" th:errors="*{info}"></td>
+            </tr>
+            <tr>
+                <th>quantity</th>
+                <td><input type="text" th:field="*{quantity}"></td>
+                <td th:if="${#fields.hasErrors('quantity')}" th:errors="*{quantity}"></td>
+            </tr>
+            <tr>
+                <th>made</th>
+                <td><input type="text" th:field="*{made}"></td>
+                <td th:if="${#fields.hasErrors('made')}" th:errors="*{made}"></td>
+            </tr>
+            <tr>
+                <th> Category</th>
+                <td>
+                    <select th:field="*{category}">
+                        <option th:each="category : ${categoryList}" th:value="${category.id}" th:text="${category.name}"></option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><input type="submit" value="Save"/></td>
+            </tr>
+        </table>
+    </form>
+</div>
+<footer th:replace="/layout ::footer"></footer>
 </body>
 </html>
