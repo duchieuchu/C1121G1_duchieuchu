@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout ::head">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>List product</h1>
+<p>
+    <a href="/product/showCreateForm">Add product</a>
+</p>
+<table id="product">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Info</th>
+        <th>Quantity</th>
+        <th>Made</th>
+        <th>Delete</th>
+        <th>Update</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="row : ${productList}">
+        <td th:text="${row.name1}"></td>
+        <td th:text="${row.info1}"></td>
+        <td th:text="${row.quantity1}"></td>
+        <td th:text="${row.made1}"></td>
+        <td><a th:href="@{/product/delete(id=${row.id1})}">Delete</a></td>
+        <td><a th:href="@{/product/{id}/edit(id=${row.id1})}">Update</a></td>
+    </tr>
+    </tbody>
+</table>
+<footer th:replace="/layout ::footer"></footer>
+</body>
+</html>

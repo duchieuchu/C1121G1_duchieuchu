@@ -1,5 +1,6 @@
 package com.example.dto;
 
+import com.example.annotation.Author;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 
@@ -14,6 +15,7 @@ public class SongDto implements Validator {
     @NotBlank
     @NotEmpty
     @Size(max = 800, message = " name Không vượt quá 800 ký tự")
+    @Author
     private String name;
 
     @NotNull
@@ -68,7 +70,7 @@ public class SongDto implements Validator {
     @Override
     public void validate(Object target, Errors errors) {
         SongDto songDto=(SongDto) target;
-        if (!songDto.name.matches("^[a-zA-Z0-9\\+]*$")){
+        if (songDto.name.matches("^[&%$##@!~]")){
             errors.rejectValue("name","name.inValid","name nhập không hợp lệ");
         }
         if (!songDto.singer.matches("^[a-zA-Z0-9\\+]*$")){

@@ -43,14 +43,14 @@ public class SongController {
                       RedirectAttributes redirectAttributes,Model model) {
         new SongDto().validate(songDto, bindingResult);
         if (bindingResult.hasFieldErrors()) {
-            redirectAttributes.addFlashAttribute("msgError","đăng kí thất bại");
+            model.addAttribute("msgError","đăng kí thất bại");
             return "/create";
         } else {
             Song song = new Song();
             BeanUtils.copyProperties(songDto, song);
             this.iSongService.save(song);
-//            model.addAttribute("msg", "đã tạo mới bài " + song.getName() + "thành công");
+            redirectAttributes.addFlashAttribute("msg", "đã tạo mới bài " + song.getName() + " thành công");
+            return "redirect:/song";
         }
-        return "redirect:/song";
     }
 }
