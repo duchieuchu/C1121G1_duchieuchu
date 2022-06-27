@@ -9,14 +9,16 @@
 <p>
     <a href="/product/create">Add product</a>
 </p>
-<h1 style="color: blue" th:text="${msg}"></h1>
+<!--<h1 style="color: blue" th:text="${msg}"></h1>-->
 <table id="product">
     <thead>
     <tr>
         <th>Id</th>
         <th>Name</th>
-        <th>Singer</th>
-        <th>TypeOfMusic</th>
+        <th>Info</th>
+        <th>Quantity</th>
+        <th>Made</th>
+        <th>Category</th>
         <th>Edit</th>
         <th>Delete</th>
     </tr>
@@ -25,8 +27,10 @@
     <tr th:each="row : ${productPage}">
         <th th:text="${row.id}"></th>
         <th><a th:href="@{/product/{id}/view/(id=${row.id})}" th:text="${row.name}"></a></th>
-        <th th:text="${row.singer}"></th>
-        <th th:text="${row.typeOfMusic}"></th>
+        <th th:text="${row.info}"></th>
+        <th th:text="${row.quantity}"></th>
+        <th th:text="${row.made}"></th>
+        <th  th:value="${row.category.id}" th:text="${row.category.name}"></th>
         <th><a th:href="@{/product/{id}/delete/(id=${row.id})}">Delete</a></th>
         <th><a th:href="@{/product/{id}/edit/(id=${row.id})}">edit</a></th>
     </tr>
