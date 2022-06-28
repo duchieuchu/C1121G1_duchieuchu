@@ -25,7 +25,7 @@
     <tr>
         <th class="col-2">Id</th>
         <th class="col-2">code</th>
-        <th class="col-2">borrower</th>
+        <th class="col-2">name book</th>
         <th class="col-2">borrowDate</th>
     </tr>
     </thead>
@@ -33,7 +33,6 @@
     <tr th:each="row : ${cardBorrowPage}">
         <td th:text="${row.getId()}"></td>
         <td th:text="${row.code}"></td>
-        <td th:text="${row.getBorrower()}"></td>
         <td th:text="${row.getBorrowDate()}"></td>
     </tr>
     </tbody>

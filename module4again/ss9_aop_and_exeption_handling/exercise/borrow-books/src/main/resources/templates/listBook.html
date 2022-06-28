@@ -12,21 +12,24 @@
 <p>
     <a th:href="@{/book/listCard}">List Card</a>
 </p>
-<form >
-    <input type="text" name="keyword">
-    <input type="submit" value="search">
+<!--<form>-->
+<!--    <input type="text" name="keyword">-->
+<!--    <input type="submit" value="search">-->
+<!--</form>-->
+<form action="/book/return-book">
+    <input type="text" name="code">
+    <input type="submit" value="return book">
 </form>
-
 <p style="color: red" th:text="${mess}"></p>
 <table id="book">
     <thead>
     <tr>
         <th class="col-2">Id</th>
         <th class="col-2">Tên sách</th>
-        <th class="col-2">Tác giả<lượng/th>
+        <th class="col-2">Tác giả</th>
         <th class="col-2">ngày xuất bản</th>
         <th class="col-2">Loại sách</th>
-        <th class="col-2">Số </th>
+        <th class="col-2">Số lượng</th>
         <th class="col-1">Mượn sách</th>
         <th class="col-1">Xóa sách</th>
     </tr>
@@ -41,7 +44,7 @@
         <td th:text="${row.getPublicationDate()}"></td>
         <td th:text="${row.getBookType().getName()}"></td>
         <td th:text="${row.getQuantity()}"></td>
-        <td><a th:href="@{/book/{id}/edit(id=${row.getId()})}">Mượn sách</a></td>
+        <td><a th:href="@{/book/{id}/borrow-book(id=${row.getId()})}">Mượn sách</a></td>
         <td><a th:href="@{/book/delete(id=${row.getId()})}">Xóa sách</a></td>
     </tr>
     </tbody>
