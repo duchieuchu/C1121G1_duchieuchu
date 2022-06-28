@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout ::head">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>book</h3>
+<p>
+    <a th:href="@{/book/create}">Add book</a>
+</p>
+<p>
+    <a th:href="@{/book/listCard}">List Card</a>
+</p>
+<form >
+    <input type="text" name="keyword">
+    <input type="submit" value="search">
+</form>
+
+<p style="color: red" th:text="${mess}"></p>
+<table id="book">
+    <thead>
+    <tr>
+        <th class="col-2">Id</th>
+        <th class="col-2">Tên sách</th>
+        <th class="col-2">Tác giả<lượng/th>
+        <th class="col-2">ngày xuất bản</th>
+        <th class="col-2">Loại sách</th>
+        <th class="col-2">Số </th>
+        <th class="col-1">Mượn sách</th>
+        <th class="col-1">Xóa sách</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="row : ${bookPage}">
+        <td th:text="${row.getId()}"></td>
+        <td><a th:href="@{/book/{id}/view(id=${row.getId()})}">
+            <th:block th:text="${row.getName()}"></th:block>
+        </a></td>
+        <td th:text="${row.author}"></td>
+        <td th:text="${row.getPublicationDate()}"></td>
+        <td th:text="${row.getBookType().getName()}"></td>
+        <td th:text="${row.getQuantity()}"></td>
+        <td><a th:href="@{/book/{id}/edit(id=${row.getId()})}">Mượn sách</a></td>
+        <td><a th:href="@{/book/delete(id=${row.getId()})}">Xóa sách</a></td>
+    </tr>
+    </tbody>
+</table>
+<div>
+    <a th:if="${bookPage.hasPrevious()}"
+       th:href="@{/book/(page=${bookPage.number - 1})}">
+        Previous
+    </a>
+    <span th:text="${bookPage.number + 1}"></span>
+    /
+    <span th:text="${bookPage.totalPages}"></span>
+    <a th:if="${bookPage.hasNext()}"
+       th:href="@{/book/(page=${bookPage.number + 1})}">
+        Next
+    </a>
+</div>
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>
+

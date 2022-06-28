@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout ::head">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>book</h3>
+<p>
+    <a th:href="@{/book/create}">Add book</a>
+</p>
+<p>
+    <a th:href="@{/book}">
+        Back to book list
+    </a>
+</p>
+<form >
+    <input type="text" name="keyword">
+    <input type="submit" value="search">
+</form>
+
+<p style="color: red" th:text="${mess}"></p>
+<table id="book">
+    <thead>
+    <tr>
+        <th class="col-2">Id</th>
+        <th class="col-2">code</th>
+        <th class="col-2">borrower</th>
+        <th class="col-2">borrowDate</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="row : ${cardBorrowPage}">
+        <td th:text="${row.getId()}"></td>
+        <td th:text="${row.code}"></td>
+        <td th:text="${row.getBorrower()}"></td>
+        <td th:text="${row.getBorrowDate()}"></td>
+    </tr>
+    </tbody>
+</table>
+<div>
+    <a th:if="${cardBorrowPage.hasPrevious()}"
+       th:href="@{/book/(page=${cardBorrowPage.number - 1})}">
+        Previous
+    </a>
+    <span th:text="${cardBorrowPage.number + 1}"></span>
+    /
+    <span th:text="${cardBorrowPage.totalPages}"></span>
+    <a th:if="${cardBorrowPage.hasNext()}"
+       th:href="@{/book/(page=${cardBorrowPage.number + 1})}">
+        Next
+    </a>
+</div>
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>
+
