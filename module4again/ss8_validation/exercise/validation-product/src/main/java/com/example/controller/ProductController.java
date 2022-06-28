@@ -34,7 +34,7 @@ public class ProductController {
     public String page(Model model, @PageableDefault(value = 2) Pageable pageable) {
         Page<Product> productPage = this.iProductService.findAll(pageable);
         model.addAttribute("productPage", productPage);
-        return "/list";
+        return "/go";
     }
 
     @GetMapping("/create")
@@ -50,7 +50,7 @@ public class ProductController {
                          BindingResult bindingResult,
                          RedirectAttributes redirectAttributes) {
         new ProductDto().validate(productDto, bindingResult);
-        if (bindingResult.hasFieldErrors()) {
+        if (bindingResult.hasErrors()) {
             redirectAttributes.addFlashAttribute("msgError", "đăng kí thất bại");
             return "redirect:/product/create";
         } else {
