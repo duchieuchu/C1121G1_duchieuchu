@@ -65,10 +65,11 @@ public class BookController {
     }
 
     @GetMapping("/{id}/borrow-book")
-    public String borrow(@PathVariable Integer id, RedirectAttributes redirectAttributes) {
+    public String borrow(@PathVariable Integer id, RedirectAttributes redirectAttributes) throws Exception {
         Book book = iBookService.findById(id);
         if (book.getQuantity() <= 0) {
-            return "/errorBook";
+//            return "/errorBook";
+            throw new Exception();
         }
 //        book.setQuantity(book.getQuantity() - 1);
         iBookService.updateQuantityDown(id);
@@ -93,6 +94,11 @@ public class BookController {
         this.iBookService.save(cardBorrow.getBook());
         this.iCardBorrowService.delete(cardBorrow);
         return "redirect:/book";
+    }
+
+    @ExceptionHandler(Exception.class)
+    public String goErrorQuantity() {
+        return "/errorBook";
     }
 
 }
