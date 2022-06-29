@@ -1,10 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-</head>
+    <style>
+        h1 {
+            text-align: center;
+            color: white;
+        }
+        p {
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+        }
+        body {
+            background-color: black;
+        }
+        .img1 {
+            width: 10%;
+        }
+    </style>
+</head>p
 <body>
-<h1>Ban thao tac qua nhanh</h1>
+<h1>Bạn thao tác quá nhanh!</h1>
+<p>Quá nguy hiểm</p>
+<img class="img1" src="https://cutewallpaper.org/23/joker-black-wallpaper/384227275.jpg">
+<!--<img class="img1" th:src="@{/img/joker.jpg}">-->
+
 </body>
 </html>

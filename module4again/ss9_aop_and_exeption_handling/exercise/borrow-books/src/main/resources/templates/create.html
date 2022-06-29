@@ -21,15 +21,15 @@
                 <td><input type="text" th:field="*{name}"></td>
             </tr>
             <tr>
-                <th>content</th>
+                <th>author</th>
                 <td><input type="text" th:field="*{author}"></td>
             </tr>
             <tr>
-                <th>note</th>
+                <th>publicationDate</th>
                 <td><input type="text" th:field="*{publicationDate}"></td>
             </tr>
             <tr>
-                <th>category</th>
+                <th>bookType</th>
                 <td>
                     <select th:field="*{bookType}">
                         <option th:each="bookType : ${bookTypeList}" th:value="${bookType.id}"  th:text="${bookType.name}" ></option>
@@ -37,7 +37,7 @@
                 </td>
             </tr>
             <tr>
-                <th>note</th>
+                <th>quantity</th>
                 <td><input type="text" th:field="*{quantity}"></td>
             </tr>
             <tr>

@@ -33,6 +33,7 @@
     <tr th:each="row : ${cardBorrowPage}">
         <td th:text="${row.getId()}"></td>
         <td th:text="${row.code}"></td>
+        <td th:text="${row.book.name}"></td>
         <td th:text="${row.getBorrowDate()}"></td>
     </tr>
     </tbody>
