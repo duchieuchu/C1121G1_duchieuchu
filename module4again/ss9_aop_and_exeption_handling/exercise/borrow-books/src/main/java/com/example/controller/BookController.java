@@ -95,6 +95,11 @@ public class BookController {
         this.iCardBorrowService.delete(cardBorrow);
         return "redirect:/book";
     }
+    @GetMapping("/{id}/view")
+    public String goDetailBook(@PathVariable Integer id,Model model){
+        model.addAttribute("book",iBookService.findById(id));
+        return "/view";
+    }
 
     @ExceptionHandler(Exception.class)
     public String goErrorQuantity() {

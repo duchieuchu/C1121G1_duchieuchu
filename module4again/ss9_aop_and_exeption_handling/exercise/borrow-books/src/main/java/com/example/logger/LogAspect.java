@@ -18,6 +18,7 @@ public class LogAspect {
 
         System.err.println("method vua thuc hien xong la : "+name);
     }
+
 //    @Pointcut("execution(* com.example.controller.BookController.*(..))")
 //    public void allMethodPointCut() {
 //    }
