@@ -70,8 +70,8 @@ public class BookController {
         if (book.getQuantity() <= 0) {
             return "/errorBook";
         }
-        book.setQuantity(book.getQuantity() - 1);
-
+//        book.setQuantity(book.getQuantity() - 1);
+        iBookService.updateQuantityDown(id);
         CardBorrow cardBorrow = new CardBorrow();
         int code = (int) (Math.random() * 99999);
 

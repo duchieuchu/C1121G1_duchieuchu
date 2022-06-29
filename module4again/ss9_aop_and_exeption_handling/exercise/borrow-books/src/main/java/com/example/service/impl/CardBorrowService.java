@@ -20,7 +20,7 @@ public class CardBorrowService implements ICardBorrowService {
 
     @Override
     public void save(CardBorrow cardBorrow) {
-
+        iCardBorrowRepository.save(cardBorrow);
     }
 
     @Override

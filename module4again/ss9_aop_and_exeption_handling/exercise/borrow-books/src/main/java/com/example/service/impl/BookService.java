@@ -32,4 +32,14 @@ public class BookService implements IBookService {
     public Book findById(Integer id) {
         return iBookRepository.findById(id).orElse(null);
     }
+
+    @Override
+    public void updateQuantityUp(Integer id) {
+        iBookRepository.updateQuantityUp(id);
+    }
+
+    @Override
+    public void updateQuantityDown(Integer id) {
+        iBookRepository.updateQuantityDown(id);
+    }
 }
