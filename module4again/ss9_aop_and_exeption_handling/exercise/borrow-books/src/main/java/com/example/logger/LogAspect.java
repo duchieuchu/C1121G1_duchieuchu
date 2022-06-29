@@ -12,19 +12,25 @@ import java.time.LocalDate;
 @Component
 @Aspect
 public class LogAspect {
-    @Pointcut("execution(* com.example.controller.BookController.*(..))")
-    public void allMethodPointCut() {
-    }
+    @AfterReturning(pointcut = "execution(public * com.example.controller.BookController.*(..))")
+    public void logHistory(JoinPoint joinPoint){
+        String name = joinPoint.getSignature().getName();
 
-    @Before("allMethodPointCut()")
-    public void beforeCallMethod(JoinPoint joinPoint) {
-        System.err.println("Start method name: " + joinPoint.getSignature().getName()
-                + " Times :" + LocalDate.now());
+        System.err.println("method vua thuc hien xong la : "+name);
     }
-
-    @AfterReturning("allMethodPointCut()")
-    public void afterReturningCallMethod(JoinPoint joinPoint) {
-        System.err.println("End method name: " + joinPoint.getSignature().getName()
-                + " Times: " + LocalDate.now());
-    }
+//    @Pointcut("execution(* com.example.controller.BookController.*(..))")
+//    public void allMethodPointCut() {
+//    }
+//
+//    @Before("allMethodPointCut()")
+//    public void beforeCallMethod(JoinPoint joinPoint) {
+//        System.err.println("Start method name: " + joinPoint.getSignature().getName()
+//                + " Times :" + LocalDate.now());
+//    }
+//
+//    @AfterReturning("allMethodPointCut()")
+//    public void afterReturningCallMethod(JoinPoint joinPoint) {
+//        System.err.println("End method name: " + joinPoint.getSignature().getName()
+//                + " Times: " + LocalDate.now());
+//    }
 }
