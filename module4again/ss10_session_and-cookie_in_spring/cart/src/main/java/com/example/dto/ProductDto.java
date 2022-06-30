@@ -1,6 +1,7 @@
 package com.example.dto;
 
 import javax.persistence.Column;
+import java.util.Objects;
 
 public class ProductDto {
     private Integer id;
@@ -68,5 +69,16 @@ public class ProductDto {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+    @Override
+    public boolean equals(Object o){
+        if (this == o) return true;
+        if (o == null ||getClass() != o.getClass())return false;
+        ProductDto productDto = (ProductDto) o;
+        return id == productDto.id;
+    }
+    @Override
+    public int hashCode(){
+        return Objects.hash(id);
     }
 }

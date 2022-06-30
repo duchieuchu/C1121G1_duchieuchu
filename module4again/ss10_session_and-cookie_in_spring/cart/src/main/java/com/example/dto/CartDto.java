@@ -38,13 +38,18 @@ public class CartDto {
         }
     }
 
+    public void deleteProductInCart(ProductDto productDto) {
+         productDtoIntegerMap.remove(productDto);
+    }
+
     public void deleteAll() {
         productDtoIntegerMap.clear();
     }
-    public String countTotalPayment(){
+
+    public String countTotalPayment() {
         // Locale là đối tượng đại diện duy nhất cho các ngôn ngữ và quốc gia, khu vực
         // khác nhau trên toàn thế giới
-        Locale locale = new Locale("vi","vn");
+        Locale locale = new Locale("vi", "vn");
         // tạo 1 NumberFormat để định dạng số của khu vực hiện tại của máy ảo JVM
         // dùng để định dạng số chung cho quốc gia
         NumberFormat vn = NumberFormat.getInstance(locale);

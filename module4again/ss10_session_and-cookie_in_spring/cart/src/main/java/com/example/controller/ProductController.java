@@ -14,6 +14,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Optional;
 
 @Controller
@@ -78,9 +80,15 @@ public class ProductController {
         return "redirect:/product/cart";
     }
 
+    @GetMapping("/delete")
+    public String clearProductInCart( @SessionAttribute("cart") CartDto cartDto) {
+        cartDto.deleteAll();
+        return "redirect:/product/cart";
+    }
+
     @GetMapping("/cart")
-    public String showCart(@SessionAttribute("cart") CartDto cartDto,Model model) {
-        model.addAttribute("cartDto",cartDto);
+    public String showCart(@SessionAttribute("cart") CartDto cartDto, Model model) {
+        model.addAttribute("cartDto", cartDto);
         return "/cart";
     }
 }
