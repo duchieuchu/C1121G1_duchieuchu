@@ -17,7 +17,8 @@
                 <h5 class="card-title" th:text="${product.name}"></h5>
                 <p class="card-text" th:text="${product.description}"></p>
                 <p class="card-text" th:text="${product.price}"></p>
-                <a th:href="@{/shop/add/{id}(id=${product.getId()})}" class="btn btn-primary">Add to cart</a>
+                <p class="card-text" th:text="${product.quantity}"></p>
+                <a th:href="@{/product/{id}/order/(id=${product.getId()})}" class="btn btn-primary">Add to cart</a>
                 <!--                <a th:href="@{/shop/add/__${product.getId()}__}" class="btn btn-primary">Add to cart</a>-->
             </div>
         </div>

@@ -12,6 +12,7 @@ import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.Optional;
 
@@ -53,13 +54,33 @@ public class ProductController {
     }
 
     @GetMapping("/{id}/order")
-    public String addProductToCart(@PathVariable Integer id, @SessionAttribute("cart") CartDto cartDto) {
+    public String addToCart(@PathVariable Integer id,
+                            @SessionAttribute("cart") CartDto cartDto) {
         Optional<Product> productOptional = Optional.ofNullable(iProductService.findById(id));
         if (productOptional.isPresent()) {
-            ProductDto productDto= new ProductDto();
-            BeanUtils.copyProperties(productOptional.get(),productDto);
+            ProductDto productDto = new ProductDto();
+            BeanUtils.copyProperties(productOptional.get(), productDto);
 
+            //them product vao session car ben cardDto
+            cartDto.addProductToCart(productDto);
         }
-        return "redirect:/cart";
+        return "redirect:/product/cart";
+    }
+
+    @GetMapping("/{id}/sub")
+    public String subToCart(@PathVariable Integer id, @SessionAttribute("cart") CartDto cartDto) {
+        Optional<Product> productOptional = Optional.ofNullable(iProductService.findById(id));
+        if (productOptional.isPresent()) {
+            ProductDto productDto = new ProductDto();
+            BeanUtils.copyProperties(productOptional.get(), productDto);
+            cartDto.subProductToCart(productDto);
+        }
+        return "redirect:/product/cart";
+    }
+
+    @GetMapping("/cart")
+    public String showCart(@SessionAttribute("cart") CartDto cartDto,Model model) {
+        model.addAttribute("cartDto",cartDto);
+        return "/cart";
     }
 }

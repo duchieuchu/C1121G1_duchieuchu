@@ -12,16 +12,26 @@ public class Product {
     @Column(columnDefinition = "BIGINT")
     private Integer price;
     private String description;
+    private Integer quantity;
 
-    public Product(Integer id, String name, String image, Integer price, String description) {
+    public Product(Integer id, String name, String image, Integer price, String description, Integer quantity) {
         this.id = id;
         this.name = name;
         this.image = image;
         this.price = price;
         this.description = description;
+        this.quantity = quantity;
     }
 
     public Product() {
+    }
+
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
     }
 
     public Integer getId() {
