@@ -41,7 +41,7 @@
             <a th:href="@{/product/{id}/sub(id=${product.getKey().id})}"
                th:text="${'-'}"></a>
             <span th:text="${product.value}"></span>
-            <a th:href="@{/product/{id}/order(id=${product.getKey().id})}"
+            <a th:href="@{/product/order(id=${product.getKey().id})}"
                th:text="${'+'}"></a>
         </td>
 
@@ -50,7 +50,7 @@
         <td colspan="3">Total</td>
         <td colspan="1" th:text="${cart.countTotalPayment()}"></td>
         <td>
-            <a th:href="@{/shop/pay}">
+            <a th:href="@{/product/pay(money=${cart.countTotalPayment()})}">
                 <button class="btn btn-primary">Payment</button>
             </a>
         </td>

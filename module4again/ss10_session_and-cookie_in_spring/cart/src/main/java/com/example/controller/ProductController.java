@@ -13,6 +13,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -84,6 +85,11 @@ public class ProductController {
     public String clearProductInCart( @SessionAttribute("cart") CartDto cartDto) {
         cartDto.deleteAll();
         return "redirect:/product/cart";
+    }
+    @GetMapping("/pay")
+    public String showReceipt(Model model,@RequestParam String money){
+        model.addAttribute("msg",money);
+        return "/payment";
     }
 
     @GetMapping("/cart")
