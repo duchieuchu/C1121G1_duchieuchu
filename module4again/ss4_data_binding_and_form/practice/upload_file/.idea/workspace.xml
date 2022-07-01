@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d28693da-2519-4161-8e33-5fcb07fe2c50" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../ss10_session_and-cookie_in_spring/cart/src/main/resources/upload_img.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module4/ss10_session_and_cookie_in_spring/exercise/shopping_cart_post/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module4/ss10_session_and_cookie_in_spring/exercise/shopping_cart_post/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module4/ss10_session_and_cookie_in_spring/exercise/shopping_cart_post/src/main/java/com/example/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module4/ss10_session_and_cookie_in_spring/exercise/shopping_cart_post/src/main/java/com/example/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module4/ss10_session_and_cookie_in_spring/exercise/shopping_cart_post/src/main/resources/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module4/ss10_session_and_cookie_in_spring/exercise/shopping_cart_post/src/main/resources/templates/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module4/ss1_spring_mvc/practice/ABC/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module4/ss1_spring_mvc/practice/ABC/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module4/ss4_data_binding_and_form/practice/upload-file/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module4/ss4_data_binding_and_form/practice/upload-file/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module4/ss5_thao_tac_csdl_va_orm/practice/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module4/ss5_thao_tac_csdl_va_orm/practice/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_session_and-cookie_in_spring/cart/src/main/java/com/example/CartApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss10_session_and-cookie_in_spring/cart/src/main/java/com/example/CartApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_session_and-cookie_in_spring/cart/src/main/java/com/example/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss10_session_and-cookie_in_spring/cart/src/main/java/com/example/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_session_and-cookie_in_spring/cart/src/main/resources/templates/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss10_session_and-cookie_in_spring/cart/src/main/resources/templates/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1_spring_mvc/practice/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1_spring_mvc/practice/customer-management" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="2BI4TUrD4doTW2m7vLlZGvsn65Q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="UploadFileApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="upload_file.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.UploadFileApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d28693da-2519-4161-8e33-5fcb07fe2c50" name="Default Changelist" comment="" />
+      <created>1656580272959</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1656580272959</updated>
+      <workItem from="1656580276782" duration="2589000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="121" y="0" key="#Project_Structure" timestamp="1656584028858">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="121" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1656584028858" />
+    <state x="133" y="270" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1656580899284">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="133" y="270" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1280.680@0.0.1280.680" timestamp="1656580899284" />
+    <state x="443" y="232" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1656580913050">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="443" y="232" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1280.680@0.0.1280.680" timestamp="1656580913050" />
+    <state width="1237" height="218" key="GridCell.Tab.0.bottom" timestamp="1656584035122">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="218" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1656584035122" />
+    <state width="1237" height="218" key="GridCell.Tab.0.center" timestamp="1656584035122">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="218" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1656584035122" />
+    <state width="1237" height="218" key="GridCell.Tab.0.left" timestamp="1656584035122">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="218" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1656584035122" />
+    <state width="1237" height="218" key="GridCell.Tab.0.right" timestamp="1656584035122">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="218" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1656584035122" />
+    <state width="1237" height="218" key="GridCell.Tab.1.bottom" timestamp="1656584035123">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="218" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1656584035123" />
+    <state width="1237" height="218" key="GridCell.Tab.1.center" timestamp="1656584035122">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="218" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1656584035122" />
+    <state width="1237" height="218" key="GridCell.Tab.1.left" timestamp="1656584035122">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="218" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1656584035122" />
+    <state width="1237" height="218" key="GridCell.Tab.1.right" timestamp="1656584035122">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="218" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1656584035122" />
+  </component>
+</project>
