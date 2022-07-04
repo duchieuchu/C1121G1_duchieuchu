@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8684b246-0fd6-43e4-8b85-f5341f33805f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ss1_spring_mvc/practice/customer-management/src/main/java/cg/wbd/grandemonstration/servlet/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss1_spring_mvc/practice/customer-management/src/main/webapp/WEB-INF/app-conf.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/ss10_session_and_cookie_in_spring/exercise/shopping_cart_post/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss10_session_and_cookie_in_spring/exercise/shopping_cart_post/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/ss10_session_and_cookie_in_spring/exercise/shopping_cart_post/src/main/java/com/example/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss10_session_and_cookie_in_spring/exercise/shopping_cart_post/src/main/java/com/example/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/ss10_session_and_cookie_in_spring/exercise/shopping_cart_post/src/main/resources/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss10_session_and_cookie_in_spring/exercise/shopping_cart_post/src/main/resources/templates/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/ss12_jquery_and_ajax/exercise/blog_app1/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss12_jquery_and_ajax/exercise/blog_app1/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/ss12_jquery_and_ajax/exercise/blog_app1/src/main/java/com/example/controller/BlogRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss12_jquery_and_ajax/exercise/blog_app1/src/main/java/com/example/controller/BlogRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/ss12_jquery_and_ajax/exercise/blog_app1/src/main/resources/templates/list1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss12_jquery_and_ajax/exercise/blog_app1/src/main/resources/templates/list1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/ss12_jquery_and_ajax/practice/phone/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss12_jquery_and_ajax/practice/phone/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/ss14_bao_mat-ung_dung_web/exercise/spring_security/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss14_bao_mat-ung_dung_web/exercise/spring_security/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/ss14_bao_mat-ung_dung_web/exercise/spring_security/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss14_bao_mat-ung_dung_web/exercise/spring_security/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/ss1_spring_mvc/practice/ABC/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss1_spring_mvc/practice/ABC/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/ss4_data_binding_and_form/practice/upload-file/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss4_data_binding_and_form/practice/upload-file/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/ss5_thao_tac_csdl_va_orm/practice/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss5_thao_tac_csdl_va_orm/practice/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/ss9_aop_and_exception_handling/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss9_aop_and_exception_handling/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss12_ajax_jquery/exercise/blog-ajax/src/main/java/com/example/controller/BlogRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ss12_ajax_jquery/exercise/blog-ajax/src/main/java/com/example/controller/BlogRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss12_ajax_jquery/exercise/blog-ajax/src/main/java/com/example/repository/IBlogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ss12_ajax_jquery/exercise/blog-ajax/src/main/java/com/example/repository/IBlogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss12_ajax_jquery/exercise/blog-ajax/src/main/java/com/example/service/IBlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ss12_ajax_jquery/exercise/blog-ajax/src/main/java/com/example/service/IBlogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss12_ajax_jquery/exercise/blog-ajax/src/main/java/com/example/service/impl/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ss12_ajax_jquery/exercise/blog-ajax/src/main/java/com/example/service/impl/BlogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss1_spring_mvc/practice/customer-management/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ss1_spring_mvc/practice/customer-management/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss1_spring_mvc/practice/customer-management/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ss1_spring_mvc/practice/customer-management/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss1_spring_mvc/practice/customer-management/src/main/webapp/customers/info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/ss1_spring_mvc/practice/customer-management/src/main/webapp/customers/info.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss1_spring_mvc/practice/customer-management/src/main/webapp/customers/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/ss1_spring_mvc/practice/customer-management/src/main/webapp/customers/list.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2BTFfG0MWfY1BtPdwJUmdPeFUeQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ss12_ajax_jquery" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8684b246-0fd6-43e4-8b85-f5341f33805f" name="Default Changelist" comment="" />
+      <created>1656922269156</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1656922269156</updated>
+      <workItem from="1656922270384" duration="30000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="421" y="98" key="FileChooserDialogImpl" timestamp="1656922298938">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="98" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1656922298938" />
+  </component>
+</project>

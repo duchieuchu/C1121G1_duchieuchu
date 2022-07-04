@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../static/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<body>
+<h1>Blog List</h1>
+
+    <input type="text" id="keyword">
+<button onclick="search()">Seacrh</button>
+<br>
+<table class="table table-hover" id="tb">
+    <thead>
+    <tr>
+<!--        <th>Id</th>-->
+<!--        <th>Name</th>-->
+<!--        <th>Content</th>-->
+<!--        <th>Note</th>-->
+<!--        <th>Category</th>-->
+<!--        <th>Edit</th>-->
+<!--        <th>Delete</th>-->
+    </tr>
+    </thead>
+    <tbody >
+    </tbody>
+</table>
+<button onclick="before()">before</button>
+<button onclick="more()">Next</button>
+</body>
+<script>
+    let pageCru = 0;
+
+    function more() {
+        pageCru++;
+        getAll();
+    }
+
+    function before() {
+        pageCru--;
+        getAll();
+    }
+    let keyword="";
+    function search() {
+        if (keyword=null){
+            keyword="";
+        }else {
+            keyword=$('#keyword').val();
+        }
+        getAll(0, keyword)
+    }
+
+    function getAll(pageNumber, keyword) {
+        $.ajax({
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            type: "GET",
+            //tên API
+            url: "http://localhost:8080/blogRest/listBlog?page=" + pageCru + "&keyword=" + keyword,
+            //xử lý khi thành công
+            success: function (data) {
+                console.log(data);
+                let list = data.content;
+                console.log(list);
+                let listStr = `<tr><th>Id</th>
+                               <th>Name</th>
+                               <th>content</th>
+                               <th>note</th>
+
+                               <th>Delete</th>
+                               </tr>`;
+                for (let i = 0; i < list.length; i++) {
+                    listStr += '<tr>\n' +
+                        '        <td>' + list[i].id + '</td>\n' +
+                        '        <td>' + list[i].name + '</td>\n' +
+                        '        <td>' + list[i].content + '</td>\n' +
+                        '        <td>' + list[i].note + '</td>\n' +
+                        '        <td><a class="deletePhone" href="' + list[i].id + '">Delete</a></td>\n' +
+                        '    </tr>'
+                }
+                // $("#tb").append(listStr);
+                $("#tb").html(listStr);
+            }
+        });
+    }
+    getAll(0, "");
+</script>
+</html>
