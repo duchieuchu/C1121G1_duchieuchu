@@ -1,9 +1,11 @@
 package com.example.controller;
 
+import com.example.model.faciltity.Facility;
 import com.example.service.IFacilityService;
 import com.example.service.IFacilityTypeService;
 import com.example.service.IRentTypeService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
@@ -25,11 +27,9 @@ public class FacilityController {
     private IRentTypeService iRentTypeService;
 
     @GetMapping("")
-    public String goList(Model model, @PageableDefault(value = 2) Pageable pageable,
-                         @RequestParam Optional<String> keyword) {
-        String keywordVal = keyword.orElse("");
-        model.addAttribute("facilityPage", iFacilityService.findAllByName(keywordVal, pageable));
-        model.addAttribute("keywordVal", keywordVal);
+    public String goList(Model model, @PageableDefault(value = 2) Pageable pageable) {
+        Page<Facility>facilityPage= iFacilityService.findAll( pageable);
+        model.addAttribute("facilityPage",facilityPage);
         return "/views/facility/list";
     }
 }

@@ -3,52 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        a.one:link {color:#ff0000;}
+        a.one:hover {color:#ffcc00;font-size:110%}
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 </head>
 <body>
-<h3>facility</h3>
-<p>
-    <a href="/facility/add">Add facility</a>
-</p>
-<form action="/facility/">
-    <input type="text" name="keyword">
-    <input type="submit" value="search">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <a class="navbar-brand" href="https://furamavietnam.com/">
+        <img src="https://gohola.vn/uploads/2015/02/furama.gif"
+             width="50" height="60"></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" th:href="@{/home}">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/employee}">Employee</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/customer}">Customer</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/service}">Service</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/attachService}">CustomerUsingService</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Contract
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" th:href="@{/contract}">Contract</a>
+                    <a class="dropdown-item" th:href="@{/contractDetail}" >Contract Detail</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Setting
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                    <a class="dropdown-item" th:href="@{/contract}">User info</a>
+                    <a class="dropdown-item" th:href="@{/contractDetail}" >Admin</a>
+                    <a  class="dropdown-item" th:if="${#request.userPrincipal != null}" th:href="@{/logout}">Logout</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+<p style="color: red" th:text="${mess}"></p>
+<form>
+    <!--    <input type="text" name="keyword">-->
+    <!--    <input type="submit" value="search" class="btn btn-primary">-->
+    <a th:href="@{/service/create}" class="btn btn-secondary">Add Service</a>
 </form>
-<table id="facility">
+<br>
+<table class="table table-hover table-dark">
     <thead>
     <tr>
-        <th>Id</th>
-        <th>Name</th>
-        <th>Area</th>
-        <th>Cost</th>
-        <th>maxPeople</th>
-        <th>standardRoom</th>
-        <th>facilityType</th>
-        <th>Edit</th>
-        <th>Delete</th>
+        <th class="col-1">id</th>
+<!--        <th class="col-1">code</th>-->
+        <th class="col-2">name</th>
+        <th class="col-1">area</th>
+        <th class="col-2">cost</th>
+        <th class="col-1">maxPeople</th>
+        <!--        <th class="col-1">rentType</th>-->
+        <!--        <th class="col-1">serviceType</th>-->
+        <th class="col-1">standardRoom</th>
+        <!--        <th class="col-1">infoOther</th>-->
+        <!--        <th class="col-1">poolArea</th>-->
+        <th class="col-1">numberOfFloors</th>
+        <th class="col-1">Edit</th>
+        <th class="col-1">Delete</th>
     </tr>
     </thead>
     <tbody>
     <tr th:each="row : ${facilityPage}">
-        <th th:text="${row.id}"></th>
-        <th><a th:href="@{/facility/{id}/view/(id=${row.id})}" th:text="${row.name}"></a></th>
-        <th th:text="${row.area}"></th>
-        <th th:text="${row.cost}"></th>
-        <th th:text="${row.maxPeople}"></th>
-        <th th:text="${row.standardRoom}"></th>
-        <th th:text="${row.facilityType.getName()}"></th>
-        <th><a th:href="@{/facility/{id}/delete/(id=${row.id})}">Delete</a></th>
-        <th><a th:href="@{/facility/{id}/edit/(id=${row.id})}">edit</a></th>
+        <td th:text="${row.getId()}"></td>
+<!--        <td th:text="${row.getCode()}"></td>-->
+        <td><a th:href="@{/service/{id}/views(id=${row.getId()})}" class="one">
+            <th:block th:text="${row.getName()}"></th:block>
+        </a></td>
+        <td th:text="${row.getArea()}"></td>
+        <td th:text="${row.getCost()}"></td>
+        <td th:text="${row.getMaxPeople()}"></td>
+        <!--        <td th:text="${row.getRentType().getName()}"></td>-->
+        <!--        <td th:text="${row.getServiceType().getName()}"></td>-->
+        <td th:text="${row.getStandardRoom()}"></td>
+        <!--        <td th:text="${row.getInfoOther()}"></td>-->
+        <!--        <td th:text="${row.getPoolArea()}"></td>-->
+        <td th:text="${row.getNumberOfFloor()}"></td>
+        <td><a th:href="@{#}" class="btn btn-warning">edit</a></td>
+        <td><a th:href="@{/service/delete(id=${row.getId()})}" class="btn btn-danger">delete</a></td>
     </tr>
     </tbody>
 </table>
 <div>
     <a th:if="${facilityPage.hasPrevious()}"
-       th:href="@{/facility/(page=${facilityPage.number - 1},keyword=${keywordVal})}">Previous</a>
-    <span th:text="${facilityPage.number +1}"></span>
+       th:href="@{/service/(page=${facilityPage.number - 1})}" class="btn btn-info">
+        Previous
+    </a>
+    <span th:text="${facilityPage.number + 1}"></span>
     /
     <span th:text="${facilityPage.totalPages}"></span>
     <a th:if="${facilityPage.hasNext()}"
-       th:href="@{/facility/(page=${facilityPage.number + 1},keyword=${keywordVal})}">Next</a>
+       th:href="@{/service/(page=${facilityPage.number + 1})}" class="btn btn-success">
+        Next
+    </a>
 </div>
 </body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+<script>
+

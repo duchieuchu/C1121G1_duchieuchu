@@ -13,7 +13,7 @@ public class FacilityService implements IFacilityService {
     private IFacilityService iFacilityService;
     @Override
     public Page<Facility> findAll(Pageable pageable) {
-        return iFacilityService.findAll(pageable);
+        return this.iFacilityService.findAll(pageable);
     }
 
     @Override
