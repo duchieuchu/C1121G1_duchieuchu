@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../static/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<body>
+<h1>Create Blog</h1>
+<table class="table table-hover" id="tb">
+    <tr>
+        <th>Name</th>
+        <td><input type="text" id="inputName"></td>
+    </tr>
+    <tr>
+        <th>Content</th>
+        <td><input type="text" id="inputContent"></td>
+    </tr>
+    <tr>
+        <th>Note</th>
+        <td><input type="text" id="inputNote"></td>
+    </tr>
+    <tr>
+        <th>Category</th>
+        <td>
+            <select id="selectCategory">
+                <option value="1">van hoa</option>
+                <option value="2">lich su</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <th></th>
+        <td><button id="create">Save</button></td>
+    </tr>
+</table>
+</body>
+<script>
+    $("#create").click(function() {
+        let name = $("#inputName").val();
+        let content = $("#inputContent").val();
+        let note = $("#inputNote").val();
+        let categoryId = $("#selectCategory").val();
+
+        let blogObj = {
+            name: name,
+            content: content,
+            note: note,
+            category: {
+                id: categoryId
+            }
+        }
+
+        $.ajax({
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            type: "POST", //GET, DELETE, PUT...
+            url: "http://localhost:8080/blogRest/create",
+            data: JSON.stringify(blogObj),
+            success: function(resultSuccess){
+                console.log(resultSuccess);
+            },
+            error: function(resultError) {
+                console.log('Co loi xay ra');
+            }
+        });
+
+    });
+</script>
+</html>

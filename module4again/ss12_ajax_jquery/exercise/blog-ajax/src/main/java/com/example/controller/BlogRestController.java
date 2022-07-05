@@ -60,6 +60,11 @@ public class BlogRestController {
         }
         return new ResponseEntity<>(blogPage, HttpStatus.OK);
     }
+    @PostMapping("/create")
+    public ResponseEntity<Blog>createBlog(@RequestBody Blog blog){
+        iBlogService.save(blog);
+        return new ResponseEntity<>(blog,HttpStatus.OK);
+    }
 
 }
 

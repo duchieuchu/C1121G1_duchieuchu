@@ -74,7 +74,12 @@
                                <th>note</th>
 
                                <th>Delete</th>
-                               </tr>`; ist[i].content + '</td>\n' +
+                               </tr>`;
+                for (let i = 0; i < list.length; i++) {
+                    listStr += '<tr>\n' +
+                        '        <td>' + list[i].id + '</td>\n' +
+                        '        <td>' + list[i].name + '</td>\n' +
+                        '        <td>' + list[i].content + '</td>\n' +
                         '        <td>' + list[i].note + '</td>\n' +
                         '        <td><a class="deletePhone" href="' + list[i].id + '">Delete</a></td>\n' +
                         '    </tr>'
