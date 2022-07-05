@@ -32,17 +32,7 @@
 <button onclick="more()">Next</button>
 </body>
 <script>
-    let pageCru = 0;
 
-    function more() {
-        pageCru++;
-        getAll();
-    }
-
-    function before() {
-        pageCru--;
-        getAll();
-    }
     let keyword="";
     function search() {
         if (keyword=null){
@@ -51,6 +41,17 @@
             keyword=$('#keyword').val();
         }
         getAll(0, keyword)
+    }
+    let pageCru = 0;
+
+    function more() {
+        pageCru++;
+        getAll(pageCru, keyword)
+    }
+
+    function before() {
+        pageCru--;
+        getAll(pageCru, keyword)
     }
 
     function getAll(pageNumber, keyword) {
@@ -73,12 +74,7 @@
                                <th>note</th>
 
                                <th>Delete</th>
-                               </tr>`;
-                for (let i = 0; i < list.length; i++) {
-                    listStr += '<tr>\n' +
-                        '        <td>' + list[i].id + '</td>\n' +
-                        '        <td>' + list[i].name + '</td>\n' +
-                        '        <td>' + list[i].content + '</td>\n' +
+                               </tr>`; ist[i].content + '</td>\n' +
                         '        <td>' + list[i].note + '</td>\n' +
                         '        <td><a class="deletePhone" href="' + list[i].id + '">Delete</a></td>\n' +
                         '    </tr>'
