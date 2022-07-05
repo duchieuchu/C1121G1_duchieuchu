@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>facility</h3>
+<p>
+    <a href="/facility/add">Add facility</a>
+</p>
+<form action="/facility/">
+    <input type="text" name="keyword">
+    <input type="submit" value="search">
+</form>
+<table id="facility">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Area</th>
+        <th>Cost</th>
+        <th>maxPeople</th>
+        <th>standardRoom</th>
+        <th>facilityType</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="row : ${facilityPage}">
+        <th th:text="${row.id}"></th>
+        <th><a th:href="@{/facility/{id}/view/(id=${row.id})}" th:text="${row.name}"></a></th>
+        <th th:text="${row.area}"></th>
+        <th th:text="${row.cost}"></th>
+        <th th:text="${row.maxPeople}"></th>
+        <th th:text="${row.standardRoom}"></th>
+        <th th:text="${row.facilityType.getName()}"></th>
+        <th><a th:href="@{/facility/{id}/delete/(id=${row.id})}">Delete</a></th>
+        <th><a th:href="@{/facility/{id}/edit/(id=${row.id})}">edit</a></th>
+    </tr>
+    </tbody>
+</table>
+<div>
+    <a th:if="${facilityPage.hasPrevious()}"
+       th:href="@{/facility/(page=${facilityPage.number - 1},keyword=${keywordVal})}">Previous</a>
+    <span th:text="${facilityPage.number +1}"></span>
+    /
+    <span th:text="${facilityPage.totalPages}"></span>
+    <a th:if="${facilityPage.hasNext()}"
+       th:href="@{/facility/(page=${facilityPage.number + 1},keyword=${keywordVal})}">Next</a>
+</div>
+</body>
+</html>
