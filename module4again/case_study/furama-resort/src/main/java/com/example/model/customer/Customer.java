@@ -1,6 +1,9 @@
 package com.example.model.customer;
 
+import com.example.model.contract.Contract;
+
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class Customer {
@@ -26,6 +29,9 @@ public class Customer {
     @JoinColumn(name = "customerType",referencedColumnName = "id")
     private CustomerType customerType;
 
+    @OneToMany(mappedBy = "customer")
+    List<Contract>contractList;
+
     public Customer(Integer id, String name, String dateOfBirth, Integer gender, String idCard, String phoneNumber, String email, String address, CustomerType customerType) {
         this.id = id;
         this.name = name;
@@ -39,6 +45,14 @@ public class Customer {
     }
 
     public Customer() {
+    }
+
+    public List<Contract> getContractList() {
+        return contractList;
+    }
+
+    public void setContractList(List<Contract> contractList) {
+        this.contractList = contractList;
     }
 
     public Integer getId() {

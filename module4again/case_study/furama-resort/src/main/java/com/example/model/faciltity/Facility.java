@@ -1,6 +1,9 @@
 package com.example.model.faciltity;
 
+import com.example.model.contract.Contract;
+
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class Facility {
@@ -30,6 +33,8 @@ public class Facility {
     @JoinColumn(name = "rentType_id",referencedColumnName = "id",nullable = false)
     private RentType rentType;
 
+    @OneToMany(mappedBy = "facility")
+    List<Contract>contractList;
     public Facility(Integer id, String name, Integer area, Double cost, Integer maxPeople, String standardRoom, String otherInfo, Double poolArea, Integer numberOfFloor, String facilityFree, FacilityType facilityType, RentType rentType) {
         this.id = id;
         this.name = name;
@@ -46,6 +51,14 @@ public class Facility {
     }
 
     public Facility() {
+    }
+
+    public List<Contract> getContractList() {
+        return contractList;
+    }
+
+    public void setContractList(List<Contract> contractList) {
+        this.contractList = contractList;
     }
 
     public Integer getId() {
