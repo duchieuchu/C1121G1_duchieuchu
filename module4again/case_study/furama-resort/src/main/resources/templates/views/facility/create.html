@@ -5,6 +5,8 @@
     <title>Title</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
           integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="/jquery-3.6.0.min.js"></script>
+
 
 </head>
 <body>
@@ -22,22 +24,22 @@
             <tr>
                 <th>Name</th>
                 <td><input type="text" th:field="*{name}" placeholder="Enter name"></td>
-<!--                <td th:if="${#fields.hasErrors('name')}" style="color: red" th:errors="*{name}"></td>-->
+                <!--                <td th:if="${#fields.hasErrors('name')}" style="color: red" th:errors="*{name}"></td>-->
             </tr>
             <tr>
                 <th>area</th>
-                <td><input type="number" th:field="*{area}" placeholder="Enter area" ></td>
-<!--                <td th:if="${#fields.hasErrors('area')}" style="color: red" th:errors="*{area}"></td>-->
+                <td><input type="number" th:field="*{area}" placeholder="Enter area"></td>
+                <!--                <td th:if="${#fields.hasErrors('area')}" style="color: red" th:errors="*{area}"></td>-->
             </tr>
             <tr>
                 <th>cost</th>
                 <td><input type="number" th:field="*{cost}" placeholder="Enter cost"></td>
-<!--                <td th:if="${#fields.hasErrors('cost')}" style="color: red" th:errors="*{cost}"></td>-->
+                <!--                <td th:if="${#fields.hasErrors('cost')}" style="color: red" th:errors="*{cost}"></td>-->
             </tr>
             <tr>
                 <th>maxPeople</th>
                 <td><input type="number" th:field="*{maxPeople}" placeholder="Enter maxPeople"></td>
-<!--                <td th:if="${#fields.hasErrors('maxPeople')}" style="color: red" th:errors="*{maxPeople}"></td>-->
+                <!--                <td th:if="${#fields.hasErrors('maxPeople')}" style="color: red" th:errors="*{maxPeople}"></td>-->
             </tr>
             <tr>
                 <th>rentType</th>
@@ -51,35 +53,37 @@
             <tr>
                 <th>serviceType</th>
                 <td>
-                    <select th:field="*{facilityType}">
+                    <select th:field="*{facilityType}" id="serviceType" onchange="getInfo()">
                         <option th:each="serviceType : ${facilityTypeList}" th:value="${serviceType.id}"
                                 th:text="${serviceType.name}"></option>
                     </select>
                 </td>
             </tr>
-            <tr>
+            <tr style="display: none" id="standardRoom">
                 <th>standardRoom</th>
-                <td><input type="text" th:field="*{standardRoom}" placeholder="enter standardRoom"></td>
-                <td th:if="${#fields.hasErrors('standardRoom')}" style="color: red" th:errors="*{standardRoom}"></td>
+                <td><input type="text" th:field="*{standardRoom}" placeholder="enter standardRoom">
+                </td>
+                <!--                <td th:if="${#fields.hasErrors('standardRoom')}" style="color: red" th:errors="*{standardRoom}"></td>-->
             </tr>
-            <tr>
+            <tr style="display: none" id="otherInfo">
                 <th>infoOther</th>
                 <td><input type="text" th:field="*{otherInfo}" placeholder="enter otherInfo"></td>
-<!--                <td th:if="${#fields.hasErrors('infoOther')}" style="color: red" th:errors="*{otherInfo}"></td>-->
+                <!--                <td th:if="${#fields.hasErrors('infoOther')}" style="color: red" th:errors="*{otherInfo}"></td>-->
             </tr>
-            <tr>
+            <tr style="display: none" id="poolArea">
                 <th>poolArea</th>
                 <td><input type="number" th:field="*{poolArea}" placeholder="enter poolArea"></td>
-<!--                <td th:if="${#fields.hasErrors('poolArea')}" style="color: red" th:errors="*{poolArea}"></td>-->
+                <!--                <td th:if="${#fields.hasErrors('poolArea')}" style="color: red" th:errors="*{poolArea}"></td>-->
             </tr>
-            <tr>
+            <tr style="display: none" id="numberOfFloors">
                 <th>numberOfFloors</th>
                 <td><input type="number" th:field="*{numberOfFloors}" placeholder="enter numberOfFloors"></td>
-<!--                <td th:if="${#fields.hasErrors('numberOfFloors')}" style="color: red" th:errors="*{numberOfFloors}"></td>-->
+                <!--                <td th:if="${#fields.hasErrors('numberOfFloors')}" style="color: red" th:errors="*{numberOfFloors}"></td>-->
             </tr>
-            <tr>
+            <tr style="display: none" id="facilityFree">
                 <th>Facility Free</th>
-                <td><input type="number" th:field="*{facilityFree}" placeholder="enter facilityFree"></td>
+                <td><input type="number" th:field="*{facilityFree}" placeholder="enter facilityFree">
+                </td>
                 <!--                <td th:if="${#fields.hasErrors('numberOfFloors')}" style="color: red" th:errors="*{numberOfFloors}"></td>-->
             </tr>
             <tr>
@@ -89,5 +93,35 @@
         </table>
     </form>
 </div>
+<script>
+    function getInfo() {
+        let value = $('#serviceType').val();
 
+        if (value === "1") {
+            $('#standardRoom').show();
+            $('#otherInfo').show();
+            $('#poolArea').show();
+            $('#numberOfFloors').show();
+            $('#facilityFree').hide();
+        }
+        if (value === "2") {
+            $('#standardRoom').show();
+            $('#otherInfo').show();
+            $('#numberOfFloors').show();
+
+            $('#poolArea').hide();
+            $('#facilityFree').hide();
+        }
+        if (value === "3") {
+            $('#facilityFree').show();
+
+            $('#standardRoom').hide();
+            $('#otherInfo').hide();
+            $('#poolArea').hide();
+            $('#numberOfFloors').hide();
+        }
+    }
+
+    getInfo();
+</script>
 </html>

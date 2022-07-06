@@ -1,6 +1,8 @@
 package com.example.controller;
 
 import com.example.model.faciltity.Facility;
+import com.example.model.faciltity.FacilityType;
+import com.example.model.faciltity.RentType;
 import com.example.service.IFacilityService;
 import com.example.service.IFacilityTypeService;
 import com.example.service.IRentTypeService;
@@ -10,12 +12,10 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import java.util.List;
 import java.util.Optional;
 
 @Controller
@@ -46,7 +46,31 @@ public class FacilityController {
     @PostMapping("/save")
     public String create(Facility facility, RedirectAttributes redirectAttributes) {
         iFacilityService.save(facility);
-        redirectAttributes.addFlashAttribute("msg","Add Completed service: "+facility.getName());
+        redirectAttributes.addFlashAttribute("msg", "Add Completed service: " + facility.getName());
+        return "redirect:/service";
+    }
+
+    @GetMapping("/{id}/edit")
+    public String showEdit(@PathVariable Integer id, Model model) {
+        model.addAttribute("facility", iFacilityService.findById(id));
+        List<RentType> rentTypeList = iRentTypeService.findAll();
+        List<FacilityType> facilityTypeList = iFacilityTypeService.findAll();
+        model.addAttribute("rentTypeList", rentTypeList);
+        model.addAttribute("facilityTypeList", facilityTypeList);
+        return "/views/facility/edit";
+    }
+
+    @PostMapping("/update")
+    public String showEdit(Facility facility, RedirectAttributes redirectAttributes) {
+        iFacilityService.save(facility);
+        redirectAttributes.addFlashAttribute("msg", "Edit Completed service: " + facility.getName());
+        return "redirect:/service";
+    }
+
+    @GetMapping("/delete")
+    public String delete(Facility facility,RedirectAttributes redirectAttributes){
+        iFacilityService.delete(facility);
+        redirectAttributes.addFlashAttribute("msg", "Delete Completed service ");
         return "redirect:/service";
     }
 }
