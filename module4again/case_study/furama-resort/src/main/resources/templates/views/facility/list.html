@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        a.one:link {color:#ff0000;}
-        a.one:hover {color:#ffcc00;font-size:110%}
+        a.one:link {
+            color: #ff0000;
+        }
+
+        a.one:hover {
+            color: #ffcc00;
+            font-size: 110%
+        }
     </style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
           integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
@@ -40,22 +46,24 @@
                 <a class="nav-link" th:href="@{/attachService}">CustomerUsingService</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-expanded="false">
                     Contract
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" th:href="@{/contract}">Contract</a>
-                    <a class="dropdown-item" th:href="@{/contractDetail}" >Contract Detail</a>
+                    <a class="dropdown-item" th:href="@{/contractDetail}">Contract Detail</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                   aria-expanded="false">
                     Setting
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
                     <a class="dropdown-item" th:href="@{/contract}">User info</a>
-                    <a class="dropdown-item" th:href="@{/contractDetail}" >Admin</a>
-                    <a  class="dropdown-item" th:if="${#request.userPrincipal != null}" th:href="@{/logout}">Logout</a>
+                    <a class="dropdown-item" th:href="@{/contractDetail}">Admin</a>
+                    <a class="dropdown-item" th:if="${#request.userPrincipal != null}" th:href="@{/logout}">Logout</a>
                 </div>
             </li>
         </ul>
@@ -65,7 +73,7 @@
         </form>
     </div>
 </nav>
-<p style="color: red" th:text="${mess}"></p>
+<p style="color: greenyellow" th:text="${msg}"></p>
 <form>
     <!--    <input type="text" name="keyword">-->
     <!--    <input type="submit" value="search" class="btn btn-primary">-->
@@ -75,37 +83,38 @@
 <table class="table table-hover table-dark">
     <thead>
     <tr>
-        <th class="col-1">id</th>
+        <th class="col-1">#</th>
         <th class="col-2">name</th>
         <th class="col-1">area</th>
         <th class="col-2">cost</th>
         <th class="col-1">maxPeople</th>
-        <!--        <th class="col-1">rentType</th>-->
-        <!--        <th class="col-1">serviceType</th>-->
+        <th class="col-1">rentType</th>
+        <th class="col-1">serviceType</th>
         <th class="col-1">standardRoom</th>
-        <!--        <th class="col-1">otherInfo</th>-->
-        <!--        <th class="col-1">poolArea</th>-->
+        <th class="col-1">otherInfo</th>
+        <th class="col-1">poolArea</th>
         <th class="col-1">numberOfFloors</th>
+        <th class="col-1">serviceFree</th>
         <th class="col-1">Edit</th>
         <th class="col-1">Delete</th>
     </tr>
     </thead>
     <tbody>
-    <tr th:each="row : ${facilityPage}">
-        <td th:text="${row.getId()}"></td>
-<!--        <td th:text="${row.getCode()}"></td>-->
+    <tr th:each="row,loop: ${facilityPage}">
+        <td th:text="${loop.count+facilityPage.number * facilityPage.size}"></td>
         <td><a th:href="@{/service/{id}/views(id=${row.getId()})}" class="one">
             <th:block th:text="${row.getName()}"></th:block>
         </a></td>
         <td th:text="${row.getArea()}"></td>
         <td th:text="${row.getCost()}"></td>
         <td th:text="${row.getMaxPeople()}"></td>
-        <!--        <td th:text="${row.getRentType().getName()}"></td>-->
-        <!--        <td th:text="${row.getServiceType().getName()}"></td>-->
+        <td th:text="${row.getRentType().getName()}"></td>
+        <td th:text="${row.getFacilityType().getName()}"></td>
         <td th:text="${row.getStandardRoom()}"></td>
-        <!--        <td th:text="${row.getInfoOther()}"></td>-->
-        <!--        <td th:text="${row.getPoolArea()}"></td>-->
+        <td th:text="${row.getOtherInfo()}"></td>
+        <td th:text="${row.getPoolArea()}"></td>
         <td th:text="${row.getNumberOfFloors()}"></td>
+        <td th:text="${row.getFacilityFree()}"></td>
         <td><a th:href="@{#}" class="btn btn-warning">edit</a></td>
         <td><a th:href="@{/service/delete(id=${row.getId()})}" class="btn btn-danger">delete</a></td>
     </tr>

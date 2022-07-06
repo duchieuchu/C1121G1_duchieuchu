@@ -11,8 +11,10 @@ import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.Optional;
 
@@ -28,8 +30,23 @@ public class FacilityController {
 
     @GetMapping("")
     public String goList(Model model, @PageableDefault(value = 4) Pageable pageable) {
-        Page<Facility>facilityPage= this.iFacilityService.findAll( pageable);
-        model.addAttribute("facilityPage",facilityPage);
+        Page<Facility> facilityPage = this.iFacilityService.findAll(pageable);
+        model.addAttribute("facilityPage", facilityPage);
         return "/views/facility/list";
+    }
+
+    @GetMapping("/create")
+    public String showCreate(Model model) {
+        model.addAttribute("facility", new Facility());
+        model.addAttribute("facilityTypeList", iFacilityTypeService.findAll());
+        model.addAttribute("rentTypeList", iRentTypeService.findAll());
+        return "/views/facility/create";
+    }
+
+    @PostMapping("/save")
+    public String create(Facility facility, RedirectAttributes redirectAttributes) {
+        iFacilityService.save(facility);
+        redirectAttributes.addFlashAttribute("msg","Add Completed service: "+facility.getName());
+        return "redirect:/service";
     }
 }

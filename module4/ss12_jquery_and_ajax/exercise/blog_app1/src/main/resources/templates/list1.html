@@ -8,6 +8,7 @@
 
 </head>
 <body>
+
 <h1>Smartphone List</h1>
 <table id="tb">
     <thead>
@@ -38,7 +39,7 @@
         pageCru--;
         getAll();
     }
-    function getAll() {
+    function getAll(pageNumber) {
         $.ajax({
             headers: {
                 'Accept': 'application/json',
@@ -73,6 +74,7 @@
             }
         });
     }
+    getAll(0);
 </script>
 
 </html>

@@ -1,10 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
 </head>
 <body>
-
+<h3>Add Service</h3>
+<p>
+    <a th:href="@{/service}" class="btn btn-dark">
+        Back to customer list
+    </a>
+</p>
 </body>
+<div id="form">
+    <form th:action="@{/service/save}" th:object="${facility}"
+          method="POST" novalidate="novalidate">
+        <table class="table table-hover table-dark">
+            <tr>
+                <th>Name</th>
+                <td><input type="text" th:field="*{name}" placeholder="Enter name"></td>
+<!--                <td th:if="${#fields.hasErrors('name')}" style="color: red" th:errors="*{name}"></td>-->
+            </tr>
+            <tr>
+                <th>area</th>
+                <td><input type="number" th:field="*{area}" placeholder="Enter area" ></td>
+<!--                <td th:if="${#fields.hasErrors('area')}" style="color: red" th:errors="*{area}"></td>-->
+            </tr>
+            <tr>
+                <th>cost</th>
+                <td><input type="number" th:field="*{cost}" placeholder="Enter cost"></td>
+<!--                <td th:if="${#fields.hasErrors('cost')}" style="color: red" th:errors="*{cost}"></td>-->
+            </tr>
+            <tr>
+                <th>maxPeople</th>
+                <td><input type="number" th:field="*{maxPeople}" placeholder="Enter maxPeople"></td>
+<!--                <td th:if="${#fields.hasErrors('maxPeople')}" style="color: red" th:errors="*{maxPeople}"></td>-->
+            </tr>
+            <tr>
+                <th>rentType</th>
+                <td>
+                    <select th:field="*{rentType}">
+                        <option th:each="rentType : ${rentTypeList}" th:value="${rentType.id}"
+                                th:text="${rentType.name}"></option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>serviceType</th>
+                <td>
+                    <select th:field="*{facilityType}">
+                        <option th:each="serviceType : ${facilityTypeList}" th:value="${serviceType.id}"
+                                th:text="${serviceType.name}"></option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>standardRoom</th>
+                <td><input type="text" th:field="*{standardRoom}" placeholder="enter standardRoom"></td>
+                <td th:if="${#fields.hasErrors('standardRoom')}" style="color: red" th:errors="*{standardRoom}"></td>
+            </tr>
+            <tr>
+                <th>infoOther</th>
+                <td><input type="text" th:field="*{otherInfo}" placeholder="enter otherInfo"></td>
+<!--                <td th:if="${#fields.hasErrors('infoOther')}" style="color: red" th:errors="*{otherInfo}"></td>-->
+            </tr>
+            <tr>
+                <th>poolArea</th>
+                <td><input type="number" th:field="*{poolArea}" placeholder="enter poolArea"></td>
+<!--                <td th:if="${#fields.hasErrors('poolArea')}" style="color: red" th:errors="*{poolArea}"></td>-->
+            </tr>
+            <tr>
+                <th>numberOfFloors</th>
+                <td><input type="number" th:field="*{numberOfFloors}" placeholder="enter numberOfFloors"></td>
+<!--                <td th:if="${#fields.hasErrors('numberOfFloors')}" style="color: red" th:errors="*{numberOfFloors}"></td>-->
+            </tr>
+            <tr>
+                <th>Facility Free</th>
+                <td><input type="number" th:field="*{facilityFree}" placeholder="enter facilityFree"></td>
+                <!--                <td th:if="${#fields.hasErrors('numberOfFloors')}" style="color: red" th:errors="*{numberOfFloors}"></td>-->
+            </tr>
+            <tr>
+                <th></th>
+                <td><input type="submit" value="Save" class="btn btn-primary"/></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
 </html>

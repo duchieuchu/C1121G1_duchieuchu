@@ -24,7 +24,7 @@ import java.util.Optional;
 public class ProductController {
     //khoi tao gia tri default
     @ModelAttribute("cart")
-    public CartDto initCart() {
+    public CartDto cartDto() {
         return new CartDto();
     }
 

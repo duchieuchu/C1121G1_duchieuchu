@@ -2,21 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="046ce115-f689-4447-a166-3d874d34f82e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.60/webapps/ROOT/WEB-INF/classes/com/example/controller/DictionaryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.60/webapps/ROOT/WEB-INF/classes/com/example/controller/DictionaryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.60/webapps/ROOT/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.60/webapps/ROOT/WEB-INF/views/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4again/ss12_ajax_jquery/practice/effect/src/main/java/com/example/controller/EffectController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4again/ss12_ajax_jquery/practice/effect/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4again/ss12_ajax_jquery/practice/phone-ajax-jquery/src/main/java/com/example/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4again/ss12_ajax_jquery/practice/phone-ajax-jquery/src/main/java/com/example/controller/SmartPhoneController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4again/ss12_ajax_jquery/practice/phone-ajax-jquery/src/main/java/com/example/model/Smartphone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4again/ss12_ajax_jquery/practice/phone-ajax-jquery/src/main/java/com/example/repository/ISmartphoneRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4again/ss12_ajax_jquery/practice/phone-ajax-jquery/src/main/java/com/example/service/ISmartphoneService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4again/ss12_ajax_jquery/practice/phone-ajax-jquery/src/main/java/com/example/service/SmartphoneService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4again/ss12_ajax_jquery/practice/phone-ajax-jquery/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4again/ss12_ajax_jquery/practice/phone-ajax-jquery/src/main/resources/templates/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_session_and_cookie_in_spring/exercise/shopping_cart_post/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../ss10_session_and_cookie_in_spring/exercise/shopping_cart_post/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_session_and_cookie_in_spring/exercise/shopping_cart_post/src/main/java/com/example/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ss10_session_and_cookie_in_spring/exercise/shopping_cart_post/src/main/java/com/example/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10_session_and_cookie_in_spring/exercise/shopping_cart_post/src/main/resources/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss10_session_and_cookie_in_spring/exercise/shopping_cart_post/src/main/resources/templates/list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ss1_spring_mvc/practice/ABC/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../ss1_spring_mvc/practice/ABC/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss4_data_binding_and_form/practice/upload-file/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ss4_data_binding_and_form/practice/upload-file/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ss5_thao_tac_csdl_va_orm/practice/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../ss5_thao_tac_csdl_va_orm/practice/customer-management" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/build/classes/java/main/com/example/controller/DictionaryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/build/classes/java/main/com/example/controller/DictionaryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/build/libs/dictionary-simple-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/build/libs/dictionary-simple-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/src/main/java/com/example/controller/DictionaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/src/main/java/com/example/controller/DictionaryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/exercise/dictionary-simple/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/practice/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4again/ss1_spring_mvc/practice/customer-management" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +52,7 @@
       <option name="presentableId" value="Default" />
       <updated>1655284444060</updated>
       <workItem from="1655284445246" duration="2000" />
+      <workItem from="1656661574218" duration="4000" />
     </task>
     <servers />
   </component>
