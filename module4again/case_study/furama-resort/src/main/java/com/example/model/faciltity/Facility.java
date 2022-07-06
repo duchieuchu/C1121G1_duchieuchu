@@ -21,7 +21,7 @@ public class Facility {
     @Column(length = 45)
     private String otherInfo;
     private Double poolArea;
-    private Integer numberOfFloor;
+    private Integer numberOfFloors;
     @Column(columnDefinition = "TEXT")
     private String facilityFree;
 
@@ -35,7 +35,7 @@ public class Facility {
 
     @OneToMany(mappedBy = "facility")
     List<Contract>contractList;
-    public Facility(Integer id, String name, Integer area, Double cost, Integer maxPeople, String standardRoom, String otherInfo, Double poolArea, Integer numberOfFloor, String facilityFree, FacilityType facilityType, RentType rentType) {
+    public Facility(Integer id, String name, Integer area, Double cost, Integer maxPeople, String standardRoom, String otherInfo, Double poolArea, Integer numberOfFloors, String facilityFree, FacilityType facilityType, RentType rentType) {
         this.id = id;
         this.name = name;
         this.area = area;
@@ -44,7 +44,7 @@ public class Facility {
         this.standardRoom = standardRoom;
         this.otherInfo = otherInfo;
         this.poolArea = poolArea;
-        this.numberOfFloor = numberOfFloor;
+        this.numberOfFloors = numberOfFloors;
         this.facilityFree = facilityFree;
         this.facilityType = facilityType;
         this.rentType = rentType;
@@ -125,12 +125,12 @@ public class Facility {
         this.poolArea = poolArea;
     }
 
-    public Integer getNumberOfFloor() {
-        return numberOfFloor;
+    public Integer getNumberOfFloors() {
+        return numberOfFloors;
     }
 
-    public void setNumberOfFloor(Integer numberOfFloor) {
-        this.numberOfFloor = numberOfFloor;
+    public void setNumberOfFloors(Integer numberOfFloors) {
+        this.numberOfFloors = numberOfFloors;
     }
 
     public String getFacilityFree() {

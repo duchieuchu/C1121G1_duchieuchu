@@ -27,8 +27,8 @@ public class FacilityController {
     private IRentTypeService iRentTypeService;
 
     @GetMapping("")
-    public String goList(Model model, @PageableDefault(value = 2) Pageable pageable) {
-        Page<Facility>facilityPage= iFacilityService.findAll( pageable);
+    public String goList(Model model, @PageableDefault(value = 4) Pageable pageable) {
+        Page<Facility>facilityPage= this.iFacilityService.findAll( pageable);
         model.addAttribute("facilityPage",facilityPage);
         return "/views/facility/list";
     }
