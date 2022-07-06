@@ -1,4 +1,4 @@
-package com.example.repository;
+package com.example.repository.facility;
 
 import com.example.model.faciltity.RentType;
 import org.springframework.data.jpa.repository.JpaRepository;

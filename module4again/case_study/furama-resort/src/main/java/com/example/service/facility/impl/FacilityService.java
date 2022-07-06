@@ -1,8 +1,8 @@
-package com.example.service.impl;
+package com.example.service.facility.impl;
 
 import com.example.model.faciltity.Facility;
-import com.example.repository.IFacilityRepository;
-import com.example.service.IFacilityService;
+import com.example.repository.facility.IFacilityRepository;
+import com.example.service.facility.IFacilityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

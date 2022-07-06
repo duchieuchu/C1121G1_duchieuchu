@@ -3,9 +3,9 @@ package com.example.controller;
 import com.example.model.faciltity.Facility;
 import com.example.model.faciltity.FacilityType;
 import com.example.model.faciltity.RentType;
-import com.example.service.IFacilityService;
-import com.example.service.IFacilityTypeService;
-import com.example.service.IRentTypeService;
+import com.example.service.facility.IFacilityService;
+import com.example.service.facility.IFacilityTypeService;
+import com.example.service.facility.IRentTypeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.List;
-import java.util.Optional;
 
 @Controller
 @RequestMapping("/service")
