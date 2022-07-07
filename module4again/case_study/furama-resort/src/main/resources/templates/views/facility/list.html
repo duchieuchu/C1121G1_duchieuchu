@@ -82,15 +82,16 @@
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"  name="keyword">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
     </div>
 </nav>
 <p style="color: blue" th:text="${msg}"></p>
+
 <form>
-    <!--    <input type="text" name="keyword">-->
-    <!--    <input type="submit" value="search" class="btn btn-primary">-->
+<!--        <input type="text" name="keyword">-->
+<!--        <input type="submit" value="search" class="btn btn-primary">-->
     <a th:href="@{/service/create}" class="btn btn-secondary">Add Service</a>
 </form>
 <br>
@@ -168,14 +169,14 @@
 </div>
 <div>
     <a th:if="${facilityPage.hasPrevious()}"
-       th:href="@{/service/(page=${facilityPage.number - 1})}" class="btn btn-info">
+       th:href="@{/service/(page=${facilityPage.number - 1},keyword=${keywordVal})}" class="btn btn-info">
         Previous
     </a>
     <span th:text="${facilityPage.number + 1}"></span>
     /
     <span th:text="${facilityPage.totalPages}"></span>
     <a th:if="${facilityPage.hasNext()}"
-       th:href="@{/service/(page=${facilityPage.number + 1})}" class="btn btn-success">
+       th:href="@{/service/(page=${facilityPage.number + 1},keyword=${keywordVal})}" class="btn btn-success">
         Next
     </a>
 </div>

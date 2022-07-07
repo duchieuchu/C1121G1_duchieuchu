@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.List;
+import java.util.Optional;
 
 @Controller
 @RequestMapping("/service")
@@ -28,11 +29,20 @@ public class FacilityController {
     private IRentTypeService iRentTypeService;
 
     @GetMapping("")
-    public String goList(Model model, @PageableDefault(value = 4) Pageable pageable) {
-        Page<Facility> facilityPage = this.iFacilityService.findAll(pageable);
-        model.addAttribute("facilityPage", facilityPage);
+    public String goList(Model model, @PageableDefault(value = 4) Pageable pageable,
+                         @RequestParam Optional<String>keyword) {
+        String keywordVal=keyword.orElse("");
+        Page<Facility> facilityPage = this.iFacilityService.findAllByName(keywordVal,pageable);
+        model.addAttribute("facilityPage",facilityPage);
+        model.addAttribute("keywordVal",keywordVal);
         return "/views/facility/list";
     }
+//    @GetMapping("")
+//    public String goList(Model model, @PageableDefault(value = 4) Pageable pageable) {
+//        Page<Facility> facilityPage = this.iFacilityService.findAll(pageable);
+//        model.addAttribute("facilityPage", facilityPage);
+//        return "/views/facility/list";
+//    }
 
     @GetMapping("/create")
     public String showCreate(Model model) {
