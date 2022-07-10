@@ -1,10 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/views/layout ::head">
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="/jquery-3.6.0.min.js"></script>
+
 </head>
 <body>
+<header th:replace="/views/layout ::header"></header>
+<br> <br> <br> <br>
+<h1>Information Customer</h1>
+<div class="content">
+    <form th:action="@{/customer/save}" th:object="${customer}"
+          method="POST" novalidate="novalidate">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" th:field="*{name}"
+                   placeholder="Enter name">
+        </div>
+        <div class="form-group">
+            <label>Date Of Birth</label>
+            <input type="date" class="form-control" th:field="*{dateOfBirth}"
+                   placeholder="Enter date of birth">
+        </div>
+        <div class="form-group">
+            <label>Gender</label>
+            <select th:field="*{gender}"  class="form-control">
+                <option th:value="0">Nam</option>
+                <option th:value="1">Nữ</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>ID Card</label>
+            <input type="number" class="form-control" th:field="*{idCard}"
+                   placeholder="Enter id card">
+        </div>
+        <div class="form-group">
+            <label>Phone Number</label>
+            <input type="number" class="form-control" th:field="*{phoneNumber}"
+                   placeholder="Enter Phone Number">
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" class="form-control" th:field="*{email}"
+                   placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label>Adrress</label>
+            <input type="text" class="form-control" th:field="*{address}"
+                   placeholder="Enter address">
+        </div>
+        <div class="form-group">
+            <label>Customer Type</label>
+            <select class="form-control" th:field="*{customerType}">
+                <option th:each="customerType : ${customerTypeList}" th:value="${customerType.id}"
+                        th:text="${customerType.name}"></option>
+            </select>
+        </div>
+        <div>
+            <a th:href="@{/customer}" class="btn btn-dark">
+                Back to customer list
+            </a>
+            <button type="submit" class="btn btn-primary">Add</button>
+        </div>
 
+    </form>
+</div>
+<footer th:replace="/views/layout ::footer"></footer>
 </body>
 </html>

@@ -76,10 +76,20 @@ public class FacilityController {
         return "redirect:/service";
     }
 
-    @GetMapping("/delete")
+    @PostMapping("/delete")
     public String delete(Facility facility,RedirectAttributes redirectAttributes){
         iFacilityService.delete(facility);
         redirectAttributes.addFlashAttribute("msg", "Delete Completed service ");
         return "redirect:/service";
+    }
+
+    @GetMapping("/{id}/view")
+    public String showDetailFacility(Model model,@PathVariable Integer id){
+        model.addAttribute("facility",iFacilityService.findById(id));
+        List<RentType> rentTypeList = iRentTypeService.findAll();
+        List<FacilityType> facilityTypeList = iFacilityTypeService.findAll();
+        model.addAttribute("rentTypeList", rentTypeList);
+        model.addAttribute("facilityTypeList", facilityTypeList);
+        return "/views/facility/view";
     }
 }

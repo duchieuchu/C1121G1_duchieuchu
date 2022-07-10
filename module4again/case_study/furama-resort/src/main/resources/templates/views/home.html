@@ -70,6 +70,10 @@
             height: 45px;
             width: 45px;
         }
+        a{
+            font-weight: 600;
+            font-family: 'Lobster', cursive;
+        }
     </style>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
@@ -80,7 +84,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 
-    <a class="navbar-brand" href="https://furamavietnam.com/">
+    <a class="navbar-brand" th:href="@{/home}">
         <img src="https://gohola.vn/uploads/2015/02/furama.gif"
              width="50" height="60"></a>
 
@@ -102,9 +106,6 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" th:href="@{/service}">Service</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" th:href="@{/attachService}">CustomerUsingService</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
