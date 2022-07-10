@@ -10,39 +10,26 @@
     <br> <br> <br> <br>
     <p style="color: blue" th:text="${msg}"></p>
 
-        <a th:href="@{/contract/create}" class="btn btn-secondary">Add contract</a>
+    <a th:href="@{/contractDetail/create}" class="btn btn-secondary">Add contractDetail</a>
     <br>
     <table class="table table-hover">
         <thead>
         <tr>
             <th class="col-1">#</th>
-            <th class="col-1">Id Contract</th>
-<!--            <th class="col-2">Start Date</th>-->
-<!--            <th class="col-2">End Date</th>-->
-            <th class="col-1">Deposit</th>
-            <th class="col-2">Employee Name</th>
-            <th class="col-2">Customer Name</th>
-            <th class="col-2">Facility Name</th>
-            <th class="col-2">Attach Service</th>
+            <th class="col-2">Contract Id</th>
+            <th class="col-1">Attach Service Name</th>
+            <th class="col-2">Quantity</th>
             <th class="col-1">Delete</th>
         </tr>
         </thead>
         <tbody>
-        <tr th:each="row,loop: ${contractPage}">
-            <td th:text="${loop.count+contractPage.number * contractPage.size}"></td>
-            <td th:text="${row.id}"></td>
-<!--            <td th:text="${row.getStartDate()}"></td>-->
-<!--            <td th:text="${row.getEndDate()}"></td>-->
-            <td th:text="${row.getDeposit()}"></td>
-            <td th:text="${row.getEmployee().getName()}"></td>
-            <td th:text="${row.getCustomer().getName()}"></td>
-            <td th:text="${row.getFacility().getName()}"></td>
-            <td>
-                <a th:href="@{/contractDetail/create}"><button class="btn btn-primary">+</button></a>
-
-            </td>
-<!--            <td><a th:href="@{/contract/{id}/edit(id=${row.getId()})}" class="btn btn-warning">edit</a></td>-->
-<!--            <td><a th:href="@{/contract/delete(id=${row.getId()})}" class="btn btn-danger">delete</a></td>-->
+        <tr th:each="row,loop: ${contractDetailPage}">
+            <td th:text="${loop.count+contractDetailPage.number * contractDetailPage.size}"></td>
+            <td th:text="${row.contract.id}"></td>
+            <td th:text="${row.attachFacility.name}"></td>
+            <td th:text="${row.quantity}"></td>
+            <!--            <td><a th:href="@{/contractDetail/{id}/edit(id=${row.getId()})}" class="btn btn-warning">edit</a></td>-->
+            <!--            <td><a th:href="@{/contractDetail/delete(id=${row.getId()})}" class="btn btn-danger">delete</a></td>-->
             <td><!-- Button trigger modal -->
                 <!--      th:attr="onclick=|upload('${gallery}')|"-->
                 <button th:attr="onclick=|deleteModal(${row.id})|" type="button" class="btn btn-danger"
@@ -57,16 +44,16 @@
     <nav aria-label="...">
         <ul class="pagination">
             <li class="page-item ">
-                <a class="page-link" th:if="${contractPage.hasPrevious()}"
-                   th:href="@{/contract/(page=${contractPage.number - 1})}">Previous</a>
+                <a class="page-link" th:if="${contractDetailPage.hasPrevious()}"
+                   th:href="@{/contractDetail/(page=${contractDetailPage.number - 1})}">Previous</a>
             </li>
             <li class="page-item active"
-                th:each="i: ${#numbers.sequence(1, contractPage.totalPages)}">
-                <a class="page-link" th:if=" ${contractPage.number !=i}" th:href="@{'/contract/?page=' + ${i - 1}}">[[${i}]]</a>
+                th:each="i: ${#numbers.sequence(1, contractDetailPage.totalPages)}">
+                <a class="page-link" th:if=" ${contractDetailPage.number !=i}" th:href="@{'/contractDetail/?page=' + ${i - 1}}">[[${i}]]</a>
             </li>
             <li class="page-item">
-                <a class="page-link" th:if="${contractPage.hasNext()}"
-                   th:href="@{/contract/(page=${contractPage.number + 1})}">Next</a>
+                <a class="page-link" th:if="${contractDetailPage.hasNext()}"
+                   th:href="@{/contractDetail/(page=${contractDetailPage.number + 1})}">Next</a>
             </li>
         </ul>
     </nav>
@@ -81,7 +68,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form action="/contract/delete" method="post">
+            <form action="/contractDetail/delete" method="post">
                 <div class="modal-body">
                     Are you sure delete?
                     <!--iddelete la o duoi cho function, name= id de co id xoa-->

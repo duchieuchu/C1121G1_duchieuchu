@@ -10,7 +10,7 @@
     <br> <br> <br> <br>
     <p style="color: blue" th:text="${msg}"></p>
     <a th:href="@{/service/create}" class="btn btn-secondary">Add Service</a><br>
-    <table class="table table-hover table-dark">
+    <table class="table table-hover">
         <thead>
         <tr>
             <th class="col-1">#</th>
@@ -45,7 +45,7 @@
             <!--        <td th:text="${row.getPoolArea()}"></td>-->
             <!--        <td th:text="${row.getNumberOfFloors()}"></td>-->
             <!--        <td th:text="${row.getFacilityFree()}"></td>-->
-            <td><a th:href="@{/service/{id}/edit(id=${row.getId()})}" class="btn btn-warning">edit</a></td>
+            <td><a th:href="@{/service/{id}/edit(id=${row.getId()})}" class="btn btn-primary">Edit</a></td>
             <!--        <td><a th:href="@{/service/delete(id=${row.getId()})}" class="btn btn-danger">delete</a></td>-->
             <td><!-- Button trigger modal -->
                 <!--      th:attr="onclick=|upload('${gallery}')|"-->

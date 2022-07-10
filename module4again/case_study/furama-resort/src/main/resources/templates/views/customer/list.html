@@ -11,7 +11,7 @@
     <p style="color: blue" th:text="${msg}"></p>
         <a th:href="@{/customer/create}" class="btn btn-secondary">Add customer</a>
     <br>
-    <table class="table table-hover table-dark">
+    <table class="table table-hover">
         <thead>
         <tr>
             <th class="col-1">#</th>
@@ -40,7 +40,7 @@
             <!--        <td th:text="${row.getEmail()}"></td>-->
             <!--        <td th:text="${row.getAddress()}"></td>-->
             <td th:text="${row.getCustomerType().getName()}"></td>
-            <td><a th:href="@{/customer/{id}/edit(id=${row.getId()})}" class="btn btn-warning">edit</a></td>
+            <td><a th:href="@{/customer/{id}/edit(id=${row.getId()})}" class="btn btn-primary">Edit</a></td>
             <!--        <td><a th:href="@{/customer/delete(id=${row.getId()})}" class="btn btn-danger">delete</a></td>-->
             <td><!-- Button trigger modal -->
                 <!--      th:attr="onclick=|upload('${gallery}')|"-->
