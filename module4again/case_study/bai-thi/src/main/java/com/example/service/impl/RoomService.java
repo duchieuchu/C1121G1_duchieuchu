@@ -8,6 +8,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class RoomService implements IRoomService {
     @Autowired
@@ -34,7 +36,7 @@ public class RoomService implements IRoomService {
     }
 
     @Override
-    public Page<Room> findAllByName(String name, Pageable pageable) {
-        return null;
+    public List<Room> findAll() {
+        return iRoomRepository.findAll();
     }
 }

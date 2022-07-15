@@ -16,9 +16,14 @@
         <thead>
         <tr>
             <th class="col-1">#</th>
-            <th class="col-2">Contract Id</th>
+            <th class="col-1">Contract Id</th>
+            <th class="col-1">Customer Name</th>
             <th class="col-1">Attach Service Name</th>
-            <th class="col-2">Quantity</th>
+            <th class="col-2">Start Date</th>
+            <th class="col-2">End Date</th>
+            <th class="col-1">Quantity</th>
+            <th class="col-1">Deposit</th>
+            <th class="col-1">Cost</th>
             <th class="col-1">Delete</th>
         </tr>
         </thead>
@@ -26,8 +31,13 @@
         <tr th:each="row,loop: ${contractDetailPage}">
             <td th:text="${loop.count+contractDetailPage.number * contractDetailPage.size}"></td>
             <td th:text="${row.contract.id}"></td>
+            <td th:text="${row.contract.customer.name}"></td>
             <td th:text="${row.attachFacility.name}"></td>
+            <td th:text="${row.contract.startDate}"></td>
+            <td th:text="${row.contract.endDate}"></td>
             <td th:text="${row.quantity}"></td>
+            <td th:text="${row.contract.deposit}"></td>
+            <td th:text="${row.attachFacility.cost}"></td>
             <!--            <td><a th:href="@{/contractDetail/{id}/edit(id=${row.getId()})}" class="btn btn-warning">edit</a></td>-->
             <!--            <td><a th:href="@{/contractDetail/delete(id=${row.getId()})}" class="btn btn-danger">delete</a></td>-->
             <td><!-- Button trigger modal -->

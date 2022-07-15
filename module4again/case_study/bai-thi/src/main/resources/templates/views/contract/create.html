@@ -11,57 +11,48 @@
 <body>
 <header th:replace="/views/layout ::header"></header>
 <br> <br> <br> <br>
-<h1>Information Customer</h1>
+<h1>Information contract</h1>
 <div class="content">
-    <form th:action="@{/customer/save}" th:object="${customer}"
-          method="POST" novalidate="novalidate">
+    <form th:action="@{/contract/save}" th:object="${contract}"
+          method="POST" >
         <div class="form-group">
-            <label>Name</label>
-            <input type="text" class="form-control" th:field="*{name}"
-                   placeholder="Enter name">
+            <label>Contract Code</label>
+            <input type="text" class="form-control" th:field="*{contractCode}" required
+                   placeholder="Enter Contract Code">
         </div>
         <div class="form-group">
-            <label>Date Of Birth</label>
-            <input type="date" class="form-control" th:field="*{dateOfBirth}"
-                   placeholder="Enter date of birth">
-        </div>
-        <div class="form-group">
-            <label>Gender</label>
-            <select th:field="*{gender}"  class="form-control">
-                <option th:value="0">Nam</option>
-                <option th:value="1">Nữ</option>
+            <label>Room Code</label>
+            <select class="form-control" th:field="*{room}">
+                <option th:each="room : ${roomList}" th:value="${room.id}"
+                        th:text="${room.roomCode}"></option>
             </select>
+        </div>
+        <div class="form-group">
+            <label>Name User</label>
+            <input type="text" class="form-control" th:field="*{name}" required
+                   placeholder="Enter Name User">
         </div>
         <div class="form-group">
             <label>ID Card</label>
-            <input type="number" class="form-control" th:field="*{idCard}"
-                   placeholder="Enter id card">
+            <input type="text" class="form-control" th:field="*{idCard}" required
+                   placeholder="Enter ID Card">
         </div>
         <div class="form-group">
-            <label>Phone Number</label>
-            <input type="number" class="form-control" th:field="*{phoneNumber}"
-                   placeholder="Enter Phone Number">
+            <label>Start Date</label>
+            <input type="date" class="form-control" th:field="*{startDate}"
+                   placeholder="Enter Start Date">
         </div>
         <div class="form-group">
-            <label>Email</label>
-            <input type="text" class="form-control" th:field="*{email}"
-                   placeholder="Enter email">
-        </div>
-        <div class="form-group">
-            <label>Adrress</label>
-            <input type="text" class="form-control" th:field="*{address}"
-                   placeholder="Enter address">
-        </div>
-        <div class="form-group">
-            <label>Customer Type</label>
-            <select class="form-control" th:field="*{customerType}">
-                <option th:each="customerType : ${customerTypeList}" th:value="${customerType.id}"
-                        th:text="${customerType.name}"></option>
+            <label>Rent time</label>
+            <select th:field="*{rentTime}"  class="form-control">
+                <option th:value="3">3 months</option>
+                <option th:value="6">6 months</option>
+                <option th:value="9">9 months</option>
             </select>
         </div>
         <div>
-            <a th:href="@{/customer}" class="btn btn-dark">
-                Back to customer list
+            <a th:href="@{/contract}" class="btn btn-dark">
+                Back to contract list
             </a>
             <button type="submit" class="btn btn-primary">Add</button>
         </div>

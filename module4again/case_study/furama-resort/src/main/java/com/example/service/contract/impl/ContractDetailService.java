@@ -8,6 +8,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ContractDetailService implements IContractDetailService {
     @Autowired
@@ -31,4 +33,5 @@ public class ContractDetailService implements IContractDetailService {
     public void delete(ContractDetail contractDetail) {
         iContractDetailRepository.delete(contractDetail);
     }
+
 }

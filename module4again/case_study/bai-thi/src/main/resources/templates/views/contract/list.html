@@ -18,9 +18,9 @@
             <th class="col-2">Contract Code</th>
             <th class="col-2">Room Code</th>
             <th class="col-2">Name User</th>
-            <th class="col-1">Start Date</th>
-            <th class="col-1">Rent Time</th>
-            <th class="col-3">Total Money</th>
+            <th class="col-2">Start Date</th>
+            <th class="col-1">Rent months</th>
+            <th class="col-2">Total Money</th>
             <th class="col-1">Edit</th>
             <th class="col-1">Delete</th>
         </tr>
@@ -28,9 +28,6 @@
         <tbody>
         <tr th:each="row,loop: ${contractPage}">
             <td th:text="${loop.count+contractPage.number * contractPage.size}"></td>
-            <td><a th:href="@{/contract/{id}/views(id=${row.getId()})}" class="one">
-                <th:block th:text="${row.getName()}"></th:block>
-            </a></td>
             <td th:text="${row.getContractCode()}"></td>
             <td th:text="${row.room.getRoomCode()}"></td>
             <td th:text="${row.getName()}"></td>

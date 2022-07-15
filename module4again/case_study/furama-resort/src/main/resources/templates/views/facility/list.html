@@ -82,22 +82,28 @@
             </div>
         </div>
     </div>
-    <nav aria-label="...">
-        <ul class="pagination">
-            <li class="page-item ">
-                <a class="page-link" th:if="${facilityPage.hasPrevious()}"
-                   th:href="@{/service/(page=${facilityPage.number - 1},keyword=${keywordVal})}">Previous</a>
-            </li>
-            <li class="page-item active"
-                th:each="i: ${#numbers.sequence(1, facilityPage.totalPages)}">
-                <a class="page-link" th:if=" ${facilityPage.number !=i}" th:href="@{'/service/?page=' + ${i - 1}}">[[${i}]]</a>
-            </li>
-            <li class="page-item">
-                <a class="page-link" th:if="${facilityPage.hasNext()}"
-                   th:href="@{/service/(page=${facilityPage.number + 1},keyword=${keywordVal})}">Next</a>
-            </li>
-        </ul>
-    </nav>
+
+    <div>
+        <div class="col-9">  </div>
+        <div class="col-3">
+            <nav aria-label="...">
+                <ul class="pagination" >
+                    <li class="page-item ">
+                        <a class="page-link" th:if="${facilityPage.hasPrevious()}"
+                           th:href="@{/service/(page=${facilityPage.number - 1},keyword=${keywordVal})}">Previous</a>
+                    </li>
+                    <li class="page-item active"
+                        th:each="i: ${#numbers.sequence(1, facilityPage.totalPages)}">
+                        <a class="page-link" th:if=" ${facilityPage.number !=i}" th:href="@{'/service/?page=' + ${i - 1}}">[[${i}]]</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" th:if="${facilityPage.hasNext()}"
+                           th:href="@{/service/(page=${facilityPage.number + 1},keyword=${keywordVal})}">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 </div>
 <footer th:replace="/views/layout ::footer"></footer>
 </body>

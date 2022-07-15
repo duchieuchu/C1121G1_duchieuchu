@@ -1,6 +1,7 @@
 package com.example.controller;
 
 import com.example.model.contract.Contract;
+import com.example.service.contract.IContractDetailService;
 import com.example.service.contract.IContractService;
 import com.example.service.customer.ICustomerService;
 import com.example.service.employee.IEmployeeService;
@@ -28,6 +29,9 @@ public class ContractController {
     private ICustomerService iCustomerService;
     @Autowired
     private IFacilityService iFacilityService;
+
+    @Autowired
+    private IContractDetailService iContractDetailService;
 
     @GetMapping("")
     public String goListContract(Model model, @PageableDefault(value = 4) Pageable pageable) {

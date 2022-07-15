@@ -14,4 +14,5 @@ public interface IContractService {
 
     Page<Contract>findAllByName(String name,Pageable pageable);
     List<Contract> findAll();
+
 }

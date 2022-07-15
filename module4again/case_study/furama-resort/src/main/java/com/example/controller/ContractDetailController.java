@@ -39,8 +39,9 @@ public class ContractDetailController {
     }
 
     @GetMapping("/create")
-    public String showCreateContractDetail(Model model){
+    public String showCreateContractDetail(Model model,@RequestParam Integer id){
         model.addAttribute("contractDetail",new ContractDetail());
+        model.addAttribute("idContract",id);
         List<AttachFacility>attachFacilityList=iAttachFacilityService.findAll();
         List<Contract>contractList=iContractService.findAll();
         model.addAttribute("attachFacilityList",attachFacilityList);

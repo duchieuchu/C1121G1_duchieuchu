@@ -1,10 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/views/layout ::head">
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<header th:replace="/views/layout ::header"></header>
+<div class="main">
+    <br> <br> <br> <br>
+    <p style="color: blue" th:text="${msg}"></p>
+    <a th:href="@{/room/create}" class="btn btn-secondary">Add room</a>
+    <br>
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th class="col-1">#</th>
+            <th class="col-2">Room Code</th>
+            <th class="col-2">Room Area</th>
+            <th class="col-2">Cost</th>
+            <th class="col-1">Status</th>
+            <th class="col-1">Edit</th>
+            <th class="col-1">Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="row,loop: ${roomPage}">
+            <td th:text="${loop.count+roomPage.number * roomPage.size}"></td>
+            <td th:text="${row.roomCode}"></td>
+            <td th:text="${row.area}"></td>
+            <td th:text="${row.cost}"></td>
+            <td th:text="${row.status}"></td>
+            <td><a th:href="@{/room/{id}/edit(id=${row.getId()})}" class="btn btn-primary">Edit</a></td>
+            <!--        <td><a th:href="@{/room/delete(id=${row.getId()})}" class="btn btn-danger">delete</a></td>-->
+            <td><!-- Button trigger modal -->
+                <!--      th:attr="onclick=|upload('${gallery}')|"-->
+                <button th:attr="onclick=|deleteModal(${row.id})|" type="button" class="btn btn-danger"
+                        data-toggle="modal"
+                        data-target="#exampleModal">
+                    Delete
+                </button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">DELETE</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="/room/delete" method="post">
+                    <div class="modal-body">
+                        Are you sure delete <span id="nameDelete" class="two"></span>?
+                        <!--iddelete la o duoi cho function, name= id de co id xoa-->
+                        <input type="hidden" id="idDelete" name="id">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <nav aria-label="...">
+        <ul class="pagination">
+            <li class="page-item ">
+                <a class="page-link" th:if="${roomPage.hasPrevious()}"
+                   th:href="@{/room/(page=${roomPage.number - 1})}">Previous</a>
+            </li>
+            <li class="page-item active"
+                th:each="i: ${#numbers.sequence(1, roomPage.totalPages)}">
+                <a class="page-link" th:if=" ${roomPage.number !=i}" th:href="@{'/room/?page=' + ${i - 1}}">[[${i}]]</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" th:if="${roomPage.hasNext()}"
+                   th:href="@{/room/(page=${roomPage.number + 1})}">Next</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<footer th:replace="/views/layout ::footer"></footer>
 </body>
+<script>
+    function deleteModal(id, name) {
+        $("#idDelete").val(id);
+        $("#nameDelete").text(name);
+    }
+</script>
 </html>
+
+

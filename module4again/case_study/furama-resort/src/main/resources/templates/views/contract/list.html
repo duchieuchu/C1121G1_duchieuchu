@@ -10,15 +10,15 @@
     <br> <br> <br> <br>
     <p style="color: blue" th:text="${msg}"></p>
 
-        <a th:href="@{/contract/create}" class="btn btn-secondary">Add contract</a>
+    <a th:href="@{/contract/create}" class="btn btn-secondary">Add contract</a>
     <br>
     <table class="table table-hover">
         <thead>
         <tr>
             <th class="col-1">#</th>
             <th class="col-1">Id Contract</th>
-<!--            <th class="col-2">Start Date</th>-->
-<!--            <th class="col-2">End Date</th>-->
+            <!--            <th class="col-2">Start Date</th>-->
+            <!--            <th class="col-2">End Date</th>-->
             <th class="col-1">Deposit</th>
             <th class="col-2">Employee Name</th>
             <th class="col-2">Customer Name</th>
@@ -31,18 +31,63 @@
         <tr th:each="row,loop: ${contractPage}">
             <td th:text="${loop.count+contractPage.number * contractPage.size}"></td>
             <td th:text="${row.id}"></td>
-<!--            <td th:text="${row.getStartDate()}"></td>-->
-<!--            <td th:text="${row.getEndDate()}"></td>-->
+            <!--            <td th:text="${row.getStartDate()}"></td>-->
+            <!--            <td th:text="${row.getEndDate()}"></td>-->
             <td th:text="${row.getDeposit()}"></td>
             <td th:text="${row.getEmployee().getName()}"></td>
             <td th:text="${row.getCustomer().getName()}"></td>
             <td th:text="${row.getFacility().getName()}"></td>
             <td>
-                <a th:href="@{/contractDetail/create}"><button class="btn btn-primary">+</button></a>
+                <a th:href="@{/contractDetail/create/(id=${row.id})}">
+                    <button class="btn btn-primary">+</button>
+                </a>
+                <button type="button" class="btn btn-primary" data-toggle="modal"
+                        th:data-target="'#staticBackdrop'+ ${row.id}" data-whatever="@getbootstrap">attach service
+                </button>
 
+                <!-- Modal dv di kem-->
+                <div class="modal fade" th:id="staticBackdrop +${row.id}" data-backdrop="static" data-keyboard="false"
+                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Attach service list</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <table>
+                                    <thead>
+                                    <tr>
+                                        <th class="col-1">Attach service</th>
+                                        <th class="col-1">Quantity</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr th:each="contractDetail : ${row.contractDetailList}">
+                                        <td th:text="${contractDetail.attachFacility.name}"></td>
+                                        <td th:text="${contractDetail.quantity}"></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+<!--                                <p style="display:inline" th:each="contractDetail : ${row.contractDetailList}"-->
+<!--                                   th:text="${contractDetail.attachFacility.name}">-->
+<!--                                </p>-->
+<!--                                <p style="display:inline" th:each="contractDetail : ${row.contractDetailList}"-->
+<!--                                   th:text="${contractDetail.quantity}"></p>-->
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--                <p th:each="contractDetail : ${row.contractDetailList}"-->
+                <!--                   th:text="${contractDetail.attachFacility.name}"></p>-->
             </td>
-<!--            <td><a th:href="@{/contract/{id}/edit(id=${row.getId()})}" class="btn btn-warning">edit</a></td>-->
-<!--            <td><a th:href="@{/contract/delete(id=${row.getId()})}" class="btn btn-danger">delete</a></td>-->
+            <!--            <td><a th:href="@{/contract/{id}/edit(id=${row.getId()})}" class="btn btn-warning">edit</a></td>-->
+            <!--            <td><a th:href="@{/contract/delete(id=${row.getId()})}" class="btn btn-danger">delete</a></td>-->
             <td><!-- Button trigger modal -->
                 <!--      th:attr="onclick=|upload('${gallery}')|"-->
                 <button th:attr="onclick=|deleteModal(${row.id})|" type="button" class="btn btn-danger"

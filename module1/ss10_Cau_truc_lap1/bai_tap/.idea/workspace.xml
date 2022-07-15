@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b776792b-8944-4dca-a17d-d67afe8e5cbf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../module4again/case_study/bai-thi/src/main/java/com/example/controller/ContractController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4again/case_study/bai-thi/src/main/java/com/example/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4again/case_study/bai-thi/src/main/java/com/example/controller/RoomController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4again/case_study/bai-thi/src/main/java/com/example/dto/ContractDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4again/case_study/bai-thi/src/main/java/com/example/model/Contract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4again/case_study/bai-thi/src/main/java/com/example/model/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4again/case_study/bai-thi/src/main/java/com/example/repository/IContractRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4again/case_study/bai-thi/src/main/java/com/example/repository/IRoomRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4again/case_study/bai-thi/src/main/java/com/example/service/IContractService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4again/case_study/bai-thi/src/main/java/com/example/service/IRoomService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4again/case_study/bai-thi/src/main/java/com/example/service/impl/ContractService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4again/case_study/bai-thi/src/main/java/com/example/service/impl/RoomService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4again/case_study/bai-thi/src/main/resources/static/jquery-3.6.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4again/case_study/bai-thi/src/main/resources/templates/views/contract/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4again/case_study/bai-thi/src/main/resources/templates/views/contract/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4again/case_study/bai-thi/src/main/resources/templates/views/contract/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4again/case_study/bai-thi/src/main/resources/templates/views/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4again/case_study/bai-thi/src/main/resources/templates/views/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4again/case_study/bai-thi/src/main/resources/templates/views/room/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4again/case_study/bai-thi/src/main/resources/templates/views/room/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4again/case_study/furama-resort/src/main/java/com/example/dto/CustomerDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4again/case_study/many-to-many/src/main/java/com/example/model/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4again/case_study/many-to-many/src/main/java/com/example/model/Project.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4again/case_study/one-to-one/src/main/java/com/example/model/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4again/case_study/one-to-one/src/main/java/com/example/model/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3again/ss10_jsp_and_jstl/exercise/calculator_jsp/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3again/ss10_jsp_and_jstl/exercise/calculator_jsp/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3again/ss10_jsp_and_jstl/exercise/calculator_jsp/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3again/ss10_jsp_and_jstl/exercise/calculator_jsp/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3again/ss10_jsp_and_jstl/exercise/calculator_jsp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3again/ss10_jsp_and_jstl/exercise/calculator_jsp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss1_spring_mvc/practice/ABC/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss1_spring_mvc/practice/ABC/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss5_thao_tac_csdl_va_orm/practice/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss5_thao_tac_csdl_va_orm/practice/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4again/case_study/furama-resort/src/main/java/com/example/controller/ContractController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4again/case_study/furama-resort/src/main/java/com/example/controller/ContractController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4again/case_study/furama-resort/src/main/java/com/example/controller/ContractDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4again/case_study/furama-resort/src/main/java/com/example/controller/ContractDetailController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4again/case_study/furama-resort/src/main/java/com/example/model/contract/Contract.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4again/case_study/furama-resort/src/main/java/com/example/model/contract/Contract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4again/case_study/furama-resort/src/main/java/com/example/service/contract/IContractDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4again/case_study/furama-resort/src/main/java/com/example/service/contract/IContractDetailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4again/case_study/furama-resort/src/main/java/com/example/service/contract/impl/ContractDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4again/case_study/furama-resort/src/main/java/com/example/service/contract/impl/ContractDetailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4again/case_study/furama-resort/src/main/resources/templates/views/contract/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4again/case_study/furama-resort/src/main/resources/templates/views/contract/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4again/case_study/furama-resort/src/main/resources/templates/views/contractDetail/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4again/case_study/furama-resort/src/main/resources/templates/views/contractDetail/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4again/case_study/furama-resort/src/main/resources/templates/views/contractDetail/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4again/case_study/furama-resort/src/main/resources/templates/views/contractDetail/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4again/case_study/furama-resort/src/main/resources/templates/views/customer/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4again/case_study/furama-resort/src/main/resources/templates/views/customer/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4again/case_study/furama-resort/src/main/resources/templates/views/facility/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4again/case_study/furama-resort/src/main/resources/templates/views/facility/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4again/case_study/furama-resort/src/main/resources/templates/views/facility/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4again/case_study/furama-resort/src/main/resources/templates/views/facility/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4again/case_study/furama-resort/src/main/resources/templates/views/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4again/case_study/furama-resort/src/main/resources/templates/views/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4again/case_study/furama-resort/src/main/resources/templates/views/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4again/case_study/furama-resort/src/main/resources/templates/views/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4again/ss1_spring_mvc/practice/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4again/ss1_spring_mvc/practice/customer-management" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2BvKBnhk8AzsOgLoSDLfX0XlmXr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b776792b-8944-4dca-a17d-d67afe8e5cbf" name="Default Changelist" comment="" />
+      <created>1657780985082</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1657780985082</updated>
+      <workItem from="1657780986393" duration="7000" />
+    </task>
+    <servers />
+  </component>
+</project>

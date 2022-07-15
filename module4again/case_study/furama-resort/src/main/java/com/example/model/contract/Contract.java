@@ -32,7 +32,7 @@ public class Contract {
     private Facility facility;
 
     @OneToMany(mappedBy = "contract")
-    List<ContractDetail>contractDetailList;
+    List<ContractDetail> contractDetailList;
 
     public Contract(Integer id, String startDate, String endDate, Double deposit, Employee employee, Customer customer, Facility facility) {
         this.id = id;
