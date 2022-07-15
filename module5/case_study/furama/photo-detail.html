@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .img1 {
+            width: 100%;
+        }
+
+        .img2 {
+            margin-left: auto;
+            margin-right: auto;
+            height: 10px;
+        }
+
+        .tm-footer-links li {
+            list-style: none;
+            margin-bottom: 5px;
+        }
+
+        .tm-footer-links li a {
+            color: #999999;
+        }
+
+        .tm-footer-links li a:hover {
+            color: #009999;
+        }
+
+        .tm-text-primary {
+            color: #009999;
+        }
+
+        a.tm-text-primary:hover {
+            color: #666666;
+        }
+
+        .tm-bg-gray {
+            background-color: #EEEEEE;
+        }
+
+        /* Videos */
+        #tm-video-container {
+            max-height: 400px;
+            overflow: hidden;
+            background-color: #333;
+            margin-bottom: 90px;
+            position: relative;
+        }
+
+        #tm-video {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .p1 {
+            font-size: 27px;
+            text-align: center;
+            font-weight: bold;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            font-style: italic;
+        }
+
+        #session1 {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+        }
+
+        #arrow {
+            height: 45px;
+            width: 45px;
+        }
+
+        a {
+            font-weight: 600;
+            font-family: 'Lobster', cursive;
+        }
+
+    </style>
+    <link rel="stylesheet" href="bootstrap-4.6.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-4.6.1-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="bootstrap-4.6.1-dist/css/bootstrap-reboot.css">
+    <script src="bootstrap-4.6.1-dist/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap-4.6.1-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/templatemo-style.css">
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="/home">
+        <img src="https://gohola.vn/uploads/2015/02/furama.gif"
+             width="50" height="60"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/employee">Employee</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/customer">Customer</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/service">Service</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-expanded="false">
+                    Contract
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/contract">Contract</a>
+                    <a class="dropdown-item" href="/contractDetail">Contract Detail</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                   aria-expanded="false">
+                    Setting
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                    <a class="dropdown-item" href="/contract}">User info</a>
+                    <a class="dropdown-item" href="/contractDetail}">Admin</a>
+                    <a class="dropdown-item" if="${#request.userPrincipal != null}" href="/logout">Logout</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+<br><br><br>
+
+<div class="container-fluid tm-container-content tm-mt-60">
+    <div class="row mb-4">
+        <h2 class="col-12 tm-text-primary">Abogo Resort Villas Luxury</h2>
+    </div>
+    <div class="row tm-mb-90">
+        <div class="col-xl-8 col-lg-7 col-md-6 col-sm-12">
+            <img src="https://wallpaperaccess.com/full/4722343.jpg" alt="Image" class="img-fluid">
+        </div>
+        <div class="col-xl-4 col-lg-5 col-md-6 col-sm-12">
+            <div class="tm-bg-gray tm-video-details">
+                <p class="mb-4">
+                    Nestled within tropical gardens, bungalows have spacious interiors featuring a traditional Thai
+                    décor. Simply furnished, bungalows are equipped with air conditioning and hot and cold shower
+                    facilities in private bathrooms.<a href="https://www.youtube.com/watch?v=XiiamqyhX5w" target="_parent"
+                                                       rel="sponsored">Watch Video</a>.
+                </p>
+                <div class="text-center mb-5">
+                    <a href="#" class="btn btn-primary tm-btn-big">Sign up</a>
+                </div>
+                <div class="mb-4 d-flex flex-wrap">
+                    <div class="mr-4 mb-2">
+                        <span class="tm-text-gray-dark">Area: </span><span class="tm-text-primary">1920x1080</span>
+                    </div>
+                    <div class="mr-4 mb-2">
+                        <span class="tm-text-gray-dark">Locate: </span><span class="tm-text-primary">1097 Chalond Road</span>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h3 class="tm-text-gray-dark mb-3">License</h3>
+                    <p>Free for both personal and commercial use. No need to pay anything. No need to make any
+                        attribution.</p>
+                </div>
+                <div>
+                    <h3 class="tm-text-gray-dark mb-3">Tags</h3>
+                    <a href="#" class="tm-text-primary mr-4 mb-2 d-inline-block">Cloud</a>
+                    <a href="#" class="tm-text-primary mr-4 mb-2 d-inline-block">Bluesky</a>
+                    <a href="#" class="tm-text-primary mr-4 mb-2 d-inline-block">Nature</a>
+                    <a href="#" class="tm-text-primary mr-4 mb-2 d-inline-block">Background</a>
+                    <a href="#" class="tm-text-primary mr-4 mb-2 d-inline-block">Timelapse</a>
+                    <a href="#" class="tm-text-primary mr-4 mb-2 d-inline-block">Night</a>
+                    <a href="#" class="tm-text-primary mr-4 mb-2 d-inline-block">Real Estate</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <h2 class="col-12 tm-text-primary">
+            Related Photos
+        </h2>
+    </div>
+    <div class="row mb-3 tm-gallery">
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+            <figure class="effect-ming tm-video-item">
+                <img src="img/img-01.jpg" alt="Image" class="img-fluid">
+                <figcaption class="d-flex align-items-center justify-content-center">
+                    <h2>Hangers</h2>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <div class="d-flex justify-content-between tm-text-gray">
+                <span class="tm-text-gray-light">16 Oct 2020</span>
+                <span>12,460 views</span>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+            <figure class="effect-ming tm-video-item">
+                <img src="img/img-02.jpg" alt="Image" class="img-fluid">
+                <figcaption class="d-flex align-items-center justify-content-center">
+                    <h2>Perfumes</h2>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <div class="d-flex justify-content-between tm-text-gray">
+                <span class="tm-text-gray-light">12 Oct 2020</span>
+                <span>11,402 views</span>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+            <figure class="effect-ming tm-video-item">
+                <img src="img/img-03.jpg" alt="Image" class="img-fluid">
+                <figcaption class="d-flex align-items-center justify-content-center">
+                    <h2>Clocks</h2>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <div class="d-flex justify-content-between tm-text-gray">
+                <span class="tm-text-gray-light">8 Oct 2020</span>
+                <span>9,906 views</span>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+            <figure class="effect-ming tm-video-item">
+                <img src="img/img-04.jpg" alt="Image" class="img-fluid">
+                <figcaption class="d-flex align-items-center justify-content-center">
+                    <h2>Plants</h2>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <div class="d-flex justify-content-between tm-text-gray">
+                <span class="tm-text-gray-light">6 Oct 2020</span>
+                <span>16,100 views</span>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+            <figure class="effect-ming tm-video-item">
+                <img src="img/img-05.jpg" alt="Image" class="img-fluid">
+                <figcaption class="d-flex align-items-center justify-content-center">
+                    <h2>Morning</h2>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <div class="d-flex justify-content-between tm-text-gray">
+                <span class="tm-text-gray-light">26 Sep 2020</span>
+                <span>16,008 views</span>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+            <figure class="effect-ming tm-video-item">
+                <img src="img/img-06.jpg" alt="Image" class="img-fluid">
+                <figcaption class="d-flex align-items-center justify-content-center">
+                    <h2>Pinky</h2>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <div class="d-flex justify-content-between tm-text-gray">
+                <span class="tm-text-gray-light">22 Sep 2020</span>
+                <span>12,860 views</span>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+            <figure class="effect-ming tm-video-item">
+                <img src="img/img-07.jpg" alt="Image" class="img-fluid">
+                <figcaption class="d-flex align-items-center justify-content-center">
+                    <h2>Bus</h2>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <div class="d-flex justify-content-between tm-text-gray">
+                <span class="tm-text-gray-light">12 Sep 2020</span>
+                <span>10,900 views</span>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+            <figure class="effect-ming tm-video-item">
+                <img src="img/img-08.jpg" alt="Image" class="img-fluid">
+                <figcaption class="d-flex align-items-center justify-content-center">
+                    <h2>New York</h2>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            <div class="d-flex justify-content-between tm-text-gray">
+                <span class="tm-text-gray-light">4 Sep 2020</span>
+                <span>11,300 views</span>
+            </div>
+        </div>
+    </div> <!-- row -->
+</div> <!-- container-fluid, tm-container-content -->
+</body>
+</html>

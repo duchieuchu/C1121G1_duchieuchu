@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/views/layout ::head">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<header th:replace="/views/layout ::header"></header>
+<div class="main">
+    <br> <br> <br> <br>
+    <p style="color: blue" th:text="${msg}"></p>
+    <a th:href="@{/contract/create}" class="btn btn-secondary">Add contract</a>
+    <br>
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th class="col-1">#</th>
+            <th class="col-2">Contract Code</th>
+            <th class="col-2">Room Code</th>
+            <th class="col-2">Name User</th>
+            <th class="col-1">Start Date</th>
+            <th class="col-1">Rent Time</th>
+            <th class="col-3">Total Money</th>
+            <th class="col-1">Edit</th>
+            <th class="col-1">Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="row,loop: ${contractPage}">
+            <td th:text="${loop.count+contractPage.number * contractPage.size}"></td>
+            <td><a th:href="@{/contract/{id}/views(id=${row.getId()})}" class="one">
+                <th:block th:text="${row.getName()}"></th:block>
+            </a></td>
+            <td th:text="${row.getContractCode()}"></td>
+            <td th:text="${row.room.getRoomCode()}"></td>
+            <td th:text="${row.getName()}"></td>
+            <td th:text="${row.getStartDate()}"></td>
+            <td th:text="${row.getRentTime()}"></td>
+            <td th:text="${row.getTotalMoney()}"></td>
+            <td><a th:href="@{/contract/{id}/edit(id=${row.getId()})}" class="btn btn-primary">Edit</a></td>
+            <!--        <td><a th:href="@{/contract/delete(id=${row.getId()})}" class="btn btn-danger">delete</a></td>-->
+            <td><!-- Button trigger modal -->
+                <!--      th:attr="onclick=|upload('${gallery}')|"-->
+                <button th:attr="onclick=|deleteModal(${row.id},'${row.name}')|" type="button" class="btn btn-danger"
+                        data-toggle="modal"
+                        data-target="#exampleModal">
+                    Delete
+                </button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">DELETE</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="/contract/delete" method="post">
+                    <div class="modal-body">
+                        Are you sure delete <span id="nameDelete" class="two"></span>?
+                        <!--iddelete la o duoi cho function, name= id de co id xoa-->
+                        <input type="hidden" id="idDelete" name="id">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <nav aria-label="...">
+        <ul class="pagination">
+            <li class="page-item ">
+                <a class="page-link" th:if="${contractPage.hasPrevious()}"
+                   th:href="@{/contract/(page=${contractPage.number - 1},keyword=${keywordVal})}">Previous</a>
+            </li>
+            <li class="page-item active"
+                th:each="i: ${#numbers.sequence(1, contractPage.totalPages)}">
+                <a class="page-link" th:if=" ${contractPage.number !=i}" th:href="@{'/contract/?page=' + ${i - 1}}">[[${i}]]</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" th:if="${contractPage.hasNext()}"
+                   th:href="@{/contract/(page=${contractPage.number + 1},keyword=${keywordVal})}">Next</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<footer th:replace="/views/layout ::footer"></footer>
+</body>
+<script>
+    function deleteModal(id, name) {
+        $("#idDelete").val(id);
+        $("#nameDelete").text(name);
+    }
+</script>
+</html>
+
+
