@@ -77,10 +77,12 @@
             font-weight: 600;
             font-family: 'Lobster', cursive;
         }
+
         .content {
             margin: 25px 350px 100px 350px;
         }
-        h1{
+
+        h1 {
             text-align: center;
         }
 
@@ -112,7 +114,8 @@
                 <a class="nav-link" href="/employee">Employee</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCustomer" role="button" data-toggle="dropdown"
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCustomer" role="button"
+                   data-toggle="dropdown"
                    aria-expanded="false">
                     Customer
                 </a>
@@ -122,7 +125,8 @@
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownService" role="button" data-toggle="dropdown"
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownService" role="button"
+                   data-toggle="dropdown"
                    aria-expanded="false">
                     Service
                 </a>
@@ -159,83 +163,64 @@
     </div>
 </nav>
 <br><br><br><br>
-<h1>Information facility</h1>
+<h1>Information Customer</h1>
 <div class="content">
-    <form action="/service/save" object="${facility}"
-          method="POST" novalidate="novalidate" >
+    <form action="/customer/save" object="${customer}"
+          method="POST" novalidate="novalidate">
         <div class="form-group">
             <label>Name</label>
             <input type="text" class="form-control" field="*{name}"
                    placeholder="Enter name">
         </div>
         <div class="form-group">
-            <label>Area</label>
-            <input type="number" class="form-control" field="*{area}"
-                   placeholder="Enter area">
+            <label>Date Of Birth</label>
+            <input type="date" class="form-control" field="*{dateOfBirth}"
+                   placeholder="Enter date of birth">
         </div>
         <div class="form-group">
-            <label>Cost</label>
-            <input type="number" class="form-control" field="*{cost}"
-                   placeholder="Enter cost">
-        </div>
-        <div class="form-group">
-            <label>Max People</label>
-            <input type="number" class="form-control" field="*{maxPeople}"
-                   placeholder="Enter max people">
-        </div>
-        <div class="form-group">
-            <label>Service Type</label>
-            <select name="" class="form-control" id="serviceType" onchange="getInfo()">
-                <option value="1">Villa</option>
-                <option value="2">House</option>
-                <option value="3">Room</option>
+            <label>Gender</label>
+            <select field="*{gender}" class="form-control">
+                <option value="0">Nam</option>
+                <option value="1">Nữ</option>
             </select>
-<!--            <select class="form-control" field="*{facilityType}" id="serviceType" onchange="getInfo()">-->
-<!--                <option each="serviceType : ${facilityTypeList}" value="${serviceType.id}"-->
-<!--                        text="${serviceType.name}"></option>-->
-<!--            </select>-->
-        </div>
-        <div class="form-group" id="poolArea">
-            <label>Pool Area</label>
-            <input type="text" class="form-control" field="*{poolArea}"
-                   placeholder="Enter pool area">
-        </div>
-        <div class="form-group" id="standardRoom">
-            <label>Standard Room</label>
-            <input type="text" class="form-control" field="*{standardRoom}"
-                   placeholder="Enter Standard Room">
-        </div>
-        <div class="form-group" id="otherInfo">
-            <label>Other information</label>
-            <input type="text" class="form-control" field="*{otherInfo}"
-                   placeholder="Enter other information">
-        </div>
-        <div class="form-group" id="numberOfFloors">
-            <label>Number Of Floors</label>
-            <input type="number" class="form-control" field="*{numberOfFloors}"
-                   placeholder="Enter number of floors">
-        </div>
-        <div class="form-group" id="facilityFree">
-            <label>Service Free</label>
-            <input type="text" class="form-control" field="*{facilityFree}"
-                   placeholder="Enter service free">
         </div>
         <div class="form-group">
-            <label>Rental Type</label>
+            <label>ID Card</label>
+            <input type="number" class="form-control" field="*{idCard}"
+                   placeholder="Enter id card">
+        </div>
+        <div class="form-group">
+            <label>Phone Number</label>
+            <input type="number" class="form-control" field="*{phoneNumber}"
+                   placeholder="Enter Phone Number">
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" class="form-control" field="*{email}"
+                   placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label>Adrress</label>
+            <input type="text" class="form-control" field="*{address}"
+                   placeholder="Enter address">
+        </div>
+        <div class="form-group">
+            <label>Customer Type</label>
             <select name="" class="form-control">
-                <option value="1">year</option>
-                <option value="2">month</option>
-                <option value="3">day</option>
-                <option value="4">hour</option>
+                <option value="1">Diamond</option>
+                <option value="2">Platinium</option>
+                <option value="3">Gold</option>
+                <option value="4">Silver</option>
+                <option value="5">Member</option>
             </select>
-<!--            <select class="form-control" field="*{rentType}">-->
-<!--                <option each="rentType : ${rentTypeList}" value="${rentType.id}"-->
-<!--                        text="${rentType.name}"></option>-->
-<!--            </select>-->
+            <!--            <select class="form-control" field="*{customerType}">-->
+            <!--                <option each="customerType : ${customerTypeList}" value="${customerType.id}"-->
+            <!--                        text="${customerType.name}"></option>-->
+            <!--            </select>-->
         </div>
         <div>
-            <a href="home.html" class="btn btn-dark">
-                Back to customer list
+            <a href="customer-list.html" class="btn btn-dark">
+                Back to customer List
             </a>
             <button type="submit" class="btn btn-warning">Add</button>
         </div>
@@ -243,37 +228,6 @@
     </form>
 </div>
 </body>
-<script>
-    function getInfo() {
-        let value = $('#serviceType').val();
-
-        if (value === "1") {
-            $('#standardRoom').show();
-            $('#otherInfo').show();
-            $('#poolArea').show();
-            $('#numberOfFloors').show();
-            $('#facilityFree').hide();
-        }
-        if (value === "2") {
-            $('#standardRoom').show();
-            $('#otherInfo').show();
-            $('#numberOfFloors').show();
-
-            $('#poolArea').hide();
-            $('#facilityFree').hide();
-        }
-        if (value === "3") {
-            $('#facilityFree').show();
-
-            $('#standardRoom').hide();
-            $('#otherInfo').hide();
-            $('#poolArea').hide();
-            $('#numberOfFloors').hide();
-        }
-    }
-
-    getInfo();
-</script>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
