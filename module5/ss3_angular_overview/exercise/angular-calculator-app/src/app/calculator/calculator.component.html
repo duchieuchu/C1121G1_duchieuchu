@@ -1,0 +1,20 @@
+<p>calculator works!</p>
+<h1>Calculator Simple</h1>
+<label>
+  <input [(ngModel)]="number1" type="number" placeholder="number1">
+</label>
+<label>
+  <input [(ngModel)]="number2" type="number" placeholder="number2">
+</label>
+<div>
+  <button (click)="calculator('+',number1,number2)">+</button>
+  <button (click)="calculator('-',number1,number2)">-</button>
+  <button (click)="calculator('x',number1,number2)">x</button>
+  <button (click)="calculator('/',number1,number2)">/</button>
+</div>
+
+<footer>
+  <h1>Result: </h1>
+  <span [innerText]="result"></span>
+</footer>
+
