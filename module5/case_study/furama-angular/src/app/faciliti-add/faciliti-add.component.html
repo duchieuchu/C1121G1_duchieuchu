@@ -1,84 +1,84 @@
-<br><br><br><br>
-<h1>Information facility</h1>
-<div class="content">
-  <form action="/service/save" object="${facility}"
-        method="POST" novalidate="novalidate" >
-    <div class="form-group">
-      <label>Name</label>
-      <input type="text" class="form-control" field="*{name}"
-             placeholder="Enter name">
-    </div>
-    <div class="form-group">
-      <label>Area</label>
-      <input type="number" class="form-control" field="*{area}"
-             placeholder="Enter area">
-    </div>
-    <div class="form-group">
-      <label>Cost</label>
-      <input type="number" class="form-control" field="*{cost}"
-             placeholder="Enter cost">
-    </div>
-    <div class="form-group">
-      <label>Max People</label>
-      <input type="number" class="form-control" field="*{maxPeople}"
-             placeholder="Enter max people">
-    </div>
-    <div class="form-group">
-      <label>Service Type</label>
-      <select name="" class="form-control" id="serviceType" onchange="getInfo()">
-        <option value="1">Villa</option>
-        <option value="2">House</option>
-        <option value="3">Room</option>
-      </select>
-      <!--            <select class="form-control" field="*{facilityType}" id="serviceType" onchange="getInfo()">-->
-      <!--                <option each="serviceType : ${facilityTypeList}" value="${serviceType.id}"-->
-      <!--                        text="${serviceType.name}"></option>-->
-      <!--            </select>-->
-    </div>
-    <div class="form-group" id="poolArea">
-      <label>Pool Area</label>
-      <input type="text" class="form-control" field="*{poolArea}"
-             placeholder="Enter pool area">
-    </div>
-    <div class="form-group" id="standardRoom">
-      <label>Standard Room</label>
-      <input type="text" class="form-control" field="*{standardRoom}"
-             placeholder="Enter Standard Room">
-    </div>
-    <div class="form-group" id="otherInfo">
-      <label>Other information</label>
-      <input type="text" class="form-control" field="*{otherInfo}"
-             placeholder="Enter other information">
-    </div>
-    <div class="form-group" id="numberOfFloors">
-      <label>Number Of Floors</label>
-      <input type="number" class="form-control" field="*{numberOfFloors}"
-             placeholder="Enter number of floors">
-    </div>
-    <div class="form-group" id="facilityFree">
-      <label>Service Free</label>
-      <input type="text" class="form-control" field="*{facilityFree}"
-             placeholder="Enter service free">
-    </div>
-    <div class="form-group">
-      <label>Rental Type</label>
-      <select name="" class="form-control">
-        <option value="1">year</option>
-        <option value="2">month</option>
-        <option value="3">day</option>
-        <option value="4">hour</option>
-      </select>
-      <!--            <select class="form-control" field="*{rentType}">-->
-      <!--                <option each="rentType : ${rentTypeList}" value="${rentType.id}"-->
-      <!--                        text="${rentType.name}"></option>-->
-      <!--            </select>-->
-    </div>
-    <div>
-      <a href="home.html" class="btn btn-dark">
-        Back to customer list
-      </a>
-      <button type="submit" class="btn btn-warning">Add</button>
-    </div>
+<!--<br><br><br><br>-->
+<!--<h1>Information facility</h1>-->
+<!--<div class="content">-->
+<!--  <form action="/service/save" object="${facility}"-->
+<!--        method="POST" novalidate="novalidate" >-->
+<!--    <div class="form-group">-->
+<!--      <label>Name</label>-->
+<!--      <input type="text" class="form-control" field="*{name}"-->
+<!--             placeholder="Enter name">-->
+<!--    </div>-->
+<!--    <div class="form-group">-->
+<!--      <label>Area</label>-->
+<!--      <input type="number" class="form-control" field="*{area}"-->
+<!--             placeholder="Enter area">-->
+<!--    </div>-->
+<!--    <div class="form-group">-->
+<!--      <label>Cost</label>-->
+<!--      <input type="number" class="form-control" field="*{cost}"-->
+<!--             placeholder="Enter cost">-->
+<!--    </div>-->
+<!--    <div class="form-group">-->
+<!--      <label>Max People</label>-->
+<!--      <input type="number" class="form-control" field="*{maxPeople}"-->
+<!--             placeholder="Enter max people">-->
+<!--    </div>-->
+<!--    <div class="form-group">-->
+<!--      <label>Service Type</label>-->
+<!--      <select name="" class="form-control" id="serviceType" onchange="getInfo()">-->
+<!--        <option value="1">Villa</option>-->
+<!--        <option value="2">House</option>-->
+<!--        <option value="3">Room</option>-->
+<!--      </select>-->
+<!--      &lt;!&ndash;            <select class="form-control" field="*{facilityType}" id="serviceType" onchange="getInfo()">&ndash;&gt;-->
+<!--      &lt;!&ndash;                <option each="serviceType : ${facilityTypeList}" value="${serviceType.id}"&ndash;&gt;-->
+<!--      &lt;!&ndash;                        text="${serviceType.name}"></option>&ndash;&gt;-->
+<!--      &lt;!&ndash;            </select>&ndash;&gt;-->
+<!--    </div>-->
+<!--    <div class="form-group" id="poolArea">-->
+<!--      <label>Pool Area</label>-->
+<!--      <input type="text" class="form-control" field="*{poolArea}"-->
+<!--             placeholder="Enter pool area">-->
+<!--    </div>-->
+<!--    <div class="form-group" id="standardRoom">-->
+<!--      <label>Standard Room</label>-->
+<!--      <input type="text" class="form-control" field="*{standardRoom}"-->
+<!--             placeholder="Enter Standard Room">-->
+<!--    </div>-->
+<!--    <div class="form-group" id="otherInfo">-->
+<!--      <label>Other information</label>-->
+<!--      <input type="text" class="form-control" field="*{otherInfo}"-->
+<!--             placeholder="Enter other information">-->
+<!--    </div>-->
+<!--    <div class="form-group" id="numberOfFloors">-->
+<!--      <label>Number Of Floors</label>-->
+<!--      <input type="number" class="form-control" field="*{numberOfFloors}"-->
+<!--             placeholder="Enter number of floors">-->
+<!--    </div>-->
+<!--    <div class="form-group" id="facilityFree">-->
+<!--      <label>Service Free</label>-->
+<!--      <input type="text" class="form-control" field="*{facilityFree}"-->
+<!--             placeholder="Enter service free">-->
+<!--    </div>-->
+<!--    <div class="form-group">-->
+<!--      <label>Rental Type</label>-->
+<!--      <select name="" class="form-control">-->
+<!--        <option value="1">year</option>-->
+<!--        <option value="2">month</option>-->
+<!--        <option value="3">day</option>-->
+<!--        <option value="4">hour</option>-->
+<!--      </select>-->
+<!--      &lt;!&ndash;            <select class="form-control" field="*{rentType}">&ndash;&gt;-->
+<!--      &lt;!&ndash;                <option each="rentType : ${rentTypeList}" value="${rentType.id}"&ndash;&gt;-->
+<!--      &lt;!&ndash;                        text="${rentType.name}"></option>&ndash;&gt;-->
+<!--      &lt;!&ndash;            </select>&ndash;&gt;-->
+<!--    </div>-->
+<!--    <div>-->
+<!--      <a href="home.html" class="btn btn-dark">-->
+<!--        Back to customer list-->
+<!--      </a>-->
+<!--      <button type="submit" class="btn btn-warning">Add</button>-->
+<!--    </div>-->
 
-  </form>
-</div>
+<!--  </form>-->
+<!--</div>-->

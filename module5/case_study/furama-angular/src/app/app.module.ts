@@ -7,6 +7,11 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { FacilitiAddComponent } from './faciliti-add/faciliti-add.component';
 import { FacilitiEditComponent } from './faciliti-edit/faciliti-edit.component';
+import { CustomerListComponent } from './customer-list/customer-list.component';
+import { CustomerEditComponent } from './customer-edit/customer-edit.component';
+import { CustomerAddComponent } from './customer-add/customer-add.component';
+import { ContractListComponent } from './contract-list/contract-list.component';
+import { ContractAddComponent } from './contract-add/contract-add.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +20,12 @@ import { FacilitiEditComponent } from './faciliti-edit/faciliti-edit.component';
     FooterComponent,
     HeaderComponent,
     FacilitiAddComponent,
-    FacilitiEditComponent
+    FacilitiEditComponent,
+    CustomerListComponent,
+    CustomerEditComponent,
+    CustomerAddComponent,
+    ContractListComponent,
+    ContractAddComponent
   ],
   imports: [
     BrowserModule

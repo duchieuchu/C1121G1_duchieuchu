@@ -1,0 +1,69 @@
+<br><br><br><br>
+<h1>Information Contract</h1>
+<div class="content">
+  <form action="/contract/save" object="${contract}"
+        method="POST" novalidate="novalidate" >
+    <div class="form-group">
+      <label>Start Date</label>
+      <input type="datetime-local" class="form-control" field="*{startDate}">
+    </div>
+    <div class="form-group">
+      <label>End Date</label>
+      <input type="datetime-local" class="form-control" field="*{endDate}">
+    </div>
+    <div class="form-group">
+      <label>Deposit</label>
+      <input type="number" class="form-control" field="*{deposit}"
+             placeholder="Enter deposit">
+    </div>
+    <div class="form-group">
+      <label>Employee Name</label>
+      <select name="" class="form-control">
+        <option value="1">Nguyễn Văn An</option>
+        <option value="2">Lê Văn Bình</option>
+        <option value="3">Hồ Thị Yến</option>
+        <option value="4">Võ Công Toản</option>
+        <option value="5">Nguyễn Bỉnh Phát</option>
+      </select>
+      <!--            <select class="form-control" field="*{employee}">-->
+      <!--                <option each="employee : ${employeeList}" value="${employee.id}"-->
+      <!--                        text="${employee.name}"></option>-->
+      <!--            </select>-->
+    </div>
+    <div class="form-group">
+      <label>Customer Name</label>
+      <select name="" class="form-control">
+        <option value="1">Nguyễn Thị Hào</option>
+        <option value="2">Phạm Xuân Diệu</option>
+        <option value="3">Trương Đình Nghệ</option>
+        <option value="4">Dương Văn Quan</option>
+        <option value="5">Hoàng Trần Nhi Nhi</option>
+      </select>
+      <!--            <select class="form-control" field="*{customer}">-->
+      <!--                <option each="customer : ${customerList}" value="${customer.id}"-->
+      <!--                        text="${customer.name}"></option>-->
+      <!--            </select>-->
+    </div>
+    <div class="form-group">
+      <label>Facility Name</label>
+      <select name="" class="form-control">
+        <option value="1">Villa Beach Front</option>
+        <option value="2">House Princess 01</option>
+        <option value="3">Room Twin 01</option>
+        <option value="4">Villa No Beach Front</option>
+        <option value="5">House Princess 02</option>
+        <option value="6">Room Twin 02</option>
+      </select>
+      <!--            <select class="form-control" field="*{facility}">-->
+      <!--                <option each="facility : ${facilityList}" value="${facility.id}"-->
+      <!--                        text="${facility.name}"></option>-->
+      <!--            </select>-->
+    </div>
+    <div>
+      <a href="contract-list.html" class="btn btn-dark">
+        Back to customer list
+      </a>
+      <button type="submit" class="btn btn-warning">Save</button>
+    </div>
+  </form>
+</div>

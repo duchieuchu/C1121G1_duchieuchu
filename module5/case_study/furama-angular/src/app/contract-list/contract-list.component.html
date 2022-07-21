@@ -1,0 +1,95 @@
+<!--<br> <br> <br> <br>-->
+<!--<a href="contract-add.html" class="btn btn-secondary">Add contract</a>-->
+<!--<br>-->
+<!--<table class="table table-hover">-->
+<!--  <thead>-->
+<!--  <tr>-->
+<!--    <th class="col-1">#</th>-->
+<!--    <th class="col-1">Id Contract</th>-->
+<!--    &lt;!&ndash;            <th class="col-2">Start Date</th>&ndash;&gt;-->
+<!--    &lt;!&ndash;            <th class="col-2">End Date</th>&ndash;&gt;-->
+<!--    <th class="col-1">Deposit</th>-->
+<!--    <th class="col-2">Employee Name</th>-->
+<!--    <th class="col-2">Customer Name</th>-->
+<!--    <th class="col-2">Facility Name</th>-->
+<!--    <th class="col-2">Attach Service</th>-->
+<!--  </tr>-->
+<!--  </thead>-->
+<!--  <tbody>-->
+<!--  <tr>-->
+<!--    <td>1</td>-->
+<!--    <td>HD-0001</td>-->
+<!--    <td>10000</td>-->
+<!--    <td>Võ Công Toản</td>-->
+<!--    <td>Trần Đại Danh</td>-->
+<!--    <td>Villa Beach Front</td>-->
+<!--    <td>Thuê xe máy</td>-->
+<!--  </tr>-->
+<!--  <tr>-->
+<!--    <td>2</td>-->
+<!--    <td>HD-0002</td>-->
+<!--    <td>100000</td>-->
+<!--    <td>Võ Công Toản</td>-->
+<!--    <td>Hoàng Trần Nhi Nhi</td>-->
+<!--    <td>Buffet buổi trưa</td>-->
+<!--    <td>Thuê xe máy</td>-->
+<!--  </tr>-->
+<!--  <tr>-->
+<!--    <td>3</td>-->
+<!--    <td>HD-0003</td>-->
+<!--    <td>40000</td>-->
+<!--    <td>Võ Công Toản</td>-->
+<!--    <td>Nguyễn Mỹ Kim</td>-->
+<!--    <td>Room Twin 01</td>-->
+<!--    <td>Thuê xe máy</td>-->
+<!--  </tr>-->
+<!--  <tr>-->
+<!--    <td>4</td>-->
+<!--    <td>HD-0004</td>-->
+<!--    <td>19000</td>-->
+<!--    <td>Võ Công Toản</td>-->
+<!--    <td>Tôn Nữ Mộc Châu</td>-->
+<!--    <td>Room Twin 02</td>-->
+<!--    <td>Karaoke</td>-->
+<!--  </tr>-->
+<!--  </tbody>-->
+<!--</table>-->
+<!--<nav aria-label="...">-->
+<!--  <ul class="pagination">-->
+<!--    <li class="page-item ">-->
+<!--      <a class="page-link" if="${contractPage.hasPrevious()}">Previous</a>-->
+<!--    </li>-->
+<!--    <li class="page-item active"-->
+<!--        each="i: ${#numbers.sequence(1, contractPage.totalPages)}">-->
+<!--      <a class="page-link" if=" ${contractPage.number !=i}" href="@{'/contract/?page=' + ${i - 1}}">[[${i}]]</a>-->
+<!--    </li>-->
+<!--    <li class="page-item">-->
+<!--      <a class="page-link" if="${contractPage.hasNext()}"-->
+<!--         href="/contract/(page=${contractPage.number + 1})">Next</a>-->
+<!--    </li>-->
+<!--  </ul>-->
+<!--</nav>-->
+<!--&lt;!&ndash; Modal &ndash;&gt;-->
+<!--<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">-->
+<!--  <div class="modal-dialog">-->
+<!--    <div class="modal-content">-->
+<!--      <div class="modal-header">-->
+<!--        <h5 class="modal-title" id="exampleModalLabel">DELETE</h5>-->
+<!--        <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--          <span aria-hidden="true">&times;</span>-->
+<!--        </button>-->
+<!--      </div>-->
+<!--      <form action="/contract/delete" method="post">-->
+<!--        <div class="modal-body">-->
+<!--          Are you sure delete?-->
+<!--          &lt;!&ndash;iddelete la o duoi cho function, name= id de co id xoa&ndash;&gt;-->
+<!--          <input type="hidden" id="idDelete" name="id">-->
+<!--        </div>-->
+<!--        <div class="modal-footer">-->
+<!--          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+<!--          <button type="submit" class="btn btn-danger">Delete</button>-->
+<!--        </div>-->
+<!--      </form>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
