@@ -1,0 +1,12 @@
+.tm-footer-links li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.tm-footer-links li a {
+  color: #999999;
+}
+
+.tm-footer-links li a:hover {
+  color: #009999;
+}
