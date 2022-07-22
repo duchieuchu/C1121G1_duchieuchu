@@ -38,7 +38,11 @@ export class CalculatorComponent implements OnInit {
         this.result = this.multiplication(number1, number2);
         break;
       case '/':
-        this.result = this.division(number1, number2);
+        if (number2 === 0) {
+          this.result = 'Unknown';
+        } else {
+          this.result = this.division(number1, number2);
+        }
         break;
     }
   }
