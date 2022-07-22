@@ -1,0 +1,31 @@
+<!--<p>student-create works!</p>-->
+<!--<label>ID:</label>-->
+<!--<input type="text" [(ngModel)]="studentCreate.id">-->
+<!--<br>-->
+<!--<label>Name:</label>-->
+<!--<input type="text" [(ngModel)]="studentCreate.name">-->
+<!--<br>-->
+<!--<label>Date Of Birth:</label>-->
+<!--<input type="date" [(ngModel)]="studentCreate.dateOfBirth">-->
+<!--<br>-->
+<!--<label>Point:</label>-->
+<!--<input type="text" [(ngModel)]="studentCreate.point">-->
+<!--<br>-->
+<!--<button (click)="createStudent()">Create</button>-->
+<form [formGroup]="studentFormReactive" (ngSubmit)="createStudentWithReactive()">
+  <label>ID:</label>
+  <input formControlName="id" name="id" type="text"><br>
+  <p style="color: red" *ngIf="studentFormReactive.controls.id.hasError('min')">Id không được nhỏ 0</p>
+  <p style="color: red" *ngIf="studentFormReactive.controls.id.hasError('required') && studentFormReactive.controls.id.touched">Id không được để trống</p>
+  <label>Name:</label>
+  <input formControlName="name" name="name" type="text"><br>
+  <p style="color: red;" *ngIf="studentFormReactive.controls.name.hasError('required') && studentFormReactive.controls.name.touched">Name không được để trống</p>
+  <p style="color: red;" *ngIf="studentFormReactive.controls.name.hasError('minlength')">Tên name phải hơn 5 kí </p>
+  <label>Date Of Birth:</label>
+  <input type="date" formControlName="dateOfBirth" name="dateOfBirth"><br>
+  <label>Point:</label>
+  <input type="number" formControlName="point" name="point"><br>
+  <p style="color: red" *ngIf="studentFormReactive.controls.point.hasError('invalid0')">Point không được nhỏ  0</p>
+  <button type="submit">create</button>
+</form>
+

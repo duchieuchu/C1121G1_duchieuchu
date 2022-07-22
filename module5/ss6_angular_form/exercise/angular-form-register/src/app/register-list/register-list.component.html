@@ -1,0 +1,27 @@
+<h1>List Register</h1>
+<table class="table table-hover">
+  <thead>
+  <tr>
+    <th>Id</th>
+    <th>email</th>
+    <th>password</th>
+    <th>age</th>
+    <th>country</th>
+    <th>gender</th>
+    <th>phone</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let register of registers">
+    <td>{{register.id}}</td>
+    <td>{{register.email}}</td>
+    <td>{{register.password}}</td>
+    <td>{{register.age}}</td>
+    <td>{{register.country}}</td>
+    <td>{{register.gender}}</td>
+    <td>{{register.phone}}</td>
+  </tr>
+  </tbody>
+</table>
+<app-register-create (submitCreate)="createRegister($event)"></app-register-create>
+

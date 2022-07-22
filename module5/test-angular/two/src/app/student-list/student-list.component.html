@@ -1,0 +1,30 @@
+<h1>List student</h1>
+<table class="table table-hover">
+  <thead>
+  <tr>
+    <th class="col-2">ID</th>
+    <th class="col-2">Name</th>
+    <th class="col-4">Date Of Birth</th>
+    <th class="col-2">Point</th>
+    <th class="col-2">Detail</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let std of students">
+    <td>{{std.id}}</td>
+    <td>{{std.name}}</td>
+    <td>{{std.dateOfBirth}}</td>
+    <td>{{std.point}}</td>
+    <td>
+      <div *ngIf="std.point>0 &&std.point<10;else other">
+        <span *ngIf="std.point>8">very good</span>
+        <span *ngIf="std.point>=6 &&std.point<=8">good</span>
+        <span *ngIf="std.point<6">Bad</span>
+      </div>
+      <ng-template #other>Fail</ng-template>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<app-student-create (submitCreate)="addStudent($event)"></app-student-create>
+<app-student-info [std]="temp"></app-student-info>
