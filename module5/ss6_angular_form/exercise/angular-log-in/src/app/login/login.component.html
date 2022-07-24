@@ -9,7 +9,7 @@
     <p *ngIf="loginFormReactive.controls.email.hasError('required') && loginFormReactive.controls.email.touched">ko dc bo trong</p>
     <p *ngIf="loginFormReactive.controls.email.hasError('pattern')">sai dinh dang email</p>
 
-    <!--    <p *ngIf="loginFormReactive.controls.email.hasError('inValidEmail')">Email chua dang ki</p>-->
+    <p *ngIf="loginFormReactive.controls.email.hasError('invalidEmail')">Email chua dang ki</p>
 
   </div>
   <div class="form-group">
@@ -19,7 +19,7 @@
     <p *ngIf="loginFormReactive.controls.password.hasError('required')&& loginFormReactive.controls.password.touched">ko dc bo trong</p>
     <p *ngIf="loginFormReactive.controls.password.hasError('minlength')">mat khau phai tren 6 ki tu</p>
 
-    <!--    <p *ngIf="loginFormReactive.controls.password.hasError('inValidPassword')">Mat khau sai</p>-->
+    <p *ngIf="loginFormReactive.controls.password.hasError('invalidPassword')">Mat khau sai</p>
   </div>
   <div>
     <button type="submit" class="btn btn-warning">Login</button>

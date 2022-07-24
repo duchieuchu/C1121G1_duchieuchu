@@ -12,16 +12,16 @@ export class LoginComponent implements OnInit {
   constructor() {
     this.loginFormReactive = new FormGroup({
       email: new FormControl('', [Validators.required, Validators.pattern('^[a-zA-Z0-9.!#$%&’*+/=?^' +
-        '_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$')]),
-      password: new FormControl('', [Validators.required, Validators.minLength(6)])
+        '_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$'), this.checkEmail]),
+      password: new FormControl('', [Validators.required, Validators.minLength(6), this.checkPassword])
     });
   }
 
   checkEmail(email: AbstractControl) {
     let value = email.value;
 
-    if (value.email !== '1@gmail.com') {
-      return {'inValidEmail': true};
+    if (value !== '1@gmail.com') {
+      return {'invalidEmail': true};
     }
     return null;
   }
@@ -29,8 +29,8 @@ export class LoginComponent implements OnInit {
   checkPassword(password: AbstractControl) {
     let value = password.value;
 
-    if (value.password !== '111') {
-      return {'inValidPassword': true};
+    if (value !== '1111111') {
+      return {'invalidPassword': true};
     }
     return null;
   }
