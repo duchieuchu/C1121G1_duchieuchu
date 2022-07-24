@@ -14,7 +14,6 @@ export class RegisterListComponent implements OnInit {
       id: 1,
       email: 'angular2022@gmail.com',
       password: '2022',
-      confirmPassword: '2022',
       age: 19,
       country: 'VietNam',
       gender: 'Nam',

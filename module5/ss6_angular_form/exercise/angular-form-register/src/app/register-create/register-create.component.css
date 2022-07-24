@@ -13,3 +13,6 @@ a,label{
 .content {
   margin: 25px 350px 100px 350px;
 }
+p{
+  color: red;
+}

@@ -18,28 +18,26 @@
       <input formControlName="email" name="email" type="text" class="form-control"
              placeholder="Enter name">
       <p style="color: red"
-         *ngIf="registerFormReactive.controls.email.hasError('required') && registerFormReactive.controls.email.touched">Ko
+         *ngIf="registerFormReactive.controls.email.hasError('required') && registerFormReactive.controls.email.touched">
+        Ko
         duoc de trong</p>
       <p style="color: red" *ngIf="registerFormReactive.controls.email.hasError('pattern')">Email ko dung dinh dang</p>
     </div>
-    <div class="form-group">
-      <label>Password</label>
-      <input formControlName="password" name="password" type="password" class="form-control"
-             placeholder="Enter password">
-      <p style="color: red"
-         *ngIf="registerFormReactive.controls.password.hasError('required') && registerFormReactive.controls.password.touched">Ko
-        duoc de trong</p>
+    <div formGroupName="pass">
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" class="form-control" name="password" formControlName="password" placeholder="Enter password">
+        <p *ngIf="registerFormReactive.controls.pass.get('password').hasError('required') && registerFormReactive.controls.pass.get('password').touched">ko dc bo trong</p>
+      </div>
+      <div class="form-group">
+        <label>Confirm Password</label>
+        <input type="password" class="form-control" name="confirmPassword" formControlName="confirmPassword" placeholder="Enter confirm password">
+        <p *ngIf="registerFormReactive.controls.pass.get('password').hasError('required') && registerFormReactive.controls.pass.get('confirmPassword').touched">ko dc bo trong</p>
+        <p *ngIf="registerFormReactive.controls.pass.hasError('invalidConfirmPassword') && registerFormReactive.controls.pass.touched">mat khau
+          nhap lai ko giong </p>
+      </div>
     </div>
 
-    <div class="form-group">
-      <label>Confirm Password</label>
-      <input formControlName="confirmPassword" name="confirmPassword" type="password" class="form-control"
-             placeholder="Enter password again">
-      <p style="color: red"
-         *ngIf="registerFormReactive.controls.confirmPassword.hasError('required') && registerFormReactive.controls.confirmPassword.touched">Ko
-        duoc de trong</p>
-      <p style="color: red" *ngIf="registerFormReactive.controls.confirmPassword.hasError('invalidConfirmPassword')">pass ko giong </p>
-    </div>
     <div class="form-group">
       <label>Age</label>
       <input formControlName="age" name="age" type="number" class="form-control"
@@ -53,7 +51,7 @@
     </div>
     <div class="form-group">
       <label>Country</label>
-      <select formControlName="country" name="country" class="form-control" >
+      <select formControlName="country" name="country" class="form-control">
         <option value="" disabled selected>Choose Country</option>
         <option value="VietNam">VietNam</option>
         <option value="USA">USA</option>
@@ -63,7 +61,8 @@
         <option value="Russia">Russia</option>
       </select>
       <p style="color: red"
-         *ngIf="registerFormReactive.controls.country.hasError('required') && registerFormReactive.controls.country.touched">Ko
+         *ngIf="registerFormReactive.controls.country.hasError('required') && registerFormReactive.controls.country.touched">
+        Ko
         duoc de trong</p>
     </div>
     <div class="form-group">
@@ -72,7 +71,8 @@
       <input type="radio" value="Male" name="gender" formControlName="gender">Male
       <input type="radio" value="Female" name="gender" formControlName="gender">Female
       <p style="color: red"
-         *ngIf="registerFormReactive.controls.gender.hasError('required') && registerFormReactive.controls.gender.touched">Ko
+         *ngIf="registerFormReactive.controls.gender.hasError('required') && registerFormReactive.controls.gender.touched">
+        Ko
         duoc de trong</p>
     </div>
     <div class="form-group">
@@ -80,7 +80,8 @@
       <input formControlName="phone" name="phone" type="text" class="form-control"
              placeholder="Enter Phone Number">
       <p style="color: red"
-         *ngIf="registerFormReactive.controls.phone.hasError('required') && registerFormReactive.controls.phone.touched">Ko
+         *ngIf="registerFormReactive.controls.phone.hasError('required') && registerFormReactive.controls.phone.touched">
+        Ko
         duoc de trong</p>
       <p style="color: red"
          *ngIf="registerFormReactive.controls.phone.hasError('pattern')">phone ko
