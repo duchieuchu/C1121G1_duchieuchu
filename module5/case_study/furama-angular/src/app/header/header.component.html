@@ -15,7 +15,9 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+<!--        <a [routerLink]="['home']">Home</a>-->
+        <a class="nav-link" routerLink="">Home <span class="sr-only">(current)</span></a>
+<!--        <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>-->
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/employee">Employee</a>
@@ -26,8 +28,8 @@
           Customer
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownCustomer">
-          <a class="dropdown-item" href="customer-list.html">Customer List</a>
-          <a class="dropdown-item" href="customer-add.html">Add Customer</a>
+          <a class="dropdown-item" routerLink="/customer-list">Customer List</a>
+          <a class="dropdown-item" routerLink="/customer-add">Add Customer</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -36,7 +38,7 @@
           Service
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownService">
-          <a class="dropdown-item" href="faciliti-add.html">Add Service</a>
+          <a class="dropdown-item" routerLink="/faciliti-add">Add Service</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -45,8 +47,8 @@
           Contract
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="contract-list.html">Contract List</a>
-          <a class="dropdown-item" href="contract-add.html">Add Contract</a>
+          <a class="dropdown-item" routerLink="/contract-list">Contract List</a>
+          <a class="dropdown-item" routerLink="/contract-add">Add Contract</a>
         </div>
       </li>
       <li class="nav-item dropdown">
