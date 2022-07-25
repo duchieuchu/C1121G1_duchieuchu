@@ -63,4 +63,15 @@ export class ProductService {
       }
     }
   }
+
+  delete(id: number) {
+    for (let i = 0; i < this.products.length; i++) {
+      if (this.products[i].id === id) {
+        for (let j = i; j < this.products.length; j++) {
+          this.products[j] = this.products[j + 1];
+        }
+        this.products.pop();
+      }
+    }
+  }
 }
