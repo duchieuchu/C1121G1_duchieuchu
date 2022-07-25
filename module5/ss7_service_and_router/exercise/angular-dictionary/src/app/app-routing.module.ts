@@ -5,8 +5,8 @@ import {DictionaryPageComponent} from './dictionary-page/dictionary-page.compone
 import {DictionaryDetailComponent} from './dictionary-detail/dictionary-detail.component';
 
 const routes: Routes = [
-  {path: 'page', component: DictionaryPageComponent},
-  {path: 'detail', component: DictionaryDetailComponent}
+  {path: '', component: DictionaryPageComponent},
+  {path: 'dictionary/:word', component: DictionaryDetailComponent}
 ];
 
 @NgModule({
