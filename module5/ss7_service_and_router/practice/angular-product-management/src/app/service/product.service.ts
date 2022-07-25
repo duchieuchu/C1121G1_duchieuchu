@@ -59,6 +59,9 @@ export class ProductService {
       console.log(this.products[i]);
       if (this.products[i] === value.id) {
         this.products[i] = value;
+        this.products[i].name = value.name;
+        this.products[i].price = value.price;
+        this.products[i].description = value.description;
         console.log(this.products[i]);
       }
     }
