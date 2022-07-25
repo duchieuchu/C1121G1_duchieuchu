@@ -57,11 +57,8 @@ export class ProductService {
     console.log(value);
     for (let i = 0; i < this.products.length; i++) {
       console.log(this.products[i]);
-      if (this.products[i] === value.id) {
+      if (this.products[i].id === value.id) {
         this.products[i] = value;
-        this.products[i].name = value.name;
-        this.products[i].price = value.price;
-        this.products[i].description = value.description;
         console.log(this.products[i]);
       }
     }
