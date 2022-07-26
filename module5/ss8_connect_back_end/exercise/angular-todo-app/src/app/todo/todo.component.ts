@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {FormControl} from '@angular/forms';
 import {Todo} from '../model/todo';
+import {TodoService} from '../service/todo.service';
 
 // tslint:disable-next-line:variable-name
 let _id = 1;
@@ -14,10 +15,14 @@ export class TodoComponent implements OnInit {
   todos: Todo[] = [];
   content = new FormControl();
 
-  constructor() {
+  constructor(private todoService: TodoService) {
   }
 
   ngOnInit(): void {
+    this.todoService.getAll().subscribe(data => {
+      this.todos = data;
+    }, error => {
+    });
   }
 
   toggleTodo(i: number) {
@@ -28,12 +33,20 @@ export class TodoComponent implements OnInit {
     const value = this.content.value;
     if (value) {
       const todo: Todo = {
-        id: _id++,
+        id: this.todos.length + 1,
         content: value,
         complete: false
       };
-      this.todos.push(todo);
-      this.content.reset();
+      this.todoService.saveTodo(todo).subscribe(() => {
+        this.content.reset();
+        this.ngOnInit();
+      });
     }
+  }
+
+  deleteTodo(id: number) {
+    this.todoService.deleteTodo(id).subscribe(value => {
+      this.ngOnInit();
+    });
   }
 }

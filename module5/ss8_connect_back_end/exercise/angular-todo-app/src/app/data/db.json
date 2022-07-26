@@ -1,21 +1,29 @@
 {
-  "posts": [
+  "todo": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "content": "coffee",
+      "complete": false
     },
     {
       "id": 2,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "content": "tea",
+      "complete": true
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 3,
+      "content": "cake",
+      "complete": true
+    },
+    {
+      "id": 4,
+      "content": "sadsad",
+      "complete": false
+    },
+    {
+      "id": 5,
+      "content": "hellosd",
+      "complete": false
     }
   ],
   "profile": {

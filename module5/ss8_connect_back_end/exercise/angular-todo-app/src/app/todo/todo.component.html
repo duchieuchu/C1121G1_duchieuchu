@@ -8,6 +8,7 @@
         [class.complete]="todo.complete"
         *ngFor="let todo of todos; index as i">
       {{todo.content}}
+      <button (click)="deleteTodo(todo.id)">X</button>
     </li>
   </ul>
 </div>
