@@ -10,7 +10,7 @@
       "id": 2,
       "name": "IPhone 11",
       "price": 1400000,
-      "description": "New"
+      "description": "New11"
     },
     {
       "id": 3,
@@ -29,18 +29,6 @@
       "name": "IPhone 11",
       "price": 5400000,
       "description": "New"
-    },
-    {
-      "id": 6,
-      "name": "IPhone 11",
-      "price": 5400000,
-      "description": "New"
-    },
-    {
-      "id": 22,
-      "name": "2",
-      "price": 2,
-      "description": "3"
     }
   ],
   "comments": [
