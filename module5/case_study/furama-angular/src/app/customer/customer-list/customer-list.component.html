@@ -1,7 +1,7 @@
 <div class="main">
   <br> <br> <br>
 
-    <a href="customer-add.html" class="btn btn-secondary">Add customer</a>
+  <a href="customer-add.html" class="btn btn-secondary">Add customer</a>
   <br>
   <table class="table table-hover">
     <thead>
@@ -20,18 +20,28 @@
     </tr>
     </thead>
     <tbody>
+    <tr *ngFor="let customer of customers;index as i">
+      <td>{{i+1}}</td>
+      <td>{{customer.id}}</td>
+      <td>{{customer.name}}</td>
+      <td>{{customer.birthday}}</td>
+      <td>{{customer.gender}}</td>
+      <td>{{customer.id}}</td>
+    </tr>
     <tr>
       <td>1</td>
       <td>Nguyễn Thị Hào</td>
       <td>1995-12-09</td>
       <td>Nữ</td>
       <td>Diamond</td>
-      <td> <a href="#" class="btn btn-warning">
-        <img src="https://cdn-icons.flaticon.com/png/128/2356/premium/2356780.png?token=exp=1657879892~hmac=1782568f47bf441be3f6187bf646f891"
-             alt="" height="20">edit</a></td>
+      <td><a href="#" class="btn btn-warning">
+        <img
+          src="https://cdn-icons.flaticon.com/png/128/2356/premium/2356780.png?token=exp=1657879892~hmac=1782568f47bf441be3f6187bf646f891"
+          alt="" height="20">edit</a></td>
       <td><a type="button" class="btn btn-danger"
              data-toggle="modal"
-             data-target="#exampleModal"><img src="https://cdn-icons-png.flaticon.com/128/3221/3221845.png" alt="" height="20">
+             data-target="#exampleModal"><img src="https://cdn-icons-png.flaticon.com/128/3221/3221845.png" alt=""
+                                              height="20">
         delete
       </a></td>
     </tr>
@@ -41,12 +51,14 @@
       <td>1970-11-07</td>
       <td>Nam</td>
       <td>Gold</td>
-      <td> <a href="#" class="btn btn-warning">
-        <img src="https://cdn-icons.flaticon.com/png/128/2356/premium/2356780.png?token=exp=1657879892~hmac=1782568f47bf441be3f6187bf646f891"
-             alt="" height="20">edit</a></td>
+      <td><a href="#" class="btn btn-warning">
+        <img
+          src="https://cdn-icons.flaticon.com/png/128/2356/premium/2356780.png?token=exp=1657879892~hmac=1782568f47bf441be3f6187bf646f891"
+          alt="" height="20">edit</a></td>
       <td><a type="button" class="btn btn-danger"
              data-toggle="modal"
-             data-target="#exampleModal"><img src="https://cdn-icons-png.flaticon.com/128/3221/3221845.png" alt="" height="20">
+             data-target="#exampleModal"><img src="https://cdn-icons-png.flaticon.com/128/3221/3221845.png" alt=""
+                                              height="20">
         delete
       </a></td>
     </tr>
@@ -56,12 +68,14 @@
       <td>2005-12-06</td>
       <td>Nam</td>
       <td>Diamond</td>
-      <td> <a href="#" class="btn btn-warning">
-        <img src="https://cdn-icons.flaticon.com/png/128/2356/premium/2356780.png?token=exp=1657879892~hmac=1782568f47bf441be3f6187bf646f891"
-             alt="" height="20">edit</a></td>
+      <td><a href="#" class="btn btn-warning">
+        <img
+          src="https://cdn-icons.flaticon.com/png/128/2356/premium/2356780.png?token=exp=1657879892~hmac=1782568f47bf441be3f6187bf646f891"
+          alt="" height="20">edit</a></td>
       <td><a type="button" class="btn btn-danger"
              data-toggle="modal"
-             data-target="#exampleModal"><img src="https://cdn-icons-png.flaticon.com/128/3221/3221845.png" alt="" height="20">
+             data-target="#exampleModal"><img src="https://cdn-icons-png.flaticon.com/128/3221/3221845.png" alt=""
+                                              height="20">
         delete
       </a></td>
     </tr>
@@ -71,12 +85,14 @@
       <td>1984-04-08</td>
       <td>Nữ</td>
       <td>Platinium</td>
-      <td> <a href="#" class="btn btn-warning">
-        <img src="https://cdn-icons.flaticon.com/png/128/2356/premium/2356780.png?token=exp=1657879892~hmac=1782568f47bf441be3f6187bf646f891"
-             alt="" height="20">edit</a></td>
+      <td><a href="#" class="btn btn-warning">
+        <img
+          src="https://cdn-icons.flaticon.com/png/128/2356/premium/2356780.png?token=exp=1657879892~hmac=1782568f47bf441be3f6187bf646f891"
+          alt="" height="20">edit</a></td>
       <td><a type="button" class="btn btn-danger"
              data-toggle="modal"
-             data-target="#exampleModal"><img src="https://cdn-icons-png.flaticon.com/128/3221/3221845.png" alt="" height="20">
+             data-target="#exampleModal"><img src="https://cdn-icons-png.flaticon.com/128/3221/3221845.png" alt=""
+                                              height="20">
         delete
       </a></td>
     </tr>
