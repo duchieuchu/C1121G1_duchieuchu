@@ -14,10 +14,15 @@ export class CustomerListComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.getAllCustomer();
   }
 
   getAllCustomer() {
     this.customers = this.customerService.getAllCustomer();
+  }
+
+  deleteCustomer(id: number) {
+    this.customerService.delete(id);
   }
 
 }

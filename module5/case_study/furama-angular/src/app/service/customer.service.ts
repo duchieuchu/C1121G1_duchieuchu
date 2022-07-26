@@ -14,7 +14,8 @@ export class CustomerService {
       idCard: '202022012',
       phone: '0999999999',
       email: 'hao@gmail.com',
-      address: '23 Nguyễn Hoàng, Đà Nẵng'
+      address: '23 Nguyễn Hoàng, Đà Nẵng',
+      customerType: 'Diamond'
     },
     {
       id: 2,
@@ -24,7 +25,8 @@ export class CustomerService {
       idCard: '202022012',
       phone: '0999999999',
       email: 'danh@gmail.com',
-      address: 'K77/22 Thái Phiên, Quảng Trị'
+      address: 'K77/22 Thái Phiên, Quảng Trị',
+      customerType: 'Gold'
     },
     {
       id: 3,
@@ -34,7 +36,8 @@ export class CustomerService {
       idCard: '202022012',
       phone: '0999999999',
       email: 'chau@gmail.com',
-      address: '37 Yên Thế, Đà Nẵng'
+      address: '37 Yên Thế, Đà Nẵng',
+      customerType: 'Diamond'
     },
     {
       id: 4,
@@ -44,8 +47,9 @@ export class CustomerService {
       idCard: '202022012',
       phone: '0999999999',
       email: 'kim@gmail.com',
-      address: 'K123/45 Lê Lợi, Hồ Chí Minh'
-    },
+      address: 'K123/45 Lê Lợi, Hồ Chí Minh',
+      customerType: 'Diamond'
+    }
     // {id: 5, name: '', birthday: '', gender: '', idCard: '', phone: '', email: '', address: ''},
     // {id: 6, name: '', birthday: '', gender: '', idCard: '', phone: '', email: '', address: ''},
   ];
@@ -55,5 +59,41 @@ export class CustomerService {
 
   getAllCustomer() {
     return this.customers;
+  }
+
+  saveCustomer(customer) {
+    this.customers.push(customer);
+  }
+
+  findById(id: number) {
+    let customerNeedFind: Customer;
+    for (const customer of this.customers) {
+      if (customer.id === id) {
+        customerNeedFind = customer;
+      }
+    }
+    return customerNeedFind;
+  }
+
+  edit(value: Customer) {
+    console.log(value);
+    for (let i = 0; i < this.customers.length; i++) {
+      console.log(this.customers[i]);
+      if (this.customers[i].id === value.id) {
+        this.customers[i] = value;
+        console.log(this.customers[i]);
+      }
+    }
+  }
+
+  delete(id: number) {
+    for (let i = 0; i < this.customers.length; i++) {
+      if (this.customers[i].id === id) {
+        for (let j = i; j < this.customers.length; j++) {
+          this.customers[j] = this.customers[j + 1];
+        }
+        this.customers.pop();
+      }
+    }
   }
 }

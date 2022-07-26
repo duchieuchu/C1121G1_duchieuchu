@@ -13,6 +13,7 @@ import { CustomerAddComponent } from './customer/customer-add/customer-add.compo
 import { ContractListComponent } from './contract/contract-list/contract-list.component';
 import { ContractAddComponent } from './contract/contract-add/contract-add.component';
 import {AppRoutingModule} from './app-routing.module';
+import {ReactiveFormsModule} from '@angular/forms';
 // import {RouterModule} from '@angular/router';
 
 
@@ -35,6 +36,7 @@ import {AppRoutingModule} from './app-routing.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     // RouterModule,
   ],
   providers: [],
