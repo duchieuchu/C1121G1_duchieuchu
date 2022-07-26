@@ -11,27 +11,36 @@ import {ProductService} from '../../service/product.service';
 })
 export class ProductEditComponent implements OnInit {
   editProductFormGroup: FormGroup;
-  product: Product;
+  product: Product = {};
+  id: number;
 
-  constructor(private activatedRoute: ActivatedRoute, private productService: ProductService, private router: Router) {
-    activatedRoute.paramMap.subscribe((param: ParamMap) => {
-      const id = param.get('id');
-      this.product = this.productService.findById(parseInt(id));
-    });
+  constructor(private activatedRoute: ActivatedRoute,
+              private productService: ProductService,
+              private router: Router) {
   }
 
   ngOnInit() {
-    this.editProductFormGroup = new FormGroup({
-      id: new FormControl(this.product.id),
-      name: new FormControl(this.product.name),
-      price: new FormControl(this.product.price),
-      description: new FormControl(this.product.description)
+    this.activatedRoute.paramMap.subscribe((param: ParamMap) => {
+      this.id = parseInt(param.get('id'));
+      this.productService.findById(this.id).subscribe(product => {
+          this.editProductFormGroup = new FormGroup({
+            id: new FormControl(product.id),
+            name: new FormControl(product.name),
+            price: new FormControl(product.price),
+            description: new FormControl(product.description)
+          });
+        }
+      );
     });
   }
 
-  submitEdit() {
-    this.productService.edit(this.editProductFormGroup.value);
-    this.router.navigateByUrl('/product/list').then();
+  submitEdit(id: number) {
+    const product = this.editProductFormGroup.value;
+    this.productService.editProduct(id, product).subscribe(
+      next => {
+        this.router.navigateByUrl('/product/list').then();
+      }
+    );
   }
 
 }

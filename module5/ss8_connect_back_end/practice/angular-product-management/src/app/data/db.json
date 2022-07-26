@@ -37,16 +37,10 @@
       "description": "New"
     },
     {
-      "id": 111,
-      "name": "222",
-      "price": 333,
-      "description": "444"
-    },
-    {
-      "id": 222,
-      "name": "333",
-      "price": 444,
-      "description": "555"
+      "id": 22,
+      "name": "2",
+      "price": 2,
+      "description": "3"
     }
   ],
   "comments": [

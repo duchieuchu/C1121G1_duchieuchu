@@ -1,5 +1,5 @@
 <h1>edit sản phẩm </h1>
-<form [formGroup]="editProductFormGroup" (ngSubmit)="submitEdit()">
+<form [formGroup]="editProductFormGroup" (ngSubmit)="submitEdit(id)">
   <table>
     <tr>
       <td>Mã sản phẩm:</td>
@@ -20,7 +20,9 @@
     </tr>
     <tr>
       <td></td>
-      <td><button type="submit">Chỉnh sửa</button></td>
+      <td>
+        <button type="submit">Chỉnh sửa</button>
+      </td>
     </tr>
   </table>
 </form>
