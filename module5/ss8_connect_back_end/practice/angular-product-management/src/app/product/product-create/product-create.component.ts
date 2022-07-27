@@ -9,6 +9,7 @@ import {Router} from '@angular/router';
   styleUrls: ['./product-create.component.css']
 })
 export class ProductCreateComponent implements OnInit {
+  // ko nen
   productForm: FormGroup = new FormGroup({
     id: new FormControl(),
     name: new FormControl(),

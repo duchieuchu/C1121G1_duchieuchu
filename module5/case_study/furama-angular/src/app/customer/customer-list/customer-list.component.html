@@ -6,22 +6,20 @@
     <thead>
     <tr>
       <th class="col-2">#</th>
+<!--      <th class="col-2">#</th>-->
       <th class="col-2">Name</th>
       <th class="col-2">Date Of Birth</th>
       <th class="col-2">Gender</th>
-      <!--        <th class="col-1">ID Card</th>-->
-      <!--        <th class="col-1">Phone Number</th>-->
-      <!--        <th class="col-1">Email</th>-->
-      <!--        <th class="col-1">Address</th>-->
       <th class="col-2">Customer Type</th>
       <th class="col-2">Action</th>
     </tr>
     </thead>
     <tbody>
-    <tr *ngFor="let customer of customers;index as i">
+    <tr *ngFor="let customer of customers | paginate: { itemsPerPage: 4, currentPage: p };index as i">
       <td>{{i + 1}}</td>
+<!--      <td>{{customer.id}}</td>-->
       <td>{{customer.name}}</td>
-      <td>{{customer.birthday}}</td>
+      <td>{{customer.birthday | date:"dd-MM-yyyy"}}</td>
       <td>{{customer.gender}}</td>
       <td>{{customer.customerType}}</td>
       <td>
@@ -30,8 +28,9 @@
             src="https://cdn-icons.flaticon.com/png/128/2356/premium/2356780.png?token=exp=1657879892~hmac=1782568f47bf441be3f6187bf646f891"
             alt="" height="30"></a>
 
-        <a type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
-          <img src="https://cdn-icons-png.flaticon.com/128/3221/3221845.png" alt="" height="30"></a>
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+          <img src="https://cdn-icons-png.flaticon.com/128/3221/3221845.png" alt="" height="30"
+          (click)="mo(customer.id,customer.name)"></button>
 
       </td>
       <!-- Modal -->
@@ -46,15 +45,17 @@
             </div>
             <div>
               <div class="modal-body">
-                Are you sure delete ?
+                Are you sure delete {{nameModal}}?
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button (click)="deleteCustomer(customer.id)" data-dismiss="modal" class="btn btn-danger">Delete</button>
+                <button (click)="deleteCustomer(idModal)" data-dismiss="modal" class="btn btn-danger">Delete</button>
+
               </div>
             </div>
           </div>
         </div>
       </div>
   </table>
+  <pagination-controls (pageChange)="p = $event"></pagination-controls>
 </div>

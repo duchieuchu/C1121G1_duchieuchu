@@ -1,0 +1,79 @@
+{
+  "customer": [
+    {
+      "id": 1,
+      "name": "Nguyễn Thị Hào",
+      "birthday": "1995-12-09",
+      "gender": "Nữ",
+      "idCard": "202022012",
+      "phone": "0999999999",
+      "email": "hao@gmail.com",
+      "address": "23 Nguyễn Hoàng, Đà Nẵng",
+      "customerType": "Diamond"
+    },
+    {
+      "id": 2,
+      "name": "Trần Đại Danh",
+      "birthday": "1995-12-09",
+      "gender": "Nữ",
+      "idCard": "202022012",
+      "phone": "0999999999",
+      "email": "hao@gmail.com",
+      "address": "23 Nguyễn Hoàng, Đà Nẵng",
+      "customerType": "Diamond"
+    },
+    {
+      "id": 4,
+      "name": "Nguyễn Mỹ Tai",
+      "birthday": "1995-12-20",
+      "gender": "Nữ",
+      "idCard": "202022012",
+      "phone": "0999999999",
+      "email": "hao@gmail.com",
+      "address": "23 Nguyễn Hoàng, Đà Nẵng",
+      "customerType": "Silver"
+    },  {
+      "id": 5,
+      "name": "Nguyễn Thị Hào",
+      "birthday": "1995-12-09",
+      "gender": "Nữ",
+      "idCard": "202022012",
+      "phone": "0999999999",
+      "email": "hao@gmail.com",
+      "address": "23 Nguyễn Hoàng, Đà Nẵng",
+      "customerType": "Diamond"
+    },
+    {
+      "id": 6,
+      "name": "Trần Đại Danh",
+      "birthday": "1995-12-09",
+      "gender": "Nữ",
+      "idCard": "202022012",
+      "phone": "0999999999",
+      "email": "hao@gmail.com",
+      "address": "23 Nguyễn Hoàng, Đà Nẵng",
+      "customerType": "Diamond"
+    },
+    {
+      "id": 7,
+      "name": "Nguyễn Mỹ Tai",
+      "birthday": "1995-12-20",
+      "gender": "Nữ",
+      "idCard": "202022012",
+      "phone": "0999999999",
+      "email": "hao@gmail.com",
+      "address": "23 Nguyễn Hoàng, Đà Nẵng",
+      "customerType": "Silver"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -7,8 +7,8 @@ import {CustomerAddComponent} from './customer/customer-add/customer-add.compone
 import {CustomerEditComponent} from './customer/customer-edit/customer-edit.component';
 import {RouterModule, Routes} from '@angular/router';
 import {FacilitiAddComponent} from './faciliti/faciliti-add/faciliti-add.component';
-import {ContractListComponent} from './contract/contract-list/contract-list.component';
 import {ContractAddComponent} from './contract/contract-add/contract-add.component';
+import {ContractListComponent} from './contract/contract-list/contract-list.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},

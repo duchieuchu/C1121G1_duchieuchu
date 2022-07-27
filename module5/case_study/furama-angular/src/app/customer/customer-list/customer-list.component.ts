@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Customer} from '../../model/customer';
 import {CustomerService} from '../../service/customer.service';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-customer-list',
@@ -9,20 +10,32 @@ import {CustomerService} from '../../service/customer.service';
 })
 export class CustomerListComponent implements OnInit {
   customers: Customer[] = [];
-
-  constructor(private customerService: CustomerService) {
+   idModal: number;
+   nameModal: string;
+  p: number = 1;
+  constructor(private customerService: CustomerService,
+              private activatedRoute: ActivatedRoute) {
   }
 
   ngOnInit(): void {
-    this.getAllCustomer();
+    this.getAll();
+  }
+  getAll() {
+    this.customerService.getAllCustomer().subscribe(data => {
+      this.customers = data;
+    }, error => {
+    });
   }
 
-  getAllCustomer() {
-    this.customers = this.customerService.getAllCustomer();
+  deleteCustomer(idModal: number) {
+    this.customerService.delete(this.idModal).subscribe(next => {
+      // alert('OK');
+      this.ngOnInit();
+    });
   }
 
-  deleteCustomer(id: number) {
-    this.customerService.delete(id);
+  mo(id: number, name: string) {
+    this.idModal = id;
+    this.nameModal = name;
   }
-
 }

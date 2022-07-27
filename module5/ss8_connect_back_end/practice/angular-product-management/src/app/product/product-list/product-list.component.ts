@@ -27,10 +27,6 @@ export class ProductListComponent implements OnInit {
     });
   }
 
-  getAll() {
-    this.productService.getAll();
-  }
-
   deleteProduct(id: number) {
     this.productService.deleteProduct(id).subscribe(value => {
       this.ngOnInit();

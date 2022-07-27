@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup} from '@angular/forms';
 import {CustomerService} from '../../service/customer.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-customer-add',
@@ -20,16 +21,27 @@ export class CustomerAddComponent implements OnInit {
     customerType: new FormControl()
   });
 
-  constructor(private customerService: CustomerService) {
+  constructor(private customerService: CustomerService, private router: Router) {
   }
 
   ngOnInit(): void {
   }
 
   submit() {
-    const customer = this.customerForm.value;
-    this.customerService.saveCustomer(customer);
-    this.customerForm.reset();
+    if (this.customerForm.valid) {
+      this.customerForm.value.id = parseInt(this.customerForm.value.id);
+      this.customerService.saveCustomer(this.customerForm.value).subscribe(data => {
+      }, error => {
+      }, () => {
+        this.router.navigateByUrl('/customer-list');
+      });
+    }
   }
+
+  // submit() {
+  //   const customer = this.customerForm.value;
+  //   this.customerService.saveCustomer(customer);
+  //   this.customerForm.reset();
+  // }
 
 }
