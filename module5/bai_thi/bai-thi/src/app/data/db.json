@@ -1,0 +1,111 @@
+{
+  "customer": [
+    {
+      "id": 1,
+      "name": "Nguyễn Thị Hào",
+      "birthday": "1995-12-09",
+      "gender": "Nữ",
+      "idCard": "202022012",
+      "phone": "0999999999",
+      "email": "hao@gmail.com",
+      "address": "23 Nguyễn Hoàng, Đà Nẵng",
+      "customerType": "Diamond"
+    },
+    {
+      "id": 2,
+      "name": "Trần Đại Danh",
+      "birthday": "1995-12-09",
+      "gender": "Nữ",
+      "idCard": "202022012",
+      "phone": "0999999999",
+      "email": "hao@gmail.com",
+      "address": "23 Nguyễn Hoàng, Đà Nẵng",
+      "customerType": "Diamond"
+    },
+    {
+      "id": 4,
+      "name": "Nguyễn Mỹ Tai",
+      "birthday": "1995-12-20",
+      "gender": "Nữ",
+      "idCard": "202022012",
+      "phone": "0999999999",
+      "email": "hao@gmail.com",
+      "address": "23 Nguyễn Hoàng, Đà Nẵng",
+      "customerType": "Silver"
+    },
+    {
+      "id": 5,
+      "name": "Nguyễn Thị Hào",
+      "birthday": "1995-12-09",
+      "gender": "Nam",
+      "idCard": "202022012",
+      "phone": "0999999999",
+      "email": "hao@gmail.com",
+      "address": "23 Nguyễn Hoàng, Đà Nẵng",
+      "customerType": "Diamond"
+    }
+  ],
+  "product-block": [
+    {
+      "id": 1,
+      "code": "LH0001",
+      "product": 1,
+      "quantity": 20,
+      "dateImport": "2005-12-09",
+      "dateDo": "1995-12-09",
+      "dateNoUse": "2095-12-09"
+    },
+    {
+      "id": 2,
+      "code": "LH0002",
+      "product": 2,
+      "quantity": 50,
+      "dateImport": "2000-12-09",
+      "dateDo": "1995-12-09",
+      "dateNoUse": "2023-12-09"
+    },
+    {
+      "id": 4,
+      "code": "LH0003",
+      "product": 2,
+      "quantity": 50,
+      "dateImport": "2000-12-09",
+      "dateDo": "1995-12-09",
+      "dateNoUse": "2023-12-09"
+    },
+    {
+      "id": 5,
+      "code": "LH0003",
+      "product": 2,
+      "quantity": 50,
+      "dateImport": "2000-12-09",
+      "dateDo": "1995-12-09",
+      "dateNoUse": "2023-12-09"
+    },
+    {
+      "id": 6,
+      "code": "LH-0022",
+      "product": "1",
+      "quantity": 22,
+      "dateImport": "2022-07-20",
+      "dateDo": "2022-07-07",
+      "dateNoUse": "2022-07-26"
+    }
+  ],
+  "product": [
+    {
+      "id": 1,
+      "name": "dầu gội",
+      "made": "VietNam",
+      "price": 20000,
+      "unit": "thùng"
+    },
+    {
+      "id": 2,
+      "name": "dầu xã",
+      "made": "VietNam",
+      "price": 15000,
+      "unit": "thùng"
+    }
+  ]
+}

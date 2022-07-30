@@ -17,12 +17,17 @@ export class CustomerService {
     return this.httpClient.get<Customer[]>(this.URL_CUSTOMER);
   }
 
+
+  getAllCustomerByName(name: string): Observable<Customer[]> {
+    return this.httpClient.get<Customer[]>(this.URL_CUSTOMER + '?name_like=' + name);
+  }
+
   saveCustomer(customer: Customer) {
     return this.httpClient.post<Customer>(this.URL_CUSTOMER, customer);
   }
 
   delete(id: number): Observable<Customer> {
-    return  this.httpClient.delete<Customer>(this.URL_CUSTOMER + '/' + id);
+    return this.httpClient.delete<Customer>(this.URL_CUSTOMER + '/' + id);
   }
 
   getCustomerById(id: number): Observable<Customer> {

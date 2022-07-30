@@ -1,0 +1,66 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~css/templatemo-style.css";
+.tm-footer-links li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.tm-footer-links li a {
+  color: #999999;
+}
+
+.tm-footer-links li a:hover {
+  color: #009999;
+}
+
+.tm-text-primary {
+  color: #009999;
+}
+
+a.tm-text-primary:hover {
+  color: #666666;
+}
+
+.tm-bg-gray {
+  background-color: #EEEEEE;
+}
+
+/* Videos */
+#tm-video-container {
+  max-height: 400px;
+  overflow: hidden;
+  background-color: #333;
+  margin-bottom: 90px;
+  position: relative;
+}
+
+#tm-video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.p1 {
+  font-size: 27px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-style: italic;
+}
+
+#session1 {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+#arrow {
+  height: 45px;
+  width: 45px;
+}
+
+a {
+  font-weight: 600;
+  font-family: 'Lobster', cursive;
+}
+

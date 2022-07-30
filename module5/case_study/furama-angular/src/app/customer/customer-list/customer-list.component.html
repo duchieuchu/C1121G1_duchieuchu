@@ -1,61 +1,115 @@
 <div class="main">
   <br> <br> <br>
-  <a routerLink="/customer-add" class="btn btn-secondary">Add customer</a>
+  <div>
+    <a routerLink="/customer-add" class="btn btn-secondary">Add customer</a>
+    <form [formGroup]="searchForm" (ngSubmit)="searchByName()">
+      <input type="search" placeholder="search by name"
+             formControlName="searchName" name="searchName">
+      <button type="submit">search</button>
+    </form>
+  </div>
   <br>
   <table class="table table-hover">
     <thead>
     <tr>
       <th class="col-2">#</th>
-<!--      <th class="col-2">#</th>-->
+      <!--      <th class="col-2">#</th>-->
       <th class="col-2">Name</th>
       <th class="col-2">Date Of Birth</th>
       <th class="col-2">Gender</th>
       <th class="col-2">Customer Type</th>
-      <th class="col-2">Action</th>
+      <th class="col-2" colspan="2">Action</th>
     </tr>
     </thead>
     <tbody>
     <tr *ngFor="let customer of customers | paginate: { itemsPerPage: 4, currentPage: p };index as i">
       <td>{{i + 1}}</td>
-<!--      <td>{{customer.id}}</td>-->
+      <!--      <td>{{customer.id}}</td>-->
       <td>{{customer.name}}</td>
       <td>{{customer.birthday | date:"dd-MM-yyyy"}}</td>
       <td>{{customer.gender}}</td>
       <td>{{customer.customerType}}</td>
+      <td></td>
       <td>
         <a [routerLink]="['/customer-edit',customer.id]" class="btn btn-warning">
           <img
             src="https://cdn-icons.flaticon.com/png/128/2356/premium/2356780.png?token=exp=1657879892~hmac=1782568f47bf441be3f6187bf646f891"
             alt="" height="30"></a>
 
-        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
-          <img src="https://cdn-icons-png.flaticon.com/128/3221/3221845.png" alt="" height="30"
-          (click)="mo(customer.id,customer.name)"></button>
-
-      </td>
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">DELETE</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div>
-              <div class="modal-body">
-                Are you sure delete {{nameModal}}?
+        <button type="button" class="btn btn-danger" data-toggle="modal" [attr.data-target]="'#exampleModal' + customer.id">
+          <img src="https://cdn-icons-png.flaticon.com/128/3221/3221845.png" alt="" height="30"></button>
+<!--        Modal-->
+        <div class="modal fade" id="exampleModal{{customer.id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">DELETE</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
               </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button (click)="deleteCustomer(idModal)" data-dismiss="modal" class="btn btn-danger">Delete</button>
+              <div>
+                <div class="modal-body">
+                  Are you sure delete {{customer.name}} ?
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button (click)="deleteCustomer(customer.id)" data-dismiss="modal" class="btn btn-danger">Delete</button>
 
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </td>
+<!--      <td>-->
+<!--        &lt;!&ndash; Button trigger modal &ndash;&gt;-->
+<!--        <button type="button" class="btn btn-primary" data-bs-toggle="modal" [attr.data-bs-target]="'#exampleModal' + customer.id">-->
+<!--          Delete-->
+<!--        </button>-->
+
+<!--        &lt;!&ndash; Modal &ndash;&gt;-->
+<!--        <div class="modal fade" id="exampleModal{{customer.id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">-->
+<!--          <div class="modal-dialog">-->
+<!--            <div class="modal-content">-->
+<!--              <div class="modal-header">-->
+<!--                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>-->
+<!--                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+<!--              </div>-->
+<!--              <div class="modal-body">-->
+<!--                Are you sure delete {{customer.name}} ?-->
+<!--              </div>-->
+<!--              <div class="modal-footer">-->
+<!--                <button type="button" class="btn btn-primary" (click)="deleteCustomer(customer.id)">Delete</button>-->
+<!--                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </td>-->
+      <!-- Modal -->
+<!--      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">-->
+<!--        <div class="modal-dialog">-->
+<!--          <div class="modal-content">-->
+<!--            <div class="modal-header">-->
+<!--              <h5 class="modal-title" id="exampleModalLabel">DELETE</h5>-->
+<!--              <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                <span aria-hidden="true">&times;</span>-->
+<!--              </button>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--              <div class="modal-body">-->
+<!--                Are you sure delete {{nameModal}}?-->
+<!--              </div>-->
+<!--              <div class="modal-footer">-->
+<!--                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+<!--                <button (click)="deleteCustomer(idModal)" data-dismiss="modal" class="btn btn-danger">Delete</button>-->
+
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
   </table>
   <pagination-controls (pageChange)="p = $event"></pagination-controls>
 </div>

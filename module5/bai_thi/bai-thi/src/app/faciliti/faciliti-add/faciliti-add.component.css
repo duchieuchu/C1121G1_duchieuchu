@@ -1,0 +1,15 @@
+.p1,h1 {
+  font-size: 27px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-style: italic;
+}
+a,label{
+  font-weight: 600;
+  font-family: 'Lobster', cursive;
+}
+
+.content {
+  margin: 25px 350px 100px 350px;
+}

@@ -1,0 +1,65 @@
+<br><br><br><br>
+<h1>Information Customer</h1>
+<div class="content">
+  <form [formGroup]="productBlockForm" (ngSubmit)="submit()">
+    <div class="form-group">
+      <label >Code product block</label>
+      <input formControlName="code" type="text" class="form-control" placeholder="Enter Code product block">
+      <p style="color: red"
+         *ngIf="productBlockForm.controls.code.hasError('required') && productBlockForm.controls.code.touched">
+        ma khoi hang khong duoc de trong</p>
+      <p style="color: red" *ngIf="productBlockForm.controls.code.hasError('pattern')">code ko dung dinh dang</p>
+    </div>
+    <div class="form-group">
+      <label>product</label>
+      <select formControlName="product">
+        <option selected [value]="null" disabled>Chọn danh mục sản phẩm</option>
+        <option *ngFor="let category of products" [value]="category.id">{{category.name}}</option>
+      </select>
+      <p style="color: red"
+         *ngIf="productBlockForm.controls.product.hasError('required') && productBlockForm.controls.product.touched">
+        ma khoi hang khong duoc de trong</p>
+    </div>
+    <div class="form-group">
+      <label>Quantity</label>
+      <input formControlName="quantity" type="number" class="form-control" placeholder="Enter Quantity">
+      <p style="color: red"
+         *ngIf="productBlockForm.controls.quantity.hasError('required') && productBlockForm.controls.quantity.touched">
+        ma khoi hang khong duoc de trong</p>
+      <p style="color: red" *ngIf="productBlockForm.controls.quantity.hasError('min')">quantity ko dung dinh dang</p>
+
+    </div>
+    <div class="form-group">
+      <label>date Import</label>
+      <input formControlName="dateImport" type="date" class="form-control" placeholder="Enter date Import">
+      <p style="color: red"
+         *ngIf="productBlockForm.controls.dateImport.hasError('required') && productBlockForm.controls.dateImport.touched">
+        ma khoi hang khong duoc de trong</p>
+      <p style="color: red" *ngIf="productBlockForm.controls.dateImport.hasError('pattern')">dateImport ko dung dinh dang</p>
+
+    </div>
+    <div class="form-group">
+      <label>date Do</label>
+      <input formControlName="dateDo" type="date" class="form-control" placeholder="Enter date Do">
+      <p style="color: red"
+         *ngIf="productBlockForm.controls.dateDo.hasError('required') && productBlockForm.controls.dateDo.touched">
+        ma khoi hang khong duoc de trong</p>
+      <p style="color: red" *ngIf="productBlockForm.controls.dateDo.hasError('pattern')">dateDo ko dung dinh dang</p>
+
+    </div>
+    <div class="form-group">
+      <label>date No Use</label>
+      <input formControlName="dateNoUse" type="date" class="form-control" placeholder="Enter date No Use">
+      <p style="color: red"
+         *ngIf="productBlockForm.controls.dateNoUse.hasError('required') && productBlockForm.controls.dateNoUse.touched">
+        ma khoi hang khong duoc de trong</p>
+      <p style="color: red" *ngIf="productBlockForm.controls.dateNoUse.hasError('pattern')">dateNoUse ko dung dinh dang</p>
+
+    </div>
+    <div>
+      <button type="submit" class="btn btn-warning">Add</button>
+    </div>
+
+  </form>
+</div>
+

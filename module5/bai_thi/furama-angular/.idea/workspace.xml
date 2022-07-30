@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b9031aa5-0226-4808-9b88-822ebc6f0a0a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss1_spring_mvc/practice/ABC/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss1_spring_mvc/practice/ABC/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss5_thao_tac_csdl_va_orm/practice/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss5_thao_tac_csdl_va_orm/practice/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4again/ss1_spring_mvc/practice/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4again/ss1_spring_mvc/practice/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../case_study/furama-angular/src/app/customer/customer-list/customer-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study/furama-angular/src/app/customer/customer-list/customer-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../case_study/furama-angular/src/app/customer/customer-list/customer-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study/furama-angular/src/app/customer/customer-list/customer-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../case_study/furama-angular/src/app/data/db.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../case_study/furama-angular/src/app/service/customer.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study/furama-angular/src/app/service/customer.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../case_study/furama-angular/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study/furama-angular/src/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2C9kxGI9unfT1inWNVqXfpMcnWv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="D:\codegym\C1121G1_duchieuchu\module5\bai_thi\furama-angular\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\codegym\C1121G1_duchieuchu\module5\case_study\furama-angular\src\app" />
+      <recent name="D:\codegym\C1121G1_duchieuchu\module5\case_study\furama-angular\src\app\component" />
+      <recent name="D:\codegym\C1121G1_duchieuchu\module5\case_study\furama-angular\src\app\faciliti" />
+      <recent name="D:\codegym\C1121G1_duchieuchu\module5\case_study\furama-angular\src\app\customer" />
+      <recent name="D:\codegym\C1121G1_duchieuchu\module5\case_study\furama-angular\src\app\contract" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\codegym\C1121G1_duchieuchu\module5\case_study\furama-angular\src\assets\video" />
+      <recent name="D:\codegym\C1121G1_duchieuchu\module5\case_study\furama-angular\src\app\home" />
+      <recent name="D:\codegym\C1121G1_duchieuchu\module5\case_study\furama-angular" />
+      <recent name="D:\codegym\C1121G1_duchieuchu\module5\case_study\furama-angular\node_modules" />
+      <recent name="D:\codegym\C1121G1_duchieuchu\module5\case_study\furama-angular\src\app" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration name="Tests (furama-angular)" type="JavaScriptTestRunnerKarma">
+      <config-file value="$PROJECT_DIR$/karma.conf.js" />
+      <working-directory value="$PROJECT_DIR$" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="E2E Tests (furama-angular)" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b9031aa5-0226-4808-9b88-822ebc6f0a0a" name="Default Changelist" comment="" />
+      <created>1658222432085</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1658222432085</updated>
+      <workItem from="1658222434057" duration="3745000" />
+      <workItem from="1658236033535" duration="8734000" />
+      <workItem from="1658304626385" duration="7716000" />
+      <workItem from="1658473197665" duration="22000" />
+      <workItem from="1658473879460" duration="41000" />
+      <workItem from="1658481390379" duration="191000" />
+      <workItem from="1658482156516" duration="90000" />
+      <workItem from="1658654001884" duration="3754000" />
+      <workItem from="1658732713203" duration="4051000" />
+      <workItem from="1658744331252" duration="1227000" />
+      <workItem from="1658793971677" duration="8423000" />
+      <workItem from="1658876515408" duration="1819000" />
+      <workItem from="1658880317487" duration="16157000" />
+      <workItem from="1658913308895" duration="14000" />
+      <workItem from="1658915535979" duration="1577000" />
+      <workItem from="1658971592547" duration="1504000" />
+      <workItem from="1658976188283" duration="1303000" />
+      <workItem from="1658978520031" duration="630000" />
+      <workItem from="1658983965646" duration="13391000" />
+      <workItem from="1659020595391" duration="830000" />
+      <workItem from="1659047767316" duration="63000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="267" y="22" key="#Inspections" timestamp="1658656283616">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="267" y="22" key="#Inspections/0.0.1280.680@0.0.1280.680" timestamp="1658656283616" />
+    <state x="421" y="98" key="FileChooserDialogImpl" timestamp="1659047807646">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="98" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1659047807646" />
+    <state width="1259" height="3" key="GridCell.Tab.0.bottom" timestamp="1659047746728">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="3" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1659047746728" />
+    <state width="1259" height="3" key="GridCell.Tab.0.center" timestamp="1659047746728">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="3" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1659047746728" />
+    <state width="1259" height="3" key="GridCell.Tab.0.left" timestamp="1659047746728">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="3" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1659047746728" />
+    <state width="1259" height="3" key="GridCell.Tab.0.right" timestamp="1659047746728">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="3" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1659047746728" />
+    <state x="367" y="118" key="refactoring.ChangeSignatureDialog" timestamp="1658892306125">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="367" y="118" key="refactoring.ChangeSignatureDialog/0.0.1280.680@0.0.1280.680" timestamp="1658892306125" />
+    <state x="297" y="151" key="run.anything.popup" timestamp="1659001275288">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1659001275288" />
+  </component>
+</project>

@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {Customer} from '../../model/customer';
 import {CustomerService} from '../../service/customer.service';
 import {ActivatedRoute} from '@angular/router';
+import {FormControl, FormGroup} from '@angular/forms';
 
 @Component({
   selector: 'app-customer-list',
@@ -10,16 +11,26 @@ import {ActivatedRoute} from '@angular/router';
 })
 export class CustomerListComponent implements OnInit {
   customers: Customer[] = [];
-   idModal: number;
-   nameModal: string;
+  idModal: number;
+  nameModal: string;
   p: number = 1;
+  searchForm: FormGroup;
+
   constructor(private customerService: CustomerService,
               private activatedRoute: ActivatedRoute) {
+    this.searchForm = new FormGroup({
+      searchName: new FormControl()
+    });
   }
 
+
   ngOnInit(): void {
+    if (this.customers == null) {
+      console.log('ko co du lieu');
+    }
     this.getAll();
   }
+
   getAll() {
     this.customerService.getAllCustomer().subscribe(data => {
       this.customers = data;
@@ -28,8 +39,10 @@ export class CustomerListComponent implements OnInit {
   }
 
   deleteCustomer(idModal: number) {
-    this.customerService.delete(this.idModal).subscribe(next => {
-      // alert('OK');
+    this.customerService.delete(idModal).subscribe(next => {
+      // @ts-ignore
+      $('#exampleModal' + idModal).modal('hide');
+    }, error => {}, () => {
       this.ngOnInit();
     });
   }
@@ -37,5 +50,12 @@ export class CustomerListComponent implements OnInit {
   mo(id: number, name: string) {
     this.idModal = id;
     this.nameModal = name;
+  }
+
+  searchByName() {
+    console.log(this.searchForm.value);
+    this.customerService.getAllCustomerByName(this.searchForm.value.searchName).subscribe(data => {
+      this.customers = data;
+    });
   }
 }
