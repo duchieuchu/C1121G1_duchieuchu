@@ -32,6 +32,7 @@ export class ProductBlockListComponent implements OnInit {
   getAll() {
     this.productBlockService.getAllProductBlock().subscribe(data => {
       this.productBlocks = data;
+      console.log(data);
     }, error => {
     });
   }

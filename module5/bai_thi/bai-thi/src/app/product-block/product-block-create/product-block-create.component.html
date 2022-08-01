@@ -14,7 +14,7 @@
       <label>product</label>
       <select formControlName="product">
         <option selected [value]="null" disabled>Chọn danh mục sản phẩm</option>
-        <option *ngFor="let category of products" [value]="category.id">{{category.name}}</option>
+        <option *ngFor="let category of products" [ngValue]="category">{{category.name}}</option>
       </select>
       <p style="color: red"
          *ngIf="productBlockForm.controls.product.hasError('required') && productBlockForm.controls.product.touched">

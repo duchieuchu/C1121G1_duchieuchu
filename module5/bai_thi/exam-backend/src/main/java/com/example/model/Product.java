@@ -17,7 +17,7 @@ public class Product {
 
 
 @JsonBackReference
-    @OneToMany(mappedBy = "productList")
+    @OneToMany(mappedBy = "product")
     private List<ProductBlock> productBlockList;
 
 

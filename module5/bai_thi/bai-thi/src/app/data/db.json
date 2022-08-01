@@ -49,47 +49,47 @@
     {
       "id": 1,
       "code": "LH0001",
-      "product": 1,
+      "product": {
+        "id": 1,
+        "name": "dầu gội",
+        "made": "VietNam",
+        "price": 20000,
+        "unit": "thùng"
+      },
       "quantity": 20,
       "dateImport": "2005-12-09",
       "dateDo": "1995-12-09",
       "dateNoUse": "2095-12-09"
     },
     {
-      "id": 2,
-      "code": "LH0002",
-      "product": 2,
-      "quantity": 50,
-      "dateImport": "2000-12-09",
-      "dateDo": "1995-12-09",
-      "dateNoUse": "2023-12-09"
+      "code": "LH-1111",
+      "product": {
+        "id": 1,
+        "name": "dầu gội",
+        "made": "VietNam",
+        "price": 20000,
+        "unit": "thùng"
+      },
+      "quantity": 11,
+      "dateImport": "2022-08-26",
+      "dateDo": "2022-09-03",
+      "dateNoUse": "2022-08-27",
+      "id": 2
     },
     {
-      "id": 4,
-      "code": "LH0003",
-      "product": 2,
-      "quantity": 50,
-      "dateImport": "2000-12-09",
-      "dateDo": "1995-12-09",
-      "dateNoUse": "2023-12-09"
-    },
-    {
-      "id": 5,
-      "code": "LH0003",
-      "product": 2,
-      "quantity": 50,
-      "dateImport": "2000-12-09",
-      "dateDo": "1995-12-09",
-      "dateNoUse": "2023-12-09"
-    },
-    {
-      "id": 6,
-      "code": "LH-0022",
-      "product": "1",
-      "quantity": 22,
-      "dateImport": "2022-07-20",
-      "dateDo": "2022-07-07",
-      "dateNoUse": "2022-07-26"
+      "code": "LH0022",
+      "product": {
+        "id": 2,
+        "name": "dầu xã",
+        "made": "VietNam",
+        "price": 15000,
+        "unit": "thùng"
+      },
+      "quantity": 1211,
+      "dateImport": "2022-08-20",
+      "dateDo": "2022-08-18",
+      "dateNoUse": "2022-09-03",
+      "id": 3
     }
   ],
   "product": [

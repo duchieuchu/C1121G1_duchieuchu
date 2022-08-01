@@ -26,8 +26,14 @@ export class ProductBlockService {
   saveProductBlock(productBlock: ProductBlock) {
     return this.httpClient.post<ProductBlock>(this.URL_PRODUCT_BLOCK + '/create', productBlock);
   }
+  // saveProductBlock(productBlock: ProductBlock) {
+  //   return this.httpClient.post<ProductBlock>(this.URL_PRODUCT_BLOCK , productBlock);
+  // }
 
   delete(id: number): Observable<ProductBlock> {
-    return this.httpClient.delete<ProductBlock>(this.URL_PRODUCT_BLOCK +"/delete"+ '/' + id);
+    return this.httpClient.delete<ProductBlock>(this.URL_PRODUCT_BLOCK + '/delete' + '/' + id);
   }
+  // delete(id: number): Observable<ProductBlock> {
+  //   return this.httpClient.delete<ProductBlock>(this.URL_PRODUCT_BLOCK  + '/' + id);
+  // }
 }

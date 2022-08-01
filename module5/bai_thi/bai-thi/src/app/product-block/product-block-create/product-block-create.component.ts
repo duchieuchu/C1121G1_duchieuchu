@@ -14,12 +14,7 @@ export class ProductBlockCreateComponent implements OnInit {
   products: Product[];
   productBlockForm: FormGroup = new FormGroup({
     id: new FormControl(),
-    // code: new FormControl(),
-    // product: new FormControl(),
-    // quantity: new FormControl(),
-    // dateImport: new FormControl(),
-    // dateDo: new FormControl(),
-    // dateNoUse: new FormControl(),
+
     code: new FormControl('', [Validators.required, Validators.pattern('^LH-\\d{4}$')]),
     product: new FormControl('', [Validators.required]),
     quantity: new FormControl('', [Validators.required, Validators.min(0)]),
@@ -29,6 +24,8 @@ export class ProductBlockCreateComponent implements OnInit {
   });
 
   constructor(private productBlockService: ProductBlockService, private router: Router, private productService: ProductService) {
+
+
   }
 
   ngOnInit(): void {
