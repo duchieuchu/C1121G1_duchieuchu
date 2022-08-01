@@ -1,6 +1,9 @@
 package com.example.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class Product {
@@ -12,9 +15,14 @@ public class Product {
     private Integer price;
     private String unit;
 
-    @ManyToOne()
-    @JoinColumn(name = "product_block_id", referencedColumnName = "id")
-    private ProductBlock productBlock;
+
+@JsonBackReference
+    @OneToMany(mappedBy = "productList")
+    private List<ProductBlock> productBlockList;
+
+
+    public Product() {
+    }
 
     public Product(Integer id, String name, String made, Integer price, String unit) {
         this.id = id;
@@ -64,11 +72,11 @@ public class Product {
         this.unit = unit;
     }
 
-    public ProductBlock getProductBlock() {
-        return productBlock;
+    public List<ProductBlock> getProductBlockList() {
+        return productBlockList;
     }
 
-    public void setProductBlock(ProductBlock productBlock) {
-        this.productBlock = productBlock;
+    public void setProductBlockList(List<ProductBlock> productBlockList) {
+        this.productBlockList = productBlockList;
     }
 }

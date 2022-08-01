@@ -9,12 +9,12 @@ import {Observable} from 'rxjs';
 })
 export class ProductService {
   product: Product [] = [];
-  private URL_PRODUCT = 'http://localhost:3000/product';
-
+  // private URL_PRODUCT = 'http://localhost:3000/product';
+  private URL_PRODUCT = 'http://localhost:8080/rest/product';
   constructor(private httpClient: HttpClient) {
   }
 
   getAll(): Observable<Product[]> {
-    return this.httpClient.get<Product[]>(this.URL_PRODUCT);
+    return this.httpClient.get<Product[]>(this.URL_PRODUCT + "/list");
   }
 }

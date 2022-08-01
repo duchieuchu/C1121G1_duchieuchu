@@ -1,5 +1,7 @@
 package com.example.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -10,14 +12,17 @@ public class ProductBlock {
     private Integer id;
     private String code;
 
-    @OneToMany(mappedBy = "productBlock")
-    List<Product> productList;
+    @ManyToOne()
+    @JoinColumn(name = "product_id", referencedColumnName = "id")
+    private Product productList;
+
+
     private Integer quantity;
     private String dateImport;
     private String dateDo;
     private String dateNoUse;
 
-    public ProductBlock(Integer id, String code, List<Product> productList, Integer quantity, String dateImport, String dateDo, String dateNoUse) {
+    public ProductBlock(Integer id, String code, Product productList, Integer quantity, String dateImport, String dateDo, String dateNoUse) {
         this.id = id;
         this.code = code;
         this.productList = productList;
@@ -25,6 +30,9 @@ public class ProductBlock {
         this.dateImport = dateImport;
         this.dateDo = dateDo;
         this.dateNoUse = dateNoUse;
+    }
+
+    public ProductBlock() {
     }
 
     public Integer getId() {
@@ -43,11 +51,11 @@ public class ProductBlock {
         this.code = code;
     }
 
-    public List<Product> getProductList() {
+    public Product getProductList() {
         return productList;
     }
 
-    public void setProductList(List<Product> productList) {
+    public void setProductList(Product productList) {
         this.productList = productList;
     }
 
