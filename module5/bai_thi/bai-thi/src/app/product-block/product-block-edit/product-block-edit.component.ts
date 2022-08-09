@@ -18,10 +18,10 @@ export class ProductBlockEditComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.activatedRoute.paramMap.subscribe((param: ParamMap) => {
-      this.idEditProduct = parseInt(param.get('id'));
-      this.productBlockService.
-    });
+    // this.activatedRoute.paramMap.subscribe((param: ParamMap) => {
+    //   this.idEditProduct = parseInt(param.get('id'));
+    //   this.productBlockService.
+    // });
     // this.activatedRoute.paramMap.subscribe((param: ParamMap) => {
     //       this.idEditCustomer = parseInt(param.get('id'));
     //       this.customerService.getCustomerById(this.idEditCustomer).subscribe(customer => {
