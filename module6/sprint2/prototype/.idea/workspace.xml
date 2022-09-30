@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ade3df0-6649-4e5e-825e-21a7c16b821b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/checkout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../C1121G1_duchieuchu.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../apache-tomcat-9.0.60/webapps/ROOT/WEB-INF/applicationContext.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../apache-tomcat-9.0.60/webapps/ROOT/WEB-INF/classes/com/codegym/controller/ProductController.class" beforeDir="false" />
@@ -116,7 +118,15 @@
       <change beforePath="$PROJECT_DIR$/../../livestock-management/prototype1/css/form.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../livestock-management/prototype1/edit-pigsty.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../livestock-management/prototype1/img/pig.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/homePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/homePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/carousel-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/carousel-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/carousel-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/carousel-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/carousel-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/carousel-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/offer-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/offer-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/offer-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/offer-2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../test_css/no2.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -147,10 +157,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\codegym\C1121G1_duchieuchu\module6\sprint2\prototype\img" />
       <recent name="D:\codegym\C1121G1_duchieuchu\module6\sprint2\prototype" />
     </key>
   </component>
@@ -164,7 +175,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1664442361623</updated>
-      <workItem from="1664442362918" duration="5848000" />
+      <workItem from="1664442362918" duration="12437000" />
     </task>
     <servers />
   </component>
@@ -172,6 +183,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="371" y="90" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1664503545401">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="90" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1664503545401" />
     <state x="421" y="98" key="FileChooserDialogImpl" timestamp="1664444277895">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
