@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ade3df0-6649-4e5e-825e-21a7c16b821b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/checkout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../C1121G1_duchieuchu.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../apache-tomcat-9.0.60/webapps/ROOT/WEB-INF/applicationContext.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../apache-tomcat-9.0.60/webapps/ROOT/WEB-INF/classes/com/codegym/controller/ProductController.class" beforeDir="false" />
@@ -120,13 +118,7 @@
       <change beforePath="$PROJECT_DIR$/../../livestock-management/prototype1/img/pig.jpeg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/homePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/homePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/carousel-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/carousel-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/carousel-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/carousel-2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/carousel-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/carousel-3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/offer-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/offer-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/offer-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/offer-2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../test_css/no2.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,7 +167,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1664442361623</updated>
-      <workItem from="1664442362918" duration="12437000" />
+      <workItem from="1664442362918" duration="15510000" />
     </task>
     <servers />
   </component>
