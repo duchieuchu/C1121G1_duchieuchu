@@ -1,4 +1,4 @@
-package com.example.entity;
+package com.example.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -11,17 +11,20 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class AppRole {
+
+public class OrderItem {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String name;
+    private String orderDay;
     @Column(columnDefinition = "BIT(1) DEFAULT 0")
     private Boolean isDeleted;
 
-    @OneToMany(mappedBy = "appRole")
-    List<UserRole>userRoleList;
+    @ManyToOne()
+    @JoinColumn(name = "user_id", referencedColumnName = "id")
+    private AppUser appUser;
 
-
+    @OneToMany(mappedBy = "orderItem")
+    private List<OrderDetails> orderDetailsList;
 
 }

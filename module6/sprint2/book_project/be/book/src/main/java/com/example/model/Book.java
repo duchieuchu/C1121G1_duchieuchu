@@ -1,10 +1,11 @@
-package com.example.entity;
+package com.example.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Data
@@ -27,4 +28,8 @@ public class Book {
     @ManyToOne()
     @JoinColumn(name = "category_id", referencedColumnName = "id")
     private Category category;
+
+    @OneToMany(mappedBy = "book")
+    private List<OrderDetails> orderDetailsList;
+
 }

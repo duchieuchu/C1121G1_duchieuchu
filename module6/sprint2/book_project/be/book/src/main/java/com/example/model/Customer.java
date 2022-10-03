@@ -1,4 +1,4 @@
-package com.example.entity;
+package com.example.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -17,7 +17,8 @@ public class Customer {
     private String name;
     private String email;
     private String phoneNumber;
-
+    private String city;
+    private String address;
     @Column(columnDefinition = "BIT(1) DEFAULT 0")
     private Boolean isDeleted;
 
