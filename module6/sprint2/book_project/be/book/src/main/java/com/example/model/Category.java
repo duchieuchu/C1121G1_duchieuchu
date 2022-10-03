@@ -1,5 +1,6 @@
 package com.example.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -21,6 +22,7 @@ public class Category {
     private Boolean isDeleted;
 
     @OneToMany(mappedBy = "category")
+    @JsonIgnore
     private List<Book> bookList;
 
 }

@@ -1,5 +1,6 @@
 package com.example.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,8 +17,10 @@ public class Book {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String bookName;
+    @Column(columnDefinition = "TEXT")
     private String description;
     private Double price;
+    @Column(columnDefinition = "TEXT")
     private String image;
     private Integer pageNumber;
     private String authors;
@@ -30,6 +33,7 @@ public class Book {
     private Category category;
 
     @OneToMany(mappedBy = "book")
+    @JsonIgnore
     private List<OrderDetails> orderDetailsList;
 
 }
