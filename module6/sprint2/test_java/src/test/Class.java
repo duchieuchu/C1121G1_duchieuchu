@@ -1,5 +1,7 @@
 package test;
 
-public class Class {
+import java.util.*;
 
+public class Class {
+    String name;
 }
