@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "book": {
@@ -24,9 +24,22 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/style.css",
+              "node_modules/ngx-toastr/toastr.css",
+              "node_modules/lib/animate/animate.min.css",
+              "node_modules/lib/owlcarousel/assets/owl.carousel.min.css"
+
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/lib/easing/easing.min.js",
+              "node_modules/lib/owlcarousel/owl.carousel.min.js",
+              "node_modules/js/main.js",
+              "node_modules/mail/jqBootstrapValidation.min.js",
+              "node_modules/mail/contact.js"
+
+
+            ]
           },
           "configurations": {
             "production": {
