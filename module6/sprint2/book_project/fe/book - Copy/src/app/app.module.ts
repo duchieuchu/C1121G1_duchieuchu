@@ -10,7 +10,6 @@ import {HomeComponent} from './home/home.component';
 import {BookModule} from './book/book.module';
 import {ShareModule} from './share/share.module';
 import {ToastrModule} from 'ngx-toastr';
-import {SecurityModule} from './security/security.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +23,6 @@ import {SecurityModule} from './security/security.module';
     AppRoutingModule,
     RouterModule,
     BookModule,
-    SecurityModule,
     ShareModule,
     ToastrModule
   ],
