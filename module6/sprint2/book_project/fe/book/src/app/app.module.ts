@@ -11,13 +11,17 @@ import {BookModule} from './book/book.module';
 import {ShareModule} from './share/share.module';
 import {ToastrModule} from 'ngx-toastr';
 import {SecurityModule} from './security/security.module';
+import { CartComponent } from './cart/cart.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    CartComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,
