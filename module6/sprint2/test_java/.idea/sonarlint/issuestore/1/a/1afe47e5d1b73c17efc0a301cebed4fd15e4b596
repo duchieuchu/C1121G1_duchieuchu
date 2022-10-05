@@ -1,4 +1,10 @@
 
-S	java:S106	"9Replace this use of System.out or System.err by a logger.(©ƒÌ®øÿÿÿÿ
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(¬Í«ùÿÿÿÿ8¨çÑ…º0
-V	java:S125"<This block of commented-out lines of code should be removed.(üîè±ùÿÿÿÿ
+
+java:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(ÑŸ¨¦úÿÿÿÿ8àÛ²º0
+|
+java:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ê··Õ8áÛ²º0
+T	java:S106	"9Replace this use of System.out or System.err by a logger.(·’Åv8³ÑÙ²º0
+Z	java:S106
+"9Replace this use of System.out or System.err by a logger.(Ÿİïâûÿÿÿÿ8´ÑÙ²º0
+X	java:S125"<This block of commented-out lines of code should be removed.(¥ë·Ó8”Ğì²º0
+]	java:S125"<This block of commented-out lines of code should be removed.(Ïê”Œøÿÿÿÿ8ÍÉÓ²º0
