@@ -1,6 +1,7 @@
 package com.example.repository;
 
 import com.example.model.AppUser;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -10,7 +11,7 @@ import javax.transaction.Transactional;
 
 @Repository
 @Transactional
-public interface IAppUserRepository {
+public interface IAppUserRepository extends JpaRepository<AppUser, Integer> {
 
     @Query(value = "select * from app_user a where a.user_name = :name", nativeQuery = true)
     AppUser findAppUserByName(@Param("name") String name);

@@ -1,9 +1,9 @@
 package com.example.service;
 
 import com.example.model.AppUser;
-import com.sun.xml.internal.messaging.saaj.packaging.mime.MessagingException;
 
 
+import javax.mail.MessagingException;
 import java.io.UnsupportedEncodingException;
 
 public interface IAppUserService {
