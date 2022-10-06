@@ -1,5 +1,7 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
+import {Observable} from 'rxjs';
+import {Book} from '../model/book';
 
 @Injectable({
   providedIn: 'root'
@@ -10,11 +12,8 @@ export class BookService {
   constructor(private httpClient: HttpClient) {
   }
 
-  // getAllPageBookByName()
-//  getDishPage(page: number,dishName:string,dishCode:String,dishPrice:string,dishTypeId:string): Observable<Dish[]> {
-//
-//     return this.httpClient.get<Dish[]>(this.URL_DISH + "/searchDish?page="
-//       + page+"&dishName="+dishName+"&dishCode="+dishCode+"&dishPrice="+dishPrice+"&dishTypeId="+dishTypeId,
-//       {headers: new HttpHeaders({'authorization': this.header})});
-//   }
+  getAllPageBookByName(page: number, bookName: string): Observable<Book[]> {
+    return this.httpClient.get<Book[]>(this.BOOK_URL + '/getAllPageBookByName?page='
+      + page + '&bookName=' + bookName);
+  }
 }
