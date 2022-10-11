@@ -12,15 +12,37 @@
     </div>
     <div class="col-lg-6 text-center text-lg-right">
       <div class="d-inline-flex align-items-center">
+
         <div class="btn-group">
-          <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">Tài
-            Khoản
+          <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">Tài Khoản
           </button>
           <div class="dropdown-menu dropdown-menu-right">
-            <button class="dropdown-item" type="button" routerLink="/login">Đăng Nhập</button>
-            <button class="dropdown-item" type="button">Đăng Xuất</button>
+            <ul class="navbar-nav ml-auto" *ngIf="!isLoggedIn">
+              <li class="nav-item">
+                <a class="dropdown-item" routerLink="register">Đăng kí</a>
+              </li>
+              <li class="nav-item">
+                <a class="dropdown-item" routerLink="login">Đăng Nhập</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn">
+              <li class="nav-item">
+                <a  class="dropdown-item" routerLink="profile">TK: {{ username }}</a>
+              </li>
+              <li class="nav-item">
+                <a href class="dropdown-item" (click)="logout()">Đăng Xuất</a>
+              </li>
+            </ul>
+
+<!--            <button class="dropdown-item" type="button" routerLink="/login">Đăng Nhập</button>-->
+<!--            <a href class="dropdown-item" (click)="logout()">Đăng Xuất</a>-->
           </div>
         </div>
+
+
+
+
         <div class="btn-group mx-2">
           <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">VND
           </button>
