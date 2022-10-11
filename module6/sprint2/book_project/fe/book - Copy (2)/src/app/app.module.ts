@@ -10,21 +10,29 @@ import {HomeComponent} from './home/home.component';
 import {BookModule} from './book/book.module';
 import {ShareModule} from './share/share.module';
 import {ToastrModule} from 'ngx-toastr';
-import {SecurityModule} from './security/security.module';
+import { CartComponent } from './cart/cart.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { LoginComponent } from './login/login.component';
+import { ProfileComponent } from './profile/profile.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    CartComponent,
+    CheckoutComponent,
+    LoginComponent,
+    ProfileComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
     BookModule,
-    SecurityModule,
     ShareModule,
     ToastrModule
   ],

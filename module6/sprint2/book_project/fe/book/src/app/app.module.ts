@@ -11,8 +11,9 @@ import {BookModule} from './book/book.module';
 import {ShareModule} from './share/share.module';
 import {ToastrModule} from 'ngx-toastr';
 import {SecurityModule} from './security/security.module';
-import { CartComponent } from './cart/cart.component';
-import { CheckoutComponent } from './checkout/checkout.component';
+import {CartComponent} from './cart/cart.component';
+import {CheckoutComponent} from './checkout/checkout.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,13 @@ import { CheckoutComponent } from './checkout/checkout.component';
     BookModule,
     SecurityModule,
     ShareModule,
-    ToastrModule
+    ToastrModule.forRoot({
+      timeOut: 1000,
+      positionClass: 'toast-top-right',
+      progressBar: true,
+      tapToDismiss: true
+    }),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

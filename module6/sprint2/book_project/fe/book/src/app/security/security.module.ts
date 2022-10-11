@@ -11,11 +11,7 @@ import { VerifyResetPasswordComponent } from './verify-reset-password/verify-res
 
 @NgModule({
   declarations: [LoginComponent, ResetPasswordComponent, VerifyResetPasswordComponent],
-  exports: [
-    LoginComponent,
-    ResetPasswordComponent,
-    VerifyResetPasswordComponent
-  ],
+
   imports: [
     CommonModule,
     SecurityRoutingModule,

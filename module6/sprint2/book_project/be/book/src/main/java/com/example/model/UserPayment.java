@@ -19,5 +19,5 @@ public class UserPayment {
 
     @ManyToOne()
     @JoinColumn(name = "user_id",referencedColumnName = "id")
-    private AppUser appUser;
+    private User user;
 }
