@@ -8,6 +8,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class BookService implements IBookService {
     @Autowired
@@ -17,4 +19,12 @@ public class BookService implements IBookService {
     public Page<Book> getAllPageBookByName(String bookName, Pageable pageable) {
         return this.iBookRepository.getPageBookByName("%" + bookName + "%", pageable);
     }
+
+
+    @Override
+    public Book saveBook(Book book) {
+        return this.iBookRepository.save(book);
+    }
+
+
 }

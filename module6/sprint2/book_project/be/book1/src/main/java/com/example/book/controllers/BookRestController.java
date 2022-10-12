@@ -24,7 +24,7 @@ public class BookRestController {
     private IBookService iBookService;
 
 
-    
+
     @GetMapping("/getAllPageBookByName")
     @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
     public ResponseEntity<Page<Book>> getAllPageBookByName(@PageableDefault(9) Pageable pageable,
