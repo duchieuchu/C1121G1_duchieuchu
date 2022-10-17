@@ -26,7 +26,7 @@ public class BookRestController {
 
     @GetMapping("/getAllPageBookByName")
 //    @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
-    public ResponseEntity<Page<Book>> getAllPageBookByName(@PageableDefault(5) Pageable pageable,
+    public ResponseEntity<Page<Book>> getAllPageBookByName(@PageableDefault(9) Pageable pageable,
                                                            Optional<String> bookName) {
         String name = bookName.orElse("");
         if (name.equals("null")) {
