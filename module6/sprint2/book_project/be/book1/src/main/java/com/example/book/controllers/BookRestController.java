@@ -18,16 +18,15 @@ import java.util.Optional;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
-@RequestMapping("/api/book")
+@RequestMapping("/api/test")
 public class BookRestController {
     @Autowired
     private IBookService iBookService;
 
 
-
     @GetMapping("/getAllPageBookByName")
-    @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
-    public ResponseEntity<Page<Book>> getAllPageBookByName(@PageableDefault(9) Pageable pageable,
+//    @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
+    public ResponseEntity<Page<Book>> getAllPageBookByName(@PageableDefault(5) Pageable pageable,
                                                            Optional<String> bookName) {
         String name = bookName.orElse("");
         if (name.equals("null")) {
@@ -40,4 +39,11 @@ public class BookRestController {
             return new ResponseEntity<>(bookPage, HttpStatus.OK);
         }
     }
+
+    @RequestMapping("/getUser")
+//    @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
+    public String getUser() {
+        return "{hello}";
+    }
+
 }
