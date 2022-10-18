@@ -125,6 +125,7 @@
           <h3 *ngIf="bookArray.length==0" style="color: white; text-align: center">Không có dữ liệu</h3>
         </div>
 
+        <!--    pageable-->
         <div class="py-3"
              [hidden]="bookArray.length==0">
           <nav aria-label="Page navigation example d-flex flex-row-reverse">
@@ -175,10 +176,12 @@
           </nav>
         </div>
 
-
       </div>
     </div>
     <!-- Shop Product End -->
+
+
+
   </div>
 </div>
 <!-- Shop End -->

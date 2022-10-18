@@ -15,44 +15,51 @@
 <h1>Thêm sách</h1>
 
 <div class="container">
-  <form [formGroup]="formBook">
-  <div>
-    <label for="bookName">Ten sach</label>
-    <input class="form-control" id="bookName" formControlName="bookName" type="text" placeholder="Nhap ten sach">
-  </div>
-  <div>
-    <label for="description">Mo ta:</label>
-    <input class="form-control" id="description" formControlName="description" type="text" placeholder="Nhap mo ta">
-  </div>
-  <div>
-    <label for="price">Gia ca:</label>
-    <input class="form-control" id="price" formControlName="price" type="number" placeholder="Nhap gia ca">
-  </div>
-  <div>
-    <label for="image">Chon anh:</label>
-    <input class="form-control" id="image" formControlName="image" type="file">
-  </div>
-  <div>
-    <label for="pageNumber">So trang:</label>
-    <input class="form-control" id="pageNumber" formControlName="pageNumber" type="number" placeholder="Nhap so trang">
-  </div>
-  <div>
-    <label for="authors">Tac gia:</label>
-    <input class="form-control" id="authors" formControlName="authors" type="text" placeholder="Nhap tac gia">
-  </div>
+  <form [formGroup]="formBook" (ngSubmit)="createBook()">
+    <div>
+      <label for="bookName">Tên sách:</label>
+      <input class="form-control" id="bookName" formControlName="bookName" type="text" placeholder="Nhập ên sách">
+    </div>
+    <div>
+      <label for="description">Mô tả:</label>
+      <input class="form-control" id="description" formControlName="description" type="text" placeholder="Nhập mo ta">
+    </div>
+    <div>
+      <label for="price">Giá cả:</label>
+      <input class="form-control" id="price" formControlName="price" type="number" placeholder="Nhập gia ca">
+    </div>
+    <div>
+      <label for="image">Chọn ảnh:</label>
+      <input class="form-control" id="image" formControlName="image" type="file">
+    </div>
 
-  <div>
-    <label for="publishingHouse">Nha xuat ban:</label>
-    <input class="form-control" id="publishingHouse" formControlName="publishingHouse" type="text"
-           placeholder="Nhap nha xuat ban">
-  </div>
 
-  <div>
-    <label for="category">Loai sach:</label>
-    <select formControlName="category" class="form-control" name="" id="category">
-      <option *ngFor="let category of categoryArray" value="{{category.id}}">{{category.name}}</option>
-    </select>
-  </div>
+    <div>
+      <label for="pageNumber">Số trang:</label>
+      <input class="form-control" id="pageNumber" formControlName="pageNumber" type="number"
+             placeholder="Nhập so trang">
+    </div>
+    <div>
+      <label for="authors">Tác giả:</label>
+      <input class="form-control" id="authors" formControlName="authors" type="text" placeholder="Nhập tac gia">
+    </div>
+
+    <div>
+      <label for="publishingHouse">Nhà xuất bản:</label>
+      <input class="form-control" id="publishingHouse" formControlName="publishingHouse" type="text"
+             placeholder="Nhập nha xuat ban">
+    </div>
+
+    <div>
+      <label for="category">Loại sách:</label>
+      <select formControlName="category" class="form-control" name="" id="category">
+        <option *ngFor="let category of categoryArray" [ngValue]="category">{{category.name}}</option>
+      </select>
+    </div>
+
+    <div>
+      <button type="submit">Them moi</button>
+    </div>
   </form>
 </div>
 

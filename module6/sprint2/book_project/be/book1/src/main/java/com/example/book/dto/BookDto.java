@@ -1,5 +1,6 @@
 package com.example.book.dto;
 
+import com.example.book.models.Category;
 import lombok.Data;
 
 @Data
@@ -13,5 +14,5 @@ public class BookDto {
     private String authors;
     private String publishingHouse;
     private Boolean isDeleted;
-    private CategoryDto categoryDto;
+    private Category category;
 }

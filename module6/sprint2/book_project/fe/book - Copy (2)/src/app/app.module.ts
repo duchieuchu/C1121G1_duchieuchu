@@ -35,7 +35,15 @@ import {authInterceptorProviders} from './_helpers/auth.interceptor';
     RouterModule,
     BookModule,
     ShareModule,
-    ToastrModule
+    ToastrModule.forRoot(
+      {
+        timeOut: 2000,
+        closeButton: true,
+        progressBar: true,
+        positionClass: 'toast-top-left',
+        preventDuplicates: true,
+      }
+    ),
   ],
   providers: [authInterceptorProviders],
   bootstrap: [AppComponent]
