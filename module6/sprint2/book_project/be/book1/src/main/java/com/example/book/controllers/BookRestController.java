@@ -40,10 +40,13 @@ public class BookRestController {
         }
     }
 
-    @RequestMapping("/getUser")
-//    @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
-    public String getUser() {
-        return "{hello}";
+    @GetMapping("/getBookById")
+    public ResponseEntity<Book> getBookById(Integer id) {
+        if (id == null || id == ' ' ) {
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        } else {
+            Book book = this.iBookService.getBookById(id);
+            return new ResponseEntity<>(book, HttpStatus.OK);
+        }
     }
-
 }

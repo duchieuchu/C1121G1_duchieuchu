@@ -11,7 +11,10 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface IBookRepository extends JpaRepository<Book, Integer> {
 
-    @Query(value = "select * from book b where  b.book_name like :bookName", nativeQuery = true,
-            countQuery = "select * from book b where  b.book_name like :bookName")
+    @Query(value = "select * from book b where  b.book_name like :bookName and  b.is_deleted = 0", nativeQuery = true,
+            countQuery = "select * from book b where  b.book_name like :bookName and b.is_deleted = 0")
     Page<Book> getPageBookByName(@Param("bookName") String bookName, Pageable pageable);
+
+    @Query(value = "select * from book  where id=:id and is_deleted=0", nativeQuery = true)
+    Book getBookById(@Param("id") Integer id);
 }

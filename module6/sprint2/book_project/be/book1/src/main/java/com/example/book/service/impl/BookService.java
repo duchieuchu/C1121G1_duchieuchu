@@ -26,5 +26,10 @@ public class BookService implements IBookService {
         return this.iBookRepository.save(book);
     }
 
+    @Override
+    public Book getBookById(Integer id) {
+        return this.iBookRepository.getBookById(id);
+    }
+
 
 }

@@ -10,4 +10,6 @@ public interface IBookService {
     Page<Book> getAllPageBookByName(String bookName, Pageable pageable);
 
     Book saveBook(Book book);
+
+    Book getBookById(Integer id);
 }
