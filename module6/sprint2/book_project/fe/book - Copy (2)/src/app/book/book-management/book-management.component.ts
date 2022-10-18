@@ -27,13 +27,16 @@ export class BookManagementComponent implements OnInit {
   ngOnInit(): void {
     this.getBookPage(0, '');
     this.createSearchForm();
-    // this.getAllDishType();
   }
 
   createSearchForm() {
     this.searchForm = new FormGroup({
       bookName: new FormControl()
     });
+  }
+
+  searchBook() {
+    this.getBookPage(0, this.searchForm.value.bookName);
   }
 
 
