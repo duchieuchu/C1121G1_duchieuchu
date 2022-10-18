@@ -1,6 +1,8 @@
 package com.example.book.dto;
 
+import lombok.Data;
 
+@Data
 public class BookDto {
     private Integer id;
     private String bookName;

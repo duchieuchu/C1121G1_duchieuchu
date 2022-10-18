@@ -1,1 +1,59 @@
-<p>create-book works!</p>
+<!-- Breadcrumb Start -->
+<div class="container-fluid">
+  <div class="row px-xl-5">
+    <div class="col-12">
+      <nav class="breadcrumb bg-light mb-30">
+        <a class="breadcrumb-item text-dark" routerLink="/home">Trang chủ</a>
+        <a class="breadcrumb-item text-dark" routerLink="/book/management">Quản lí sách</a>
+        <span class="breadcrumb-item active">Thêm mới sách</span>
+      </nav>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumb End -->
+
+<h1>Thêm sách</h1>
+
+<div class="container">
+  <form [formGroup]="formBook">
+  <div>
+    <label for="bookName">Ten sach</label>
+    <input class="form-control" id="bookName" formControlName="bookName" type="text" placeholder="Nhap ten sach">
+  </div>
+  <div>
+    <label for="description">Mo ta:</label>
+    <input class="form-control" id="description" formControlName="description" type="text" placeholder="Nhap mo ta">
+  </div>
+  <div>
+    <label for="price">Gia ca:</label>
+    <input class="form-control" id="price" formControlName="price" type="number" placeholder="Nhap gia ca">
+  </div>
+  <div>
+    <label for="image">Chon anh:</label>
+    <input class="form-control" id="image" formControlName="image" type="file">
+  </div>
+  <div>
+    <label for="pageNumber">So trang:</label>
+    <input class="form-control" id="pageNumber" formControlName="pageNumber" type="number" placeholder="Nhap so trang">
+  </div>
+  <div>
+    <label for="authors">Tac gia:</label>
+    <input class="form-control" id="authors" formControlName="authors" type="text" placeholder="Nhap tac gia">
+  </div>
+
+  <div>
+    <label for="publishingHouse">Nha xuat ban:</label>
+    <input class="form-control" id="publishingHouse" formControlName="publishingHouse" type="text"
+           placeholder="Nhap nha xuat ban">
+  </div>
+
+  <div>
+    <label for="category">Loai sach:</label>
+    <select formControlName="category" class="form-control" name="" id="category">
+      <option *ngFor="let category of categoryArray" value="{{category.id}}">{{category.name}}</option>
+    </select>
+  </div>
+  </form>
+</div>
+
+

@@ -12,7 +12,7 @@ import {BookService} from '../../service/book.service';
 })
 export class BookManagementComponent implements OnInit {
   bookArray: Book[] = [];
-  category: Category[] = [];
+  categoryArray: Category[] = [];
 
   searchForm: FormGroup;
   totalPages: number;

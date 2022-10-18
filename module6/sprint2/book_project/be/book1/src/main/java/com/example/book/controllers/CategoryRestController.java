@@ -28,7 +28,7 @@ public class CategoryRestController {
 
 
     @GetMapping("/getAllCategory")
-    @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
+//    @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
     public ResponseEntity<List<Category>> getAllCategory() {
 
         List<Category> categoryList = this.iCategoryService.getAllCategory();

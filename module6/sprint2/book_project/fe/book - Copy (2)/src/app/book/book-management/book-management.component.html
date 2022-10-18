@@ -1,5 +1,16 @@
-
-<div class="background" style="padding-bottom: 100px">
+<!-- Breadcrumb Start -->
+<div class="container-fluid">
+  <div class="row px-xl-5">
+    <div class="col-12">
+      <nav class="breadcrumb bg-light mb-30">
+        <a class="breadcrumb-item text-dark" routerLink="/home">Trang chủ</a>
+        <a class="breadcrumb-item text-dark" routerLink="/book/management">Quản lí sách</a>
+        <span class="breadcrumb-item active">Danh sách</span>
+      </nav>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumb End -->
 
   <h1>Kho sách</h1>
   <br>
@@ -17,8 +28,11 @@
                          placeholder="Nhập tên sách">
                 </div>
 
-                <button style="margin-left: 20px;background-color:#FFD333;color: black" class="btn  buttons1"
+                <button style="margin-left: 20px;background-color:#FFD333;color: #3D464D" class="btn  buttons1"
                         type="submit">Tìm kiếm
+                </button>
+                <button routerLink="/book/add" style="margin-left: 20px;background-color:#3D464D;color: #FFD333" class="btn  buttons1"
+                        type="button">Thêm mới
                 </button>
               </div>
 

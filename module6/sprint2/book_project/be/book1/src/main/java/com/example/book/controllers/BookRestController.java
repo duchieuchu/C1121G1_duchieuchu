@@ -1,7 +1,9 @@
 package com.example.book.controllers;
 
+import com.example.book.dto.BookDto;
 import com.example.book.models.Book;
 import com.example.book.service.IBookService;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -9,11 +11,10 @@ import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.Optional;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
@@ -40,13 +41,25 @@ public class BookRestController {
         }
     }
 
-    @GetMapping("/getBookById")
-    public ResponseEntity<Book> getBookById(Integer id) {
-        if (id == null || id == ' ' ) {
+
+    @GetMapping("/getBookById/{id}")
+    public ResponseEntity<Book> getBookById(@PathVariable Integer id) {
+        if (id == null || id == ' ') {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         } else {
             Book book = this.iBookService.getBookById(id);
             return new ResponseEntity<>(book, HttpStatus.OK);
         }
     }
+
+    @PostMapping("/createBook")
+    public ResponseEntity<BookDto> createBook(@Valid @RequestBody BookDto bookDto) {
+
+        Book book = new Book();
+        BeanUtils.copyProperties(bookDto, book);
+        this.iBookService.saveBook(book);
+        return new ResponseEntity<>(HttpStatus.CREATED);
+    }
+
+
 }
