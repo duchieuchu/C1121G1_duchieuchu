@@ -25,7 +25,7 @@ public class Book {
     private Integer pageNumber;
     private String authors;
     private String publishingHouse;
-    @Column(columnDefinition = "BIT(1) DEFAULT 0")
+    @Column(columnDefinition = "BIT(1) default 0 ")
     private Boolean isDeleted;
 
     @ManyToOne()

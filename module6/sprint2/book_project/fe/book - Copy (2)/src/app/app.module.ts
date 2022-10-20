@@ -16,6 +16,7 @@ import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RegisterComponent } from './register/register.component';
 import {authInterceptorProviders} from './_helpers/auth.interceptor';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import {authInterceptorProviders} from './_helpers/auth.interceptor';
     RouterModule,
     BookModule,
     ShareModule,
+    BrowserAnimationsModule,
     ToastrModule.forRoot(
       {
         timeOut: 2000,
@@ -43,7 +45,7 @@ import {authInterceptorProviders} from './_helpers/auth.interceptor';
         positionClass: 'toast-top-left',
         preventDuplicates: true,
       }
-    ),
+    )
   ],
   providers: [authInterceptorProviders],
   bootstrap: [AppComponent]

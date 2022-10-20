@@ -8,6 +8,7 @@ export const environment = {
     apiKey: 'AIzaSyB-32Tylajl3owugZkid4mNXIAjse70L3Q',
     authDomain: 'test-fire-base-a6dea.firebaseapp.com',
     projectId: 'test-fire-base-a6dea',
+    databaseURL: 'https://test-fire-base-a6dea-default-rtdb.asia-southeast1.firebasedatabase.app',
     storageBucket: 'test-fire-base-a6dea.appspot.com',
     messagingSenderId: '554817321073',
     appId: '1:554817321073:web:13114aecb8e8e03dedc3d0',
