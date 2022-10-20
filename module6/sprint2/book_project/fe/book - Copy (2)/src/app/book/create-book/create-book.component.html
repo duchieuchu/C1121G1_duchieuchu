@@ -18,16 +18,17 @@
   <form [formGroup]="formBook" (ngSubmit)="createBook()">
   <div>
     <label for="bookName">Tên sách:</label>
-    <input class="form-control" id="bookName" formControlName="bookName" type="text" placeholder="Nhập ên sách">
+    <input class="form-control" id="bookName" formControlName="bookName" type="text" placeholder="Nhập tên sách">
   </div>
   <div>
     <label for="description">Mô tả:</label>
-    <input class="form-control" id="description" formControlName="description" type="text" placeholder="Nhập mo ta">
+    <input class="form-control" id="description" formControlName="description" type="text" placeholder="Nhập mô tả">
   </div>
   <div>
     <label for="price">Giá cả:</label>
-    <input class="form-control" id="price" formControlName="price" type="number" placeholder="Nhập gia ca">
+    <input class="form-control" id="price" formControlName="price" type="number" placeholder="Nhập giá cả">
   </div>
+
   <div>
     <label for="image">Chọn ảnh:</label>
 
@@ -45,35 +46,39 @@
     <div class="form-text" *ngIf="regexImageUrl == true && checkImgSize == false">
       Chỉ Chấp Nhận Ảnh Có Định Dạng .jpg / .JPG.
     </div>
-
-
-
-<!--    <input class="form-control" id="image" formControlName="image" type="file">-->
   </div>
+
   <div>
     <label for="pageNumber">Số trang:</label>
-    <input class="form-control" id="pageNumber" formControlName="pageNumber" type="number" placeholder="Nhập so trang">
+    <input class="form-control" id="pageNumber" formControlName="pageNumber" type="number" placeholder="Nhập số trang">
   </div>
   <div>
     <label for="authors">Tác giả:</label>
-    <input class="form-control" id="authors" formControlName="authors" type="text" placeholder="Nhập tac gia">
+    <input class="form-control" id="authors" formControlName="authors" type="text" placeholder="Nhập tác giả">
   </div>
 
   <div>
     <label for="publishingHouse">Nhà xuất bản:</label>
     <input class="form-control" id="publishingHouse" formControlName="publishingHouse" type="text"
-           placeholder="Nhập nha xuat ban">
+           placeholder="Nhập nhà xuất bản">
   </div>
+
+    <div>
+      <label for="quantity">Số lượng:</label>
+      <input class="form-control" id="quantity" formControlName="quantity" type="number"
+             placeholder="Nhập số lượng">
+    </div>
 
   <div>
     <label for="category">Loại sách:</label>
     <select formControlName="category" class="form-control" name="" id="category">
+      <option value="">-- Chọn loại sách --</option>
       <option *ngFor="let category of categoryArray" [ngValue]="category" >{{category.name}}</option>
     </select>
   </div>
 
     <div>
-      <button type="submit">Them moi</button>
+      <button type="submit">Thêm mới</button>
     </div>
   </form>
 </div>

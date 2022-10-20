@@ -25,6 +25,7 @@ public class Book {
     private Integer pageNumber;
     private String authors;
     private String publishingHouse;
+    private Integer quantity;
     @Column(columnDefinition = "BIT(1) default 0 ")
     private Boolean isDeleted;
 

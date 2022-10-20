@@ -13,6 +13,7 @@ public class BookDto {
     private Integer pageNumber;
     private String authors;
     private String publishingHouse;
+    private Integer quantity;
     private Boolean isDeleted;
     private Category category;
 }

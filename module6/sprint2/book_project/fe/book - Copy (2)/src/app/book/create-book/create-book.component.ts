@@ -35,6 +35,7 @@ export class CreateBookComponent implements OnInit {
     pageNumber: new FormControl(''),
     authors: new FormControl(''),
     publishingHouse: new FormControl(''),
+    quantity: new FormControl(''),
     category: new FormControl(''),
     isDeleted: new FormControl(false),
   });
@@ -115,6 +116,7 @@ export class CreateBookComponent implements OnInit {
             pageNumber: this.formBook.value.pageNumber,
             authors: this.formBook.value.authors,
             publishingHouse: this.formBook.value.publishingHouse,
+            quantity: this.formBook.value.quantity,
             category: this.formBook.value.category,
           };
           console.log(book);
