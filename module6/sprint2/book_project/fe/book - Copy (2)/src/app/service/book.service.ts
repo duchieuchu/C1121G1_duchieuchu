@@ -20,7 +20,7 @@ export class BookService {
   }
 
   getBookById(bookId: number): Observable<Book> {
-    return this.httpClient.get<Book>(this.BOOK_URL + '/getBookById?id=' + bookId);
+    return this.httpClient.get<Book>(this.BOOK_URL + '/getBookById/' + bookId);
   }
 
   createBook(book: Book): Observable<Book> {
@@ -34,6 +34,10 @@ export class BookService {
   deleteBookById(bookId: number): Observable<void> {
     // @ts-ignore
     return this.httpClient.patch(this.BOOK_URL + '/deleteBookById/' + bookId);
+  }
+
+  editBook(book: Book): Observable<Book> {
+    return this.httpClient.patch(this.BOOK_URL + '/editBook', book);
   }
 
 }

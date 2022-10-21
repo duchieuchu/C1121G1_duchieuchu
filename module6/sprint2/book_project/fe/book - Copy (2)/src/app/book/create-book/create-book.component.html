@@ -32,8 +32,7 @@
   <div>
     <label for="image">Chọn ảnh:</label>
 
-    <img matTooltip="Nhấn Vào Đây Để Chọn Ảnh" *ngIf="!editImageState"
-         src="https://cdn-icons-gif.flaticon.com/8121/8121335.gif" width="60px" height="60px"
+    <img src="https://cdn-icons-gif.flaticon.com/8121/8121335.gif" width="60px" height="60px"
          (click)="fileInput.click()">
     <input id="image" hidden (change)="selectFile($event); onFileSelected($event)" #fileInput type="file">
 

@@ -8,6 +8,7 @@ import {ToastrService} from 'ngx-toastr';
 import {AngularFireStorage} from '@angular/fire/storage';
 import {formatDate} from '@angular/common';
 import {finalize} from 'rxjs/operators';
+import {Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-create-book',
@@ -43,7 +44,9 @@ export class CreateBookComponent implements OnInit {
   constructor(private bookService: BookService,
               private  router: Router,
               private toast: ToastrService,
-              private storage: AngularFireStorage) {
+              private storage: AngularFireStorage,
+              private title: Title) {
+    this.title.setTitle('Thêm sách');
   }
 
   ngOnInit(): void {

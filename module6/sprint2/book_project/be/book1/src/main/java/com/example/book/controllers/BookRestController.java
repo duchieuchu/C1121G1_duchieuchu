@@ -71,5 +71,12 @@ public class BookRestController {
         }
     }
 
+    @PatchMapping("/editBook")
+    public ResponseEntity<Void> editBook(@Valid @RequestBody BookDto bookDto) {
+        Book book = new Book();
+        BeanUtils.copyProperties(bookDto, book);
+        this.iBookService.editBook(book);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
 
 }

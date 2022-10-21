@@ -33,7 +33,12 @@ public class BookService implements IBookService {
 
     @Override
     public void deleteBookById(Integer id) {
-         this.iBookRepository.deleteByBookId(id);
+        this.iBookRepository.deleteByBookId(id);
+    }
+
+    @Override
+    public void editBook(Book book) {
+        this.iBookRepository.save(book);
     }
 
 

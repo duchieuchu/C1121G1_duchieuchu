@@ -27,4 +27,6 @@ public interface IBookRepository extends JpaRepository<Book, Integer> {
     @Query(value = "update book set is_deleted=1 where id =:id", nativeQuery = true)
     void deleteByBookId(@Param("id") Integer id);
 
+    
+
 }

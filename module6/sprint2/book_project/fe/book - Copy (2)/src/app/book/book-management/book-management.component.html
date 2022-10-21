@@ -48,7 +48,7 @@
             <th class="col-2">Tên sách</th>
             <th class="col-2">Giá</th>
             <th class="col-2">Loại sách</th>
-            <th class="col-1">Chức năng</th>
+            <th class="col-1" colspan="2">Chức năng</th>
           </tr>
           </thead>
           <tbody>
@@ -62,9 +62,15 @@
             <td>{{element.price| currency:'VND':''}}đ</td>
             <td>{{element.category.name}}</td>
             <td>
-              <!-- Button trigger modal -->
               <button type="button"
                       class="btn btn-primary"
+                      routerLink="/book/edit/{{element.id}}">Sửa
+              </button>
+            </td>
+            <td>
+              <!-- Button trigger modal -->
+              <button type="button"
+                      class="btn btn-danger"
                       data-toggle="modal"
                       data-target="#exampleModal"
                       [attr.data-target]="'#exampleModal'+element.id">
@@ -89,7 +95,9 @@
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Trở lại</button>
-                      <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="deleteBookById(element.id)">Xóa</button>
+                      <button type="button" class="btn btn-primary" data-dismiss="modal"
+                              (click)="deleteBookById(element.id)">Xóa
+                      </button>
                     </div>
                   </div>
                 </div>
