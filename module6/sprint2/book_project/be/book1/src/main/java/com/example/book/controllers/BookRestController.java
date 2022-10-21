@@ -61,5 +61,15 @@ public class BookRestController {
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
+    @PatchMapping("/deleteBookById/{id}")
+    public ResponseEntity<Void> deleteBookById(@PathVariable Integer id) {
+        if (id == null || id == ' ') {
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        } else {
+            this.iBookService.deleteBookById(id);
+            return new ResponseEntity<>(HttpStatus.OK);
+        }
+    }
+
 
 }

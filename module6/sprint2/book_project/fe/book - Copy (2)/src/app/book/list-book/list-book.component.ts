@@ -3,6 +3,8 @@ import {Title} from '@angular/platform-browser';
 import {Book} from '../../model/book';
 import {FormControl, FormGroup} from '@angular/forms';
 import {BookService} from '../../service/book.service';
+import {ToastrService} from 'ngx-toastr';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-list-book',
@@ -18,7 +20,8 @@ export class ListBookComponent implements OnInit {
   number: number;
   size: number;
 
-  constructor(private title: Title, private bookService: BookService) {
+  constructor(private title: Title,
+              private bookService: BookService) {
     this.title.setTitle('Cửa hàng sách');
   }
 
@@ -83,4 +86,6 @@ export class ListBookComponent implements OnInit {
   goEnd() {
     this.getBookPage(this.totalPages - 1, this.searchForm.value.bookName);
   }
+
+
 }

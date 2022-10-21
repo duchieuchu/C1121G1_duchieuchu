@@ -31,4 +31,9 @@ export class BookService {
     return this.httpClient.get<Category[]>(this.BOOK_URL + '/getAllCategory');
   }
 
+  deleteBookById(bookId: number): Observable<void> {
+    // @ts-ignore
+    return this.httpClient.patch(this.BOOK_URL + '/deleteBookById/' + bookId);
+  }
+
 }

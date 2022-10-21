@@ -4,6 +4,8 @@ import {Title} from '@angular/platform-browser';
 import {FormControl, FormGroup} from '@angular/forms';
 import {Category} from '../../model/category';
 import {BookService} from '../../service/book.service';
+import {ToastrService} from 'ngx-toastr';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-book-management',
@@ -20,7 +22,10 @@ export class BookManagementComponent implements OnInit {
   number: number;
   size: number;
 
-  constructor(private title: Title, private bookService: BookService) {
+  constructor(private title: Title,
+              private bookService: BookService,
+              private toast: ToastrService,
+              private router: Router) {
     this.title.setTitle('Quản lí sách');
   }
 
@@ -89,4 +94,16 @@ export class BookManagementComponent implements OnInit {
     this.getBookPage(this.totalPages - 1, this.searchForm.value.bookName);
   }
 
+  deleteBookById(bookId: number) {
+    this.bookService.deleteBookById(bookId).subscribe(data => {
+
+    }, error => {
+
+    }, () => {
+      this.ngOnInit();
+      // this.router.navigateByUrl('/book/management').then(r => this.toast.success('Xóa thành công.', 'Thông Báo'));
+      this.toast.success('Xóa thành công.', 'Thông Báo');
+    });
+
+  }
 }
