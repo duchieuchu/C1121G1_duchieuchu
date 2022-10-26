@@ -164,15 +164,16 @@
           <div class="navbar-nav mr-auto py-0">
             <a routerLink="/home" class="nav-item nav-link active" >Trang chủ </a>
             <a routerLink="/book/list" class="nav-item nav-link">Cửa hàng</a>
-            <a routerLink="/book/detail" class="nav-item nav-link">Chi tiết</a>
-            <div class="nav-item dropdown">
-              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Trang <i
-                class="fa fa-angle-down mt-1"></i></a>
-              <div class="dropdown-menu bg-primary rounded-0 border-0 m-0">
-                <a routerLink="/cart" class="dropdown-item">Giỏ hàng</a>
-                <a routerLink="/checkout" class="dropdown-item">Thanh toán</a>
-              </div>
-            </div>
+            <a routerLink="/cart" class="nav-item nav-link">Giỏ hàng</a>
+            <a routerLink="/checkout" class="nav-item nav-link">Thanh toán</a>
+<!--            <div class="nav-item dropdown">-->
+<!--              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Trang <i-->
+<!--                class="fa fa-angle-down mt-1"></i></a>-->
+<!--              <div class="dropdown-menu bg-primary rounded-0 border-0 m-0">-->
+<!--                <a routerLink="/cart" class="dropdown-item">Giỏ hàng</a>-->
+<!--                <a routerLink="/checkout" class="dropdown-item">Thanh toán</a>-->
+<!--              </div>-->
+<!--            </div>-->
             <a routerLink="/book/management" class="nav-item nav-link" *ngIf="showAdminBoard">Quản lí sách</a>
           </div>
           <div class="navbar-nav ml-auto py-0 d-none d-lg-block">
