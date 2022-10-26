@@ -30,7 +30,7 @@
         <tbody class="align-middle">
         <tr *ngFor="let book of books">
           <td class="align-middle"><img src="{{book.image}}" alt="" style="width: 50px;"> Product Name</td>
-          <td class="align-middle">{{book.price}}</td>
+          <td class="align-middle">{{book.price| currency:'VND':''}}đ</td>
 
           <td class="align-middle">
             <div class="input-group quantity mx-auto" style="width: 100px;">
@@ -50,33 +50,16 @@
             </div>
           </td>
 
-          <td class="align-middle">{{book.total}}</td>
+          <td class="align-middle">{{book.total| currency:'VND':''}}đ</td>
           <td class="align-middle">
             <button class="btn btn-sm btn-danger" (click)="removeItem(book)"><i class="fa fa-times"></i></button>
           </td>
         </tr>
-
-        <!--        <tr>-->
-        <!--          <td class="align-middle"><img src="../../assets/img/book-2.jpg" alt="" style="width: 50px;"> Product Name</td>-->
-        <!--          <td class="align-middle">$150</td>-->
-        <!--          <td class="align-middle">-->
-        <!--            <div class="input-group quantity mx-auto" style="width: 100px;">-->
-        <!--              <div class="input-group-btn">-->
-        <!--                <button class="btn btn-sm btn-primary btn-minus" >-->
-        <!--                  <i class="fa fa-minus"></i>-->
-        <!--                </button>-->
-        <!--              </div>-->
-        <!--              <input type="text" class="form-control form-control-sm bg-secondary border-0 text-center" value="1">-->
-        <!--              <div class="input-group-btn">-->
-        <!--                <button class="btn btn-sm btn-primary btn-plus">-->
-        <!--                  <i class="fa fa-plus"></i>-->
-        <!--                </button>-->
-        <!--              </div>-->
-        <!--            </div>-->
-        <!--          </td>-->
-        <!--          <td class="align-middle">$150</td>-->
-        <!--          <td class="align-middle"><button class="btn btn-sm btn-danger"><i class="fa fa-times"></i></button></td>-->
-        <!--        </tr>-->
+        <tr>
+          <td colspan="3"></td>
+          <td><button class="btn btn-danger" (click)="emptyCart()">Xóa sạch</button></td>
+          <td><button class="btn btn-primary" routerLink="/book/list">Mua thêm</button></td>
+        </tr>
 
         </tbody>
       </table>
@@ -96,7 +79,7 @@
         <div class="border-bottom pb-2">
           <div class="d-flex justify-content-between mb-3">
             <h6>Tổng giá</h6>
-            <h6>$150</h6>
+            <h6>{{grandTotal| currency:'VND':''}}đ</h6>
           </div>
           <div class="d-flex justify-content-between">
             <h6 class="font-weight-medium">Phí ship</h6>

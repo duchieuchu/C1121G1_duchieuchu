@@ -42,6 +42,7 @@ export class CartService {
         }
       }
     );
+    this.bookList.next(this.cartItemList);
   }
 
   removeAllCart() {
