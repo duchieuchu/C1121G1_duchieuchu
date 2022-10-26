@@ -1,1 +1,85 @@
-<p>create-book works!</p>
+<!-- Breadcrumb Start -->
+<div class="container-fluid">
+  <div class="row px-xl-5">
+    <div class="col-12">
+      <nav class="breadcrumb bg-light mb-30">
+        <a class="breadcrumb-item text-dark" routerLink="/home">Trang chủ</a>
+        <a class="breadcrumb-item text-dark" routerLink="/book/management">Quản lí sách</a>
+        <span class="breadcrumb-item active">Thêm mới sách</span>
+      </nav>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumb End -->
+
+<h1>Thêm sách</h1>
+
+<div class="container" >
+  <form [formGroup]="formBook" (ngSubmit)="createBook()">
+  <div>
+    <label for="bookName">Tên sách:</label>
+    <input class="form-control" id="bookName" formControlName="bookName" type="text" placeholder="Nhập tên sách">
+  </div>
+  <div>
+    <label for="description">Mô tả:</label>
+    <input class="form-control" id="description" formControlName="description" type="text" placeholder="Nhập mô tả">
+  </div>
+  <div>
+    <label for="price">Giá cả:</label>
+    <input class="form-control" id="price" formControlName="price" type="number" placeholder="Nhập giá cả">
+  </div>
+
+  <div>
+    <label for="image">Chọn ảnh:</label>
+
+    <img src="https://cdn-icons-gif.flaticon.com/8121/8121335.gif" width="60px" height="60px"
+         (click)="fileInput.click()">
+    <input id="image" hidden (change)="selectFile($event); onFileSelected($event)" #fileInput type="file">
+
+    <img style="width: 20%" [src]="url" (click)="fileInput.click()" *ngIf="editImageState"
+         width="auto" height="auto" alt="">
+    <div class="form-text" *ngIf="checkImgSize == true">Kích Thước Ảnh Quá Lớn.</div>
+    <div class="form-text" *ngIf="checkImg == true && checkImgSize == false && regexImageUrl == false">
+      Vui Lòng Không Để Trống.
+    </div>
+    <div class="form-text" *ngIf="regexImageUrl == true && checkImgSize == false">
+      Chỉ Chấp Nhận Ảnh Có Định Dạng .jpg / .JPG.
+    </div>
+  </div>
+
+  <div>
+    <label for="pageNumber">Số trang:</label>
+    <input class="form-control" id="pageNumber" formControlName="pageNumber" type="number" placeholder="Nhập số trang">
+  </div>
+  <div>
+    <label for="authors">Tác giả:</label>
+    <input class="form-control" id="authors" formControlName="authors" type="text" placeholder="Nhập tác giả">
+  </div>
+
+  <div>
+    <label for="publishingHouse">Nhà xuất bản:</label>
+    <input class="form-control" id="publishingHouse" formControlName="publishingHouse" type="text"
+           placeholder="Nhập nhà xuất bản">
+  </div>
+
+    <div>
+      <label for="quantity">Số lượng:</label>
+      <input class="form-control" id="quantity" formControlName="quantity" type="number"
+             placeholder="Nhập số lượng">
+    </div>
+
+  <div>
+    <label for="category">Loại sách:</label>
+    <select formControlName="category" class="form-control" name="" id="category">
+      <option value="">-- Chọn loại sách --</option>
+      <option *ngFor="let category of categoryArray" [ngValue]="category" >{{category.name}}</option>
+    </select>
+  </div>
+
+    <div>
+      <button type="submit">Thêm mới</button>
+    </div>
+  </form>
+</div>
+
+

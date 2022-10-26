@@ -9,5 +9,7 @@ export interface Book {
   pageNumber?: number;
   authors?: string;
   publishingHouse?: string;
+  quantity?: number;
   category?: Category;
+  isDeleted?: boolean;
 }

@@ -12,13 +12,29 @@
     </div>
     <div class="col-lg-6 text-center text-lg-right">
       <div class="d-inline-flex align-items-center">
+
         <div class="btn-group">
-          <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">Tài
-            Khoản
+          <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">Tài Khoản
           </button>
           <div class="dropdown-menu dropdown-menu-right">
-            <button class="dropdown-item" type="button" routerLink="/login">Đăng Nhập</button>
-            <button class="dropdown-item" type="button">Đăng Xuất</button>
+            <ul class="navbar-nav ml-auto" *ngIf="!isLoggedIn">
+              <li class="nav-item">
+                <a class="dropdown-item" routerLink="register">Đăng kí</a>
+              </li>
+              <li class="nav-item">
+                <a class="dropdown-item" routerLink="login">Đăng Nhập</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn">
+              <li class="nav-item">
+                <a  class="dropdown-item" routerLink="profile">TK: {{ username }}</a>
+              </li>
+              <li class="nav-item">
+                <a href class="dropdown-item" (click)="logout()">Đăng Xuất</a>
+              </li>
+            </ul>
+
           </div>
         </div>
         <div class="btn-group mx-2">
@@ -49,7 +65,7 @@
         <a href="" class="btn px-0 ml-2">
           <i class="fas fa-shopping-cart text-dark"></i>
           <span class="badge text-dark border border-dark rounded-circle"
-                style="padding-bottom: 2px;">0</span>
+                style="padding-bottom: 2px;">{{totalItem}}</span>
         </a>
       </div>
     </div>
@@ -61,6 +77,7 @@
         <span class="h1 text-uppercase text-dark bg-primary px-2 ml-n1">Shop</span>
       </a>
     </div>
+
     <div class="col-lg-4 col-6 text-left">
       <form action="">
         <div class="input-group">
@@ -73,6 +90,8 @@
         </div>
       </form>
     </div>
+
+
     <div class="col-lg-4 col-6 text-right">
       <p class="m-0">Hỗ trợ khách hàng</p>
       <h5 class="m-0">+012 345 6789</h5>
@@ -143,7 +162,7 @@
         </button>
         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
           <div class="navbar-nav mr-auto py-0">
-            <a routerLink="/home" class="nav-item nav-link active">Trang chủ </a>
+            <a routerLink="/home" class="nav-item nav-link active" >Trang chủ </a>
             <a routerLink="/book/list" class="nav-item nav-link">Cửa hàng</a>
             <a routerLink="/book/detail" class="nav-item nav-link">Chi tiết</a>
             <div class="nav-item dropdown">
@@ -154,7 +173,7 @@
                 <a routerLink="/checkout" class="dropdown-item">Thanh toán</a>
               </div>
             </div>
-            <a href="/book/management" class="nav-item nav-link">Quản lí sách</a>
+            <a routerLink="/book/management" class="nav-item nav-link" *ngIf="showAdminBoard">Quản lí sách</a>
           </div>
           <div class="navbar-nav ml-auto py-0 d-none d-lg-block">
             <a href="" class="btn px-0">
@@ -165,7 +184,7 @@
             <a routerLink="/cart" class="btn px-0 ml-3">
               <i class="fas fa-shopping-cart text-primary"></i>
               <span class="badge text-secondary border border-secondary rounded-circle"
-                    style="padding-bottom: 2px;">0</span>
+                    style="padding-bottom: 2px;">{{totalItem}}</span>
             </a>
           </div>
         </div>

@@ -10,9 +10,13 @@ import {HomeComponent} from './home/home.component';
 import {BookModule} from './book/book.module';
 import {ShareModule} from './share/share.module';
 import {ToastrModule} from 'ngx-toastr';
-import {SecurityModule} from './security/security.module';
 import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { LoginComponent } from './login/login.component';
+import { ProfileComponent } from './profile/profile.component';
+import { RegisterComponent } from './register/register.component';
+import {authInterceptorProviders} from './_helpers/auth.interceptor';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -21,18 +25,29 @@ import { CheckoutComponent } from './checkout/checkout.component';
     FooterComponent,
     HomeComponent,
     CartComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    LoginComponent,
+    ProfileComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
     BookModule,
-    SecurityModule,
     ShareModule,
-    ToastrModule
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(
+      {
+        timeOut: 2000,
+        closeButton: true,
+        progressBar: true,
+        positionClass: 'toast-top-left',
+        preventDuplicates: true,
+      }
+    )
   ],
-  providers: [],
+  providers: [authInterceptorProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule {

@@ -1,12 +1,12 @@
 html,body{
-  background-image:  url(../../../assets/img/background-login.jpg);
+  background-image:  url(../../assets/img/background-login.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
   font-family: 'Numans', sans-serif;
 }
 .background-image{
-  background-image: url(../../../assets/img/background-login.jpg);
+  background-image: url(../../assets/img/background-login.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
