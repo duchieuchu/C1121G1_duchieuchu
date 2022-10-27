@@ -17,8 +17,6 @@ export class HeaderComponent implements OnInit {
   username: string;
 
   public totalQuantity = 0;
-  currentUser: string;
-  role: string;
 
   constructor(private tokenStorageService: TokenStorageService,
               private cartService: CartService,
@@ -41,20 +39,12 @@ export class HeaderComponent implements OnInit {
     this.dataService.getData.subscribe((result: any) => {
       this.totalQuantity = parseInt(result.quantity, 10);
     });
-    this.loadHeader();
     // this.cartService.getBooks().subscribe(res => {
     //   this.totalItem = res.length;
     // });
   }
 
-  loadHeader(): void {
-    if (this.tokenStorageService.getToken()) {
-      this.currentUser = this.tokenStorageService.getUser().username;
-      this.role = this.tokenStorageService.getUser().roles[0];
-      this.username = this.tokenStorageService.getUser().username;
-    }
-    this.isLoggedIn = this.username != null;
-  }
+
 
   logout() {
     this.tokenStorageService.signOut();
