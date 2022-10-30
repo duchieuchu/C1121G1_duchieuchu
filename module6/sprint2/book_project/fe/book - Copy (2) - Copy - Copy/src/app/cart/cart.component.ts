@@ -3,6 +3,7 @@ import {Book} from '../model/book';
 import {CartService} from '../service/cart.service';
 import {Title} from '@angular/platform-browser';
 import {DataService} from '../service/data.service';
+import {render} from 'creditcardpayments/creditCardPayments';
 
 @Component({
   selector: 'app-cart',
@@ -15,11 +16,27 @@ export class CartComponent implements OnInit {
 
   totalPrice: number = this.cartService.getTotalPrice();
   totalQuantity: number = this.cartService.getTotalQuantity();
+  usd: number;
+  usdString: string;
 
   constructor(private  cartService: CartService,
               private dataService: DataService,
               private title: Title) {
+    render({
+      id: '#myPayPalButtons',
+      currency: 'USD',
+      value: this.convertToUSD(this.totalPrice),
+      onApprove: (details => {
+        alert('Transaction Successfully');
+      })
+    });
     this.title.setTitle('Giỏ hàng');
+  }
+
+  convertToUSD(vnd: number) {
+    this.usd = vnd / 25000;
+    this.usdString = String(this.usd);
+    return this.usdString;
   }
 
   ngOnInit(): void {
@@ -93,7 +110,7 @@ export class CartComponent implements OnInit {
   deleteAll() {
     sessionStorage.clear();
     this.carts = [];
-    this.carts.saveCart(this.carts);
+    // this.carts.saveCart(this.carts);
     this.totalPrice = this.cartService.getTotalPrice();
     this.totalQuantity = this.cartService.getTotalQuantity();
     this.dataService.changeData({

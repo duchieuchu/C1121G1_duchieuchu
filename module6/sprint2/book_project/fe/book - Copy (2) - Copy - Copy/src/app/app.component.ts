@@ -9,14 +9,4 @@ import {render} from 'creditcardpayments/creditCardPayments';
 export class AppComponent {
   title = 'book';
 
-  constructor() {
-    render({
-      id: '#myPalPalButtons',
-      currency: 'USD',
-      value: '100.00 ',
-      onApprove: (details => {
-        alert('Transaction Successfully');
-      })
-    });
-  }
 }

@@ -99,15 +99,17 @@
             <h5>Tổng cộng</h5>
             <h5>{{totalPrice| currency:'VND':''}}đ</h5>
           </div>
-          <button class="btn btn-block btn-primary font-weight-bold my-3 py-3" routerLink="/checkout">Tiến hành thanh
-            toán
-          </button>
+          <div id="myPayPalButtons"></div>
+<!--          <button class="btn btn-block btn-primary font-weight-bold my-3 py-3" routerLink="/checkout">Tiến hành thanh-->
+<!--            toán-->
+<!--          </button>-->
         </div>
       </div>
     </div>
   </div>
 </div>
 <!-- Cart End -->
+
 
 <div class="container" *ngIf="carts.length ==0">
   <div class="card">
