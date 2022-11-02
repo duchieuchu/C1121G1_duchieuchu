@@ -29,7 +29,7 @@
         </thead>
         <tbody class="align-middle">
         <tr *ngFor="let book of carts; index as i">
-          <td class="align-middle"><img src="{{book.image}}" alt="" style="width: 50px;"> Product Name</td>
+          <td class="align-middle"><img src="{{book.image}}" alt="" style="width: 50px;">{{book.bookName}}</td>
           <td class="align-middle">{{book.price| currency:'VND':''}}đ</td>
 
           <td class="align-middle">

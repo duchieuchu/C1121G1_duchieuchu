@@ -49,12 +49,13 @@ export class ListBookComponent implements OnInit {
     } else {
       const cartItem: any = {
         id: book.id,
-        name: book.name,
+        bookName: book.bookName,
         price: book.price,
         quantity: 1,
         image: book.image,
       };
       this.carts.push(cartItem);
+      console.log(cartItem);
     }
 
     this.cartService.saveCart(this.carts);
