@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Book} from '../../model/book';
 import {Category} from '../../model/category';
-import {FormControl, FormGroup} from '@angular/forms';
+import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {BookService} from '../../service/book.service';
 import {Router} from '@angular/router';
 import {ToastrService} from 'ngx-toastr';
@@ -29,15 +29,15 @@ export class CreateBookComponent implements OnInit {
 
 
   formBook = new FormGroup({
-    bookName: new FormControl(''),
-    description: new FormControl(''),
-    price: new FormControl(''),
-    image: new FormControl(''),
-    pageNumber: new FormControl(''),
-    authors: new FormControl(''),
-    publishingHouse: new FormControl(''),
-    quantity: new FormControl(''),
-    category: new FormControl(''),
+    bookName: new FormControl('', Validators.required),
+    description: new FormControl('', Validators.required),
+    price: new FormControl('', Validators.required),
+    image: new FormControl('', Validators.required),
+    pageNumber: new FormControl('', Validators.required),
+    authors: new FormControl('', Validators.required),
+    publishingHouse: new FormControl('', Validators.required),
+    quantity: new FormControl('', Validators.required),
+    category: new FormControl('', Validators.required),
     isDeleted: new FormControl(false),
   });
 
@@ -122,11 +122,12 @@ export class CreateBookComponent implements OnInit {
             quantity: this.formBook.value.quantity,
             category: this.formBook.value.category,
           };
-          console.log(book);
+          // console.log(book);
           this.bookService.createBook(this.formBook.value).subscribe(data => {
 
           }, error => {
-
+            // this.toast.error('Thêm mới thất bại, Vui lòng thực hiện đẩy đử thao tác.', 'Thông Báo');
+            // console.log('hello');
           }, () => {
             this.router.navigateByUrl('book/management').then(r => this.toast.success('Thêm mới thành công.', 'Thông Báo'));
           });
@@ -152,7 +153,6 @@ export class CreateBookComponent implements OnInit {
       this.categoryArray = data;
     }, error => {
     }, () => {
-      console.log(this.categoryArray);
     });
   }
 

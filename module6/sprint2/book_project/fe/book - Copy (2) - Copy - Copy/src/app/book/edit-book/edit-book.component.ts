@@ -8,7 +8,7 @@ import {formatDate} from '@angular/common';
 import {Book} from '../../model/book';
 import {finalize} from 'rxjs/operators';
 import {Category} from '../../model/category';
-import {FormControl, FormGroup} from '@angular/forms';
+import {FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-edit-book',
@@ -29,15 +29,15 @@ export class EditBookComponent implements OnInit {
 
 
   formBook = new FormGroup({
-    bookName: new FormControl(''),
-    description: new FormControl(''),
-    price: new FormControl(''),
-    image: new FormControl(''),
-    pageNumber: new FormControl(''),
-    authors: new FormControl(''),
-    publishingHouse: new FormControl(''),
-    quantity: new FormControl(''),
-    category: new FormControl(''),
+    bookName: new FormControl('', Validators.required),
+    description: new FormControl('', Validators.required),
+    price: new FormControl('', Validators.required),
+    image: new FormControl('', Validators.required),
+    pageNumber: new FormControl('', Validators.required),
+    authors: new FormControl('', Validators.required),
+    publishingHouse: new FormControl('', Validators.required),
+    quantity: new FormControl('', Validators.required),
+    category: new FormControl('', Validators.required),
     isDeleted: new FormControl(false),
   });
 
@@ -75,16 +75,16 @@ export class EditBookComponent implements OnInit {
 
   getForm(book: Book) {
     this.formBook = new FormGroup({
-      id: new FormControl(book.id),
-      bookName: new FormControl(book.bookName),
-      description: new FormControl(book.description),
-      price: new FormControl(book.price),
-      image: new FormControl(book.image),
-      pageNumber: new FormControl(book.pageNumber),
-      authors: new FormControl(book.authors),
-      publishingHouse: new FormControl(book.publishingHouse),
-      quantity: new FormControl(book.quantity),
-      category: new FormControl(book.category),
+      id: new FormControl(book.id, Validators.required),
+      bookName: new FormControl(book.bookName, Validators.required),
+      description: new FormControl(book.description, Validators.required),
+      price: new FormControl(book.price, Validators.required),
+      image: new FormControl(book.image, Validators.required),
+      pageNumber: new FormControl(book.pageNumber, Validators.required),
+      authors: new FormControl(book.authors, Validators.required),
+      publishingHouse: new FormControl(book.publishingHouse, Validators.required),
+      quantity: new FormControl(book.quantity, Validators.required),
+      category: new FormControl(book.category, Validators.required),
       isDeleted: new FormControl(false),
     });
     // this.formBook.patchValue(book);

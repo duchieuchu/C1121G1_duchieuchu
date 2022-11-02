@@ -14,67 +14,85 @@
 
 <h1>Thêm sách</h1>
 
-<div class="container" >
+<div class="container">
   <form [formGroup]="formBook" (ngSubmit)="createBook()">
-  <div>
-    <label for="bookName">Tên sách:</label>
-    <input class="form-control" id="bookName" formControlName="bookName" type="text" placeholder="Nhập tên sách">
-  </div>
-  <div>
-    <label for="description">Mô tả:</label>
-    <input class="form-control" id="description" formControlName="description" type="text" placeholder="Nhập mô tả">
-  </div>
-  <div>
-    <label for="price">Giá cả:</label>
-    <input class="form-control" id="price" formControlName="price" type="number" placeholder="Nhập giá cả">
-  </div>
-
-  <div>
-    <label for="image">Chọn ảnh:</label>
-
-    <img src="https://cdn-icons-gif.flaticon.com/8121/8121335.gif" width="60px" height="60px"
-         (click)="fileInput.click()">
-    <input id="image" hidden (change)="selectFile($event); onFileSelected($event)" #fileInput type="file">
-
-    <img style="width: 20%" [src]="url" (click)="fileInput.click()" *ngIf="editImageState"
-         width="auto" height="auto" alt="">
-    <div class="form-text" *ngIf="checkImgSize == true">Kích Thước Ảnh Quá Lớn.</div>
-    <div class="form-text" *ngIf="checkImg == true && checkImgSize == false && regexImageUrl == false">
-      Vui Lòng Không Để Trống.
+    <div>
+      <label for="bookName">Tên sách:</label>
+      <input class="form-control" id="bookName" formControlName="bookName" type="text" placeholder="Nhập tên sách">
+      <p *ngIf="formBook.controls.bookName.hasError('required')&&formBook.controls.bookName.touched">Bạn quên nhập tên sách</p>
     </div>
-    <div class="form-text" *ngIf="regexImageUrl == true && checkImgSize == false">
-      Chỉ Chấp Nhận Ảnh Có Định Dạng .jpg / .JPG.
+    <div>
+      <label for="description">Mô tả:</label>
+      <input class="form-control" id="description" formControlName="description" type="text" placeholder="Nhập mô tả">
+      <p *ngIf="formBook.controls.description.hasError('required')&&formBook.controls.description.touched">Bạn quên nhập mô tả</p>
+
     </div>
-  </div>
+    <div>
+      <label for="price">Giá cả:</label>
+      <input class="form-control" id="price" formControlName="price" type="number" placeholder="Nhập giá cả">
+      <p *ngIf="formBook.controls.price.hasError('required')&&formBook.controls.price.touched">Bạn quên nhập giá cả</p>
 
-  <div>
-    <label for="pageNumber">Số trang:</label>
-    <input class="form-control" id="pageNumber" formControlName="pageNumber" type="number" placeholder="Nhập số trang">
-  </div>
-  <div>
-    <label for="authors">Tác giả:</label>
-    <input class="form-control" id="authors" formControlName="authors" type="text" placeholder="Nhập tác giả">
-  </div>
+    </div>
 
-  <div>
-    <label for="publishingHouse">Nhà xuất bản:</label>
-    <input class="form-control" id="publishingHouse" formControlName="publishingHouse" type="text"
-           placeholder="Nhập nhà xuất bản">
-  </div>
+    <div>
+      <label for="image">Chọn ảnh:</label>
+
+      <img src="https://cdn-icons-gif.flaticon.com/8121/8121335.gif" width="60px" height="60px"
+           (click)="fileInput.click()">
+      <input id="image" hidden (change)="selectFile($event); onFileSelected($event)" #fileInput type="file">
+
+      <img style="width: 20%" [src]="url" (click)="fileInput.click()" *ngIf="editImageState"
+           width="auto" height="auto" alt="">
+      <div class="form-text" *ngIf="checkImgSize == true">Kích Thước Ảnh Quá Lớn.</div>
+      <div class="form-text" *ngIf="checkImg == true && checkImgSize == false && regexImageUrl == false">
+        Vui Lòng Không Để Trống.
+      </div>
+      <div class="form-text" *ngIf="regexImageUrl == true && checkImgSize == false" style="color: red">
+        Chỉ Chấp Nhận Ảnh Có Định Dạng .jpg / .JPG.
+      </div>
+      <p *ngIf="formBook.controls.image.hasError('required')&&formBook.controls.image.touched">Bạn quên nhập Ảnh</p>
+
+    </div>
+
+    <div>
+      <label for="pageNumber">Số trang:</label>
+      <input class="form-control" id="pageNumber" formControlName="pageNumber" type="number"
+             placeholder="Nhập số trang">
+      <p *ngIf="formBook.controls.pageNumber.hasError('required')&&formBook.controls.pageNumber.touched">Bạn quên nhập số trang</p>
+
+    </div>
+    <div>
+      <label for="authors">Tác giả:</label>
+      <input class="form-control" id="authors" formControlName="authors" type="text" placeholder="Nhập tác giả">
+      <p *ngIf="formBook.controls.authors.hasError('required')&&formBook.controls.authors.touched">Bạn quên nhập tác giả</p>
+
+    </div>
+
+    <div>
+      <label for="publishingHouse">Nhà xuất bản:</label>
+      <input class="form-control" id="publishingHouse" formControlName="publishingHouse" type="text"
+             placeholder="Nhập nhà xuất bản">
+      <p *ngIf="formBook.controls.publishingHouse.hasError('required')&&formBook.controls.publishingHouse.touched">Bạn quên nhập nhà xuất bản</p>
+
+    </div>
 
     <div>
       <label for="quantity">Số lượng:</label>
       <input class="form-control" id="quantity" formControlName="quantity" type="number"
              placeholder="Nhập số lượng">
+      <p *ngIf="formBook.controls.quantity.hasError('required')&&formBook.controls.quantity.touched">Bạn quên nhập số lượng</p>
+
     </div>
 
-  <div>
-    <label for="category">Loại sách:</label>
-    <select formControlName="category" class="form-control" name="" id="category">
-      <option value="">-- Chọn loại sách --</option>
-      <option *ngFor="let category of categoryArray" [ngValue]="category" >{{category.name}}</option>
-    </select>
-  </div>
+    <div>
+      <label for="category">Loại sách:</label>
+      <select formControlName="category" class="form-control" name="" id="category">
+        <option value="">-- Chọn loại sách --</option>
+        <option *ngFor="let category of categoryArray" [ngValue]="category">{{category.name}}</option>
+      </select>
+      <p *ngIf="formBook.controls.category.hasError('required')&&formBook.controls.category.touched">Bạn quên nhập loại sách</p>
+
+    </div>
 
     <div>
       <button type="submit" class="btn btn-primary">Thêm mới</button>

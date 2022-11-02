@@ -55,7 +55,6 @@ export class ListBookComponent implements OnInit {
         image: book.image,
       };
       this.carts.push(cartItem);
-      console.log(cartItem);
     }
 
     this.cartService.saveCart(this.carts);
