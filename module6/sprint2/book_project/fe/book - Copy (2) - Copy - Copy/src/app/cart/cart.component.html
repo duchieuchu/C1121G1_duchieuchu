@@ -99,7 +99,7 @@
             <h5>Tổng cộng</h5>
             <h5>{{totalPrice| currency:'VND':''}}đ</h5>
           </div>
-          <div id="myPayPalButtons"></div>
+          <div id="myPayPalButtons" *ngIf="isLoggedIn"></div>
 <!--          <button class="btn btn-block btn-primary font-weight-bold my-3 py-3" routerLink="/checkout">Tiến hành thanh-->
 <!--            toán-->
 <!--          </button>-->

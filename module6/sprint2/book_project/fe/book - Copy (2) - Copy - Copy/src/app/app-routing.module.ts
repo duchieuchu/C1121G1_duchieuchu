@@ -6,6 +6,10 @@ import {CheckoutComponent} from './checkout/checkout.component';
 import {LoginComponent} from './login/login.component';
 import {RegisterComponent} from './register/register.component';
 import {ProfileComponent} from './profile/profile.component';
+import {Error401PageComponent} from './error401-page/error401-page.component';
+import {Error403PageComponent} from './error403-page/error403-page.component';
+import {Error404PageComponent} from './error404-page/error404-page.component';
+import {canActivate} from '@angular/fire/auth-guard';
 
 
 const routes: Routes = [
@@ -16,6 +20,9 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'profile', component: ProfileComponent},
+  {path: 'error401', component: Error401PageComponent},
+  {path: 'error403', component: Error403PageComponent},
+  {path: 'error404', component: Error404PageComponent},
 ];
 
 @NgModule({

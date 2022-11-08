@@ -25,7 +25,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
     this.isLoggedIn = !!this.tokenStorageService.getToken();
-
+    console.log(this.isLoggedIn);
     if (this.isLoggedIn) {
       const user = this.tokenStorageService.getUser();
       this.roles = user.roles;
@@ -50,5 +50,6 @@ export class HeaderComponent implements OnInit {
     this.tokenStorageService.signOut();
     window.location.reload();
   }
+
 
 }

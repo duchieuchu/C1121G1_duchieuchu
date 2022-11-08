@@ -1,0 +1,165 @@
+<!-- Breadcrumb Start -->
+<div class="container-fluid">
+  <div class="row px-xl-5">
+    <div class="col-12">
+      <nav class="breadcrumb bg-light mb-30">
+        <a class="breadcrumb-item text-dark" routerLink="/home">Trang chủ</a>
+        <a class="breadcrumb-item text-dark" routerLink="/book/management">Quản lí sách</a>
+        <span class="breadcrumb-item active">Danh sách</span>
+      </nav>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumb End -->
+
+<h1>Kho sách</h1>
+<br>
+<div class="main">
+  <div class="limiter">
+    <div class="container-table100">
+      <div class="wrap-table100 table_wrapper">
+
+
+        <div>
+          <form [formGroup]="searchForm" (ngSubmit)="searchBook()">
+            <div class="d-flex">
+              <div class="col-sm-6 pe-4">
+                <input type="text" class="form-control" name="bookName" formControlName="bookName"
+                       placeholder="Nhập tên sách">
+              </div>
+
+              <button style="margin-left: 20px;background-color:#FFD333;color: #3D464D" class="btn  buttons1"
+                      type="submit">Tìm kiếm
+              </button>
+              <button routerLink="/book/add" style="margin-left: 20px;background-color:#3D464D;color: #FFD333"
+                      class="btn  buttons1"
+                      type="button">Thêm mới
+              </button>
+            </div>
+
+          </form>
+        </div>
+
+        <table class="table table-hover mt-3">
+          <thead>
+          <tr class="table100-head">
+            <th class="col-1">STT</th>
+            <th class="col-2">Hình ảnh</th>
+            <th class="col-2">Tên sách</th>
+            <th class="col-2">Giá</th>
+            <th class="col-2">Loại sách</th>
+            <th class="col-1" colspan="2">Chức năng</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let element of bookArray; index as i">
+            <td>{{(i + 1) + number * size}}</td>
+            <td><img width="70%" src="{{element.image}}" alt=""></td>
+            <td>
+                <span style="color: black; overflow: hidden !important;" class="tooltipHieu"
+                      title="{{element.bookName}}">{{element.bookName}}</span>
+            </td>
+            <td>{{element.price| currency:'VND':''}}đ</td>
+            <td>{{element.category.name}}</td>
+            <td>
+              <button type="button"
+                      class="btn btn-primary"
+                      routerLink="/book/edit/{{element.id}}">Sửa
+              </button>
+            </td>
+            <td>
+              <!-- Button trigger modal -->
+              <button type="button"
+                      class="btn btn-danger"
+                      data-toggle="modal"
+                      data-target="#exampleModal"
+                      [attr.data-target]="'#exampleModal'+element.id">
+                Xóa
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade"
+                   id="exampleModal{{element.id}}"
+                   tabindex="-1" aria-labelledby="exampleModalLabel"
+                   aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Xóa</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      Bạn có chắc chắn muốn xóa {{element.bookName}} ?
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Trở lại</button>
+                      <button type="button" class="btn btn-primary" data-dismiss="modal"
+                              (click)="deleteBookById(element.id)">Xóa
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+        <h3 *ngIf="bookArray.length==0" style="color: white; text-align: center">Không có dữ liệu</h3>
+        <br>
+
+        <div class="py-3"
+             [hidden]="bookArray.length==0">
+          <nav aria-label="Page navigation example d-flex flex-row-reverse">
+            <ul class="pagination justify-content-end">
+              <div *ngIf="number == 0">
+                <li class="page-item disabled">
+                  <button class="page-link" (click)="goStart()" hidden><<</button>
+                </li>
+              </div>
+              <div *ngIf="number != 0">
+                <li class="page-item">
+                  <button class="page-link" (click)="goStart()"><<</button>
+                </li>
+              </div>
+              <div *ngIf="number == 0">
+                <li class="page-item disabled">
+                  <button class="page-link" (click)="goPrevious()" hidden><</button>
+                </li>
+              </div>
+              <div *ngIf="number != 0">
+                <li class="page-item">
+                  <button class="page-link" (click)="goPrevious()"><</button>
+                </li>
+              </div>
+
+              <div class="number-pages">{{number + 1}} | {{totalPages}}</div>
+              <div *ngIf="number == totalPages - 1">
+                <li class="page-item disabled">
+                  <button class="page-link" (click)="goNext()" hidden>></button>
+                </li>
+              </div>
+              <div *ngIf="number != totalPages - 1">
+                <li class="page-item">
+                  <button class="page-link" (click)="goNext()">></button>
+                </li>
+              </div>
+              <div *ngIf="number == totalPages - 1">
+                <li class="page-item disabled">
+                  <button class="page-link" (click)="goEnd()" hidden>>></button>
+                </li>
+              </div>
+              <div *ngIf="number != totalPages - 1">
+                <li class="page-item">
+                  <button class="page-link" (click)="goEnd()">>></button>
+                </li>
+              </div>
+            </ul>
+          </nav>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

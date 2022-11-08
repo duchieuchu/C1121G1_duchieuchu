@@ -4,6 +4,7 @@ import {CartService} from '../service/cart.service';
 import {Title} from '@angular/platform-browser';
 import {DataService} from '../service/data.service';
 import {render} from 'creditcardpayments/creditCardPayments';
+import {TokenStorageService} from '../_services/token-storage.service';
 
 @Component({
   selector: 'app-cart',
@@ -19,8 +20,15 @@ export class CartComponent implements OnInit {
   usd: number;
   usdString: string;
 
+  private roles: string[];
+  isLoggedIn = false;
+  showAdminBoard = false;
+  showModeratorBoard = false;
+  username: string;
+
   constructor(private  cartService: CartService,
               private dataService: DataService,
+              private tokenStorageService: TokenStorageService,
               private title: Title) {
     render({
       id: '#myPayPalButtons',
@@ -40,6 +48,18 @@ export class CartComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.isLoggedIn = !!this.tokenStorageService.getToken();
+
+    if (this.isLoggedIn) {
+      const user = this.tokenStorageService.getUser();
+      this.roles = user.roles;
+
+      this.showAdminBoard = this.roles.includes('ROLE_ADMIN');
+      this.showModeratorBoard = this.roles.includes('ROLE_MODERATOR');
+
+      this.username = user.username;
+    }
+
     // tslint:disable-next-line:variable-name
     const _this = this;
     setTimeout(() => {
