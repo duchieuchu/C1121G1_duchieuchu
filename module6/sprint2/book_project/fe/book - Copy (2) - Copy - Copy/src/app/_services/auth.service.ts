@@ -15,8 +15,6 @@ const httpOptions = {
 export class AuthService {
   private roles: string[];
   isLoggedIn = false;
-  showAdminBoard = false;
-  showModeratorBoard = false;
   username: string;
 
   constructor(private http: HttpClient,

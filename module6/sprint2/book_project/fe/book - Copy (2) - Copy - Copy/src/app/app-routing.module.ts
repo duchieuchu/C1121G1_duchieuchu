@@ -22,7 +22,7 @@ const routes: Routes = [
   {path: 'profile', component: ProfileComponent},
   {path: 'error401', component: Error401PageComponent},
   {path: 'error403', component: Error403PageComponent},
-  {path: 'error404', component: Error404PageComponent},
+  {path: '**', component: Error404PageComponent},
 ];
 
 @NgModule({
