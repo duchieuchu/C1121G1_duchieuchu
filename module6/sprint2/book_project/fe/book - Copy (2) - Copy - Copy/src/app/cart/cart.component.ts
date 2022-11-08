@@ -30,6 +30,18 @@ export class CartComponent implements OnInit {
               private dataService: DataService,
               private tokenStorageService: TokenStorageService,
               private title: Title) {
+    // render({
+    //   id: '#myPayPalButtons',
+    //   currency: 'USD',
+    //   value: this.convertToUSD(this.totalPrice),
+    //   onApprove: (details => {
+    //     alert('Transaction Successfully');
+    //   })
+    // });
+    this.title.setTitle('Giỏ hàng');
+  }
+
+  payment() {
     render({
       id: '#myPayPalButtons',
       currency: 'USD',
@@ -38,7 +50,6 @@ export class CartComponent implements OnInit {
         alert('Transaction Successfully');
       })
     });
-    this.title.setTitle('Giỏ hàng');
   }
 
   convertToUSD(vnd: number) {
