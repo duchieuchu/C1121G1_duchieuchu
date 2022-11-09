@@ -21,6 +21,7 @@ import {Error401PageComponent} from './error401-page/error401-page.component';
 import {Error403PageComponent} from './error403-page/error403-page.component';
 import {Error404PageComponent} from './error404-page/error404-page.component';
 import {AuthGuard} from './authguard/auth.guard';
+import { StatisticsComponent } from './statistics/statistics.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import {AuthGuard} from './authguard/auth.guard';
     RegisterComponent,
     Error401PageComponent,
     Error403PageComponent,
-    Error404PageComponent
+    Error404PageComponent,
+    StatisticsComponent
   ],
   imports: [
     BrowserModule,

@@ -40,4 +40,12 @@ export class BookService {
     return this.httpClient.patch(this.BOOK_URL + '/editBook', book);
   }
 
+  getFiveBookByQuantitySmallest(): Observable<Book[]> {
+    return this.httpClient.get<Book[]>(this.BOOK_URL + '/getFiveBookByQuantitySmallest');
+  }
+
+  getFiveBookByQuantityLargest(): Observable<Book[]> {
+    return this.httpClient.get<Book[]>(this.BOOK_URL + '/getFiveBookByQuantityLargest');
+  }
+
 }

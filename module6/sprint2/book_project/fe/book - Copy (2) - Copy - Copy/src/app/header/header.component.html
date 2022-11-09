@@ -165,7 +165,8 @@
             <a routerLink="/home" class="nav-item nav-link active" >Trang chủ </a>
             <a routerLink="/book/list" class="nav-item nav-link">Cửa hàng</a>
             <a routerLink="/cart" class="nav-item nav-link">Giỏ hàng</a>
-            <a routerLink="/checkout" class="nav-item nav-link">Thanh toán</a>
+<!--            <a routerLink="/checkout" class="nav-item nav-link">Thanh toán</a>-->
+            <a routerLink="/statistics" class="nav-item nav-link" *ngIf="showAdminBoard">Thống kê</a>
             <a routerLink="/book/management" class="nav-item nav-link" *ngIf="showAdminBoard">Quản lí sách</a>
           </div>
           <div class="navbar-nav ml-auto py-0 d-none d-lg-block">

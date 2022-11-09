@@ -8,7 +8,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Component;
 
-
+import java.util.List;
 
 
 //@Service
@@ -41,6 +41,16 @@ public class BookService implements IBookService {
     @Override
     public void editBook(Book book) {
         this.iBookRepository.save(book);
+    }
+
+    @Override
+    public List<Book> getFiveBookByQuantitySmallest() {
+        return this.iBookRepository.getFiveBookByQuantitySmallest();
+    }
+
+    @Override
+    public List<Book> getFiveBookByQuantityLargest() {
+        return this.iBookRepository.getFiveBookByQuantityLargest();
     }
 
 

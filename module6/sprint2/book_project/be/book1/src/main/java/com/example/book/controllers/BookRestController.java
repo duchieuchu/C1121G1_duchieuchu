@@ -15,6 +15,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.List;
 import java.util.Optional;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
@@ -77,6 +78,24 @@ public class BookRestController {
         BeanUtils.copyProperties(bookDto, book);
         this.iBookService.editBook(book);
         return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    @GetMapping("/getFiveBookByQuantitySmallest")
+    public ResponseEntity<List<Book>> getFiveBookByQuantitySmallest() {
+        List<Book> bookList = this.iBookService.getFiveBookByQuantitySmallest();
+        if (bookList == null) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<>(bookList, HttpStatus.OK);
+    }
+
+    @GetMapping("/getFiveBookByQuantityLargest")
+    public ResponseEntity<List<Book>> getFiveBookByQuantityLargest() {
+        List<Book> bookList = this.iBookService.getFiveBookByQuantityLargest();
+        if (bookList == null) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<>(bookList, HttpStatus.OK);
     }
 
 }

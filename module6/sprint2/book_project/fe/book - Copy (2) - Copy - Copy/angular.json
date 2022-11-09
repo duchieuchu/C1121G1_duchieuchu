@@ -35,8 +35,8 @@
               "node_modules/lib/easing/easing.min.js",
               "node_modules/lib/owlcarousel/owl.carousel.min.js",
               "node_modules/js/main.js",
-              "node_modules/mail/jqBootstrapValidation.min.js",
-              "node_modules/mail/contact.js"
+              "src/library/mail/jqBootstrapValidation.min.js",
+              "src/library/mail/contact.js"
 
 
             ]
