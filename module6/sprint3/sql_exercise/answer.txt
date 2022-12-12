@@ -1,0 +1,33 @@
+1/
+USE internship;
+
+-- /Đưa ra thông tin gồm mã số, họ tên và tên khoa của tất cả các giảng viên
+
+select instructor.faculty_id, instructor.instructor_name, faculty.faculty_name
+from instructor
+inner join faculty on instructor.faculty_id = faculty.faculty_id;
+
+2/
+-- /Đưa ra thông tin gồm mã số, họ tên và tên
+-- / khoa của các giảng viên của khoa ‘DIA LY va QLTN’
+
+
+select instructor.faculty_id, instructor.instructor_name, faculty.faculty_name
+from instructor
+inner join faculty on instructor.faculty_id = faculty.faculty_id
+where faculty.faculty_name like '%DIA LY va QLTN%';
+
+3/
+-- /Cho biết số sinh viên của khoa ‘CONG NGHE SINH HOC’
+
+select  faculty.phone
+from faculty
+where faculty.faculty_name like'CONG NGHE SINH HOC';
+
+4/ Đưa ra danh sách gồm mã số, họ tên và tuổi của các sinh viên khoa ‘TOAN’
+
+select student.student_id, student.student_name,
+year(curdate()) - student.date_of_birth AS age 
+from student
+inner join faculty on faculty.faculty_id = student.faculty_id
+where faculty.faculty_name like'TOAN';
