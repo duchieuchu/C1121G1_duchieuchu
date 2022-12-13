@@ -38,6 +38,14 @@ select phone
 from faculty
 where faculty.faculty_name like'CONG NGHE SINH HOC';
 
+6/
+-- /Cho biết thông tin về sinh viên không tham gia thực tập
+
+select *
+from student 
+where not exists(select * from instructor_student 
+where instructor_student.student_id= student.student_id)
+
 7/
 
 -- /Đưa ra mã khoa, tên khoa và số giảng viên của mỗi khoa
