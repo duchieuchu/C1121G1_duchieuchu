@@ -18,7 +18,8 @@ import {HttpClientModule} from '@angular/common/http';
 import {NgxPaginationModule} from 'ngx-pagination';
 import { ProductBlockListComponent } from './product-block/product-block-list/product-block-list.component';
 import { ProductBlockCreateComponent } from './product-block/product-block-create/product-block-create.component';
-import { ProductBlockEditComponent } from './product-block/product-block-edit/product-block-edit.component'; // <-- import the module
+import { ProductBlockEditComponent } from './product-block/product-block-edit/product-block-edit.component';
+import { DishListComponent } from './dish/dish-list/dish-list.component'; // <-- import the module
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { ProductBlockEditComponent } from './product-block/product-block-edit/pr
     ProductBlockListComponent,
     ProductBlockCreateComponent,
     ProductBlockEditComponent,
+    DishListComponent,
   ],
   imports: [
     NgxPaginationModule,

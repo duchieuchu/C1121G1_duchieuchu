@@ -1,0 +1,57 @@
+<div class="background" style="padding-bottom: 100px">
+  <br><br><br><br><br><br>
+  <h1>Danh sách sản phẩm</h1>
+  <br>
+  <div class="main">
+    <div class="limiter">
+      <div class="container-table100">
+        <div class="wrap-table100 table_wrapper">
+          <button routerLink="/create" style="margin-left: 5px;background-color:#744e3a;color: white"
+                  class="btn  buttons1" type="submit">Thêm mới
+          </button>
+          <table class="table table-hover mt-3">
+            <thead>
+            <tr class="table100-head">
+              <th class="col-">STT</th>
+              <th class="col-2">Ten</th>
+              <th class="col-2">Tac gia</th>
+              <th class="col-2">Mo ta</th>
+              <th class="col-2">Hinh anh</th>
+              <th class="col-2">Loại Sản Phẩm</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let element of bookArray; index as i">
+              <td>{{i+1}}</td>
+              <td>{{element.bookName}}</td>
+              <td>{{element.authors}}</td>
+              <td>{{element.description}}</td>
+              <td>{{element.image}}</td>
+              <td>{{element.category.name}}</td>
+            </tbody>
+          </table>
+          <h3 *ngIf="bookArray.length==0" style="color: white; text-align: center">Không có dữ liệu</h3>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="form-group col-12">
+  <input type="file" #userphoto (change)="onFileSelected($event)" name="image" autocomplete="off">
+</div>
+
+

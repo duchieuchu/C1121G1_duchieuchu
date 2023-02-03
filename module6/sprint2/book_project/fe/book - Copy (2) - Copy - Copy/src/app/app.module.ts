@@ -21,7 +21,10 @@ import {Error401PageComponent} from './error401-page/error401-page.component';
 import {Error403PageComponent} from './error403-page/error403-page.component';
 import {Error404PageComponent} from './error404-page/error404-page.component';
 import {AuthGuard} from './authguard/auth.guard';
-import { StatisticsComponent } from './statistics/statistics.component';
+import {StatisticsComponent} from './statistics/statistics.component';
+import {OrderHistoryComponent} from './order-history/order-history.component';
+import {SocialAuthServiceConfig, SocialAuthService, SocialLoginModule, GoogleLoginProvider} from 'angularx-social-login';
+import {FacebookLoginProvider} from 'angularx-social-login';
 
 @NgModule({
   declarations: [
@@ -37,7 +40,8 @@ import { StatisticsComponent } from './statistics/statistics.component';
     Error401PageComponent,
     Error403PageComponent,
     Error404PageComponent,
-    StatisticsComponent
+    StatisticsComponent,
+    OrderHistoryComponent
   ],
   imports: [
     BrowserModule,
@@ -54,9 +58,31 @@ import { StatisticsComponent } from './statistics/statistics.component';
     BookModule,
     ShareModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SocialLoginModule
   ],
-  providers: [authInterceptorProviders, AuthGuard],
+  providers: [authInterceptorProviders, AuthGuard,
+    {
+      provide: 'SocialAuthServiceConfig',
+      useValue: {
+        autoLogin: false,
+        providers: [
+          {
+            id: FacebookLoginProvider.PROVIDER_ID,
+            provider: new FacebookLoginProvider('1144466963099520'),
+          },
+          {
+            id: GoogleLoginProvider.PROVIDER_ID,
+            provider: new GoogleLoginProvider('394097970241-a1sick60dieqb8ppdluvauc988give8b.apps.googleusercontent.com',
+              {scope: 'email', plugin_name: 'login-app'})
+          },
+        ],
+        onError: (error) => {
+          console.log(error);
+        },
+      } as SocialAuthServiceConfig,
+    },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

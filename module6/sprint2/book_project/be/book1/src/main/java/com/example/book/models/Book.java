@@ -33,7 +33,7 @@ public class Book {
     @JoinColumn(name = "category_id", referencedColumnName = "id")
     private Category category;
 
-    @OneToMany(mappedBy = "book")
+    @OneToMany(mappedBy = "book",fetch = FetchType.LAZY)
     @JsonIgnore
     private List<OrderDetails> orderDetailsList;
 

@@ -1,4 +1,8 @@
 package com.example.book.service.impl;
 
-public class CustomerService {
+import com.example.book.service.ICustomerService;
+import org.springframework.stereotype.Service;
+
+@Service
+public class CustomerService implements ICustomerService {
 }

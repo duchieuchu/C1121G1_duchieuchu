@@ -1,0 +1,112 @@
+<div class="background" style="padding-bottom: 100px">
+  <br>
+  <h1>Danh sách món</h1>
+  <div class="main">
+    <div class="limiter">
+      <div class="container-table100">
+        <div class="wrap-table100 table_wrapper">
+
+            <button [routerLink]="['/product/create']" style="margin-left: 5px;background-color:#E86235;color: white"
+                    class="btn  buttons1" type="submit">Thêm mới
+            </button>
+
+          <table class="table table-hover">
+            <thead>
+            <tr>
+              <th class="col-1">STT</th>
+              <th class="col-1">name</th>
+              <th class="col-1">made</th>
+              <th class="col-1">dayImport</th>
+              <!--    <th>expire</th>-->
+              <th class="col-1">quantity</th>
+              <th class="col-1">price</th>
+              <th class="col-1">Category</th>
+              <th class="col-1">Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let element of productArray; index as i">
+              <td>{{(i + 1) + number * size}}</td>
+              <td>{{element.name}}</td>
+              <td>{{element.made}}</td>
+              <td>{{element.dayImport}}</td>
+              <!--    <td>{{element.expire}}</td>-->
+              <td>{{element.number}}</td>
+              <td>{{element.price}}</td>
+              <td>{{element.category.name}}</td>
+              <td>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-danger"
+                        data-bs-toggle="modal"
+                        [attr.data-bs-target]="'#exampleModal' + element.id">
+              Delete
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal{{element.id}}" tabindex="-1"
+                     aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"><b>Xóa</b></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>Bạn có chắc chắn muốn xóa {{element.name}}</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-danger" (click)="deleteProductById(element.id)" data-bs-dismiss="modal">Delete</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+          <h3 *ngIf="productArray.length==0" style="color: white; text-align: center">Không có dữ liệu</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <div *ngIf="number == 0">
+        <li class="page-item disabled">
+          <button class="page-link" hidden>Previous</button>
+        </li>
+      </div>
+      <div *ngIf="number != 0">
+        <li class="page-item">
+          <button class="page-link" (click)="goPrevious()">trước</button>
+        </li>
+      </div>
+      <div *ngFor="let count of countTotalPages; index as i">
+        <div *ngIf="i == number">
+          <li class="page-item active">
+            <button class="page-link" (click)="goItem(i)">{{i + 1}}</button>
+          </li>
+        </div>
+        <div *ngIf="i != number">
+          <li class="page-item">
+            <button class="page-link" (click)="goItem(i)">{{i + 1}}</button>
+          </li>
+        </div>
+      </div>
+      <div *ngIf="number == totalPages - 1">
+        <li class="page-item disabled">
+          <button class="page-link" hidden>Next</button>
+        </li>
+      </div>
+      <div *ngIf="number != totalPages - 1">
+        <li class="page-item">
+          <button class="page-link" (click)="goNext()">sau</button>
+        </li>
+      </div>
+    </ul>
+  </nav>
+</div>

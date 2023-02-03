@@ -1,0 +1,67 @@
+<div class="background" style="padding-bottom: 100px">
+  <div class="container-fluid">
+    <div class="vc_empty_space" style="height: 64px"><span class="vc_empty_space_inner"></span></div>
+    <div class="container">
+      <div class="row formRow">
+        <form [formGroup]="formBase" (ngSubmit)="createBase()" class="col-lg-6 formRow_create">
+          <div class="mb-3 formRow_create_title">
+            <h5 class="hgu"><b>Thêm mới cơ sở</b></h5>
+          </div>
+          <hr class="hrLine">
+          <div class="formRow_create_content">
+            <div class="mb-3">
+              <label for="baseCode">Mã cơ sở <span style="color: red">*</span></label>
+              <input formControlName="baseCode" type="text" id="baseCode" class="form-control"
+                     placeholder="Nhập mã cơ sở">
+
+            </div>
+            <div class="mb-3">
+              <label for="name">Tên<span style="color: red">*</span></label>
+              <input formControlName="name" type="text" id="name" class="form-control"
+                     placeholder="Nhập Tên">
+              <p style="color: red" *ngIf="formBase.controls.name.hasError('required') && formBase.controls.name.touched">Vui lòng nhập thông tin.</p>
+
+            </div>
+            <div class="mb-3">
+              <label for="address">Địa chỉ <span style="color: red">*</span></label>
+              <input formControlName="address" type="text" id="address" class="form-control"
+                     placeholder="Nhập Địa chỉ">
+              <p style="color: red" *ngIf="formBase.controls.address.hasError('required') && formBase.controls.address.touched">Vui lòng nhập thông tin.</p>
+
+            </div>
+            <div class="mb-3">
+              <label for="openDay">Ngày khai trương<span style="color: red">*</span></label>
+              <input formControlName="openDay" type="date" id="openDay" class="form-control"
+                     placeholder="Nhập Ngày khai trương">
+              <p style="color: red" *ngIf="formBase.controls.openDay.hasError('required') && formBase.controls.openDay.touched">Vui lòng nhập thông tin.</p>
+
+            </div>
+
+            <div class="mb-3">
+              <label for="">Người quản lí</label>
+              <select name="employee" formControlName="employee" id="service_type" ngModel=""
+                      class="form-control">
+                <option value="">Chọn Người quản lí</option>
+                <option *ngFor="let element of employeeArray"
+                        value="{{element.id}}">{{element.name}}</option>
+              </select>
+              <p style="color: red" *ngIf="formBase.controls.employee.hasError('required') && formBase.controls.employee.touched">Vui lòng nhập thông tin.</p>
+
+
+
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-around">
+              <button class="btn btn-outline-danger button " [routerLink]="['/base/list']">Quay Lại</button>
+              <button class="btn btn-outline-success button" [disabled]="formBase.invalid" type="submit">Thêm mới
+              </button>
+
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="vc_empty_space" style="height: 64px"><span class="vc_empty_space_inner"></span></div>
+  </div>
+</div>
+

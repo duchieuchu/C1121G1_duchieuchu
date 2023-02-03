@@ -1,4 +1,9 @@
 package com.example.book.repository;
 
-public interface ICustomerRepository {
+import com.example.book.models.Customer;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ICustomerRepository extends JpaRepository<Customer, Integer> {
 }

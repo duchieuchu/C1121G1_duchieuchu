@@ -2,6 +2,8 @@ import {Component, OnInit} from '@angular/core';
 import {TokenStorageService} from '../_services/token-storage.service';
 import {CartService} from '../service/cart.service';
 import {DataService} from '../service/data.service';
+import {FacebookLoginProvider, GoogleLoginProvider, SocialAuthService, SocialUser} from 'angularx-social-login';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-header',
@@ -17,10 +19,15 @@ export class HeaderComponent implements OnInit {
   username: string;
 
   public totalQuantity = 0;
+  user: any;
+  usernameSocial: string;
+  socialUser: SocialUser;
 
   constructor(private tokenStorageService: TokenStorageService,
               private cartService: CartService,
-              private dataService: DataService) {
+              private dataService: DataService,
+              private socialAuthService: SocialAuthService,
+              private toast: ToastrService) {
   }
 
   ngOnInit() {
@@ -45,11 +52,31 @@ export class HeaderComponent implements OnInit {
   }
 
 
-
   logout() {
     this.tokenStorageService.signOut();
     window.location.reload();
   }
 
+  signInByFacebook() {
+    this.socialAuthService.signIn(FacebookLoginProvider.PROVIDER_ID).then(data => {
+      this.socialUser = data;
+      this.isLoggedIn = (data != null);
+      this.usernameSocial = this.socialUser.name;
+      // const user: { password: string; email: string; username: string } = {
+      //   email: data.email,
+      //   password: data.id,
+      //   username: data.name,
+      // };
+    });
 
+  }
+
+  signInWithGoogle() {
+    this.socialAuthService.signIn(GoogleLoginProvider.PROVIDER_ID).then(data => {
+      this.socialUser = data;
+      this.isLoggedIn = (data != null);
+      this.usernameSocial = this.socialUser.name;
+      console.log(data);
+    });
+  }
 }

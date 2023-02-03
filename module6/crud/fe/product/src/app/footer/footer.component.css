@@ -1,0 +1,8 @@
+#footer {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: brightness(10%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://autopro8.mediacdn.vn/2021/7/7/lamborghini-aventador-lp-780-4-ultimae-4-16256584316251379318248.jpg);
+  padding-bottom: 50px;
+}

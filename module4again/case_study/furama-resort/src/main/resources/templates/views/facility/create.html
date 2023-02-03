@@ -1,118 +1,118 @@
-<!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head th:replace="/views/layout ::head">
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <script src="/jquery-3.6.0.min.js"></script>
-</head>
-<body>
-<header th:replace="/views/layout ::header"></header>
-<br> <br> <br> <br>
-<h1>Information Service</h1>
-<div class="content">
-    <form th:action="@{/service/save}" th:object="${facility}"
-          method="POST" novalidate="novalidate" >
-        <div class="form-group">
-            <label>Name</label>
-            <input type="text" class="form-control" th:field="*{name}"
-                   placeholder="Enter name">
-        </div>
-        <div class="form-group">
-            <label>Area</label>
-            <input type="number" class="form-control" th:field="*{area}"
-                   placeholder="Enter area">
-        </div>
-        <div class="form-group">
-            <label>Cost</label>
-            <input type="number" class="form-control" th:field="*{cost}"
-                   placeholder="Enter cost">
-        </div>
-        <div class="form-group">
-            <label>Max People</label>
-            <input type="number" class="form-control" th:field="*{maxPeople}"
-                   placeholder="Enter max people">
-        </div>
-        <div class="form-group">
-            <label>Service Type</label>
-            <select class="form-control" th:field="*{facilityType}" id="serviceType" onchange="getInfo()">
-                <option th:each="serviceType : ${facilityTypeList}" th:value="${serviceType.id}"
-                        th:text="${serviceType.name}"></option>
-            </select>
-        </div>
-        <div class="form-group" id="poolArea">
-            <label>Pool Area</label>
-            <input type="text" class="form-control" th:field="*{poolArea}"
-                   placeholder="Enter pool area">
-        </div>
-        <div class="form-group" id="standardRoom">
-            <label>Standard Room</label>
-            <input type="text" class="form-control" th:field="*{standardRoom}"
-                   placeholder="Enter Standard Room">
-        </div>
-        <div class="form-group" id="otherInfo">
-            <label>Other information</label>
-            <input type="text" class="form-control" th:field="*{otherInfo}"
-                   placeholder="Enter other information">
-        </div>
-        <div class="form-group" id="numberOfFloors">
-            <label>Number Of Floors</label>
-            <input type="number" class="form-control" th:field="*{numberOfFloors}"
-                   placeholder="Enter number of floors">
-        </div>
-        <div class="form-group" id="facilityFree">
-            <label>Service Free</label>
-            <input type="text" class="form-control" th:field="*{facilityFree}"
-                   placeholder="Enter service free">
-        </div>
-        <div class="form-group">
-            <label>Rental Type</label>
-            <select class="form-control" th:field="*{rentType}">
-                <option th:each="rentType : ${rentTypeList}" th:value="${rentType.id}"
-                        th:text="${rentType.name}"></option>
-            </select>
-        </div>
-        <div>
-            <a th:href="@{/service}" class="btn btn-dark">
-                Back to customer list
-            </a>
-            <button type="submit" class="btn btn-primary">Save</button>
-        </div>
+    <!DOCTYPE html>
+    <html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="/views/layout ::head">
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+              integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        <script src="/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+    <header th:replace="/views/layout ::header"></header>
+    <br> <br> <br> <br>
+    <h1>Information Service</h1>
+    <div class="content">
+        <form th:action="@{/service/save}" th:object="${facility}"
+              method="POST" novalidate="novalidate" >
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" class="form-control" th:field="*{name}"
+                       placeholder="Enter name">
+            </div>
+            <div class="form-group">
+                <label>Area</label>
+                <input type="number" class="form-control" th:field="*{area}"
+                       placeholder="Enter area">
+            </div>
+            <div class="form-group">
+                <label>Cost</label>
+                <input type="number" class="form-control" th:field="*{cost}"
+                       placeholder="Enter cost">
+            </div>
+            <div class="form-group">
+                <label>Max People</label>
+                <input type="number" class="form-control" th:field="*{maxPeople}"
+                       placeholder="Enter max people">
+            </div>
+            <div class="form-group">
+                <label>Service Type</label>
+                <select class="form-control" th:field="*{facilityType}" id="serviceType" onchange="getInfo()">
+                    <option th:each="serviceType : ${facilityTypeList}" th:value="${serviceType.id}"
+                            th:text="${serviceType.name}"></option>
+                </select>
+            </div>
+            <div class="form-group" id="poolArea">
+                <label>Pool Area</label>
+                <input type="text" class="form-control" th:field="*{poolArea}"
+                       placeholder="Enter pool area">
+            </div>
+            <div class="form-group" id="standardRoom">
+                <label>Standard Room</label>
+                <input type="text" class="form-control" th:field="*{standardRoom}"
+                       placeholder="Enter Standard Room">
+            </div>
+            <div class="form-group" id="otherInfo">
+                <label>Other information</label>
+                <input type="text" class="form-control" th:field="*{otherInfo}"
+                       placeholder="Enter other information">
+            </div>
+            <div class="form-group" id="numberOfFloors">
+                <label>Number Of Floors</label>
+                <input type="number" class="form-control" th:field="*{numberOfFloors}"
+                       placeholder="Enter number of floors">
+            </div>
+            <div class="form-group" id="facilityFree">
+                <label>Service Free</label>
+                <input type="text" class="form-control" th:field="*{facilityFree}"
+                       placeholder="Enter service free">
+            </div>
+            <div class="form-group">
+                <label>Rental Type</label>
+                <select class="form-control" th:field="*{rentType}">
+                    <option th:each="rentType : ${rentTypeList}" th:value="${rentType.id}"
+                            th:text="${rentType.name}"></option>
+                </select>
+            </div>
+            <div>
+                <a th:href="@{/service}" class="btn btn-dark">
+                    Back to customer list
+                </a>
+                <button type="submit" class="btn btn-primary">Save</button>
+            </div>
 
-    </form>
-</div>
-<footer th:replace="/views/layout ::footer"></footer>
-</body>
-<script>
-    function getInfo() {
-        let value = $('#serviceType').val();
+        </form>
+    </div>
+    <footer th:replace="/views/layout ::footer"></footer>
+    </body>
+    <script>
+        function getInfo() {
+            let value = $('#serviceType').val();
 
-        if (value === "1") {
-            $('#standardRoom').show();
-            $('#otherInfo').show();
-            $('#poolArea').show();
-            $('#numberOfFloors').show();
-            $('#facilityFree').hide();
+            if (value === "1") {
+                $('#standardRoom').show();
+                $('#otherInfo').show();
+                $('#poolArea').show();
+                $('#numberOfFloors').show();
+                $('#facilityFree').hide();
+            }
+            if (value === "2") {
+                $('#standardRoom').show();
+                $('#otherInfo').show();
+                $('#numberOfFloors').show();
+
+                $('#poolArea').hide();
+                $('#facilityFree').hide();
+            }
+            if (value === "3") {
+                $('#facilityFree').show();
+
+                $('#standardRoom').hide();
+                $('#otherInfo').hide();
+                $('#poolArea').hide();
+                $('#numberOfFloors').hide();
+            }
         }
-        if (value === "2") {
-            $('#standardRoom').show();
-            $('#otherInfo').show();
-            $('#numberOfFloors').show();
 
-            $('#poolArea').hide();
-            $('#facilityFree').hide();
-        }
-        if (value === "3") {
-            $('#facilityFree').show();
-
-            $('#standardRoom').hide();
-            $('#otherInfo').hide();
-            $('#poolArea').hide();
-            $('#numberOfFloors').hide();
-        }
-    }
-
-    getInfo();
-</script>
-</html>
+        getInfo();
+    </script>
+    </html>

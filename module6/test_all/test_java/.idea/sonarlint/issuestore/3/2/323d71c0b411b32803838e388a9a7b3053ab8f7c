@@ -1,0 +1,6 @@
+
+T	java:S106"9Replace this use of System.out or System.err by a logger.(³ø½8ÿ ¯ŞÌ0
+E
+java:S1068"(Remove this unused "name" private field.(Ë¥¼8–§«ŞÌ0
+G
+java:S1068"*Remove this unused "gender" private field.(ÀÄŒ8–§«ŞÌ0

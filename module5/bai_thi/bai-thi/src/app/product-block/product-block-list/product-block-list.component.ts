@@ -13,8 +13,8 @@ import {Product} from '../../model/product';
 export class ProductBlockListComponent implements OnInit {
   products: Product[];
   productBlocks: ProductBlock[] = [];
-  idModal: number;
-  nameModal: string;
+  // idModal: number;
+  // nameModal: string;
   p: number = 1;
   searchForm: FormGroup;
 
@@ -53,10 +53,10 @@ export class ProductBlockListComponent implements OnInit {
     });
   }
 
-  mo(id: number, name: string) {
-    this.idModal = id;
-    this.nameModal = name;
-  }
+  // mo(id: number, name: string) {
+  //   this.idModal = id;
+  //   this.nameModal = name;
+  // }
 
   searchByName() {
     console.log(this.searchForm.value);

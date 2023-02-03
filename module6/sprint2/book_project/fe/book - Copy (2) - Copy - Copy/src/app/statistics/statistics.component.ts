@@ -18,10 +18,10 @@ export class StatisticsComponent implements OnInit {
     const myChart = new Chart('myChart', {
       type: 'bar',
       data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange', 'a', 'b', 'c', 'd', 'e'],
         datasets: [{
-          label: '# of Votes',
-          data: [12, 19, 3, 5, 2, 3],
+          label: '# số lượng',
+          data: [12, 19, 3, 5, 2, 3, 1, 2, 3, 4, 5],
           backgroundColor: [
             'rgba(255, 99, 132, 0.2)',
             'rgba(54, 162, 235, 0.2)',

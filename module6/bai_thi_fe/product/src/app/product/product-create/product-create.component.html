@@ -1,0 +1,98 @@
+<div class="center">
+  <h1>Product Information</h1>
+  <form [formGroup]="productForm" (ngSubmit)="submit()">
+    <div class="d-flex justify-content-around">
+      <div>
+        <input name="submit" type="submit" value="Create"/>
+      </div>
+      <div class="txt_field">
+        <select formControlName="categoryId" name='categoryId' class="form-control" id="categoryId" (change)="getInfo()" ngModel="">
+          <option value="">Choose product</option>
+          <option *ngFor="let element of productTypeArray"
+          value="{{element.id}}">{{element.name}}</option>
+
+        </select>
+      </div>
+      <div class="txt_field" id="code">
+        <input formControlName="code" type="text" name='code' required>
+        <span></span>
+        <label>Product Code</label>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-around">
+      <div class="txt_field" id="name">
+        <input formControlName="name" type="text" name='name' required>
+        <span></span>
+        <label>Product Name</label>
+      </div>
+
+      <div class="txt_field" id="price">
+        <input formControlName="price" type="number" name='price' required>
+        <span></span>
+        <label>Product Price</label>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-around">
+      <div class="txt_field" id="status">
+        <input formControlName="status" type="text" name='status' required>
+        <span></span>
+        <label>Product Status</label>
+      </div>
+      <div class="txt_field" id="importDate">
+        <input formControlName="importDate" type="text" name='importDate' required>
+        <span></span>
+        <label>Product import Date</label>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-around">
+      <div class="txt_field" id="made">
+        <input formControlName="made" type="text" name='made' required>
+        <span></span>
+        <label>Made in</label>
+      </div>
+      <div class="txt_field" id="gas">
+        <select formControlName="gas" name="gas" class="form-control">
+          <option value="true">carbonated water</option>
+          <option value="false">non-carbonated water</option>
+        </select>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-around">
+      <div class="txt_field" id="sweat">
+        <select formControlName="sweat" name="sweat" class="form-control">
+          <option value="true">sweat</option>
+          <option value="false">salty</option>
+        </select>
+        <span></span>
+      </div>
+      <div class="txt_field" id="author">
+        <input formControlName="author" type="text" name='author' required>
+        <span></span>
+        <label>Author</label>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-around">
+      <div class="txt_field" id="typeBook">
+        <input formControlName="typeBook" type="text" name='typeBook' required>
+        <span></span>
+        <label>Type of Book</label>
+      </div>
+      <div class="txt_field" id="publicationDate">
+        <input formControlName="publicationDate" type="text" required>
+        <span></span>
+        <label>Publication Date</label>
+      </div>
+    </div>
+
+
+  </form>
+</div>
+
+
+

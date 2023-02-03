@@ -1,4 +1,10 @@
-package com.example.service.impl;
+package com.example.service;
+
+import com.example.model.Employee;
+
+import java.util.List;
 
 public interface IEmployeeService {
+
+    List<Employee> getList();
 }

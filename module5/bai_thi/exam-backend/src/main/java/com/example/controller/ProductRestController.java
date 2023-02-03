@@ -25,4 +25,5 @@ public class ProductRestController {
         List<Product>productList=this.iProductService.findAll();
         return new ResponseEntity<>(productList, HttpStatus.OK);
     }
+
 }

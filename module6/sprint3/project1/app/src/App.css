@@ -1,0 +1,21 @@
+.myCss {
+    color: blue;
+    font-size: 30px;
+}
+
+.hoverBlue :hover {
+    background-color: blue;
+}
+
+a:hover {
+    background-color: yellow;
+}
+
+b:hover {
+    background-color: red;
+}
+
+button:hover {
+    background-color: red;
+}
+

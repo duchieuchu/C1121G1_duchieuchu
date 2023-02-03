@@ -1,0 +1,73 @@
+<div class="background" style="padding-bottom: 100px">
+  <br><br><br><br><br><br>
+  <h1>Danh sách sản phẩm</h1>
+  <br>
+  <div class="main">
+    <div class="limiter">
+      <div class="container-table100">
+        <div class="wrap-table100 table_wrapper">
+          <button [routerLink]="['/product/add']" style="margin-left: 5px;background-color:#744e3a;color: white"
+                  class="btn  buttons1" type="submit">Thêm mới
+          </button>
+          <table class="table table-hover mt-3">
+            <thead>
+            <tr class="table100-head">
+              <th class="col-">STT</th>
+              <th class="col-2">Mã số Sản Phẩm</th>
+              <th class="col-2">Tên Sản Phẩm</th>
+              <th class="col-2">Giá</th>
+              <th class="col-2">Trình trạng</th>
+              <th class="col-2">Ngày nhập hàng</th>
+              <th class="col-2">Loại Sản Phẩm</th>
+              <th class="col-1">Chức năng</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let element of productArray; index as i">
+              <td>{{i+1}}</td>
+              <td>{{element.code}}</td>
+              <td>{{element.name}}</td>
+              <td>{{element.price| currency:'VND':''}}đ</td>
+              <td>{{element.status}}</td>
+              <td>{{element.importDate}}</td>
+              <td>{{element.category.name}}</td>
+              <td>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+                        [attr.data-bs-target]="'#exampleModal' + element.id">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal{{element.id}}" tabindex="-1"
+                     aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"><b>Xóa món</b></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>Bạn có chắc chắn muốn xóa {{element.name}}</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Trở về</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal"  (click)="deleteDishById(element.id)">Xóa</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+          <h3 *ngIf="productArray.length==0" style="color: white; text-align: center">Không có dữ liệu</h3>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

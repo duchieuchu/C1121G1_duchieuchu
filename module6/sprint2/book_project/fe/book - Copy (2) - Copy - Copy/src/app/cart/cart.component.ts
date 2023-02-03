@@ -5,6 +5,7 @@ import {Title} from '@angular/platform-browser';
 import {DataService} from '../service/data.service';
 import {render} from 'creditcardpayments/creditCardPayments';
 import {TokenStorageService} from '../_services/token-storage.service';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-cart',
@@ -29,15 +30,8 @@ export class CartComponent implements OnInit {
   constructor(private  cartService: CartService,
               private dataService: DataService,
               private tokenStorageService: TokenStorageService,
-              private title: Title) {
-    // render({
-    //   id: '#myPayPalButtons',
-    //   currency: 'USD',
-    //   value: this.convertToUSD(this.totalPrice),
-    //   onApprove: (details => {
-    //     alert('Transaction Successfully');
-    //   })
-    // });
+              private title: Title,
+              private toast: ToastrService) {
     this.title.setTitle('Giỏ hàng');
   }
 
@@ -47,7 +41,8 @@ export class CartComponent implements OnInit {
       currency: 'USD',
       value: this.convertToUSD(this.totalPrice),
       onApprove: (details => {
-        alert('Transaction Successfully');
+        this.toast.success('Bạn đã thanh toán thành công', 'Thông báo');
+        this.deleteAll();
       })
     });
   }

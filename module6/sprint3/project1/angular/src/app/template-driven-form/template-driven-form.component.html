@@ -1,0 +1,8 @@
+<p>template-driven-form works!</p>
+
+<form #form="ngForm" (submit)="log(form.value)">
+  <input type="text" ngModel name="name">
+  <input type="text" ngModel name="price">
+  <button type="submit">click</button>
+</form>
+

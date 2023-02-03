@@ -1,4 +1,8 @@
-package com.example.service;
+package com.example.service.impl;
 
-public class CategoryService {
+import com.example.service.ICategoryService;
+import org.springframework.stereotype.Service;
+
+@Service
+public class CategoryService implements ICategoryService {
 }

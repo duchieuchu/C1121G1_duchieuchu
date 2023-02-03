@@ -1,0 +1,67 @@
+<!--<div class="main">-->
+<!--  <br> <br> <br>-->
+<!--  <div>-->
+<!--    <a routerLink="/product-block-add" class="btn btn-secondary">Add product</a>-->
+<!--    <p>search exprire date</p>-->
+<!--    <form [formGroup]="searchForm" (ngSubmit)="searchByName()">-->
+<!--      <input type="date" placeholder="search by date no use"-->
+<!--             formControlName="searchName" name="searchName">-->
+<!--      <button type="submit">search</button>-->
+<!--    </form>-->
+<!--  </div>-->
+<!--  <br>-->
+<!--  <table class="table table-hover">-->
+<!--    <thead>-->
+<!--    <tr>-->
+<!--      <th class="col-2">#</th>-->
+<!--      <th class="col-2">Code product block</th>-->
+<!--      <th class="col-2">Product name</th>-->
+<!--      <th class="col-2">dateImport</th>-->
+<!--      <th class="col-2">Quantity</th>-->
+<!--      <th class="col-2">Expire date</th>-->
+<!--      <th class="col-2">Action</th>-->
+<!--    </tr>-->
+<!--    </thead>-->
+<!--    <tbody>-->
+<!--    <tr *ngFor="let productBlock of productBlocks | paginate: { itemsPerPage: 4, currentPage: p };index as i">-->
+<!--      <td>{{i + 1}}</td>-->
+<!--      <td>{{productBlock.code}}</td>-->
+<!--      <td>{{productBlock.product.name }}</td>-->
+<!--      <td>{{productBlock.dateImport| date:"dd-MM-yyyy"}}</td>-->
+<!--      <td>{{productBlock.quantity }}</td>-->
+<!--      <td>{{productBlock.dateNoUse| date:"dd-MM-yyyy"}}</td>-->
+<!--      <td>-->
+<!--        <button type="button" class="btn btn-danger" data-toggle="modal"-->
+<!--                [attr.data-target]="'#exampleModal' + productBlock.id">-->
+<!--          <img src="https://cdn-icons-png.flaticon.com/128/3221/3221845.png" alt="" height="30"></button>-->
+<!--        &lt;!&ndash;        Modal&ndash;&gt;-->
+<!--        <div class="modal fade" id="exampleModal{{productBlock.id}}" tabindex="-1" aria-labelledby="exampleModalLabel"-->
+<!--             aria-hidden="true">-->
+<!--          <div class="modal-dialog">-->
+<!--            <div class="modal-content">-->
+<!--              <div class="modal-header">-->
+<!--                <h5 class="modal-title" id="exampleModalLabel">DELETE</h5>-->
+<!--                <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                  <span aria-hidden="true">&times;</span>-->
+<!--                </button>-->
+<!--              </div>-->
+<!--              <div>-->
+<!--                <div class="modal-body">-->
+<!--                  Are you sure delete  product block have code is {{productBlock.code}}-->
+<!--                  and expire date is {{productBlock.dateNoUse| date:"dd-MM-yyyy"}} ?-->
+<!--                </div>-->
+<!--                <div class="modal-footer">-->
+<!--                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+<!--                  <button (click)="deleteProductBlock(productBlock.id)" data-dismiss="modal" class="btn btn-danger">Delete-->
+<!--                  </button>-->
+
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </td>-->
+<!--  </table>-->
+<!--  <pagination-controls (pageChange)="p = $event"></pagination-controls>-->
+<!--</div>-->
+

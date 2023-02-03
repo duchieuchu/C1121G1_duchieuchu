@@ -1,0 +1,9 @@
+<p>reactive-form works!</p>
+
+<div>
+  <form [formGroup]="productForm" (ngSubmit)="log()">
+    <input type="text" formControlName="name">
+    <input type="price" formControlName="price">
+    <button type="submit">click</button>
+  </form>
+</div>

@@ -1,4 +1,3 @@
-
 <!-- Topbar Start -->
 <div class="container-fluid">
   <div class="row bg-secondary py-1 px-xl-5">
@@ -22,13 +21,19 @@
                 <a class="dropdown-item" routerLink="register">Đăng kí</a>
               </li>
               <li class="nav-item">
-                <a class="dropdown-item" routerLink="login">Đăng Nhập</a>
+                <a class="dropdown-item" routerLink="login">Đăng Nhập TK</a>
+              </li>
+              <li class="nav-item">
+                <a class="dropdown-item" (click)="signInByFacebook()">Đăng Nhập FB</a>
+              </li>
+              <li class="nav-item">
+                <a class="dropdown-item" (click)="signInWithGoogle()">Đăng Nhập GG</a>
               </li>
             </ul>
 
             <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn">
               <li class="nav-item">
-                <a  class="dropdown-item" routerLink="profile">TK: {{ username }}</a>
+                <a class="dropdown-item" routerLink="profile">TK: {{ username }} {{usernameSocial}}</a>
               </li>
               <li class="nav-item">
                 <a href class="dropdown-item" (click)="logout()">Đăng Xuất</a>
@@ -162,10 +167,11 @@
         </button>
         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
           <div class="navbar-nav mr-auto py-0">
-            <a routerLink="/home" class="nav-item nav-link active" >Trang chủ </a>
+            <a routerLink="/home" class="nav-item nav-link active">Trang chủ </a>
             <a routerLink="/book/list" class="nav-item nav-link">Cửa hàng</a>
             <a routerLink="/cart" class="nav-item nav-link">Giỏ hàng</a>
-<!--            <a routerLink="/checkout" class="nav-item nav-link">Thanh toán</a>-->
+            <!--            <a routerLink="/checkout" class="nav-item nav-link">Thanh toán</a>-->
+            <a routerLink="/orderHistory" class="nav-item nav-link">Lịch sử mua hàng</a>
             <a routerLink="/statistics" class="nav-item nav-link" *ngIf="showAdminBoard">Thống kê</a>
             <a routerLink="/book/management" class="nav-item nav-link" *ngIf="showAdminBoard">Quản lí sách</a>
           </div>

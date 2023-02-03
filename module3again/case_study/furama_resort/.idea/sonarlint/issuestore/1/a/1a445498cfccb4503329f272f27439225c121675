@@ -1,0 +1,17 @@
+
+cWeb:DoctypePresenceCheck
+":Insert a <!DOCTYPE> declaration to before this <html> tag.(œ÷Ãûÿÿÿÿ
+Z	Web:S5254
+"@Add "lang" and/or "xml:lang" attributes to this "<html>" element(œ÷Ãûÿÿÿÿ
+GWeb:ImgWithoutAltCheck"%Add an "alt" attribute to this image.(“ã¬
+HWeb:TableWithoutCaptionCheck>" Add a description to this table.(ş£Ò
+g Web:TableHeaderHasIdOrScopeCheckA";Add either an 'id' or a 'scope' attribute to this <th> tag.(æúÈÜ
+g Web:TableHeaderHasIdOrScopeCheckB";Add either an 'id' or a 'scope' attribute to this <th> tag.(ÉÊû°
+g Web:TableHeaderHasIdOrScopeCheckC";Add either an 'id' or a 'scope' attribute to this <th> tag.(Ë³€î
+l Web:TableHeaderHasIdOrScopeCheckD";Add either an 'id' or a 'scope' attribute to this <th> tag.(Ôì’òıÿÿÿÿ
+g Web:TableHeaderHasIdOrScopeCheckE";Add either an 'id' or a 'scope' attribute to this <th> tag.(Ã·Ë´
+l Web:TableHeaderHasIdOrScopeCheckF";Add either an 'id' or a 'scope' attribute to this <th> tag.(å‘ùÕşÿÿÿÿ
+l Web:TableHeaderHasIdOrScopeCheckH";Add either an 'id' or a 'scope' attribute to this <th> tag.(Êëïüÿÿÿÿ
+l Web:TableHeaderHasIdOrScopeCheckJ";Add either an 'id' or a 'scope' attribute to this <th> tag.(úêÌ°úÿÿÿÿ
+l Web:TableHeaderHasIdOrScopeCheckK";Add either an 'id' or a 'scope' attribute to this <th> tag.(ì«óşÿÿÿÿ
+f Web:TableHeaderHasIdOrScopeCheckL";Add either an 'id' or a 'scope' attribute to this <th> tag.(¹–¬

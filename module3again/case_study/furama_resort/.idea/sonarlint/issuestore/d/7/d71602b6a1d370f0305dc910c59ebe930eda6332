@@ -1,0 +1,13 @@
+
+cWeb:DoctypePresenceCheck	":Insert a <!DOCTYPE> declaration to before this <html> tag.(œ÷Ãûÿÿÿÿ
+Z	Web:S5254	"@Add "lang" and/or "xml:lang" attributes to this "<html>" element(œ÷Ãûÿÿÿÿ
+GWeb:ImgWithoutAltCheckO"%Add an "alt" attribute to this image.(“ã¬
+H	Web:S4084q"3Add subtitles and description files for this video.(¶‚õ¤
+HWeb:ImgWithoutAltCheckœ"%Add an "alt" attribute to this image.(í•‹ì
+HWeb:ImgWithoutAltCheckÅ"%Add an "alt" attribute to this image.(í•‹ì
+HWeb:ImgWithoutAltCheckÇ"%Add an "alt" attribute to this image.(™¨Øå
+MWeb:ImgWithoutAltCheckÈ"%Add an "alt" attribute to this image.(ï®èÓÿÿÿÿÿ
+CWeb:BoldAndItalicTagsCheckİ"Replace this <i> tag by <em>.(ğÇ­~
+DWeb:BoldAndItalicTagsCheckŞ"Replace this <i> tag by <em>.(Ÿüòí
+DWeb:BoldAndItalicTagsCheckß"Replace this <i> tag by <em>.(Ã¿…í
+CWeb:BoldAndItalicTagsCheckà"Replace this <i> tag by <em>.(¸ûñ
